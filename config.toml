@@ -158,7 +158,7 @@ theme = "LoveIt"
       enable = true
       # Gravatar 邮箱，用于优先在主页显示的头像
       gravatarEmail = ""
-      avatarURL = "/images/avatar.png"
+      avatarURL = "/images/avatar.jpg"
       title = "Lruihao's Note"
       subtitle = "不怕萬人阻擋，只怕自己投降"
       typeit = true
