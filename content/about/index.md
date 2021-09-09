@@ -9,5 +9,6 @@ comment: false
 - [hacknical](https://hacknical.com/Lruihao/github?locale=zh)
 - [gitmemory](https://www.gitmemory.com/Lruihao)
 
-不卑不亢、不矜不伐；  
-不驕不躁、不恥下問。
+## 期許
+不卑不亢，不矜不伐，不驕不躁  
+不嗔，不怒，不爭，獨善其身
