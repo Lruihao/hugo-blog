@@ -52,13 +52,21 @@ theme = "LoveIt"
     title = ""
     weight = 3
   [[menu.main]]
+    identifier = "guestbook"
+    pre = ""
+    post = ""
+    name = "留言"
+    url = "/guestbook/"
+    title = ""
+    weight = 4
+  [[menu.main]]
     identifier = "about"
     pre = ""
     post = ""
     name = "關於"
     url = "/about/"
     title = ""
-    weight = 4
+    weight = 5
 
 [params]
   #  LoveIt 主题版本
