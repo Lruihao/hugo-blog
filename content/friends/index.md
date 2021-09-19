@@ -2,7 +2,6 @@
 title: "友链"
 date: 2021-09-19T12:33:48+08:00
 type: "friends"
-comment: true
 ---
 
 > 暂时不接受友链！
