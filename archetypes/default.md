@@ -6,6 +6,7 @@ draft: true
 author: ""
 authorLink: ""
 description: ""
+comment: true
 
 tags: []
 categories: []

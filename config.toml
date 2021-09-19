@@ -44,13 +44,21 @@ theme = "LoveIt"
     title = ""
     weight = 3
   [[menu.main]]
+    identifier = "friends"
+    pre = ""
+    post = ""
+    name = "友链"
+    url = "/friends/"
+    title = "友情链接"
+    weight = 4
+  [[menu.main]]
     identifier = "img"
     pre = ""
     post = ""
     name = "相冊"
     url = "https://img.lruihao.cn"
-    title = ""
-    weight = 3
+    title = "COS Album"
+    weight = 5
   [[menu.main]]
     identifier = "guestbook"
     pre = ""
@@ -58,7 +66,7 @@ theme = "LoveIt"
     name = "留言"
     url = "/guestbook/"
     title = ""
-    weight = 4
+    weight = 6
   [[menu.main]]
     identifier = "about"
     pre = ""
@@ -66,7 +74,7 @@ theme = "LoveIt"
     name = "關於"
     url = "/about/"
     title = ""
-    weight = 5
+    weight = 7
 
 [params]
   #  LoveIt 主题版本

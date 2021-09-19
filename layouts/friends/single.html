@@ -1,0 +1,44 @@
+{{- define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end -}}
+
+{{- define "content" -}}
+    {{- $params := .Scratch.Get "params" -}}
+    <div class="page single special">
+        {{- /* Title */ -}}
+        <h1 class="single-title animated pulse faster">
+            {{- .Title -}}
+        </h1>
+
+        {{- /* Subtitle */ -}}
+        {{- with $params.subtitle -}}
+            <h2 class="single-subtitle">{{ . }}</h2>
+        {{- end -}}
+
+        {{- /* Friend links */ -}}
+        <script src="//at.alicdn.com/t/font_578712_g26jo2kbzd5qm2t9.js"></script>
+        <link rel="stylesheet" href="css/_friends.css" />
+        <div class="friend-links">
+            {{ range $index, $link := .Site.Data.friends }}
+                <div class="card-box" title="{{ $link.info }}">
+                    <a href="{{ $link.url | safeURL }}" rel="external nofollow noopener noreferrer" target="_blank">
+                    {{ if $link.avatar }}
+                        <img class="card-avatar" src="{{ $link.avatar }}" alt="{{ $link.nickname }}"/>
+                    {{ else }}
+                    <svg class="card-avatar" aria-hidden="true">
+                        <use xlink:href="#icon-{{ add 1 $index }}"></use>
+                    </svg>
+                    {{ end }}
+                    <span title="{{ $link.nickname }}">@{{ $link.nickname }}</span>
+                  </a>
+                </div>
+            {{ end }}
+        </div>
+
+        {{- /* Content */ -}}
+        <div class="content" id="content">
+            {{- dict "Content" .Content "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome | partial "function/content.html" | safeHTML -}}
+        </div>
+
+        {{- /* Comment */ -}}
+        {{- partial "comment.html" . -}}
+    </div>
+{{- end -}}
