@@ -1,7 +1,7 @@
 /**
- * @Description: Style of 'Friend links' layout
+ * @Description: Style of layout named 'Friend links'.
  * @Author: lruihao.cn
- * @Updated:  2021/9/19 15:42
+ * @Updated:  2021/9/20 9:05
  */
  
 .friend-links {
@@ -10,6 +10,11 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+@media (max-width: 576px) {
+  .friend-links {
+    justify-content: space-around;
+  }
 }
 .card-box {
   width: 150px;
@@ -22,8 +27,6 @@
   border-radius: 5px;
   transition-duration: 0.3s;
   margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
 }
 .card-box:hover {
   background: #fff;
@@ -31,9 +34,14 @@
   box-shadow: 0 0 3px #aaa;
 }
 .card-box a {
-  border:none; 
+  border:none;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 1rem);
 }
 .card-avatar {
+  object-fit: cover;
+  object-position: center;
   width: 100%!important;
   height: 150px!important;
   border-radius: 5px;
@@ -43,15 +51,12 @@
 .card-box span{
   display: block;
   position: relative;
-  bottom: 1rem;
-  align-self: flex-end;
   color: #2bbc8a;
   font-weight: bold;
   max-width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  margin-top: 15px;
 }
 .card-box span:hover {
   color: #d480aa;
