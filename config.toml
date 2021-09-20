@@ -6,7 +6,7 @@ hasCJKLanguage = true #字数统计计入中文
 enableRobotsTXT = true
 enableEmoji = true
 enableGitInfo = true
-relativeURLs = true
+relativeURLs = false
 theme = "LoveIt"
 
 [author]
