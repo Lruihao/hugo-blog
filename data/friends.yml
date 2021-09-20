@@ -22,14 +22,10 @@
   avatar: https://cdn.jsdelivr.net/gh/honjun/ImageHosting/sina/006bYVyvgy1ftand2qurdj303c03cdfv.jpg
   url: https://www.hojun.cn
   discription: 一个好奇的博客！前端开发。
-- nickname: 酱油哥
+- nickname: AnFrank
   avatar: https://enfangzhong.github.io/images/avatar.jpg
   url: https://enfangzhong.github.io
   discription: 机器学习，SQL
-- nickname: 小情书
-  avatar: 
-  url: https://lancelik.github.io
-  discription: 坐标上海，前后端工程师。
 - nickname: Domon
   avatar: https://www.domon.cn/content/images/2019/06/avatar_shiba-1.jpg
   url: https://www.domon.cn
@@ -38,16 +34,12 @@
   avatar: https://blog.mythsman.com/content/images/2019/07/----_20190713220203.jpg
   url: https://blog.mythsman.com
   discription: hexo-douban插件开发者，坐标上海拼多多博客看起来是个很有生活感与学习感的地方。
-- nickname: 孤舟leng
-  avatar: 
-  url: https://blleng.cn
-  discription: 记录一些有趣的技术，分享算法和一些想法。
 - nickname: 在线分享网
   avatar: https://avatars2.githubusercontent.com/u/49894775?s=460&v=4
   url: https://me.obey.fun
   discription: 分享，成为你我之间的快乐！
 - nickname: Wizzie
-  avatar: #https://wizzie.top/avatar/smile.jpg
+  avatar: https://cdn.jsdelivr.net/gh/AloneAlive/alonealive.github.com_images@1.0.3/2020_images/website_img/head.png
   url: https://wizzie.top
   discription: “Brave, Confident, Come on!”
 - nickname: 星空无限
@@ -58,22 +50,10 @@
   avatar: https://cdn.jsdelivr.net/gh/leafjame/cdn/img/logo/beichen.png
   url: https://www.liaofuzhan.com
   discription: “Java狮 北漂男 摄影 旅行 赚钱”
-- nickname: 小丁
-  avatar: https://tding.top/images/avatar.webp
-  url: https://tding.top
-  discription: “世间所有的相遇，都是久别重逢”
 - nickname: Lars Cheng
   avatar: https://www.larscheng.com/img/001.png
   url: https://www.larscheng.com
   discription: 分享Java技术, 记录点滴生活。
-- nickname: 松林羊
-  avatar: #http://www.andus.top/images/head-nav.png
-  url: http://www.andus.top
-  discription: 面朝大海，春暖花开。
-- nickname: 淺的小站
-  avatar:
-  url: http://52chang.wang
-  discription: 深思、淺思、三思而行。
 - nickname: JerryC
   avatar: https://immyw.com//img/avatar.png
   url: https://immyw.com
@@ -82,7 +62,15 @@
   avatar: https://removeif.github.io/images/avatar.jpg
   url: https://removeif.github.io
   discription: 后端开发，技术分享
-- nickname: 暂时不接受友链
-  avatar:
-  url: https://lruihao.cn
-  discription: 暂时不接受友链！
+- nickname: Best-yz
+  avatar: https://cdn.jsdelivr.net/gh/HPU-Yz/cdn-speed/medias/avatar.jpg
+  url: https://best-yz.cn
+  discription: 生活还是很美好滴…
+- nickname: 木子雷
+  avatar: https://cdn.jsdelivr.net/gh/leishen6/ImgHosting/MuZiLei_blog_img/Heart.png
+  url: https://leishen6.github.io
+  discription: web后端码仔，记录生活，分享技术！
+# - nickname: 暂时不接受友链
+#   avatar:
+#   url: https://lruihao.cn
+#   discription: 暂时不接受友链！
