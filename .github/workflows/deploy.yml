@@ -33,4 +33,4 @@ jobs:
           COS_BUCKET_REGION: ap-chengdu
         run: coscmd config -a $COS_SECRET_ID -s $COS_SECRET_KEY -b $COS_BUCKET_NAME -r $COS_BUCKET_REGION
       - name: Deploy to COS Bucket
-        run: coscmd upload -r -s public/ /
+        run: coscmd upload -r -s --delete -f public/ /
