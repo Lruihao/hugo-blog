@@ -26,4 +26,8 @@ lightgallery: false
 license: '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 ---
 
+{{< admonition quote "quote" false >}}
+note abstract info tip success question warning failure danger bug example quote 
+{{< /admonition >}}
+
 <!--more-->
