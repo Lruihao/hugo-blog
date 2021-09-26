@@ -13,7 +13,8 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: latest
-      - name: Build hugo static files
+          extended: true
+      - name: Build Hugo static files
         run: hugo --minify
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3
