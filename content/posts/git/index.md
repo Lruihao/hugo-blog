@@ -5,6 +5,7 @@ tags: ["Git"]
 categories: ["Git"]
 weight: 99
 featuredImage: "/posts/git/images/relation-1.png"
+license: '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 ---
 
 - **工作区**：就是你在电脑里能看到的目录。

@@ -184,7 +184,7 @@ theme = "LoveIt"
     # 主页文章列表
     [params.home.posts]
       enable = true
-      paginate = 6
+      paginate = 10
 
   # 作者的社交信息设置
   [params.social]
@@ -226,7 +226,7 @@ theme = "LoveIt"
       # 是否显示代码块的复制按钮
       copy = true
       # 默认展开显示的代码行数
-      maxShownLines = 10
+      maxShownLines = 20
     #  KaTeX 数学公式
     [params.page.math]
       enable = true
@@ -258,10 +258,10 @@ theme = "LoveIt"
       fullscreen = true
     #  文章页面的分享信息设置
     [params.page.share]
-      enable = false
-      Twitter = false
+      enable = true
+      Twitter = true
       Facebook = false
-      Linkedin = false
+      Linkedin = true
       Whatsapp = false
       Pinterest = false
       Tumblr = false
