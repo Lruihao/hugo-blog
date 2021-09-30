@@ -1,7 +1,7 @@
 ---
 title: sort排序
 date: 2018-06-14 20:23:03
-tags: ["C++","排序","STL","ACM"]
+tags: ["C++","sort","STL","ACM"]
 categories: ["ACM"]
 toc:
   enable: false

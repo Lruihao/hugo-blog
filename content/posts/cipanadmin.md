@@ -1,7 +1,7 @@
 ---
 title: 磁盘存储器的管理
 date: 2019-03-04 23:08:32
-tags: ["操作系统","磁盘"]
+tags: ["OS","磁盘"]
 categories: ["others"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: CRON 表达式的基本语法
 date: 2020-03-25 09:19:44
-tags: ["linux","shell","定时任务"]
+tags: ["linux","shell","Cron"]
 categories: ["Fullstack"]
 ---
 

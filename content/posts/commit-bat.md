@@ -1,7 +1,7 @@
 ---
 title: 通过bat批处理文件自动提交博客代码
 date: 2018-11-17 14:25:49
-tags: ["批处理","脚本","bat"]
+tags: ["脚本","bat"]
 categories: ["others"]
 ---
 
