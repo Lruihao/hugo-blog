@@ -3,7 +3,7 @@ title: hexo 博客源码备份
 date: 2018-11-03 12:49:28
 tags: ["hexo","Git","Nodejs"]
 categories: ["hexo","Git"]
-featuredImage: "/posts/blog_backup/images/1.png"
+featuredImage: "/posts/blog-backup/images/1.png"
 ---
 
 ### 备份hexo博客

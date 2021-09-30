@@ -1,0 +1,17 @@
+---
+title: "博客 100 天啦！"
+date: 2018-09-05 23:32:52
+tags: ["生活随笔"]
+categories: ["生活随笔"]
+toc:
+  enable: false
+hiddenFromHomePage: true
+hiddenFromSearch: true
+---
+![100天](images/100.png)
+
+<!--more-->
+
+**突然一看，搭建这个博客网站已经过去 100 天了，  
+100天过去浏览量过万，还不错的样子 (不过大多都是熟人在看，当然也有一些网友在看，这是值得高兴的)  
+继续加油，好好学习！**
