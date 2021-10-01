@@ -1,7 +1,7 @@
 title = "菠菜眾長"
 baseURL = "https://lruihao.cn"
-defaultContentLanguage = "zh-cn"
-languageCode = "zh-CN" # CN 大写
+defaultContentLanguage = "zh-tw" # theme lang
+languageCode = "zh-CN"
 hasCJKLanguage = true #字数统计计入中文
 enableRobotsTXT = true
 enableEmoji = true
