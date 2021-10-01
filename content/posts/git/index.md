@@ -1,5 +1,5 @@
 ---
-title: Git常用指令汇总
+title: Git 常用指令汇总
 date: 2018-10-30T8:59:56+08:00
 tags: ["Git"]
 categories: ["Git"]
