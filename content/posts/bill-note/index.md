@@ -1,8 +1,8 @@
 ---
 title: 基于 leancloud-storage 实现的无后端记账本
 date: 2021-03-02 21:46:40
-tags: ["Frontend","JavaScript","leancloud","VueJS"]
-categories: ["JavaScript"]
+tags: ["JavaScript","leancloud","VueJS","Frontend"]
+categories: ["JavaScript","VueJS"]
 license: '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 ---
 # 起因
