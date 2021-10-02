@@ -1,0 +1,2 @@
+cd ..
+hugo server --disableFastRender
