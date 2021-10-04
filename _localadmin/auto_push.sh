@@ -7,7 +7,7 @@ git commit -m "Feat: Update public module commit id"
 git add .
 read -p "Please enter commit message: " commitMsg
 if [ -z $commitMsg ];then
-  commitMsg="『菠菜眾長』源码自动更新：$(date +'%F %a %T')"
+  commitMsg="Auto: 『菠菜眾長』内容更新 $(date +'%F %a %T')"
 fi
 git commit -m "$commitMsg"
 git push
