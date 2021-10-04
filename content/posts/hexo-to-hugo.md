@@ -66,8 +66,19 @@ hugo serve --disableFastRender
 hugo --minify
 ```
 
+## Hugo 使用
+- [LoveIt 主题文档 - 基本概念](https://hugoloveit.com/zh-cn/theme-documentation-basics)
+
+写作指南
+
+- [LoveIt 主题文档 - 内容](https://hugoloveit.com/zh-cn/theme-documentation-content/)
+- [LoveIt 主题文档 - 内置 Shortcodes](https://hugoloveit.com/zh-cn/theme-documentation-built-in-shortcodes/)
+- [LoveIt 主题文档 - 扩展 Shortcodes](https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/)
+
 ## 迁移待办
 > 原来 hexo 做了大量的美化和扩展功能，迁移到 hugo 想尽可能多的保留。取之精华，去其糟粕。
+
+{{< cardlink href="https://github.com/Lruihao/hugo-blog" content="hugo-blog" >}}
 
 - [X] 迁移 hexo 所有文章内容
 - [ ] 迁移 hexo 所有页面内容
@@ -82,7 +93,7 @@ hugo --minify
   - [ ] [cos-album](https://img.lruihao.cn) 和 [🍚饭醉团伙🍷](https://sz.journey.lruihao.cn) 整合到博客 `cos-album/`
   - [ ] 新增 `demo/`, 以子模组的形式存放前端 demo
     - [ ] serverless 记账本
-- [ ] 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化(但似乎没必要)
+- [x] 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化(但似乎没必要)
 - [ ] 博客 SEO 优化迁移
 - [X] `Github actions` 自动部署到 **Github pages** 和 **COS** 脚本编写
 - [ ] hugo 本地管理 shell 脚本工具编写
@@ -102,7 +113,7 @@ hugo --minify
   - [ ] [恋爱叙事体] `love` 归档
   - [ ] [光] 归档
 - [ ] hugo 内容加密研究
-- [ ] `Lruihao/hugo-blog/README.md` 撰写，发布1.0.0 版本做完整备份，base on theme version
+- [ ] `Lruihao/hugo-blog/README.md` 撰写，发布 1.0.0 版本做完整备份，base on theme version
 - [ ] 更换 gravatar 头像
 - [ ] 博客在线编辑器研究 github1s 等
 - [ ] COS Ablum todo
