@@ -4,9 +4,9 @@ date: {{ .Date }}
 subtitle: ""
 description: ""
 tags:
-- draft
+  - draft
 categories:
-- draft
+  - draft
 comment: false
 toc: false
 weight: 0
