@@ -1,13 +1,13 @@
 #!/bin/bash
 #autour: Lruihao
 echo "Please enter the serial number to work"
-echo "----------------------------------"
+echo "--------------------------------------"
 echo "1. post generator"
 echo "2. hugo server"
 echo "3. hugo build"
 echo "4. public async"
 echo "5. auto push"
-echo "----------------------------------"
+echo "--------------------------------------"
 echo "Press Ctrl+C to stop"
 
 read num
