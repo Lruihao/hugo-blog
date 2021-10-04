@@ -4,9 +4,9 @@ date: {{ .Date }}
 subtitle: ""
 description: ""
 tags:
-- 待分類
+- draft
 categories:
-- 待分類
+- draft
 comment: false
 toc: false
 weight: 0
