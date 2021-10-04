@@ -66,7 +66,7 @@ hugo serve --disableFastRender
 hugo --minify
 ```
 
-## Hugo 使用
+## Hugo&LoveIt 使用
 - [LoveIt 主题文档 - 基本概念](https://hugoloveit.com/zh-cn/theme-documentation-basics)
 
 写作指南
@@ -75,11 +75,12 @@ hugo --minify
 - [LoveIt 主题文档 - 内置 Shortcodes](https://hugoloveit.com/zh-cn/theme-documentation-built-in-shortcodes/)
 - [LoveIt 主题文档 - 扩展 Shortcodes](https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/)
 
-## 迁移待办
-> 原来 hexo 做了大量的美化和扩展功能，迁移到 hugo 想尽可能多的保留。取之精华，去其糟粕。
-
+## Todo list
 {{< cardlink href="https://github.com/Lruihao/hugo-blog" content="hugo-blog" >}}
 
+> 原来 hexo 做了大量的美化和扩展功能，迁移到 hugo 想尽可能多的保留。取之精华，去其糟粕。
+
+### Base
 - [X] 迁移 hexo 所有文章内容
 - [ ] 迁移 hexo 所有页面内容
   - [x] 留言页面
@@ -96,14 +97,8 @@ hugo --minify
 - [x] 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化(但似乎没必要)
 - [ ] 博客 SEO 优化迁移
 - [X] `Github actions` 自动部署到 **Github pages** 和 **COS** 脚本编写
-- [ ] hugo 本地管理 shell 脚本工具编写
+- [x] hugo 本地管理 shell 脚本工具编写
 - [X] 知乎卡片式链接 改成 hugo shortcodes, 取名 `cardlink`
-- [ ] hugo LoveIt 主题整体优化
-  - [ ] CSS 优化，背景，元素圆角化，外圆内方，居中对其等
-  - [ ] 沐目体引入
-  - [ ] TOC 序号生成，必要时建 PR 或 issue 到 LoveIt 仓库
-  - [ ] subtitle 等细节优化
-  - [ ] Code Review
 - [ ] zxm/沐目体 归档 :(
   - [ ] 安装 沐目体
   - [ ] 压缩 沐目体 fontspider
@@ -116,9 +111,18 @@ hugo --minify
 - [ ] `Lruihao/hugo-blog/README.md` 撰写，发布 1.0.0 版本做完整备份，base on theme version
 - [ ] 更换 gravatar 头像
 - [ ] 博客在线编辑器研究 github1s 等
-- [ ] COS Ablum todo
-  - [ ] Code Review
-  - [ ] Feature: lightbox
-  - [ ] Feature: scheme -> range img 2 show
-  - [ ] Feature: i18n
-- [ ] valine-admin 重构
+
+### Theme LoveIt
+> hugo LoveIt 主题整体优化，~~必要时建 PR 或 issue 到 LoveIt 仓库~~ (LoveIt 已停更一年多)  
+> 先把自己发现和 LoveIt 原 repo 的 issue 尽可能的修复，修改的原则是：**不改动原项目代码**，  
+> 唯一途径就是在站点相同的目录用**新增**的方式替代**修改、删除**操作。  
+> 之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。
+
+- [ ] CSS 优化，背景，元素圆角化，外圆内方，居中对其等
+- [ ] 沐目体引入
+- [ ] TOC 序号生成
+- [ ] Fix: 无标题时也会生成目录的 BUG
+- [ ] subtitle 等细节优化
+- [ ] Fix: typeit 打印代码时跑版的问题
+- [ ] Fix: 文章 `h1` 标题多行跑版
+- [ ] Code Review
