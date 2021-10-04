@@ -34,7 +34,7 @@ draft: false
 2. 文章是否會插入圖片等資源 (默認：否)
 ```bash
 #!/bin/bash
-#autour: Lruihao
+#author: Lruihao
 cd ..
 read -p "Please enter the article name: " postName
 if [ -z $postName ];then
@@ -73,7 +73,7 @@ git commit -m "Feat: Update public module commit id"
 不輸入 Git 提交訊息會使用腳本中默認訊息 `Docs: 『菠菜眾長』内容更新 YYYY-MM-DD week hh:mm::ss`
 ```bash
 #!/bin/bash
-#autour: Lruihao
+#author: Lruihao
 cd ..
 git submodule update --remote 
 git add public
@@ -93,7 +93,7 @@ git push
 
 ```bash
 #!/bin/bash
-#autour: Lruihao
+#author: Lruihao
 echo "Please enter the serial number to work"
 echo "--------------------------------------"
 echo "1. post generator"

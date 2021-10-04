@@ -1,5 +1,5 @@
 #!/bin/bash
-#autour: Lruihao
+#author: Lruihao
 echo "Please enter the serial number to work"
 echo "--------------------------------------"
 echo "1. post generator"

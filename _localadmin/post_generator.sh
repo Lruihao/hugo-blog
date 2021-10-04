@@ -1,5 +1,5 @@
 #!/bin/bash
-#autour: Lruihao
+#author: Lruihao
 cd ..
 read -p "Please enter the article name: " postName
 if [ -z $postName ];then

@@ -1,5 +1,5 @@
 #!/bin/bash
-#autour: Lruihao
+#author: Lruihao
 cd ..
 git submodule update --remote 
 git add public
