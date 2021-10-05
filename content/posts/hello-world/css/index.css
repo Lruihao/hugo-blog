@@ -1,9 +1,12 @@
-.text-right {
-  text-align: right;
+.site-data {
+  text-align: center;
 }
-.run-times {
-  font-size: .875rem!important;
+.site-data span {
+  font-size: .875rem;
   color: #a9a9b3;
+}
+.color-dark-gray{
+  color: DarkSlateGray;
 }
 .animate-icon {
   color: #dc143c;

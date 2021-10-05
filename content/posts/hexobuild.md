@@ -157,8 +157,7 @@ local_search:
 ### 站点访问量，访客数
 打开以下路径在你喜欢的地方添加代码，`\blog\hexo\themes\主题名字\layout\_partial`，找到 `footer.ejs`文件
 ```html
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script>
 
 <span id="busuanzi_container_page_pv">
     本站总访问量<span id="busuanzi_value_site_pv"></span>次  |  

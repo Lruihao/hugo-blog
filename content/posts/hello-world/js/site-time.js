@@ -17,7 +17,7 @@ function createTime() {
   if (String(seconds).length === 1) {
     seconds = "0" + seconds;
   }
-  document.querySelector(".run-times").innerHTML = `Running: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+  document.querySelector(".run-times").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
 //setInterval("createTime()", 500);

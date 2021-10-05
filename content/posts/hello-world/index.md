@@ -9,8 +9,7 @@ toc:
 featuredImagePreview: "/posts/hello-world/images/lunyu.jpg"
 ---
 
-> “每天早晨叫醒你的不是鬧鐘，而是你的夢想。”
-> <p class="text-right"><i class="fas fa-heartbeat animate-icon"></i> <span class="run-times" title="Site lruihao.cn running...">Loading...</span></p>
+> “每天早晨叫醒你的不是鬧鐘，而是你的夢想。”  
 
 我有過靠著這種信念撐下來的日子，我見過自己努力的樣子，至於現在的自己配不配得上當初努力的自己，  
 其實也不重要了，還望披荊斬棘，不改初心。
@@ -27,6 +26,25 @@ featuredImagePreview: "/posts/hello-world/images/lunyu.jpg"
 
 ![現在並沒有刀槍入庫，馬放南山，衹是在奔赴另一片山海](images/lunyu.jpg "逝者如斯乎，不舍昼夜")
 
+<div class="site-data">
+  <span id="busuanzi_container_site_uv">
+    <i class="fas fa-user color-dark-gray"></i>
+    <span title="總訪客量" id="busuanzi_value_site_uv">
+      <i class="fa fa-spinner fa-spin"></i>
+    </span>
+  </span>
+  <span class="site-time" title="Site lruihao.cn running...">
+    <i class="fas fa-heartbeat animate-icon"></i>
+    <span class="run-times">Loading...</span>
+  </span>
+  <span id="busuanzi_container_site_pv">
+    <i class="fas fa-eye color-dark-gray"></i>
+    <span title="總訪問量" id="busuanzi_value_site_pv">
+      <i class="fa fa-spinner fa-spin"></i>
+    </span>
+  </span>
+</div>
 
-<link rel="stylesheet" href="css/site-time.css"/>
+<link rel="stylesheet" href="css/index.css"/>
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script>
 <script src="js/site-time.js" defer></script>
