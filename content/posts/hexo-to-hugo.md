@@ -95,7 +95,7 @@ hugo --minify
   - [ ] 新增 `demo/`, 以子模组的形式存放前端 demo
     - [ ] serverless 记账本
 - [x] 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化(但似乎没必要)
-- [ ] 博客 SEO 优化迁移
+- [x] 博客 SEO 优化迁移
 - [X] `Github actions` 自动部署到 **Github pages** 和 **COS** 脚本编写
 - [x] hugo 本地管理 shell 脚本工具编写
 - [X] 知乎卡片式链接 改成 hugo shortcodes, 取名 `cardlink`

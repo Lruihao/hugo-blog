@@ -27,9 +27,9 @@ featuredImagePreview: "/posts/hello-world/images/lunyu.jpg"
 ![現在並沒有刀槍入庫，馬放南山，衹是在奔赴另一片山海](images/lunyu.jpg "逝者如斯乎，不舍昼夜")
 
 <div class="site-data">
-  <span id="busuanzi_container_site_uv">
+  <span id="busuanzi_container_site_uv" title="總訪客量">
     <i class="fas fa-user color-dark-gray"></i>
-    <span title="總訪客量" id="busuanzi_value_site_uv">
+    <span id="busuanzi_value_site_uv">
       <i class="fa fa-spinner fa-spin"></i>
     </span>
   </span>
@@ -37,9 +37,9 @@ featuredImagePreview: "/posts/hello-world/images/lunyu.jpg"
     <i class="fas fa-heartbeat animate-icon"></i>
     <span class="run-times">Loading...</span>
   </span>
-  <span id="busuanzi_container_site_pv">
+  <span id="busuanzi_container_site_pv" title="總訪問量">
     <i class="fas fa-eye color-dark-gray"></i>
-    <span title="總訪問量" id="busuanzi_value_site_pv">
+    <span id="busuanzi_value_site_pv">
       <i class="fa fa-spinner fa-spin"></i>
     </span>
   </span>
