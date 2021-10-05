@@ -75,9 +75,10 @@ git commit -m "Feat: Update public module commit id"
 #!/bin/bash
 #author: Lruihao
 cd ..
-git submodule update --remote 
-git add public
-git commit -m "Feat: Update public module commit id"
+# 是否需要每次提交自動更新子模組
+# git submodule update --remote 
+# git add public
+# git commit -m "Feat: Update public module commit id"
 git add .
 read -p "Please enter commit message: " commitMsg
 if [ -z $commitMsg ];then
