@@ -82,24 +82,29 @@ hugo --minify
 
 ### Base
 - [X] 迁移 hexo 所有文章内容
-- [ ] 迁移 hexo 所有页面内容
+- <details>
+  <summary><i class="far fa-check-square fa-fw"></i>迁移 hexo 所有页面内容</summary>
+
   - [x] 留言页面
   - [x] 网友打赏支持页面，整合到留言页面
   - [x] 重写关于页面，一切从简
   - [x] 友情链接页面
-  - [ ] 重写 404 页面
-  - [ ] 热度页面整合到 404 页面
+  - [ ] ~~重写 404 页面~~
   - [x] 站点时间和不蒜子计数改到 hello-world 页面
-- [ ] 新增页面
-  - [ ] [cos-album](https://img.lruihao.cn) 和 [🍚饭醉团伙🍷](https://sz.journey.lruihao.cn) 整合到博客 `cos-album/`
-  - [ ] 新增 `demo/`, 以子模组的形式存放前端 demo
-    - [ ] serverless 记账本
+
+</details>
+
+- [ ] [cos-album](https://img.lruihao.cn) 和 [🍚饭醉团伙🍷](https://sz.journey.lruihao.cn) 整合到博客 `cos-album/`
+- [ ] 新增 `demo/`, 以子模组的形式存放前端 demo
+  - [ ] serverless 记账本
 - [x] 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化(但似乎没必要)
 - [x] 博客 SEO 优化迁移
 - [X] `Github actions` 自动部署到 **Github pages** 和 **COS** 脚本编写
 - [x] hugo 本地管理 shell 脚本工具编写
 - [X] 知乎卡片式链接 改成 hugo shortcodes, 取名 `cardlink`
-- [ ] zxm/沐目体 归档 :(
+- <details>
+  <summary><i class="far fa-square fa-fw"></i>zxm/沐目体 归档 :(</summary>
+  
   - [ ] 安装 沐目体
   - [ ] 压缩 沐目体 fontspider
   - [ ] 沐目体 post 修订
@@ -107,6 +112,9 @@ hugo --minify
   - [ ] 实时预览功能 base on Vuejs
   - [ ] [恋爱叙事体] `love` 归档
   - [ ] [光] 归档
+
+</details>
+
 - [ ] hugo 内容加密研究
 - [ ] `Lruihao/hugo-blog/README.md` 撰写，发布 1.0.0 版本做完整备份，base on theme version
 - [ ] 更换 gravatar 头像

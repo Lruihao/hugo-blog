@@ -37,6 +37,7 @@ comment: false
 - [ ] [hexo to hugo](/posts/hexo-to-hugo/#todo-list)
 - [ ] [COS Album v1.1.8](https://github.com/Lruihao/cos-album/milestone/3)
 - [ ] valine-admin 重构
+  - [ ] Feature: 热度页面
 - [ ] jsDoc & PHPDoc
 - [ ] uni-app 學習與實踐
 - [ ] dart
