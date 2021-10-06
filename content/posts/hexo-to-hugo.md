@@ -95,8 +95,7 @@ hugo --minify
 </details>
 
 - [ ] [cos-album](https://img.lruihao.cn) 和 [🍚饭醉团伙🍷](https://sz.journey.lruihao.cn) 整合到博客 `cos-album/`
-- [ ] 新增 `demo/`, 以子模组的形式存放前端 demo
-  - [ ] serverless 记账本
+- [ ] ~~新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等~~ (保持原本博客的纯粹性)
 - [x] 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化(但似乎没必要)
 - [x] 博客 SEO 优化迁移
 - [X] `Github actions` 自动部署到 **Github pages** 和 **COS** 脚本编写

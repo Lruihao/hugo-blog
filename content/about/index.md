@@ -35,10 +35,11 @@ comment: false
 <!-- list 太長時使用 html details 標籤隱藏已完成的 -->
 ### Study/Code myself
 - [ ] [hexo to hugo](/posts/hexo-to-hugo/#todo-list)
+- [ ] todo list 小工具，JS 實現
 - [ ] [COS Album v1.1.8](https://github.com/Lruihao/cos-album/milestone/3)
 - [ ] valine-admin 重构
   - [ ] Feature: 热度页面
-- [ ] jsDoc & PHPDoc
+- [ ] JSDoc & PHPDoc
 - [ ] uni-app 學習與實踐
 - [ ] dart
 - [ ] flutter
