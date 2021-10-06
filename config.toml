@@ -7,6 +7,8 @@ enableRobotsTXT = true
 enableEmoji = true
 enableGitInfo = true
 relativeURLs = false
+buildDrafts = true
+summaryLength = 150
 theme = "LoveIt"
 
 # Post frontmatter config
@@ -174,7 +176,7 @@ theme = "LoveIt"
     # date format (month and day)
     dateFormat = "01-02"
     # amount of RSS pages
-    rss = 10
+    rss = 20
 
   #  List (category or tag) page config
   [params.list]
@@ -183,12 +185,12 @@ theme = "LoveIt"
     # date format (month and day)
     dateFormat = "01-02"
     # amount of RSS pages
-    rss = 10
+    rss = 20
 
   # Home page config
   [params.home]
     #  amount of RSS pages
-    rss = 10
+    rss = 20
     # Home page profile
     [params.home.profile]
       enable = true
@@ -303,7 +305,7 @@ theme = "LoveIt"
     # whether to show link to Raw Markdown content of the content
     linkToMarkdown = true
     #  whether to show the full text content in RSS
-    rssFullText = false
+    rssFullText = true
     #  Table of the contents config
     [params.page.toc]
       # whether to enable the table of the contents
