@@ -37,7 +37,7 @@ comment: false
 用我所学，学我所用。不盲目堆疊技術棧，保持謙遜，保持探索欲，砥礪前行。
 
 ## Recent activity
-{{< cardlink href="https://github.com/Lruihao/hugo-blog/issues" content="huog-blog/issues" >}}
+{{< cardlink href="https://github.com/Lruihao/hugo-blog/issues" content="hugo-blog/issues" >}}
 
 - [ ] [COS Album v1.1.8](https://github.com/Lruihao/cos-album/milestone/3)
 
