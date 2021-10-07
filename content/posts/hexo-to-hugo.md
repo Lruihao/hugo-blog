@@ -94,7 +94,7 @@ hugo --minify
 
 </details>
 
-- [ ] [cos-album](https://img.lruihao.cn) 和 [🍚饭醉团伙🍷](https://sz.journey.lruihao.cn) 整合到博客 `cos-album/`
+- [ ] [cos-album](https://img.lruihao.cn) 和 [🍚饭醉团伙🍷](https://sz.journey.lruihao.cn) 整合到博客 `cos-album/` [#7](https://github.com/Lruihao/hugo-blog/issues/7)
 - [ ] ~~新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等~~ (保持原本博客的纯粹性)
 - [x] 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化(但似乎没必要)
 - [x] 博客 SEO 优化迁移
@@ -102,8 +102,8 @@ hugo --minify
 - [x] hugo 本地管理 shell 脚本工具编写
 - [X] 知乎卡片式链接 改成 hugo shortcodes, 取名 `cardlink`
 - <details>
-  <summary><i class="far fa-square fa-fw"></i>zxm/沐目体 归档 :(</summary>
-  
+  <summary><i class="far fa-square fa-fw"></i>zxm/沐目体 归档 :( <a href="https://github.com/Lruihao/hugo-blog/issues/6" target="_blank" rel="noopener noreffer">#6</a></summary>
+
   - [ ] 安装 沐目体
   - [ ] 压缩 沐目体 fontspider
   - [ ] 沐目体 post 修订
@@ -114,16 +114,18 @@ hugo --minify
 
 </details>
 
-- [ ] hugo 内容加密研究
-- [ ] `Lruihao/hugo-blog/README.md` 撰写，发布 1.0.0 版本做完整备份，base on theme version
-- [ ] 更换 gravatar 头像
-- [ ] 博客在线编辑器研究 github1s 等
+- [ ] hugo 内容加密研究 [#3](https://github.com/Lruihao/hugo-blog/issues/3)
+- [ ] `Lruihao/hugo-blog/README.md` 撰写, MIT, 发布 1.0.0 版本做完整备份，base on theme version
+- [ ] 更换 gravatar 头像 [#3](https://github.com/Lruihao/hugo-blog/issues/3)
+- [ ] 博客在线编辑器研究 github1s 等 [#5](https://github.com/Lruihao/hugo-blog/issues/5)
 
 ### Theme LoveIt
 > hugo LoveIt 主题整体优化，~~必要时建 PR 或 issue 到 LoveIt 仓库~~ (LoveIt 已停更一年多)  
 > 先把自己发现和 LoveIt 原 repo 的 issue 尽可能的修复，修改的原则是：**不改动原项目代码**，  
 > 唯一途径就是在站点相同的目录用**新增**的方式替代**修改、删除**操作。  
 > 之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。
+
+进度更新至 [#8](https://github.com/Lruihao/hugo-blog/issues/8)
 
 - [ ] CSS 优化，背景，元素圆角化，外圆内方，居中对其等
 - [ ] 沐目体引入

@@ -16,7 +16,7 @@ comment: false
 ---
 
 ## 初衷
-{{< admonition note "初衷" >}}
+{{< admonition note "Since: 2018-05-28 20:01:01" >}}
 {{< typeit group=expect >}}
   建站的初衷不是為了炫耀所知，而是記錄無知。  
 {{< /typeit >}}
@@ -31,24 +31,17 @@ comment: false
 
 ---
 
-## Todo list recently
-<!-- list 太長時使用 html details 標籤隱藏已完成的 -->
-### Study/Code myself
-- [ ] [hexo to hugo](/posts/hexo-to-hugo/#todo-list)
-- [ ] todo list 小工具，JS 實現
-- [ ] [COS Album v1.1.8](https://github.com/Lruihao/cos-album/milestone/3)
-- [ ] valine-admin 重构
-  - [ ] Feature: 热度页面
-- [ ] JSDoc & PHPDoc
-- [ ] uni-app 學習與實踐
-- [ ] dart
-- [ ] flutter
-- [ ] 閱讀 《計算機網絡》
-- [ ] 閱讀 《操作系統》
-- [ ] 閱讀 《算法與數據結構》
-- [ ] Web UI 設計
+## About me
+~~在校大學生~~，~~Web 開發實習生~~，社畜...  
+在職: Web 開發偽全棧 (更喜歡前端)  
+用我所学，学我所用。不盲目堆疊技術棧，保持謙遜，保持探索欲，砥礪前行。
 
-### Life
+## Recent activity
+{{< cardlink href="https://github.com/Lruihao/hugo-blog/issues" content="huog-blog/issues" >}}
+
+- [ ] [COS Album v1.1.8](https://github.com/Lruihao/cos-album/milestone/3)
+
+## Life
 - [ ] 臨帖 《心經 - 赵孟頫》
 - [ ] 臨帖 《真草千字文》
 - [ ] 閱讀 《笑場 - 李誕》  進度: [1]/[2]
@@ -61,15 +54,3 @@ comment: false
   - [ ] vscode
   - [x] Git
   - [x] SourceTree
-
-### Work
-- [ ] Axios & Promise
-- [ ] PHP 備課，帶新人
-- [ ] 研究標籤机編程，對接 MES, OrmIT, OIS 系統
-- [ ] jQuery 改原生
-- [ ] 個性化推薦選單
-- [ ] 深入理解 Mysql
-- [ ] ES6
-- [ ] VueJs 全家桶
-- [ ] MVVM
-
