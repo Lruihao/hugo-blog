@@ -44,13 +44,17 @@ comment: false
 ## Life
 - [ ] 臨帖 《心經 - 赵孟頫》
 - [ ] 臨帖 《真草千字文》
-- [ ] 閱讀 《笑場 - 李誕》  進度: [1]/[2]
+- [ ] 閱讀 《笑場 - 李誕》  進度: [2]/[3]
 - [ ] 閱讀 《神雕俠侶 - 金庸》  進度: [1]/[4]
 - [ ] 打籃球🏀
-- [ ] 減脂到 <60kg
-- [ ] 重裝系統后缺失的軟體
-  - [ ] wampserver
-  - [ ] axure
-  - [ ] vscode
+- [x] 減脂到 <60kg
+- <details>
+  <summary><i class="far fa-check-square fa-fw"></i> 重裝系統后缺失的軟體</summary>
+
+  - [x] wampserver
+  - [x] axure
+  - [x] vscode
   - [x] Git
   - [x] SourceTree
+
+</details>
