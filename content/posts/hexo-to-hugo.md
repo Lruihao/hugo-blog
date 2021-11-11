@@ -116,7 +116,7 @@ hugo --minify
 
 - [ ] hugo 内容加密研究 [#3](https://github.com/Lruihao/hugo-blog/issues/3)
 - [ ] `Lruihao/hugo-blog/README.md` 撰写, MIT, 发布 1.0.0 版本做完整备份，base on theme version
-- [ ] 更换 gravatar 头像 [#3](https://github.com/Lruihao/hugo-blog/issues/3)
+- [x] 更换 gravatar 头像 [#4](https://github.com/Lruihao/hugo-blog/issues/4)
 - [ ] 博客在线编辑器研究 github1s 等 [#5](https://github.com/Lruihao/hugo-blog/issues/5)
 
 ### Theme LoveIt
