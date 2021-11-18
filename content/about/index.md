@@ -39,7 +39,7 @@ comment: false
 ## Recent activity
 {{< cardlink href="https://github.com/Lruihao/hugo-blog/issues" content="hugo-blog/issues" >}}
 
-- [ ] [COS Album v1.1.8](https://github.com/Lruihao/cos-album/milestone/3)
+- [ ] [COS Album v1.2.0](https://github.com/Lruihao/cos-album/milestone/3)
 
 ## Life
 - [ ] 臨帖 《心經 - 赵孟頫》
