@@ -3,3 +3,12 @@
 // 自定义样式
 // ==============================
 @import "_partial/_cardlink.scss";
+
+// ==============================
+// Fix LoveIt theme bugs
+// ==============================
+
+// See https://github.com/Lruihao/hugo-blog/issues/19
+.archive .archive-item-date {
+  white-space: nowrap;
+}
