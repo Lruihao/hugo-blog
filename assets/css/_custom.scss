@@ -1,12 +1,18 @@
 // ==============================
 // Custom style
-// 自定义样式
 // ==============================
 @import "_partial/_cardlink.scss";
 
 // ==============================
-// Fix LoveIt theme bugs
+// Normalize style
 // ==============================
+h1 {
+  font-size: 1.5em;
+}
+
+// ==============================
+// Fix LoveIt theme bugs
+// ==============================s
 
 // See https://github.com/Lruihao/hugo-blog/issues/19
 .archive .archive-item-date {
