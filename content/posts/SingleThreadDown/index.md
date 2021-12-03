@@ -3,7 +3,7 @@ title: java 实现一个单线程的资源下载器
 date: 2019-05-08 20:55:02
 tags: ["GUI","URLConnection","HTTP","Java","Backend"]
 categories: ["Java"]
-featuredImage: "/posts/SingleThreadDown/images/1.png"
+featuredImage: "/posts/singlethreaddown/images/1.png"
 ---
 
 > 实现一个简单的基于单线程的资源下载器，如图所示，用户可以任意指定下载资源的链接地址，系统根据该地址判断资源是否存在，如果存在，则将该资源下载到本地。
