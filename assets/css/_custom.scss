@@ -18,3 +18,9 @@ h1 {
 .archive .archive-item-date {
   white-space: nowrap;
 }
+
+// See https://github.com/dillonzq/LoveIt/issues/311
+img[data-sizes="auto"] {
+  display: block;
+  width: 100%;
+}
