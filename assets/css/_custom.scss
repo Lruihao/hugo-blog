@@ -19,6 +19,14 @@ header .logo {
   font-size: 1.2rem!important;
   font-weight: normal;
 }
+#header-mobile {
+  .header-wrapper {
+    max-height: 3.5rem;
+  }
+  .header-title-post {
+    font-size: 1.1rem!important;
+  }
+}
 
 .single {
   .single-subtitle {
@@ -65,9 +73,7 @@ header .logo {
 // Mobile style
 // ==============================
 @media only screen and (max-width: 680px) {
-  .header-title-post {
-    font-size: 1.1rem!important;
-  } 
+  
 }
 
 // ==============================
