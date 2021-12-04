@@ -236,6 +236,7 @@ beian:
 ```xml 使用方法
 <div class="shaky">(づ●'◡'●)づ ❥内容区</div>
 ```
+<div class="shaky">(づ●'◡'●)づ ❥内容区</div>
 
 ## 左下角微信公众号
 ```xml 替换为自己的二维码

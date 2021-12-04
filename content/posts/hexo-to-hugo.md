@@ -104,7 +104,7 @@ hugo --minify
 - <details>
   <summary><i class="far fa-square fa-fw"></i>zxm/沐目体 归档 :( <a href="https://github.com/Lruihao/hugo-blog/issues/6" target="_blank" rel="noopener noreffer">#6</a></summary>
 
-  - [ ] 安装 沐目体
+  - [x] 安装 沐目体
   - [ ] 压缩 沐目体 fontspider
   - [ ] 沐目体 post 修订
   - [ ] typyit 配合 随机诗词和网易云热评 API
@@ -127,11 +127,11 @@ hugo --minify
 
 进度更新至 [#8](https://github.com/Lruihao/hugo-blog/issues/8)
 
-- [ ] CSS 优化，背景，元素圆角化，外圆内方，居中对其等
-- [ ] 沐目体引入
-- [ ] TOC 序号生成
-- [ ] Fix: 无标题时也会生成目录的 BUG
-- [ ] subtitle 等细节优化
-- [ ] Fix: typeit 打印代码时跑版的问题
-- [ ] Fix: 文章 `h1` 标题多行跑版
-- [ ] Code Review
+- [x] CSS 优化，背景，元素圆角化，外圆内方，居中对齐等
+- [x] 沐目体引入
+- [ ] ~~TOC 序号生成~~
+- [ ] ~~Fix: 无标题时也会生成目录的 BUG~~
+- [x] subtitle 等细节优化
+- [ ] ~~Fix: typeit 打印代码时跑版的问题~~
+- [x] Fix: 文章 `h1` 标题多行跑版
+- [x] Code Review

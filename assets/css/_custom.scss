@@ -2,6 +2,73 @@
 // Custom style
 // ==============================
 @import "_partial/_cardlink.scss";
+@import "/css/shaky.css";
+
+header .logo {
+  min-height: 1.5rem;
+  height: 1.5rem;
+  vertical-align: revert;
+}
+.header-title {
+  font-family: lrh-title;
+  font-size: 2rem!important;
+  font-weight: normal;
+}
+.header-title-post {
+  font-family: lrh-title;
+  font-size: 1.2rem!important;
+  font-weight: normal;
+}
+
+.single {
+  .single-subtitle {
+    color: #57606a;
+  }
+
+  .content {
+    .table-wrapper>table {
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0 0 5px #888;
+      >tbody tr:last-child td {
+        border-bottom: none;
+      }
+    }
+    img[data-sizes="auto"] {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+}
+
+.home[posts] .summary .content{
+  display: block;
+}
+
+
+// Custom font
+@font-face {
+  font-family: MMT;
+  src: url("/fonts/MMT_579767_SOAJ0.ttf");
+}
+@font-face {
+  font-family: mmt-eg;
+  src: url("/fonts/mmt-eg.ttf");
+}
+@font-face {
+  font-family: lrh-title;
+  src: url("/fonts/Title.ttf");
+}
+
+// ==============================
+// Mobile style
+// ==============================
+@media only screen and (max-width: 680px) {
+  .header-title-post {
+    font-size: 1.1rem!important;
+  } 
+}
 
 // ==============================
 // Normalize style
@@ -12,15 +79,9 @@ h1 {
 
 // ==============================
 // Fix LoveIt theme bugs
-// ==============================s
+// ==============================
 
 // See https://github.com/Lruihao/hugo-blog/issues/19
 .archive .archive-item-date {
   white-space: nowrap;
-}
-
-// See https://github.com/dillonzq/LoveIt/issues/311
-img[data-sizes="auto"] {
-  display: block;
-  width: 100%;
 }
