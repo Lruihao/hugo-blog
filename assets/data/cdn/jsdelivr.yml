@@ -54,8 +54,8 @@ libFiles:
   # aplayer@latest https://github.com/MoePlayer/APlayer
   aplayerCSS: aplayer@latest/dist/APlayer.min.css
   aplayerJS: aplayer@latest/dist/APlayer.min.js
-  # meting@2.0.1 https://github.com/metowolf/MetingJS
-  metingJS: meting@2.0.1/dist/Meting.min.js
+  # meting@latest https://github.com/metowolf/MetingJS
+  metingJS: meting@latest/dist/Meting.min.js
   # gitalk@1.6.2 https://github.com/gitalk/gitalk
   gitalkCSS: gitalk@1.6.2/dist/gitalk.min.css
   gitalkJS: gitalk@1.6.2/dist/gitalk.min.js
