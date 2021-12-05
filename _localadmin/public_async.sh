@@ -1,4 +1,4 @@
 cd ..
 git submodule update --remote 
 git add public
-git commit -m "Feat: Update public module commit id"
+git commit -m ":arrow_up: Feat: Update public module commit id"

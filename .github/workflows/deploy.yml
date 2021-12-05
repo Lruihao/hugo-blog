@@ -23,7 +23,7 @@ jobs:
           external_repository: Lruihao/lruihao.github.io
           publish_branch: main
           publish_dir: ./public
-          commit_message: ${{ github.event.head_commit.message }}
+          commit_message: ":rocket: ${{ github.event.head_commit.message }}"
       - name: Install coscmd
         run: sudo pip install coscmd
       - name: Configure coscmd
