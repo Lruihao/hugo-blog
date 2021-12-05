@@ -8,7 +8,6 @@ tags:
 categories:
   - draft
 comment: false
-toc: false
 weight: 0
 
 images: ""
