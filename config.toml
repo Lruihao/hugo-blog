@@ -523,7 +523,7 @@ theme = "LoveIt"
     # located in "themes/LoveIt/assets/data/cdn/" directory
     # you can store your own data files in the same path under your project:
     # "assets/data/cdn/"
-    data = ""
+    data = "assets/data/cdn/"
 
   #  Compatibility config
   [params.compatibility]

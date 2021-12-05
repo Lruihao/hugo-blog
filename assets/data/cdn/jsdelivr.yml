@@ -1,0 +1,66 @@
+prefix:
+  libFiles: https://cdn.jsdelivr.net/npm/
+  # simple-icons@latest https://github.com/simple-icons/simple-icons
+  simpleIcons: https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/
+libFiles:
+  # normalize.css@latest https://github.com/necolas/normalize.css
+  normalizeCSS: normalize.css@latest/normalize.min.css
+  # fontawesome-free@latest https://fontawesome.com/
+  fontawesomeFreeCSS: '@fortawesome/fontawesome-free@latest/css/all.min.css'
+  # animate.css@latest https://github.com/daneden/animate.css
+  animateCSS: animate.css@latest/animate.min.css
+  # smooth-scroll@latest https://github.com/cferdinandi/smooth-scroll
+  smoothScrollJS: smooth-scroll@latest/dist/smooth-scroll.min.js
+  # autocomplete.js@latest https://github.com/algolia/autocomplete.js
+  autocompleteJS: autocomplete.js@latest/dist/autocomplete.min.js
+  # lunr.js@latest https://lunrjs.com/
+  lunrJS: lunr@latest/lunr.min.js
+  # algoliasearch@latest https://github.com/algolia/algoliasearch-client-javascript
+  algoliasearchJS: algoliasearch@latest/dist/algoliasearch-lite.umd.min.js
+  # lazysizes@latest https://github.com/aFarkas/lazysizes
+  lazysizesJS: lazysizes@latest/lazysizes.min.js
+  # object-fit-images@latest https://github.com/fregante/object-fit-images
+  objectFitImagesJS: object-fit-images@latest/dist/ofi.min.js
+  # twemoji@13.0.0 https://github.com/twitter/twemoji
+  twemojiJS: twemoji@13.0.0/dist/twemoji.min.js
+  # lightgallery.js@latest https://github.com/sachinchoolur/lightgallery.js
+  # lg-thumbnail.js@latest https://github.com/sachinchoolur/lg-thumbnail.js
+  # lg-zoom.js@latest https://github.com/sachinchoolur/lg-zoom.js
+  lightgalleryCSS: lightgallery.js@latest/dist/css/lightgallery.min.css
+  lightgalleryJS: lightgallery.js@latest/dist/js/lightgallery.min.js
+  lightgalleryThumbnailJS: lg-thumbnail.js@latest/dist/lg-thumbnail.min.js
+  lightgalleryZoomJS: lg-zoom.js@latest/dist/lg-zoom.min.js
+  # clipboard.js@latest https://github.com/zenorocha/clipboard.js
+  clipboardJS: clipboard@latest/dist/clipboard.min.js
+  # sharer.js@latest https://github.com/ellisonleao/sharer.js
+  sharerJS: sharer.js@latest/sharer.min.js
+  # typeit@latest https://github.com/alexmacarthur/typeit
+  typeitJS: typeit@latest/dist/typeit.min.js
+  # katex@0.11.1 https://katex.org/
+  katexCSS: katex@0.11.1/dist/katex.min.css
+  katexJS: katex@0.11.1/dist/katex.min.js
+  katexAutoRenderJS: katex@0.11.1/dist/contrib/auto-render.min.js
+  katexCopyTexCSS: katex@0.11.1/dist/contrib/copy-tex.min.css
+  katexCopyTexJS: katex@0.11.1/dist/contrib/copy-tex.min.js
+  katexMhchemJS: katex@0.11.1/dist/contrib/mhchem.min.js
+  # mermaid@8.5.1 https://github.com/knsv/mermaid
+  mermaidJS: mermaid@8.5.1/dist/mermaid.min.js
+  # echarts@4.8.0 https://echarts.apache.org/
+  echartsJS: echarts@4.8.0/dist/echarts.min.js
+  echartsMacaronsJS: echarts@4.8.0/theme/macarons.min.js
+  # mapbox-gl@1.10.1 https://docs.mapbox.com/mapbox-gl-js
+  mapboxGLCSS: mapbox-gl@1.10.1/dist/mapbox-gl.min.css
+  mapboxGLJS: mapbox-gl@1.10.1/dist/mapbox-gl.min.js
+  # aplayer@latest https://github.com/MoePlayer/APlayer
+  aplayerCSS: aplayer@latest/dist/APlayer.min.css
+  aplayerJS: aplayer@latest/dist/APlayer.min.js
+  # meting@2.0.1 https://github.com/metowolf/MetingJS
+  metingJS: meting@2.0.1/dist/Meting.min.js
+  # gitalk@1.6.2 https://github.com/gitalk/gitalk
+  gitalkCSS: gitalk@1.6.2/dist/gitalk.min.css
+  gitalkJS: gitalk@1.6.2/dist/gitalk.min.js
+  # valine@latest https://valine.js.org/
+  valineJS: valine@latest/dist/Valine.min.js
+  # cookieconsent@latest https://github.com/osano/cookieconsent
+  cookieconsentCSS: cookieconsent@latest/build/cookieconsent.min.css
+  cookieconsentJS: cookieconsent@latest/build/cookieconsent.min.js
