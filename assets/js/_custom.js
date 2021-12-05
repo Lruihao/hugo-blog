@@ -1,10 +1,23 @@
 /**
  * @author LRUIHAO.CN
- * @description custom javascript for hugo-blog
+ * @description Custom javascript for hugo-blog
  */
 const CustomJS = new (function () {
   /**
-   * Baidu auto push. See https://ziyuan.baidu.com
+   * Pangu white.
+   * Listen to any DOM change and automatically perform spacing via MutationObserver()
+   * @link https://github.com/vinta/pangu.js
+   * @returns CustomJS
+   */
+  this.panguListener = () => {
+    document.addEventListener("DOMContentLoaded", () => {
+      pangu.autoSpacingPage();
+    });
+    return this;
+  };
+  /**
+   * Baidu auto push.
+   * @link https://ziyuan.baidu.com
    * @returns CustomJS
    */
   this.baiduPush = () => {
@@ -20,7 +33,8 @@ const CustomJS = new (function () {
     return this;
   };
   /**
-   * Baidu statistics. See https://tongji.baidu.com
+   * Baidu statistics.
+   * @link https://tongji.baidu.com
    * @returns CustomJS
    */
   this.baiduStatistics = () => {
@@ -48,8 +62,8 @@ const CustomJS = new (function () {
     return this;
   };
   /**
-   * Fix toc bug
-   * See https://github.com/Lruihao/hugo-blog/issues/24
+   * Fix the toc bug.
+   * @link https://github.com/Lruihao/hugo-blog/issues/24
    * @returns CustomJS
    */
   this.fixToc = () => {
@@ -64,22 +78,27 @@ const CustomJS = new (function () {
   };
 
   /**
-   * Initialize page action
+   * Initialize.
    * @returns CustomJS
    */
   this.init = () => {
-    // Pangu white
-    pangu.spacingPage();
     this.consoleInfo();
     return this;
   };
 })();
 
+/**
+ * Immediate.
+ */
 (() => {
+  CustomJS.panguListener()
   CustomJS.baiduStatistics().baiduPush();
   CustomJS.fixToc();
 })();
 
+/**
+ * Waiting for the page to load.
+ */
 window.onload = () => {
   CustomJS.init();
 };
