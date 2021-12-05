@@ -458,7 +458,7 @@ theme = "LoveIt"
         # located in "assets/"
         # Or
         # someJavascript = "https://cdn.example.com/some.js"
-        customJS = "js/custom.js"
+        customJS = "js/_custom.js"
         # pangu.js@latest https://github.com/vinta/pangu.js
         panguJS = "https://cdn.jsdelivr.net/npm/pangu@latest/dist/browser/pangu.min.js"
     #  Page SEO config
