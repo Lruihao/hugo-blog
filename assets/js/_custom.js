@@ -4,7 +4,23 @@
  */
 const CustomJS = new (function () {
   /**
-   * Baidu statistics See https://tongji.baidu.com
+   * Baidu auto push. See https://ziyuan.baidu.com
+   * @returns CustomJS
+   */
+  this.baiduPush = () => {
+    var bp = document.createElement("script");
+    var curProtocol = window.location.protocol.split(":")[0];
+    if (curProtocol === "https") {
+      bp.src = "https://zz.bdstatic.com/linksubmit/push.js";
+    } else {
+      bp.src = "http://push.zhanzhang.baidu.com/push.js";
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+    return this;
+  };
+  /**
+   * Baidu statistics. See https://tongji.baidu.com
    * @returns CustomJS
    */
   this.baiduStatistics = () => {
@@ -60,7 +76,8 @@ const CustomJS = new (function () {
 })();
 
 (() => {
-  CustomJS.baiduStatistics().fixToc();
+  CustomJS.baiduStatistics().baiduPush();
+  CustomJS.fixToc();
 })();
 
 window.onload = () => {
