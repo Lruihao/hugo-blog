@@ -10,7 +10,7 @@ const CustomJS = new (function () {
    * @returns CustomJS
    */
   this.panguListener = () => {
-    document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener('DOMContentLoaded', () => {
       pangu.autoSpacingPage();
     });
     return this;
@@ -21,14 +21,14 @@ const CustomJS = new (function () {
    * @returns CustomJS
    */
   this.baiduPush = () => {
-    var bp = document.createElement("script");
-    var curProtocol = window.location.protocol.split(":")[0];
-    if (curProtocol === "https") {
-      bp.src = "https://zz.bdstatic.com/linksubmit/push.js";
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
     } else {
-      bp.src = "http://push.zhanzhang.baidu.com/push.js";
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
     }
-    var s = document.getElementsByTagName("script")[0];
+    var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(bp, s);
     return this;
   };
@@ -39,9 +39,9 @@ const CustomJS = new (function () {
    */
   this.baiduStatistics = () => {
     var _hmt = _hmt || [];
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?d25f1e053205bf07562f33365fef04d7";
-    var s = document.getElementsByTagName("script")[0];
+    var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?d25f1e053205bf07562f33365fef04d7';
+    var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(hm, s);
     return this;
   };
@@ -54,10 +54,10 @@ const CustomJS = new (function () {
       "\n`              @@#``@@@@@@@@@@@@@@@@@@##,`   \n`              @@#`;@@@@@@@@@@@@@@@@@@@':'   \n`              @@#`@@@@@@@@@@@@@@@@@@@#+#;`  \n`              @@#`@@@@@@@@@@@@@@@@@@###@'.  \n`              @@+.@@@@@@@@@@@@@@@@@@@@@##,  \n`              @@#,@@@@@@@@@@@@@@@@@@@@@@#,  \n`              #@#:@@@@@@@@@@@@@@@@@@@@@@@,  \n`              #@#'@@@@@@@@@@@@@@@@@@@@@@@.  \n`              +@#;@@@@@@@@@@@@@@@@@@@@@@#   \n`          `;: ;@#'@@@@@@@@@@@@@@@@@@+'+@'   \n`    `,,;';'+';'@@+:@@@@@@@@@@@@##@#',.:#;   \n,, ``    ``..,:;@@#'@@@@@@@@#####@@@@#:`:.   \n`       `````:++@@@@@@@@@@@@@###@@@@#+,..    \n        ``````.#@@@@@@@@@@@@@@#@@@#++#'``    \n`    ```.,,:,.`:@@@@@@@@@@@@@###@@@##'.`     \n``..`````..,::;+@@@@@@@@@@@@#+`::+##'`.      \n`      ````.```,@@@@@@@@@@@##;``.,';` `      \n``.;@@@@@@@@@@@@@@@@@@@@@@###;``..``````     \n#@@@@@@@@@@@@@@@@@@@@@@@@##@#;``,``,.``      \n@@@@@@@@@@@@@@@@@@@.`````..``.. +` `:`       \n@+''++#####@@#`.@@@``````` ` `,```  ``       \n';;;;'+##+'+.`;+@@@,..```` `` :,.            \n;::,,:;+#++``,,#@@@'..``````` ,`.``          \n;,,,,...'#.,,..#@@@#,,.`````` .````          \n:,,,,....`,::;''+#@#;,..`````````.``         \n:,,,.....'##++''';:+':,.`..,,...`            \n:,,,...#####+'+#@@@'.';+:.  ` ``             \n;,,.`'####'#,`.`+@@@+'``` `.`                \n;,.`#@@@#+:'+++##+@##@,,,,`                  \n',.#@@###'''';:,.```,+#.                     \n+,#@@@####;,,..```````````````         `.:,::\n+@@@@###+;,,..``````````````````          `.,\n#@@@##+',,,........``````````````            \n@@@@#+:,,,,`........``````````               \n@@@#+:,,,,.`````.....``````````           `` \n@@##':,......`````....```  `````          ```\n@@@#':,....,..``````..````    ```         ```\n@@@#',....,,,..```````````     ```         ..\n@@@#,.....,,,,.``  ````````   ``````         \n@@@+....,,,,,..`````````````   ``````````    \n@@@:....,,,,.LiRuihao````````  ```````````` \n#@@,....,,,,.Always Be Yourself !````````````\n,##,,...,::,.````````````..``````   `......``\n,'#,,..,,:::.`````````........``````   `.,,..\n"
     );
     console.log(
-      "%c 菠菜眾長 | lruihao.cn %c mail: 1024@lruihao.cn %c\n\n您好！\n欢迎光顾我的博客，\n请多多指教。\n",
-      "color: #FF0000; background: #4bffba; padding:5px 0; border-radius: 5px 5px 5px 5px;",
-      "background: #fadfa3; padding:5px 0; border-radius: 5px 5px 5px 5px;",
-      ""
+      '%c 菠菜眾長 | lruihao.cn %c mail: 1024@lruihao.cn %c\n\n您好！\n欢迎光顾我的博客，\n请多多指教。\n',
+      'color: #FF0000; background: #4bffba; padding:5px 0; border-radius: 5px 5px 5px 5px;',
+      'background: #fadfa3; padding:5px 0; border-radius: 5px 5px 5px 5px;',
+      ''
     );
     return this;
   };
@@ -67,12 +67,12 @@ const CustomJS = new (function () {
    * @returns CustomJS
    */
   this.fixToc = () => {
-    $toc = document.querySelector("#toc-auto");
+    $toc = document.querySelector('#toc-auto');
     if (!$toc) {
       return this;
     }
-    if (document.querySelector("#TableOfContents").innerText === "") {
-      $toc.style.display = "none";
+    if (document.querySelector('#TableOfContents').innerText === '') {
+      $toc.style.display = 'none';
     }
     return this;
   };
@@ -91,7 +91,7 @@ const CustomJS = new (function () {
  * Immediate.
  */
 (() => {
-  CustomJS.panguListener()
+  CustomJS.panguListener();
   CustomJS.baiduStatistics().baiduPush();
   CustomJS.fixToc();
 })();
