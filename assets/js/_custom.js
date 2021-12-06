@@ -1,20 +1,8 @@
 /**
  * @author LRUIHAO.CN
- * @description Custom javascript for hugo-blog
+ * @description Custom javascript for hugo-blog.
  */
 const CustomJS = new (function () {
-  /**
-   * Pangu white.
-   * Listen to any DOM change and automatically perform spacing via MutationObserver()
-   * @link https://github.com/vinta/pangu.js
-   * @returns CustomJS
-   */
-  this.panguListener = () => {
-    document.addEventListener('DOMContentLoaded', () => {
-      pangu.autoSpacingPage();
-    });
-    return this;
-  };
   /**
    * Baidu auto push.
    * @link https://ziyuan.baidu.com
@@ -82,7 +70,8 @@ const CustomJS = new (function () {
    * @returns CustomJS
    */
   this.init = () => {
-    this.consoleInfo();
+    this.baiduStatistics().baiduPush();
+    this.fixToc().consoleInfo();
     return this;
   };
 })();
@@ -91,14 +80,11 @@ const CustomJS = new (function () {
  * Immediate.
  */
 (() => {
-  CustomJS.panguListener();
-  CustomJS.baiduStatistics().baiduPush();
-  CustomJS.fixToc();
-})();
-
-/**
- * Waiting for the page to load.
- */
-window.onload = () => {
   CustomJS.init();
-};
+  // It will be executed when the DOM tree is built.
+  document.addEventListener('DOMContentLoaded', () => {
+    // Listen to any DOM change and automatically perform spacing via MutationObserver()
+    // See https://github.com/vinta/pangu.js
+    pangu.autoSpacingPage();
+  });
+})();
