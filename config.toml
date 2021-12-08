@@ -455,9 +455,9 @@ theme = "LoveIt"
         # someCSS = "https://cdn.example.com/some.css"
       [params.page.library.js]
         # someJavascript = "some.js"
-        # located in "assets/"
-        # Or
-        # someJavascript = "https://cdn.example.com/some.js"
+        # located in "assets/" Or URL
+        # watermark@1.0.2 https://github.com/Lruihao/watermark
+        watermark = "lib/watermark/watermark.min.js"
         customJS = "js/_custom.js"
         # pangu.js@latest https://github.com/vinta/pangu.js
         panguJS = "https://cdn.jsdelivr.net/npm/pangu@latest/dist/browser/pangu.min.js"
