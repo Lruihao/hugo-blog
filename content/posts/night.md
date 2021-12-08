@@ -9,10 +9,9 @@ categories: ["JavaScript"]
 
 <!--more-->
 
-如何给Web页面增加夜间模式功能? 其实所谓的夜间模式就是在页面上增加一个透明的遮罩层，但是遮罩层会挡住页面元素， 解决方法是 添加DIV，给DIV的outline属性一个很大的outline-width值，用outline的边框作为遮罩，这样既能正常点击页面元素，又能达到夜间模式的效果。
+如何给 Web 页面增加夜间模式功能？其实所谓的夜间模式就是在页面上增加一个透明的遮罩层，但是遮罩层会挡住页面元素， 解决方法是 添加 DIV，给 DIV 的 outline 属性一个很大的 outline-width 值，用 outline 的边框作为遮罩，这样既能正常点击页面元素，又能达到夜间模式的效果。
 
-
-### css部分
+### css 部分
 ```css
 <style>
 .cover{
@@ -25,7 +24,7 @@ categories: ["JavaScript"]
 </style>
 ```
 
-### js部分
+### js 部分
 ```js
 <script>
 var brightness;
@@ -58,14 +57,14 @@ window.addEventListener('keydown', function(e) {
 </script>
 ```
 
-### html部分
+### html 部分
 ```
 <div class="cover"></div>
 ```
 
 ### 使用
 
-1. Alt+Z:打开夜间模式
-2. Alt+X:关闭
-3. Alt+↑:增加亮度
-4. Alt+↓:降低亮度
+1. Alt+Z: 打开夜间模式
+2. Alt+X: 关闭
+3. Alt+↑: 增加亮度
+4. Alt+↓: 降低亮度

@@ -5,7 +5,7 @@ tags: ["JavaScript","hexo","Frontend"]
 categories: ["JavaScript"]
 ---
 
-> 模仿知乎的卡片式链接，idea 来自[兰州小红鸡]
+> 模仿知乎的卡片式链接，idea 来自 [兰州小红鸡]
 
 <!--more-->
 
@@ -37,9 +37,9 @@ window.onload = () =>{
   <!--知乎卡片链接-->
   <script type="text/javascript" src="/js/src/card-link.js"></script>
 ```
-html链接写法,a标签加上`class="card-link"`
+html 链接写法，a 标签加上`class="card-link"`
 ```
-<a href="https://github.com/Lruihao/lruihao.github.io" target="_blank" class="card-link">Lruihao博客</a>
+<a href="https://github.com/Lruihao/lruihao.github.io" target="_blank" class="card-link">Lruihao 博客</a>
 ```
 
 {{< cardlink href="https://github.com/Lruihao/lruihao.github.io" content="Lruihao 博客" >}}

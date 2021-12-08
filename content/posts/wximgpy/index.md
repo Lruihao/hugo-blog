@@ -1,5 +1,5 @@
 ---
-title: 基本python实现的爬取微信好友头像，并拼接成大图
+title: 基本 python 实现的爬取微信好友头像，并拼接成大图
 date: 2019-04-20 13:32:58
 tags:
 - wxpy
@@ -11,9 +11,9 @@ categories:
 featuredImage: "/posts/wximgpy/images/1.jpg"
 ---
 
-> Python通过wxpy登录微信网页版，爬取好友所有头像并拼接成一张大图。然后删除所有子图。(注释相关代码可以不删除)  
+> Python 通过 wxpy 登录微信网页版，爬取好友所有头像并拼接成一张大图。然后删除所有子图。（注释相关代码可以不删除）  
 > ***文中涉及的图片涉及个人隐私，仅做举例，请勿传播***  
-> **文中编码由Sunbelife提供，来自他的同名微信公众号，本博仅用于学习，侵删**  
+> **文中编码由 Sunbelife 提供，来自他的同名微信公众号，本博仅用于学习，侵删**  
 
 <!--more-->
 
@@ -21,7 +21,7 @@ featuredImage: "/posts/wximgpy/images/1.jpg"
 ![我的微信好友全家福](images/1.jpg)
 
 # 依赖
-- wxpy（Pythone登录微信）
+- wxpy（Pythone 登录微信）
 - pillow（拼接头像）
 - os（文件夹操作）
 - math（数学计算）
@@ -29,7 +29,7 @@ featuredImage: "/posts/wximgpy/images/1.jpg"
 > [wxpy](https://github.com/youfou/wxpy):  
 &ensp;&ensp;wxpy 在 itchat 的基础上，通过大量接口优化提升了模块的易用性，并进行丰富的功能扩展。  
 [PIL](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0014320027235877860c87af5544f25a8deeb55141d60c5000)：  
-&ensp;&ensp;Python Imaging Library，已经是Python平台事实上的图像处理标准库了。PIL功能非常强大，但API却非常简单易用。由于PIL仅支持到Python 2.7，加上年久失修，于是一群志愿者在PIL的基础上创建了兼容的版本，名字叫Pillow，支持最新Python 3.x，又加入了许多新特性，因此，我们可以直接安装使用Pillow。
+&ensp;&ensp;Python Imaging Library，已经是 Python 平台事实上的图像处理标准库了。PIL 功能非常强大，但 API 却非常简单易用。由于 PIL 仅支持到 Python 2.7，加上年久失修，于是一群志愿者在 PIL 的基础上创建了兼容的版本，名字叫 Pillow，支持最新 Python 3.x，又加入了许多新特性，因此，我们可以直接安装使用 Pillow。
 
 # 安装
 ```
@@ -38,7 +38,7 @@ pip install pillow
 ```
 
 # 运行
-> 如果在Python IDE 运行出错，可能是因为微信好友的id是特殊字符，在IDE打印出错，注释掉代码36行即可。
+> 如果在 Python IDE 运行出错，可能是因为微信好友的 id 是特殊字符，在 IDE 打印出错，注释掉代码 36 行即可。
 
 ```py @Sunbelife
 from wxpy import *
@@ -120,14 +120,13 @@ for file_names in ls:
 				
 img = image.save(curr_dir + "all.jpg")
 
-
 try:
 	shutil.rmtree(curr_dir + "group-images/")
 	print("收尾，清理临时文件")
 except FileNotFoundError:
 	print("没什么好删的")
 
-print("！！！\n生成完毕了，放在了目录" + curr_dir + "，去看看吧。")
+print("！！！\n 生成完毕了，放在了目录" + curr_dir + "，去看看吧。")
 print("工具作者：@Sunbelife（新浪微博）")
 print("公众号：Sunbelife")
 print("感谢使用")
@@ -136,7 +135,7 @@ print("2019.4.18")
 ```
 
 # 群友全家福
-> 修改11行群名称
+> 修改 11 行群名称
 
 ```py @Sunbelife
 import itchat
@@ -149,7 +148,7 @@ import shutil
 itchat.auto_login(hotReload=True,enableCmdQR=False)
 roomslist = itchat.get_chatrooms(update=True)[0:]
 itchat.dump_login_status() # 显示所有的群聊信息，默认是返回保存到通讯录中的群聊
-myroom=itchat.search_chatrooms(name=u'绥宁一中高396班') #群聊名称
+myroom=itchat.search_chatrooms(name=u'绥宁一中高 396 班') #群聊名称
 gsq=itchat.update_chatroom(myroom[0]['UserName'], detailedMember=True)
 
 num = 0
@@ -186,7 +185,7 @@ for i in range(0,len(ls)+1):
 image.save("all.png")
 shutil.rmtree("./group-images")
 ```
-![绥宁一中高396班](images/2.png)
+![绥宁一中高 396 班](images/2.png)
 
 > 加个列表，加个循环实现自动爬取所有群聊头像并发送
 

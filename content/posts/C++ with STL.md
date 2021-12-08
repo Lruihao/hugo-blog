@@ -5,21 +5,21 @@ tags: ["ACM","STL","C++"]
 categories: ["ACM"]
 ---
 
-## 1.swap（交换两元素值，在algorithm下，用法：swap(a,b);）
+## 1.swap（交换两元素值，在 algorithm 下，用法：swap(a,b);）
 
-交换两元素的值在C语言课上作为指针讲解的典例。
+交换两元素的值在 C 语言课上作为指针讲解的典例。
 
 int a=1,b=2;
 
 swap(a,b);
 
-//此时a=2,b=1
+//此时 a=2,b=1
 
-(可以是其他类型)
+（可以是其他类型）
 
 ## 2.sort(,,)
 
-sort排序是不稳定的，stl中的stable_sort才是稳定的
+sort 排序是不稳定的，stl 中的 stable_sort 才是稳定的
 
 ```c
 inta[10]={1,6,2,3,5,4,3,8,9,7};
@@ -31,7 +31,7 @@ for(int i=0;i<10;i++)
     cout<<a[i]<<" ";
 ```
 
-## 3.reverse（翻转序列，在algorithm下）
+## 3.reverse（翻转序列，在 algorithm 下）
 
 //常用在字符串上
 
@@ -47,7 +47,7 @@ reverse(s,s+strlen(s));
 
 //序列现在是 "eixcire"
 
-//同样适用于string
+//同样适用于 string
 
 string s="qwer";
 
@@ -59,11 +59,11 @@ int a=1,b=2,c;
 
 c=min(a,b);
 
-//此时c等于1
+//此时 c 等于 1
 
 c=max(a,b);
 
-//此时c等于2
+//此时 c 等于 2
 
 string s="qwer",d="asjk",c;
 
@@ -73,7 +73,7 @@ c=min(s,d);
 
 ## 5.`__gcd`（最大公约数）
 
-手写gcd函数也行，辗转相除，辗转相减；
+手写 gcd 函数也行，辗转相除，辗转相减；
 ```c
 int gcd(int a,int b){
 
@@ -88,13 +88,13 @@ int a=4,b=6;
 
 int c=__gcd(a,b);
 ```
-//注意下划线，此时c等于2
+//注意下划线，此时 c 等于 2
 
-## 6.lower_bound和upper_bound（二分查找）
+## 6.lower_bound 和 upper_bound（二分查找）
 
-lower_bound意思就是：找到第一个位置，使得：如果在这个位置插入value后，原有序序列依旧有序。
+lower_bound 意思就是：找到第一个位置，使得：如果在这个位置插入 value 后，原有序序列依旧有序。
 
-upper_bound是找到最后一个符合数位置后一个位置，使得：如果在这个位置插入value后，原有序序列依旧有序。
+upper_bound 是找到最后一个符合数位置后一个位置，使得：如果在这个位置插入 value 后，原有序序列依旧有序。
 
 //数组
 
@@ -104,30 +104,28 @@ int pos1 = lower_bound(a,a+8,4)-a;
 
 int pos2 = upper_bound(a,a+8,4)-a-1;
 
-//在这个样例下pos1!=pos2;pos1=2;pos2=3;
+//在这个样例下 pos1!=pos2;pos1=2;pos2=3;
 
-根据我的理解lower_bound(a,a+8,value)
+根据我的理解 lower_bound(a,a+8,value)
 
-得到的是一个地址，拿这个地址减去数组首地址a[0]，那么刚好就是value应该放入的位置。
-
+得到的是一个地址，拿这个地址减去数组首地址 a[0]，那么刚好就是 value 应该放入的位置。
 
 //vector
 
 `vector<int> a;`
 
-若a中目前的元素也是{1,2,4,4,9,12,12,15};
+若 a 中目前的元素也是{1,2,4,4,9,12,12,15};
 
-那么这里用lower_bound得到的应该也是一个类似于指针的东西，为什么不叫它指针呢？因为他有了一个名字，叫做迭代器。
+那么这里用 lower_bound 得到的应该也是一个类似于指针的东西，为什么不叫它指针呢？因为他有了一个名字，叫做迭代器。
 
 ```c
 vector<int>::iterator it;
 
 it = lower_bound(a.begin(),a.end(),4);
 ```
-//这里的it就是迭代器，那么* it就是该下标对应的value了。
+//这里的 it 就是迭代器，那么* it 就是该下标对应的 value 了。
 
-
-//set集合
+//set 集合
 
 ```c
 set<int> a;
@@ -139,7 +137,7 @@ it = a.lower_bound(value);
 
 ## 7.next_permutation （排列）
 
-bool next_permutation( iterator start, iterator end );通常用于生成序列的全排列。用之前先保证有序；
+bool next_permutation( iterator start, iterator end ); 通常用于生成序列的全排列。用之前先保证有序；
 ```c
 int a[]={1,2,3};
 
@@ -184,7 +182,7 @@ do{
     TLS
     TSL
 
-大数据c比c++效率高
+大数据 c 比 c++效率高
 
 ```c
 int length;
@@ -206,7 +204,7 @@ do{
 
 ## 8.unique （去重）
 
-如何把序列 a 中的重复元素去除呢？首先需要对原序列 a 进行排序，保证有序后，调用unique(a.head , a.tail )就可以了。unique会返回一个类似指针的东西（和lower_bound有点像），-a后表示去重之后序列的长度。
+如何把序列 a 中的重复元素去除呢？首先需要对原序列 a 进行排序，保证有序后，调用 unique(a.head , a.tail ) 就可以了。unique 会返回一个类似指针的东西（和 lower_bound 有点像），-a 后表示去重之后序列的长度。
 
 下面是实例。
 ```c

@@ -1,5 +1,5 @@
 ---
-title: hexo插件及next内置样式集
+title: hexo 插件及 next 内置样式集
 date: 2018-11-24 16:54:09
 tags: ["hexo"]
 categories: ["hexo"]
@@ -7,10 +7,10 @@ categories: ["hexo"]
 
 > 2021/10/2 更新  
 博客已迁移至 Hugo, 插件演示不适用，已删除。  
-让文章写的好看又简洁又好用的插件！[hexo完整的标签列表](https://hexo.io/zh-cn/docs/tag-plugins.html)，[next插件列表](https://theme-next.org/docs/tag-plugins/)
+让文章写的好看又简洁又好用的插件！[hexo 完整的标签列表](https://hexo.io/zh-cn/docs/tag-plugins.html)，[next 插件列表](https://theme-next.org/docs/tag-plugins/)
 
 <!--more-->
-### hexo插件
+### hexo 插件
 
 #### [hexo-lazyload-image](https://github.com/Troy-Yang/hexo-lazyload-image)
 ```bash 安装
@@ -26,7 +26,7 @@ lazyload:
 #### hexo-ruby-marks
 > 不支持`ruby`新标签的浏览器将显示`rp`中的内容。
 
-```xml HTML5写法
+```xml HTML5 写法
 <ruby>博採眾長<rp>（</rp> <rt>lruihao.cn</rt><rp>）</rp></ruby>
 ```
 <ruby>博採眾長<rp>（</rp> <rt>lruihao.cn</rt><rp>）</rp></ruby>
@@ -43,7 +43,7 @@ npm i hexo-ruby-marks
 ```ball 安装
 npm install --save hexo-pwa
 ```
-> You can configure this plugin in `_config.yml`.(配置完即可使用不许单独设置`manifest.json`文件及配置，插件生成)
+> You can configure this plugin in `_config.yml`.（配置完即可使用不许单独设置`manifest.json`文件及配置，插件生成）
 
 ``` 配置
 pwa:
@@ -119,10 +119,10 @@ npm install --save hexo-tag-aplayer
 - `title` : 曲目标题
 - `author`: 曲目作者
 - `url`: 音乐文件 URL 地址
-- `picture_url`: (可选) 音乐对应的图片地址
+- `picture_url`: （可选） 音乐对应的图片地址
 - `narrow`: （可选）播放器袖珍风格
-- `autoplay`:  (可选) 自动播放，移动端浏览器暂时不支持此功能
-- `width:xxx`: (可选) 播放器宽度 (默认: 100%)
+- `autoplay`:  （可选） 自动播放，移动端浏览器暂时不支持此功能
+- `width:xxx`: （可选） 播放器宽度 （默认：100%)
 - `lrc:xxx`: （可选）歌词文件 URL 地址
 
 当开启 Hexo 的 [文章资源文件夹](https://hexo.io/zh-cn/docs/asset-folders.html#%E6%96%87%E7%AB%A0%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9) 功能时，可以将图片、音乐文件、歌词文件放入与文章对应的资源文件夹中，然后直接引用：
@@ -136,9 +136,9 @@ npm install --save hexo-tag-aplayer
 {{< music url="https://cdn.lruihao.cn/files/nanjing.mp3" name="李志" artist="你离开了南京，从此没人和我说话" cover="https://p2.music.126.net/UuSe-Vc6rS7JtRJSQgDU2g==/2323268069553116.jpg?param=300x300" >}}
 
 #### hexo-pdf
-[pdf传送门](https://lruihao.cn/posts/next-pdf/)
+[pdf 传送门](https://lruihao.cn/posts/next-pdf/)
 
-#### hexo-filter-flowchart(流程图)
+#### hexo-filter-flowchart（流程图）
 [语法](https://flowchart.js.org)
 ```bash install
 npm install --save hexo-filter-flowchart
@@ -193,8 +193,8 @@ When you writes:
 
 ### 宅音乐侧栏播放器插件
 [~~体验~~](https://player.lruihao.cn) [源码](https://github.com/Lruihao/zhai-music)
-> 目前在next中可能引起部分css冲突，建议在next中使用在单个页面中。  
-依赖于jQuery，一行js可以引入播放器插件。
+> 目前在 next 中可能引起部分 css 冲突，建议在 next 中使用在单个页面中。  
+依赖于 jQuery，一行 js 可以引入播放器插件。
 
 ### caniuse
 #### 使用
@@ -255,7 +255,6 @@ icon    : FontAwesome icon name (without 'fa-' at the begining). Required if no 
 [title] : Tooltip at mouseover.
           Optional parameter.
 ```
-```
 <div class="text-center">{% btn #, Text & Large Icon & Title, home fa-fw fa-lg, Title %}</div>
 ```
 
@@ -275,9 +274,7 @@ commit
 branch newbranch
 checkout newbranch
 commit
-commit
 checkout master
-commit
 commit
 merge newbranch
 {% endmermaid %}
@@ -294,9 +291,9 @@ merge newbranch
 {% video /path/to/your/video.mp4 %}
 ```
 
-### tab选项卡
+### tab 选项卡
 
-> "tab"为选项卡的名称，可以自定义，数字是几表示从第几个选项卡开始。非必须，若数值为-1则隐藏选项卡内容。
+> "tab"为选项卡的名称，可以自定义，数字是几表示从第几个选项卡开始。非必须，若数值为-1 则隐藏选项卡内容。
 > [查看更多](https://theme-next.org/docs/tag-plugins/tabs)
 
 ```
@@ -322,7 +319,6 @@ Unique name   : Unique name of tabs block tag without comma.
                 Can be specified with or without space; e.g. 'Tab caption @icon' similar to 'Tab caption@icon'.
                 Optional parameter.
 ```
-```
 {% tabs tab,2 %}
 <!-- tab -->
 this is tab1
@@ -336,18 +332,17 @@ this is tab3
 {% endtabs %}
 ```
 
-
 > 数值为-1
 ```
-{% tabs 选项,-1 %}
+{% tabs 选项，-1 %}
 <!-- tab -->
-**选项1**
+**选项 1**
 <!-- endtab -->
 <!-- tab -->
-**选项2**
+**选项 2**
 <!-- endtab -->
 <!-- tab -->
-**选项3**
+**选项 3**
 <!-- endtab -->
 {% endtabs %}
 ```
@@ -367,10 +362,9 @@ this is tab3
 {% endtabs %}
 ```
 
+### note 便签
 
-### note便签
-
-> 主题配置文件搜索note,可设置风格和图标是否显示。
+> 主题配置文件搜索 note, 可设置风格和图标是否显示。
 
 ```
 # Note tag (bs-callout).
@@ -423,7 +417,7 @@ note:
 {% endnote %}
 ```
 
-### 引用(文本居中)
+### 引用（文本居中）
 
 ```
 {% cq %}
@@ -431,10 +425,10 @@ note:
 {% endcq %}
 ```
 
-### [Font Awesome图标](https://www.runoob.com/font-awesome/fontawesome-tutorial.html)
-> Font Awesome 是一套绝佳的图标字体库和CSS框架。  
-> Font Awesome 字体为您提供可缩放矢量图标,它可以被定制大小、颜色、阴影以及任何可以用CSS的样式。  
-> 要使用Font Awesome图标，请在HTML页面的 部分中添加以下行：  
+### [Font Awesome 图标](https://www.runoob.com/font-awesome/fontawesome-tutorial.html)
+> Font Awesome 是一套绝佳的图标字体库和 CSS 框架。  
+> Font Awesome 字体为您提供可缩放矢量图标，它可以被定制大小、颜色、阴影以及任何可以用 CSS 的样式。  
+> 要使用 Font Awesome 图标，请在 HTML 页面的 部分中添加以下行：  
 
 #### 1、国内推荐 CDN
 
@@ -447,7 +441,7 @@ note:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 ```
 
-next已经引用了，可以直接用，比如：
+next 已经引用了，可以直接用，比如：
 ```
 <i class="fa fa-car"></i>
 <i class="fa fa-car" style="font-size:48px;"></i>
@@ -512,7 +506,7 @@ code snippet
 # Label tag.
 label: true
 ```
-`@`前面的是label的名字，后面的是要显示的文字
+`@`前面的是 label 的名字，后面的是要显示的文字
 ```
 {% label default@default %}
 

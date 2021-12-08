@@ -19,21 +19,21 @@ categories:
 列表切片操作
 
 ## 字符串
-### python原始字符串
+### python 原始字符串
 ```pythonthon
 print(r"D:\three\two")
 ```
 ### 长字符串
 用三个单引号或者双引号包裹，前后呼应，成双成对。
 
-### 用\换行字符表示字符未结束
+### 用、换行字符表示字符未结束
 
-## 格式化输出format
+## 格式化输出 format
 `"=={}=="`，`{}`表示占位符，其前后字符保持原样输出。 
 
 ```python TempConvert.py
 #TempConvert.py
-TempStr = input("请输入带有符号的温度值: ")
+TempStr = input("请输入带有符号的温度值：")
 if TempStr[-1] in ['F','f']:
     C = (eval(TempStr[0:-1]) - 32)/1.8
     print("转换后的温度是{:.2f}C".format(C))
@@ -44,7 +44,7 @@ else:
     print("输入格式错误")
 ```
 ## 多变量赋值与交换（斐波那契数列）
-python 3.x版本 `end=""` 可使输出不换行  
+python 3.x 版本 `end=""` 可使输出不换行  
 ```python
 print(x, end="")
 ```
@@ -52,19 +52,19 @@ print(x, end="")
 ```python 斐波那契数列
 #斐波那契数列
 a, b = 1,1
-while a < 500: # 输出不大于500 的序列
+while a < 500: # 输出不大于 500 的序列
     print(a,end=",")
     a,b = b,a + b #交换变量
 ```
 
-## 笑傲江湖统计字符(dict,文件流)
-> 统计《笑傲江湖》小说中出现的所有中文字符及标点符号的数量，每个字符及数目间用冒号`:`隔开，例如"笑:1024"，将所有字符及数量的对应采用逗号分隔，以CSV文件格式保存到`“笑傲江湖--字符统计.txt”`文件中。注意，统计字符不包括空格和回车。
+## 笑傲江湖统计字符 (dict, 文件流）
+> 统计《笑傲江湖》小说中出现的所有中文字符及标点符号的数量，每个字符及数目间用冒号`:`隔开，例如"笑：1024"，将所有字符及数量的对应采用逗号分隔，以 CSV 文件格式保存到`“笑傲江湖--字符统计。txt”`文件中。注意，统计字符不包括空格和回车。
 
-> csv文件格式： ‘,’逗号连接元素
+> csv 文件格式： ‘,’逗号连接元素
 
 ```python 
-fi = open("data/笑傲江湖-网络版.txt","r",encoding="utf-8")
-fo = open("data/笑傲江湖-字符统计.txt","w",encoding="utf-8")
+fi = open("data/笑傲江湖-网络版。txt","r",encoding="utf-8")
+fo = open("data/笑傲江湖-字符统计。txt","w",encoding="utf-8")
 
 txt = fi.read() #打开文件
 #txt
@@ -87,14 +87,14 @@ fo.close()
 ```
 ![文件读取及字符统计结果](images/tj.png)
 
-## numpy模块
+## numpy 模块
 **...**
-## pandas模块
+## pandas 模块
 **...**
 
 # 6.20
 
-## matplotlib绘图
+## matplotlib 绘图
 ```python 指数函数
 import matplotlib.pyplot as plt
 import numpy as np
@@ -172,13 +172,13 @@ max    3559.465088
 # 6.21
 
 ## 类
-比第一天稍微仔细一点讲了一下类,有点需要注意：
+比第一天稍微仔细一点讲了一下类，有点需要注意：
 - `self`相当于`this`表示当前对象  
-- python类的所有函数的第一个参数都要写`self`参数，self也可以是其他的比如`lrh`等字符替代，但是必须保持一致。
+- python 类的所有函数的第一个参数都要写`self`参数，self 也可以是其他的比如`lrh`等字符替代，但是必须保持一致。
 - `__`表示私有的
-- class的定义可以不加(),()内可写继承的父类
+- class 的定义可以不加 (),() 内可写继承的父类
 
-## GUI设计 [wxPython](https://blog.csdn.net/mist99/article/details/80742548)
+## GUI 设计 [wxPython](https://blog.csdn.net/mist99/article/details/80742548)
 ```bosh 安装 
 pip install wxPython
 ```
@@ -186,7 +186,7 @@ pip install wxPython
 import wx
 ```
 ```python 基本架构
-import wx #导入wxPython库
+import wx #导入 wxPython 库
 
 class Panel(wx.Panel):  
 
@@ -237,9 +237,9 @@ app.MainLoop()
 ```
 ![运行结果](images/wxpython.png)
 
-## talib库的安装
+## talib 库的安装
 
-[下载whl文件](https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib)
+[下载 whl 文件](https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib)
 
 ```
 pip install TA_Lib-0.4.17-cp37-cp37m-win_amd64.whl
@@ -264,7 +264,7 @@ print(SelectSort(L))
 ```python 结果
 [0, 1, 2, 3, 5, 6, 8, 9, 10]
 ```
-## 机房上机系统(自我实践)
+## 机房上机系统（自我实践）
 
 ```python 简单机房上机系统源码
 import time
@@ -277,7 +277,7 @@ class student():
         self.stu_time = stu_time
 
     def print(self):
-        print("学号："+self.stu_no+"\t姓名："+self.stu_name+"\t系别："+self.stu_xi+"\t机时(h)："+self.stu_time)
+        print("学号："+self.stu_no+"\t 姓名："+self.stu_name+"\t 系别："+self.stu_xi+"\t 机时 (h)："+self.stu_time)
 
     def get_stu_name(self):
         return self.stu_name
@@ -289,13 +289,13 @@ class student():
         self.stu_time = add_time
 
 def menu():
-    print("\t机房上机系统V0.1")
+    print("\t 机房上机系统 V0.1")
     print("********************************")
-    print("\t—>1.录入学生信息")
-    print("\t—>2.上机")
-    print("\t—>3.下机")
-    print("\t—>4.缴费")
-    print("\t—>5.退出")
+    print("\t—>1. 录入学生信息")
+    print("\t—>2. 上机")
+    print("\t—>3. 下机")
+    print("\t—>4. 缴费")
+    print("\t—>5. 退出")
     print("********************************")
     select = eval(input("请输入序号："))
     while select not in [1,2,3,4,5]:
@@ -322,7 +322,7 @@ def main():
 
         if select == 1:
             if input_flag:
-                print("已录入，无需重复操作，缴费请输入4:")
+                print("已录入，无需重复操作，缴费请输入 4:")
                 continue
             else:
                 input_flag = True
@@ -361,8 +361,8 @@ def main():
                 sum = end_num - start_num
                 sum = sum if(sum>=0) else sum+24
                 sum = sum+1 if(sum==0) else sum
-                print("已下机！下机时间为："+end_time+"\n上机时长(h)："+str(sum)+"\t剩余机时(h)："+str(people.get_stu_time()-sum))
-                text.append("下机时间："+end_time+"\n上机时长(h)："+str(sum)+"\t"+people.get_stu_name()+"剩余机时(h)："+str(people.get_stu_time()-sum))
+                print("已下机！下机时间为："+end_time+"\n 上机时长 (h)："+str(sum)+"\t 剩余机时 (h)："+str(people.get_stu_time()-sum))
+                text.append("下机时间："+end_time+"\n 上机时长 (h)："+str(sum)+"\t"+people.get_stu_name()+"剩余机时 (h)："+str(people.get_stu_time()-sum))
                 people.set_stu_time(str(people.get_stu_time()-sum))
                 down_flag = True
                 continue
@@ -379,15 +379,14 @@ def main():
 
         else:
             if down_flag:
-                print("3s后退出系统，感谢使用！")
-                time.sleep(3) # 延迟3s，显示提示文字
+                print("3s 后退出系统，感谢使用！")
+                time.sleep(3) # 延迟 3s，显示提示文字
                 break # 退出系统 写入文件
             else:
                 print("请下机！")
                 continue
 
-
-    #写入computer.txt文件
+    #写入 computer.txt 文件
     fo = open("D:\\computer.txt","w",encoding="utf-8")
     fo.write("\n".join(text)) 
     fo.close()
@@ -397,7 +396,7 @@ if __name__=="__main__":
 ```
 
 ## 量化交易代码分析与调试
-由于python的版本问题和一些库的导入问题所以还未调试成功，先挂上代码。以后改篇再论。
+由于 python 的版本问题和一些库的导入问题所以还未调试成功，先挂上代码。以后改篇再论。
 ```python 主要代码
 #! /usr/bin/env python 
 #-*- encoding: utf-8 -*- 
@@ -435,7 +434,7 @@ class UserDialog(wx.Dialog):# user-defined
         
         pstock_Text = wx.StaticText(self, -1, u'选股策略筛选结果') 
         pstock_Text.SetFont(wx.Font(18,wx.DEFAULT,wx.NORMAL,wx.BOLD))
-        pstock_sure = wx.TextCtrl(self, -1, "角度值:\n",size=(350,300),style = wx.TE_MULTILINE|wx.TE_READONLY)#多行|只读
+        pstock_sure = wx.TextCtrl(self, -1, "角度值：\n",size=(350,300),style = wx.TE_MULTILINE|wx.TE_READONLY)#多行|只读
         pstock_sure.SetFont(wx.Font(10,wx.DEFAULT,wx.NORMAL,wx.BOLD))
 
         okbtn = wx.Button(self,wx.ID_OK,u"确认")
@@ -483,13 +482,13 @@ class Frame(wx.Frame):
         #日历控件选择数据周期
         self.dpcEndTime = wx.adv.DatePickerCtrl(self.ParaPanel, -1,style = wx.adv.DP_DROPDOWN|wx.adv.DP_SHOWCENTURY|wx.adv.DP_ALLOWNONE)#结束时间
         self.dpcStartTime = wx.adv.DatePickerCtrl(self.ParaPanel, -1,style = wx.adv.DP_DROPDOWN|wx.adv.DP_SHOWCENTURY|wx.adv.DP_ALLOWNONE)#起始时间
-        DateTimeNow = wx.DateTime.Now()#wx.DateTime格式"03/03/18 00:00:00"
+        DateTimeNow = wx.DateTime.Now()#wx.DateTime 格式"03/03/18 00:00:00"
        #DateTimeNow = datetime.datetime.fromtimestamp(wx.DateTime.Now().GetTicks())
        #DateTimeNow = datetime.datetime.fromtimestamp(DateTimeNow)
         self.dpcEndTime.SetValue(DateTimeNow)
         DateTimeNow.SetYear(DateTimeNow.year-1)
         self.dpcStartTime.SetValue(DateTimeNow)
-        stockData_Text = wx.StaticText(self.ParaPanel, -1, u'日期(Start-End)')
+        stockData_Text = wx.StaticText(self.ParaPanel, -1, u'日期 (Start-End)')
         
         #初始化时间变量
         dateVal = self.dpcStartTime.GetValue() 
@@ -505,23 +504,23 @@ class Frame(wx.Frame):
         paraInput_Sizer.Add(strate_Text, 0, wx.EXPAND|wx.ALL|wx.CENTER, 2)
         paraInput_Sizer.Add(self.pickstrate_CMBO, 0, wx.EXPAND|wx.ALL|wx.CENTER, 2)
         
-        RadioList = ["不显示","跳空缺口", "金叉/死叉", "N日突破"] 
+        RadioList = ["不显示","跳空缺口", "金叉/死叉", "N 日突破"] 
         self.StratInputBox = wx.RadioBox(self.ParaPanel, -1, label=u'指标提示', choices=RadioList,majorDimension = 4, style = wx.RA_SPECIFY_ROWS) 
         self.StratInputBox.Bind(wx.EVT_RADIOBOX,self.OnRadioBox_Indicator) 
         #初始化指标变量
         self.IndicatInput_Val = self.StratInputBox.GetStringSelection()  
         
-        self.TextAInput = wx.TextCtrl(self.ParaPanel, -1, "交易信息提示:", style = wx.TE_MULTILINE|wx.TE_READONLY)#多行|只读
+        self.TextAInput = wx.TextCtrl(self.ParaPanel, -1, "交易信息提示：", style = wx.TE_MULTILINE|wx.TE_READONLY)#多行|只读
 
-        vboxnetA = wx.BoxSizer(wx.VERTICAL)#纵向box 
-        vboxnetA.Add(paraInput_Sizer,proportion=0,flag=wx.EXPAND|wx.BOTTOM,border=2) #proportion参数控制容器尺寸比例
+        vboxnetA = wx.BoxSizer(wx.VERTICAL)#纵向 box 
+        vboxnetA.Add(paraInput_Sizer,proportion=0,flag=wx.EXPAND|wx.BOTTOM,border=2) #proportion 参数控制容器尺寸比例
         vboxnetA.Add(self.StratInputBox,proportion=0,flag=wx.EXPAND|wx.BOTTOM,border=2)         
         vboxnetA.Add(self.TextAInput,proportion=1,flag=wx.EXPAND|wx.ALL,border=2) 
         self.ParaPanel.SetSizer(vboxnetA)
         
-        #创建Right面板
+        #创建 Right 面板
         self.CtrlPanel = wx.Panel(self,-1) 
-        #创建FlexGridSizer布局网格
+        #创建 FlexGridSizer 布局网格
         self.FlexGridSizer=wx.FlexGridSizer(rows=3, cols=1, vgap=3, hgap=3)  
         
         #行情按钮
@@ -534,7 +533,7 @@ class Frame(wx.Frame):
         self.Backtrace = wx.Button(self.CtrlPanel,-1,"回测")  
         self.Backtrace.Bind(wx.EVT_BUTTON,self.BackEvent)#绑定回测按钮事件
          
-        #加入Sizer中  
+        #加入 Sizer 中  
         self.FlexGridSizer.Add(self.Firmoffer,proportion = 1, border = 5,flag = wx.ALL | wx.EXPAND)  
         self.FlexGridSizer.Add(self.Stockpick,proportion = 1, border = 5,flag = wx.ALL | wx.EXPAND)  
         self.FlexGridSizer.Add(self.Backtrace,proportion = 1, border = 5,flag = wx.ALL | wx.EXPAND) 
@@ -564,13 +563,13 @@ class Frame(wx.Frame):
         elif self.IndicatInput_Val == u"跳空缺口":
             dispCont_pd,dispCont_List = examp_trade.plot_Jump_Thrd(df_stockload)
             self.DispPanel.draw_jumpgap(df_stockload,dispCont_pd)
-        elif self.IndicatInput_Val == u"N日突破":
+        elif self.IndicatInput_Val == u"N 日突破":
             dispCont_pd,dispCont_List = examp_trade.plot_Ndays_Break(df_stockload)
             self.DispPanel.draw_ndaysbreak(df_stockload,dispCont_pd)
         else:
             dispCont_List = dispCont_List
             
-        self.TextAInput.SetValue(u"指标提示信息如下:"+'\n')
+        self.TextAInput.SetValue(u"指标提示信息如下："+'\n')
         for i in dispCont_List:self.TextAInput.AppendText(i)
 
         numic = np.arange(0,len(df_stockload.index))
@@ -590,7 +589,7 @@ class Frame(wx.Frame):
             #执行其他策略
             pass    
             
-        self.TextAInput.SetValue(u"策略提示信息如下:"+'\n')
+        self.TextAInput.SetValue(u"策略提示信息如下："+'\n')
         for i in dispCont_List:self.TextAInput.AppendText(i)
         self.BackPanel.xylabel_tick_lim(self.stockName_Val)
         
@@ -644,7 +643,7 @@ class Frame(wx.Frame):
         for index, stockName in enumerate(self.StNameCodedict.keys()) : 
             print("stockName",stockName,self.StNameCodedict[stockName])
             df_stockload = GetStockDatPro(self.StNameCodedict[stockName],self.stockSdate_Val, self.stockEdate_Val)
-            df_stockload.fillna(method='bfill',inplace=True)#后一个数据填充NAN1
+            df_stockload.fillna(method='bfill',inplace=True)#后一个数据填充 NAN1
             dispCont_List.append(stockName+'\n'+examp_trade.fit_pick(df_stockload.Close)+'\n')
         print(dispCont_List)
         """ 选股策略执行 """
@@ -672,4 +671,3 @@ if __name__ == '__main__':
     app = App()
     app.MainLoop() 
 ```
-

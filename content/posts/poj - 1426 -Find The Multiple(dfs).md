@@ -29,8 +29,8 @@ For each value of n in the input print a line containing the corresponding value
     111111111111111111
 
 ---
-给定一个正整数n，请编写一个程序来寻找n的一个非零的倍数m，这个m应当在十进制表示时每一位上只包含0或者1。你可以假定n不大于200且m不多于100位。   
-提示：本题采用Special Judge，你无需输出所有符合条件的m，你只需要输出任一符合条件的m即可。 
+给定一个正整数 n，请编写一个程序来寻找 n 的一个非零的倍数 m，这个 m 应当在十进制表示时每一位上只包含 0 或者 1。你可以假定 n 不大于 200 且 m 不多于 100 位。   
+提示：本题采用 Special Judge，你无需输出所有符合条件的 m，你只需要输出任一符合条件的 m 即可。 
 ```cpp
 #include"iostream"
 using namespace std;
@@ -47,11 +47,11 @@ void dfs(ll x,int count)
         cout<<x<<endl;
         return ;
     }
-    if(count==19)//m最多200位
+    if(count==19)//m 最多 200 位
         return ;
     dfs(x*10,count+1);
     dfs(x*10+1,count+1);
-    //每两位数后两位有两种情况，10或11，深搜所有情况，找到一种就返回，找不到找另外一颗子树
+    //每两位数后两位有两种情况，10 或 11，深搜所有情况，找到一种就返回，找不到找另外一颗子树
 }
 int main()
 {

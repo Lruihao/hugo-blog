@@ -8,15 +8,15 @@ categories: ["PHP"]
 > Cell Blog 开发记录，[项目地址](https://github.com/Lruihao/cell-blog)
 
 <!--more-->
-# 搭建php环境
-1. 安装wampserver
-2. 安装composer
-3. 更换aliyun源
+# 搭建 php 环境
+1. 安装 wampserver
+2. 安装 composer
+3. 更换 aliyun 源
 ```
 composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 ```
 
-# 新建laravel项目
+# 新建 laravel 项目
 ```
 composer create-project --prefer-dist laravel/laravel cell-blog "7.*"
 ```
@@ -25,13 +25,13 @@ composer create-project --prefer-dist laravel/laravel cell-blog "7.*"
 composer global require laravel/installer
 laravel new blog
 ```
-# 下载debugbar
+# 下载 debugbar
 ```
 composer require barryvdh/laravel-debugbar --dev
 ```
 
 # 修改语言时区
-修改config/app.php，将local的值 en 改成 zh-CN(laravel-admin自带zh-CN)：
+修改 config/app.php，将 local 的值 en 改成 zh-CN(laravel-admin 自带 zh-CN)：
 ```
 # 时区
 'timezone' => 'Asia/Shanghai',
@@ -40,7 +40,7 @@ composer require barryvdh/laravel-debugbar --dev
 ```
 
 # 配置数据库
-首先确保安装好了laravel，并且数据库连接设置正确。
+首先确保安装好了 laravel，并且数据库连接设置正确。
 ```
 APP_URL=http://cell.blog
 
@@ -52,7 +52,7 @@ DB_USERNAME=root
 DB_PASSWORD=123456
 ```
 
-# 下载laravel-admin
+# 下载 laravel-admin
 ```
 cd cell-blog
 composer require encore/laravel-admin
@@ -69,9 +69,9 @@ php artisan vendor:publish --provider="Encore\Admin\AdminServiceProvider"
 ```
 php artisan admin:install
 ```
-> 运行这个命令的时候，如果遇到了下面的错误:  
+> 运行这个命令的时候，如果遇到了下面的错误：
 `SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 1000 bytes (SQL: alter tableusersadd uniqueusers_email_unique(email))`  
-参考这个issue来解决 https://github.com/z-song/laravel-admin/issues/1541  
+参考这个 issue 来解决 https://github.com/z-song/laravel-admin/issues/1541  
 在`app\Providers\AppServiceProvider.php`添加默认值  
 ```php
 <?php
@@ -105,12 +105,11 @@ class AppServiceProvider extends ServiceProvider
 }
 ```
 
-启动服务后，在浏览器打开 `http://localhost/admin/` ,使用用户名 `admin` 和密码 `admin` 登录.
-
+启动服务后，在浏览器打开 `http://localhost/admin/` , 使用用户名 `admin` 和密码 `admin` 登录。
 > 报错`Disk [admin] not configured, please add a disk config in config/filesystems.php`
 
-在`config/filesystems.php`中disks处添加以下配置后执行`php artisan storage:link`来创建软链接（windows和linux的软链接不一样不能直接复制！）
-> 宝塔执行时删除禁用函数putenv(),symlink()
+在`config/filesystems.php`中 disks 处添加以下配置后执行`php artisan storage:link`来创建软链接（windows 和 linux 的软链接不一样不能直接复制！）
+> 宝塔执行时删除禁用函数 putenv(),symlink()
 
 ```
 'admin' => [
@@ -130,7 +129,7 @@ class AppServiceProvider extends ServiceProvider
 ],
 ```
 
-# 下载dcat-admin
+# 下载 dcat-admin
 ```
 composer require dcat/laravel-admin
 ```
@@ -162,7 +161,7 @@ php artisan make:migration create_mottoes_table
 php artisan migrate
 ```
 
-# 创建模型model
+# 创建模型 model
 ```sh
 php artisan make:model Models/Article
 php artisan make:model Models/Category
@@ -199,15 +198,15 @@ $router->resource('systems', SystemController::class);
 $router->resource('mottoes', MottoController::class);
 ```
 
-# editormd安装
+# editormd 安装
 [editormd](https://github.com/ShareManT/laravel-admin-ext-editormd)
-[github图像问题](https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3)
+[github 图像问题](https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3)
 
 ## 存放本地表情
 ```
 public\vendor\laravel-admin-ext\editormd\editormd-1.5.0\images\emojis
 ```
-修改editormd.js及editormd.min.js
+修改 editormd.js 及 editormd.min.js
 ```
 // Emoji graphics files url path
 editormd.emoji     = {
@@ -217,17 +216,17 @@ editormd.emoji     = {
 ```
 
 ## 图片上传
-### csrf 419错误
-可以在`VerifyCsrfToken.php`中添加白名单跳过验证，或者手动添加csrf验证器：
+### csrf 419 错误
+可以在`VerifyCsrfToken.php`中添加白名单跳过验证，或者手动添加 csrf 验证器：
 
-修改image-dialog.js的`var dialogContent`  
+修改 image-dialog.js 的`var dialogContent`  
 [参考](https://www.jianshu.com/p/8101f7bc80f6)
 ```
 if (settings.crossDomainUpload)
 {
     action += "&callback=" + settings.uploadCallbackURL + "&dialog_id=editormd-image-dialog-" + guid;
 }
-//添加csrf验证
+//添加 csrf 验证
 var csrfToken = $('meta[name="csrf-token"]').attr('content');
 var csrfField = "";
 if (csrfToken) {
@@ -237,7 +236,7 @@ if (csrfToken) {
 
 # markdown 转 HTML
 https://www.zhiqiexing.com/119.html
-[Laravel Markdown安装](https://github.com/GrahamCampbell/Laravel-Markdown)
+[Laravel Markdown 安装](https://github.com/GrahamCampbell/Laravel-Markdown)
 ```
 composer require graham-campbell/markdown
 php artisan vendor:publish
@@ -258,16 +257,14 @@ Eloquent 模型可以触发事件，允许你在模型生命周期中的多个�
 
 retrieved 事件会在从数据库中获取已存在模型时触发。当一个新模型被首次保存的时候，creating 和 created 事件会被触发。如果一个模型已经在数据库中存在并调用 save 方法，updating/updated 事件会被触发，无论是创建还是更新，saving/saved 事件都会被触发。
 
-
 # 添加后台验证码
-依赖php扩展`fileinfo`  
+依赖 php 扩展`fileinfo`  
 [添加验证码](https://learnku.com/articles/32842)
 
 # Media manager
 ```
 composer require laravel-admin-ext/media-manager
 php artisan admin:import media-manager
-```
 ```
 'extensions' => [
     'media-manager' => [
@@ -277,10 +274,9 @@ php artisan admin:import media-manager
 ],
 ```
 
-# 给laravel-admin增加锁屏功能
+# 给 laravel-admin 增加锁屏功能
 ```
 composer require laravel-admin-ext/lock-screen
-```
 ```
 'route' => [
     'prefix' => 'demo',
@@ -302,7 +298,7 @@ php artisan make:controller TagController
 php artisan make:controller PageController
 ```
 
-# 后台img灯箱
+# 后台 img 灯箱
 https://github.com/laravel-admin-extensions/grid-lightbox
 ```
 composer require laravel-admin-ext/grid-lightbox

@@ -5,18 +5,18 @@ tags: ["Java","Backend"]
 categories: ["Java"]
 ---
 ### 记忆格式：
-(1)导包：  
+(1) 导包：  
 	import java.util.Scanner;  
-	注意：位置在class的上面。  
-(2)创建键盘录入对象：  
+	注意：位置在 class 的上面。  
+(2) 创建键盘录入对象：  
 	Scanner sc = new Scanner(System.in);  
-(3)获取数据    
+(3) 获取数据    
 	int i = sc.nextInt();  
-(4)练习：  
-	A:求两个数据的和  
-	B:获取两个数据中较大的值  
-	C:获取三个数据中较大的值  
-	D:比较两个数是否相等  
+(4) 练习：  
+	A: 求两个数据的和  
+	B: 获取两个数据中较大的值  
+	C: 获取三个数据中较大的值  
+	D: 比较两个数是否相等  
 
 ### 实例
 
@@ -36,17 +36,17 @@ public class helloworld {
 		System.out.println("MAXijk="+Max(i,j,k));
 
 	}
-	//Max()方法重载
+	//Max() 方法重载
 	static int Max(int i,int j) {
 		return i>j?i:j;
 	}
 	static int Max(int i,int j,int k) {	
 		if(i==j)
-			System.out.println("i和j相等");
+			System.out.println("i 和 j 相等");
 		else if(i==k)
-			System.out.println("i和k相等");
+			System.out.println("i 和 k 相等");
 		else if(j==k)
-			System.out.println("j和k相等");
+			System.out.println("j 和 k 相等");
 		return  (i=i>j?i:j)>k?i:k;
 	}
 
@@ -58,6 +58,6 @@ public class helloworld {
 5 5 6
 5+5=10
 MAXij=5
-i和j相等
+i 和 j 相等
 MAXijk=6
 ```

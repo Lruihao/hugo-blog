@@ -6,26 +6,26 @@ categories: ["hexo","Git"]
 featuredImage: "/posts/blog-backup/images/1.png"
 ---
 
-### 备份hexo博客
+### 备份 hexo 博客
 ```
-//如果themes/next(主题文件)下面有.git，请删除这个.git文件夹。
+//如果 themes/next（主题文件）下面有。git，请删除这个。git 文件夹。
 cd hexo
 git init  //初始化本地仓库
 git add source themes scaffolds _config.yml package.json package-lock.json  //将必要的文件依次添加
 git commit -m "blog hexo"
-git branch hexo  //新建hexo分支
-git checkout hexo  //切换到hexo分支上
-git remote add origin git@github.com:username/username.github.io.git  //将本地与Github项目对接
-git push origin hexo  //push到Github项目的hexo分支上
+git branch hexo  //新建 hexo 分支
+git checkout hexo  //切换到 hexo 分支上
+git remote add origin git@github.com:username/username.github.io.git  //将本地与 Github 项目对接
+git push origin hexo  //push 到 Github 项目的 hexo 分支上
 ```
-### 在其他终端克隆和更新hexo博客
-> nodejs,git,hexo已经安装好,即搭建完成
+### 在其他终端克隆和更新 hexo 博客
+> nodejs,git,hexo 已经安装好，即搭建完成
 
-#### 克隆hexo博客备份
+#### 克隆 hexo 博客备份
 ```
-git clone -b hexo git@github.com:username/username.github.io.git  //将Github中hexo分支clone到本地
+git clone -b hexo git@github.com:username/username.github.io.git  //将 Github 中 hexo 分支 clone 到本地
 cd user.github.io
-npm install  //注意，这里一定要切换到刚刚clone的文件夹内执行，安装必要的所需组件，不用再init
+npm install  //注意，这里一定要切换到刚刚 clone 的文件夹内执行，安装必要的所需组件，不用再 init
 ```
 这样我们的备份文件就会原封不动的拷贝到本地。
 
@@ -34,7 +34,7 @@ npm install  //注意，这里一定要切换到刚刚clone的文件夹内执行
 > 其实源码拷下来了，这步不做我们也知道怎么做了，完全没必要按照教程死搬硬套。灵活一点就行了。
 
 ```
-//进入username.github.io文件夹,应是hexo分支
+//进入 username.github.io 文件夹，应是 hexo 分支
 git pull origin hexo //本地和远端的融合
 hexo new post "new post name"  //写新文章
 git add source

@@ -6,9 +6,9 @@ categories: ["JavaScript"]
 ---
 
 # 簡介
-Lightbox (燈箱)，用来放大显示图片覆盖于当前页面之上。其是用CSS来定义图片容器，用一幅半透明的png图片实现渐变阴暗的效果。
+Lightbox （燈箱），用来放大显示图片覆盖于当前页面之上。其是用 CSS 来定义图片容器，用一幅半透明的 png 图片实现渐变阴暗的效果。
 
-一般的網頁，圖片是使用 img 標籤寫在 HTML 頁面中，圖片點擊并不會放大，想放大看圖片要麼方法整個網頁，要麼複製圖片鏈接新開窗口，操作繁瑣，而使用 Lightbox 的網站可以点击缩略图浮层显示大图，放大後可点击键盘←、→键切换图片，也可以鼠标点击左右箭头切换。按下键盘Esc键或者点击关闭按钮可輕鬆關閉圖層，圖片流覽的體驗度是遠遠大於未使用的 Lightbox 的網站。
+一般的網頁，圖片是使用 img 標籤寫在 HTML 頁面中，圖片點擊并不會放大，想放大看圖片要麼方法整個網頁，要麼複製圖片鏈接新開窗口，操作繁瑣，而使用 Lightbox 的網站可以点击缩略图浮层显示大图，放大後可点击键盘←、→键切换图片，也可以鼠标点击左右箭头切换。按下键盘 Esc 键或者点击关闭按钮可輕鬆關閉圖層，圖片流覽的體驗度是遠遠大於未使用的 Lightbox 的網站。
 
 # 實現思路
 大概思路就在每个图片的点击事件中添加图层与图片副本。
@@ -30,7 +30,7 @@ let closeMove=function(){
     img.style.width=w+"px";
     img.style.left=x+"px";
     img.style.top=(y - container.scrollTop)+"px";
-    // 延迟移除dom
+    // 延迟移除 dom
     setTimeout(function(){
         div.remove();
         img.remove();
@@ -46,7 +46,7 @@ let closeFade=function(){
     }
     div.style.opacity=0;
     img.style.opacity=0;
-    // 延迟移除dom
+    // 延迟移除 dom
     setTimeout(function(){
         div.remove();
         img.remove();
@@ -131,7 +131,7 @@ document.querySelectorAll("img").forEach(v=>{
           setTimeout(function(){
               div.style.opacity=1;
           },0);
-          // (此处可以加loading)
+          // （此处可以加 loading)
 
           // 创建副本
           img=new Image();
@@ -139,7 +139,6 @@ document.querySelectorAll("img").forEach(v=>{
           btnleft=document.createElement("button");
           img.src=src;
           style();
-
 
           btnleft.onclick=function(){
             if(id===0){

@@ -25,7 +25,7 @@ public class EncryptFile {
 		byte pwd=123;//加密/解密密码
 		FileInputStream f=new FileInputStream("src/cn/lruihao/base/EncryptFile.java");//待加密文件
 		FileOutputStream fout=new FileOutputStream("encrypted.txt");//已加密文件
-		System.out.println("开始加密。。。");
+		System.out.println("开始加密。");
 		int n=f.available()/5;
 		byte[] b=new byte[n];//以一个字节数组的长度读取和复制
 		int count=0;
@@ -41,7 +41,7 @@ public class EncryptFile {
 		fout.close();
 //		f=new FileInputStream("encrypted.txt");
 //		fout=new FileOutputStream("unencrypted.txt");
-//		System.out.println("开始解密。。。");
+//		System.out.println("开始解密。");
 //		n=f.available()/5;
 //		b=new byte[n];//以一个字节数组的长度读取和复制
 //		count=0;
@@ -117,7 +117,7 @@ public class BufferedStreamCopy {
 		FileOutputStream fout=new FileOutputStream("copy-of-file.txt");
 		BufferedInputStream bis=new BufferedInputStream(f);
 		BufferedOutputStream bos=new BufferedOutputStream(fout);
-		System.out.println("开始复制。。。");
+		System.out.println("开始复制。");
 		int n=f.available()/5;
 		byte[] b=new byte[n];
 		int count=0;

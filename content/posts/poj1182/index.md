@@ -8,22 +8,22 @@ toc:
 ---
 
 [题目链接](http://poj.org/problem?id=1182)  
-[思路参考1](https://blog.csdn.net/freezhanacmore/article/details/8767413),[思路参考2](https://blog.csdn.net/niushuai666/article/details/6981689)（没看懂）
+[思路参考 1](https://blog.csdn.net/freezhanacmore/article/details/8767413),[思路参考 2](https://blog.csdn.net/niushuai666/article/details/6981689)（没看懂）
 
 <!--more-->
 
 ~~先占坑，有时间再理理思路。~~
 > 同一棵树中  
->> d=1,即x和y是同类，则需满足r[x]==r[y]  
-d=2,x应该吃了y,也就是(r[x]+1)%3 == r[y] ![](images/1.jpg)  
+>> d=1, 即 x 和 y 是同类，则需满足 r[x]==r[y]  
+d=2,x 应该吃了 y, 也就是 (r[x]+1)%3 == r[y] ![](images/1.jpg)  
 >
-> 不同树合并且更新关系(**x树做主根**)  
-> '   **如果 x和y为关系r1, y和z为关系r2， 那么x和z的关系就是（r1+r2）%3**
->> 如果 d==1则x和y是同类 ，那么 y对x的关系是0,如果d==2 ,则x吃了y,  那么y对x的关系是1, x对y的关系是2。综上所述 ,无论d为1或者是为2,  y对x的关系都是 d-1。  
-fy对y 的关系为 3-r[y] （有点互补的感觉，注意这里是不同类喔）  
-y对x的关系为 d-1,  
-x 对fx 的关系为 r[x]  
-所以fy对fx 的关系是（3-r[y] + d-1 + r[x]）%3。可以借助向量图理解 fy->y->x->fx ![](images/2.jpg)  
+> 不同树合并且更新关系 (**x 树做主根**)  
+> '   **如果 x 和 y 为关系 r1, y 和 z 为关系 r2， 那么 x 和 z 的关系就是（r1+r2）%3**
+>> 如果 d==1 则 x 和 y 是同类 ，那么 y 对 x 的关系是 0, 如果 d==2 , 则 x 吃了 y,  那么 y 对 x 的关系是 1, x 对 y 的关系是 2。综上所述 , 无论 d 为 1 或者是为 2,  y 对 x 的关系都是 d-1。  
+fy 对 y 的关系为 3-r[y] （有点互补的感觉，注意这里是不同类喔）  
+y 对 x 的关系为 d-1,  
+x 对 fx 的关系为 r[x]  
+所以 fy 对 fx 的关系是（3-r[y] + d-1 + r[x]）%3。可以借助向量图理解 fy->y->x->fx ![](images/2.jpg)  
 >
 
 ```c
@@ -32,7 +32,7 @@ x 对fx 的关系为 r[x]
 const int maxn = 50000+10;
  
 int p[maxn]; //存父节点
-int r[maxn];//存与父节点的关系 0 同一类，1被父节点吃，2吃父节点
+int r[maxn];//存与父节点的关系 0 同一类，1 被父节点吃，2 吃父节点
  
 void set(int n) //初始化
 {
@@ -79,7 +79,7 @@ int main()
         else if(find(x) == find(y)) //如果原来有关系，也就是在同一棵树中，那么直接判断是否说谎
         {
             if(d == 1 && r[x] != r[y]) ans++; //如果 x 和 y 不属于同一类
-            if(d == 2 && (r[x]+1)%3 != r[y]) ans++; // 如果 x 没有吃 y (注意要对应Uinon(x, y)的情况，否则一路WA到死啊！！！)
+            if(d == 2 && (r[x]+1)%3 != r[y]) ans++; // 如果 x 没有吃 y （注意要对应 Uinon(x, y) 的情况，否则一路 WA 到死啊！！！)
         }
         else Union(x, y, d); //如果开始没有关系，则建立关系
     }

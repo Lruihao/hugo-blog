@@ -1,11 +1,11 @@
 ---
-title: 用 MyQR 制作专属动态二维码(py和exe版本)
+title: 用 MyQR 制作专属动态二维码 (py 和 exe 版本）
 date: 2019-04-27 14:16:54
 tags: ["pillow","numpy","imageio","Python","Backend"]
 categories: ["Python"]
 ---
 
-> **Python 二维码生成器**是github上@sylnsfar开源的一个python生成二维码工具。有python,网页及exe版本，详见[sylnsfar/qrcode](https://github.com/sylnsfar/qrcode/)，本文主要介绍记录一下python版本使用。exe可以去[项目开源地址](https://github.com/sylnsfar/qrcode_win)下载，公众号文章后台回复关键词“qrcode”获取链接。
+> **Python 二维码生成器**是 github 上@sylnsfar 开源的一个 python 生成二维码工具。有 python, 网页及 exe 版本，详见 [sylnsfar/qrcode](https://github.com/sylnsfar/qrcode/)，本文主要介绍记录一下 python 版本使用。exe 可以去 [项目开源地址](https://github.com/sylnsfar/qrcode_win) 下载，公众号文章后台回复关键词“qrcode”获取链接。
 
 可生成*普通二维码*、*带图片的艺术二维码（黑白与彩色）*、*动态二维码（黑白与彩色）*。
 
@@ -38,11 +38,11 @@ Positional parameter
 Optional parameters
    version: int, from 1 to 40  # 控制边长
    level: str, just one of ('L','M','Q','H') # 控制纠错水平，从左到右依次升高。
-   picutre: str, a filename of a image # 图片，需在同路径,默认None
-   colorized: bool  # 是否彩色 默认False
-   constrast: float # 对比度 默认1.0
-   brightness: float # 亮度 默认1.0
-   save_name: str, the output filename like 'example.png' #控制文件名，默认None,'qrcode.png'
+   picutre: str, a filename of a image # 图片，需在同路径，默认 None
+   colorized: bool  # 是否彩色 默认 False
+   constrast: float # 对比度 默认 1.0
+   brightness: float # 亮度 默认 1.0
+   save_name: str, the output filename like 'example.png' #控制文件名，默认 None,'qrcode.png'
    save_dir: str, the output directory # 储存路径
 '''
 ```
@@ -75,7 +75,7 @@ myqr 	Words
 
 - 普通二维码 介绍了 `Words`, `-v`, `-l`, `-n`, `-d` 
 - 艺术二维码 介绍了  `-p`, `-c`, `-con`, `-bri`
-- 动态GIF二维码 介绍了动态的生成方法和注意点
+- 动态 GIF 二维码 介绍了动态的生成方法和注意点
 
 #### 普通二维码
 
@@ -93,14 +93,13 @@ myqr https://github.com -v 10 -l Q
 
 * **默认边长**是取决于你输入的信息的长度和使用的纠错等级；
 
-  而**默认纠错等级**是最高级的H。
+  而**默认纠错等级**是最高级的 H。
 
 * **自定义**：如果想要控制边长和纠错水平就使用 `-v` 和 `-l` 参数。
 
-   `-v` 控制边长，范围是**1至40**，数字越大边长越大；
+   `-v` 控制边长，范围是** 1 至 40**，数字越大边长越大；
 
-   `-l` 控制纠错水平，范围是**L、M、Q、H**，从左到右依次升高。
-
+   `-l` 控制纠错水平，范围是** L、M、Q、H**，从左到右依次升高。
 
 ```markdown
 #3 -n, -d
@@ -119,13 +118,12 @@ myqr https://github.com -n github_qr.jpg  -d .../paths/
 
 #### 艺术二维码
 
-
 ```markdown
 #1 -p
 myqr https://github.com -p github.jpg
 ```
 
-* 参数`-p` 用来将QR二维码图像与一张同目录下的图片相结合，产生一张**黑白**图片。
+* 参数`-p` 用来将 QR 二维码图像与一张同目录下的图片相结合，产生一张**黑白**图片。
 
   
 ```markdown
@@ -135,21 +133,18 @@ myqr https://github.com -p github.jpg -c
 
 * 加上参数 `-c` 可以使产生的图片由黑白变为**彩色**的。
 
-
 ```markdown
 #3 -con, -bri
 myqr https://github.com -p github.jpg [-c] -con 1.5 -bri 1.6
 ```
 
-* 参数`-con` 用以调节图片的**对比度**，1.0 表示原始图片，更小的值表示更低对比度，更大反之。**默认为1.0**。
+* 参数`-con` 用以调节图片的**对比度**，1.0 表示原始图片，更小的值表示更低对比度，更大反之。**默认为 1.0**。
 
 * 参数 `-bri` 用来调节图片的**亮度**，其余用法和取值与 `-con` 相同。
 
-
-#### 动态GIF二维码
+#### 动态 GIF 二维码
 
 动态二维码与上述的带图片的二维码的生成方法没什么区别，你只要采用 `.gif` 格式的图片即可生成黑白或者彩色的动态二维码。但**注意**如果使用了 `-n` 参数自定义输出的文件名，切记其格式也必须是 `.gif` 格式。
-
 
 ### 作为导入文件
 
@@ -170,7 +165,6 @@ version, level, qr_name = myqr.run(
 ```
 
 *以下各个参数已经在**上文命令行方式**有所介绍*
-
 
 ```python
 # help(myqr)
@@ -193,7 +187,6 @@ Optional parameters
 * 请采用**正方形**或近似正方形的图片
 
 * 建议在图片尺寸大的时候使用 `-v` 的值也应该**适当**变大。
-
 
 ## 可用字符
 

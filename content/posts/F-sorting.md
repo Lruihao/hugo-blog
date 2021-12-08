@@ -1,7 +1,7 @@
 ---
 title: F.sorting
 date: 2018-06-14 22:49:27
-tags: ["2018湘潭邀请赛","ACM"]
+tags: ["2018 湘潭邀请赛","ACM"]
 categories: ["ACM"]
 ---
 
@@ -27,11 +27,11 @@ categories: ["ACM"]
     1 2
     1 2 3
 
-题意：给定n个元组(a1,b1,c1),(a2,b2,c2),...,(an,bn,cn)，将其按(ai+bi)/(ai+bi+ci)的值从小到大排序，输出排序后的n个元组的原序号；  
-思路：编写sort里的cmp函数(形参为元组结构体元素，设为Tuple x,Tuple y)，若直接算出(x.a+x.b)*(y.a+y.b+y.c)和(y.a+y.b)*(x.a+x.b+x.c)再比较大小，这两个结果会爆unsigned long long；  
-可以把因式乘积展开成多项式的和，约去两式中相同的项，得到x.a*y.c+x.b*y.c和y.a*x.c+y.b*x.c，因此只需计算它俩再比较即可，结果不会爆unsigned long long   
+题意：给定 n 个元组 (a1,b1,c1),(a2,b2,c2),...,(an,bn,cn)，将其按 (ai+bi)/(ai+bi+ci) 的值从小到大排序，输出排序后的 n 个元组的原序号；  
+思路：编写 sort 里的 cmp 函数（形参为元组结构体元素，设为 Tuple x,Tuple y)，若直接算出 (x.a+x.b)*(y.a+y.b+y.c) 和 (y.a+y.b)*(x.a+x.b+x.c) 再比较大小，这两个结果会爆 unsigned long long；  
+可以把因式乘积展开成多项式的和，约去两式中相同的项，得到 x.a*y.c+x.b*y.c 和 y.a*x.c+y.b*x.c，因此只需计算它俩再比较即可，结果不会爆 unsigned long long   
 
-后AC代码
+后 AC 代码
 ```c
 #include "bits/stdc++.h"
 using namespace std;

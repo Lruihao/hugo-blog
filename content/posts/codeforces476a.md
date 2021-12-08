@@ -30,7 +30,7 @@ Print a single integer — the minimal number of moves being a multiple of m. If
 For the first sample, Dreamoon could climb in 6 moves with following sequence of steps: {2, 2, 2, 2, 1, 1}.  
 For the second sample, there are only three valid sequence of steps {2, 1}, {1, 2}, {1, 1, 1} with 2, 2, and 3 steps respectively. All these numbers are not multiples of 5.  
 
-有一个n级台阶，每次可以走一级或两级，问最少的步数是多少，且步数必须是m的倍数。  
+有一个 n 级台阶，每次可以走一级或两级，问最少的步数是多少，且步数必须是 m 的倍数。  
 找一下数学公式就好了。  
 具体看代码。  
 ```cpp

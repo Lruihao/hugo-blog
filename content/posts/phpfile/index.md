@@ -1,5 +1,5 @@
 ---
-title: php按行读取文件信息
+title: php 按行读取文件信息
 date: 2019-09-28 17:11:17
 tags:
 - PHP
@@ -9,15 +9,15 @@ categories:
 ---
 
 # 普通方法
-首先采用`fopen()`函数打开文件，得到返回值的就是资源类型。接着采用while循环一行行地读取文件，然后输出每行的文字。`feof()`判断是否到最后一行,`fgets()`读取一行文本。
+首先采用`fopen()`函数打开文件，得到返回值的就是资源类型。接着采用 while 循环一行行地读取文件，然后输出每行的文字。`feof()`判断是否到最后一行，`fgets()`读取一行文本。
 <!--more-->
 ```php
 <?php
 
   //首先采用“fopen”函数打开文件，得到返回值的就是资源类型。
-  $file_handle = fopen("C:\\Users\\李瑞豪\\Desktop\\备忘录.txt","r");
+  $file_handle = fopen("C:\\Users\\李瑞豪、\Desktop\\备忘录。txt","r");
   if ($file_handle){
-      //接着采用while循环一行行地读取文件，然后输出每行的文字
+      //接着采用 while 循环一行行地读取文件，然后输出每行的文字
       while (!feof($file_handle)) { //判断是否到最后一行
           $line = fgets($file_handle); //读取一行文本
           echo $line; //输出一行文本
@@ -28,9 +28,9 @@ categories:
 
 ?>
 ```
-`readfile（）`函数，返回一整个String
+`readfile（）`函数，返回一整个 String
 ```php
-echo readfile("C:\\Users\\李瑞豪\\Desktop\\备忘录.txt");
+echo readfile("C:\\Users\\李瑞豪、\Desktop\\备忘录。txt");
 ```
 
 # 快速方法

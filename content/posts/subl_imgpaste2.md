@@ -33,7 +33,7 @@ categories:
 3. 然后就可以愉快的使用截图，然后在 sublime 里使用 `ctrl+shift+v` 粘贴 Markdown 格式的图片。默认会自动根据 md 文件名在同级目录下新建文件夹，图片就默认保存在那。如图：  
 ![](https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif "演示")
 
-> VScode 也有更好用的插件: Past Image
+> VScode 也有更好用的插件：Past Image
 
 ```
 "pasteImage.defaultName": "YY_X",

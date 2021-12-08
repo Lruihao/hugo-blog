@@ -1,7 +1,7 @@
 ---
 title: A.Easy h-index
 date: 2018-06-14 22:36:58
-tags: ["2018湘潭邀请赛","ACM","C++"]
+tags: ["2018 湘潭邀请赛","ACM","C++"]
 categories: ["ACM"]
 ---
 
@@ -41,10 +41,10 @@ For each test case, print an integer which denotes the result.
     2
     0
 
-题意：给定被引用次数为0~n的论文分别有几张，找到最大的h，满足被引用次数大于等于h的论文至少有h张  
-思路：在区间[0,n]内二分答案；或直接从n~0遍历找到第一个满足条件的h
+题意：给定被引用次数为 0~n 的论文分别有几张，找到最大的 h，满足被引用次数大于等于 h 的论文至少有 h 张  
+思路：在区间 [0,n] 内二分答案；或直接从 n~0 遍历找到第一个满足条件的 h
 
-后AC代码
+后 AC 代码
 ```c
 #include "bits/stdc++.h"
 using namespace std;

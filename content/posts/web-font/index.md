@@ -8,7 +8,7 @@ tags:
 - Backend
 categories:
 - Nodejs
-description: "html网页引用中文字体，文件过大，加载缓慢的解决办法"
+description: "html 网页引用中文字体，文件过大，加载缓慢的解决办法"
 ---
 ### 安装 nodeJs
 这个不多说，都有。
@@ -21,7 +21,7 @@ npm install font-spider -g
 安装成功之后就开始压缩了
 ![文件结构](images/menu.png)
 
-我的css
+我的 css
 ```css
 <style type="text/css">
   @font-face {
@@ -32,7 +32,7 @@ npm install font-spider -g
 ```
 生成新的字体库，命令行输入
 ```
-font-spider C:\Users\李瑞豪\Desktop\love\index.html
+font-spider C:\Users\李瑞豪、Desktop\love\index.html
 ```
 ![执行结果](images/jieguo.png)
 

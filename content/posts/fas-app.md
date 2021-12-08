@@ -1,36 +1,36 @@
 ---
-title: 博採眾長app
+title: 博採眾長 app
 date: 2018-11-12 16:04:04
 tags: ["lua","fusion"]
 categories: ["others"]
 ---
 
-{{< cardlink href="https://ziyuan.lruihao.cn/app/bczc_2.6.2.apk" content="博客app下载" >}}
+{{< cardlink href="https://ziyuan.lruihao.cn/app/bczc_2.6.2.apk" content="博客 app 下载" >}}
 
 ### 介绍
-使用fusion app对网页进行的封装。  
+使用 fusion app 对网页进行的封装。  
 功能：  
 * 浏览本博客，主页
 * 私人网盘
-* 2048等小游戏
-* 在线客服，QQ等
-* pc与移动浏览器标识切换
+* 2048 等小游戏
+* 在线客服，QQ 等
+* pc 与移动浏览器标识切换
 * 留言，打赏，博主日志等
-* 分享功能，分享到QQ，微信，浏览器打开等
-* app内添加书签，自动记录历史记录，刷新等
+* 分享功能，分享到 QQ，微信，浏览器打开等
+* app 内添加书签，自动记录历史记录，刷新等
 * **配合博客的`PWA + quicklink`功能可实现离线浏览**
 <!--more-->
 
 ### 下载
 
-> ~~app内也可以更新，不过就我自己用，懒得更新。~~
+> ~~app 内也可以更新，不过就我自己用，懒得更新。~~
 
-* [百度云，密码:479l](https://pan.baidu.com/s/19jOvnNhssF302Mi1GRa2Sw) 
-* [github下载](https://github.com/Lruihao/Blog_fas_apk)
+* [百度云，密码：479l](https://pan.baidu.com/s/19jOvnNhssF302Mi1GRa2Sw) 
+* [github 下载](https://github.com/Lruihao/Blog_fas_apk)
 
-**PWA应用**
-1. 地址栏输入: Chrome://flags
-2. 搜索并启用以下项目: Desktop PWAs(桌面PWAs)、App Banners(应用横幅)、Experimental App Banners(实验性应用横幅)
+**PWA 应用**
+1. 地址栏输入：Chrome://flags
+2. 搜索并启用以下项目：Desktop PWAs（桌面 PWAs)、App Banners（应用横幅）、Experimental App Banners（实验性应用横幅）
 3. 重启浏览器使修改的设置生效
 4. 点击地址栏最右边按钮
 5. 安装“博採眾長”
@@ -52,57 +52,56 @@ version=tostring(packinfo.versionName)
 versioncode=tostring(packinfo.versionCode)
 
 url="https://share.weiyun.com/43fa66d8fc95db27141530ed2d006be2";
-function 过滤(content)
+function 过滤 (content)
   版本名=content:match("【版本名】(.-)【版本名】")
   版本=content:match("【版本】(.-)【版本】")
   内容=content:match("【内容】(.-)【内容】")
   链接=content:match("【链接】(.-)【链接】")
-if(版本名==nil) then
+if（版本名==nil) then
   版本名="获取失败"
 end
-if(版本==nil) then
+if（版本==nil) then
   版本="0"
 end
-if(内容==nil) then
+if（内容==nil) then
   内容="获取失败"
 end
-if(链接==nil) then
-  弹出消息("服务器参数配置错误，请过段时间再次尝试")
+if（链接==nil) then
+  弹出消息 ("服务器参数配置错误，请过段时间再次尝试")
 end
 
-if(版本 > versioncode) then
+if（版本 > versioncode) then
   dl.dismiss()
     tt.stop() 
-对话框()
-.设置标题("检测到更新")
-.设置消息("版本："..version.."→"..版本名.."\n更新内容："..内容)
-.设置积极按钮("下载更新",function()
-  下载文件(链接)
-  弹出消息("下载更新中…")
+对话框 ()
+. 设置标题 ("检测到更新")
+. 设置消息 ("版本："..version.."→".. 版本名。."\n 更新内容：".. 内容）
+. 设置积极按钮 ("下载更新",function()
+  下载文件（链接）
+  弹出消息 ("下载更新中…")
 end)
-.设置消极按钮("取消更新")
-.显示()
+. 设置消极按钮 ("取消更新")
+. 显示 ()
 else
 dl.dismiss()
     tt.stop()
-弹出消息("当前已是最新版本！")
-end
+弹出消息 ("当前已是最新版本！")
 end
 Http.get(url,nil,"UTF-8",nil,function(code,content,cookie,header)
   if(code==200 and content)then
     content=content:match("\"html_content\":(.-),"):gsub("\\u003C/?.-%>",""):gsub("\\\\","&revs;"):gsub("\\n","\n"):gsub("&nbsp;"," "):gsub("&lt;","<"):gsub("&gt;",">"):gsub("&quot;","\""):gsub("&apos;","'"):gsub("&revs;","\\"):gsub("&amp;","&");
-    过滤(content)
+    过滤 (content)
   else
   dl.dismiss()
     tt.stop() 
-     弹出消息("本地网络或服务器异常 "..code)
+     弹出消息 ("本地网络或服务器异常 "..code)
   end
 end)
 ```
 #### 方向锁定
 
 ```lua
---flag在程序启动事件声明的全局变量
+--flag 在程序启动事件声明的全局变量
 if flag==1 then
   activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
   SetHSP="H"
@@ -121,12 +120,11 @@ end
 
 #### 程序启动事件
 ```lua
-弹出消息("©2018 李瑞豪")
+弹出消息 ("©2018 李瑞豪")
 
 --自动，由物理感应器决定
 import "android.content.pm.ActivityInfo"
 flag=1
-
 
 --程序退出时执行对话框
 function onKeyDown(key,event)
@@ -136,43 +134,42 @@ function onKeyDown(key,event)
     else
       appinfo=this.getPackageManager().getApplicationInfo(this.getPackageName(),0)
       applabel=this.getPackageManager().getApplicationLabel(appinfo)
-      退出确认=对话框()
-      .设置消息("您确定要退出 "..applabel.." 吗?")
+      退出确认=对话框 ()
+      . 设置消息 ("您确定要退出 "..applabel.." 吗？")
       退出按钮={
         [1]=function()
           退出确认
-          .设置积极按钮("确认",function()
-            退出程序()
+          . 设置积极按钮 ("确认",function()
+            退出程序 ()
             end
              )
-             .设置中立按钮("清除缓存",function()
-               对话框()
-               .设置消息("清除缓存后再次运行程序将变得缓慢\n您确定要清除 "..applabel.." 的缓存吗?")
-               .设置积极按钮("确定",function()
+             . 设置中立按钮 ("清除缓存",function()
+               对话框 ()
+               . 设置消息 ("清除缓存后再次运行程序将变得缓慢、n 您确定要清除 "..applabel.." 的缓存吗？")
+               . 设置积极按钮 ("确定",function()
                 os.execute("pm clear "..this.packageName)
-                退出程序()
+                退出程序 ()
                 end)
-               .设置消极按钮("取消",function()
+               . 设置消极按钮 ("取消",function()
                 end)
-              .显示()
+              . 显示 ()
              end
            )
-          .设置消极按钮("取消")
+          . 设置消极按钮 ("取消")
           end
         }      
       math.randomseed(tonumber(tostring(os.time()):reverse():sub(1, 6)))
-      退出按钮[math.random(1,1)]()
-      退出确认.show()
+      退出按钮 [math.random(1,1)]()
+      退出确认。show()
     end
     return true
   end
 end
 
-
 --历史记录
 lstads="/data/data/"..activity.getPackageName().."/lst.lua"
 lstwebads="/data/data/"..activity.getPackageName().."/lstweb.lua"
---2.序列化
+--2. 序列化
 function slz(obj) 
   local lua = "" 
   local t = type(obj) 
@@ -218,7 +215,7 @@ function rslz(lua)
   return func() 
 end
 
---3.历史记录框布局
+--3. 历史记录框布局
 function hstshow()
   hstlayout={
     LinearLayout,
@@ -252,22 +249,21 @@ function hstshow()
   }
 end
 
-
 --##功能函数##
 
---1.读取历史文件
+--1. 读取历史文件
 function read_hst()
   import "java.io.File"
   File(lstads).createNewFile()
   slst=io.open(lstads):read("*a")
   File(lstwebads).createNewFile()
   slstweb=io.open(lstwebads):read("*a")
-  --转换成table
+  --转换成 table
   lst=rslz(slst)
   lstweb=rslz(slstweb)
 end
 
---2.新网页加入历史记录
+--2. 新网页加入历史记录
 function add_hst()
   if string.len(webView.getTitle())<=300 then--粗略过掉无效标题
     newtitle=webView.getTitle()
@@ -277,9 +273,9 @@ function add_hst()
   end
 end
 
---3.存储历史文件
+--3. 存储历史文件
 function save_hst()
-  --转换成string
+  --转换成 string
   slst=slz(lst)
   slstweb=slz(lstweb)
   --保存
@@ -295,7 +291,7 @@ function save_hst()
   io.close(file)
 end
 
---4.显示历史记录框
+--4. 显示历史记录框
 function show_hst() 
   hstshow()
   local hl=AlertDialog.Builder(activity)
@@ -307,29 +303,29 @@ function show_hst()
   .create()
   hl.show()
   hlst.onItemClick=function(l,v,c,b)
-    加载网页(lstweb[b])
+    加载网页 (lstweb[b])
     hl.dismiss()
   end
   hlst.onItemLongClick=function(l,v,c,b)
     hl.dismiss()
-    对话框()
-    .设置消息("是否删除记录？")
-    .设置消极按钮("取消",function()
+    对话框 ()
+    . 设置消息 ("是否删除记录？")
+    . 设置消极按钮 ("取消",function()
       show_hst()
     end)
-    .设置积极按钮("确定",function()
+    . 设置积极按钮 ("确定",function()
       table.remove(lst,b)
       table.remove(lstweb,b)
       save_hst()
       show_hst()
     end )
-    .显示()
+    . 显示 ()
     return true
   end
 end
---5.清除缓存
+--5. 清除缓存
 function clr()
-  --导入File类
+  --导入 File 类
   import "java.io.File"
   --显示多选框
   items={"浏览记录","缓存文件"}
@@ -362,14 +358,13 @@ function clr()
       if p==1 then clearall=1
       end
     end})
-  多选对话框.show();
+  多选对话框。show();
   clearhistory=0
   clearall=0
 end
 
-
 activity.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
---11.长按弹窗
+--11. 长按弹窗
 function popwin(od)
   local win1="向上移动"
   local win2="编辑"
@@ -423,8 +418,6 @@ function downfav(b)
   save_fav()
   show_fav()
 end
-
-
 
 --加入收藏
 function getAllData(name)
@@ -563,8 +556,8 @@ function showDataDialog(name,title,jdpuk)
   local adpd=adapterData(values)
   local items=LuaAdapter(this,adpd,item)
 
-  local dlb=对话框()
-  dlb.设置标题(title)
+  local dlb=对话框 ()
+  dlb. 设置标题 (title)
   local dl
   if #keys>0 then
     dlb.setView(loadlayout(listlayout))
@@ -577,10 +570,10 @@ function showDataDialog(name,title,jdpuk)
       end
     end
     list.onItemLongClick=function(adp,view,pos,id)--325 52732
-      对话框()
-      .设置标题(title)
+      对话框 ()
+      . 设置标题 (title)
       .setView(loadlayout(input2layout))
-      .设置积极按钮("保存",function()--32552732
+      . 设置积极按钮 ("保存",function()--32552732
         if not(edit1.text=="") and not(edit2.text=="") or 3255==2732 then
           removeData(name,keys[id])
           putData(name,edit2.text,edit1.text)--32552732
@@ -589,11 +582,11 @@ function showDataDialog(name,title,jdpuk)
             showDataDialog(name,title)
           end
         else
-          弹出消息("请填写所有字段")
+          弹出消息 ("请填写所有字段")
         end
       end)
-      .设置消极按钮("取消")
-      .设置中立按钮("删除",function()
+      . 设置消极按钮 ("取消")
+      . 设置中立按钮 ("删除",function()
         removeData(name,keys[id])
         items.remove(pos)
         table.remove(keys,id)
@@ -605,7 +598,7 @@ function showDataDialog(name,title,jdpuk)
           end
         end
       end)
-      .显示()
+      . 显示 ()
       edit1.setHint("标题")
       edit2.setHint("链接")
       edit1.setText(values[id])
@@ -613,31 +606,31 @@ function showDataDialog(name,title,jdpuk)
       return true
     end
   else
-    dlb.设置消息("没有收藏")
+    dlb. 设置消息 ("没有收藏")
   end
-  dlb.设置积极按钮("新建收藏",function()addDataDialog(name,"新建收藏")end)
+  dlb. 设置积极按钮 ("新建收藏",function()addDataDialog(name,"新建收藏")end)
   dl=dlb.show()
 end
 
 function addDataDialog(name,title,value,key)--32552732
-  对话框()
-  .设置标题(title)
+  对话框 ()
+  . 设置标题 (title)
   .setView(loadlayout(input2layout))
-  .设置积极按钮("保存",function()
+  . 设置积极按钮 ("保存",function()
     if not(edit1.text=="") and not(edit2.text=="") or 325==52732 then
       if not getData(name,edit2.text) then
         putData(name,edit2.text,edit1.text)
       else
-        弹出消息("该链接已存在")
+        弹出消息 ("该链接已存在")
         addDataDialog(name,title,edit1.text,edit2.text)
       end
     else
-      弹出消息("请填写所有字段")
+      弹出消息 ("请填写所有字段")
       addDataDialog(name,title,edit1.text,edit2.text)
     end
   end)
-  .设置消极按钮("取消")
-  .显示()
+  . 设置消极按钮 ("取消")
+  . 显示 ()
   edit1.setHint("标题")
   edit2.setHint("链接")
   if(value)then

@@ -18,8 +18,6 @@ featuredImage: "/posts/font-mmt/images/word1.png"
 {{< style "display: inline-block;width: 30%;" span >}}
   ![](images/setting.png)
 {{< /style >}}
-{{< /style >}}
-
 
 ---
 ## 介绍
@@ -30,12 +28,12 @@ featuredImage: "/posts/font-mmt/images/word1.png"
   #沐目体# 沐目之，湘也。（以~~女盆友~~前女友名字命名的字体）
 
 * 笔头设置  
-  狼毫笔型，粗细为9，速度模式
+  狼毫笔型，粗细为 9，速度模式
 
 * 屏写方式  
 
 * [最新版下载](https://github.com/Lruihao/MMT/raw/master/mmt@last.ttf) · [沐目体下载](https://github.com/Lruihao/MMT/releases)  
-  使用手机造字app手写制作，写了大概1年半吧，终于写完了，写完看效果发现粗细细了点，字型也小了点，只好以后有时间再改罗。基本上还是挺满意的，下面是效果图。
+  使用手机造字 app 手写制作，写了大概 1 年半吧，终于写完了，写完看效果发现粗细细了点，字型也小了点，只好以后有时间再改罗。基本上还是挺满意的，下面是效果图。
 
 ***注：仅用于个人非商用！***
 {{< /admonition >}}

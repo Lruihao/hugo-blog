@@ -1,5 +1,5 @@
 ---
-title: 简单评论模块--php表单练习
+title: 简单评论模块--php 表单练习
 date: 2019-07-19 11:38:59
 tags:
 - PHP
@@ -8,16 +8,16 @@ categories:
 - PHP
 ---
 
-> 简单模仿了一个评论模板，当然肯定是没有博客的valine这么强大的hhhh，  
-> **PHP表单安全性的重要提示**  
+> 简单模仿了一个评论模板，当然肯定是没有博客的 valine 这么强大的 hhhh，  
+> **PHP 表单安全性的重要提示**  
 > `$_SERVER["PHP_SELF"]`变量能够被黑客利用！  
 > 如果页面中使用了`PHP_SELF`，用户能够输入下划线然后执行跨站点脚本（XSS）。  
-> 比如说注入js脚本等，valine以前的版本也有过这样的漏洞。  
+> 比如说注入 js 脚本等，valine 以前的版本也有过这样的漏洞。  
 > 
 > `跨站点脚本（Cross-site scripting，XSS）`是一种计算机安全漏洞类型，常见于 Web 应用程序。XSS 能够使攻击者向其他用户浏览的网页中输入客户端脚本。
 
 <!--more-->
-可以像valine一样在用户输入完后保留输入，还有一些正则控制输入提示等简单功能。UI就丑爆了算了。。。
+可以像 valine 一样在用户输入完后保留输入，还有一些正则控制输入提示等简单功能。UI 就丑爆了算了。
 ```xml 完整表单
 <!DOCTYPE HTML> 
 <html>
@@ -98,7 +98,7 @@ function test_input($data) {
       姓名：<input type="text" name="name" value="<?php echo $name;?>">
       <span class="error">* <?php echo $nameErr;?></span>
       <br><br>
-      性别:
+      性别：
       <input type="radio" name="gender" <?php if (isset($gender) && $gender=="女性") echo "checked";?> value="女性">女性
       <input type="radio" name="gender" <?php if (isset($gender) && $gender=="男性") echo "checked";?> value="男性">男性
       <span class="error">* <?php echo $genderErr;?></span>

@@ -54,7 +54,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 在 `config.toml` 添加 `theme = "LoveIt"`
 
 ### 在本地启动网站
-使用以下命令启动网站: 
+使用以下命令启动网站：
 ```bash
 hugo serve --disableFastRender
 ```
@@ -95,8 +95,8 @@ hugo --minify
 </details>
 
 - [ ] ~~[cos-album](https://img.lruihao.cn) 和 [🍚饭醉团伙🍷](https://sz.journey.lruihao.cn) 整合到博客 cos-album/ [#7 (wontfix)](https://github.com/Lruihao/hugo-blog/issues/7)~~
-- [ ] ~~新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等~~ (保持原本博客的纯粹性)
-- [x] 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化(但似乎没必要)
+- [ ] ~~新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等~~ （保持原本博客的纯粹性）
+- [x] 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化（但似乎没必要）
 - [x] 博客 SEO 优化迁移
 - [X] `Github actions` 自动部署到 **Github pages** 和 **COS** 脚本编写
 - [x] hugo 本地管理 shell 脚本工具编写
@@ -115,12 +115,12 @@ hugo --minify
 </details>
 
 - [ ] hugo 内容加密研究 [#3](https://github.com/Lruihao/hugo-blog/issues/3)
-- [ ] `Lruihao/hugo-blog/README.md` 撰写, MIT, 发布 1.0.0 版本做完整备份，base on theme version
+- [ ] `Lruihao/hugo-blog/README.md` 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version
 - [x] 更换 gravatar 头像 [#4](https://github.com/Lruihao/hugo-blog/issues/4)
 - [ ] 博客在线编辑器研究 github1s 等 [#5](https://github.com/Lruihao/hugo-blog/issues/5)
 
 ### Theme LoveIt
-> hugo LoveIt 主题整体优化，~~必要时建 PR 或 issue 到 LoveIt 仓库~~ (LoveIt 已停更一年多)  
+> hugo LoveIt 主题整体优化，~~必要时建 PR 或 issue 到 LoveIt 仓库~~ (LoveIt 已停更一年多）  
 > 先把自己发现和 LoveIt 原 repo 的 issue 尽可能的修复，修改的原则是：**不改动原项目代码**，  
 > 唯一途径就是在站点相同的目录用**新增**的方式替代**修改、删除**操作。  
 > 之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。

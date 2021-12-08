@@ -1,15 +1,15 @@
 ---
-title: js判断用户设备类型及平台
+title: js 判断用户设备类型及平台
 date: 2018-11-03 23:35:44
 tags: ["JavaScript","他山之石","Frontend"]
 categories: ["JavaScript"]
 ---
 > 转自 https://www.cnblogs.com/coober/p/6594379.html
 
-前端开发经常遇到需要判断用户的浏览设备，是pc端还是移动端，移动端使用的是什么手机系统？android、ios、ipad、windows phone等等，有时候还需要知道用户浏览页面是在微信中打开还是在移动端浏览器中打开，等等一系列判断做一些相应的处理。
+前端开发经常遇到需要判断用户的浏览设备，是 pc 端还是移动端，移动端使用的是什么手机系统？android、ios、ipad、windows phone 等等，有时候还需要知道用户浏览页面是在微信中打开还是在移动端浏览器中打开，等等一系列判断做一些相应的处理。
 
 <!--more-->
-### 首先判断pc端还是移动端
+### 首先判断 pc 端还是移动端
 ```
 function IsPC() {
         var userAgentInfo = navigator.userAgent;
@@ -34,7 +34,7 @@ var u = navigator.userAgent;
     } else if (u.indexOf('iPhone') > -1) {
         //苹果手机
     } else if (u.indexOf('Windows Phone') > -1) {
-        //winphone手机
+        //winphone 手机
     }
 ```
 ### 判断用户是否在微信中打开
@@ -51,7 +51,7 @@ function isWeiXin(){
 
 ### 实际运用
 
-根据pc或者移动端控制飘花数目，降低cpu消耗，减少卡顿。[demo](https://www.lruihao.cn)
+根据 pc 或者移动端控制飘花数目，降低 cpu 消耗，减少卡顿。[demo](https://www.lruihao.cn)
 ```
   <script>
     function sakuraInit() {

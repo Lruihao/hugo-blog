@@ -1,11 +1,11 @@
 ---
-title: how many tables-HDU-1213(并查集求连通域数目)
+title: how many tables-HDU-1213（并查集求连通域数目）
 date: 2018-07-31 11:12:10
 tags: ["并查集","HDU","C++","ACM"]
 categories: ["ACM"]
 ---
 
-并查集求连通域数目，初始化sum=n；
+并查集求连通域数目，初始化 sum=n；
 题目链接： [how many tables](http://acm.hdu.edu.cn/showproblem.php?pid=1213)
 
 <!--more-->

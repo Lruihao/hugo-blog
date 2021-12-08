@@ -1,19 +1,19 @@
 ---
-title: QQ强制生成卡片式链接
+title: QQ 强制生成卡片式链接
 date: 2019-03-08 16:52:13
 tags: ["JavaScript","Frontend","脚本"]
 categories: ["JavaScript"]
 ---
 
-> 以前在QQ里面聊天的时候发现，有些链接是卡片式的链接，像知乎里那些一样，就好奇为啥我的域名没有生成卡片。  
-查了一下百度知道了大概就是qq没有抓取到你的网站的xml。并在其他教程中得到了一个强制提交抓取的url `https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=`  于是就有了脚本刷新的想法。简陋的写了一下。
+> 以前在 QQ 里面聊天的时候发现，有些链接是卡片式的链接，像知乎里那些一样，就好奇为啥我的域名没有生成卡片。  
+查了一下百度知道了大概就是 qq 没有抓取到你的网站的 xml。并在其他教程中得到了一个强制提交抓取的 url `https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=`  于是就有了脚本刷新的想法。简陋的写了一下。
 
 <!--more-->
 
 ## 批量式刷新
 
-```javascript 批量式刷新js
-//设置刷新前缀url=首页地址（最好使用https）
+```javascript 批量式刷新 js
+//设置刷新前缀 url=首页地址（最好使用 https）
 	var base_src = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=https://lruihao.cn";
 	//用户地址
 	//var custom_src = "https://lruihao.cn";
@@ -42,18 +42,18 @@ categories: ["JavaScript"]
 
 	}
 	
-	//负责打开窗口,并关闭
+	//负责打开窗口，并关闭
 	function open_new(){
 		var new_window =  window.open(new_src,'','width=400,height=200');
 		setTimeout(function(){
-			//开启后200ms（单页）关闭，速度自行把握数组越大时间越多
+			//开启后 200ms（单页）关闭，速度自行把握数组越大时间越多
 			new_window.close();
 		}, 2000);
 	}
 
 	window.onload =function(){
 		 createArrayAndOpenWindow();
-		 //设置定时函数，疯狂刷新直到xml出现内容
+		 //设置定时函数，疯狂刷新直到 xml 出现内容
 		 var timer =  setInterval("createArrayAndOpenWindow()", 2000);
 		 
 	}
@@ -68,19 +68,19 @@ categories: ["JavaScript"]
 </div>
 ```
 
-```javascript 单链接刷新js
-//设置刷新前缀url=首页地址（最好使用https）https://lruihao.cn
+```javascript 单链接刷新 js
+//设置刷新前缀 url=首页地址（最好使用 https）https://lruihao.cn
 	var base_src = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=";
 	//用户地址
 	var custom_src = "";
 	//初始化工作地址
 	var new_src = "";
 	
-	//负责打开窗口,并关闭
+	//负责打开窗口，并关闭
 	function open_new(){
 		var new_window =  window.open(new_src,'','width=400,height=200');
 		setTimeout(function(){
-			//开启后200ms关闭
+			//开启后 200ms 关闭
 			new_window.close();
 		}, 200);
 	}
@@ -100,5 +100,5 @@ categories: ["JavaScript"]
 ```
 
 ## demo
-![线上demo仅做参考请自行下载](images/1.png)  
+![线上 demo 仅做参考请自行下载](images/1.png)  
 ![效果](images/2.png)

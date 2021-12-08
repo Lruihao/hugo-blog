@@ -12,35 +12,35 @@ categories: ["Fullstack"]
 
 # Git
 * Master 的 BUG 必須最少且趨近於零，为最稳定的版本
-* 每次 Commit 訊息應該確實填寫。不可模稜兩可，eg: 修复BUG、增加功能
+* 每次 Commit 訊息應該確實填寫。不可模稜兩可，eg: 修复 BUG、增加功能
 * 禁止 Commit IDE 的 project data
 * 禁止上傳垃圾程式碼
-* Gitea編輯內容類似里程碑和版本描述時要使用Markdown格式
+* Gitea 編輯內容類似里程碑和版本描述時要使用 Markdown 格式
 
 ## 分支（Branch）
-* 命名規則：應以此分支主要目的命名（修復什麼BUG，新增特定功能）  
-  不可出現版本號，模組ID
+* 命名規則：應以此分支主要目的命名（修復什麼 BUG，新增特定功能）  
+  不可出現版本號，模組 ID
 * 合併後的分支應刪除
 
 ## commit
-* 遵循一個功能一個commit的原則
+* 遵循一個功能一個 commit 的原則
 
 # Restful
-* 資源名詞站在API的角度思考
-  * 複數名詞：可以複數筆資料，回傳結果為Array
+* 資源名詞站在 API 的角度思考
+  * 複數名詞：可以複數筆資料，回傳結果為 Array
     舉例：GET/users 取得多筆使用者資料
-    * 刪除，放在複數名詞內，讓Router保持一致性
-    * 增加，放在複數名詞內，讓Router保持一致性
-  * 單數名詞：僅取得單筆資料，必須指定PK，兩兩一組，回傳結果為Object
-    舉例：GET/user/{accont} 取得單筆使用者資料，必須指定PK
-* URL中一律不帶id參數
+    * 刪除，放在複數名詞內，讓 Router 保持一致性
+    * 增加，放在複數名詞內，讓 Router 保持一致性
+  * 單數名詞：僅取得單筆資料，必須指定 PK，兩兩一組，回傳結果為 Object
+    舉例：GET/user/{accont} 取得單筆使用者資料，必須指定 PK
+* URL 中一律不帶 id 參數
 ```
 正確範例： calendar_manager/calendar/29
 錯誤範例： calendar_manager/calendar/29?id=29
 ```
 
 # 命名
-* 命名應根據內容做有意義的命名，讓後續維護人員可以顧名思義!
+* 命名應根據內容做有意義的命名，讓後續維護人員可以顧名思義！
 * 即使不會發生錯誤，程式碼英文大小寫也需明確區分。
 
 ## 語意
@@ -50,12 +50,12 @@ categories: ["Fullstack"]
 |方法 (Method, Function)|動詞+名詞<br/>getUserName、get_user_name|常見的動詞有：get、set、update、delete、remove|
 
 ## 字母與分隔
-<table style="background: #fff;"><tbody><tr><th>語言</th><th>變數 (Variable, Parameter, Argument)</th><th>常數 (Constant)</th><th>物件導向 - 類名 (Class Name)</th><th>物件導向 - 成員 (mebmer)</th></tr><tr><td>HTML、CSS</td><td>全部小寫，不同單字以「-」分隔 <br> user-id</td><td colspan="3"></td></tr><tr><td>JavaScript</td><td><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>首字小寫，不同單字「首字以大寫」分隔 <br> userId</td><td rowspan="2">全部大寫，不同單字以「_」分隔<br>MAX_COUNT</td><td rowspan="2"><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>首字大寫，不同單字「首字以大寫」分隔<br>一個檔案放一個 Class<br>檔名即為 Class Name<br>User</td><td rowspan="2"><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>公有 (public)&nbsp;: 首字小寫，不同單字「首字以大寫」分隔 <br> name, getName<br>私有 (private): _公有命名規則<br> _name, _getName</td></tr><tr><td>PHP</td><td>全部小寫，不同單字以「_」分隔 <br> user_id</td></tr><tr><td>SQL</td><td>由使用者定義的：表名、欄位名<br>全部小寫，不同單字以「_」分隔</td><td>SQL語法、函數 <br> 全部大寫 <br> SELECT、INSERT INTO</td><td colspan="2">-</td></tr></tbody></table>
+<table style="background: #fff;"><tbody><tr><th>語言</th><th>變數 (Variable, Parameter, Argument)</th><th>常數 (Constant)</th><th>物件導向 - 類名 (Class Name)</th><th>物件導向 - 成員 (mebmer)</th></tr><tr><td>HTML、CSS</td><td>全部小寫，不同單字以「-」分隔 <br> user-id</td><td colspan="3"></td></tr><tr><td>JavaScript</td><td><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>首字小寫，不同單字「首字以大寫」分隔 <br> userId</td><td rowspan="2">全部大寫，不同單字以「_」分隔<br>MAX_COUNT</td><td rowspan="2"><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>首字大寫，不同單字「首字以大寫」分隔<br>一個檔案放一個 Class<br>檔名即為 Class Name<br>User</td><td rowspan="2"><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>公有 (public)&nbsp;: 首字小寫，不同單字「首字以大寫」分隔 <br> name, getName<br>私有 (private): _公有命名規則<br> _name, _getName</td></tr><tr><td>PHP</td><td>全部小寫，不同單字以「_」分隔 <br> user_id</td></tr><tr><td>SQL</td><td>由使用者定義的：表名、欄位名<br>全部小寫，不同單字以「_」分隔</td><td>SQL 語法、函數 <br> 全部大寫 <br> SELECT、INSERT INTO</td><td colspan="2">-</td></tr></tbody></table>
 
 # 通用
 * 程式碼撰寫
 * 每個函數應該註解，註解應包含函數工能說明、引數說明。
-* 不必要的代碼不要寫，也禁止放到註解裡面!
+* 不必要的代碼不要寫，也禁止放到註解裡面！
 * if-else 的 {} 嚴禁省略。
 * {} 起始一律跟在 前一個功能的尾巴，禁止分行
 
@@ -82,16 +82,16 @@ public function test()
 * 程式碼排版
     * 任何程式碼應該以 2 個 space 為一個階層做好排版、不可使用 tab。
 * 函數 (Function, Methd)
-    * 函數宣告時需在函數上方加上函數註解，註解應包含函數說明、引數內容 (引數型態、引數英文名稱、引數說明)、 回傳值內容 (回傳值型態、回傳值說明)
+    * 函數宣告時需在函數上方加上函數註解，註解應包含函數說明、引數內容 （引數型態、引數英文名稱、引數說明）、 回傳值內容 （回傳值型態、回傳值說明）
 * 類 (Class)
     * 一個類 (Class) 的宣告只能存在一個檔案。
     * 類 (Class) 的宣告檔，檔名必須為類名。
 * 其他
-    * 連結本地任何其他資源 (圖片、檔案、網站) 皆使用相對路徑，禁止使用絕對路徑，非本地資源除外。
+    * 連結本地任何其他資源 （圖片、檔案、網站） 皆使用相對路徑，禁止使用絕對路徑，非本地資源除外。
 
 # HTML
 ## 程式碼撰寫
-* 禁止在 HTML 使用 `<style>`、`<script>`，一律使用外部檔案引用方式引用 CSS、JavaScript檔案。
+* 禁止在 HTML 使用 `<style>`、`<script>`，一律使用外部檔案引用方式引用 CSS、JavaScript 檔案。
 * HTML 標籤需成雙成對，有頭有尾。
 * 區塊標籤：`<tag></tag>`
 * 單標籤：`<tag />`
@@ -116,7 +116,7 @@ color
 ## 資安禁止：
 > 禁止使用 readonly 做為參數傳遞
 ## 其他
-> 連結本地任何其他資源 (圖片、檔案、網站) 皆使用相對路徑，禁止使用絕對路徑，非本地資源除外。
+> 連結本地任何其他資源 （圖片、檔案、網站） 皆使用相對路徑，禁止使用絕對路徑，非本地資源除外。
 
 # CSS
 ## 程式碼撰寫
@@ -133,7 +133,7 @@ a = (a, b) => {
   c;
 }
 ```
-錯誤 (這是允許的，但造成程式碼閱讀困難，故禁止)
+錯誤 （這是允許的，但造成程式碼閱讀困難，故禁止）
 ```
 a  => c;
 ```
@@ -154,7 +154,7 @@ JavaScript 註解應該遵循 JSDoc 的標準撰寫
 **Example**
 ```
 /**
- * 使用者ID
+ * 使用者 ID
  * @type {String}
  */
 var userId = 'Hello';
@@ -173,7 +173,7 @@ var userId = 'Hello';
 ```
 /**
  * 取得使用者
- * @param {Int} userId 使用者ID
+ * @param {Int} userId 使用者 ID
  * @param {Object} [options] 其他選項
  * @param {String} [options.query='a'] 查詢關鍵字 預設為 a
  * @returns {Object} 使用者資料
@@ -202,7 +202,7 @@ PHP 註解應該遵循 PHPDoc 的標準撰寫
 **Example**
 ```
 /**
- * 使用者ID
+ * 使用者 ID
  * @type {String}
  */
 $userId = 'Hello';
@@ -221,10 +221,10 @@ $userId = 'Hello';
 ```
 /**
  * 取得使用者
- * @param int userId 使用者ID
+ * @param int userId 使用者 ID
  * @param object options 其他選項
  * @option string options['query'] 查詢關鍵字
- * @uses $_POST['role_id'] 從前端以POST取得角色ID
+ * @uses $_POST['role_id'] 從前端以 POST 取得角色 ID
  * @returns object 使用者資料
  */
 function getUser($userId, $options){
@@ -239,7 +239,7 @@ function getUser($userId, $options){
 * 禁止將查詢資料庫的 SQL 放在迴圈中查詢
 ## SQL 撰寫
 * 屬於 SQL 語法使用大寫 (SELECT, WHERE, INSERT etc..)
-* 屬於使用者自己定義的使用小寫 (表名 table name, 欄位名 column name etc..)
+* 屬於使用者自己定義的使用小寫 （表名 table name, 欄位名 column name etc..)
 * 表名、欄位名前後需加上 \`
 
 **Example**

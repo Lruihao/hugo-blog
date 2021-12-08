@@ -5,12 +5,12 @@ tags: ["Sublime","总结","他山之石"]
 categories: ["Fullstack"]
 ---
 
-> [转自\-\-入冬](https://www.cnblogs.com/rudong/p/7889114.html)  
-补充tab转space设置
+> [转自、-\-入冬](https://www.cnblogs.com/rudong/p/7889114.html)  
+补充 tab 转 space 设置
 
 <!--more-->
-# tab转space
-打开Settings,加入几行配置
+# tab 转 space
+打开 Settings, 加入几行配置
 ```diff Preferences.sublime-setting--User
 {
   "color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
@@ -52,7 +52,7 @@ categories: ["Fullstack"]
 * Ctrl+Alt+↓ 向下添加多行光标，可同时编辑多行。
 
 # 编辑类
-* Ctrl+J 合并选中的多行代码为一行。举个栗子：将多行格式的CSS属性合并为一行。
+* Ctrl+J 合并选中的多行代码为一行。举个栗子：将多行格式的 CSS 属性合并为一行。
 * Ctrl+Shift+D  复制光标所在整行，插入到下一行。
 * Tab 向右缩进。
 * Shift+Tab 向左缩进。
@@ -71,25 +71,25 @@ categories: ["Fullstack"]
 
 # 搜索类
 * Ctrl+F 打开底部搜索框，查找关键字。
-* Ctrl+shift+F 在文件夹内查找，与普通编辑器不同的地方是sublime允许添加多个文件夹进行查找，略高端，未研究。
+* Ctrl+shift+F 在文件夹内查找，与普通编辑器不同的地方是 sublime 允许添加多个文件夹进行查找，略高端，未研究。
 * Ctrl+P 打开搜索框。举个栗子：1、输入当前项目中的文件名，快速搜索文件，2、输入@和关键字，查找文件中函数名，3、输入：和数字，跳转到文件中该行代码，4、输入#和关键字，查找变量名。
 * Ctrl+G 打开搜索框，自动带：，输入数字跳转到该行代码。举个栗子：在页面代码比较长的文件中快速定位。
 * Ctrl+R 打开搜索框，自动带@，输入关键字，查找文件中的函数名。举个栗子：在函数较多的页面快速查找某个函数。
 * Ctrl+： 打开搜索框，自动带#，输入关键字，查找文件中的变量名、属性名等。
-* Ctrl+Shift+P 打开命令框。场景栗子：打开命名框，输入关键字，调用sublime text或插件的功能，例如使用package安装插件。
+* Ctrl+Shift+P 打开命令框。场景栗子：打开命名框，输入关键字，调用 sublime text 或插件的功能，例如使用 package 安装插件。
 * Esc 退出光标多行选择，退出搜索框，命令框等。
 
 # 显示类
 * Ctrl+Tab 按文件浏览过的顺序，切换当前窗口的标签页。
 * Ctrl+PageDown 向左切换当前窗口的标签页。
 * Ctrl+PageUp 向右切换当前窗口的标签页。
-* Alt+Shift+1 窗口分屏，恢复默认1屏（非小键盘的数字）
-* Alt+Shift+2 左右分屏-2列
-* Alt+Shift+3 左右分屏-3列
-* Alt+Shift+4 左右分屏-4列
-* Alt+Shift+5 等分4屏
-* Alt+Shift+8 垂直分屏-2屏
-* Alt+Shift+9 垂直分屏-3屏
+* Alt+Shift+1 窗口分屏，恢复默认 1 屏（非小键盘的数字）
+* Alt+Shift+2 左右分屏-2 列
+* Alt+Shift+3 左右分屏-3 列
+* Alt+Shift+4 左右分屏-4 列
+* Alt+Shift+5 等分 4 屏
+* Alt+Shift+8 垂直分屏-2 屏
+* Alt+Shift+9 垂直分屏-3 屏
 * Ctrl+K+B 开启/关闭侧边栏。
 * F11 全屏模式
 * Shift+F11 免打扰模式

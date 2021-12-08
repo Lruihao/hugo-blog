@@ -10,8 +10,8 @@ categories:
 featuredImage: "/posts/player/images/index.png"
 ---
 
-> 宅音乐播放器，HTML5网页播放器，集成后台管理及API调用，目前正在开发中，敬请关注~  
-[原项目](https://github.com/lzx8589561/zhai-music)由[IT技术宅](https://www.ilt.me)开源，使用thinkPHP开发后台。 [fork地址](https://github.com/Lruihao/zhai-music)是我个人学习模仿的库，也是相当于备份源码。  
+> 宅音乐播放器，HTML5 网页播放器，集成后台管理及 API 调用，目前正在开发中，敬请关注~  
+[原项目](https://github.com/lzx8589561/zhai-music) 由 [IT 技术宅](https://www.ilt.me) 开源，使用 thinkPHP 开发后台。 [fork 地址](https://github.com/Lruihao/zhai-music) 是我个人学习模仿的库，也是相当于备份源码。  
 *注： 插件修改于明月浩空免费版，仅用于学习交流，无商业价值，如发现商业传播，将禁止软件的免费使用。*
 
 <!--more-->
@@ -40,7 +40,7 @@ https://www.bilibili.com/video/av46476706
 - mysql 5.5+
 
 ### 步骤
-安装php依赖包
+安装 php 依赖包
 ```
 composer install
 ```
@@ -51,14 +51,14 @@ composer install
 创建数据库
 ```
 字符编码：utf8 -- UTF-8 Unicode
-导入数据库脚本，脚本位置extend/database
+导入数据库脚本，脚本位置 extend/database
 ```
 ### 伪静态配置
 #### nginx
 ```
   location / {
       index  index.htm index.html index.php;
-      #访问路径的文件不存在则重写URL转交给ThinkPHP处理
+      #访问路径的文件不存在则重写 URL 转交给 ThinkPHP 处理
       if (!-e $request_filename) {
          rewrite  ^/(.*)$  /index.php?s=$1  last;
          break;
@@ -66,10 +66,10 @@ composer install
   }
 ```
 #### apache
-项目自带apache静态化无需配置
+项目自带 apache 静态化无需配置
 ### 启动项目
-- 添加public为web根目录
-- 若为apache服务器则默认伪静态，nginx可自行配置伪静态
+- 添加 public 为 web 根目录
+- 若为 apache 服务器则默认伪静态，nginx 可自行配置伪静态
 
 ## 预览
 ![](images/player.png)

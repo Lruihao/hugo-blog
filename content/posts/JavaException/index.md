@@ -1,5 +1,5 @@
 ---
-title: 模拟借书系统（java异常练习）
+title: 模拟借书系统（java 异常练习）
 date: 2019-05-01 16:52:21
 tags: ["Java","Backend"]
 categories: ["Java"]
@@ -10,7 +10,7 @@ featuredImage: "/posts/javaexception/images/1.png"
 
 # 实现代码
 
-> 这里的异常主要是`InputMismatchException`,可以直接捕获该异常，我直接捕获了父类异常。。。
+> 这里的异常主要是`InputMismatchException`, 可以直接捕获该异常，我直接捕获了父类异常。
 
 ```java ExceptionDemo.java
 package cn.lruihao.Exception;
@@ -19,7 +19,7 @@ import java.util.Scanner;
 
 /**
  * @author 李瑞豪
- *	借书系统(异常练习)
+ *	借书系统（异常练习）
  */
 
 public class ExceptionDemo {
@@ -37,7 +37,7 @@ public class ExceptionDemo {
 	}
 	
 	public void menu() {
-		System.out.println("输入命令：1.书名查找；\t2.序号查找；");
+		System.out.println("输入命令：1. 书名查找；\t2. 序号查找；");
 		 //初始化并捕获用户输入
 		Scanner sc = new Scanner(System.in);
 //		捕获异常
@@ -46,7 +46,7 @@ public class ExceptionDemo {
 			if(id==1||id==2) {
 				inquire(id);
 			}else {
-				System.out.println("输入错误！请根据提示输入~~");//输入非1，2的数字情况
+				System.out.println("输入错误！请根据提示输入~~");//输入非 1，2 的数字情况
 				menu();
 			}
 		}catch (Exception e) {//输入字符为非数字
@@ -66,7 +66,7 @@ public class ExceptionDemo {
 			String name=sc.nextLine();
 			int num=FindName(name);
 			if(num==0?false:true) {//验证书名是否存在 存在则打印
-				System.out.println("book："+name+"\t序号："+num);
+				System.out.println("book："+name+"\t 序号："+num);
 				//menu();//回到访问起点 也可以去掉终止程序
 			}else{
 	            System.out.println("图书不存在");

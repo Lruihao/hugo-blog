@@ -10,7 +10,7 @@ categories: ["JavaScript"]
 <!--more-->
 > 话不多说，直接贴码！
 
-```js 网站运行时间计算JS和HTML
+```js 网站运行时间计算 JS 和 HTML
 function createTime() {
   var now = new Date();
   var run = new Date("05/28/2018 20:01:01");
@@ -30,8 +30,8 @@ function createTime() {
   if (String(seconds).length === 1) {
     seconds = "0" + seconds;
   }
-  /*document.querySelector(".run-times").innerHTML = days + "&thinsp;天&thinsp;" + hours
-          + "&thinsp;时&thinsp;" + minutes + "&thinsp;分&thinsp;" + seconds + "&thinsp;秒";
+  /*document.querySelector(".run-times").innerHTML = days + "&thinsp; 天&thinsp;" + hours
+          + "&thinsp; 时&thinsp;" + minutes + "&thinsp; 分&thinsp;" + seconds + "&thinsp; 秒";
   */
   document.querySelector(".run-times").innerHTML = "RunTime: " + days + "," + hours
           + ":" + minutes + ":" + seconds + "";
@@ -45,10 +45,9 @@ if (!document.hidden) {
   clearInterval(siteTime);
 }
 
-
 /**
- * HTML写法
-<span class="run-times" title="网站运行时间">载入时分秒...</span>
+ * HTML 写法
+<span class="run-times" title="网站运行时间">载入时分秒。..</span>
 <p class="run-times" title="主頁运行时间">RunTime Loading...</p>
 */
 ```

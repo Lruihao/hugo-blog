@@ -28,10 +28,9 @@ draft: false
       ├── post_generator.sh  # 創建文章
       └── public_async.sh    # 同步 public 子模組
 
-
 ### post_generator.sh
-1. 輸入文章名稱 (建議使用英文)
-2. 文章是否會插入圖片等資源 (默認：否)
+1. 輸入文章名稱 （建議使用英文）
+2. 文章是否會插入圖片等資源 （默認：否）
 ```bash
 #!/bin/bash
 #author: Lruihao

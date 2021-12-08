@@ -1,5 +1,5 @@
 ---
-title: python玩微信：初探wxpy
+title: python 玩微信：初探 wxpy
 date: 2019-04-20 15:44:57
 tags: 
 - Python
@@ -20,11 +20,11 @@ featuredImage: "/posts/wxpy1/images/1.png"
 <!--more-->
 # 前期准备
 - [wxpy](https://github.com/youfou/wxpy)
-- [pyecharts](https://github.com/pyecharts/pyecharts)（百度echarts）
+- [pyecharts](https://github.com/pyecharts/pyecharts)（百度 echarts）
 
 # 查看微信好友男女比例
 
-```py 生成结果在源文件同目录在的sex.html
+```py 生成结果在源文件同目录在的 sex.html
 from wxpy import *
 from pyecharts import Pie
 
@@ -32,7 +32,7 @@ bot = Bot(cache_path = True)   #定义一个微信机器人
 friends = bot.friends(update=False)   #获取更新好友列表
 male = female = other = 0    
 
-for i in friends[1:]:     #[1:]自己是第一个，排除掉
+for i in friends[1:]:     #[1:] 自己是第一个，排除掉
     sex = i.sex
     if sex == 1:
         male += 1
@@ -54,11 +54,11 @@ pie.render("sex.html")
 
 # 查看好友地区分布
 
-```py 生成结果在源文件同目录在的city.html
+```py 生成结果在源文件同目录在的 city.html
 from wxpy import *
 from pyecharts import Map
 
-#因为获取的列表城市都没有带市字，而pyecharts需要带个市字
+#因为获取的列表城市都没有带市字，而 pyecharts 需要带个市字
 b = '市'
 def s(x):
     return x+b
@@ -79,7 +79,7 @@ for i in cityss:
     a[i] = cityss.count(i)
 a.pop('市')
 
-#把字典进行有序拆分为2个列表
+#把字典进行有序拆分为 2 个列表
 attrs = []
 values = []
 for value, attr in a.items():
@@ -92,7 +92,7 @@ map.render("city.html")
 ```
 ![微信地区分布](images/2.png)
 
-> **以上参考简书[陈思煜](https://www.jianshu.com/p/c0baf3c6db15)**
+> **以上参考简书 [陈思煜](https://www.jianshu.com/p/c0baf3c6db15)**
 
 # 统计所有群男女数目
 > 统计结果会自动发送到所有群聊
@@ -141,7 +141,7 @@ def stats_sex(target_group):
     
     print("男的有：" + str(male) + "人")
     print("女的有：" + str(female) + "人")
-    msg = "男的有：" + str(male) + "人\n" + "女的有：" + str(female) + "人\n"
+    msg = "男的有：" + str(male) + "人、n" + "女的有：" + str(female) + "人、n"
     return msg
 
 bot = Bot()
@@ -153,7 +153,7 @@ for curr_group in target_group:
     if len(curr_group) < 10:
         continue
     curr_group.update_group(members_details=True)
-    print(curr_group.name + "一共有：" + str(len(curr_group)) + "人\n")
+    print(curr_group.name + "一共有：" + str(len(curr_group)) + "人、n")
     msg = stats_sex(curr_group)
-    curr_group.send(curr_group.name + "群，一共有：" + str(len(curr_group)) + "人\n" + msg)
+    curr_group.send(curr_group.name + "群，一共有：" + str(len(curr_group)) + "人、n" + msg)
 ```

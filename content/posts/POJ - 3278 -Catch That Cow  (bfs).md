@@ -28,7 +28,7 @@ Line 1: The least amount of time, in minutes, it takes for Farmer John to catch 
 The fastest way for Farmer John to reach the fugitive cow is to move along the following path: 5-10-9-18-17, which takes 4 minutes.
 
 ### 题意：
-农场主的牛不见了，主人和牛在一条直线上，且牛没有新的目标，它不会走动，主人的位置是你n，牛的位置是k，主人可以有三种走路的方法，右左（距离+-1），闪现（距离+x,x为当前位置），每走一步，一分钟，问几分钟主人能找到牛。bfs搜索方向即为三个“方向”。搜索所有走法；
+农场主的牛不见了，主人和牛在一条直线上，且牛没有新的目标，它不会走动，主人的位置是你 n，牛的位置是 k，主人可以有三种走路的方法，右左（距离+-1），闪现（距离+x,x 为当前位置），每走一步，一分钟，问几分钟主人能找到牛。bfs 搜索方向即为三个“方向”。搜索所有走法；
 
 ```cpp
 #include"iostream"

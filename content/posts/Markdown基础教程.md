@@ -1,16 +1,16 @@
 ---
-title: Markdown基础教程
+title: Markdown 基础教程
 date: 2018-06-10 00:05:10
 tags: ["Markdown"]
 categories: ["others"]
 ---
-> 本文来自kio对Markdown的基础教程 
+> 本文来自 kio 对 Markdown 的基础教程 
 > 其他推荐参考：<https://segmentfault.com/markdown>
 
 <!--more-->
-Markdown主张使用最简单的符号来控制格式，兼顾易读易写特性，让你可以专注在文本创作上。
+Markdown 主张使用最简单的符号来控制格式，兼顾易读易写特性，让你可以专注在文本创作上。
 
-这篇文章旨在让你通过大约三分钟来快速掌握Markdown的基本用法。
+这篇文章旨在让你通过大约三分钟来快速掌握 Markdown 的基本用法。
 
 ## 在开始之前，需要特别注意的点
 
@@ -19,8 +19,7 @@ Markdown主张使用最简单的符号来控制格式，兼顾易读易写特性
 
 ## 标题
 
-在书写中，标题是最常用的格式，Markdown中，通过在文本前加上 # 即可，同时，根据#的数量可以可以划分为二级标题、三级标题、四级标题...一共六级。
-
+在书写中，标题是最常用的格式，Markdown 中，通过在文本前加上 # 即可，同时，根据#的数量可以可以划分为二级标题、三级标题、四级标题。.. 一共六级。
 
 # 一级标题
 ## 二级标题
@@ -60,7 +59,6 @@ Markdown主张使用最简单的符号来控制格式，兼顾易读易写特性
 
 *斜体* **粗体** ~~删减体~~
 
-
 ## 段落分隔符
 
 通过 `---` 即可以添加段落分割线：
@@ -70,8 +68,7 @@ Markdown主张使用最简单的符号来控制格式，兼顾易读易写特性
 ## 链接及图片
 
 [另外一篇博文](https://lruihao.cn/posts/hexowrite/)
-链接和图片可以为文章润色不少，通过 `[描述](地址)`既可以添加链接，而在其前面添加一个 `!` 号即为添加图片， 具体为:
-
+链接和图片可以为文章润色不少，通过 `[描述](地址)`既可以添加链接，而在其前面添加一个 `!` 号即为添加图片， 具体为：
 ```
 [百度](https://www.baidu.com)
 
@@ -97,7 +94,7 @@ Markdown主张使用最简单的符号来控制格式，兼顾易读易写特性
 
 ## 插入高亮代码
 
-如果你需要插入一些代码，Markdown也可以帮你自动高亮，包括行内高亮和代码块高亮，行内高亮仅需要使用 `内容` 包围起来即可。
+如果你需要插入一些代码，Markdown 也可以帮你自动高亮，包括行内高亮和代码块高亮，行内高亮仅需要使用 `内容` 包围起来即可。
 
 ```
 代码块高亮
@@ -105,13 +102,12 @@ Markdown主张使用最简单的符号来控制格式，兼顾易读易写特性
 
 ---
 
-至此，写作中需要用到的控制符已经介绍完毕了，Kio提供的所见即所得Markdown支持和便捷的输入辅助能帮助你快速掌握这一密术 :]
-
+至此，写作中需要用到的控制符已经介绍完毕了，Kio 提供的所见即所得 Markdown 支持和便捷的输入辅助能帮助你快速掌握这一密术 :]
 
 ## 移动端写作工具
 
-[Kio：密码99o4](https://pan.baidu.com/s/15a7yXCamGZzYlrfRhy_j6w)可以导出PDF，md文件
-[markdownx：密码a5n4](https://pan.baidu.com/s/1-ImjJfOURod2nUpXAc_Ejw)
-[SM.MS图床：密码ch0v](https://pan.baidu.com/s/1-zAl54zLNekq4hLaDC-8Qg)
+[Kio：密码 99o4](https://pan.baidu.com/s/15a7yXCamGZzYlrfRhy_j6w) 可以导出 PDF，md 文件
+[markdownx：密码 a5n4](https://pan.baidu.com/s/1-ImjJfOURod2nUpXAc_Ejw)
+[SM.MS 图床：密码 ch0v](https://pan.baidu.com/s/1-zAl54zLNekq4hLaDC-8Qg)
 
 若链接失效还可以去酷安上下载。

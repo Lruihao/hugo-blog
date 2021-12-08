@@ -1,7 +1,7 @@
 ---
 title: 利用腾讯云对象存储 COS 桶托管 hexo 博客
 date: 2019-01-22 14:57:08
-tags: ["hexo","hugo","腾讯云cos桶","对象存储"]
+tags: ["hexo","hugo","腾讯云 cos 桶","对象存储"]
 categories: ["hexo"]
 ---
 
@@ -16,20 +16,20 @@ categories: ["hexo"]
 
 ### 开启静态网站设置
 
-在基础配置打开静态网站(关掉强制https)  
+在基础配置打开静态网站（关掉强制 https)  
 ![](images/2.png)
 
 ### 绑定域名
 ![](images/3.png)
 
-SSL设置  
+SSL 设置  
 ![](images/4.png)
 
 ### 域名解析，添加记录
 
-去dns服务商添加域名解析记录CNAME指向上面的域名
+去 dns 服务商添加域名解析记录 CNAME 指向上面的域名
 
-### hexo设置
+### hexo 设置
 
 - 安装插件
 
@@ -41,10 +41,10 @@ npm install hexo-deployer-cos --save
 ```
 deploy:
   type: cos
-  bucket: yourBucketName #cos桶名称
-  appId: yourAppId #cos桶名称后数字
-  secretId: yourSecretId  #云API密钥
-  secretKey: yourSecretKey #云API密钥
+  bucket: yourBucketName #cos 桶名称
+  appId: yourAppId #cos 桶名称后数字
+  secretId: yourSecretId  #云 API 密钥
+  secretKey: yourSecretKey #云 API 密钥
   region: yourRegion #所属地域
 ```
 - 发布还是一样的
@@ -58,7 +58,7 @@ hexo g -d
 
 ### CDN 刷新
 
-每次更新博客内容完后，都要登陆腾讯云CDN--缓存刷新，手动刷新一下CDN。
+每次更新博客内容完后，都要登陆腾讯云 CDN--缓存刷新，手动刷新一下 CDN。
 
 用脚本在每次更新后刷新
 
@@ -74,7 +74,7 @@ npm install qcloud-cdn-node-sdk --save
 const qcloudSDK = require('qcloud-cdn-node-sdk');
 
 qcloudSDK.config({
-    secretId: '你的ID',
+    secretId: '你的 ID',
     secretKey: '你的密钥'
 })
 
@@ -85,7 +85,7 @@ qcloudSDK.request('RefreshCdnDir', {
 })
 ```
 
-### 自动 CDN 刷新配置 (推荐)
+### 自动 CDN 刷新配置 （推荐）
 1. 进入腾讯云，找到 函数计算 -> CDN 缓存刷新函数 -> 创建 CDN 缓存刷新函数
 2. 修改 `index.js` 内容后重新部署
 

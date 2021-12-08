@@ -5,7 +5,7 @@ tags: ["GUI","Java","Backend"]
 categories: ["Java"]
 ---
 
-> java中匿名类用的最多的地方就是可视化界面设计中，特别是将`事件监听器`注册到某个组件上的时候。
+> java 中匿名类用的最多的地方就是可视化界面设计中，特别是将`事件监听器`注册到某个组件上的时候。
 
 <!--more-->
 ## 代码
@@ -23,7 +23,7 @@ public class QFrame extends JFrame {
 		panel.add(jbtnew);//添加组件
 		add(panel);
 		jbtnew.addActionListener(new ActionListener() {
-			//新建一匿名类，并将该对应的事件监听器注册到“新建”按钮 就jbtnew上
+			//新建一匿名类，并将该对应的事件监听器注册到“新建”按钮 就 jbtnew 上
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showMessageDialog(null, "单击了新建按钮");
@@ -51,4 +51,4 @@ public class QFrame extends JFrame {
 ![](images/1.png)
 
 ## 参考
-- [JOptionPane的使用](https://www.cnblogs.com/fantasy01/p/3911488.html)
+- [JOptionPane 的使用](https://www.cnblogs.com/fantasy01/p/3911488.html)

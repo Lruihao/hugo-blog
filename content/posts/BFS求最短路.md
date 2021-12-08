@@ -1,13 +1,13 @@
 ﻿---
-title: BFS求最短路
+title: BFS 求最短路
 date: 2018-07-22 11:31:05
 tags: ["BFS","搜索","C++"]
 categories: ["ACM"]
 ---
 
-假设有一个n行m列的迷宫，每个单位要么是空地(用1表示)要么是障碍物(用0表示).  
-如和找到从起点到终点的最短路径？利用BFS搜索，逐步计算出每个节点到起点的最短距离，  
-以及最短路径每个节点的前一个节点。最终将生成一颗以起点为根的BFS树。此时BFS可以求出任意一点到起点的距离。  
+假设有一个 n 行 m 列的迷宫，每个单位要么是空地（用 1 表示）要么是障碍物（用 0 表示）.  
+如和找到从起点到终点的最短路径？利用 BFS 搜索，逐步计算出每个节点到起点的最短距离，  
+以及最短路径每个节点的前一个节点。最终将生成一颗以起点为根的 BFS 树。此时 BFS 可以求出任意一点到起点的距离。  
 
 <!--more-->
 
@@ -45,12 +45,12 @@ categories: ["ACM"]
 using namespace std;
 const int maxn=100+5;
 
-int G[maxn][maxn];   //存图的d=id
+int G[maxn][maxn];   //存图的 d=id
 int path[maxn];      //存每个节点的父节点，即路径
-int n,m;             //n行   m列
+int n,m;             //n 行   m 列
 int k=1;//记录编号
 int end_num;
-int vx[5] = {-1,1,0,0};   //vx  vy用来计算一个节点周围上下左右4个节点
+int vx[5] = {-1,1,0,0};   //vx  vy 用来计算一个节点周围上下左右 4 个节点
 int vy[5] = {0,0,-1,1};
 bool vis[maxn][maxn];     //判断某节点是否已经被访问过
 
@@ -115,7 +115,7 @@ int main()
     while(!ans.empty())
     {
         s++;
-        cout<<*(ans.end()-1)<<' ';//ans最后一个元素是0
+        cout<<*(ans.end()-1)<<' ';//ans 最后一个元素是 0
         ans.pop_back();
     }
     cout<<endl<<s-1;

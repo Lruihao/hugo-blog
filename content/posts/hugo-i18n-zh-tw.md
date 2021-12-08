@@ -87,7 +87,7 @@ other = "zh-TW"
 other = "搜索"
 
 [searchPlaceholder]
-other = "搜索文章標題或內容..."
+other = "搜索文章標題或內容。.."
 
 [clear]
 other = "清空"
@@ -111,7 +111,7 @@ other = "lib/lunr/lunr.segmentit.js"
 other = "複製到剪貼板"
 
 [cookieconsentMessage]
-other = "本網站使用 Cookies 來改善您的流覽體驗."
+other = "本網站使用 Cookies 來改善您的流覽體驗。"
 
 [cookieconsentDismiss]
 other = "同意"

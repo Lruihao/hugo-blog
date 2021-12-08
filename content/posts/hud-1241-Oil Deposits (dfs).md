@@ -40,7 +40,6 @@ For each grid, output the number of distinct oil deposits. Two different pockets
     0
     1
     2
-    2
 
 #### Source
 Mid-Central USA 1997
@@ -49,7 +48,7 @@ Mid-Central USA 1997
 Eddy   |   We have carefully selected several similar problems for you:  1016 1010 1312 1242 1240 
 
 #### 思路
-dfs模板题吧，八个方向搜索；（像i，j这样的计数器还是写在局部比较好，我尽然被定义域的问题搞了一晚上醉了醉了。。。）
+dfs 模板题吧，八个方向搜索；（像 i，j 这样的计数器还是写在局部比较好，我尽然被定义域的问题搞了一晚上醉了醉了。）
 
 ```cpp
 #include<bits/stdc++.h>

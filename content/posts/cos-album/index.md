@@ -1,7 +1,7 @@
 ---
 title: 利用腾讯云为静态页面添加“动态”相册
 date: 2019-11-24 10:52:34
-tags: ["CosAlbum","腾讯云cos桶","Frontend","JavaScript"]
+tags: ["CosAlbum","腾讯云 cos 桶","Frontend","JavaScript"]
 categories: ["JavaScript"]
 weight: 3
 featuredImage: "/posts/cos-album/images/view.png"
@@ -9,9 +9,9 @@ license: '<a rel="license external nofollow noopener noreffer" href="https://cre
 ---
 
 {{< admonition info >}}
-cos 桶相册，终于！！终于来了！！，idea 来自[兰州小红鸡-给hexo静态博客添加动态相册功能]，  
+cos 桶相册，终于！！终于来了！！，idea 来自 [兰州小红鸡 - 给 hexo 静态博客添加动态相册功能]，  
 **<span style="color: #428bca;">功能虽好，但是还是先友情提示！</span>**  
-开放API是一个**很危险**的操作，意味着你的cos桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！
+开放 API 是一个**很危险**的操作，意味着你的 cos 桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！
 {{< /admonition >}}
 
 <!--more-->
@@ -23,17 +23,17 @@ cos 桶相册，终于！！终于来了！！，idea 来自[兰州小红鸡-给
 3. 跨域访问 CORS 设置，自己随意
 
 # 上传照片
-首先我这个 cos 相册，相册分类就是文件夹分类，所以cos桶里面先新建不同的文件夹，**文件夹名称就是相册名称**，
-每个相册里面需要放置一张名称为**“封面.jpg”**的图片作为该相册的封面。
+首先我这个 cos 相册，相册分类就是文件夹分类，所以 cos 桶里面先新建不同的文件夹，**文件夹名称就是相册名称**，
+每个相册里面需要放置一张名称为**“封面。jpg”**的图片作为该相册的封面。
 ## 上传工具
-- **COSBrowser** GUI工具,桌面/移动版 【官方、推荐】
+- **COSBrowser** GUI 工具，桌面/移动版 【官方、推荐】
 - **COSCMD** 命令行工具 【官方】
 - **PicGo** 图床上传工具 【第三方、推荐】
 
 # 食用方式
 {{< cardlink href="http://github.com/Lruihao/cos-album" content="下载地址，别忘点赞哈" >}}
 1. 首先，下载源码，引入 `cos-album.css` 和 `cos-album.js`
-2. 然后，在你的 js 中 new 一个 Cosalbum 对象( xmlLink 后不需要添加`/`)
+2. 然后，在你的 js 中 new 一个 Cosalbum 对象 ( xmlLink 后不需要添加`/`)
 
 ## Step1
 ```js config
@@ -56,10 +56,10 @@ cos 桶相册，终于！！终于来了！！，idea 来自[兰州小红鸡-给
 ## Params
 | param     | type   | default | description                       |
 | :-------- | :----- | :------ | :-------------------------------- |
-| xmlLink   | String |         | 需要解析的騰訊云COS桶XML鏈接        |
+| xmlLink   | String |         | 需要解析的騰訊云 COS 桶 XML 鏈接        |
 | prependTo | String | 'body'  | 可選解析相冊到某個節點              |
 | viewNum   | Number |   4     | 每個相冊顯示的照片數目              |
-| copyUrl   | String |  href   | CDN 链接,雙擊複製 URL Since: 1.1.6 |
+| copyUrl   | String |  href   | CDN 链接，雙擊複製 URL Since: 1.1.6 |
 | imgType   | String | ['jpg', 'jpeg', 'png', 'gif', 'svg'] | 图片類型 Since: 1.1.6 |
 | videoType | String | ['mp4', 'mp3', 'avi', 'mov', 'qt']   | 視頻類型 Since: 1.1.6 |
 
@@ -98,10 +98,10 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 # changelog
 
 - 2020-9-28 22:46  
-  1. 升級：相冊封裝成類，可以更方便new出來
+  1. 升級：相冊封裝成類，可以更方便 new 出來
   2. 優化：相冊圖片樣式優化
 - 2019-11-24 10:52:34 
-修改整理了一下代码，分割功能为函数，并写了注释，更加方便[伸手党](https://github.com/Lruihao/cos-album)!
+修改整理了一下代码，分割功能为函数，并写了注释，更加方便 [伸手党](https://github.com/Lruihao/cos-album)!
 
 # 未实现
 - fancybox

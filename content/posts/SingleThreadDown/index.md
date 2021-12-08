@@ -10,13 +10,13 @@ featuredImage: "/posts/singlethreaddown/images/1.png"
 
 <!--more-->
 
-# GUI设计基本流程
-先记录一下GUI设计的基本流程：  
-1. 根据需要从相应的顶层容器继承（如果创建窗体就继承JFrame，对话框就继承JDialog），新建一个子类。
+# GUI 设计基本流程
+先记录一下 GUI 设计的基本流程：  
+1. 根据需要从相应的顶层容器继承（如果创建窗体就继承 JFrame，对话框就继承 JDialog），新建一个子类。
 2. 然后设置顶层容器的属性，包括大小、位置、标题和关闭事件等。
-3. 设置界面上GUI组件的事件响应。 `public void actionPerformed(ActionEvent e) {}`
-4. 向顶层容器上添加GUI组件，并设置布局。（通常利用JPanel组件先作为微型容器）
-5. 创建新建子类的实例，调用setVisible(true)方法显示页面。（也可以直接在子类中设置setVisible(true)）
+3. 设置界面上 GUI 组件的事件响应。 `public void actionPerformed(ActionEvent e) {}`
+4. 向顶层容器上添加 GUI 组件，并设置布局。（通常利用 JPanel 组件先作为微型容器）
+5. 创建新建子类的实例，调用 setVisible(true) 方法显示页面。（也可以直接在子类中设置 setVisible(true)）
 
 # 实现代码
 
@@ -49,8 +49,6 @@ public class SingleThreadDown extends JFrame implements ActionListener {
 	JButton exitButton = new JButton("退出");
 	JTextField urlField  = new JTextField(20);
 	
-	
-	
 	public SingleThreadDown() {
 		panel.setLayout(new FlowLayout()); //布局管理器
 		label1.setFont(new Font("雅黑",Font.BOLD,15));
@@ -63,9 +61,9 @@ public class SingleThreadDown extends JFrame implements ActionListener {
 		setContentPane(panel);
 		setSize(400,200);
 		setLocation(400,400);
-		setVisible(true); //面板可视化，也可以在main中通过JFrame子类对象调用方法设置
+		setVisible(true); //面板可视化，也可以在 main 中通过 JFrame 子类对象调用方法设置
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //默认关闭事件
-		StartButton.addActionListener(this);//添加点击事件，传入ActionListener对象，由于子类继承了ActionListener接口，所以this
+		StartButton.addActionListener(this);//添加点击事件，传入 ActionListener 对象，由于子类继承了 ActionListener 接口，所以 this
 		resetButton.addActionListener(this);
 		exitButton.addActionListener(this);
 	}
@@ -78,7 +76,7 @@ public class SingleThreadDown extends JFrame implements ActionListener {
 		String filePath = url.getFile();
 		int pos=filePath.lastIndexOf("/"); //"/"分割的最后一个串的下标
 		String fileName = filePath.substring(pos+1);
-		FileOutputStream out = new FileOutputStream("C:\\Users\\李瑞豪\\Desktop\\"+fileName);
+		FileOutputStream out = new FileOutputStream("C:\\Users\\李瑞豪、\Desktop\\"+fileName);
 		byte[] b = new byte[1024];
 		int len=0;
 		while((len=in.read(b,0,1024))!=-1) {
@@ -119,6 +117,6 @@ public class SingleThreadDown extends JFrame implements ActionListener {
 ```
 
 # 运行结果测试
-通过`https://github.com/Lruihao/Grocery/raw/master/fonts/MMT_last.ttf`下载沐目体ttf字体文件，稍微等待一下弹出对话框“下载完毕”，经检查下载内容正常。
+通过`https://github.com/Lruihao/Grocery/raw/master/fonts/MMT_last.ttf`下载沐目体 ttf 字体文件，稍微等待一下弹出对话框“下载完毕”，经检查下载内容正常。
 
 ![运行效果](images/1.png)
