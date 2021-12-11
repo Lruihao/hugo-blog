@@ -4,3 +4,6 @@
 [submodule "public"]
 	path = public
 	url = git@github.com:Lruihao/lruihao.github.io.git
+[submodule "assets/lib/watermark"]
+	path = assets/lib/watermark
+	url = https://github.com/Lruihao/watermark.git
