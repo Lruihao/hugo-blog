@@ -4,6 +4,12 @@
  */
 const CustomJS = new (function () {
   /**
+   * Current environment is local or not.
+   * @type {Boolean}
+   */
+  this.isLocal = window.location.href.startsWith('http://localhost');
+
+  /**
    * Baidu auto push.
    * @link https://ziyuan.baidu.com
    * @returns {CustomJS}
@@ -90,11 +96,9 @@ const CustomJS = new (function () {
         .catch(function (error) {
           console.error('error: ', error);
         });
-      navigator.serviceWorker
-        .ready
-        .then(function (registration) {
-          //console.log('Service Worker Ready');
-        });
+      navigator.serviceWorker.ready.then(function (registration) {
+        //console.log('Service Worker Ready');
+      });
     }
     return this;
   };
@@ -104,12 +108,16 @@ const CustomJS = new (function () {
    * @returns {CustomJS}
    */
   this.init = () => {
-    // SEO etc.
-    this.baiduStatistics().baiduPush();
+    if (!this.isLocal) {
+      // SEO etc.
+      this.baiduStatistics().baiduPush();
+      // Service Worker
+      this.registerServiceWorker();
+    }
     // Bug fixs.
     this.fixToc();
     // Custom infos.
-    this.renderWatermark().registerServiceWorker().consoleInfo();
+    this.renderWatermark().consoleInfo();
     return this;
   };
 })();
