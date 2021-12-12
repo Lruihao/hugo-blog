@@ -3,14 +3,12 @@ const CACHE_VERSION = 1;
 const BASE_CACHE_FILES = [
   '/css/style.min.css',
   '/js/theme.min.js',
-  '/js/_custom.js',
   '/site.webmanifest'
 ];
 
 const OFFLINE_CACHE_FILES = [
   '/css/style.min.css',
   '/js/theme.min.js',
-  '/js/_custom.js',
   '/site.webmanifest',
   '/offline'
 ];
@@ -18,7 +16,6 @@ const OFFLINE_CACHE_FILES = [
 const NOT_FOUND_CACHE_FILES = [
   '/css/style.min.css',
   '/js/theme.min.js',
-  '/js/_custom.js',
   '/site.webmanifest',
   '/404.html'
 ];
