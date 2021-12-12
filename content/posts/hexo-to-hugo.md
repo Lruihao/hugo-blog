@@ -117,7 +117,7 @@ hugo --minify
 - [ ] hugo 内容加密研究 [#3](https://github.com/Lruihao/hugo-blog/issues/3)
 - [ ] `Lruihao/hugo-blog/README.md` 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version
 - [x] 更换 gravatar 头像 [#4](https://github.com/Lruihao/hugo-blog/issues/4)
-- [ ] 博客在线编辑器研究 github1s 等 [#5](https://github.com/Lruihao/hugo-blog/issues/5)
+- [x]] 博客在线编辑器研究 github1s 等 [#5](https://github.com/Lruihao/hugo-blog/issues/5)
 
 ### Theme LoveIt
 > hugo LoveIt 主题整体优化，~~必要时建 PR 或 issue 到 LoveIt 仓库~~ (LoveIt 已停更一年多）  
@@ -130,7 +130,7 @@ hugo --minify
 - [x] CSS 优化，背景，元素圆角化，外圆内方，居中对齐等
 - [x] 沐目体引入
 - [ ] ~~TOC 序号生成~~
-- [ ] ~~Fix: 无标题时也会生成目录的 BUG~~
+- [x] Fix: 无标题时也会生成目录的 BUG
 - [x] subtitle 等细节优化
 - [ ] ~~Fix: typeit 打印代码时跑版的问题~~
 - [x] Fix: 文章 `h1` 标题多行跑版
