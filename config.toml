@@ -462,7 +462,7 @@ theme = "LoveIt"
         # watermark@1.0.2 https://github.com/Lruihao/watermark
         watermark = "lib/watermark/watermark.js"
         # Custom Javascript
-        z-customJS = "js/_custom.js"
+        z-customJS = "js/_custom.min.js"
     #  Page SEO config
     [params.page.seo]
       # image URL
