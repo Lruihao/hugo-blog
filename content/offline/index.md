@@ -1,6 +1,6 @@
 ---
 title: "離線 (Offline)"
-type: "offline"
+comment: false
 ---
 
 > 您沒有連接到 Internet，只有緩存的頁面可用。  
