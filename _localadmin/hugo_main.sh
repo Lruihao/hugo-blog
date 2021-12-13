@@ -1,12 +1,14 @@
 #!/bin/bash
 #author: Lruihao
+echo "--------------Hugo Admin--------------"
 echo "Please enter the serial number to work"
 echo "--------------------------------------"
-echo "1. post generator"
-echo "2. hugo server"
-echo "3. hugo build"
-echo "4. public async"
-echo "5. auto push"
+echo "1. new"
+echo "2. start"
+echo "3. start-production"
+echo "4. build"
+echo "5. public-async"
+echo "6. push"
 echo "--------------------------------------"
 echo "Press Ctrl+C to stop"
 
@@ -19,12 +21,15 @@ case $num in
     sh hugo_server.sh
     ;;
   3)
-    sh hugo_builder.sh
+    sh hugo_server_production.sh
     ;;
   4)
-    sh public_async.sh
+    sh hugo_builder.sh
     ;;
   5)
+    sh public_async.sh
+    ;;
+  6)
     sh auto_push.sh
     ;;
   *)

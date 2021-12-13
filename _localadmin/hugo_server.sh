@@ -1,2 +1,2 @@
 cd ..
-hugo server --disableFastRender
+hugo server --disableFastRender --navigateToChanged
