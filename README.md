@@ -21,11 +21,27 @@
 
 2. Clone the blog source
 
-   ```bash
-   git clone --recursive git@github.com:Lruihao/hugo-blog.git hugo-blog
-   cd hugo-blog
-   ```
+    ```bash
+    git clone --recursive git@github.com:Lruihao/hugo-blog.git hugo-blog
+    cd hugo-blog
+    ```
 
 3. Run hugo_main.sh
+   
+    ```bash
+    --------------Hugo Admin--------------
+    Please enter the serial number to work
+    --------------------------------------
+    1. new
+    2. start
+    3. start-production
+    4. build
+    5. submodule-async
+    6. push
+    --------------------------------------
+    Press Ctrl+C to stop
+    ```
 
-> Author: https://lruihao.cn
+## Author
+
+[Lruihao](https://lruihao.cn)
