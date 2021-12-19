@@ -9,7 +9,7 @@ enableGitInfo = true
 relativeURLs = false
 buildDrafts = true
 summaryLength = 150
-theme = "LoveIt"
+theme = "FixIt"
 
 # Post frontmatter config
 [frontmatter]
