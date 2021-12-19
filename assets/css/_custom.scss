@@ -105,19 +105,3 @@ header .logo {
     }
   }
 }
-
-// ==============================
-// Normalize style
-// ==============================
-h1 {
-  font-size: 1.5em;
-}
-
-// ==============================
-// Fix LoveIt theme bugs
-// ==============================
-
-// See https://github.com/Lruihao/hugo-blog/issues/19
-.archive .archive-item-date {
-  white-space: nowrap;
-}
