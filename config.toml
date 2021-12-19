@@ -157,7 +157,7 @@ theme = "FixIt"
     #  Custom content (HTML format is supported)
     custom = '<span class="gov"><a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target="_blank">湘公网安备43030402000254号</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"><span class="icp"><a rel="external nofollow noopener noreffer" href="https://beian.miit.gov.cn" target="_blank">湘ICP备18020535号</a></span>'
     #  whether to show Hugo and theme info
-    hugo = false
+    hugo = true
     #  whether to show copyright info
     copyright = true
     #  whether to show the author
