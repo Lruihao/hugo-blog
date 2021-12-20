@@ -528,7 +528,7 @@ theme = "FixIt"
     # located in "themes/LoveIt/assets/data/cdn/" directory
     # you can store your own data files in the same path under your project:
     # "assets/data/cdn/"
-    data = "jsdelivr.yml"
+    # data = "jsdelivr.yml"
 
   #  Compatibility config
   [params.compatibility]
