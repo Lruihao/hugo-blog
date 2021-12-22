@@ -1,2 +1,5 @@
-resources/
-node_modules/
+resources/*
+node_modules/*
+public/*
+!public/README.md
+!public/CNAME

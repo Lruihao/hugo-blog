@@ -1,7 +1,6 @@
 // ==============================
 // Custom style
 // ==============================
-@import '_partial/_cardlink.scss';
 @import '_custom/shaky.scss';
 
 header .logo {
@@ -49,9 +48,6 @@ header .logo {
       > tbody tr:hover {
         background: #f5f5f5;
       }
-    }
-    img[data-sizes='auto'] {
-      max-width: 100%;
     }
   }
 }
@@ -105,20 +101,4 @@ header .logo {
       }
     }
   }
-}
-
-// ==============================
-// Normalize style
-// ==============================
-h1 {
-  font-size: 1.5em;
-}
-
-// ==============================
-// Fix LoveIt theme bugs
-// ==============================
-
-// See https://github.com/Lruihao/hugo-blog/issues/19
-.archive .archive-item-date {
-  white-space: nowrap;
 }
