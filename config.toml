@@ -213,9 +213,6 @@ theme = "FixIt"
       enable = true
       # special amount of posts in each home posts page
       paginate = 10
-      #  replaced with hiddenFromHomePage in params.page
-      # default behavior when you don't set "hiddenFromHomePage" in front matter
-      defaultHiddenFromHomePage = false
 
   # Social config about the author
   [params.social]
@@ -316,7 +313,7 @@ theme = "FixIt"
       auto = true
     #  KaTeX mathematical formulas
     [params.page.math]
-      enable = true
+      enable = false
       # default block delimiter is $$ ... $$ and \\[ ... \\]
       blockLeftDelimiter = ""
       blockRightDelimiter = ""
@@ -585,9 +582,6 @@ theme = "FixIt"
 
 # Privacy config
 [privacy]
-  #  privacy of the Google Analytics (replaced by params.analytics.google)
-  [privacy.googleAnalytics]
-    # ...
   [privacy.twitter]
     enableDNT = true
   [privacy.youtube]
