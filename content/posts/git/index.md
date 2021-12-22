@@ -3,7 +3,6 @@ title: Git 常用指令汇总
 date: 2018-10-30T8:59:56+08:00
 tags: ["Git"]
 categories: ["Git"]
-weight: 1
 featuredImage: "/posts/git/images/relation-1.png"
 license: '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 ---
