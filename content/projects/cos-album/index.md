@@ -3,8 +3,9 @@ title: 利用腾讯云为静态页面添加“动态”相册
 date: 2019-11-24 10:52:34
 tags: ["CosAlbum","腾讯云 cos 桶","Frontend","JavaScript"]
 categories: ["JavaScript"]
-featuredImage: "/posts/cos-album/images/view.png"
+featuredImage: "/projects/cos-album/images/view.png"
 license: '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+type: "posts"
 ---
 
 {{< admonition info >}}

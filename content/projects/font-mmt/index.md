@@ -5,10 +5,12 @@ tags:
 - 沐目体
 categories:
 - others
-featuredImage: "/posts/font-mmt/images/word1.png"
+featuredImage: "/projects/font-mmt/images/word1.png"
+type: "posts"
 ---
 
 {{< style "text-align: center;" div >}}
+
 {{< style "display: inline-block;width: 30%;" span >}}
   ![](images/cell.jpg)
 {{< /style >}}
@@ -18,6 +20,7 @@ featuredImage: "/posts/font-mmt/images/word1.png"
 {{< style "display: inline-block;width: 30%;" span >}}
   ![](images/setting.png)
 {{< /style >}}
+
 {{< /style >}}
 
 ---
@@ -26,7 +29,7 @@ featuredImage: "/posts/font-mmt/images/word1.png"
 {{< admonition success "沐目体" >}}
 
 * 字体简介  
-  #沐目体# 沐目之，湘也。（以~~女盆友~~前女友名字命名的字体）
+  #沐目体# 沐目之，湘也。（以~~女盆友名字命名的字体~~）
 
 * 笔头设置  
   狼毫笔型，粗细为 9，速度模式
@@ -42,7 +45,7 @@ featuredImage: "/posts/font-mmt/images/word1.png"
 <!--more-->
 
 ## 预览
-{{< style "font-family: mmt-eg;font-size: 30px;line-height:30px;text-align: center;" div >}}
+{{< style "font-family: mmt-eg;font-size: 1.8rem;line-height: 2rem;text-align: center;" div >}}
 前尘硬化像石头  
 随缘地抛下便逃走  
 我绝不罕有  
