@@ -2,8 +2,6 @@ name: Auto Deploy hugo
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 jobs:
   Actions-Hugo-Deploy:
     runs-on: ubuntu-latest
