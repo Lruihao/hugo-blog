@@ -11,7 +11,8 @@ featuredImage: "/posts/gtd/images/reminders.png"
 {{< admonition quote "quote" true >}}
 **Getting Things Done (GTD)** is a personal productivity system developed by David Allen and published in a book of the same name. GTD is described as a time management system. Allen states "there is an inverse relationship between things on your mind and those things getting done". 
 
-[Read more](https://en.wikipedia.org/wiki/Getting_Things_Done)
+- [Reference](https://en.wikipedia.org/wiki/Getting_Things_Done)
+- [#20](https://github.com/Lruihao/hugo-blog/issues/20)
 {{< /admonition >}}
 
 <!--more-->
