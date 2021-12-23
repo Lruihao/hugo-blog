@@ -9,8 +9,7 @@ comment: false
 
 {{< music url="https://cdn.lruihao.cn/files/nanjing.mp3" name="李志" artist="你离开了南京，从此没人和我说话" cover="https://p2.music.126.net/UuSe-Vc6rS7JtRJSQgDU2g==/2323268069553116.jpg?param=300x300" fixed=true >}}
 
-- [Hacknical](https://hacknical.com/Lruihao/github?locale=zh)
-- [Gitmemory](https://www.gitmemory.com/Lruihao)
+- [My Projects](/projects/)
 - [My summary](/years/)
 
 ---
@@ -39,9 +38,8 @@ comment: false
 用我所学，学我所用。不盲目堆疊技術棧，保持謙遜，保持探索欲，砥礪前行。
 
 ## Recent activity
-{{< cardlink href="https://github.com/Lruihao/hugo-blog/issues" content="hugo-blog/issues" >}}
-
-- [ ] [COS Album v1.2.0](https://github.com/Lruihao/cos-album/milestone/3)
+{{< cardlink href="https://github.com/users/Lruihao/projects/1" content="@Lruihao's Recent activity" >}}
+ 
 - [ ] 臨帖 《心經 - 赵孟頫》
 - [ ] 臨帖 《真草千字文》
 - [ ] 閱讀 《神雕俠侶 - 金庸》  進度：[1]/[4]
