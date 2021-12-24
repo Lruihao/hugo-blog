@@ -5,6 +5,7 @@ tags:
   - GTD
 categories:
   - others
+featuredImagePreview: "/posts/gtd/images/reminders_min.png"
 featuredImage: "/posts/gtd/images/reminders.png"
 ---
 
