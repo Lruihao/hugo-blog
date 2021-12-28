@@ -80,7 +80,7 @@ if __name__ == '__main__':
     name = "qq_39520417" #cheung99857
   while 1:
     main(name)
-        print("开始休息。..")
+        print("开始休息 ...")
         time.sleep(40)
 ```
 
@@ -92,7 +92,7 @@ if __name__ == '__main__':
     while 1:
         for name in names:
             main(name)
-            print("开始休息。..")
+            print("开始休息 ...")
             # 控制休眠时间相当于控制刷新的速度
             time.sleep(30)
 ```

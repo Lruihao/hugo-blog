@@ -80,12 +80,12 @@ ps: `title`和`subtitle`的`字体`还有`颜色`也可以在这个文件修改�
 ## 今日诗词
 [今日诗词](https://www.jinrishici.com/)  
 ```XML 今日诗词
-<span id="jinrishici-sentence">正在加载今日诗词。...</span>
+<span id="jinrishici-sentence">正在加载今日诗词 ....</span>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 ```
 
 ---
-<div id="jinrishici-sentence" style="text-align:center;">正在加载今日诗词。...</div>
+<div id="jinrishici-sentence" style="text-align:center;">正在加载今日诗词 ....</div>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 
 ---

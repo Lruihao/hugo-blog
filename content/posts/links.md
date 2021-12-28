@@ -29,7 +29,7 @@ date: 2018-06-07 00:06:05
 |[lintcode](https://www.lintcode.com/problem/)|领扣（国外）|
 |[leedcode](https://leetcode-cn.com/problemset/all/)|力扣|
 |[codewar](https://www.codewars.com/kata/)|国外|
-|[更多 OJ，在线刷题网站。..](https://blog.csdn.net/tigerisland45/article/details/52134189)||
+|[更多 OJ，在线刷题网站 ...](https://blog.csdn.net/tigerisland45/article/details/52134189)||
 <!-- endtab -->
 
 <!-- tab 编程，学习 -->

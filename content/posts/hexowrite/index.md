@@ -30,7 +30,7 @@ npm install https://github.com/CodeFalling/hexo-asset-image -- save
 # 2. 添加图片
 首先大家可以查看 hexo 官方文档 [资源文件夹章节](https://hexo.io/zh-cn/docs/asset-folders.html)
 ## 2.1 markdown 添加
-相对路径添加（我被这个相对路径搞得要死，前面各种出错，大家可以对照我的来插入图片。..）
+相对路径添加（我被这个相对路径搞得要死，前面各种出错，大家可以对照我的来插入图片 ...）
 ```
 #直接写图片名就好了，图片实例见下
 ![kyrie irving](294136.jpg)

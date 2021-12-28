@@ -87,7 +87,7 @@ other = "zh-TW"
 other = "搜索"
 
 [searchPlaceholder]
-other = "搜索文章標題或內容。.."
+other = "搜索文章標題或內容 ..."
 
 [clear]
 other = "清空"
