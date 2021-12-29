@@ -7,7 +7,7 @@ const CustomJS = new (function () {
    * Current environment is local or not.
    * @type {Boolean}
    */
-  this.isLocal = window.location.href.startsWith('http://localhost');
+  this.isLocal = window.location.href.startsWith('http://localhost') || window.location.href.startsWith('http://127.0.0.1');
 
   /**
    * Baidu auto push.
