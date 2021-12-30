@@ -103,12 +103,14 @@ theme = "FixIt"
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
     svgFavicon = ""
-    # Android browser theme color
-    themeColor = "#ffffff"
     # Safari mask icon color
     iconColor = "#5bbad5"
     # Windows v8-10 tile color
     tileColor = "#da532c"
+    # Android browser theme color
+    [params.app.themeColor]
+      light = "#ffffff"
+      dark = "#252627"
 
   #  Search config
   [params.search]
@@ -131,6 +133,9 @@ theme = "FixIt"
       index = ""
       appID = ""
       searchKey = ""
+
+  # enable PWA
+  enablePWA = true
 
   # Header config
   [params.header]
