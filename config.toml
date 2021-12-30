@@ -94,6 +94,8 @@ theme = "FixIt"
   dateFormat = "2006-01-02"
   # website images for Open Graph and Twitter Cards
   images = ["/logo.png"]
+  # enable PWA
+  enablePWA = true
 
   #  App icon config
   [params.app]
@@ -133,9 +135,6 @@ theme = "FixIt"
       index = ""
       appID = ""
       searchKey = ""
-
-  # enable PWA
-  enablePWA = true
 
   # Header config
   [params.header]
