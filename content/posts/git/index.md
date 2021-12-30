@@ -55,7 +55,7 @@ git commit -a -m "message"  # 相当于省略 git add，但是无法提交新增
 git push origin master      # Git 会把 master 分支推送到远程库对应的远程分支上
 ```
 {{< admonition tip "Tips" >}}
-"commit message"内容尽量规范！  
+[Commit Message]((https://github.com/Lruihao/hugo-blog/wiki/Commit-message)) 内容尽量规范！  
 当某一次提交后，突然想起漏提交了文件，或不小心提交了不满意的代码时，  
 可以使用`git commit --amend -m "message"`指令。它可以在不增加一个新的 commit-id 的情况下将新修改的代码追加到前一次的 commit-id 中。提交之后 message 也将被本次的 message 覆盖，所以还需要再次添加上次的 message。
 {{< /admonition >}}
@@ -274,6 +274,6 @@ gitk --all
 ![license](images/license.jpg)
 
 # 其他
-* [github 上 fork 了别人的项目后，再同步更新别人的提交](https://blog.csdn.net/qq1332479771/article/details/56087333)
 * [常用 Git 命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
+* [github 上 fork 了别人的项目后，再同步更新别人的提交](https://blog.csdn.net/qq1332479771/article/details/56087333)
 * [Gearn Git Branching](https://learngitbranching.js.org/)
