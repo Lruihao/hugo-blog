@@ -81,7 +81,7 @@ Flex 布局将成为未来布局的首选方案，比如说常见的 bootstrap4 
 现在使用 5 的版本，可以使用`webfont+css`或`svg+js`
 ```xml font-awesome
 <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
- ```
+```
 其他的图标 js
 ```
 <script src="//at.alicdn.com/t/font_578712_g26jo2kbzd5qm2t9.js"></script>
@@ -101,9 +101,9 @@ Flex 布局将成为未来布局的首选方案，比如说常见的 bootstrap4 
 ```
 
 > - .col-xs- 超小屏幕 手机 <768px
-- .col-sm- 小屏幕 平板  >=768px
-- .col-md- 中等屏幕  >=992px
-- .col-lg- 大屏幕  >1200px
+> - .col-sm- 小屏幕 平板  >=768px
+> - .col-md- 中等屏幕  >=992px
+> - .col-lg- 大屏幕  >1200px
 
 css3 写法 @media （宽度具体调整）
 ```css css3 写法@media （宽度具体调整）
@@ -137,7 +137,7 @@ link 引入不同 css
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
-//还有其他的源。..
+//还有其他的源 ...
 ```
 
 ## QQ 推广链接
@@ -151,7 +151,7 @@ link 引入不同 css
 ## Google fonts
 ```diff
 https://fonts.google.com/
-一般选用国内源镜像替代（待补充。..）
+一般选用国内源镜像替代（待补充 ...）
 + https://fonts.loli.net
 + //fonts.lug.ustc.edu.cn
 ```

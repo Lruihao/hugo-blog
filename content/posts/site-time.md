@@ -47,7 +47,7 @@ if (!document.hidden) {
 
 /**
  * HTML 写法
-<span class="run-times" title="网站运行时间">载入时分秒。..</span>
+<span class="run-times" title="网站运行时间">载入时分秒 ...</span>
 <p class="run-times" title="主頁运行时间">RunTime Loading...</p>
 */
 ```

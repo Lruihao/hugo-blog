@@ -21,7 +21,7 @@ categories: ["English"]
 Whatever <u>difficulties(n.)</u> you meet with,you should try to overcome them.
 However <u>difficult(adj.)</u> the problem is,we must work it out today.
 
-### the + 比较级，the + 比较级  \-\->“越。.. 越。..”
+### the + 比较级，the + 比较级  \-\->“越 ... 越 ...”
 **例句**
 1. The hander you study,the greater progress you will make.
 2. The more you listen to English,the easier it becomes.

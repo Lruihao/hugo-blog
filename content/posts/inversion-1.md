@@ -50,7 +50,7 @@ not a (single) + 单数名词  表示“一个也没有”%}
 4. <u>Only the teacher</u> got the news that our school could have <u>a 4-day holiday.</u>（同位语从句，only+主语所以不倒装）
 
 ### So/Such...that... 句型位于句首
-> So + adj + a/an + 单数名词 = Such + a/an + adj + 单数名词   `如此。.. 以至于。..`
+> So + adj + a/an + 单数名词 = Such + a/an + adj + 单数名词   `如此 ... 以至于 ...`
 so 侧重于 adj/adv&emsp;such 侧重于 n.
 比如，so many/much/few/little
 

@@ -1,3 +1,8 @@
+
+[![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/m/Lruihao/hugo-blog/main?style=flat-square)](https://github.com/Lruihao/hugo-blog/commits/main)
+[![Hugo](https://img.shields.io/badge/Hugo-%5E0.62.0-ff4088?style=flat-square&logo=hugo)](https://gohugo.io/)
+[![License](https://img.shields.io/github/license/Lruihao/hugo-blog?style=flat-square)](https://github.com/Lruihao/hugo-blog/blob/main/LICENSE)
+
 ## Directory
 
 ```bash
@@ -17,17 +22,24 @@
 
 ## Installation
 
-1. Go to [Hugo Releases](https://github.com/gohugoio/hugo/releases) and download `hugo_extended` version, e.g. hugo_extended_0.88.1_Windows-64bit.zip
+1. Go to [Hugo Releases](https://github.com/gohugoio/hugo/releases) and download the lastest `hugo_extended` version, e.g.
+   
+    - `hugo_extended_0.88.1_Windows-64bit.zip`
+    - `hugo_extended_0.88.1_macOS-ARM64.tar.gz`
 
 2. Clone the blog source
 
     ```bash
     git clone --recursive git@github.com:Lruihao/hugo-blog.git hugo-blog
-    cd hugo-blog
     ```
 
-3. Run hugo_main.sh
-   
+3. Run `hugo_main.sh`
+
+    ```bash
+    cd hugo-blog/_localadmin
+    sh hugo_main.sh
+    ```
+    
     ```bash
     --------------Hugo Admin--------------
     Please enter the serial number to work
