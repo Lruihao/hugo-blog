@@ -56,21 +56,6 @@ const CustomJS = new (function () {
     return this;
   };
   /**
-   * Fix the toc bug.
-   * @link https://github.com/Lruihao/hugo-blog/issues/24
-   * @returns {CustomJS}
-   */
-  this.fixToc = () => {
-    $toc = document.querySelector('#toc-auto');
-    if (!$toc) {
-      return this;
-    }
-    if (document.querySelector('#TableOfContents').innerText === '') {
-      $toc.style.display = 'none';
-    }
-    return this;
-  };
-  /**
    * Render watermark.
    * @link https://github.com/Lruihao/watermark
    * @returns {CustomJS}
@@ -92,8 +77,6 @@ const CustomJS = new (function () {
       // SEO etc.
       this.baiduStatistics().baiduPush();
     }
-    // Bug fixs.
-    this.fixToc();
     // Custom infos.
     this.renderWatermark().consoleInfo();
     return this;
