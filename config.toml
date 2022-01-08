@@ -77,7 +77,7 @@ theme = "FixIt"
 ###################################################################################
 
 [params]
-  #  LoveIt theme version
+  #  FixIt theme version
   version = "0.2.X"
   # site description
   description = "Lruihao's Note"
@@ -414,7 +414,7 @@ theme = "FixIt"
         serverURLs = ""
         #  emoji data file name, default is "google.yml"
         # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
-        # located in "themes/LoveIt/assets/data/emoji/" directory
+        # located in "themes/FixIt/assets/data/emoji/" directory
         # you can store your own data files in the same path under your project:
         # "assets/data/emoji/"
         emoji = ""
@@ -460,8 +460,6 @@ theme = "FixIt"
         # The names are in alphabetical order.
         # pangu.js@latest https://github.com/vinta/pangu.js
         panguJS = "https://cdn.jsdelivr.net/npm/pangu@latest/dist/browser/pangu.min.js"
-        # watermark@1.0.2 https://github.com/Lruihao/watermark
-        watermark = "lib/watermark/watermark.js"
         # Custom Javascript
         z-customJS = "js/_custom.min.js"
     #  Page SEO config
@@ -549,7 +547,7 @@ theme = "FixIt"
   [params.cdn]
     # CDN data file name, disabled by default
     # ("jsdelivr.yml")
-    # located in "themes/LoveIt/assets/data/cdn/" directory
+    # located in "themes/FixIt/assets/data/cdn/" directory
     # you can store your own data files in the same path under your project:
     # "assets/data/cdn/"
     # data = "jsdelivr.yml"
