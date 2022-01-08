@@ -159,7 +159,7 @@ theme = "FixIt"
   [params.footer]
     enable = true
     #  Custom content (HTML format is supported)
-    custom = '<span class="gov"><a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target="_blank">湘公网安备43030402000254号</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"><span class="icp"><a rel="external nofollow noopener noreffer" href="https://beian.miit.gov.cn" target="_blank">湘ICP备18020535号</a></span>'
+    custom = ''
     #  whether to show Hugo and theme info
     hugo = true
     #  whether to show copyright info
@@ -168,8 +168,10 @@ theme = "FixIt"
     author = true
     # Site creation time
     since = 2018
+    # Public network security only in China (HTML format is supported) since v0.2.12
+    gov = '<a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target="_blank">湘公网安备 43030402000254 号</a>'
     # ICP info only in China (HTML format is supported)
-    icp = ""
+    icp = '<a rel="external nofollow noopener noreffer" href="https://beian.miit.gov.cn" target="_blank">湘 ICP 备18020535 号</a>'
     # license info (HTML format is supported)
     license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
