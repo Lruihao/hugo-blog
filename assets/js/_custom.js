@@ -55,18 +55,6 @@ const CustomJS = new (function () {
     );
     return this;
   };
-  /**
-   * Render watermark.
-   * @link https://github.com/Lruihao/watermark
-   * @returns {CustomJS}
-   */
-  this.renderWatermark = () => {
-    new Watermark({
-      content: '@Lruihao',
-      opacity: 0.02
-    });
-    return this;
-  };
 
   /**
    * Initialize.
@@ -78,7 +66,7 @@ const CustomJS = new (function () {
       this.baiduStatistics().baiduPush();
     }
     // Custom infos.
-    this.renderWatermark().consoleInfo();
+    this.consoleInfo();
     return this;
   };
 })();
