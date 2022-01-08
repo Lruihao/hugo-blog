@@ -94,7 +94,7 @@ theme = "FixIt"
   dateFormat = "2006-01-02"
   # website images for Open Graph and Twitter Cards
   images = ["/logo.png"]
-  # enable PWA
+  # enable PWA sicne v0.2.12
   enablePWA = true
 
   #  App icon config
@@ -483,6 +483,29 @@ theme = "FixIt"
     cursorChar = "|"
     # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
     duration = -1
+
+  # Watermark config since v0.2.12
+  # Detail config see https://github.com/Lruihao/watermark#readme
+  [params.watermark]
+    enable = true
+    # watermark's text
+    content = '@Lruihao'
+    # watermark's transparency
+    opacity = 0.02
+    # parent of watermark's container
+    appendTo = '.wrapper>.main'
+    # watermark's width. unit: px
+    width = 150
+    # watermark's height. unit: px
+    height = 20
+    # row spacing of watermarks. unit: px
+    rowSpacing = 60
+    # col spacing of watermarks. unit: px
+    colSpacing = 30
+    # watermark's tangent angle. unit: deg
+    rotate = 15
+    # watermark's fontSize. unit: rem
+    fontSize = 0.85
 
   # Site verification code config for Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]
