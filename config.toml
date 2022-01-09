@@ -507,6 +507,14 @@ theme = "FixIt"
     # watermark's fontSize. unit: rem
     fontSize = 0.85
 
+  # Busuanzi count since v0.2.12
+  [params.ibruce]
+    enable = true
+    # Enable in post meta
+    enablePost = false
+    # Site creation time
+    siteTime = '2018-05-28T20:01:01+08:00'
+
   # Site verification code config for Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]
     google = ""
