@@ -462,8 +462,6 @@ theme = "FixIt"
         # The names are in alphabetical order.
         # pangu.js@latest https://github.com/vinta/pangu.js
         panguJS = "https://cdn.jsdelivr.net/npm/pangu@latest/dist/browser/pangu.min.js"
-        # Custom Javascript
-        z-customJS = "js/_custom.min.js"
     #  Page SEO config
     [params.page.seo]
       # image URL
@@ -568,6 +566,15 @@ theme = "FixIt"
     polyfill = false
     # whether to use object-fit-images to be compatible with older browsers
     objectFit = false
+
+  # Custom JS at last. since v0.2.12
+  # "_custom.js" located in "themes/FixIt/assets/js/"
+  # you can store your custom JS file in the same path under your project:
+  # "assets/js/_custom.js"
+  [params.customJS]
+    enable = true
+    # Use "_custom.min.js" in the same path
+    minify = true
 
 # Markup related config in Hugo
 [markup]
