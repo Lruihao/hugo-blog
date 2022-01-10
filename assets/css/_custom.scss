@@ -3,29 +3,29 @@
 // ==============================
 @import '_custom/shaky.scss';
 
-header .logo {
-  min-height: 1.5rem;
-  height: 1.5rem;
-  vertical-align: revert;
-}
 .header-title {
   font-family: lrh-title, MMT;
   font-size: 2rem !important;
   font-weight: normal;
+  
   a:active,
   a:hover {
     color: initial !important;
   }
-}
-.header-title-post {
-  font-size: 1.2rem !important;
+
+  .logo {
+    min-height: .8em;
+    height: .8rem;
+    vertical-align: revert;
+  }
 }
 #header-mobile {
   .header-wrapper {
     max-height: 3.5rem;
   }
-  .header-title-post {
-    font-size: 1.1rem !important;
+
+  .header-subtitle {
+    font-size: .55em;
   }
 }
 
