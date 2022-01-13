@@ -82,7 +82,7 @@ theme = "FixIt"
   # site description
   description = "Lruihao's Note 李瑞豪的博客：探索、分享、记录自己在工作生活学习到一些东西。人知道得越多，就就会发现无知的越多。有更广袤世界可以探索，真是莫大的快乐啊！"
   # site keywords
-  keywords = ["李瑞豪","李瑞豪的博客","菠菜眾長","博採眾長","Lruihao","Cell","李四啊_"]
+  keywords = ["李瑞豪","李瑞豪的博客","菠菜眾長","博採眾長","Lruihao","Cell","Hugo Blog"]
   # site default theme ("light", "dark", "auto")
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
@@ -464,10 +464,8 @@ theme = "FixIt"
         # someCSS = "https://cdn.example.com/some.css"
       [params.page.library.js]
         # someJavascript = "some.js"
-        # located in "assets/" Or URL
-        # The names are in alphabetical order.
-        # pangu.js@latest https://github.com/vinta/pangu.js
-        panguJS = "https://cdn.jsdelivr.net/npm/pangu@latest/dist/browser/pangu.min.js"
+        # Or
+        # someJavascript = "https://cdn.example.com/some.js"
     #  Page SEO config
     [params.page.seo]
       # image URL
@@ -487,6 +485,11 @@ theme = "FixIt"
     cursorChar = "|"
     # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
     duration = -1
+
+  # PanguJS config since v0.2.12
+  [params.pangu]
+    # For Chinese writing
+    enable = true
 
   # Watermark config since v0.2.12
   # Detail config see https://github.com/Lruihao/watermark#readme

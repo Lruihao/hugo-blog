@@ -78,8 +78,6 @@ const CustomJS = new (function () {
   CustomJS.init();
   // It will be executed when the DOM tree is built.
   document.addEventListener('DOMContentLoaded', () => {
-    // Listen to any DOM change and automatically perform spacing via MutationObserver()
-    // See https://github.com/vinta/pangu.js
-    pangu.autoSpacingPage();
+
   });
 })();
