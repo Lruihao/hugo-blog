@@ -97,7 +97,7 @@ hugo --minify
 - [ ] ~~[cos-album](https://img.lruihao.cn) 和 [🍚饭醉团伙🍷](https://sz.journey.lruihao.cn) 整合到博客 cos-album/ [#7 (wontfix)](https://github.com/Lruihao/hugo-blog/issues/7)~~
 - [ ] ~~新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等~~ （保持原本博客的纯粹性）
 - [x] 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化（但似乎没必要）
-- [x] 博客 SEO 优化迁移
+- [x] 博客 SEO 优化迁移 <sup>[baidu_urls.txt](#seo-ref)</sup><a id="seo"></a>
 - [X] `Github actions` 自动部署到 **Github pages** 和 **COS** 脚本编写
 - [x] hugo 本地管理 shell 脚本工具编写
 - [X] 知乎卡片式链接 改成 hugo shortcodes, 取名 `cardlink`
@@ -119,7 +119,20 @@ hugo --minify
 - [x] 更换 gravatar 头像 [#4](https://github.com/Lruihao/hugo-blog/issues/4)
 - [x] 博客在线编辑器研究 github1s 等 [#5](https://github.com/Lruihao/hugo-blog/issues/5)
 
-### Theme LoveIt
+---
+<a id="seo-ref"></a>`[baidu_urls.txt]:`[↩︎](#seo)
+
+*生成百度链接集合小技巧，关掉归档分页，在归档页面控制台执行以下代码即可获得所有文章链接*
+```javascript
+let urls = []
+for(let a of document.querySelectorAll('.archive-item a')){
+  urls.push(a.href)
+}
+console.log(urls.join('\n'))
+```
+---
+
+### Theme ~~LoveIt~~ FixIt
 > hugo LoveIt 主题整体优化，~~必要时建 PR 或 issue 到 LoveIt 仓库~~ (LoveIt 已停更一年多）  
 > 先把自己发现和 LoveIt 原 repo 的 issue 尽可能的修复，修改的原则是：**不改动原项目代码**，  
 > 唯一途径就是在站点相同的目录用**新增**的方式替代**修改、删除**操作。  
@@ -134,6 +147,6 @@ hugo --minify
 - [ ] TOC 序号生成
 - [x] Fix: 无标题时也会生成目录的 BUG
 - [x] subtitle 等细节优化
-- [ ] Fix: typeit 打印代码时跑版的问题
+- [x] Fix: typeit 打印代码时跑版的问题
 - [x] Fix: 文章 `h1` 标题多行跑版
 - [x] Code Review
