@@ -1,6 +1,3 @@
-[submodule "assets/lib/watermark"]
-	path = assets/lib/watermark
-	url = https://github.com/Lruihao/watermark.git
 [submodule "themes/FixIt"]
 	path = themes/FixIt
 	url = git@github.com:Lruihao/FixIt.git
