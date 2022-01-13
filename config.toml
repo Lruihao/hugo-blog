@@ -82,7 +82,7 @@ theme = "FixIt"
   # site description
   description = "Lruihao's Note 李瑞豪的博客：探索、分享、记录自己在工作生活学习到一些东西。人知道得越多，就就会发现无知的越多。有更广袤世界可以探索，真是莫大的快乐啊！"
   # site keywords
-  keywords = ["李瑞豪","李瑞豪的博客","菠菜眾長","博採眾長","Lruihao","Cell","李四啊_"]
+  keywords = ["李瑞豪","李瑞豪的博客","菠菜眾長","博採眾長","Lruihao","Cell","Hugo Blog"]
   # site default theme ("light", "dark", "auto")
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
