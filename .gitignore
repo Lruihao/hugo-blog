@@ -3,4 +3,5 @@ node_modules/*
 public/*
 !public/README.md
 !public/CNAME
+!public/baidu_urls.txt
 .hugo_build.lock
