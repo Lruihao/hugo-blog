@@ -464,10 +464,8 @@ theme = "FixIt"
         # someCSS = "https://cdn.example.com/some.css"
       [params.page.library.js]
         # someJavascript = "some.js"
-        # located in "assets/" Or URL
-        # The names are in alphabetical order.
-        # pangu.js@latest https://github.com/vinta/pangu.js
-        panguJS = "https://cdn.jsdelivr.net/npm/pangu@latest/dist/browser/pangu.min.js"
+        # Or
+        # someJavascript = "https://cdn.example.com/some.js"
     #  Page SEO config
     [params.page.seo]
       # image URL
@@ -487,6 +485,11 @@ theme = "FixIt"
     cursorChar = "|"
     # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
     duration = -1
+
+  # PanguJS config since v0.2.12
+  [params.pangu]
+    # For Chinese writing
+    enable = true
 
   # Watermark config since v0.2.12
   # Detail config see https://github.com/Lruihao/watermark#readme
