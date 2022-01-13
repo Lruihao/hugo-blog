@@ -80,7 +80,7 @@ theme = "FixIt"
   #  FixIt theme version
   version = "0.2.X"
   # site description
-  description = "Lruihao's Note"
+  description = "Lruihao's Note 李瑞豪的博客：探索、分享、记录自己在工作生活学习到一些东西。人知道得越多，就就会发现无知的越多。有更广袤世界可以探索，真是莫大的快乐啊！"
   # site keywords
   keywords = ["李瑞豪","李瑞豪的博客","菠菜眾長","博採眾長","Lruihao","Cell","李四啊_"]
   # site default theme ("light", "dark", "auto")
@@ -492,8 +492,8 @@ theme = "FixIt"
   # Detail config see https://github.com/Lruihao/watermark#readme
   [params.watermark]
     enable = true
-    # watermark's text
-    content = '@Lruihao'
+    # watermark's text (HTML format is supported)
+    content = '<img style="height: 0.85rem;" src="/logo.png" alt="logo" /> 李瑞豪'
     # watermark's transparency
     opacity = 0.02
     # parent of watermark's container
