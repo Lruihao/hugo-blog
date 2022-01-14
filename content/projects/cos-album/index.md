@@ -31,7 +31,7 @@ cos 桶相册，终于！！终于来了！！，idea 来自 [兰州小红鸡 - 
 - **PicGo** 图床上传工具 【第三方、推荐】
 
 # 食用方式
-{{< cardlink href="http://github.com/Lruihao/cos-album" content="下载地址，别忘点赞哈" >}}
+{{< link href="http://github.com/Lruihao/cos-album" content="cos album 相册源码下载地址，别忘点赞哈" card=true >}}
 1. 首先，下载源码，引入 `cos-album.css` 和 `cos-album.js`
 2. 然后，在你的 js 中 new 一个 Cosalbum 对象 ( xmlLink 后不需要添加`/`)
 

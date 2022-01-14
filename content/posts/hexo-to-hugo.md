@@ -46,12 +46,15 @@ hugo new path/fileName
 ```
 ### 添加主题
 添加主题的方式选用 Git 子模组的形式，为了日后快速升级，避免在使用 hexo 中因大量魔改 next 主题而导致难以升级的困扰。  
-精挑细选最终选择了 [LoveIt](https://github.com/dillonzq/LoveIt)
+精挑细选最终选择了 ~~[LoveIt](https://github.com/dillonzq/LoveIt)~~ => [FixIt](https://github.com/Lruihao/FixIt)
 ```bash
 git init
-git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
+git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
 ```
-在 `config.toml` 添加 `theme = "LoveIt"`
+在 `config.toml` 添加 ~~theme = "LoveIt"~~
+```
+theme = "FixIt"
+```
 
 ### 在本地启动网站
 使用以下命令启动网站：
@@ -66,17 +69,14 @@ hugo serve --disableFastRender
 hugo --minify
 ```
 
-## Hugo&LoveIt 使用
+## 写作指北
 - [LoveIt 主题文档 - 基本概念](https://hugoloveit.com/zh-cn/theme-documentation-basics)
-
-写作指南
-
 - [LoveIt 主题文档 - 内容](https://hugoloveit.com/zh-cn/theme-documentation-content/)
 - [LoveIt 主题文档 - 内置 Shortcodes](https://hugoloveit.com/zh-cn/theme-documentation-built-in-shortcodes/)
 - [LoveIt 主题文档 - 扩展 Shortcodes](https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/)
 
 ## Todo list
-{{< cardlink href="https://github.com/Lruihao/hugo-blog" content="hugo-blog" >}}
+{{< link href="https://github.com/Lruihao/hugo-blog" content="本站源码备份" card=true >}}
 
 > 原来 hexo 做了大量的美化和扩展功能，迁移到 hugo 想尽可能多的保留。取之精华，去其糟粕。
 
@@ -119,13 +119,27 @@ hugo --minify
 - [x] 更换 gravatar 头像 [#4](https://github.com/Lruihao/hugo-blog/issues/4)
 - [x] 博客在线编辑器研究 github1s 等 [#5](https://github.com/Lruihao/hugo-blog/issues/5)
 
-### Theme LoveIt
-> hugo LoveIt 主题整体优化，~~必要时建 PR 或 issue 到 LoveIt 仓库~~ (LoveIt 已停更一年多）  
-> 先把自己发现和 LoveIt 原 repo 的 issue 尽可能的修复，修改的原则是：**不改动原项目代码**，  
-> 唯一途径就是在站点相同的目录用**新增**的方式替代**修改、删除**操作。  
-> ~~之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。~~ FixIt fork from LoveIt
+---
+<a id="seo-ref"></a>`[baidu_urls.txt]:`[↩︎](#seo)
 
-{{< cardlink href="https://github.com/Lruihao/FixIt" content="FixIt" >}}
+*生成百度链接集合小技巧，关掉归档分页，在归档页面控制台执行以下代码即可获得所有文章链接*
+```javascript
+let urls = []
+for(let a of document.querySelectorAll('.archive-item a')){
+  urls.push(a.href)
+}
+console.log(urls.join('\n'))
+```
+---
+
+### Theme FixIt
+> ~~hugo LoveIt 主题整体优化，必要时建 PR 或 issue 到 LoveIt 仓库~~ (LoveIt 已停更一年多）  
+> ~~先把自己发现和 LoveIt 原 repo 的 issue 尽可能的修复，修改的原则是：**不改动原项目代码**，~~  
+> ~~唯一途径就是在站点相同的目录用**新增**的方式替代**修改、删除**操作。~~  
+> ~~之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。~~ 
+> 为了更好的完善博客功能以及修复 BUG 已创建新的主题 FixIt (fork from LoveIt)
+
+{{< link href="https://github.com/Lruihao/FixIt" content="Hugo theme FixIt" card=true >}}
 
 进度更新至 [#8](https://github.com/Lruihao/hugo-blog/issues/8)
 

@@ -10,7 +10,7 @@ categories:
   - others
 ---
 
-{{< cardlink href="https://github.com/robinchenyu/imagepaste" content="插件地址" title="插件地址" >}}
+{{< link href="https://github.com/robinchenyu/imagepaste" content="插件地址" title="插件地址" card=true >}}
 
 <!--more-->
 

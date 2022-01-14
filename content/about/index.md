@@ -38,7 +38,7 @@ comment: false
 用我所学，学我所用。不盲目堆疊技術棧，保持謙遜，保持探索欲，砥礪前行。
 
 ## Recent activity
-{{< cardlink href="https://github.com/users/Lruihao/projects/1" content="@Lruihao's Recent activity" >}}
+{{< link href="https://github.com/users/Lruihao/projects/1" content="@Lruihao's Recent activity" card=true >}}
  
 - [ ] 臨帖 《心經 - 赵孟頫》
 - [ ] 臨帖 《真草千字文》
