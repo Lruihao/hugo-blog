@@ -52,7 +52,6 @@ https://lruihao.cn/posts/wximgpy/
 https://lruihao.cn/posts/hellojava/
 https://lruihao.cn/posts/regexdemo/
 https://lruihao.cn/posts/stringbuffer/
-https://lruihao.cn/posts/wex5/
 https://lruihao.cn/posts/hdu1009/
 https://lruihao.cn/posts/gitbookuse/
 https://lruihao.cn/posts/ngrok/
@@ -172,7 +171,6 @@ https://lruihao.cn/posts/a-easy/
 https://lruihao.cn/posts/sort排序/
 https://lruihao.cn/posts/c-with-stl/
 https://lruihao.cn/posts/位运算/
-https://lruihao.cn/posts/markdown基础教程/
 https://lruihao.cn/posts/links/
 https://lruihao.cn/posts/戏子春秋/
 https://lruihao.cn/posts/hexobuild/
