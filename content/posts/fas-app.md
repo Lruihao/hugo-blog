@@ -5,8 +5,6 @@ tags: ["lua","fusion"]
 categories: ["others"]
 ---
 
-{{< cardlink href="https://ziyuan.lruihao.cn/app/bczc_2.6.2.apk" content="博客 app 下载" >}}
-
 ### 介绍
 使用 fusion app 对网页进行的封装。  
 功能：  

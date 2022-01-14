@@ -8,7 +8,7 @@ categories:
   - hugo
 ---
 
-{{< cardlink href="https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b" content="知乎卡片式链接 Git 記錄" >}}
+{{< link href="https://github.com/Lruihao/hugo-blog/FixIt" content="卡片式链接已整合到 FixIt 主题" card=true >}}
 
 {{< admonition quote "回顧" >}}
   之前在使用 hexo 的時候也有用到，[模仿知乎卡片式链接](/posts/linkcard/)  
@@ -30,4 +30,9 @@ categories:
 使用參數同 [LoveIt 擴展 Shortcodes - Link](https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/#2-link)
 ```markdown
 {{</* cardlink href="https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b" content="知乎卡片式链接 Git 記錄" */>}}
+```
+> :bulb: 注：FixIt {{< version 0.2.12 changed >}} 已合併 cardlink shortcode 到 link shortcode，只需添加 card=true
+
+```
+{{</* link href="https://github.com/Lruihao/hugo-blog/FixIt" content="卡片式链接已整合到 FixIt 主题" card=true */>}}
 ```

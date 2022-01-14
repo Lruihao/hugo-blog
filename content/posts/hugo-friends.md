@@ -11,9 +11,11 @@ categories:
 以前的 hexo 博客是自己寫的友鏈模板，換到 hugo 後想著在網上隨便找一個範本用著就好，然而並沒有自己想要的 layout, 幾乎都是使用 shortcodes 的，代碼風格有點問題且 shortcodes 作為友鏈添加的方式是真的麻煩。就只好自己寫羅。
 {{< /admonition >}}
 
+{{< link href="https://github.com/Lruihao/hugo-blog/FixIt" content="友情鏈接模板已整合到 FixIt 主題" card=true >}}
+
 <!--more-->
 
-{{< cardlink href="https://lruihao.cn/friends/" content="友情鏈接範本" >}}
+{{< link href="https://lruihao.cn/friends/" content="友情鏈接範本" card=true >}}
 
 ## 創建模板
 開始之前去看了 hugo 的官網，再看了一下 go 模板的語法。

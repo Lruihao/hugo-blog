@@ -34,12 +34,12 @@ window.onload = () =>{
 ```
 ## 使用
 ```html 知乎卡片链接
-  <!--知乎卡片链接-->
-  <script type="text/javascript" src="/js/src/card-link.js"></script>
+<!--知乎卡片链接-->
+<script type="text/javascript" src="/js/src/card-link.js"></script>
 ```
 html 链接写法，a 标签加上`class="card-link"`
 ```
 <a href="https://github.com/Lruihao/lruihao.github.io" target="_blank" class="card-link">Lruihao 博客</a>
 ```
 
-{{< cardlink href="https://github.com/Lruihao/lruihao.github.io" content="Lruihao 博客" >}}
+{{< link href="https://github.com/Lruihao/lruihao.github.io" content="Lruihao 博客" card=true >}}

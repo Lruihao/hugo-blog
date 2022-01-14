@@ -53,7 +53,7 @@ git clone https://github.com/Lruihao/hexo-theme-next themes/next
 ```
 theme: next
 ```
-{{< cardlink href="http://github.com/Lruihao/hexo-theme-next/releases/tag/v6.9.1" content="lib 下载" >}}
+{{< link href="http://github.com/Lruihao/hexo-theme-next/releases/tag/v6.9.1" content="lib 下载" card=true >}}
 
 ![lib 资源](images/lib.png)
 
