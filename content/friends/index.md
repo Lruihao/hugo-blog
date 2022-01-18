@@ -2,14 +2,18 @@
 title: "友情鏈接"
 date: 2021-09-19T12:33:48+08:00
 type: "friends"
+description: "Lruihao's friends"
+keywords: 
+  - Hugo
+  - friends tempalate
 ---
-
-{{< link href="https://lruihao.cn/friends/opml.xml" content=":(far fa-star fa-fw): Subscribe ours" download="opml.xml" card=true >}}
 
 <!--
 > 暫時不接受友鏈！  
 > Warn: 超過兩年為更新或長期挂掉的站點將被取消！ 
 -->
+
+{{< link href="https://lruihao.cn/friends/opml.xml" content=":(far fa-star fa-fw): Subscribe ours" download="opml.xml" card=true >}}
 
 ## 基本資訊
 ```yaml
