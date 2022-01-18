@@ -9,7 +9,7 @@
 ▸ .github/       # GitHub configuration
 ▸ _localadmin/   # shell command for hugo project, entrance: hugo_main.sh
 ▸ archetypes/    # page archetypes (like scaffolds of archetypes)
-▸ assets/        # css, js, third party libraries etc.
+▸ assets/        # css, js, third-party libraries etc.
 ▸ content/       # blog source of hugo project
 ▸ data/          # blog data (allow: yaml, json, toml), e.g. friends.yml
 ▸ i18n/          # i18n translation documents
