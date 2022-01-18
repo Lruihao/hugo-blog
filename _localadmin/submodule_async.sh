@@ -1,4 +1,0 @@
-cd ..
-git submodule update --remote 
-git add .
-git commit -m ":arrow_up: Chore: Update submodule"
