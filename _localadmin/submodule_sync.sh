@@ -1,4 +1,5 @@
+echo "Checking for all submodule updates ..."
 cd ..
-git submodule update --remote 
-git add .
-git commit -m ":arrow_up: Chore: update submodule"
+git submodule update --remote --merge
+git add themes/FixIt
+git commit -m ":arrow_up: Chore: update FixIt theme version"
