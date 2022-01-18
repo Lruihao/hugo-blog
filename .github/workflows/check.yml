@@ -1,4 +1,4 @@
-name: Check hugo build
+name: Hugo build check
 on:
   pull_request:
     branches: [ main ]
