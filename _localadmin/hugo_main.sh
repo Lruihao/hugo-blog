@@ -27,7 +27,7 @@ case $num in
     sh hugo_builder.sh
     ;;
   5)
-    sh public_async.sh
+    sh submodule_sync.sh
     ;;
   6)
     sh auto_push.sh
