@@ -7,7 +7,7 @@
 
 ```bash
 ▸ .github/       # GitHub configuration
-▸ _localadmin/   # shell command for hugo project, entrance: hugo_main.sh
+▸ _localadmin/   # shell commands for hugo project, entrance: hugo_main.sh
 ▸ archetypes/    # page archetypes (like scaffolds of archetypes)
 ▸ assets/        # css, js, third-party libraries etc.
 ▸ content/       # blog source of hugo project
