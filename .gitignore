@@ -1,7 +1,7 @@
-resources/*
-node_modules/*
-public/*
-!public/README.md
-!public/CNAME
-!public/baidu_urls.txt
+node_modules/
+build/
+public/
+resources/
+
 .hugo_build.lock
+jsconfig.json

@@ -1,4 +1,4 @@
-name: Auto Deploy hugo
+name: Hugo build and deploy
 on:
   push:
     branches: [ main ]

@@ -7,7 +7,8 @@ if [ -z $postName ];then
 else
   read -p "Will there be pictures in this article? [y/n]..." choice
   if [ $choice = "y" ];then
-    hugo new posts/$postName/index.md
+    hugo new --kind post-bundle posts/$postName
+    # hugo new posts/$postName/index.md
   else
     hugo new posts/$postName.md
   fi

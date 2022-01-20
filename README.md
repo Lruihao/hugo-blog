@@ -3,21 +3,21 @@
 [![Hugo](https://img.shields.io/badge/Hugo-%5E0.62.0-ff4088?style=flat-square&logo=hugo)](https://gohugo.io/)
 [![License](https://img.shields.io/github/license/Lruihao/hugo-blog?style=flat-square)](https://github.com/Lruihao/hugo-blog/blob/main/LICENSE)
 
-## Directory
+## Directory structure
 
 ```bash
-▸ .github/       # Github Actions Config
-▸ _localadmin/   # hugo 本地管理 shell 脚本工具，入口 hugo_main.sh
-▸ archetypes/    # 配置文章模板，相当于 hexo 的 scaffolds
-▸ assets/        # 三方插件源码，改造主题可不动主题源码
-▸ content/       # 文章页面内容，相当于 hexo 的 source
-▸ data/          # 可存放一些 yaml, json, toml 格式的数据
-▸ i18n/          # i18n 语言翻译文件
-▸ layouts/       # 页面布局源码，改造主题可不动主题源码
-▸ public/        # 生成的博客静态文件子模组
-▸ static/        # 静态文件存放
-▸ themes/        # 主题子模组存放区
-  config.toml    # 站点配置文件，相当于 hexo 的 _config.yml
+▸ .github/       # GitHub configuration
+▸ _localadmin/   # shell commands for hugo project, entrance: hugo_main.sh
+▸ archetypes/    # page archetypes (like scaffolds of archetypes)
+▸ assets/        # css, js, third-party libraries etc.
+▸ content/       # blog source of hugo project
+▸ data/          # blog data (allow: yaml, json, toml), e.g. friends.yml
+▸ i18n/          # i18n translation documents
+▸ layouts/       # page layouts source
+▸ public/        # build directory
+▸ static/        # static files, e.g. favicon.ico
+▸ themes/        # theme submodules
+  config.toml    # configuration of hugo project (like _config.yml of hexo)
 ```
 
 ## Installation
@@ -48,7 +48,7 @@
     2. start
     3. start-production
     4. build
-    5. submodule-async
+    5. submodule-sync
     6. push
     --------------------------------------
     Press Ctrl+C to stop

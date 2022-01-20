@@ -1,7 +1,7 @@
 ---
-title: netBeans IDE 开发设置
+title: NetBeans IDE 开发设置
 date: 2019-08-15 18:36:15
-tags: ["netBeans","PHP"]
+tags: ["NetBeans","PHP"]
 categories: ["Fullstack"]
 ---
 
@@ -12,17 +12,17 @@ categories: ["Fullstack"]
 ## 安裝擴充功能
 1. 下載擴充套件包  
     * [官方套件庫](http://plugins.netbeans.org/PluginPortal/)
-    * 或者在 netbenas IDE 裏面下載插件（方便）
-2. 開啟 Netbeans→Tools→Plugins→Downloaded→Add Plugins
+    * 或者在 NetBeans IDE 裏面下載插件（方便）
+2. 開啟 NetBeans→Tools→Plugins→Downloaded→Add Plugins
 3. 選擇要安裝的擴充套件包
 
 ## 啟用已安裝的擴充功能
-1. 開啟 Netbeans→Tools→Plugins→Installed
+1. 開啟 NetBeans→Tools→Plugins→Installed
 2. 選擇要啟用的套件 (\*.npm)
 3. 點擊 Activate
 
 ## 匯入設定
-1. 開啟 Netbeans→Tools→Options
+1. 開啟 NetBeans→Tools→Options
 2. 點擊 Import 匯入設定
 3. 選擇要匯入的套件包 (\*.zip)
 
@@ -55,9 +55,9 @@ categories: ["Fullstack"]
 
 ## 前端壓縮
 下載擴充套件`netbeans minify` 或者 `minifierBeans`
-1. 開啟 Netbeans→Tools→Plugins→Downloaded→Add Plugins
+1. 開啟 NetBeans→Tools→Plugins→Downloaded→Add Plugins
 2. 選擇你下載的擴充套件開啟
-3. 開啟 Netbeans→Tools→options
+3. 開啟 NetBeans→Tools→options
 
 ![Example1](images/Example1.png)
 ![Example2](images/Example2.png)
@@ -115,7 +115,7 @@ categories: ["Fullstack"]
 ## Chrome with NetNeans Connector
 1. 打開 chrome 中的應用程式商店（使用 chrome 瀏覽器點擊下方鏈接即可）  
 [chrome 應用程式商店](https://chrome.google.com/webstore/category/themes?hl=en-US/)
-2. 在搜索框中輸入 NetNeans Connector 后搜索，然後點擊右邊的加到 Chrome 即可，安裝成功后右上角會顯示 Netbeans 圖標。
+2. 在搜索框中輸入 NetNeans Connector 后搜索，然後點擊右邊的加到 Chrome 即可，安裝成功后右上角會顯示 NetBeans 圖標。
 3. 開啟 netbeans 選擇 Run→Set Project Browser→選中 Chrome with NetBeans Connector
 4. 選擇 default 下的 Customize → 選擇 Browser → 選擇 Browser 下 Chrome with NetBeans Connector 即可
 

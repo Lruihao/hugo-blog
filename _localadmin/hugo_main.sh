@@ -7,7 +7,7 @@ echo "1. new"
 echo "2. start"
 echo "3. start-production"
 echo "4. build"
-echo "5. submodule-async"
+echo "5. submodule-sync"
 echo "6. push"
 echo "--------------------------------------"
 echo "Press Ctrl+C to stop"
@@ -27,7 +27,7 @@ case $num in
     sh hugo_builder.sh
     ;;
   5)
-    sh public_async.sh
+    sh submodule_sync.sh
     ;;
   6)
     sh auto_push.sh
