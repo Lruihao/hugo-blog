@@ -9,9 +9,6 @@ comment: false
 
 {{< music url="https://cdn.lruihao.cn/files/nanjing.mp3" name="李志" artist="你离开了南京，从此没人和我说话" cover="https://p2.music.126.net/UuSe-Vc6rS7JtRJSQgDU2g==/2323268069553116.jpg?param=300x300" fixed=true >}}
 
-- [My Projects](/projects/)
-- [My summary](/years/)
-
 ---
 
 ## 初衷
@@ -51,3 +48,8 @@ comment: false
   - [x] 減脂到 <60kg
 
 </details>
+
+## orther
+
+{{< link card=true href="/projects/" content="My Projects" title="我的項目" >}}
+{{< link card=true href="/years/" content="My summary" title="我的年度總結" >}}
