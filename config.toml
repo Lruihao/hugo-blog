@@ -1,7 +1,7 @@
 title = "菠菜眾長"
 baseURL = "https://lruihao.cn"
 defaultContentLanguage = "zh-tw" # theme lang
-languageCode = "zh-CN"
+languageCode = "zh-TW"
 hasCJKLanguage = true #字数统计计入中文
 enableRobotsTXT = true
 enableEmoji = true
@@ -74,7 +74,7 @@ theme = "FixIt"
     title = ""
     weight = 7
 
-###################################################################################
+######################################### Theme FixIt Config #########################################
 
 [params]
   #  FixIt theme version
