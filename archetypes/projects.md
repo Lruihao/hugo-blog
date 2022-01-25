@@ -9,6 +9,7 @@ description: ""
 keywords: ""
 license: ""
 comment: false
+weight: 0
 
 tags:
 - draft
@@ -18,23 +19,20 @@ categories:
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-# custom summary instead of <!--more-->
 summary: ""
-# Full link or relative root link of image
-featuredImage: ""
-featuredImagePreview: ""
-# Or contain featuredImage and featuredImagePreview into resources
 resources:
-- name: "featured-image"
-  src: ""
-- name: "featured-image-preview"
-  src: ""
+- name: featured-image
+  src: featured-image.jpg
+- name: featured-image-preview
+  src: featured-image-preview.jpg
 
 toc:
   enable: true
 math:
   enable: false
 lightgallery: false
+seo:
+  images: []
 
 type: "posts"
 ---
