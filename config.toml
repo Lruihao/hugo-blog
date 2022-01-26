@@ -118,7 +118,7 @@ theme = "FixIt"
   [params.search]
     enable = true
     # type of search engine ("lunr", "algolia")
-    type = "lunr"
+    type = "algolia"
     # max index length of the chunked content
     contentLength = 4000
     # placeholder of the search bar
@@ -132,9 +132,9 @@ theme = "FixIt"
     #  whether to use the absolute URL based on the baseURL in search index
     absoluteURL = false
     [params.search.algolia]
-      index = ""
-      appID = ""
-      searchKey = ""
+      index = "index"
+      appID = "MTJNHU0JVB"
+      searchKey = "5486225134d99f43826da401ee9bad57"
 
   # Header config
   [params.header]
