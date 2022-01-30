@@ -512,7 +512,9 @@ theme = "FixIt"
     # watermark's tangent angle. unit: deg
     rotate = 15
     # watermark's fontSize. unit: rem
-    fontSize = 0.85
+    fontSize = 1.1
+    # watermark's fontFamily
+    fontFamily = 'MMT'
 
   # Busuanzi count since v0.2.12
   [params.ibruce]
