@@ -1,0 +1,19 @@
+.page {
+  font-family: MMT;
+}
+.tomato{
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+  margin: 0;
+  color: #dc143c;
+}
+.typeit {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.red {
+  color: #f00;
+}
