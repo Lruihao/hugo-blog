@@ -46,7 +46,7 @@ categories:
             {{ range $index, $friend := .Site.Data.friends }}
                 <a
                     class="friend-link"
-                    title="{{ $friend.discription }}"
+                    title="{{ $friend.description }}"
                     href="{{ $friend.url | safeURL }}"
                     rel="external nofollow noopener noreferrer"
                     target="_blank">
@@ -164,11 +164,11 @@ hugo new friends/index.md
 # - nickname: 标题
 #   avatar: 头像
 #   url: 站点
-#   discription: 描述
+#   description: 描述
 - nickname: Lruihao
   avatar: https://gravatar.loli.net/avatar/3f985efb5907ca52944a3cd7edd51606?d=wavatar&v=1.3.10
   url: https://lruihao.cn
-  discription: 不怕萬人阻擋，只怕自己投降
+  description: 不怕萬人阻擋，只怕自己投降
 ```
 
 ## 結語

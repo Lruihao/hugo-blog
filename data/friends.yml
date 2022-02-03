@@ -1,76 +1,76 @@
 # - nickname: 标题
 #   avatar: 头像
 #   url: 站点
-#   discription: 描述
+#   description: 描述
 - nickname: 愛如潮水
   avatar: https://recell.github.io/images/123.jpg
   url: https://recell.github.io
-  discription: 蒙镛、老铁,一句两句说不清！
+  description: 蒙镛、老铁,一句两句说不清！
 - nickname: DoubleAm
   avatar: https://a.biugle.cn/images/avatar.jpg
   url: https://a.biugle.cn/
-  discription: 又一个被我带入坑的小伙子！
+  description: 又一个被我带入坑的小伙子！
 - nickname: francs
   avatar: https://postgres.fun/images/francs.png
   url: https://postgres.fun
-  discription: PostgreSQL中文网。数据库。francs.top
+  description: PostgreSQL中文网。数据库。francs.top
 - nickname: 赵俊
   avatar: https://zhaojun.vip/uploads/avatar.gif
   url: https://zhaojun.vip
-  discription: 一个Java学习者的博客，分享Java干货，VPS知识，软件推荐等。valine-admin👍
+  description: 一个Java学习者的博客，分享Java干货，VPS知识，软件推荐等。valine-admin👍
 - nickname: hojun
   avatar: https://cdn.jsdelivr.net/gh/honjun/ImageHosting/sina/006bYVyvgy1ftand2qurdj303c03cdfv.jpg
   url: https://www.hojun.cn
-  discription: 一个好奇的博客！前端开发。
+  description: 一个好奇的博客！前端开发。
 - nickname: AnFrank
   avatar: https://enfangzhong.github.io/images/avatar.jpg
   url: https://enfangzhong.github.io
-  discription: 机器学习，SQL
+  description: 机器学习，SQL
 - nickname: Domon
   avatar: https://www.domon.cn/content/images/2019/06/avatar_shiba-1.jpg
   url: https://www.domon.cn
-  discription: 主要涉及Android端技术，前沿其他技术和生活吐槽。
+  description: 主要涉及Android端技术，前沿其他技术和生活吐槽。
 - nickname: mythsman
   avatar: https://blog.mythsman.com/content/images/2019/07/----_20190713220203.jpg
   url: https://blog.mythsman.com
-  discription: hexo-douban插件开发者，坐标上海拼多多博客看起来是个很有生活感与学习感的地方。
+  description: hexo-douban插件开发者，坐标上海拼多多博客看起来是个很有生活感与学习感的地方。
 - nickname: 在线分享网
   avatar: https://avatars2.githubusercontent.com/u/49894775?s=460&v=4
   url: https://me.obey.fun
-  discription: 分享，成为你我之间的快乐！
+  description: 分享，成为你我之间的快乐！
 - nickname: Wizzie
   avatar: https://cdn.jsdelivr.net/gh/AloneAlive/alonealive.github.com_images@1.0.3/2020_images/website_img/head.png
   url: https://wizzie.top
-  discription: “Brave, Confident, Come on!”
+  description: “Brave, Confident, Come on!”
 - nickname: 星空无限
   avatar: https://liyangzone.com/medias/avatar.jpg
   url: https://liyangzone.com
-  discription: 前端开发，骑行爱好者，分享技术、分享生活。Front-End Developer
+  description: 前端开发，骑行爱好者，分享技术、分享生活。Front-End Developer
 - nickname: 北宸
   avatar: https://cdn.jsdelivr.net/gh/leafjame/cdn/img/logo/beichen.png
   url: https://www.liaofuzhan.com
-  discription: “Java狮 北漂男 摄影 旅行 赚钱”
+  description: “Java狮 北漂男 摄影 旅行 赚钱”
 - nickname: Lars Cheng
   avatar: https://www.larscheng.com/img/001.png
   url: https://www.larscheng.com
-  discription: 分享Java技术, 记录点滴生活。
+  description: 分享Java技术, 记录点滴生活。
 - nickname: CrazyWong
   avatar: https://crazywong.com/img/avatar.png
   url: https://crazywong.com
-  discription: 熱衷學習，熱衷生活
+  description: 熱衷學習，熱衷生活
 - nickname: 辣椒の酱
   avatar: https://removeif.github.io/images/avatar.jpg
   url: https://removeif.github.io
-  discription: 后端开发，技术分享
+  description: 后端开发，技术分享
 - nickname: Best-yz
   avatar: https://cdn.jsdelivr.net/gh/HPU-Yz/cdn-speed/medias/avatar.jpg
   url: https://best-yz.cn
-  discription: 生活还是很美好滴…
+  description: 生活还是很美好滴…
 - nickname: 木子雷
   avatar: https://cdn.jsdelivr.net/gh/leishen6/ImgHosting/MuZiLei_blog_img/Heart.png
   url: https://leishen6.github.io
-  discription: web后端码仔，记录生活，分享技术！
+  description: web后端码仔，记录生活，分享技术！
 # - nickname: 暂时不接受友链
 #   avatar:
 #   url: https://lruihao.cn
-#   discription: 暂时不接受友链！
+#   description: 暂时不接受友链！

@@ -49,7 +49,7 @@ featuredImage: "/posts/gtd/images/reminders.png"
     - Projects
     - Milestone
 
-| Lable            | Discription                                |
+| Lable            | Description                                |
 | :--------------- | :----------------------------------------- |
 | bug              | Something isn't working                    |
 | documentation    | Improvements or additions to documentation |
