@@ -20,7 +20,7 @@ keywords:
 - nickname: 菠菜眾長
   avatar: https://lruihao.cn/images/avatar.jpg
   url: https://lruihao.cn
-  discription: 不怕萬人阻擋，只怕自己投降
+  description: 不怕萬人阻擋，只怕自己投降
 ```
 
 ## 友情提醒
