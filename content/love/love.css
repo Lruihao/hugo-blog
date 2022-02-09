@@ -19,3 +19,7 @@
 .red {
   color: #f00;
 }
+
+.image-caption {
+  font-weight: bold!important;
+}
