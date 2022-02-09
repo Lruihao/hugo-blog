@@ -4,7 +4,7 @@
 @import '_custom/shaky.scss';
 
 .header-title {
-  font-family: lrh-title, MMT;
+  font-family: MMT_H;
   font-size: 2rem !important;
   font-weight: normal;
 
@@ -53,18 +53,8 @@
 
 // Custom font
 @font-face {
-  font-family: MMT;
-  src: url('/fonts/MMT_579767_SOAJ0.ttf');
-  font-display: swap;
-}
-@font-face {
-  font-family: mmt-eg;
-  src: url('/fonts/mmt-eg.ttf');
-  font-display: swap;
-}
-@font-face {
-  font-family: lrh-title;
-  src: url('/fonts/Title.ttf');
+  font-family: MMT_H;
+  src: url('/fonts/mmt_header.ttf');
   font-display: swap;
 }
 

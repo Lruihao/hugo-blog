@@ -23,3 +23,9 @@
 .image-caption {
   font-weight: bold!important;
 }
+
+@font-face {
+  font-family: MMT;
+  src: url('/fonts/mmt_love.ttf');
+  font-display: swap;
+}

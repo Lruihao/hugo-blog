@@ -5,11 +5,13 @@ date: 2021-09-07T21:00:48+08:00
 comment: false
 ---
 
-<img rel="external nofollow noopener noreferrer" src="https://ghchart.rshah.org/Lruihao.svg" title="Lruihao's Github chart" alt="Lruihao's Github chart" style="width:100%;"/>
+<img src="https://ghchart.rshah.org/Lruihao.svg" title="Lruihao's Github chart" alt="Lruihao's Github chart" style="width:100%;"/>
 <div style="display:flex;justify-content:space-around;">
-<img rel="external nofollow noopener noreferrer" src="https://github-readme-stats.vercel.app/api?username=Lruihao&show_icons=true&count_private=true" title="Lruihao's GitHub stats" alt="Lruihao's GitHub stats" style="width:54%;"/>
-<img rel="external nofollow noopener noreferrer" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lruihao&layout=compact&hide=html" title="Top Langs for Lruihao" alt="Top Langs for Lruihao" style="width:45.06%;"/>
+<img src="https://github-readme-stats.vercel.app/api?username=Lruihao&show_icons=true&count_private=true" title="Lruihao's GitHub stats" alt="Lruihao's GitHub stats" style="width:54%;"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lruihao&layout=compact&hide=html" title="Top Langs for Lruihao" alt="Top Langs for Lruihao" style="width:45.06%;"/>
 </div>
+
+{{< music url="https://cdn.lruihao.cn/files/nanjing.mp3" name="李志" artist="你离开了南京，从此没人和我说话" cover="https://p2.music.126.net/UuSe-Vc6rS7JtRJSQgDU2g==/2323268069553116.jpg?param=300x300" fixed=true >}}
 
 ---
 
