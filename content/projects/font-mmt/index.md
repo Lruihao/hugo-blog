@@ -91,7 +91,7 @@ library:
 
 {{< script >}}
 function getRandomComment() {
-  fetch('https://api.uomg.com/api/comments.163')
+  fetch('https://api.uomg.com/api/comments.163?mid=2280569152')
   .then(response => response.json())
   .then((comment) => {
     document.querySelector('.pic-backdrop').style.backgroundImage = `url(${comment.data.picurl})`;
