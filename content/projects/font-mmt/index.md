@@ -46,7 +46,7 @@ library:
 
 ### 网易云评论
 
-<div class="comment-163">
+<div class="comment-163" title="点击换一条评论">
   <span class="pic-backdrop"></span>
   <div class="commentator">
     <img class="comment-avatar" style="display:none;"/>
@@ -63,7 +63,7 @@ library:
 
 <div id="app-mmt" v-cloak>
   <textarea class="live-textarea" v-model="message" placeholder="请输入文字 ..."></textarea>
-  <p class="live-content">{{ message }}</p>
+  <p class="live-content">{{ message || '请输入文字 ...' }}</p>
 </div>
 <br/>
 
@@ -90,7 +90,7 @@ library:
 </details>
 
 {{< script >}}
-document.addEventListener('DOMContentLoaded', () => {
+function getRandomComment() {
   fetch('https://api.uomg.com/api/comments.163')
   .then(response => response.json())
   .then((comment) => {
@@ -103,12 +103,21 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.music').href = comment.data.url;
     document.querySelector('.music-name').innerHTML = comment.data.name;
     document.querySelector('.artists-name').innerHTML = comment.data.artistsname;
-    new Vue({
-      el: '#app-mmt',
-      data: {
-        message: ''
-      }
-    })
   })
+}
+document.addEventListener('DOMContentLoaded', () => {
+  getRandomComment();
+  new Vue({
+    el: '#app-mmt',
+    data: {
+      message: ''
+    }
+  });
+});
+document.querySelector('.comment-163').addEventListener('click', () => {
+  getRandomComment();
+});
+document.querySelector('.music').addEventListener('click', (event) => {
+  event.stopPropagation();
 });
 {{< /script >}}
