@@ -73,7 +73,7 @@
   font-size: 1.5rem;
   line-height: 2rem;
   position: relative;
-  margin-left: 3em;
+  margin-left: 2.8em;
 }
 .music {
   display: flex;
@@ -95,15 +95,20 @@
 }
 
 .live-textarea {
-  width: 100%;
+  width: 95%;
   height: 3rem;
+  padding: .25rem;
   resize: vertical;
   border: 1px solid #f5f5f5;
+  margin: 0 auto;
+  display: block;
 }
 .live-content {
   white-space: pre-line;
   font-family: MMT,"沐目体";
   font-size: 1.5rem;
+  margin-left: 2.5%!important;
+  margin-right: 2.5%!important;
 }
 [v-cloak]{
   display: none;
