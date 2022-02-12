@@ -70,10 +70,10 @@ hugo --minify
 ```
 
 ## 写作指北
-- [LoveIt 主题文档 - 基本概念](https://hugoloveit.com/zh-cn/theme-documentation-basics)
-- [LoveIt 主题文档 - 内容](https://hugoloveit.com/zh-cn/theme-documentation-content/)
-- [LoveIt 主题文档 - 内置 Shortcodes](https://hugoloveit.com/zh-cn/theme-documentation-built-in-shortcodes/)
-- [LoveIt 主题文档 - 扩展 Shortcodes](https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/)
+- [FixIt 主题文档 - 基本概念](https://fixit.lruihao.cn/zh-cn/theme-documentation-basics)
+- [FixIt 主题文档 - 内容](https://fixit.lruihao.cn/zh-cn/theme-documentation-content/)
+- [FixIt 主题文档 - 内置 Shortcodes](https://fixit.lruihao.cn/zh-cn/theme-documentation-built-in-shortcodes/)
+- [FixIt 主题文档 - 扩展 Shortcodes](https://fixit.lruihao.cn/zh-cn/theme-documentation-extended-shortcodes/)
 
 ## Todo list
 {{< link href="https://github.com/Lruihao/hugo-blog" content="本站源码备份" card=true >}}
@@ -105,17 +105,17 @@ hugo --minify
   <summary><i class="far fa-square fa-fw"></i>zxm/沐目体 归档 :( <a href="https://github.com/Lruihao/hugo-blog/issues/6" target="_blank" rel="noopener noreffer">#6</a></summary>
 
   - [x] 安装 沐目体
-  - [ ] 压缩 沐目体 fontspider
-  - [ ] 沐目体 post 修订
-  - [ ] typyit 配合 随机诗词和网易云热评 API
-  - [ ] 实时预览功能 base on Vuejs
-  - [ ] [恋爱叙事体] `love` 归档
-  - [ ] [光] 归档
+  - [x] 压缩 沐目体 fontspider
+  - [x] 沐目体 post 修订
+  - [x] typyit 配合 随机诗词和网易云热评 API
+  - [x] 实时预览功能 base on Vuejs
+  - [x] [恋爱叙事体] `love` 归档
+  - [x] [光] 归档
 
 </details>
 
 - [ ] hugo 内容加密研究 [#3](https://github.com/Lruihao/hugo-blog/issues/3)
-- [ ] `Lruihao/hugo-blog/README.md` 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version
+- [x] `Lruihao/hugo-blog/README.md` 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version
 - [x] 更换 gravatar 头像 [#4](https://github.com/Lruihao/hugo-blog/issues/4)
 - [x] 博客在线编辑器研究 github1s 等 [#5](https://github.com/Lruihao/hugo-blog/issues/5)
 
