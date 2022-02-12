@@ -16,18 +16,38 @@ library:
 
 <iframe class="manuscript" src="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&a=fontshowPics&u=qbfRl8gPF2s-&z=Kqz%2FRroVGYc-" frameborder="0" allowfullscreen></iframe>
 
----
-
-{{< admonition success "沐目之，湘也" >}}
-写给她的字，从恋爱开始到结束。  
-写了两遍，第一遍一年半，第二遍约两年，没写完，也不打算写了。
-{{< /admonition >}}
-
 <!--more-->
 
-## 效果
+## 预览
 
-### 歌词
+<div id="app-mmt" v-cloak>
+  <p class="live-content">{{ message || '“沐目之，湘也”，取她之名，写给她的字体。\n 从下笔到停笔，从恋爱开始到结束，沐目体见证了我们稚嫩到成熟。故事的开头往往极具温柔啊，但故事总会有结局，这个故事的结局就是分开画上了最后的句号。' }}</p>
+  <textarea class="live-textarea" v-model="message" placeholder="请输入文字 ..."></textarea>
+</div>
+
+---
+
+<div class="netease-music"></div>
+
+<div class="comment-163" title="随机下一条">
+  <span class="pic-backdrop"></span>
+  <div class="commentator">
+    <img class="comment-avatar" style="display:none;"/>
+    <span class="comment-nickname"></span>
+  </div>
+  <div class="comment-content"></div>
+  <div class="music-info">
+    <span class="artists-name"></span>
+    <span class="music-name"></span>
+  </div>
+</div>
+
+---
+
+<details close>
+  <summary>点击展开更多</summary>
+
+{{< music server="tencent" type="playlist" id="8305844774" loop="all" list-folded="true">}}
 
 <div class="preview-lyric">
 
@@ -44,39 +64,6 @@ library:
 
 </div>
 
-### 网易云评论
-
-<div class="comment-163" title="点击换一条评论">
-  <span class="pic-backdrop"></span>
-  <div class="commentator">
-    <img class="comment-avatar" style="display:none;"/>
-    <span class="comment-nickname"></span>
-  </div>
-  <div class="comment-content"></div>
-  <a class="music" rel="external nofollow noopener noreferrer" target="_blank">
-    <span class="artists-name"></span>
-    <span class="music-name"></span>
-  </a>
-</div>
-
-### 实时预览
-
-<div id="app-mmt" v-cloak>
-  <textarea class="live-textarea" v-model="message" placeholder="请输入文字 ..."></textarea>
-  <p class="live-content">{{ message || '请输入文字 ...' }}</p>
-</div>
-<br/>
-
-## 下载
-{{< link href="https://github.com/Lruihao/MMT/releases" content="沐目体下载" card=true >}}
-
-{{< admonition warning "警告" >}}
-*仅用于个人非商用！*
-{{< /admonition >}}
-
-<details>
-  <summary>点击展开应用图片</summary>
-
 ![word](images/word1.png)
 
 <div class="preview-images">
@@ -89,20 +76,29 @@ library:
 
 </details>
 
+## 下载
+
+{{< admonition warning "警告" >}}
+[沐目体](https://github.com/Lruihao/MMT/releases) *仅用于个人非商用！*
+{{< /admonition >}}
+
 {{< script >}}
 function getRandomComment() {
   fetch('https://api.uomg.com/api/comments.163?mid=2280569152')
   .then(response => response.json())
   .then((comment) => {
-    document.querySelector('.pic-backdrop').style.backgroundImage = `url(${comment.data.picurl})`;
+    document.querySelector('.pic-backdrop').style.backgroundImage = `url(${comment.data.picurl.slice(5)})`;
     document.querySelector('.comment-avatar').alt = `${comment.data.nickname}'s avatar`;
     document.querySelector('.comment-avatar').src = comment.data.avatarurl;
     document.querySelector('.comment-avatar').style = '';
     document.querySelector('.comment-nickname').innerHTML = comment.data.nickname;
     document.querySelector('.comment-content').innerHTML = comment.data.content.replace('\n','<br/>');
-    document.querySelector('.music').href = comment.data.url;
     document.querySelector('.music-name').innerHTML = comment.data.name;
     document.querySelector('.artists-name').innerHTML = comment.data.artistsname;
+    let player = document.createElement('meting-js');
+    player.setAttribute('auto', comment.data.url);
+    document.querySelector('.netease-music').innerHTML = '';
+    document.querySelector('.netease-music').appendChild(player);
   })
 }
 document.addEventListener('DOMContentLoaded', () => {
@@ -116,8 +112,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 document.querySelector('.comment-163').addEventListener('click', () => {
   getRandomComment();
-});
-document.querySelector('.music').addEventListener('click', (event) => {
-  event.stopPropagation();
 });
 {{< /script >}}

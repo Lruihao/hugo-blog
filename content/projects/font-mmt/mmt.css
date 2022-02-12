@@ -31,6 +31,8 @@
   padding: .75em;
   border-radius: .75rem;
   color: #272626;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 [theme='dark'] .comment-163 {
   color: #f5f5f5;
@@ -80,18 +82,13 @@
   position: relative;
   margin-left: 2.8em;
 }
-.music {
+.music-info {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
   font-weight: 500;
   font-size: 1.2rem;
   margin-top: .75em;
-  cursor: pointer;
-  color: #00baff!important;
-}
-.music:hover {
-  color: #ff0066!important;
 }
 .music-name:not(:empty)::after {
   content: "-";
@@ -100,20 +97,22 @@
 }
 
 .live-textarea {
-  width: 95%;
-  height: 3rem;
-  padding: .25rem;
+  width: calc(100% - 1rem);
+  height: 6rem;
+  padding: .5rem;
   resize: vertical;
   border: 1px solid #f5f5f5;
   margin: 0 auto;
   display: block;
+  border-radius: .75rem;
 }
 .live-content {
   white-space: pre-line;
   font-family: MMT,"沐目体";
-  font-size: 1.5rem;
-  margin-left: 2.5%!important;
-  margin-right: 2.5%!important;
+  font-size: 1.2rem;
+  margin-left: .5rem!important;
+  margin-right: .5rem!important;
+  margin-bottom: 1rem!important;
 }
 [v-cloak]{
   display: none;
