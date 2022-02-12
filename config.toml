@@ -514,7 +514,7 @@ theme = "FixIt"
     # watermark's fontSize. unit: rem
     fontSize = 1.1
     # watermark's fontFamily
-    fontFamily = 'MMT'
+    fontFamily = 'MMT_LRH,沐目体'
 
   # Busuanzi count since v0.2.12
   [params.ibruce]
