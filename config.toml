@@ -426,6 +426,7 @@ theme = "FixIt"
         # you can store your own data files in the same path under your project:
         # "assets/data/emoji/"
         emoji = ""
+        commentCount = true
       # Facebook comment config
       [params.page.comment.facebook]
         enable = false
