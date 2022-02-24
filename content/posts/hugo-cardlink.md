@@ -27,7 +27,7 @@ categories:
     static/images/card-link-bg.jpg
 
 ## 使用
-使用參數同 [LoveIt 擴展 Shortcodes - Link](https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/#2-link)
+使用參數见 [FixIt 擴展 Shortcodes - Link](https://fixit.lruihao.cn/zh-cn/theme-documentation-extended-shortcodes/#2-link)
 ```markdown
 {{</* cardlink href="https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b" content="知乎卡片式链接 Git 記錄" */>}}
 ```
@@ -36,3 +36,10 @@ categories:
 ```
 {{</* link href="https://github.com/Lruihao/FixIt" content="卡片式链接已整合到 FixIt 主题" card=true */>}}
 ```
+
+---
+
+{{< admonition info "信息" >}}
+  我的博客即将同步至腾讯云+社区，邀请大家一同入驻：  
+  <https://cloud.tencent.com/developer/support-plan?invite_code=3o5dmfzf0xkwk>
+{{< /admonition >}}
