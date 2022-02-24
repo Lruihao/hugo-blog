@@ -426,6 +426,7 @@ theme = "FixIt"
         # you can store your own data files in the same path under your project:
         # "assets/data/emoji/"
         emoji = ""
+        commentCount = true
       # Facebook comment config
       [params.page.comment.facebook]
         enable = false
@@ -514,7 +515,7 @@ theme = "FixIt"
     # watermark's fontSize. unit: rem
     fontSize = 1.1
     # watermark's fontFamily
-    fontFamily = 'MMT'
+    fontFamily = 'MMT_LRH,沐目体'
 
   # Busuanzi count since v0.2.12
   [params.ibruce]
