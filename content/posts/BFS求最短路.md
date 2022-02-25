@@ -1,6 +1,7 @@
 ﻿---
 title: BFS 求最短路
 date: 2018-07-22 11:31:05
+lastmod: 2018-07-22 11:31:05
 tags: ["BFS","搜索","C++"]
 categories: ["ACM"]
 ---

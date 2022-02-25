@@ -1,6 +1,7 @@
 ---
 title: hdu-2612-Find a way（双 bfs）
 date: 2018-07-23 12:34:42
+lastmod: 2018-07-23 12:34:42
 tags: ["ACM","HDU","搜索","C++"]
 categories: ["ACM"]
 ---

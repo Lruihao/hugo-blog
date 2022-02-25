@@ -1,6 +1,7 @@
 ---
 title: Wannafly 挑战赛 18-序列
 date: 2018-07-18 08:40:21
+lastmod: 2018-07-18 08:40:21
 tags: ["组合数学","ACM","Nowcoder","C++","C"]
 categories: ["ACM"]
 ---

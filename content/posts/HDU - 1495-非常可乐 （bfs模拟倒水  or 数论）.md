@@ -1,6 +1,7 @@
 ﻿---
 title: HDU-1495-非常可乐（bfs 模拟倒水 or 数论）
 date: 2018-07-24 15:34:00
+lastmod: 2018-07-24 15:34:00
 tags: ["ACM","HDU","搜索","C++"]
 categories: ["ACM"]
 ---

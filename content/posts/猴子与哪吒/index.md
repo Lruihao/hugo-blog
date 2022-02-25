@@ -1,6 +1,7 @@
 ---
 title: 猴子与哪吒
 date: 2018-05-31T10:09:15+08:00
+lastmod: 2018-05-31T10:09:15+08:00
 tags: ["生活随笔"]
 categories: ["生活随笔"]
 featuredImage: "/posts/猴子与哪吒/images/hznz.jpg"

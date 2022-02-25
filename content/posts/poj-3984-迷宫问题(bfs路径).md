@@ -1,6 +1,7 @@
 ﻿---
 title: poj-3984-迷宫问题 (bfs 路径）
 date: 2018-07-22 11:50:20
+lastmod: 2018-07-22 11:50:20
 tags: ["BFS","ACM","POJ","C++","C"]
 categories: ["ACM"]
 ---
