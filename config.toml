@@ -189,6 +189,12 @@ theme = "FixIt"
     dateFormat = "01-02"
     # amount of RSS pages
     rss = 20
+    # recently updated posts settings since v0.2.13
+    [params.section.recentlyUpdated]
+      enable = true
+      rss = true
+      days = 30
+      maxCount = 10
 
   #  List (category or tag) page config
   [params.list]
