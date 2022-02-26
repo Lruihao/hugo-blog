@@ -7,7 +7,7 @@
 
 ```bash
 ▸ .github/       # GitHub configuration
-▸ _localadmin/   # shell commands for hugo project, entrance: hugo_main.sh
+▸ _scripts/      # shell commands for hugo project, entrance: hugo_main.sh
 ▸ archetypes/    # page archetypes (like scaffolds of archetypes)
 ▸ assets/        # css, js, third-party libraries etc.
 ▸ content/       # blog source of hugo project
@@ -33,26 +33,51 @@
     git clone --recursive git@github.com:Lruihao/hugo-blog.git hugo-blog
     ```
 
-3. Run `hugo_main.sh`
+## Start-up
 
-    ```bash
-    cd hugo-blog/_localadmin
-    sh hugo_main.sh
-    ```
-    
-    ```bash
-    --------------Hugo Admin--------------
-    Please enter the serial number to work
-    --------------------------------------
-    1. new
-    2. start
-    3. start-production
-    4. build
-    5. submodule-sync
-    6. push
-    --------------------------------------
-    Press Ctrl+C to stop
-    ```
+There are three ways to start this blog.
+
+### Hugo commands
+
+```bash
+# Development environment
+hugo server --disableFastRender --navigateToChanged
+# Production environment
+hugo server --disableFastRender --navigateToChanged --environment production
+```
+
+## Shell commands
+
+Run `hugo_main.sh` to choice frequently-used Hugo commands:
+
+```bash
+cd hugo-blog/_scripts
+sh hugo_main.sh
+```
+
+```
+--------------Hugo Admin--------------
+Please enter the serial number to work
+--------------------------------------
+1. new
+2. start
+3. start-production
+4. build
+5. submodule-sync
+6. push
+--------------------------------------
+Press Ctrl+C to stop
+```
+
+### NPM commands
+
+```bash
+npm install
+# Development environment
+npm run server
+# Production environment
+npm run server:production
+```
 
 ## Author
 
