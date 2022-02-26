@@ -27,6 +27,15 @@ jobs:
           publish_branch: main
           publish_dir: ./public
           commit_message: ":rocket: ${{ github.event.head_commit.message }}"
+      - name: NPM install
+        run: npm install
+      - name: Update Algolia index
+        env:
+          ALGOLIA_APP_ID: MTJNHU0JVB
+          ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+          ALGOLIA_INDEX_NAME: 'index'
+          ALGOLIA_INDEX_FILE: './public/index.json'
+        run: npm run algolia
       - name: Install coscmd
         run: sudo pip install coscmd
       - name: Configure coscmd
