@@ -9,8 +9,8 @@
   font-weight: normal;
 
   .logo {
-    min-height: .8em;
-    height: .8rem;
+    min-height: 0.8em;
+    height: 0.8rem;
     vertical-align: revert;
   }
 }
@@ -20,30 +20,13 @@
   }
 
   .header-subtitle {
-    font-size: .55em;
+    font-size: 0.55em;
   }
 }
 
 .single {
   .single-subtitle {
     color: #57606a;
-  }
-
-  .content {
-    .table-wrapper > table {
-      border-radius: 5px;
-      border: none;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
-      > tbody tr:last-child td {
-        border-bottom: none;
-      }
-      > tbody tr:nth-child(odd) {
-        background: #f9f9f9;
-      }
-      > tbody tr:hover {
-        background: #f5f5f5;
-      }
-    }
   }
 }
 
@@ -76,17 +59,6 @@
   .single {
     .single-subtitle {
       color: inherit;
-    }
-
-    .content {
-      .table-wrapper > table {
-        > tbody tr:nth-child(odd) {
-          background: #30363f;
-        }
-        > tbody tr:hover {
-          background: #3b424e;
-        }
-      }
     }
   }
 }
