@@ -507,7 +507,7 @@ theme = "FixIt"
     # watermark's text (HTML format is supported)
     content = '<img style="height: 0.85rem;" src="/logo.png" alt="logo" /> 李瑞豪'
     # watermark's transparency
-    opacity = 0.02
+    opacity = 0.0125
     # parent of watermark's container
     appendTo = '.wrapper>.main'
     # watermark's width. unit: px
