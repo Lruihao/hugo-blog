@@ -1,0 +1,25 @@
+{
+  "name": "lruihao-blog",
+  "version": "1.0.0",
+  "description": "Lruihao's Note",
+  "scripts": {
+    "algolia": "atomic-algolia",
+    "build": "hugo -v --gc --minify",
+    "server": "hugo server --disableFastRender --navigateToChanged",
+    "server:production": "hugo server --disableFastRender --navigateToChanged --environment production",
+    "update-theme": "git submodule update --remote --merge && git add themes/FixIt && git commit -m ':arrow_up: Chore: update FixIt theme version'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lruihao/hugo-blog.git"
+  },
+  "author": "Lruihao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lruihao/hugo-blog/issues"
+  },
+  "homepage": "https://github.com/Lruihao/hugo-blog#readme",
+  "dependencies": {
+    "atomic-algolia": "^0.3.19"
+  }
+}

@@ -1,6 +1,7 @@
 ﻿---
 title: poj-1321 棋盘问题（dfs）
 date: 2018-07-22 11:58:14
+lastmod: 2018-07-22 11:58:14
 tags: ["DFS","ACM","搜索","POJ","C++"]
 categories: ["ACM"]
 ---

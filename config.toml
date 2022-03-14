@@ -189,6 +189,12 @@ theme = "FixIt"
     dateFormat = "01-02"
     # amount of RSS pages
     rss = 20
+    # recently updated posts settings since v0.2.13
+    [params.section.recentlyUpdated]
+      enable = true
+      rss = true
+      days = 30
+      maxCount = 10
 
   #  List (category or tag) page config
   [params.list]
@@ -342,6 +348,8 @@ theme = "FixIt"
       copy = true
       # the maximum number of lines of displayed code by default
       maxShownLines = 50
+      # whether code blocks can be edited since v0.2.13
+      editableCode = true
     #  Mapbox GL JS config
     [params.page.mapbox]
       # access token of Mapbox GL JS
@@ -499,7 +507,7 @@ theme = "FixIt"
     # watermark's text (HTML format is supported)
     content = '<img style="height: 0.85rem;" src="/logo.png" alt="logo" /> 李瑞豪'
     # watermark's transparency
-    opacity = 0.02
+    opacity = 0.0125
     # parent of watermark's container
     appendTo = '.wrapper>.main'
     # watermark's width. unit: px

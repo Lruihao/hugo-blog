@@ -1,6 +1,7 @@
 ﻿---
 title: poj-2251-Dungeon Master（三维 bfs 最短路）
 date: 2018-07-22 12:02:32
+lastmod: 2018-07-22 12:02:32
 tags: ["BFS","ACM","搜索","POJ","C++","C"]
 categories: ["ACM"]
 ---
