@@ -593,8 +593,6 @@ theme = "FixIt"
   # "assets/js/_custom.js"
   [params.customJS]
     enable = true
-    # Use "_custom.min.js" in the same path
-    minify = true
 
 # Markup related config in Hugo
 [markup]
