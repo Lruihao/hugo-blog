@@ -212,6 +212,8 @@ theme = "FixIt"
     # Home page profile
     [params.home.profile]
       enable = true
+      # FixIt NEW | 0.2.13 Gravatar mirror site domain, default: "www.gravatar.com"
+      gravatarSite = ""
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
@@ -296,8 +298,18 @@ theme = "FixIt"
     XMPP = ""
     Matrix = ""
     Bilibili = ""
+    # ORCID, ... , CSDN FixIt NEW | 0.2.13
+    ORCID = ""
+    Liberapay = ""
+    Ko-Fi = ""
+    BuyMeaCoffee = ""
+    Linktree = ""
+    QQ = ""
+    QQGroup = ""
+    Diaspora = ""
+    CSDN = ""
     Email = "1024@lruihao.cn"
-    RSS = true # 
+    RSS = true # FixIt NEW | 0.2.0
 
   #  Page config
   [params.page]
@@ -329,6 +341,17 @@ theme = "FixIt"
       keepStatic = false
       # whether to make the table of the contents in the sidebar automatically collapsed
       auto = true
+      # FixIt NEW | 0.2.13 position of TOC ("left", "right")
+      position = "right"
+    # FixIt NEW | 0.2.13 Display a message at the beginning of an article to warn the reader that its content might be expired
+    [params.page.expirationReminder]
+      enable = true
+      # Display the reminder if the last modified time is more than 90 days ago
+      reminder = 90
+      # Display warning if the last modified time is more than 180 days ago
+      warning = 180
+      # If the article expires, close the comment or not
+      closeComment = true
     #  KaTeX mathematical formulas
     [params.page.math]
       enable = false
@@ -346,10 +369,10 @@ theme = "FixIt"
     [params.page.code]
       # whether to show the copy button of the code block
       copy = true
+      # FixIt NEW | 0.2.13 whether to show the edit button of the code block
+      edit = true
       # the maximum number of lines of displayed code by default
       maxShownLines = 50
-      # whether code blocks can be edited since v0.2.13
-      editableCode = true
     #  Mapbox GL JS config
     [params.page.mapbox]
       # access token of Mapbox GL JS
@@ -399,6 +422,19 @@ theme = "FixIt"
     #  Comment config
     [params.page.comment]
       enable = true
+      # FixIt NEW | 0.2.13 Artalk comment config (https://artalk.js.org/)
+      [params.page.comment.artalk]
+        enable = false
+        server = "https://yourdomain/api/"
+        site = "默认站点"
+        placeholder = ""
+        noComment = ""
+        sendBtn = ""
+        editorTravel = true
+        flatMode = 'auto'
+        maxNesting = 3
+        # It take effect when `params.page.lightgallery` is enabled
+        lightgallery = false
       # Disqus comment config
       [params.page.comment.disqus]
         # 
@@ -434,7 +470,22 @@ theme = "FixIt"
         # you can store your own data files in the same path under your project:
         # "assets/data/emoji/"
         emoji = ""
-        commentCount = true
+        commentCount = true # FixIt NEW | 0.2.13
+      # FixIt NEW | 0.2.13 Waline comment config (https://waline.js.org)
+      [params.page.comment.waline]
+        enable = false
+        serverURL = ""
+        visitor = false
+        emoji = ['https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo']
+        meta = ['nick', 'mail', 'link']
+        requiredMeta = []
+        login = 'enable'
+        wordLimit = 0
+        pageSize = 10
+        uploadImage = false
+        highlight = true
+        mathTagSupport = false
+        commentCount = false
       # Facebook comment config
       [params.page.comment.facebook]
         enable = false
@@ -464,6 +515,16 @@ theme = "FixIt"
         label = ""
         lightTheme = "github-light"
         darkTheme = "github-dark"
+      # FixIt NEW | 0.2.13 Twikoo comment config (https://twikoo.js.org/)
+      [params.page.comment.twikoo]
+        enable = false
+        envId = ""
+        region = ""
+        path = ""
+        visitor = true
+        commentCount = true
+        # It take effect when `params.page.lightgallery` is enabled
+        lightgallery = false
     #  Third-party library config
     [params.page.library]
       [params.page.library.css]
