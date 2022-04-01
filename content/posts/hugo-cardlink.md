@@ -5,7 +5,7 @@ tags:
   - Shortcodes
   - hugo
 categories:
-  - hugo
+  - Memo
 ---
 
 {{< link href="https://github.com/Lruihao/FixIt" content="卡片式链接已整合到 FixIt 主题" card=true >}}

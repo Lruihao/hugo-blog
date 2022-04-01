@@ -1,9 +1,10 @@
 ---
 title: 基于 leancloud-storage 实现的无后端记账本
 date: 2021-03-02 21:46:40
-tags: ["JavaScript","leancloud","VueJS","Frontend"]
-categories: ["JavaScript","VueJS"]
+tags: ["JavaScript","leancloud","Vue"]
+categories: ["Projects"]
 license: '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+type: "posts"
 ---
 # 起因
 {{< admonition info "起因" >}}
@@ -154,4 +155,4 @@ function getMonthBill(month){
 
 over!
 
-![效果](images/demo.jpg)
+![效果](images/demo.jpg "Demo")

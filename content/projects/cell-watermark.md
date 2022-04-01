@@ -6,9 +6,9 @@ date: 2021-05-23 17:15:41
 tags:
 - watermark
 - JavaScript
-- Frontend
 categories:
-- JavaScript
+- Projects
+- Frontend
 type: "posts"
 aliases:
 - /posts/watermark-fixed/

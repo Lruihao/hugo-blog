@@ -2,7 +2,7 @@
 title: 面向对象基础知识总结
 date: 2019-01-15 16:07:31
 tags: ["面向对象","Java"]
-categories: ["Java"]
+categories: ["Backend"]
 ---
 
 ### 面向对象思想（理解）

@@ -1,8 +1,8 @@
 ---
 title: java 标识符
 date: 2019-01-14 15:07:57
-tags: ["Backend","Java"]
-categories: ["Java"]
+tags: ["Java"]
+categories: ["Backend"]
 ---
 
 ### 标识符：

@@ -1,8 +1,8 @@
 ---
 title: hexo+github 搭建个人博客及美化
 date: 2018-06-01 14:34:23
-tags: ["hexo","Nodejs","Frontend"]
-categories: ["hexo"]
+tags: ["hexo","Node"]
+categories: ["Memo"]
 ---
 
 **[更多关于 hexo](/categories/hexo/)**

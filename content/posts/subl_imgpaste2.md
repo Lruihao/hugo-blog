@@ -1,5 +1,5 @@
 ---
-title: "Sublime 剪贴板图片粘贴插件——Markdown 必备"
+title: "Sublime 剪贴板图片粘贴插件 —— Markdown 必备"
 date: 2021-10-05T21:54:06+08:00
 subtitle: ""
 description: ""
@@ -7,7 +7,7 @@ tags:
   - Markdown
   - Sublime
 categories:
-  - others
+  - Memo
 ---
 
 {{< link href="https://github.com/robinchenyu/imagepaste" content="插件地址" title="插件地址" card=true >}}

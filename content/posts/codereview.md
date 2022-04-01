@@ -1,8 +1,8 @@
 ---
 title: Code Review 怎麼做？新手工程師如何提升「程式碼品質」
 date: 2021-03-04 21:04:18
-tags: ["codereview","Fullstack"]
-categories: ["Fullstack"]
+tags: ["codereview"]
+categories: ["Memo"]
 ---
 
 # 程式碼的持續優化

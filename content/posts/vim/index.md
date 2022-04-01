@@ -2,7 +2,7 @@
 title: linux 系统进入退出 vim 编辑器及 termux 修改问候语
 date: 2018-08-31 11:46:39
 tags: ["vim","linux","termux"]
-categories: ["linux"]
+categories: ["OS"]
 ---
 
 > vim 编辑器是 Linux 系统自带的文本编辑器

@@ -3,11 +3,9 @@ title: ttf 字体压缩
 date: 2018-10-17 21:38:06
 tags:
 - 字体压缩
-- Frontend
-- Nodejs
-- Backend
+- Node
 categories:
-- Nodejs
+- Frontend
 description: "html 网页引用中文字体，文件过大，加载缓慢的解决办法"
 ---
 ### 安装 nodeJs

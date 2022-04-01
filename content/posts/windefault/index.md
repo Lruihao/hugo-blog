@@ -6,7 +6,7 @@ tags:
 - windows
 - ubuntu
 categories: 
-- linux
+- OS
 featuredImage: "/posts/windefault/images/1.png"
 ---
 

@@ -2,7 +2,7 @@
 title: 磁盘存储器的管理
 date: 2019-03-04 23:08:32
 tags: ["OS","磁盘"]
-categories: ["others"]
+categories: ["OS"]
 ---
 
 ## 外存的组织方式

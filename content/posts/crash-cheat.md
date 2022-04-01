@@ -1,8 +1,8 @@
 ---
 title: 网页离开时改变标题“崩溃欺骗”
 date: 2018-09-26 16:36:08
-tags: ["JavaScript","Frontend","hexo"]
-categories: ["JavaScript"]
+tags: ["JavaScript","hexo"]
+categories: ["Frontend"]
 ---
 
 > 从暑假到现在有好几个小伙伴问我博客的标题怎么变来变去的，不想再和每个人都说一遍了，耽误时间，索性写一下。

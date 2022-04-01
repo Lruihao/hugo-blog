@@ -4,7 +4,7 @@ date: 2021-10-05T14:14:10+08:00
 tags:
   - hugo
 categories:
-  - hugo
+  - Memo
 ---
 
 {{< admonition question "過程" >}}

@@ -9,7 +9,7 @@ tags:
   - Git
   - 腾讯云 cos 桶
 categories:
-  - hugo
+  - Memo
   - Git
 ---
 

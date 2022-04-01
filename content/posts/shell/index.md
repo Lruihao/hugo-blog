@@ -1,8 +1,8 @@
 ---
 title: shell 脚本初体验
 date: 2018-10-29 11:57:39
-tags: ["shell","linux","脚本"]
-categories: ["linux"]
+tags: ["shell","linux"]
+categories: ["OS"]
 toc:
   enable: false
 ---
@@ -26,7 +26,7 @@ echo "------------2-彩虹猫------------"
 echo "------------3-小火切------------"
 echo "------------4-打字机------------"
 echo "------------5-小许牛------------"
-echo "----------Ctrl+c暂停程序--------"
+echo "----------Ctrl+c 暂停程序--------"
 echo ""
 echo "请输入序号！"
 read i
@@ -49,8 +49,8 @@ then
 	echo "请输入字符串！"
 	read s2
 	echo "选择样式："
-	echo "------样式1-----"
-	echo "------样式2-----"
+	echo "------样式 1-----"
+	echo "------样式 2-----"
 	read j
 	if test $j -eq 1
 	then

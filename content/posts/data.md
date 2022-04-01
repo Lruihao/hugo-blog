@@ -2,7 +2,7 @@
 title: 计算机数据
 date: 2018-10-08 23:01:10
 tags: ["计算机数据","计算机组成与体系结构"]
-categories: ["others"]
+categories: ["Others"]
 ---
 
 ### 数据的表示

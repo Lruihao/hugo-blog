@@ -1,8 +1,8 @@
 ---
 title: Sublime Text3 快捷键大全
 date: 2019-08-15 20:59:10
-tags: ["Sublime","总结","他山之石"]
-categories: ["Fullstack"]
+tags: ["Sublime","Summaries","他山之石"]
+categories: ["Memo"]
 ---
 
 > [转自、-\-入冬](https://www.cnblogs.com/rudong/p/7889114.html)  

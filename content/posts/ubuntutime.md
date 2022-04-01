@@ -2,7 +2,7 @@
 title: win10,ubuntu 双系统时间不一致
 date: 2019-03-15 14:28:10
 tags: ["ubuntu","linux","windows"]
-categories: ["linux"]
+categories: ["OS"]
 ---
 
 > 我的 Ubuntu 和 Windows 双系统是 Ubuntu 是第一启动项，所以总是开机忘记点下键，一进 Ubuntu 系统时间就不对了（总是少了 8 小时），回到 Windows 时间也是错的。知道是错的调整一下还好。忘记调了有时候真的会误事。比如说 git 版本控制提交会遇到问题种种等。

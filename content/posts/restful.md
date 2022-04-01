@@ -1,7 +1,7 @@
 ---
 title: RESTful
 tags: ["REST"]
-categories: ["Fullstack"]
+categories: ["Memo"]
 date: 2019-11-14 19:06:05
 ---
 

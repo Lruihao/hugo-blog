@@ -1,8 +1,8 @@
 ---
 title: 新冠疫情未返校未返工第 N 天之“自动打卡”
 date: 2020-03-25 08:22:42
-tags: ["Python","脚本","HTTP","Backend"]
-categories: ["Python"]
+tags: ["Python","HTTP"]
+categories: ["Backend"]
 featuredImage: "/posts/daka/images/result.png"
 license: '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 ---

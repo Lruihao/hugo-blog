@@ -1,8 +1,8 @@
 ---
 title: hexo-theme-next @modified LRH
 date: 2019-03-21 16:43:19
-tags: ["hexo","Frontend"]
-categories: ["hexo"]
+tags: ["hexo"]
+categories: ["Memo"]
 description: "基于 hexo-theme-next 6.0+的 Pisces 模板做的 DIY 扩展性设计"
 featuredImage: "/posts/hexo-theme-next/images/next.png"
 ---
@@ -18,7 +18,7 @@ featuredImage: "/posts/hexo-theme-next/images/next.png"
 {{< admonition success "next" >}}
 基于 [hexo-theme-next 6.0+](https://github.com/theme-next/hexo-theme-next) 的 Pisces 模板做的 DIY 扩展性设计（部分兼容 next 其他几种模板）。主要是一些 custom style 还有一些第三方的 js。修改的地方太多也有点小乱就不提 PR 了。  
 [modified](https://github.com/Lruihao/hexo-theme-next)&emsp; 官方 Demo => <https://theme-next.org>  
-记录一下折腾过程，以后备份恢复博客也好方便自己。本文之前的美化修改请见 [hexo 分类](/categories/posts/)。  
+记录一下折腾过程，以后备份恢复博客也好方便自己。本文之前的美化修改请见 [hexo 标签](/tags/hexo/)。  
 **主题中若有遗漏第三方插件或应用的 key 及 id 值等请修改为自己对应的值**  
 {{< /admonition >}}
 

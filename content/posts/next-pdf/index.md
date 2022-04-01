@@ -2,7 +2,7 @@
 title: next添加支持pdf
 date: 2018-11-09 12:51:48
 tags: ["hexo"]
-categories: ["hexo"]
+categories: ["Memo"]
 ---
 
 > 最新的next主题已经更新了支持PDF功能，~~写法也和链接写法一样~~，可是我没有更新，我按github上那个readme试了一下好像不可以，所以用了另外一种插件的方法。

@@ -1,8 +1,8 @@
 ---
 title: 还乡
 date: 2019-02-01 20:44:40
-tags: ["生活随笔","他山之石"]
-categories: ["生活随笔"]
+tags: ["随笔","他山之石"]
+categories: ["随笔"]
 ---
 
 > 这不是英国作家哈代的《The Return of Native》, 而是我们这辈的父母所经历的常态。  

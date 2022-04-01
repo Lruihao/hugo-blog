@@ -2,11 +2,12 @@
 title: 宅音乐播放器
 date: 2019-03-19 23:32:56
 tags:
-- Backend
 - PHP
-- 宝塔面板
+- ThinkPHP
+- Layui
+- MySQL
 categories:
-- PHP
+- Backend
 featuredImage: "/posts/player/images/index.png"
 ---
 

@@ -2,7 +2,7 @@
 title: hexo d 出错
 date: 2018-08-21 22:15:01
 tags: ["hexo"]
-categories: ["hexo"]
+categories: ["Memo"]
 toc:
   enable: false
 ---

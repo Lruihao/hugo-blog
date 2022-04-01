@@ -2,7 +2,7 @@
 title: linux 编程初体验
 date: 2018-10-15 21:19:27
 tags: ["linux","C"]
-categories: ["linux"]
+categories: ["OS"]
 ---
 > 在 Linux 上编译 c 语言文件。
 

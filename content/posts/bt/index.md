@@ -2,7 +2,7 @@
 title: 宝塔面板安装
 date: 2019-03-18 21:31:43
 tags: ["linux","server","宝塔面板"]
-categories: ["linux"]
+categories: ["OS"]
 featuredImage: "/posts/bt/images/1.png"
 ---
 

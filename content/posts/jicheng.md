@@ -1,8 +1,8 @@
 ---
 title: java 继承 test
 date: 2019-01-24 15:07:50
-tags: ["Java","Backend"]
-categories: ["Java"]
+tags: ["Java"]
+categories: ["Backend"]
 ---
 
 {{< admonition quote >}}

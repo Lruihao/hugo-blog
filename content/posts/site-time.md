@@ -1,8 +1,8 @@
 ---
 title: 设置网站运行时间
 date: 2019-09-19 22:03:29
-tags: ["JavaScript","Frontend"]
-categories: ["JavaScript"]
+tags: ["JavaScript"]
+categories: ["Frontend"]
 ---
 
 > 使用`javascript`计算博客等网站的运行时间。

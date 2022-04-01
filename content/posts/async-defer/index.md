@@ -1,8 +1,8 @@
 ---
 title: script 的三种加载方式 (async, defer)
 date: 2019-09-08 11:47:50
-tags: ["JavaScript","defer","async","Frontend"]
-categories: ["JavaScript"]
+tags: ["JavaScript","defer","async"]
+categories: ["Frontend"]
 featuredImage: "/posts/async-defer/images/async_vs_defer.svg"
 license: '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 ---

@@ -1,8 +1,8 @@
 ---
 title: 宝塔面板安装 ImgURL 图床
 date: 2019-05-16 20:31:33
-tags: ["ImgURL","宝塔面板","Backend"]
-categories: ["PHP"]
+tags: ["ImgURL","宝塔面板"]
+categories: ["Backend"]
 featuredImage: "/posts/imgurl/images/1.png"
 ---
 

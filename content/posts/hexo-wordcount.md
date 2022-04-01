@@ -2,7 +2,7 @@
 title: hexo next 主题添加字数统计（2018）
 date: 2018-08-30 13:15:50
 tags: ["hexo","字数统计"]
-categories: ["hexo"]
+categories: ["Memo"]
 ---
 
 {{< admonition warning >}}

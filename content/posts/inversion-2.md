@@ -2,7 +2,7 @@
 title: 英语语法--完全倒装
 date: 2018-12-10 21:14:51
 tags: ["English"]
-categories: ["English"]
+categories: ["Study"]
 ---
 
 > 完全倒装： 把整个谓语动词放到主语前。

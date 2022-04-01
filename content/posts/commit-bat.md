@@ -1,8 +1,8 @@
 ---
 title: 通过 bat 批处理文件自动提交博客代码
 date: 2018-11-17 14:25:49
-tags: ["脚本","bat"]
-categories: ["others"]
+tags: ["bat"]
+categories: ["OS"]
 ---
 
 > 前面我有文章提到怎么提交本地文件到 github,coding 等远程仓库。每次可以分为三个步骤

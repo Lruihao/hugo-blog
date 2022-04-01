@@ -2,7 +2,7 @@
 title: hexo 插件及 next 内置样式集
 date: 2018-11-24 16:54:09
 tags: ["hexo"]
-categories: ["hexo"]
+categories: ["Memo"]
 ---
 
 > 2021/10/2 更新  

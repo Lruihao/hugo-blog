@@ -3,9 +3,8 @@ title: python 实训总结Ⅱ
 date: 2019-06-21 18:46:41
 tags:
 - Python
-- Backend
 categories:
-- Python
+- Backend
 ---
 
 > 后面几天讲的有点杂，简单记录一下知识点。

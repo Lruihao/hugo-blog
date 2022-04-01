@@ -1,8 +1,8 @@
 ---
 title: 使用 Python 刷 csdn 访问量
 date: 2020-03-26 11:08:38
-tags: ["Python","Backend","脚本"]
-categories: ["Python"]
+tags: ["Python"]
+categories: ["Backend"]
 toc:
   enable: false
 ---

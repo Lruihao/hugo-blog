@@ -1,8 +1,8 @@
 ---
 title: 每一个优秀的人，都有一段沉默的时光
 date: 2018-09-21 21:11:25
-tags: ["生活随笔"]
-categories: ["生活随笔"]
+tags: ["随笔"]
+categories: ["随笔"]
 toc:
   enable: false
 ---
