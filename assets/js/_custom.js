@@ -77,8 +77,9 @@ const CustomJS = new (function () {
       // SEO etc.
       this.baiduStatistics().baiduPush();
     }
+    // this.RIP();
     // Custom infos.
-    this.RIP().consoleInfo();
+    this.consoleInfo();
     return this;
   };
 })();
