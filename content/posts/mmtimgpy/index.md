@@ -3,10 +3,8 @@ title: python 爬取网站图片（图片链接相似）
 date: 2019-04-22 12:46:34
 tags:
 - Python
-- 脚本
-- Backend
 categories:
-- Python
+- Backend
 ---
 
 > 以下程序对 [该网址](https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&a=fontshowPics&u=qbfRl8gPF2s-&z=Kqz%2FRroVGYc-&share=1&from=singlemessage) 内的手写体图片进行爬取！这个手写体是我在手机上通过《手迹造字》app 书写的，大概 6886 个字符，历时两年多，目前仍在修改中。[字体效果查看](https://lruihao.cn/posts/font-mmt/)

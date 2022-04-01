@@ -1,8 +1,8 @@
 ---
 title: termux 基本使用教程
 date: 2018-10-23 22:16:02
-tags: ["termux","linux","Nodejs"]
-categories: ["termux"]
+tags: ["termux","linux","Node"]
+categories: ["Memo"]
 ---
 
 > 前面有一篇文章写到一些，[在 Android 上搭建 hexo 博客](https://lruihao.cn/posts/termux/)

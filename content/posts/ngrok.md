@@ -1,8 +1,8 @@
 ---
 title: 本地搭建网站服务器并穿透内网
 date: 2019-04-03 19:29:43
-tags: ["ngrok","linux","总结","宝塔面板","server","ubuntu"]
-categories: ["linux"]
+tags: ["ngrok","linux","Summaries","宝塔面板","server","ubuntu"]
+categories: ["OS"]
 ---
 
 > 一直都想在自己电脑上搭建一个网站或者把自己的电脑做成服务器，今天终于简单实现了。还有很多知识需要学习，简单记录一下。

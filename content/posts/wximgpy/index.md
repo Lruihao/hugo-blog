@@ -5,9 +5,8 @@ tags:
 - wxpy
 - pillow
 - Python
-- Backend
 categories:
-- Python
+- Backend
 featuredImage: "/posts/wximgpy/images/1.jpg"
 ---
 

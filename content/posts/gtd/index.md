@@ -4,7 +4,7 @@ date: 2021-12-22T20:17:42+08:00
 tags:
   - GTD
 categories:
-  - others
+  - Study
 featuredImagePreview: "/posts/gtd/images/reminders_min.png"
 featuredImage: "/posts/gtd/images/reminders.png"
 ---

@@ -1,8 +1,8 @@
 ---
 title: web 开发规则，代码规范
 date: 2019-08-15 18:30:31
-tags: ["PHP","JavaScript","Git","总结","Fullstack"]
-categories: ["Fullstack"]
+tags: ["PHP","JavaScript","Git","Summaries"]
+categories: ["Memo"]
 ---
 
 # 精神

@@ -1,8 +1,8 @@
 ---
 title: QQ 强制生成卡片式链接
 date: 2019-03-08 16:52:13
-tags: ["JavaScript","Frontend","脚本"]
-categories: ["JavaScript"]
+tags: ["JavaScript"]
+categories: ["Frontend"]
 ---
 
 > 以前在 QQ 里面聊天的时候发现，有些链接是卡片式的链接，像知乎里那些一样，就好奇为啥我的域名没有生成卡片。  

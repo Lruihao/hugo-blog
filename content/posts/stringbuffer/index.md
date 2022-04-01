@@ -1,8 +1,8 @@
 ---
 title: java 常用类
 date: 2019-04-14 10:12:44
-tags: ["StringBuffer","sort","Java","Backend"]
-categories: ["Java"]
+tags: ["StringBuffer","sort","Java"]
+categories: ["Backend"]
 ---
 
 # StringBuffer/StringBuilder(掌握)

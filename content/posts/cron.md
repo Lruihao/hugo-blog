@@ -2,7 +2,7 @@
 title: CRON 表达式的基本语法
 date: 2020-03-25 09:19:44
 tags: ["linux","shell","Cron"]
-categories: ["Fullstack"]
+categories: ["OS"]
 ---
 
 > `<秒> <分钟> <小时> <日期 day-of-month> <月份> <星期 day-of-week>`

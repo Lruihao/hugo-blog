@@ -7,7 +7,7 @@ tags:
 - pyecharts
 - jieba
 - 他山之石
-categories: ["Python"]
+categories: ["Backend"]
 featuredImage: "/posts/wxpy1/images/1.png"
 ---
 

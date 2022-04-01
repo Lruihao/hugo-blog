@@ -6,7 +6,7 @@ tags:
   - shell
   - hugo
 categories:
-  - hugo
+  - Memo
 featuredImagePreview: "/posts/hugo-admin/images/hugo-admin1.png"
 draft: false
 ---

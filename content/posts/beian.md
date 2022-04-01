@@ -1,8 +1,8 @@
 ---
 title: 网站备案之旅
 date: 2018-10-29 23:16:26
-tags: ["生活随笔","网站备案"]
-categories: ["生活随笔"]
+tags: ["随笔","网站备案"]
+categories: ["随笔"]
 toc:
   enable: false
 ---

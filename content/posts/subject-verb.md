@@ -2,7 +2,7 @@
 title: 英语语法--主谓一致
 date: 2019-01-12 13:02:49
 tags: ["English"]
-categories: ["English"]
+categories: ["Study"]
 ---
 
 ## 常见情况

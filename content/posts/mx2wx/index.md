@@ -2,7 +2,7 @@
 title: python 实战：模拟 post 请求定时获取后台数据并打包发送至微信
 date: 2019-05-11 17:02:31
 tags: ["Python","wxpy","pyinstaller","HTTP","JSON","Cron"]
-categories: ["Python"]
+categories: ["Backend"]
 ---
 
 > 用 python 模拟 post 请求获取“麻小科技”示例酒店后台的数据，再打包发送至指定的微信群或者好友。  

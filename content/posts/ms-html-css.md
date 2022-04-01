@@ -1,8 +1,8 @@
 ---
 title: 前端面试题-HTML+CSS
 date: 2019-03-30 22:58:39
-tags: ["HTML","CSS","Frontend","总结"]
-categories: ["HTML","CSS"]
+tags: ["HTML","CSS","Summaries"]
+categories: ["Frontend","Memo"]
 ---
 
 > [原文链接](https://github.com/ltadpoles/web-document/tree/master/Other)  

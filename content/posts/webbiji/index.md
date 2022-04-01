@@ -2,12 +2,9 @@
 title: web 汇总
 date: 2019-03-18 20:40:55
 tags:
-- Fullstack
-- Frontend
 - JavaScript
-- Backend
 categories:
-- Fullstack
+- Memo
 ---
 
 > 下面一些 web 开发的一些总结，还有一些常用到的代码，脚本等！

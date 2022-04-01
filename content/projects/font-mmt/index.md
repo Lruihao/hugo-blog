@@ -5,7 +5,7 @@ date: 2018-10-12 19:39:19
 tags:
 - 沐目体
 categories:
-- others
+- Others
 type: "posts"
 library:
   css:

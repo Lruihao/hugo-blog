@@ -4,9 +4,8 @@ date: 2019-05-07 18:17:05
 tags:
 - Python
 - HTTP
-- Backend
 categories:
-- Python
+- Backend
 ---
 
 > 通过 requests 可以向某个地址发送请求，可以用来做一些接口的测试；主要有两个方法：  

@@ -2,7 +2,7 @@
 title: 第一次面试经历
 date: 2019-04-24 21:23:22
 tags: ["面试"]
-categories: ["生活随笔"]
+categories: ["随笔"]
 toc:
   enable: false
 ---

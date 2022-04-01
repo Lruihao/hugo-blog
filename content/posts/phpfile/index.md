@@ -3,9 +3,8 @@ title: php 按行读取文件信息
 date: 2019-09-28 17:11:17
 tags:
 - PHP
-- Backend
 categories:
-- PHP
+- Backend
 ---
 
 # 普通方法

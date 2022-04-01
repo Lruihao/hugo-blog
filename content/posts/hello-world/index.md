@@ -2,8 +2,8 @@
 title: "Hello World"
 subtitle: "I'm coming!"
 date: 2018-05-28T20:01:01+08:00
-tags: ["生活随笔"]
-categories: ["生活随笔"]
+tags: ["随笔"]
+categories: ["随笔"]
 toc:
   enable: false
 featuredImagePreview: "/posts/hello-world/images/lunyu.jpg"

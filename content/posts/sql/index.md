@@ -1,7 +1,7 @@
 ---
 title: SQL 总结
-tags: ["SQL","Backend"]
-categories: ["SQL"]
+tags: ["MySQL"]
+categories: ["Backend"]
 date: 2020-01-16 19:28:05
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: 条件注释判断浏览器版本<!--[if lt IE 9]>;
 date: 2019-05-10 13:08:27
-tags: ["HTML","Frontend","他山之石"]
-categories: ["HTML"]
+tags: ["HTML","他山之石"]
+categories: ["Frontend"]
 toc:
   enable: false
 ---

@@ -3,9 +3,8 @@ title: 简单评论模块--php 表单练习
 date: 2019-07-19 11:38:59
 tags:
 - PHP
-- Backend
 categories:
-- PHP
+- Backend
 ---
 
 > 简单模仿了一个评论模板，当然肯定是没有博客的 valine 这么强大的 hhhh，  

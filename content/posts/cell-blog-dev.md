@@ -1,8 +1,8 @@
 ---
 title: cell-blog 开发记录
 date: 2020-07-25 20:42:42
-tags: ["PHP","Laravel","Markdown","Backend"]
-categories: ["PHP"]
+tags: ["PHP","Laravel","Markdown"]
+categories: ["Memo"]
 ---
 
 > Cell Blog 开发记录，[项目地址](https://github.com/Lruihao/cell-blog)

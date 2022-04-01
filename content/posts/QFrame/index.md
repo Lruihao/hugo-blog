@@ -1,8 +1,8 @@
 ---
 title: 匿名类在可视化界面中的应用
 date: 2019-03-15 22:31:28
-tags: ["GUI","Java","Backend"]
-categories: ["Java"]
+tags: ["GUI","Java"]
+categories: ["Backend"]
 ---
 
 > java 中匿名类用的最多的地方就是可视化界面设计中，特别是将`事件监听器`注册到某个组件上的时候。

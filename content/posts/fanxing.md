@@ -1,8 +1,8 @@
 ---
 title: java 泛型 test
 date: 2019-03-16 13:56:01
-tags: ["泛型","Java","Backend"]
-categories: ["Java"]
+tags: ["泛型","Java"]
+categories: ["Backend"]
 ---
 
 > - 泛型方法，它在修饰符后，返回值类型前增加了类型参数 (<>)

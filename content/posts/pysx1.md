@@ -2,11 +2,10 @@
 title: python 实训总结Ⅰ
 date: 2019-06-18 18:41:00
 tags:
+- Python
 - turtle
-- Python
-- Backend
 categories:
-- Python
+- Backend
 ---
 
 > 以前和前一段时间自己也学习了一下 python，也写了几个小爬虫；

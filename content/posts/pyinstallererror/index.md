@@ -4,14 +4,11 @@ date: 2019-05-09 19:05:01
 tags:
 - Python
 - pyinstaller
-- 脚本
-- Backend
 categories:
-- Python
+- Backend
 keywords:
 - python
 - pyinstaller
-- 脚本
 - csdn 访问数
 featuredImage: "/posts/pyinstallererror/images/1.png"
 ---

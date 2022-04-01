@@ -2,7 +2,7 @@
 title: linux/centos 下的安装 git
 date: 2018-09-22 22:28:45
 tags: ["Git","linux"]
-categories: ["Git","linux"]
+categories: ["Git","OS"]
 ---
 
 ### 下载 git

@@ -1,7 +1,7 @@
 ---
 title: 各种 Links 汇总与分享
-tags: ["总结","ACM"]
-categories: ["others"]
+tags: ["Summaries","ACM"]
+categories: ["Memo"]
 date: 2018-06-07 00:06:05
 ---
 

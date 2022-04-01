@@ -2,10 +2,9 @@
 title: php 同时主动推送链接到百度，神马等站长平台
 date: 2019-09-28 18:32:42
 tags:
-- Backend
 - PHP
 categories:
-- PHP
+- Backend
 ---
 
 > php 主动推送站点链接到百度站长，神马站长进行 SEO。

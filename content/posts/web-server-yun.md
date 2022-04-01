@@ -6,7 +6,7 @@ tags:
 - server
 - linux
 categories:
-- linux
+- OS
 ---
 
 ### 搭建 Apache web 服务

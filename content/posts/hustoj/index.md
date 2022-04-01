@@ -2,7 +2,7 @@
 title: HustOJ 基础搭建教程
 date: 2019-05-17 23:08:04
 tags: ["hustoj","ACM","ubuntu","linux"]
-categories: ["linux"]
+categories: ["Memo"]
 ---
 
 > 目前 HustOj 在 GitHUb 地址是：<https://github.com/zhblue/hustoj>  
