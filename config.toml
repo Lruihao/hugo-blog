@@ -19,31 +19,31 @@ theme = "FixIt"
 [menu]
   [[menu.main]]
     identifier = "posts"
-    pre = ""
+    pre = "<i class='fas fa-archive fa-fw fa-sm'></i>"
     post = ""
-    name = "文章"
+    name = "所有文章"
     url = "/posts/"
     title = ""
     weight = 1
   [[menu.main]]
-    identifier = "tags"
-    pre = ""
-    post = ""
-    name = "標籤"
-    url = "/tags/"
-    title = ""
-    weight = 2
-  [[menu.main]]
     identifier = "categories"
-    pre = ""
+    pre = "<i class='fas fa-th fa-fw fa-sm'></i>"
     post = ""
     name = "分類"
     url = "/categories/"
     title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "tags"
+    pre = "<i class='fas fa-tags fa-fw fa-sm'></i>"
+    post = ""
+    name = "標籤"
+    url = "/tags/"
+    title = ""
     weight = 3
   [[menu.main]]
     identifier = "friends"
-    pre = ""
+    pre = "<i class='fas fa-users fa-fw fa-sm'></i>"
     post = ""
     name = "友鏈"
     url = "/friends/"
@@ -51,7 +51,8 @@ theme = "FixIt"
     weight = 4
   [[menu.main]]
     identifier = "img"
-    pre = ""
+    parent = "about"
+    pre = "<i class='fas fa-photo-video fa-fw fa-sm'></i>"
     post = ""
     name = "相冊"
     url = "https://img.lruihao.cn"
@@ -59,7 +60,7 @@ theme = "FixIt"
     weight = 5
   [[menu.main]]
     identifier = "guestbook"
-    pre = ""
+    pre = "<i class='fas fa-comments fa-fw fa-sm'></i>"
     post = ""
     name = "留言"
     url = "/guestbook/"
@@ -67,12 +68,30 @@ theme = "FixIt"
     weight = 6
   [[menu.main]]
     identifier = "about"
-    pre = ""
+    pre = "<i class='fas fa-user-tie fa-fw fa-sm'></i>"
     post = ""
     name = "關於"
     url = "/about/"
     title = ""
     weight = 7
+  [[menu.main]]
+    identifier = "projects"
+    parent = "about"
+    pre = "<i class='fas fa-laptop-code fa-fw fa-sm'></i>"
+    post = ""
+    name = "我的項目"
+    url = "/projects/"
+    title = ""
+    weight = 8
+  [[menu.main]]
+    identifier = "years"
+    parent = "about"
+    pre = "<i class='fas fa-book fa-fw fa-sm'></i>"
+    post = ""
+    name = "年度總結"
+    url = "/years/"
+    title = ""
+    weight = 9
 
 ######################################### Theme FixIt Config #########################################
 
