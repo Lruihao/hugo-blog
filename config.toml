@@ -92,6 +92,16 @@ theme = "FixIt"
     url = "/years/"
     title = ""
     weight = 9
+  [[menu.main]]
+    identifier = "github"
+    pre = "<i class='fab fa-github fa-fw'></i>"
+    post = ""
+    name = ""
+    url = "https://github.com/Lruihao/hugo-blog"
+    title = "GitHub"
+    weight = 7
+    [menu.main.params]
+      class = "d-none-desktop text-center"
 
 ######################################### Theme FixIt Config #########################################
 
@@ -115,6 +125,8 @@ theme = "FixIt"
   images = ["/logo.png"]
   # enable PWA sicne v0.2.12
   enablePWA = true
+  # whether to add external Icon for external links automatically since v0.2.14
+  externalIcon = true
 
   #  App icon config
   [params.app]
@@ -589,7 +601,7 @@ theme = "FixIt"
     # watermark's transparency
     opacity = 0.0125
     # parent of watermark's container
-    appendTo = '.wrapper>.main'
+    appendTo = '.wrapper>main'
     # watermark's width. unit: px
     width = 150
     # watermark's height. unit: px
@@ -673,6 +685,11 @@ theme = "FixIt"
   # "assets/js/_custom.js"
   [params.customJS]
     enable = true
+  # GitHub banner in the top-right corner since v0.2.14
+  [params.githubCorner]
+    enable = true
+    permalink = "https://github.com/Lruihao/hugo-blog"
+    title = "在 GitHub 上查看程式碼，訂閱請點 Watch"
 
 # Markup related config in Hugo
 [markup]
