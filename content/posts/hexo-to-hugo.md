@@ -136,7 +136,7 @@ console.log(urls.join('\n'))
 > ~~hugo LoveIt 主题整体优化，必要时建 PR 或 issue 到 LoveIt 仓库~~ (LoveIt 已停更一年多）  
 > ~~先把自己发现和 LoveIt 原 repo 的 issue 尽可能的修复，修改的原则是：**不改动原项目代码**，~~  
 > ~~唯一途径就是在站点相同的目录用**新增**的方式替代**修改、删除**操作。~~  
-> ~~之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。~~ 
+> ~~之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。~~  
 > 为了更好的完善博客功能以及修复 BUG 已创建新的主题 FixIt (fork from LoveIt)
 
 {{< link href="https://github.com/Lruihao/FixIt" content="Hugo theme FixIt" card=true >}}
