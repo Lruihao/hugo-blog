@@ -1,15 +1,15 @@
 ---
-title: 高逼格 c 语言画心
+title: “高逼格” C 语言画心
 date: 2018-08-15 16:33:12
-tags: ["随笔","C","C++"]
-categories: ["随笔"]
-toc:
-  enable: false
+tags:
+- C
+categories:
+- 瞎折腾
 ---
 
 七夕又快到了，分享一个曾经玩过的代码，用 C 语言画一个跳动的心，很有逼格有木有。
 
-![大一的图](https://i.loli.net/2018/08/29/5b8680e407e09.gif)
+![截图](https://i.loli.net/2018/08/29/5b8680e407e09.gif "大一在机房拍的图")
 <!--more-->
 ```c
 #include <stdio.h>
@@ -67,4 +67,5 @@ int main() {
     }
 }
 ```
-[exe 文件下载](heart.zip)
+
+[exe 文件下载 :(fas fa-download):](heart.zip)
