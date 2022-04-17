@@ -2,7 +2,7 @@
 title: caddy-两步搭建超简单云盘
 date: 2018-11-11 13:59:27
 tags: ["云盘","caddy","server"]
-categories: ["Others"]
+categories: ["Grocery"]
 ---
 
 ### 安装

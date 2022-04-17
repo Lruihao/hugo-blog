@@ -2,7 +2,7 @@
 title: eclipse 的基本使用
 date: 2019-03-15 23:47:24
 tags: ["eclipse","Java"]
-categories: ["Fullstack"]
+categories: ["Memo"]
 ---
 
 # 基本使用
