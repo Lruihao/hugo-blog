@@ -2,7 +2,7 @@
 title: NetBeans IDE 开发设置
 date: 2019-08-15 18:36:15
 tags: ["NetBeans","PHP"]
-categories: ["Fullstack"]
+categories: ["Memo"]
 ---
 
 # 安裝

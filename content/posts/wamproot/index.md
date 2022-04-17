@@ -7,7 +7,7 @@ tags:
 - windows
 - server
 categories:
-- Fullstack
+- Memo
 ---
 
 > 使用 WAMPServer 时自定义网站根目录。

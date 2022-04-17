@@ -2,7 +2,7 @@
 title: 博採眾長 app
 date: 2018-11-12 16:04:04
 tags: ["lua","fusion"]
-categories: ["Others"]
+categories: ["Grocery"]
 ---
 
 ### 介绍
