@@ -6,6 +6,7 @@ tags:
 - pillow
 - Python
 categories:
+- 瞎折腾
 - Backend
 featuredImage: "/posts/wximgpy/images/1.jpg"
 ---
@@ -15,10 +16,6 @@ featuredImage: "/posts/wximgpy/images/1.jpg"
 > **文中编码由 Sunbelife 提供，来自他的同名微信公众号，本博仅用于学习，侵删**  
 
 <!--more-->
-
-# 预览
-![我的微信好友全家福](images/1.jpg)
-
 # 依赖
 - wxpy（Pythone 登录微信）
 - pillow（拼接头像）
@@ -184,7 +181,7 @@ for i in range(0,len(ls)+1):
 image.save("all.png")
 shutil.rmtree("./group-images")
 ```
-![绥宁一中高 396 班](images/2.png)
+![绥宁一中高 396 班](images/2.png "绥宁一中高 396 班")
 
 > 加个列表，加个循环实现自动爬取所有群聊头像并发送
 
