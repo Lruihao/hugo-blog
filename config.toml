@@ -99,7 +99,7 @@ theme = "FixIt"
     name = ""
     url = "https://github.com/Lruihao/hugo-blog"
     title = "GitHub"
-    weight = 7
+    weight = ""
     [menu.main.params]
       class = "d-none-desktop text-center"
 
