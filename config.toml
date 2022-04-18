@@ -19,31 +19,31 @@ theme = "FixIt"
 [menu]
   [[menu.main]]
     identifier = "posts"
-    pre = ""
+    pre = "<i class='fas fa-archive fa-fw fa-sm'></i>"
     post = ""
-    name = "文章"
+    name = "所有文章"
     url = "/posts/"
     title = ""
     weight = 1
   [[menu.main]]
-    identifier = "tags"
-    pre = ""
-    post = ""
-    name = "標籤"
-    url = "/tags/"
-    title = ""
-    weight = 2
-  [[menu.main]]
     identifier = "categories"
-    pre = ""
+    pre = "<i class='fas fa-th fa-fw fa-sm'></i>"
     post = ""
     name = "分類"
     url = "/categories/"
     title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "tags"
+    pre = "<i class='fas fa-tags fa-fw fa-sm'></i>"
+    post = ""
+    name = "標籤"
+    url = "/tags/"
+    title = ""
     weight = 3
   [[menu.main]]
     identifier = "friends"
-    pre = ""
+    pre = "<i class='fas fa-users fa-fw fa-sm'></i>"
     post = ""
     name = "友鏈"
     url = "/friends/"
@@ -51,7 +51,8 @@ theme = "FixIt"
     weight = 4
   [[menu.main]]
     identifier = "img"
-    pre = ""
+    parent = "about"
+    pre = "<i class='fas fa-photo-video fa-fw fa-sm'></i>"
     post = ""
     name = "相冊"
     url = "https://img.lruihao.cn"
@@ -59,7 +60,7 @@ theme = "FixIt"
     weight = 5
   [[menu.main]]
     identifier = "guestbook"
-    pre = ""
+    pre = "<i class='fas fa-comments fa-fw fa-sm'></i>"
     post = ""
     name = "留言"
     url = "/guestbook/"
@@ -67,12 +68,40 @@ theme = "FixIt"
     weight = 6
   [[menu.main]]
     identifier = "about"
-    pre = ""
+    pre = "<i class='fas fa-user-tie fa-fw fa-sm'></i>"
     post = ""
     name = "關於"
     url = "/about/"
     title = ""
     weight = 7
+  [[menu.main]]
+    identifier = "projects"
+    parent = "about"
+    pre = "<i class='fas fa-laptop-code fa-fw fa-sm'></i>"
+    post = ""
+    name = "我的項目"
+    url = "/projects/"
+    title = ""
+    weight = 8
+  [[menu.main]]
+    identifier = "years"
+    parent = "about"
+    pre = "<i class='fas fa-book fa-fw fa-sm'></i>"
+    post = ""
+    name = "年度總結"
+    url = "/years/"
+    title = ""
+    weight = 9
+  [[menu.main]]
+    identifier = "github"
+    pre = "<i class='fab fa-github fa-fw'></i>"
+    post = ""
+    name = ""
+    url = "https://github.com/Lruihao/hugo-blog"
+    title = "GitHub"
+    weight = ""
+    [menu.main.params]
+      class = "d-none-desktop text-center"
 
 ######################################### Theme FixIt Config #########################################
 
@@ -96,6 +125,8 @@ theme = "FixIt"
   images = ["/logo.png"]
   # enable PWA sicne v0.2.12
   enablePWA = true
+  # whether to add external Icon for external links automatically since v0.2.14
+  externalIcon = true
 
   #  App icon config
   [params.app]
@@ -212,6 +243,8 @@ theme = "FixIt"
     # Home page profile
     [params.home.profile]
       enable = true
+      # FixIt NEW | 0.2.13 Gravatar mirror site domain, default: "www.gravatar.com"
+      gravatarSite = ""
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
@@ -296,8 +329,18 @@ theme = "FixIt"
     XMPP = ""
     Matrix = ""
     Bilibili = ""
+    # ORCID, ... , CSDN FixIt NEW | 0.2.13
+    ORCID = ""
+    Liberapay = ""
+    Ko-Fi = ""
+    BuyMeaCoffee = ""
+    Linktree = ""
+    QQ = ""
+    QQGroup = ""
+    Diaspora = ""
+    CSDN = ""
     Email = "1024@lruihao.cn"
-    RSS = true # 
+    RSS = true # FixIt NEW | 0.2.0
 
   #  Page config
   [params.page]
@@ -329,6 +372,17 @@ theme = "FixIt"
       keepStatic = false
       # whether to make the table of the contents in the sidebar automatically collapsed
       auto = true
+      # FixIt NEW | 0.2.13 position of TOC ("left", "right")
+      position = "right"
+    # FixIt NEW | 0.2.13 Display a message at the beginning of an article to warn the reader that its content might be expired
+    [params.page.expirationReminder]
+      enable = true
+      # Display the reminder if the last modified time is more than 90 days ago
+      reminder = 90
+      # Display warning if the last modified time is more than 180 days ago
+      warning = 180
+      # If the article expires, close the comment or not
+      closeComment = true
     #  KaTeX mathematical formulas
     [params.page.math]
       enable = false
@@ -346,10 +400,10 @@ theme = "FixIt"
     [params.page.code]
       # whether to show the copy button of the code block
       copy = true
+      # FixIt NEW | 0.2.13 whether to show the edit button of the code block
+      edit = true
       # the maximum number of lines of displayed code by default
       maxShownLines = 50
-      # whether code blocks can be edited since v0.2.13
-      editableCode = true
     #  Mapbox GL JS config
     [params.page.mapbox]
       # access token of Mapbox GL JS
@@ -399,6 +453,19 @@ theme = "FixIt"
     #  Comment config
     [params.page.comment]
       enable = true
+      # FixIt NEW | 0.2.13 Artalk comment config (https://artalk.js.org/)
+      [params.page.comment.artalk]
+        enable = false
+        server = "https://yourdomain/api/"
+        site = "默认站点"
+        placeholder = ""
+        noComment = ""
+        sendBtn = ""
+        editorTravel = true
+        flatMode = 'auto'
+        maxNesting = 3
+        # It take effect when `params.page.lightgallery` is enabled
+        lightgallery = false
       # Disqus comment config
       [params.page.comment.disqus]
         # 
@@ -434,7 +501,22 @@ theme = "FixIt"
         # you can store your own data files in the same path under your project:
         # "assets/data/emoji/"
         emoji = ""
-        commentCount = true
+        commentCount = true # FixIt NEW | 0.2.13
+      # FixIt NEW | 0.2.13 Waline comment config (https://waline.js.org)
+      [params.page.comment.waline]
+        enable = false
+        serverURL = ""
+        visitor = false
+        emoji = ['https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo']
+        meta = ['nick', 'mail', 'link']
+        requiredMeta = []
+        login = 'enable'
+        wordLimit = 0
+        pageSize = 10
+        uploadImage = false
+        highlight = true
+        mathTagSupport = false
+        commentCount = false
       # Facebook comment config
       [params.page.comment.facebook]
         enable = false
@@ -464,6 +546,16 @@ theme = "FixIt"
         label = ""
         lightTheme = "github-light"
         darkTheme = "github-dark"
+      # FixIt NEW | 0.2.13 Twikoo comment config (https://twikoo.js.org/)
+      [params.page.comment.twikoo]
+        enable = false
+        envId = ""
+        region = ""
+        path = ""
+        visitor = true
+        commentCount = true
+        # It take effect when `params.page.lightgallery` is enabled
+        lightgallery = false
     #  Third-party library config
     [params.page.library]
       [params.page.library.css]
@@ -509,7 +601,7 @@ theme = "FixIt"
     # watermark's transparency
     opacity = 0.0125
     # parent of watermark's container
-    appendTo = '.wrapper>.main'
+    appendTo = '.wrapper>main'
     # watermark's width. unit: px
     width = 150
     # watermark's height. unit: px
@@ -593,8 +685,11 @@ theme = "FixIt"
   # "assets/js/_custom.js"
   [params.customJS]
     enable = true
-    # Use "_custom.min.js" in the same path
-    minify = true
+  # GitHub banner in the top-right corner since v0.2.14
+  [params.githubCorner]
+    enable = true
+    permalink = "https://github.com/Lruihao/hugo-blog"
+    title = "在 GitHub 上查看程式碼，訂閱請點 Watch"
 
 # Markup related config in Hugo
 [markup]

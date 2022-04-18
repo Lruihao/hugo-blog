@@ -57,6 +57,18 @@ const CustomJS = new (function () {
   };
 
   /**
+   * Rest in Peace. R.I.P 🕯️
+   * @2022-3-28 [3.21-mu5735] 沉痛哀悼 132 名遇难同胞：东航航班失事，遇难者含旅客 123 人，机组 9 人
+   * @returns {CustomJS}
+   */
+  this.RIP = () => {
+    if (new Date() < new Date('2022-03-31')) {
+      document.querySelector('html').style.filter = 'grayscale(100%)';
+    }
+    return this;
+  };
+
+  /**
    * Initialize.
    * @returns {CustomJS}
    */
@@ -65,6 +77,7 @@ const CustomJS = new (function () {
       // SEO etc.
       this.baiduStatistics().baiduPush();
     }
+    // this.RIP();
     // Custom infos.
     this.consoleInfo();
     return this;
@@ -77,7 +90,5 @@ const CustomJS = new (function () {
 (() => {
   CustomJS.init();
   // It will be executed when the DOM tree is built.
-  document.addEventListener('DOMContentLoaded', () => {
-
-  });
+  document.addEventListener('DOMContentLoaded', () => {});
 })();
