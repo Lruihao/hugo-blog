@@ -2,7 +2,7 @@
 title: JS 验证码
 date: 2019-03-04 20:53:09
 tags: ["JavaScript"]
-categories: ["Frontend"]
+categories: ["JavaScript"]
 toc:
   enable: false
 ---

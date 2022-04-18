@@ -4,7 +4,7 @@ date: 2019-09-28 18:32:42
 tags:
 - PHP
 categories:
-- Backend
+- PHP
 ---
 
 > php 主动推送站点链接到百度站长，神马站长进行 SEO。

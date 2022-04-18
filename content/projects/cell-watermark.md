@@ -8,7 +8,7 @@ tags:
 - JavaScript
 categories:
 - Projects
-- Frontend
+- JavaScript
 type: "posts"
 aliases:
 - /posts/watermark-fixed/

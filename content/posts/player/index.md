@@ -7,7 +7,8 @@ tags:
 - Layui
 - MySQL
 categories:
-- Backend
+- 瞎折腾
+- PHP
 featuredImage: "/posts/player/images/index.png"
 ---
 

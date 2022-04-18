@@ -5,7 +5,7 @@ tags:
 - Python
 - pyinstaller
 categories:
-- Backend
+- Python
 keywords:
 - python
 - pyinstaller

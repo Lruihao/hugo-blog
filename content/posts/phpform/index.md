@@ -4,7 +4,7 @@ date: 2019-07-19 11:38:59
 tags:
 - PHP
 categories:
-- Backend
+- PHP
 ---
 
 > 简单模仿了一个评论模板，当然肯定是没有博客的 valine 这么强大的 hhhh，  

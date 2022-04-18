@@ -5,7 +5,7 @@ tags:
 - 字体压缩
 - Node
 categories:
-- Frontend
+- Grocery
 description: "html 网页引用中文字体，文件过大，加载缓慢的解决办法"
 ---
 ### 安装 nodeJs

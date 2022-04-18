@@ -4,7 +4,7 @@ date: 2019-07-15 11:37:33
 tags:
 - PHP
 categories:
-- Backend
+- PHP
 ---
 
 > 练习 php 函数的基本使用。  

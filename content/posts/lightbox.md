@@ -2,7 +2,7 @@
 title: Lightbox
 date: 2021-06-21 16:18:04
 tags: ["Lightbox","JavaScript"]
-categories: ["Frontend"]
+categories: ["JavaScript"]
 ---
 
 # 簡介

@@ -2,7 +2,7 @@
 title: 使用 js 准确获取当前页面 url 网址信息及 301 重定向实战
 date: 2018-10-28 14:22:00
 tags: ["redirect","JavaScript","他山之石"]
-categories: ["Frontend"]
+categories: ["JavaScript"]
 ---
 
 ### 获取链接（转）

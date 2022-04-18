@@ -2,7 +2,7 @@
 title: Python 如何操作 Json？
 date: 2019-05-07 18:42:47
 tags: ["Python","JSON","他山之石"]
-categories: ["Backend"]
+categories: ["Python"]
 featuredImage: "/posts/jsoninfo/images/1.jpg"
 ---
 

@@ -2,7 +2,7 @@
 title: java 正则表达式练习
 date: 2019-04-18 22:04:21
 tags: ["regex","Java"]
-categories: ["Backend"]
+categories: ["Java"]
 ---
 
 # 邮箱

@@ -2,7 +2,7 @@
 title: Arrays 类及基本使用
 date: 2019-01-18 13:13:10
 tags: ["Java","Collator","Comparator"]
-categories: ["Backend"]
+categories: ["Java"]
 ---
 
 ### 主要方法

@@ -9,7 +9,7 @@ tags:
 - 他山之石
 categories:
 - 瞎折腾
-- Backend
+- Python
 featuredImage: "/posts/wxpy1/images/1.png"
 ---
 

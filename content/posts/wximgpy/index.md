@@ -7,7 +7,7 @@ tags:
 - Python
 categories:
 - 瞎折腾
-- Backend
+- Python
 featuredImage: "/posts/wximgpy/images/1.jpg"
 ---
 
