@@ -2,7 +2,7 @@
 title: 网页夜间效果
 date: 2018-09-27 13:13:31
 tags: ["JavaScript"]
-categories: ["Frontend"]
+categories: ["JavaScript"]
 ---
 
 > 这几天看到别人的博客有开关灯效果，就想给自己的博客也加一个，其实以前就在想了。经过谷歌百度后这样实现了。`css+js`

@@ -5,7 +5,7 @@ tags:
 - Python
 - Cron
 categories:
-- Backend
+- Python
 keywords:
 - python
 - python 定时任务

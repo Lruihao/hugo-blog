@@ -2,7 +2,7 @@
 title: java 录入数据
 date: 2019-01-14 15:33:46
 tags: ["Java"]
-categories: ["Backend"]
+categories: ["Java"]
 ---
 ### 记忆格式：
 (1) 导包：  

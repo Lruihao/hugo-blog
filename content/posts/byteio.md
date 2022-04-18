@@ -2,7 +2,7 @@
 title: 文件加密解密（字节流）
 date: 2019-05-02 23:04:32
 tags: ["Java"]
-categories: ["Backend"]
+categories: ["Java"]
 ---
 
 > 基本功能： 给定一个密钥，读取文件内容，加密后，输出到另外一个文件。<br/><br/>

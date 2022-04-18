@@ -2,7 +2,7 @@
 title: 模拟借书系统（java 异常练习）
 date: 2019-05-01 16:52:21
 tags: ["Java"]
-categories: ["Backend"]
+categories: ["Java"]
 featuredImage: "/posts/javaexception/images/1.png"
 ---
 

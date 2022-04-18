@@ -2,7 +2,7 @@
 title: java 实现一个单线程的资源下载器
 date: 2019-05-08 20:55:02
 tags: ["GUI","URLConnection","HTTP","Java"]
-categories: ["Backend"]
+categories: ["Java"]
 featuredImage: "/posts/singlethreaddown/images/1.png"
 ---
 

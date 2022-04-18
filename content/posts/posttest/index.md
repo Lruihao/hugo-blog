@@ -5,7 +5,7 @@ tags:
 - Python
 - HTTP
 categories:
-- Backend
+- Python
 ---
 
 > 通过 requests 可以向某个地址发送请求，可以用来做一些接口的测试；主要有两个方法：  

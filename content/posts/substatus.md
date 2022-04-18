@@ -2,7 +2,7 @@
 title: Java 父类子类的对象初始化过程
 date: 2019-03-21 13:36:25
 tags: ["Java"]
-categories: ["Backend"]
+categories: ["Java"]
 ---
 
 > 摘要：Java 基本的对象初始化过程，子类的初始化，以及涉及到父类和子类的转化时可能引起混乱的情况。

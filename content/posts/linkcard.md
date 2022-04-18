@@ -2,7 +2,7 @@
 title: 模仿知乎卡片式链接
 date: 2019-03-15 15:21:39
 tags: ["JavaScript","hexo"]
-categories: ["Frontend"]
+categories: ["JavaScript"]
 ---
 
 > 模仿知乎的卡片式链接，idea 来自 [兰州小红鸡]

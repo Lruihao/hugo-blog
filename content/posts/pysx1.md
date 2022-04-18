@@ -5,7 +5,7 @@ tags:
 - Python
 - turtle
 categories:
-- Backend
+- Python
 ---
 
 > 以前和前一段时间自己也学习了一下 python，也写了几个小爬虫；

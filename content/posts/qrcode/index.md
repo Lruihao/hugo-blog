@@ -4,7 +4,7 @@ date: 2019-04-27 14:16:54
 tags: ["pillow","numpy","imageio","Python"]
 categories:
 - 瞎折腾
-- Backend
+- Python
 ---
 
 > **Python 二维码生成器**是 github 上@sylnsfar 开源的一个 python 生成二维码工具。有 python, 网页及 exe 版本，详见 [sylnsfar/qrcode](https://github.com/sylnsfar/qrcode/)，本文主要介绍记录一下 python 版本使用。exe 可以去 [项目开源地址](https://github.com/sylnsfar/qrcode_win) 下载，公众号文章后台回复关键词“qrcode”获取链接。

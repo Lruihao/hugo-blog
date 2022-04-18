@@ -2,7 +2,7 @@
 title: vps 配置 ssl 及 https 重定向
 date: 2019-03-28 19:40:54
 tags: ["SSL","redirect","CDN","JavaScript","server"]
-categories: ["Frontend"]
+categories: ["Grocery"]
 ---
 
 > 记录自己在配置 vps 及博客 SSL 证书时遇到的问题。

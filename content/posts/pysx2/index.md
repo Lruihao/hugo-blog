@@ -4,7 +4,7 @@ date: 2019-06-21 18:46:41
 tags:
 - Python
 categories:
-- Backend
+- Python
 ---
 
 > 后面几天讲的有点杂，简单记录一下知识点。
