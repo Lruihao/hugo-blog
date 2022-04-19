@@ -11,44 +11,40 @@ comment: false
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lruihao&layout=compact&hide=html" title="Top Langs for Lruihao" alt="Top Langs for Lruihao" style="width:45.06%;"/>
 </div>
 
-{{< music url="https://cdn.lruihao.cn/files/nanjing.mp3" name="李志" artist="你离开了南京，从此没人和我说话" cover="https://p2.music.126.net/UuSe-Vc6rS7JtRJSQgDU2g==/2323268069553116.jpg?param=300x300" fixed=true >}}
-
----
-
-## 初衷
-{{< admonition note "Since: 2018-05-28 20:01:01" >}}
+{{< admonition note "Since 2018-05-28 20:01:01" >}}
 {{< typeit group=expect >}}
   建站的初衷不是為了炫耀所知，而是記錄無知。  
 {{< /typeit >}}
 {{< typeit group=expect >}}
-  人知道得越多，就會發現無知的越多。有更廣袤的世界可以探索，真是莫大的快樂啊！
+  人知道的越多，就會發現無知的越多。有更廣袤的世界可以探索，真是莫大的快樂！
 {{< /typeit >}}
 {{< /admonition >}}
 
-## 期許
-> 不卑不亢，不矜不伐，戒驕戒躁  
-> 不嗔不怒，不爭不棄，獨善其身
+{{< music url="https://cdn.lruihao.cn/files/nanjing.mp3" name="李志" artist="你离开了南京，从此没人和我说话" cover="https://p2.music.126.net/UuSe-Vc6rS7JtRJSQgDU2g==/2323268069553116.jpg?param=300x300" fixed=true >}}
 
 ---
+### 期許
 
-## About me
-~~在校大學生~~，~~Web 開發實習生~~，社畜 ...
+{{< center-quote >}}
+不卑不亢，不矜不伐，戒驕戒躁  
+不嗔不怒，不爭不棄，獨善其身
+{{< /center-quote >}}
 
-在職：~~Web 全棧開發~~，Web 前端開發
+### 關於我
+
+角色：~~在校大學生，Web 開發實習生~~，社畜 ...  
+職業：~~Web 全棧開發~~，Web 前端開發
 
 用我所学，学我所用。不盲目堆疊技術棧，保持謙遜，保持探索欲，砥礪前行。
 
-## Recent activity
 {{< link href="https://github.com/users/Lruihao/projects/1" content="@Lruihao's Recent activity" card=true >}}
- 
-- [ ] 臨帖 《心經 - 赵孟頫》
-- [ ] 臨帖 《真草千字文》
-- [ ] 閱讀 《神雕俠侶 - 金庸》  進度：[1]/[4]
-- [ ] 打籃球🏀
-- <details>
-  <summary><i class="far fa-check-square fa-fw"></i> 已完成</summary>
 
-  - [X] 閱讀 《笑場-李誕》 進度：100%
-  - [x] 減脂到 <60kg
+### 寫了些啥
 
-</details>
+這個博客最初是在校時期打 ACM 為了紀錄題解而搭建的。
+
+後面，開始在 IT 的世界漫漫探索，記錄一些瞎折騰的過程、有趣的程序、自己寫的項目、開發筆記等，也會偶爾分享一些想法，心得感悟等等。
+
+內容的風格比較隨意，不會像論文那樣嚴謹的措辭，也不會僅僅照搬直接貼上，更傾向於用通俗的文字記錄當時理解，畢竟，自己才是博客的第一個讀者。
+
+內容的領域，之後大概都會圍繞 **Web 開發**進行，並且**前端**會占多數。
