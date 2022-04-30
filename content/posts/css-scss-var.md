@@ -47,7 +47,7 @@ categories:
 
 ## By the way
 
-如果需要在 `MAX()` 内部恢复 `Scss` 解析（引用 `Scss` 变量），只需用 `#{...}` 包围 Scss 代码。
+如果需要在 CSS 函数内部恢复 `Scss` 解析（引用 `Scss` 变量），只需用 `#{...}` 包围 Scss 代码。
 
 ```scss
 $header-height: 3.5rem !default;
