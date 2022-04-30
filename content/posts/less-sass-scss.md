@@ -1,7 +1,7 @@
 ---
 title: less&sass&scss
 date: 2021-06-22 16:39:47
-tags: ["less","sass","scss"]
+tags: ["Less","Sass","Scss"]
 categories: ["CSS"]
 ---
 
