@@ -203,8 +203,12 @@ theme = "FixIt"
     copyright = true
     #  whether to show the author
     author = true
-    # Site creation time
+    # Site creation year
     since = 2018
+    # Site creation time
+    siteTime = '2018-05-28T20:01:01+08:00'
+    # whether to show total word count of site content since v0.2.14
+    wordCount = true
     # Public network security only in China (HTML format is supported) since v0.2.12
     gov = '<a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target="_blank">湘公网安备 43030402000254 号</a>'
     # ICP info only in China (HTML format is supported)
@@ -243,8 +247,6 @@ theme = "FixIt"
     # Home page profile
     [params.home.profile]
       enable = true
-      # FixIt NEW | 0.2.13 Gravatar mirror site domain, default: "www.gravatar.com"
-      gravatarSite = ""
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
@@ -364,6 +366,10 @@ theme = "FixIt"
     linkToMarkdown = true
     #  whether to show the full text content in RSS
     rssFullText = true
+    # FixIt NEW | 0.2.13 Page style ("narrow", "normal", "wide", ...)
+    pageStyle = "normal"
+    # FixIt NEW | 0.2.14 Gravatar is force-used as the author's avatar
+    gravatarForce = false
     #  Table of the contents config
     [params.page.toc]
       # whether to enable the table of the contents
@@ -622,8 +628,6 @@ theme = "FixIt"
     enable = true
     # Enable in post meta
     enablePost = false
-    # Site creation time
-    siteTime = '2018-05-28T20:01:01+08:00'
 
   # Site verification code config for Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]
@@ -690,6 +694,12 @@ theme = "FixIt"
     enable = true
     permalink = "https://github.com/Lruihao/hugo-blog"
     title = "在 GitHub 上查看程式碼，訂閱請點 Watch"
+    position = "right" # left, right
+  # FixIt NEW | 0.2.14 Gravatar config
+  [params.gravatar]
+    # Gravatar host, default: "www.gravatar.com"
+    host = "gravatar.loli.net" # "cn.gravatar.com", "gravatar.loli.net"
+    style = "mp" # "", mp, identicon, monsterid, wavatar, retro, blank, robohash
 
 # Markup related config in Hugo
 [markup]
