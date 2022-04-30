@@ -3,8 +3,6 @@ title: "{{ now.Year }} 年度总结"
 subtitle: ""
 date: {{ .Date }}
 draft: true
-author: ""
-authorLink: ""
 description: ""
 keywords: ""
 license: ""
