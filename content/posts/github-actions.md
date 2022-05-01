@@ -1,11 +1,11 @@
 ---
-title: "Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶"
+title: "Hugo 使用 GitHub Actions 部署到 GithHb Pages 和 腾讯云 cos 桶"
 date: 2021-10-04T23:46:49+08:00
 subtitle: ""
 description: ""
 tags:
   - hugo
-  - Github Actions
+  - GitHub Actions
   - Git
   - 腾讯云 cos 桶
 categories:
@@ -20,9 +20,9 @@ Github Actions 真是靜態博客的福音，有了它 hugo, hexo 等博客構�
 
 <!--more-->
 ## 準備
-工作流程設計到兩個倉庫和一個 cos 桶，例如：
+工作流程涉及到兩個倉庫和一個 cos 桶，例如：
 > - Lruihao/hugo-blog          # Blog source repository
-> - Lruihao/lruihao.github.io  # Github pages repository
+> - Lruihao/lruihao.github.io  # GitHub pages repository
 > - blog-1256932288            # COS bucket
 
 ## Github Actions
