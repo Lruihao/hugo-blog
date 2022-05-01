@@ -5,7 +5,7 @@ tags: ["Sublime","Summaries","他山之石"]
 categories: ["Memo"]
 ---
 
-> [转自、-\-入冬](https://www.cnblogs.com/rudong/p/7889114.html)  
+> 转自 -- [入冬](https://www.cnblogs.com/rudong/p/7889114.html)  
 补充 tab 转 space 设置
 
 <!--more-->
