@@ -103,32 +103,35 @@ theme = "FixIt"
     [menu.main.params]
       class = "d-none-desktop text-center"
 
-######################################### Theme FixIt Config #########################################
-
+# Theme FixIt Config #
+# ================= #
 [params]
-  #  FixIt theme version
+  # FixIt CHANGED | 0.2.0 FixIt theme version
   version = "0.2.X"
   # site description
   description = "Lruihao's Note 李瑞豪的博客：探索、分享、记录自己在工作生活学习到一些东西。人知道得越多，就就会发现无知的越多。有更广袤世界可以探索，真是莫大的快乐啊！"
   # site keywords
-  keywords = ["李瑞豪","李瑞豪的博客","菠菜眾長","博採眾長","Lruihao","Cell","Hugo Blog"]
+  keywords = ["李瑞豪", "李瑞豪的博客", "菠菜眾長", "博採眾長", "Lruihao", "Cell", "Hugo Blog"]
   # site default theme ("light", "dark", "auto")
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
   gitRepo = "https://github.com/Lruihao/hugo-blog"
-  #  which hash function used for SRI, when empty, no SRI is used
+  # FixIt NEW | 0.1.1 which hash function used for SRI, when empty, no SRI is used
   # ("sha256", "sha384", "sha512", "md5")
   fingerprint = ""
-  #  date format
+  # FixIt NEW | 0.2.0 date format
   dateFormat = "2006-01-02"
   # website images for Open Graph and Twitter Cards
   images = ["/logo.png"]
-  # enable PWA sicne v0.2.12
+  # FixIt NEW | 0.2.12 enable PWA
   enablePWA = true
-  # whether to add external Icon for external links automatically since v0.2.14
-  externalIcon = true
+  # FixIt NEW | 0.2.14 whether to add external Icon for external links automatically
+  externalIcon = false
+  # FixIt NEW | 0.2.14 FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
+  # You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
+  disableThemeInject = false
 
-  #  App icon config
+  # FixIt NEW | 0.2.0 App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
     title = "菠菜眾長"
@@ -140,12 +143,12 @@ theme = "FixIt"
     iconColor = "#5bbad5"
     # Windows v8-10 tile color
     tileColor = "#da532c"
-    # Android browser theme color
+    # FixIt CHANGED | 0.2.12 Android browser theme color
     [params.app.themeColor]
       light = "#ffffff"
       dark = "#252627"
 
-  #  Search config
+  # FixIt NEW | 0.2.0 Search config
   [params.search]
     enable = true
     # type of search engine ("lunr", "algolia")
@@ -154,13 +157,13 @@ theme = "FixIt"
     contentLength = 4000
     # placeholder of the search bar
     placeholder = ""
-    #  max number of results length
+    # FixIt NEW | 0.2.1 max number of results length
     maxResultLength = 10
-    #  snippet length of the result
+    # FixIt NEW | 0.2.3 snippet length of the result
     snippetLength = 50
-    #  HTML tag name of the highlight part in results
+    # FixIt NEW | 0.2.1 HTML tag name of the highlight part in results
     highlightTag = "em"
-    #  whether to use the absolute URL based on the baseURL in search index
+    # FixIt NEW | 0.2.4 whether to use the absolute URL based on the baseURL in search index
     absoluteURL = false
     [params.search.algolia]
       index = "index"
@@ -169,11 +172,11 @@ theme = "FixIt"
 
   # Header config
   [params.header]
-    # desktop header mode ("fixed", "normal", "auto")
-    desktopMode = "fixed"
-    # mobile header mode ("fixed", "normal", "auto")
+    # FixIt CHANGED | 0.2.13 desktop header mode ("sticky", "normal", "auto")
+    desktopMode = "sticky"
+    # FixIt CHANGED | 0.2.13 mobile header mode ("sticky", "normal", "auto")
     mobileMode = "auto"
-    #  Header title config
+    # FixIt NEW | 0.2.0 Header title config
     [params.header.title]
       # URL of the LOGO
       logo = "/logo.png"
@@ -183,9 +186,9 @@ theme = "FixIt"
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
-      #  whether to use typeit animation for title name
+      # FixIt NEW | 0.2.5 whether to use typeit animation for title name
       typeit = false
-    # Header subtitle config since v0.2.12
+    # FixIt NEW | 0.2.12 Header subtitle config
     [params.header.subtitle]
       # subtitle name
       name = "李瑞豪的博客"
@@ -195,28 +198,26 @@ theme = "FixIt"
   # Footer config
   [params.footer]
     enable = true
-    #  Custom content (HTML format is supported)
+    # FixIt NEW | 0.2.0 Custom content (HTML format is supported)
     custom = ''
-    #  whether to show Hugo and theme info
+    # FixIt NEW | 0.2.0 whether to show Hugo and theme info
     hugo = true
-    #  whether to show copyright info
+    # FixIt NEW | 0.2.0 whether to show copyright info
     copyright = true
-    #  whether to show the author
+    # FixIt NEW | 0.2.0 whether to show the author
     author = true
     # Site creation year
     since = 2018
-    # Site creation time
+    # FixIt NEW | 0.2.14 Site creation time
     siteTime = '2018-05-28T20:01:01+08:00'
-    # whether to show total word count of site content since v0.2.14
-    wordCount = true
-    # Public network security only in China (HTML format is supported) since v0.2.12
+    # FixIt NEW | 0.2.12 Public network security only in China (HTML format is supported)
     gov = '<a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target="_blank">湘公网安备 43030402000254 号</a>'
     # ICP info only in China (HTML format is supported)
     icp = '<a rel="external nofollow noopener noreffer" href="https://beian.miit.gov.cn" target="_blank">湘 ICP 备18020535 号</a>'
     # license info (HTML format is supported)
     license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
-  #  Section (all posts) page config
+  # FixIt NEW | 0.2.0 Section (all posts) page config
   [params.section]
     # special amount of posts in each section page
     paginate = 20
@@ -224,14 +225,14 @@ theme = "FixIt"
     dateFormat = "01-02"
     # amount of RSS pages
     rss = 20
-    # recently updated posts settings since v0.2.13
+    # FixIt NEW | 0.2.13 recently updated posts settings
     [params.section.recentlyUpdated]
       enable = true
       rss = true
       days = 30
       maxCount = 10
 
-  #  List (category or tag) page config
+  # FixIt NEW | 0.2.0 List (category or tag) page config
   [params.list]
     # special amount of posts in each list page
     paginate = 20
@@ -242,7 +243,7 @@ theme = "FixIt"
 
   # Home page config
   [params.home]
-    #  amount of RSS pages
+    # FixIt NEW | 0.2.0 amount of RSS pages
     rss = 20
     # Home page profile
     [params.home.profile]
@@ -251,7 +252,7 @@ theme = "FixIt"
       gravatarEmail = ""
       # URL of avatar shown in home page
       avatarURL = "/images/avatar.jpg"
-      #  title shown in home page (HTML format is supported)
+      # FixIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
       title = "Lruihao's Note"
       # subtitle shown in home page
       subtitle = "不怕萬人阻擋，只怕自己投降"
@@ -259,7 +260,7 @@ theme = "FixIt"
       typeit = true
       # whether to show social links
       social = true
-      #  disclaimer (HTML format is supported)
+      # FixIt NEW | 0.2.0 disclaimer (HTML format is supported)
       disclaimer = ""
     # Home page posts
     [params.home.posts]
@@ -270,107 +271,47 @@ theme = "FixIt"
   # Social config about the author
   [params.social]
     GitHub = "Lruihao"
-    Linkedin = ""
-    Twitter = ""
-    Instagram = ""
-    Facebook = ""
-    Telegram = ""
-    Medium = ""
-    Gitlab = ""
-    Youtubelegacy = ""
-    Youtubecustom = ""
-    Youtubechannel = ""
-    Tumblr = ""
-    Quora = ""
-    Keybase = ""
-    Pinterest = ""
-    Reddit = ""
-    Codepen = ""
-    FreeCodeCamp = ""
-    Bitbucket = ""
-    Stackoverflow = ""
     Weibo = "liahao"
-    Odnoklassniki = ""
-    VK = ""
-    Flickr = ""
-    Xing = ""
-    Snapchat = ""
-    Soundcloud = ""
-    Spotify = ""
-    Bandcamp = ""
-    Paypal = ""
-    Fivehundredpx = ""
-    Mix = ""
-    Goodreads = ""
-    Lastfm = ""
-    Foursquare = ""
-    Hackernews = ""
-    Kickstarter = ""
-    Patreon = ""
-    Steam = ""
-    Twitch = ""
-    Strava = ""
-    Skype = ""
-    Whatsapp = ""
+    Email = "1024@lruihao.cn"
+    RSS = true
+    Stackoverflow = ""
     Zhihu = ""
     Douban = ""
-    Angellist = ""
-    Slidershare = ""
-    Jsfiddle = ""
-    Deviantart = ""
-    Behance = ""
-    Dribbble = ""
-    Wordpress = ""
-    Vine = ""
-    Googlescholar = ""
-    Researchgate = ""
-    Mastodon = ""
-    Thingiverse = ""
-    Devto = ""
     Gitea = ""
-    XMPP = ""
-    Matrix = ""
     Bilibili = ""
-    # ORCID, ... , CSDN FixIt NEW | 0.2.13
-    ORCID = ""
-    Liberapay = ""
-    Ko-Fi = ""
     BuyMeaCoffee = ""
     Linktree = ""
     QQ = ""
     QQGroup = ""
-    Diaspora = ""
     CSDN = ""
-    Email = "1024@lruihao.cn"
-    RSS = true # FixIt NEW | 0.2.0
 
-  #  Page config
+  # FixIt CHANGED | 0.2.0 Page config
   [params.page]
-    #  whether to hide a page from home page
+    # FixIt NEW | 0.2.0 whether to hide a page from home page
     hiddenFromHomePage = false
-    #  whether to hide a page from search results
+    # FixIt NEW | 0.2.0 whether to hide a page from search results
     hiddenFromSearch = false
-    #  whether to enable twemoji
+    # FixIt NEW | 0.2.0 whether to enable twemoji
     twemoji = true
     # whether to enable lightgallery
     lightgallery = true
-    #  whether to enable the ruby extended syntax
+    # FixIt NEW | 0.2.0 whether to enable the ruby extended syntax
     ruby = true
-    #  whether to enable the fraction extended syntax
+    # FixIt NEW | 0.2.0 whether to enable the fraction extended syntax
     fraction = true
-    #  whether to enable the fontawesome extended syntax
+    # FixIt NEW | 0.2.0 whether to enable the fontawesome extended syntax
     fontawesome = true
-    #  Default lisence of content.
+    # FixIt NEW | 0.2.0 Default lisence of content.
     license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
     # whether to show link to Raw Markdown content of the content
     linkToMarkdown = true
-    #  whether to show the full text content in RSS
+    # FixIt NEW | 0.2.4 whether to show the full text content in RSS
     rssFullText = true
     # FixIt NEW | 0.2.13 Page style ("narrow", "normal", "wide", ...)
     pageStyle = "normal"
     # FixIt NEW | 0.2.14 Gravatar is force-used as the author's avatar
     gravatarForce = false
-    #  Table of the contents config
+    # FixIt NEW | 0.2.0 Table of the contents config
     [params.page.toc]
       # whether to enable the table of the contents
       enable = true
@@ -389,7 +330,7 @@ theme = "FixIt"
       warning = 180
       # If the article expires, close the comment or not
       closeComment = true
-    #  KaTeX mathematical formulas
+    # FixIt CHANGED | 0.2.0 KaTeX mathematical formulas
     [params.page.math]
       enable = false
       # default block delimiter is $$ ... $$ and \\[ ... \\]
@@ -402,7 +343,7 @@ theme = "FixIt"
       copyTex = true
       # KaTeX extension mhchem
       mhchem = true
-    #  Code config
+    # FixIt NEW | 0.2.0 Code config
     [params.page.code]
       # whether to show the copy button of the code block
       copy = true
@@ -415,7 +356,7 @@ theme = "FixIt"
       enable = true
       # url = "https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name" # Link for fork & edit
       url = "https://github.com/Lruihao/hugo-blog/edit/docs/content" # Link for fork & edit
-    #  Mapbox GL JS config
+    # FixIt NEW | 0.2.0 Mapbox GL JS config
     [params.page.mapbox]
       # access token of Mapbox GL JS
       accessToken = ""
@@ -431,67 +372,16 @@ theme = "FixIt"
       scale = true
       # whether to add FullscreenControl
       fullscreen = true
-    #  social share links in post page
+    # FixIt CHANGED | 0.2.0 social share links in post page
     [params.page.share]
       enable = true
       Twitter = true
-      Facebook = false
       Linkedin = true
-      Whatsapp = false
-      Pinterest = false
-      Tumblr = false
-      HackerNews = false
-      Reddit = false
-      VK = false
-      Buffer = false
-      Xing = false
-      Line = false
-      Instapaper = false
-      Pocket = false
-      Digg = false
-      Stumbleupon = false
-      Flipboard = false
       Weibo = true
-      Renren = false
-      Myspace = false
-      Blogger = false
       Baidu = true
-      Odnoklassniki = false
-      Evernote = false
-      Skype = false
-      Trello = false
-      Mix = false
-    #  Comment config
+    # FixIt CHANGED | 0.2.14 Comment config
     [params.page.comment]
       enable = true
-      # FixIt NEW | 0.2.13 Artalk comment config (https://artalk.js.org/)
-      [params.page.comment.artalk]
-        enable = false
-        server = "https://yourdomain/api/"
-        site = "默认站点"
-        placeholder = ""
-        noComment = ""
-        sendBtn = ""
-        editorTravel = true
-        flatMode = 'auto'
-        maxNesting = 3
-        # It take effect when `params.page.lightgallery` is enabled
-        lightgallery = false
-      # Disqus comment config
-      [params.page.comment.disqus]
-        # 
-        enable = false
-        # Disqus shortname to use Disqus in posts
-        shortname = ""
-      # Gitalk comment config
-      [params.page.comment.gitalk]
-        # 
-        enable = false
-        owner = ""
-        repo = ""
-        clientId = ""
-        clientSecret = ""
-      # Valine comment config
       [params.page.comment.valine]
         enable = true
         appId = "7HwTRT0Q0Tfrat6ugrT6P67c-gzGzoHsz"
@@ -528,46 +418,21 @@ theme = "FixIt"
         highlight = true
         mathTagSupport = false
         commentCount = false
-      # Facebook comment config
-      [params.page.comment.facebook]
+      # FixIt NEW | 0.2.14 Giscus comments config
+      [params.page.comment.giscus]
         enable = false
-        width = "100%"
-        numPosts = 10
-        appId = ""
-        languageCode = ""
-      #  Telegram comments config
-      [params.page.comment.telegram]
-        enable = false
-        siteID = ""
-        limit = 5
-        height = ""
-        color = ""
-        colorful = true
-        dislikes = false
-        outlined = false
-      #  Commento comment config
-      [params.page.comment.commento]
-        enable = false
-      #  Utterances comment config
-      [params.page.comment.utterances]
-        enable = false
-        # owner/repo
         repo = ""
-        issueTerm = "pathname"
-        label = ""
-        lightTheme = "github-light"
-        darkTheme = "github-dark"
-      # FixIt NEW | 0.2.13 Twikoo comment config (https://twikoo.js.org/)
-      [params.page.comment.twikoo]
-        enable = false
-        envId = ""
-        region = ""
-        path = ""
-        visitor = true
-        commentCount = true
-        # It take effect when `params.page.lightgallery` is enabled
-        lightgallery = false
-    #  Third-party library config
+        repoId = ""
+        category = ""
+        categoryId = ""
+        mapping = ""
+        reactionsEnabled = "1"
+        emitMetadata = "0"
+        inputPosition = "bottom" # top, bottom
+        lightTheme = "light"
+        darkTheme = "dark"
+        lazyLoad = true
+    # FixIt NEW | 0.2.7 Third-party library config
     [params.page.library]
       [params.page.library.css]
         # someCSS = "some.css"
@@ -578,7 +443,7 @@ theme = "FixIt"
         # someJavascript = "some.js"
         # Or
         # someJavascript = "https://cdn.example.com/some.js"
-    #  Page SEO config
+    # FixIt CHANGED | 0.2.10 Page SEO config
     [params.page.seo]
       # image URL
       images = []
@@ -587,7 +452,7 @@ theme = "FixIt"
         name = "Lruihao"
         logoUrl = "/images/avatar.jpg"
 
-  #  TypeIt config
+  # FixIt NEW | 0.2.5 TypeIt config
   [params.typeit]
     # typing speed between each step (measured in milliseconds)
     speed = 100
@@ -598,12 +463,12 @@ theme = "FixIt"
     # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
     duration = -1
 
-  # PanguJS config since v0.2.12
+  # FixIt NEW | 0.2.12 PanguJS config
   [params.pangu]
     # For Chinese writing
     enable = true
 
-  # Watermark config since v0.2.12
+  # FixIt NEW | 0.2.12 Watermark config
   # Detail config see https://github.com/Lruihao/watermark#readme
   [params.watermark]
     enable = true
@@ -625,10 +490,10 @@ theme = "FixIt"
     rotate = 15
     # watermark's fontSize. unit: rem
     fontSize = 1.1
-    # watermark's fontFamily
+    # FixIt NEW | 0.2.13 watermark's fontFamily
     fontFamily = 'MMT_LRH,沐目体'
 
-  # Busuanzi count since v0.2.12
+  # FixIt NEW | 0.2.12 Busuanzi count
   [params.ibruce]
     enable = true
     # Enable in post meta
@@ -642,14 +507,14 @@ theme = "FixIt"
     pinterest = ""
     baidu = ""
 
-  #  Site SEO config
+  # FixIt NEW | 0.2.10 Site SEO config
   [params.seo]
     # image URL
     image = "/site-meta.jpg"
     # thumbnail URL
     thumbnailUrl = "/logo.png"
 
-  #  Analytics config
+  # FixIt NEW | 0.2.10 Analytics config
   [params.analytics]
     enable = false
     # Google Analytics
@@ -663,7 +528,7 @@ theme = "FixIt"
       # server url for your tracker if you're self hosting
       server = ""
 
-  #  Cookie consent config
+  # FixIt NEW | 0.2.7 Cookie consent config
   [params.cookieconsent]
     enable = true
     # text strings used for Cookie consent banner
@@ -672,7 +537,7 @@ theme = "FixIt"
       dismiss = ""
       link = ""
 
-  #  CDN config for third-party library files
+  # FixIt CHANGED | 0.2.7 CDN config for third-party library files
   [params.cdn]
     # CDN data file name, disabled by default
     # ("jsdelivr.yml")
@@ -681,20 +546,20 @@ theme = "FixIt"
     # "assets/data/cdn/"
     # data = "jsdelivr.yml"
 
-  #  Compatibility config
+  # FixIt NEW | 0.2.8 Compatibility config
   [params.compatibility]
     # whether to use Polyfill.io to be compatible with older browsers
     polyfill = false
     # whether to use object-fit-images to be compatible with older browsers
     objectFit = false
 
-  # Custom JS at last. since v0.2.12
+  # FixIt NEW | 0.2.12 Custom JS at last
   # "_custom.js" located in "themes/FixIt/assets/js/"
   # you can store your custom JS file in the same path under your project:
   # "assets/js/_custom.js"
   [params.customJS]
     enable = true
-  # GitHub banner in the top-right corner since v0.2.14
+  # FixIt NEW | 0.2.14 GitHub banner in the top-right or top-left corner
   [params.githubCorner]
     enable = true
     permalink = "https://github.com/Lruihao/hugo-blog"
@@ -708,15 +573,16 @@ theme = "FixIt"
 
 # Markup related config in Hugo
 [markup]
-  # Syntax Highlighting
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
   [markup.highlight]
+    ########## necessary configurations ##########
+    # https://github.com/Lruihao/FixIt/issues/43
     codeFences = true
-    guessSyntax = true
     lineNos = true
     lineNumbersInTable = true
-    # false is a necessary configuration
-    # (https://github.com/dillonzq/LoveIt/issues/158)
-    noClasses = false
+    noClasses = false 
+    ########## necessary configurations ##########
+    guessSyntax = true
   # Goldmark is from Hugo 0.60 the default library used for Markdown
   [markup.goldmark]
     [markup.goldmark.extensions]
@@ -772,7 +638,7 @@ theme = "FixIt"
 
 # Options to make hugo output files
 [outputs]
-  # 
+  # FixIt CHANGED | 0.2.0
   home = ["HTML", "RSS", "JSON"]
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
