@@ -41,13 +41,13 @@ arr.some(callback(element[, index[, array]])[, thisArg])
 
 {{< admonition tip >}}
 
-`some()` 不会对空数组进行检测，空数组返回 `false
+`some()` 不会对空数组进行检测，空数组返回 `false`
 
 {{< /admonition >}}
 
 **[every](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/every)**
 
-> 助记：`every()`和`some()`  功能相反
+> 助记：`every()` 和 `some()` 功能相反
 
 `every()` 方法测试一个数组内的所有元素是否都能通过某个指定函数的测试，它返回一个布尔值。
 
@@ -64,7 +64,7 @@ arr.every(callback(element[, index[, array]])[, thisArg])
 
 {{< admonition tip >}}
 
-`every()` 不会对空数组进行检测，空数组返回 `true
+`every()` 不会对空数组进行检测，空数组返回 `true`
 
 {{< /admonition >}}
 
@@ -89,7 +89,7 @@ console.log(found);
 
 {{< admonition quote >}}
 
-另请参见  [`findIndex()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex) 方法，它返回数组中找到的元素的索引，而不是其值。
+另请参见 [`findIndex()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex) 方法，它返回数组中找到的元素的索引，而不是其值。
 
 如果你需要找到一个元素的位置或者一个元素是否存在于数组中，使用 [`Array.prototype.indexOf()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) 或 [`Array.prototype.includes()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)。
 
@@ -171,7 +171,7 @@ Object.hasOwn(object3, 'age') // false
 
 ## 使用 "#" 声明私有属性
 
-以前，我们一般用`_`表示私有属性，但它并不靠谱，还是会被外部修改。
+以前，我们一般用 `_` 表示私有属性，但它并不靠谱，还是会被外部修改。
 
 ```javascript
 class Person {
@@ -197,7 +197,7 @@ console.log(p1.money) // 2
 console.log(p1._money) // 2
 ```
 
-**使用`#`实现真正私有属性**
+**使用 `#` 实现真正私有属性**
 
 ```javascript
 class Person {
