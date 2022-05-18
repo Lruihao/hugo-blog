@@ -24,6 +24,10 @@
   font-size: 1.5rem;
 }
 
+.netease-music {
+  min-height: 90px;
+}
+
 .comment-163 {
   font-family: MMT,"沐目体";
   position: relative;
