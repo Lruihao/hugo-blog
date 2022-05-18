@@ -12,6 +12,7 @@ library:
     mmtCSS: mmt.css
   js:
     vueJS: https://cdn.jsdelivr.net/npm/vue@2
+pageStyle: "wide"
 ---
 
 <iframe class="manuscript" src="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&a=fontshowPics&u=qbfRl8gPF2s-&z=Kqz%2FRroVGYc-" frameborder="0" allowfullscreen></iframe>
