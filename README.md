@@ -3,6 +3,10 @@
 [![Hugo](https://img.shields.io/badge/Hugo-%5E0.62.0-ff4088?style=flat-square&logo=hugo)](https://gohugo.io/)
 [![License](https://img.shields.io/github/license/Lruihao/hugo-blog?style=flat-square)](https://github.com/Lruihao/hugo-blog/blob/main/LICENSE)
 
+> A markdown blog project base on Hugo and theme FixIt.
+
+## 
+
 ## Directory structure
 
 ```bash
@@ -73,10 +77,14 @@ Press Ctrl+C to stop
 
 ```bash
 npm install
-# Development environment
+# build the blog
+npm run build
+# run a local debugging server with watch
 npm run server
-# Production environment
+# run a local debugging server in production environment
 npm run server:production
+# update theme submodules
+npm run update-theme
 ```
 
 ## Author
