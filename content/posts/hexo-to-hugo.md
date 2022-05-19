@@ -130,6 +130,8 @@ for(let a of document.querySelectorAll('.archive-item a')){
 }
 console.log(urls.join('\n'))
 ```
+> {{< version 0.2.15 >}} FixIt 主题已支持自动输出 `baidu_urls.txt` 文件
+
 ---
 
 ### Theme FixIt
