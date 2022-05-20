@@ -497,7 +497,7 @@ theme = "FixIt"
   [params.ibruce]
     enable = true
     # Enable in post meta
-    enablePost = false
+    enablePost = true
 
   # Site verification code config for Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]

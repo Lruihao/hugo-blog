@@ -1,9 +1,12 @@
 ---
 title: 每一个优秀的人，都有一段沉默的时光
 date: 2018-09-21 21:11:25
+lastmod: 2018-09-21 21:11:25
 tags: ["随笔"]
 categories: ["随笔"]
 toc:
+  enable: false
+expirationReminder:
   enable: false
 ---
 > 手机便签里保存的一段话，也记不得在哪看到的了。

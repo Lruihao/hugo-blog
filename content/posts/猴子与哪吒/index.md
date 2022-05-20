@@ -7,6 +7,8 @@ categories: ["随笔"]
 featuredImage: "/posts/猴子与哪吒/images/hznz.jpg"
 toc:
   enable: false
+expirationReminder:
+  enable: false
 ---
 
 一直觉得中国古代神话

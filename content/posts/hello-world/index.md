@@ -7,6 +7,8 @@ categories: ["随笔"]
 toc:
   enable: false
 featuredImagePreview: "/posts/hello-world/images/lunyu.jpg"
+expirationReminder:
+  enable: false
 ---
 
 > “每天早晨叫醒你的不是鬧鐘，而是你的夢想。”  
