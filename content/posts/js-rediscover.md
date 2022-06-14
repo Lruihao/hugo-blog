@@ -20,7 +20,7 @@ categories:
 
 <!--more-->
 
-## 数组方法 some, every, find, filter
+## 数组方法 some, every, find, filter, map
 
 > 共同点：这几个方法都不会改变原始数组。
 
@@ -30,7 +30,7 @@ categories:
 
 数组中有至少一个元素通过回调函数的测试就会返回 `true`，所有元素都没有通过回调函数的测试返回值才会为 `false`。
 
-```
+```js
 arr.some(callback(element[, index[, array]])[, thisArg])
 ```
 
@@ -53,7 +53,7 @@ arr.some(callback(element[, index[, array]])[, thisArg])
 
 如果回调函数的每一次返回都为 [truthy](https://developer.mozilla.org/zh-CN/docs/Glossary/Truthy) 值，返回 `true` ，否则返回 `false`。
 
-```
+```js
 arr.every(callback(element[, index[, array]])[, thisArg])
 ```
 
@@ -74,7 +74,7 @@ arr.every(callback(element[, index[, array]])[, thisArg])
 
  `find()` 方法返回数组中满足提供的测试函数的第一个元素的值，否则返回 [`undefined`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/undefined)。
 
-```
+```js
 arr.find(callback[, thisArg])
 ```
 
@@ -103,7 +103,7 @@ console.log(found);
 
 返回值是一个新的、由通过测试的元素组成的数组，如果没有任何数组元素通过测试，则返回空数组。
 
-```
+```js
 var newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
 ```
 
@@ -114,6 +114,30 @@ const result = words.filter(word => word.length > 6);
 
 console.log(result);
 // expected output: Array ["exuberant", "destruction", "present"]
+```
+
+**[map](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)**
+
+> 助记：功能和 `filter()` 类似，`filter()` 返回筛选的元素，`map()` 返回筛选的结果值
+
+`map()` 方法创建一个新数组，这个新数组由原数组中的每个元素都调用一次提供的函数后的返回值组成。
+
+返回值是一个新的、由通过测试的元素组成的数组，如果没有任何数组元素通过测试，则返回空数组。
+
+```js
+var new_array = arr.map(function callback(currentValue[, index[, array]]) {
+ // Return element for new_array 
+}[, thisArg])
+```
+
+```js
+const array1 = [1, 4, 9, 16];
+
+// pass a function to map
+const map1 = array1.map(x => x * 2);
+
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]
 ```
 
 ## 使用 `Object.hasOwn` 替代 `in` 操作符
