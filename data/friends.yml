@@ -15,7 +15,7 @@
   url: https://postgres.fun
   description: PostgreSQL中文网。数据库。francs.top
 - nickname: 赵俊
-  avatar: https://zhaojun.vip/uploads/avatar.gif
+  # avatar: https://zhaojun.vip/uploads/avatar.gif
   url: https://zhaojun.vip
   description: 一个Java学习者的博客，分享Java干货，VPS知识，软件推荐等。valine-admin👍
 - nickname: hojun
@@ -70,6 +70,10 @@
   avatar: https://cdn.jsdelivr.net/gh/leishen6/ImgHosting/MuZiLei_blog_img/Heart.png
   url: https://leishen6.github.io
   description: web后端码仔，记录生活，分享技术！
+- nickname: HominSu
+  avatar: https://www.hauhau.cn/uploads/logo.png
+  url: https://www.hauhau.cn
+  description: 哈喽啊～各位
 # - nickname: 暂时不接受友链
 #   avatar:
 #   url: https://lruihao.cn
