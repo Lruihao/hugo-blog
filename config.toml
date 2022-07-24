@@ -15,7 +15,11 @@ theme = "FixIt"
 [frontmatter]
   lastmod = [":git", "lastmod", ":fileModTime", ":defalut"]
 
-# Menu config
+# -------------------------------------------------------------------------------------
+# Menu Settings
+# See: https://fixit.lruihao.cn/theme-documentation-basics/#menu-advanced-configuration
+# -------------------------------------------------------------------------------------
+
 [menu]
   [[menu.main]]
     identifier = "posts"
@@ -103,8 +107,10 @@ theme = "FixIt"
     [menu.main.params]
       class = "d-none-desktop text-center"
 
-# Theme FixIt Config #
-# ================= #
+# -------------------------------------------------------------------------------------
+# Theme Core Configuration Settings
+# -------------------------------------------------------------------------------------
+
 [params]
   # FixIt CHANGED | 0.2.0 FixIt theme version
   version = "0.2.X"
@@ -354,8 +360,10 @@ theme = "FixIt"
     # FixIt NEW | 0.2.14 Post edit
     [params.page.edit]
       enable = true
-      # url = "https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name" # Link for fork & edit
-      url = "https://github.com/Lruihao/hugo-blog/edit/docs/content" # Link for fork & edit
+      # FixIt 0.2.15 | CHANGED Link for fork & edit
+      # url = "/edit/branch-name/subdirectory-name" # base on `params.gitRepo`
+      # url = "https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name" # full url
+      url = "/edit/docs/content"
     # FixIt NEW | 0.2.0 Mapbox GL JS config
     [params.page.mapbox]
       # access token of Mapbox GL JS
@@ -462,6 +470,11 @@ theme = "FixIt"
     cursorChar = "|"
     # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
     duration = -1
+
+  # FixIt 0.2.15 | NEW Mermaid config
+  [params.mermaid]
+    # For values, see https://mermaid-js.github.io/mermaid/#/Setup?id=theme
+    themes = ['forest', 'dark']
 
   # FixIt NEW | 0.2.12 PanguJS config
   [params.pangu]
@@ -570,6 +583,22 @@ theme = "FixIt"
     # Gravatar host, default: "www.gravatar.com"
     host = "gravatar.loli.net" # "cn.gravatar.com", "gravatar.loli.net"
     style = "mp" # "", mp, identicon, monsterid, wavatar, retro, blank, robohash
+  # FixIt 0.2.15 | NEW Developer options
+  [params.dev]
+    enable = false
+    # Check for updates
+    c4u = false
+    # Please do not expose to public!
+    githubToken = ""
+    # Mobile Devtools confi
+    [params.dev.mDevtools]
+      enable = false
+      # "vConsole", "eruda" supported
+      type = "vConsole"
+
+# -------------------------------------------------------------------------------------
+# Hugo Settings for theme FixIt
+# -------------------------------------------------------------------------------------
 
 # Markup related config in Hugo
 [markup]

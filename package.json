@@ -7,7 +7,7 @@
     "build": "hugo -v --gc --minify",
     "server": "hugo server --disableFastRender --navigateToChanged",
     "server:production": "hugo server --disableFastRender --navigateToChanged --environment production",
-    "update-theme": "git submodule update --remote --merge && git add themes/FixIt && git commit -m ':arrow_up: Chore: update FixIt theme version'"
+    "update:theme": "git submodule update --remote --merge && git add themes/FixIt && git commit -m ':arrow_up: Chore: update FixIt theme version'"
   },
   "repository": {
     "type": "git",

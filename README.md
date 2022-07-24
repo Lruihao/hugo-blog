@@ -84,7 +84,7 @@ npm run server
 # run a local debugging server in production environment
 npm run server:production
 # update theme submodules
-npm run update-theme
+npm run update:theme
 ```
 
 ## Author
