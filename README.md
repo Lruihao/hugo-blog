@@ -1,7 +1,7 @@
 
-[![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/m/Lruihao/hugo-blog/main?style=flat-square)](https://github.com/Lruihao/hugo-blog/commits/main)
-[![Hugo](https://img.shields.io/badge/Hugo-%5E0.62.0-ff4088?style=flat-square&logo=hugo)](https://gohugo.io/)
-[![License](https://img.shields.io/github/license/Lruihao/hugo-blog?style=flat-square)](https://github.com/Lruihao/hugo-blog/blob/main/LICENSE)
+[![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/m/Lruihao/hugo-blog/main?style=flat)](https://github.com/Lruihao/hugo-blog/commits/main)
+[![Hugo](https://img.shields.io/badge/Hugo-%5E0.84.0-ff4088?style=flat&logo=hugo)](https://gohugo.io/)
+[![License](https://img.shields.io/github/license/Lruihao/hugo-blog?style=flat)](https://github.com/Lruihao/hugo-blog/blob/main/LICENSE)
 
 > A markdown blog project base on Hugo and theme FixIt.
 
@@ -11,7 +11,7 @@
 
 ```bash
 ▸ .github/       # GitHub configuration
-▸ _scripts/      # shell commands for hugo project, entrance: hugo_main.sh
+▸ .shell/        # shell commands for hugo project, entrance: hugo_main.sh
 ▸ archetypes/    # page archetypes (like scaffolds of archetypes)
 ▸ assets/        # css, js, third-party libraries etc.
 ▸ content/       # blog source of hugo project
@@ -41,7 +41,7 @@
 
 There are three ways to start this blog.
 
-### Hugo commands
+### Hugo
 
 ```bash
 # Development environment
@@ -50,7 +50,7 @@ hugo server --disableFastRender --navigateToChanged
 hugo server --disableFastRender --navigateToChanged --environment production
 ```
 
-## Shell commands
+## Shell
 
 Run `hugo_main.sh` to choice frequently-used Hugo commands:
 
@@ -73,7 +73,7 @@ Please enter the serial number to work
 Press Ctrl+C to stop
 ```
 
-### NPM commands
+### NPM
 
 ```bash
 npm install
