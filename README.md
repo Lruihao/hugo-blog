@@ -1,11 +1,11 @@
+# Hugo Blog
 
-[![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/m/Lruihao/hugo-blog/main?style=flat)](https://github.com/Lruihao/hugo-blog/commits/main)
 [![Hugo](https://img.shields.io/badge/Hugo-%5E0.84.0-ff4088?style=flat&logo=hugo)](https://gohugo.io/)
 [![License](https://img.shields.io/github/license/Lruihao/hugo-blog?style=flat)](https://github.com/Lruihao/hugo-blog/blob/main/LICENSE)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Lruihao/hugo-blog/Hugo%20build%20and%20deploy?logo=githubactions)](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml)
+[![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/m/Lruihao/hugo-blog/main?style=flat)](https://github.com/Lruihao/hugo-blog/commits/main)
 
-> A markdown blog project base on Hugo and theme FixIt.
-
-## 
+> A markdown blog project base on [Hugo](https://github.com/gohugoio/hugo) and theme [FixIt](https://github.com/Lruihao/FixIt).
 
 ## Directory structure
 
@@ -14,14 +14,15 @@
 ▸ .shell/        # shell commands for hugo project, entrance: hugo_main.sh
 ▸ archetypes/    # page archetypes (like scaffolds of archetypes)
 ▸ assets/        # css, js, third-party libraries etc.
-▸ content/       # blog source of hugo project
+▸ content/       # markdown files for hugo project
+  └─private/     # private submodule for encrypted content
 ▸ data/          # blog data (allow: yaml, json, toml), e.g. friends.yml
 ▸ i18n/          # i18n translation documents
 ▸ layouts/       # page layouts source
 ▸ public/        # build directory
 ▸ static/        # static files, e.g. favicon.ico
 ▸ themes/        # theme submodules
-  config.toml    # configuration of hugo project (like _config.yml of hexo)
+  config.toml    # configuration of hugo project
 ```
 
 ## Installation
@@ -55,7 +56,7 @@ hugo server --disableFastRender --navigateToChanged --environment production
 Run `hugo_main.sh` to choice frequently-used Hugo commands:
 
 ```bash
-cd hugo-blog/_scripts
+cd hugo-blog/.shell
 sh hugo_main.sh
 ```
 
