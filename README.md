@@ -5,8 +5,6 @@
 
 > A markdown blog project base on Hugo and theme FixIt.
 
-## 
-
 ## Directory structure
 
 ```bash
@@ -14,14 +12,14 @@
 ▸ .shell/        # shell commands for hugo project, entrance: hugo_main.sh
 ▸ archetypes/    # page archetypes (like scaffolds of archetypes)
 ▸ assets/        # css, js, third-party libraries etc.
-▸ content/       # blog source of hugo project
+▸ content/       # markdown files for hugo project
 ▸ data/          # blog data (allow: yaml, json, toml), e.g. friends.yml
 ▸ i18n/          # i18n translation documents
 ▸ layouts/       # page layouts source
 ▸ public/        # build directory
 ▸ static/        # static files, e.g. favicon.ico
 ▸ themes/        # theme submodules
-  config.toml    # configuration of hugo project (like _config.yml of hexo)
+  config.toml    # configuration of hugo project
 ```
 
 ## Installation
