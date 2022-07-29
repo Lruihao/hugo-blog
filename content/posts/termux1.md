@@ -17,7 +17,7 @@ categories: ["Memo"]
 pkg install vim
 ```
 #### 解决中文乱码问题
-在 home 目录下，新建。vimrc 文件
+在 home 目录下，新建 `.vimrc` 文件
 ```
 vim .vimrc
 ```
