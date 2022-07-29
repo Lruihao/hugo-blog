@@ -384,6 +384,7 @@ theme = "FixIt"
     [params.page.share]
       enable = true
       Twitter = true
+      Facebook = true
       Linkedin = true
       Weibo = true
       Baidu = true
@@ -411,35 +412,6 @@ theme = "FixIt"
         # "assets/data/emoji/"
         emoji = ""
         commentCount = true # FixIt NEW | 0.2.13
-      # FixIt NEW | 0.2.13 Waline comment config (https://waline.js.org)
-      [params.page.comment.waline]
-        enable = false
-        serverURL = ""
-        visitor = false
-        emoji = ['https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo']
-        meta = ['nick', 'mail', 'link']
-        requiredMeta = []
-        login = 'enable'
-        wordLimit = 0
-        pageSize = 10
-        uploadImage = false
-        highlight = true
-        mathTagSupport = false
-        commentCount = false
-      # FixIt NEW | 0.2.14 Giscus comments config
-      [params.page.comment.giscus]
-        enable = false
-        repo = ""
-        repoId = ""
-        category = ""
-        categoryId = ""
-        mapping = ""
-        reactionsEnabled = "1"
-        emitMetadata = "0"
-        inputPosition = "bottom" # top, bottom
-        lightTheme = "light"
-        darkTheme = "dark"
-        lazyLoad = true
     # FixIt NEW | 0.2.7 Third-party library config
     [params.page.library]
       [params.page.library.css]
