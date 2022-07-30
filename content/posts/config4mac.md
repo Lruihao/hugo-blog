@@ -235,6 +235,14 @@ source $WORKSPACE/.shell/incr*.zsh
 
 Path: `~/.vimrc`
 
-```bash .vimrc
+先添加一些基础配置 [basic.vim](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim)
 
+```bash .vimrc
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Custom config by Lruihao
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable mouse
+set mouse=a
+" Enable line-number
+set number
 ```
