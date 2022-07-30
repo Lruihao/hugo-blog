@@ -1,7 +1,7 @@
 ---
 title: 本地搭建网站服务器并穿透内网
 date: 2019-04-03 19:29:43
-tags: ["ngrok","linux","Summaries","宝塔面板","server","ubuntu"]
+tags: ["ngrok","linux","宝塔面板","server","ubuntu"]
 categories: ["OS"]
 ---
 

@@ -7,8 +7,7 @@ repost:
   enable: true
 expirationReminder:
   enable: true
-  reminder: 0
-  warning: 0
+  reminder: -1
 ---
 
 ### 获取链接（转）

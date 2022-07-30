@@ -1,7 +1,7 @@
 ---
 title: web 开发规则，代码规范
 date: 2019-08-15 18:30:31
-tags: ["PHP","JavaScript","Git","Summaries"]
+tags: ["PHP","JavaScript","Git"]
 categories: ["Memo"]
 ---
 
