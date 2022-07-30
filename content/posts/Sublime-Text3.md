@@ -1,7 +1,7 @@
 ---
 title: Sublime Text3 快捷键大全
 date: 2019-08-15 20:59:10
-tags: ["Sublime","Summaries","他山之石"]
+tags: ["Sublime","他山之石"]
 categories: ["Memo"]
 repost:
   enable: true

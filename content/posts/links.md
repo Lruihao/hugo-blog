@@ -1,8 +1,11 @@
 ---
 title: 各种 Links 汇总与分享
-tags: ["Summaries","ACM"]
+tags: ["ACM"]
 categories: ["Memo"]
 date: 2018-06-07 00:06:05
+expirationReminder:
+  enable: true
+  reminder: -1
 ---
 
 > 2021/10/1 更新  
