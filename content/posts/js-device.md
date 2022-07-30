@@ -3,8 +3,10 @@ title: js 判断用户设备类型及平台
 date: 2018-11-03 23:35:44
 tags: ["JavaScript","他山之石"]
 categories: ["JavaScript"]
+repost:
+  enable: true
+  url: https://www.cnblogs.com/coober/p/6594379.html
 ---
-> 转自 https://www.cnblogs.com/coober/p/6594379.html
 
 前端开发经常遇到需要判断用户的浏览设备，是 pc 端还是移动端，移动端使用的是什么手机系统？android、ios、ipad、windows phone 等等，有时候还需要知道用户浏览页面是在微信中打开还是在移动端浏览器中打开，等等一系列判断做一些相应的处理。
 

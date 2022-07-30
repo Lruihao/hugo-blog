@@ -4,9 +4,12 @@ date: 2019-05-07 18:42:47
 tags: ["Python","JSON","他山之石"]
 categories: ["Python"]
 featuredImage: "/posts/jsoninfo/images/1.jpg"
+repost:
+  enable: true
+  url: https://baijiahao.baidu.com/s?id=1608659655547720220&wfr=spider&for=pc
 ---
 
-> Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于 XML 来说，更加的轻量级，更方便解析，因此许多开发者都遵循 Json 格式来进行数据的传输和交换。今天我们详细介绍一下 Python 在 Json 的编解码方面的知识。[阅读原文](https://baijiahao.baidu.com/s?id=1608659655547720220&wfr=spider&for=pc)
+> Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于 XML 来说，更加的轻量级，更方便解析，因此许多开发者都遵循 Json 格式来进行数据的传输和交换。今天我们详细介绍一下 Python 在 Json 的编解码方面的知识。
 
 <!--more-->
 

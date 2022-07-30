@@ -3,13 +3,15 @@ title: Sublime Text3 快捷键大全
 date: 2019-08-15 20:59:10
 tags: ["Sublime","Summaries","他山之石"]
 categories: ["Memo"]
+repost:
+  enable: true
+  url: ttps://www.cnblogs.com/rudong/p/7889114.html
 ---
 
-> 转自 -- [入冬](https://www.cnblogs.com/rudong/p/7889114.html)  
-补充 tab 转 space 设置
+Sublime Text3 快捷键一览表
 
 <!--more-->
-# tab 转 space
+## tab 转 space
 打开 Settings, 加入几行配置
 ```diff Preferences.sublime-setting--User
 {
@@ -26,7 +28,7 @@ categories: ["Memo"]
 }
 
 ```
-# 选择类
+## 选择类
 * Ctrl+D 选中光标所占的文本，继续操作则会选中下一个相同的文本。
 * Alt+F3 选中文本按下快捷键，即可一次性选择全部的相同文本进行同时编辑。举个栗子：快速选中并更改所有相同的变量名、函数名等。
 * Ctrl+L 选中整行，继续操作则继续选择下一行，效果和 Shift+↓ 效果一样。
@@ -51,7 +53,7 @@ categories: ["Memo"]
 * Ctrl+Alt+↑ 向上添加多行光标，可同时编辑多行。
 * Ctrl+Alt+↓ 向下添加多行光标，可同时编辑多行。
 
-# 编辑类
+## 编辑类
 * Ctrl+J 合并选中的多行代码为一行。举个栗子：将多行格式的 CSS 属性合并为一行。
 * Ctrl+Shift+D  复制光标所在整行，插入到下一行。
 * Tab 向右缩进。
@@ -69,7 +71,7 @@ categories: ["Memo"]
 * Ctrl+T 左右字母互换。
 * F6 单词检测拼写
 
-# 搜索类
+## 搜索类
 * Ctrl+F 打开底部搜索框，查找关键字。
 * Ctrl+shift+F 在文件夹内查找，与普通编辑器不同的地方是 sublime 允许添加多个文件夹进行查找，略高端，未研究。
 * Ctrl+P 打开搜索框。举个栗子：1、输入当前项目中的文件名，快速搜索文件，2、输入@和关键字，查找文件中函数名，3、输入：和数字，跳转到文件中该行代码，4、输入#和关键字，查找变量名。
@@ -79,7 +81,7 @@ categories: ["Memo"]
 * Ctrl+Shift+P 打开命令框。场景栗子：打开命名框，输入关键字，调用 sublime text 或插件的功能，例如使用 package 安装插件。
 * Esc 退出光标多行选择，退出搜索框，命令框等。
 
-# 显示类
+## 显示类
 * Ctrl+Tab 按文件浏览过的顺序，切换当前窗口的标签页。
 * Ctrl+PageDown 向左切换当前窗口的标签页。
 * Ctrl+PageUp 向右切换当前窗口的标签页。

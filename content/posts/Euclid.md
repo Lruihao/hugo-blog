@@ -3,9 +3,10 @@ title:  The equation-SGU106（扩展欧几里得）
 date: 2018-08-10 10:32:39
 tags: ["数学","数论","ACM","欧几里得","他山之石","C++","C"]
 categories: ["ACM"]
+repost:
+  enable: true
+  url: https://www.cnblogs.com/Rinyo/archive/2012/11/25/2787419.html
 ---
-
-**[转载注明，侵删](https://www.cnblogs.com/Rinyo/archive/2012/11/25/2787419.html)**
 
 ### 题意：
 
