@@ -100,35 +100,44 @@ electron 相关配置
 npm config set electron_mirror=https://npmmirror.com/mirrors/electron/
 ```
 
-## Git
+## SourceTree
 
-```bash ssh.sh
+Custom actions
+
+- Script target: `/bin/bash`
+- Parameters: `/Users/liruihao/workspace/.shell/sync_tags.sh`
+
+{{< admonition tip >}}
+根据不同的 shell 程序选择不同的文件后缀名，并给文件增加可执行权限：
+- zsh: `.zsh`
+- bash: `.sh`
+{{< /admonition >}}
+
+```bash sync_tags.sh
+#! /bin/bash
+# 同步远程仓库标签分支脚本
+git tag -l | xargs git tag -d
+# git fetch origin --prune
+# git fetch origin --tags
+git fetch origin --prune --prune-tags
+```
+
+```bash sync_submodules.ssh
+#! /bin/bash
+# 同步所有子模组
+git submodule update --remote --merge
+```
+
+```bash ssh.zsh
+#! /bin/zsh
 # ssh 配置但无法连接时
 ssh-agent -s
 ssh-add ~/.ssh/Lruihao-Github  # 私钥路径
 ```
 
 {{< admonition tip >}}
-将内容写成 shell 脚本，在 SourceTree 中自定义操作。
+开机启动时系统会去自动读取 `id_rsa` 的私钥来启动 SSH 链接，若不是默认命令就会失败需要手动执行上诉命令启动，可添加到[开机自启动](#startup)。
 {{< /admonition >}}
-
-## SourceTree
-
-Custom actions
-
-- Script target: `/bin/bash`
-- Parameters: `/Users/liruihao/workspace/.shell/ssh.sh`
-
-同步远程仓库标签分支脚本
-
-```bash sync_tags.sh
-#! /bin/bash
-cd $REPO/.git
-git tag -l | xargs git tag -d
-# git fetch origin --prune
-# git fetch origin --tags
-git fetch origin --prune --prune-tags
-```
 
 ## Terminal
 
@@ -137,6 +146,7 @@ git fetch origin --prune --prune-tags
 - 美化: [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
 
 修改启动语
+
 ```bash
 vim $PREFIX/etc/motd
 ```
@@ -153,7 +163,16 @@ alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
 source ~/.bash_profile # 每打开一个命令窗口，需要先让命令生效
 ```
 
-## .bash_profile 备份
+## 开机自启动 {#startup}
+
+1. 系统偏好设置 -> 用户与群组 -> 登录项 -> 增删可执行文件 (需配置默认启动软件)
+2. 将 shell 命令添加到 `/System/Library/StartupItems/` 或 `/Library/StartupItems/` 文件夹（测试无效）
+
+## 备份
+
+### .bash_profile
+
+Path: `~/.bash_profile`
 
 ```bash .bash_profile
 # -------------------------------------
@@ -209,5 +228,21 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # zsh custom plugin
 # https://mimosa-pudica.net/zsh-incremental.html
-source $WORKSPACE/incr*.zsh
+source $WORKSPACE/.shell/incr*.zsh
+```
+
+### .vimrc
+
+Path: `~/.vimrc`
+
+先添加一些基础配置 [basic.vim](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim)
+
+```bash .vimrc
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Custom config by Lruihao
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable mouse
+set mouse=a
+" Enable line-number
+set number
 ```

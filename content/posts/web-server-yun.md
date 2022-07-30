@@ -2,11 +2,14 @@
 title: 云服务器 CentOS 系统搭建 web 服务
 date: 2018-10-29 09:15:58
 tags:
-- 他山之石
 - server
 - linux
+- 他山之石
 categories:
 - OS
+repost:
+  enable: true
+  url: https://www.jianshu.com/p/0b67c6c5d21d
 ---
 
 ### 搭建 Apache web 服务
@@ -63,5 +66,3 @@ ServerName 服务器 IP 或 域名
   
 7. 访问不成功，先检查网络，再查看 http 服务是否开启，最后检查配置；  
 访问成功，配置完成。  
-
-链接：https://www.jianshu.com/p/0b67c6c5d21d
