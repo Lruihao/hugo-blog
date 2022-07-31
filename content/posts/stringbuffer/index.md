@@ -5,16 +5,16 @@ tags: ["StringBuffer","sort","Java"]
 categories: ["Java"]
 ---
 
-# StringBuffer/StringBuilder（掌握）
-## StringBuffer 是线程安全的可变字符串。
+## StringBuffer/StringBuilder（掌握）
+### StringBuffer 是线程安全的可变字符串。
    StringBuilder 是线程不安全的可变字符串。  
    和 StringBuffer 的功能一样。就是效率高一些，但是不安全。  
-## 构造方法：
+### 构造方法：
 - StringBuffer sb = new StringBuffer();
 - StringBuffer sb = new StringBuffer(50);
 - StringBuffer sb = new StringBuffer("hello");
 
-## 成员方法：（自己补齐方法和意思）
+### 成员方法：（自己补齐方法和意思）
 - 添加功能  
 	public StringBuffer append(String str): 追加字符串  
 	public StringBuffer insert(int offset,String str): 在指定位置插入字符串  
@@ -29,14 +29,14 @@ categories: ["Java"]
 	public String substring(int start): 从指定索引到末尾的字符串  
 	public String substring(int start,int end): 从指定索引开始到指定索引结束的字符串  
 
-## 案例：
+### 案例：
 - String 和 StringBuffer 的相互转换，通过构造即可。
 - 把数组转成指定的字符串格式
 - 把字符串反转
 - 判断一个字符串是否是对称字符串
 
-# 数组高级部分（理解）
-## 排序
+## 数组高级部分（理解）
+### 排序
 - 冒泡排序
 > 相邻元素，两两比较，大的往后放。
 
@@ -100,7 +100,7 @@ public static void selectSort(int[] a)
     }
 }
 ```
-## 查找
+### 查找
 - 基本查找  
 	数组无序  
 - 二分查找  
@@ -130,9 +130,9 @@ public static int getIndex(int[] arr,int value) {
 }
 ```
 
-# Arrays 工具类（掌握）
-## Arrays 是针对数组进行操作的工具类，提供了排序和查找等功能
-## 成员方法：（自己补齐方法和意思）
+## Arrays 工具类（掌握）
+### Arrays 是针对数组进行操作的工具类，提供了排序和查找等功能
+### 成员方法：（自己补齐方法和意思）
 - 把数组转成字符串
 	public static String toString(): 将任意类型数据转换成字符串
 - 排序
@@ -140,12 +140,12 @@ public static int getIndex(int[] arr,int value) {
 - 二分查找
 	public static int binarySearch(int[] arr,int key)
 
-## 案例：
+### 案例：
 把字符串中的字符进行排序
 
-# 基本类型包装类（掌握）
-## 为了让我们对基本类型进行更多的操作，java 针对每种基本类型提供了对应的包装类类型。
-## 分别是哪些呢？
+## 基本类型包装类（掌握）
+### 为了让我们对基本类型进行更多的操作，java 针对每种基本类型提供了对应的包装类类型。
+### 分别是哪些呢？
 ```
 	byte		Byte
 	short		Short
@@ -157,7 +157,7 @@ public static int getIndex(int[] arr,int value) {
 	boolean		Boolean
 特殊：  void		Void
 ```
-## Integer
+### Integer
 - 构造方法
 	- Integer i = new Integer(100);
 	- Integer i = new Integer("100");
@@ -181,7 +181,7 @@ public static int getIndex(int[] arr,int value) {
 - byte 缓存池面试题  
 	byte,short,char--->小于 127，否则报-6 的错误（查看 JDK)
 
-## Character
+### Character
 - 构造方法  
 	Character ch = new Character('a');  
 - 成员方法（自己补齐方法和意思）

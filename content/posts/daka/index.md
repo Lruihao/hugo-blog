@@ -9,6 +9,10 @@ categories:
 - Python
 featuredImage: "/posts/daka/images/result.png"
 license: '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+expirationReminder:
+  enable: true
+  reminder: -1
 ---
 
 {{< admonition info >}}
@@ -21,12 +25,12 @@ license: '<a rel="license external nofollow noopener noreffer" href="https://cre
 {{< /admonition >}}
 
 <!--more-->
-# Windows 运行效果
+## Windows 运行效果
 ![打卡成功](images/result1.png "打卡成功")  
 ![重复打卡](images/result.png "重复打卡")  
 ![定时任务日志](images/result2.png "定时任务日志")  
 
-# 核心代码
+## 核心代码
 > 适用湖南工程学院的打卡系统。  
 请勿滥用代码提交不实健康信息，隐瞒疫情将受到相关法律处理！
 
@@ -59,8 +63,8 @@ if __name__=="__main__":
   lajaDaka()
 ```
 
-# 自动运行
-## Windows
+## 自动运行
+### Windows
 适用 python 代码控制休眠时间
 ```py 定时
 if __name__=="__main__":
@@ -84,14 +88,14 @@ if __name__=="__main__":
       time.sleep(24*60*60-int(now_min)*60)
 ```
 
-## linux（云服务器）
+### linux（云服务器）
 搭建 python 环境下载依赖后，使用 shell 脚本定时执行。
 ```bash 脚本内容设定
 python /home/python/yiban_daka/daka.py
 ```
 [CRON 表达式的基本语法](/posts/cron/)
 
-# 潇 x 巴哥的 java web 版本
+## 潇 x 巴哥的 java web 版本
 符合程序员的应该有的简洁和方便，干净又卫生！
 `http://39.105.174.214/index.html`  
 ![java web 版](images/javaweb.png "java web 版")  

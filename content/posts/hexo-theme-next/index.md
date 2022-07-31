@@ -5,6 +5,9 @@ tags: ["hexo"]
 categories: ["Memo"]
 description: "基于 hexo-theme-next 6.0+的 Pisces 模板做的 DIY 扩展性设计"
 featuredImage: "/posts/hexo-theme-next/images/next.png"
+expirationReminder:
+  enable: true
+  reminder: -1
 ---
 
 {{< admonition danger >}}
@@ -42,7 +45,7 @@ _config.swig                                 #主题配置文件 相关账户信
 ```
 [^1](https://lruihao.cn/posts/cos-hexo.html#CDN%E5%88%B7%E6%96%B0)
 
-# 初步安装
+## 初步安装
 > 安装整个改过的主题，然后下载相应的 lib 资源解压放入 source 文件夹
 
 ```bash 
@@ -57,10 +60,10 @@ theme: next
 
 ![lib 资源](images/lib.png)
 
-# 更新内容
+## 更新内容
 > 更多自定义详见源码
 
-## links 模板
+### links 模板
 > 自定义友链模板，打开`hexo\themes\next\layout\`新建`links.swig`文件，写下以下内容后保存。
 
 ```swig
@@ -89,12 +92,12 @@ theme: next
   
   <div id="posts" class="posts-expand">
     {##################}
-    {### PAGE BLOCK ###}
+    {#### PAGE BLOCK ###}
     {##################}
     <div class="post-block page">
       {% include '_partials/page-header.swig' %}
       {#################}
-      {### PAGE BODY ###}
+      {#### PAGE BODY ###}
       {#################}
 
       <script src="//at.alicdn.com/t/font_578712_g26jo2kbzd5qm2t9.js"></script>
@@ -175,12 +178,12 @@ theme: next
       </style>
 
       {#####################}
-      {### END PAGE BODY ###}
+      {#### END PAGE BODY ###}
       {#####################}
     </div>
     {% include '_partials/breadcrumb.swig' %}
     {######################}
-    {### END PAGE BLOCK ###}
+    {#### END PAGE BLOCK ###}
     {######################}
   </div>
 
@@ -219,78 +222,78 @@ layout: links
   info:                     #友链说明
 ```
 
-## 备案信息自定义
+### 备案信息自定义
 ```xml _config.yml
-# -------------------------------------------------------------
-# footer_custom Settings
-# -------------------------------------------------------------
+## -------------------------------------------------------------
+## footer_custom Settings
+## -------------------------------------------------------------
 beian:
   enable: true
   gov: 湘公网安备 43030402000254 号
   recordcode: 43030402000254
   icp: 湘 ICP 备 18020535 号
 ```
-## 文字抖动特效
+### 文字抖动特效
 
 ```xml 使用方法
 <div class="shaky">（づ●'◡'●) づ ❥内容区</div>
 ```
 <div class="shaky">（づ●'◡'●) づ ❥内容区</div>
 
-## 左下角微信公众号
+### 左下角微信公众号
 ```xml 替换为自己的二维码
 \source\css\_custom\customs.styl  
 ```
 
-## 相关文章收纳
+### 相关文章收纳
 加入 H5 标签，实现可收纳功能，点击查看详情。
 
-## Chat Services
+### Chat Services
 > 共 chatra,tidio,daovoice 三个选项，三选一
 
 ```swig _config.swig
-# Chatra Support
-# See: https://chatra.io
-# Dashboard: https://app.chatra.io/settings/general
+## Chatra Support
+## See: https://chatra.io
+## Dashboard: https://app.chatra.io/settings/general
 chatra:
   enable: false
   async: true
-  id: # visit Dashboard to get your ChatraID
-  #embed: # unfinished experimental feature for developers, See: https://chatra.io/help/api/#injectto
+  id: ## visit Dashboard to get your ChatraID
+  #embed: ## unfinished experimental feature for developers, See: https://chatra.io/help/api/#injectto
 
-# Tidio Support
-# See: https://www.tidiochat.com
-# Dashboard: https://www.tidiochat.com/panel/dashboard
+## Tidio Support
+## See: https://www.tidiochat.com
+## Dashboard: https://www.tidiochat.com/panel/dashboard
 tidio:
   enable: false
-  key: # Public Key, get it from Dashboard, See: https://www.tidiochat.com/panel/settings/developer
+  key: ## Public Key, get it from Dashboard, See: https://www.tidiochat.com/panel/settings/developer
 
 #在线客服
 daovoice: true
-daovoice_app_id: xxxx   # http://www.daovoice.io/
+daovoice_app_id: xxxx   ## http://www.daovoice.io/
 ```
 
-## pdf 和 Mermaid 解析模块
+### pdf 和 Mermaid 解析模块
 [pdf 传送门](https://lruihao.cn/posts/next-pdf/)
 ```swig config.swig
 pdf:
   enable: false
-  # Default height
+  ## Default height
   height: 500px
   pdfobject:
     cdn: //cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js
     #cdn: //cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js
 
-# Mermaid tag
+## Mermaid tag
 mermaid:
   enable: false
-  # Available themes: default | dark | forest | neutral
+  ## Available themes: default | dark | forest | neutral
   theme: forest
   cdn: //cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js
   #cdn: //cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js
 ```
 
-## 模仿 csdn 转发样式
+### 模仿 csdn 转发样式
 ```diff post.swig 主要修改
 ...
    <a class="post-title-link" href="{{ url_for(post.path) }}" itemprop="url">
@@ -326,7 +329,7 @@ repost: true
 ```
 [预览](https://lruihao.cn/tags/他山之石/)
 
-## 热度页面
+### 热度页面
 
 > 打开`hexo\themes\next\layout`新建 top.swig 文件，写下如下内容保存：
 ```swig
@@ -355,12 +358,12 @@ repost: true
 
   <div id="posts" class="posts-expand">
     {##################}
-    {### PAGE BLOCK ###}
+    {#### PAGE BLOCK ###}
     {##################}
     <div class="post-block page">
       {% include '_partials/page-header.swig' %}
       {#################}
-      {### PAGE BODY ###}
+      {#### PAGE BODY ###}
       {#################}
       
       <div class="post-body{% if theme.han %} han-init-context{% endif %}{% if page.direction && page.direction.toLowerCase() === 'rtl' %} rtl{% endif %}">
@@ -421,12 +424,12 @@ repost: true
       </script>
       
       {#####################}
-      {### END PAGE BODY ###}
+      {#### END PAGE BODY ###}
       {#####################}
     </div>
     {% include '_partials/breadcrumb.swig' %}
     {######################}
-    {### END PAGE BLOCK ###}
+    {#### END PAGE BLOCK ###}
     {######################}
   </div>
 
@@ -452,7 +455,7 @@ limit: 20
 ---
 ```
 
-## 复制按钮样式
+### 复制按钮样式
 ![](images/lightbtn.png)
 ![](images/nightbtn.png)
 ![](images/3dbtn.png)
@@ -461,14 +464,14 @@ limit: 20
 
 ```java config 配置
 codeblock:
-  # Manual define the border radius in codeblock
-  # Leave it empty for the default 1
+  ## Manual define the border radius in codeblock
+  ## Leave it empty for the default 1
   border_radius: 5
-  # Add copy button on codeblock
+  ## Add copy button on codeblock
   copy_button:
     enable: true
-    # Show text copy result
+    ## Show text copy result
     show_result: true
-    # Style: 'light,night,flat,3dbtn' is currently available, leave it empty or light is default theme
+    ## Style: 'light,night,flat,3dbtn' is currently available, leave it empty or light is default theme
     style: night
 ```

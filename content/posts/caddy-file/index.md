@@ -5,13 +5,13 @@ tags: ["云盘","caddy","server"]
 categories: ["Grocery"]
 ---
 
-### 安装
+## 安装
 
 ```bash
 cd ~
 curl https://getcaddy.com | bash -s personal http.filemanager
 ```
-### 编写配置文件
+## 编写配置文件
 ```bash
 vim Caddyfile
 ```
@@ -37,7 +37,7 @@ gzip
 
 指定邮箱是为了申请 ssl, 实现 https.
 
-### [demo](https://pan.lruihao.cn)
+## [demo](https://pan.lruihao.cn)
 
 启动 caddy
 ```
@@ -46,7 +46,7 @@ caddy
 账号密码默认`admin`
 ![](images/1.png)
 
-### 设置定时器启动 caddy（好像没用，我不会）
+## 设置定时器启动 caddy（好像没用，我不会）
 为了断开 xshell 后 caddy 还在运行。
 ```bash
 vim run.sh
@@ -74,7 +74,7 @@ crontab -e
 service crond start 
 ```
 
-### ？？？
+## ？？？
 最后误打误撞开启了 caddy  
 昨晚双十一要抢裤子，加上湘潭天气太 tm 冷了，就上床了，接着用 termux 远程连接服务器继续搞。结果连接的时候命令输错了-\_-!  
 本来是`ssh root@118.24.217.167`再输入密码就可以了。这次搞错了多写了个`-T`, 然后运行`caddy`,`ctrl+c`  再断开，意外地发现 filemanager 竟然可以访问了。  

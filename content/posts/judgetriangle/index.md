@@ -8,7 +8,7 @@ categories: ["Grocery"]
 白盒测试则清楚程序内部的结构以及是如何运作的，因此白盒测试需要对系统内部的结构和工作原理有一个清楚的了解。
 
 <!--more-->
-# 程序
+## 程序
 
 ```cpp
 #include<stdio.h>
@@ -79,7 +79,7 @@ void panduan(int a1,int b1,int c1)
 }
 ```
 
-# 测试
+## 测试
 ![测试 1](images/1.png "测试 1")  
 ![测试 2](images/2.png "测试 2")  
 ![测试 3](images/3.png "测试 3")  

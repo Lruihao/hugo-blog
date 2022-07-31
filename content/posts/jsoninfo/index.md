@@ -13,7 +13,7 @@ repost:
 
 <!--more-->
 
-# json 的数据格式
+## json 的数据格式
 在 json 中，遵循“键值对”的这样一种方式，比如：“{"name":"tom"}”, 就是一个 json 格式的数据，json 的格式归纳下来，一般有以下几点：
 
 - 对象通过键值对表现；
@@ -29,7 +29,7 @@ repost:
 
 上例则是一个典型的 json 格式的数据，强大的 Python 提供了一个“json”模块，可以方便的将各种零散的数据通过模块的内置函数编码形成一个 json 格式的数据，也可以将一个 json 格式的数据解码形成自己需要的数据，非常好用，下面我们就来介绍一下。
 
-# json.dumps()
+## json.dumps()
 json 模块里的 dumps 函数是对数据进行编码，形成 json 格式的数据，我们看一下下面的例子：
 
 ![](images/3.jpg)
@@ -49,14 +49,14 @@ json 模块里的 dumps 函数是对数据进行编码，形成 json 格式的�
 - sort_keys：对 key、value 进行排序，默认值是 False，即不排序；
 - ensure_ascii：默认为 True，如果 dict 对象里含有 none-ASCII 的字符，则显示、uXX 的格式，如果为 False，则能正常显示出来；
 
-# json.loads()
+## json.loads()
 和 dumps 相反，loads 函数则是将 json 格式的数据解码，转换为 Python 字典，我们看一下下面的例子：
 
 ![](images/5.jpg)
 
 有时候，输出结果遇到中文的时候，会出现编码格式不一样的情况，显示出为 Unicode 的编码格式，使得不易读懂，解决办法是添加参数“encoding”参数，即上面的改写成这样：d1 = json.loads(data1,encoding='utf-8') 即可。
 
-# json.dump() 和 json.load()
+## json.dump() 和 json.load()
 相对于上面所讲的 dumps 和 loads 来说，dump 和 load 函数的功能类似，只不过前者是用来处理字符串类型的，而后者是用于处理文件类型的，如下所示：
 
 ![](images/6.jpg)

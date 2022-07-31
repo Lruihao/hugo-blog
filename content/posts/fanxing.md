@@ -10,7 +10,7 @@ categories: ["Java"]
 
 <!--more-->
 
-# 代码
+## 代码
 ```java
 package code0507;
 
@@ -52,7 +52,7 @@ class Box<T>{
 	}
 }
 ```
-# 运行结果
+## 运行结果
 ```java
 data:hello
 data:12

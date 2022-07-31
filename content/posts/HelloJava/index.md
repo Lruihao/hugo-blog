@@ -14,7 +14,7 @@ categories: ["Java"]
 
 ![](images/2.png)
 
-# 编写 java
+## 编写 java
 用记事本编辑 java 文件，并且把后缀改成`.java`，文件名和类名要一样。
 
 ```java
@@ -24,5 +24,5 @@ public class HelloWorld{
 	}
 }
 ```
-# 打开 cmd
+## 打开 cmd
 ![](images/1.png)

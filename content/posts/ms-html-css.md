@@ -12,9 +12,9 @@ categories: ["Memo"]
 
 <!--more-->
 
-# HTML
+## HTML
 
-## 1. Doctype 作用，HTML5 为什么只需要写 <!DOCTYPE HTML>
+### 1. Doctype 作用，HTML5 为什么只需要写 <!DOCTYPE HTML>
 
 > doctype 是一种标准通用标记语言的文档类型声明，目的是告诉标准通用标记语言解析器要使用什么样的文档类型定义（DTD）来解析文档。`<!DOCTYPE>`声明必须是 HTML 文档的第一行，位于 html 标签之前
 
@@ -22,7 +22,7 @@ categories: ["Memo"]
 
 > SGML: 标准通用标记语言，是现时常用的超文本格式的最高层次标准
 
-## 2. 行内元素有哪些，块级元素有哪些，空 (void) 元素有那些
+### 2. 行内元素有哪些，块级元素有哪些，空 (void) 元素有那些
 
 行内元素：`a` `span` `i` `img` `input` `select` `b` 等
 
@@ -30,14 +30,14 @@ categories: ["Memo"]
 
 空元素：`br` `hr` `link` 等
 
-## 3. 简述一下你对 HTML 语义化的理解
+### 3. 简述一下你对 HTML 语义化的理解
 
 简单来说，就是合适的标签做合适的事情，这样具有以下好处：
 - 有助于构架良好的 HTML 结构，有利于搜索引擎的建立索引、抓取，利于 SEO
 - 有利于不同设备的解析
 - 有利于构建清晰的机构，有利于团队的开发、维护
 
-## 4. 常见的浏览器内核有哪些，介绍一下你对浏览器内核的理解</h5>
+### 4. 常见的浏览器内核有哪些，介绍一下你对浏览器内核的理解</h5>
 
 > Trident 内核：IE
 
@@ -49,7 +49,7 @@ categories: ["Memo"]
 
 浏览器内核又可以分成两部分：**渲染引擎和 JS 引擎。** 渲染引擎主要负责取得网页的内容、整理讯息、计算网页的显示方式等，JS 引擎则是解析 Javascript 语言，执行 javascript 语言来实现网页的动态效果。
 
-## 5. html5 有哪些新特性
+### 5. html5 有哪些新特性
 
 - 语义化标签：`header` `footer` `nav` `section` `article` `aside` 等
 - 增强型表单：`date`（从一个日期选择器选择一个日期） `email`（包含 e-mail 地址的输入域） `number`（数值的输入域） `range`（一定范围内数字值的输入域） `search`（用于搜索域） `tel`（定义输入电话号码字段） 等
@@ -61,7 +61,7 @@ categories: ["Memo"]
 - web storage: `localStorage` `sessionStorage` 
 - WebSocket: HTML5 开始提供的一种在单个 TCP 连接上进行全双工通讯的协议
 
-## 6. 描述一下 cookie，sessionStorage 和 localStorage 的区别
+### 6. 描述一下 cookie，sessionStorage 和 localStorage 的区别
 
 |特性|Cookie|localStorage|sessionStorage|
 |:--|:--|:--|:--|
@@ -69,7 +69,7 @@ categories: ["Memo"]
 |存放数据大小|4KB 左右|可以保存 5MB 的信息|可以保存 5MB 的信息|
 |http 请求|每次都会携带在 HTTP 头中，如果使用 cookie 保存过多数据会带来性能问题|仅在客户端（即浏览器）中保存，不参与和服务器的通信|仅在客户端（即浏览器）中保存，不参与和服务器的通信|
 
-## 7. 如何实现浏览器内多个标签页之间的通信
+### 7. 如何实现浏览器内多个标签页之间的通信
 
 - 使用 localStorage: `localStorage.setItem(key,value)`、`localStorage.getItem(key)`
 - websocket 协议
@@ -77,11 +77,11 @@ categories: ["Memo"]
 
 [多个标签页之间的通信](https://juejin.im/post/5acdba01f265da23826e5633)
 
-## 8. HTML5 的离线存储怎么使用，解释一下工作原理
+### 8. HTML5 的离线存储怎么使用，解释一下工作原理
 
 [HTML5 的离线存储](https://segmentfault.com/a/1190000006984353)
 
-## 9. src 与 href 的区别
+### 9. src 与 href 的区别
 
 区别：src 用于替代这个元素，而 href 用于建立这个标签与外部资源之间的关系
 
@@ -89,7 +89,7 @@ categories: ["Memo"]
 
 `<script src="script.js"></script>`当浏览器解析到这句代码时，页面的加载和解析都会暂停直到浏览器拿到并执行完这个 js 文件
 
-## 10. 表单提交中 Get 和 Post 方式的区别
+### 10. 表单提交中 Get 和 Post 方式的区别
 
 - Get 一般用于从服务器上获取数据，Post 向服务器传送数据
 - Get 传输的数据是拼接在 Url 之后的，对用户是可见的；Post 的传输数据对用户是不可见的
@@ -97,9 +97,9 @@ categories: ["Memo"]
 - Get 安全性非常低，Post 安全性较高
 - 在 FORM 提交的时候，如果不指定 Method，则默认为 Get 请求
 
-# CSS
+## CSS
 
-## 1. css 盒子模型，box-sizing 属性的理解
+### 1. css 盒子模型，box-sizing 属性的理解
 
 css 的盒模型由 content（内容）、padding（内边距）、border（边框）、margin（外边距）组成。但盒子的大小由 content+padding+border 这几部分决定
 
@@ -111,7 +111,7 @@ box-sizing: content-box|border-box|inherit:
 - border-box: 计算方式 content + padding + border = 本身元素大小，即缩小了 content 大小
 - inherit 指定 box-sizing 属性的值，应该从父元素继承
 
-## 2. 清除浮动，什么时候需要清除浮动，清除浮动都有哪些方法
+### 2. 清除浮动，什么时候需要清除浮动，清除浮动都有哪些方法
 
 浮动的元素是脱离文档标准流的，如果我们不清楚浮动，那么就会造成**父元素高度塌陷**，影响页面布局。
 
@@ -130,7 +130,7 @@ box-sizing: content-box|border-box|inherit:
 
 > overflow:hidden 可以触发 BFC 机制。BFC：块级格式化上下文，创建了 BFC 的元素就是一个独立的盒子，它规定了内部如何布局，并且与这个独立盒子里的布局不受外部影响，当然它也不会影响到外面的元素，**计算 BFC 的高度时，浮动元素也参与计算**
 
-## 3. 如何让一个不定宽高的盒子水平垂直居中
+### 3. 如何让一个不定宽高的盒子水平垂直居中
 
 > 定位的方式
 
@@ -170,7 +170,7 @@ box-sizing: content-box|border-box|inherit:
 }
 ```
 
-## 4. px 和 em 和 rem 的区别
+### 4. px 和 em 和 rem 的区别
 
 > `px`: 像素，相对长度单位。像素`px`是相对于显示器屏幕分辨率而言的
 
@@ -178,7 +178,7 @@ box-sizing: content-box|border-box|inherit:
 
 > `rem`的值并不是固定的，始终是基于根元素 `<html>` 的，也代表倍数
 
-## 5. position 的值有哪些
+### 5. position 的值有哪些
 
 > static： 默认值。没有定位，元素出现在正常的流中
 
@@ -188,7 +188,7 @@ box-sizing: content-box|border-box|inherit:
 
 > fixed（固定定位）：生成绝对定位的元素，相对于浏览器窗口进行定位
 
-## 6. display:none 与 visibility：hidden 的区别
+### 6. display:none 与 visibility：hidden 的区别
 
 区别 | display:none | visibility：hidden 的
 ---|---|---
@@ -196,7 +196,7 @@ box-sizing: content-box|border-box|inherit:
 是否渲染 | 会触发 reflow（回流），进行渲染 | 只会触发 repaint（重绘），因为没有发现位置变化，不进行渲染
 是否是继承属性 | 不是继承属性，元素及其子元素都会消失 | 是继承属性，若子元素使用了 visibility:visible，则不继承，这个子孙元素又会显现出
 
-## 7. CSS 中 link 和@import 的区别
+### 7. CSS 中 link 和@import 的区别
 
 > link 属于 XHTML 标签，@import 完全是 CSS 提供的一种方式，只能加载 CSS
 
@@ -206,17 +206,17 @@ box-sizing: content-box|border-box|inherit:
 
 > 当使用 javascript 控制 dom 去改变样式的时候，只能使用 link 标签，因为@import 不是 dom 可以控制的
 
-## 8. 什么是响应式设计，响应式设计的基本原理是什么
+### 8. 什么是响应式设计，响应式设计的基本原理是什么
 
 > 响应式网站设计是一个网站能够兼容多个终端，而不是为每一个终端做一个特定的版本。基本原理是通过媒体查询检测不同的设备屏幕尺寸做处理
 
-## 9. 为什么要初始化 CSS 样式
+### 9. 为什么要初始化 CSS 样式
 
 > 因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对 CSS 初始化往往会出现浏览器之间的页面显示差异
 
 > 初始化样式会对 SEO 有一定的影响
 
-## 10. CSS3 有哪些新特性
+### 10. CSS3 有哪些新特性
 
 - 实现圆角`border-radius`，阴影`box-shadow`，边框图片`border-image`
 - 对文字加特效`text-shadow`，强制文本换行`word-wrap`，线性渐变`linear-gradient`
@@ -226,11 +226,11 @@ box-sizing: content-box|border-box|inherit:
 - 实现媒体查询`@media`，多栏布局`flex`
 - 过渡`transition` 动画`animation`
 
-## 11. ::before 和 :after 中双冒号和单冒号有什么区别？解释一下这 2 个伪元素的作用
+### 11. ::before 和 :after 中双冒号和单冒号有什么区别？解释一下这 2 个伪元素的作用
 
 > 单冒号 (:) 用于 CSS3 伪类，双冒号 (::) 用于 CSS3 伪元素。（伪元素由双冒号和伪元素名称组成）, 双冒号是在当前规范中引入的，用于区分伪类和伪元素
 
-## 12. CSS 优化、提高性能的方法有哪些
+### 12. CSS 优化、提高性能的方法有哪些
 
 - 移除空的 css 规则（Remove empty rules）
 - 正确使用 display 的属性
@@ -241,14 +241,14 @@ box-sizing: content-box|border-box|inherit:
 - 尽量减少页面重排、重绘
 - 抽象提取公共样式，减少代码量
 
-## 13. 重绘和回流
+### 13. 重绘和回流
 
 [重绘和回流](https://juejin.im/post/5a9923e9518825558251c96a)
 
-## 14. flex 布局
+### 14. flex 布局
 
 [flex 布局教程--阮一峰](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 
-## 15. css 预处理器
+### 15. css 预处理器
 
 提供了一种 css 的书写方式，常见的就是 [SAAS 文档](http://sass.bootcss.com/docs/sass-reference/) 和 [LESS 文档](https://less.bootcss.com/)

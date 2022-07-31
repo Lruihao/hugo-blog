@@ -7,7 +7,7 @@ categories:
 - PHP
 ---
 
-# 普通方法
+## 普通方法
 首先采用`fopen()`函数打开文件，得到返回值的就是资源类型。接着采用 while 循环一行行地读取文件，然后输出每行的文字。`feof()`判断是否到最后一行，`fgets()`读取一行文本。
 <!--more-->
 ```php
@@ -32,7 +32,7 @@ categories:
 echo readfile("C:\\Users\\李瑞豪、\Desktop\\备忘录。txt");
 ```
 
-# 快速方法
+## 快速方法
 `file()`函数把整个文件读入一个数组中。  
 数组中的每个元素都是文件中相应的一行，包括换行符在内。  
 **语法**
@@ -57,5 +57,5 @@ file(path,include_path,context)
 ?>
 ```
 
-# 结果
+## 结果
 ![读取文件结果](images/readFile.png)

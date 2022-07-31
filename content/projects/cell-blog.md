@@ -11,7 +11,7 @@ type: "posts"
 > 基于 Laravel7 开发，Markdown 语法的个人独立博客。[Cell Blog](https://github.com/Lruihao/cell-blog), 也是我的毕业设计作品，目前已開源。
 
 <!--more-->
-# 功能
+## 功能
 - 支持 Markdown, 文章实时预览效果
 - 支持多种编程语言代码高亮
 - 编辑器图片上传
@@ -32,12 +32,12 @@ type: "posts"
 - Valine 评论插件
 - 文章分享插件
 
-# 截图
+## 截图
 ![前台首页。png](https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png)  
 ![管理文章。png](https://i.loli.net/2020/05/11/tMEQe7WvYmw3jd4.png)  
 ![编辑文章。png](https://i.loli.net/2020/05/11/DeOWyJ3zluLKvBn.png)  
 
-# 安装
+## 安装
 > 注意事项：PHP 取消禁用函数`putenv()`和`symlink()`，安装`fileinfo`扩展。
 
 下载
@@ -122,7 +122,7 @@ location / {
 ```
 
 启动服务后，在浏览器打开`http://localhost/admin/`, 使用用户名`admin`和密码`admin`登录。
-# License
+## License
 Cell Blog is open-sourced software licensed under the MIT license.
 
 ![Stargazers over time](https://starchart.cc/Lruihao/cell-blog.svg)
