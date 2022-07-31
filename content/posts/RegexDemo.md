@@ -5,7 +5,7 @@ tags: ["regex","Java"]
 categories: ["Java"]
 ---
 
-# 邮箱
+## 邮箱
 
 ```java
 import java.util.regex.Matcher;
@@ -30,7 +30,7 @@ admin@lruihao.cn 匹配结果：true
 lruihao.cn 匹配结果：false
 ```
 
-# 电话
+## 电话
 
 ```java
 package base;
@@ -95,7 +95,7 @@ public static boolean isPhone(final String str) {
 }
 ```
 
-# 身份证
+## 身份证
 
 ```java
 /* 身份证正则表达式 16 或 18 */

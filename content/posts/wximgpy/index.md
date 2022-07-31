@@ -16,7 +16,7 @@ featuredImage: "/posts/wximgpy/images/1.jpg"
 > **文中编码由 Sunbelife 提供，来自他的同名微信公众号，本博仅用于学习，侵删**  
 
 <!--more-->
-# 依赖
+## 依赖
 - wxpy（Pythone 登录微信）
 - pillow（拼接头像）
 - os（文件夹操作）
@@ -27,13 +27,13 @@ featuredImage: "/posts/wximgpy/images/1.jpg"
 [PIL](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0014320027235877860c87af5544f25a8deeb55141d60c5000)：  
 &ensp;&ensp;Python Imaging Library，已经是 Python 平台事实上的图像处理标准库了。PIL 功能非常强大，但 API 却非常简单易用。由于 PIL 仅支持到 Python 2.7，加上年久失修，于是一群志愿者在 PIL 的基础上创建了兼容的版本，名字叫 Pillow，支持最新 Python 3.x，又加入了许多新特性，因此，我们可以直接安装使用 Pillow。
 
-# 安装
+## 安装
 ```
 pip install -U wxpy -i "https://pypi.doubanio.com/simple/"
 pip install pillow
 ```
 
-# 运行
+## 运行
 > 如果在 Python IDE 运行出错，可能是因为微信好友的 id 是特殊字符，在 IDE 打印出错，注释掉代码 36 行即可。
 
 ```py @Sunbelife
@@ -44,7 +44,7 @@ import os
 import sys
 import shutil
 #
-## 获取文件所在的绝对路径
+### 获取文件所在的绝对路径
 def get_dir(sys_arg):
 	sys_arg = sys_arg.split("/")
 
@@ -63,7 +63,7 @@ curr_dir = get_dir(sys.argv[0])
 
 bot = Bot()
 
-# 机器人账号自身
+## 机器人账号自身
 myself = bot.self
 my_friends = bot.friends(update=True)
 
@@ -76,20 +76,20 @@ for friend in my_friends:
 	friend.get_avatar(curr_dir + "group-images/" + str(count) + ".jpg")
 	count = count + 1
 
-# 获取下载的头像文件
+## 获取下载的头像文件
 ls = os.listdir(curr_dir + 'group-images')
 
-# 去除非 .jpg 文件
+## 去除非 .jpg 文件
 for filter_ls in ls:
 	if ".jpg" in filter_ls:
 		continue
 	else:
 		ls.remove(filter_ls)
 		
-# 排序
+## 排序
 ls.sort(key=lambda x:int(x[:-4]))
 
-# 头像墙尺寸
+## 头像墙尺寸
 image_size = 2560
 
 each_size = math.floor(image_size/math.floor(math.sqrt(len(ls))))
@@ -130,7 +130,7 @@ print("v1.2")
 print("2019.4.18")
 ```
 
-# 群友全家福
+## 群友全家福
 > 修改 11 行群名称
 
 ```py @Sunbelife
@@ -140,10 +140,10 @@ import PIL.Image as Image
 import os
 import shutil
 
-# 变量
+## 变量
 itchat.auto_login(hotReload=True,enableCmdQR=False)
 roomslist = itchat.get_chatrooms(update=True)[0:]
-itchat.dump_login_status() # 显示所有的群聊信息，默认是返回保存到通讯录中的群聊
+itchat.dump_login_status() ## 显示所有的群聊信息，默认是返回保存到通讯录中的群聊
 myroom=itchat.search_chatrooms(name=u'绥宁一中高 396 班') #群聊名称
 gsq=itchat.update_chatroom(myroom[0]['UserName'], detailedMember=True)
 
@@ -192,10 +192,10 @@ import PIL.Image as Image
 import os
 import shutil
 
-# 变量
+## 变量
 itchat.auto_login(hotReload=True,enableCmdQR=False)
 roomslist = itchat.get_chatrooms(update=True)[0:]
-itchat.dump_login_status() # 显示所有的群聊信息，默认是返回保存到通讯录中的群聊
+itchat.dump_login_status() ## 显示所有的群聊信息，默认是返回保存到通讯录中的群聊
 
 for room in roomslist:
     print(room['UserName'])

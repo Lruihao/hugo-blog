@@ -10,7 +10,7 @@ featuredImage: "/posts/singlethreaddown/images/1.png"
 
 <!--more-->
 
-# GUI 设计基本流程
+## GUI 设计基本流程
 先记录一下 GUI 设计的基本流程：  
 1. 根据需要从相应的顶层容器继承（如果创建窗体就继承 JFrame，对话框就继承 JDialog），新建一个子类。
 2. 然后设置顶层容器的属性，包括大小、位置、标题和关闭事件等。
@@ -18,7 +18,7 @@ featuredImage: "/posts/singlethreaddown/images/1.png"
 4. 向顶层容器上添加 GUI 组件，并设置布局。（通常利用 JPanel 组件先作为微型容器）
 5. 创建新建子类的实例，调用 setVisible(true) 方法显示页面。（也可以直接在子类中设置 setVisible(true)）
 
-# 实现代码
+## 实现代码
 
 ```java
 package cn.lruihao.base;
@@ -116,7 +116,7 @@ public class SingleThreadDown extends JFrame implements ActionListener {
 }
 ```
 
-# 运行结果测试
+## 运行结果测试
 通过`https://github.com/Lruihao/Grocery/raw/master/fonts/MMT_last.ttf`下载沐目体 ttf 字体文件，稍微等待一下弹出对话框“下载完毕”，经检查下载内容正常。
 
 ![运行效果](images/1.png)

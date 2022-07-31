@@ -18,13 +18,13 @@ featuredImage: "/posts/pyinstallererror/images/1.png"
 
 <!--more-->
 
-# 下载
+## 下载
 去官网下载 pyinstaller 安装包：<https://pypi.org/project/PyInstaller/#files>
 
-# 解压
+## 解压
 我这里解压到`E:\应用、Python37\Lib\site-packages\PyInstaller-3.4`
 
-# 安装
+## 安装
 cmd 也进入到上面的路径下，然后执行`Python setup.py install`，等待安装完毕
 
 ![安装](images/1.png)
@@ -32,12 +32,12 @@ cmd 也进入到上面的路径下，然后执行`Python setup.py install`，等
 ![pip list](images/3.png)
 ![版本](images/4.png)
 
-# pyinstaller 简介
+## pyinstaller 简介
 pyinstaller 将 Python 脚本打包成可执行程序，使在没有 Python 环境的机器上运行。
 
 最新版是 pyinstaller 3.4，可运行在 Windows，Mac 和 Linux 操作系统下。 但它不是跨编译的，也就是说在 Windows 下用 PyInstaller 生成的 exe 只能运行在 Windows 下，在 Linux 下生成的只能运行在 Linux 下。
 
-# 打包
+## 打包
 打包的 app 里并不包含任何源码，但将脚本的。pyc 文件打包了。
 
 基本语法： `pyinstaller options myscript.py`
@@ -53,7 +53,7 @@ pyinstaller 将 Python 脚本打包成可执行程序，使在没有 Python 环�
 
 如`pyinstaller --paths="D:\" test.py`
 
-# CSDN 访问量脚本实例
+## CSDN 访问量脚本实例
 比如，拿以前写的一个刷 csdn 访问量工具 csdn.py（放在桌面上），[代码详见](/posts/csdnvisiter.html)
 
 在 cmd 进入桌面路径，输入如下命令

@@ -5,29 +5,29 @@ tags: ["NetBeans","PHP"]
 categories: ["Memo"]
 ---
 
-# 安裝
+## 安裝
 [官方下載點](https://netbeans.org/)
 
-# 擴充功能
-## 安裝擴充功能
+## 擴充功能
+### 安裝擴充功能
 1. 下載擴充套件包  
     * [官方套件庫](http://plugins.netbeans.org/PluginPortal/)
     * 或者在 NetBeans IDE 裏面下載插件（方便）
 2. 開啟 NetBeans→Tools→Plugins→Downloaded→Add Plugins
 3. 選擇要安裝的擴充套件包
 
-## 啟用已安裝的擴充功能
+### 啟用已安裝的擴充功能
 1. 開啟 NetBeans→Tools→Plugins→Installed
 2. 選擇要啟用的套件 (\*.npm)
 3. 點擊 Activate
 
-## 匯入設定
+### 匯入設定
 1. 開啟 NetBeans→Tools→Options
 2. 點擊 Import 匯入設定
 3. 選擇要匯入的套件包 (\*.zip)
 
-# 常用設定
-## 程式碼排版
+## 常用設定
+### 程式碼排版
 > 在程式開發中，程式碼排版很重要。一個好的排版利於開發人員程式閱讀，也便於後期維護人員閱讀。
 
 在 NetBeans 中設置程式碼排版
@@ -39,7 +39,7 @@ categories: ["Memo"]
 ![Javascript](images/Javascript.png)
 ![Php](images/Php.png)
 
-## 程式碼樣板
+### 程式碼樣板
 >　程式碼樣板可以幫助你快速書寫程序，不必繁瑣地聲明函數或其他代碼塊，更專注與邏輯的書寫。
 
 在 NetBeans 中設置程式碼樣板
@@ -53,7 +53,7 @@ categories: ["Memo"]
 ![OpenInEditor](images/OpenInEditor.png)
 ![AfterEdit](images/AfterEdit.png)
 
-## 前端壓縮
+### 前端壓縮
 下載擴充套件`netbeans minify` 或者 `minifierBeans`
 1. 開啟 NetBeans→Tools→Plugins→Downloaded→Add Plugins
 2. 選擇你下載的擴充套件開啟
@@ -62,7 +62,7 @@ categories: ["Memo"]
 ![Example1](images/Example1.png)
 ![Example2](images/Example2.png)
 
-## 快捷鍵
+### 快捷鍵
 |键位|作用|
 |:--|:--|
 |Ctrl+/|注释一行（或选中部分）|
@@ -94,7 +94,7 @@ categories: ["Memo"]
 
 {% asset_img quickkey.png quickkey %}
 
-## 遠程開發 (FTP)
+### 遠程開發 (FTP)
 > 工作为例
 
 1. 新建项目
@@ -112,7 +112,7 @@ categories: ["Memo"]
     1. Upload Directory, 上传目录不填，直接上传至个人根目录
     2. Upload File 改为保存时上传文件（On Save）
 
-## Chrome with NetNeans Connector
+### Chrome with NetNeans Connector
 1. 打開 chrome 中的應用程式商店（使用 chrome 瀏覽器點擊下方鏈接即可）  
 [chrome 應用程式商店](https://chrome.google.com/webstore/category/themes?hl=en-US/)
 2. 在搜索框中輸入 NetNeans Connector 后搜索，然後點擊右邊的加到 Chrome 即可，安裝成功后右上角會顯示 NetBeans 圖標。

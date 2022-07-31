@@ -10,7 +10,7 @@ categories: ["CSS"]
 
 <!--more-->
 
-# 為什麼，什麼時候要使用 CSS 前置處理器？ (Why, When)
+## 為什麼，什麼時候要使用 CSS 前置處理器？ (Why, When)
 **CSS 有具體以下幾個缺點：**
 * 語法不夠強大，比如無法嵌套書寫，導致模組化開發中需要書寫很多重複的選擇器
 * 沒有變數和合理的樣式複用機制，使得邏輯上相關的屬性值必須以字面量的形式重複輸出，導致難以維護
@@ -28,20 +28,20 @@ categories: ["CSS"]
 * 系統級框架開發 （大型複雜的樣式設計）
 * 持續維護
 
-# Less、Sass/Scss 是什麼？ (What)
-## Less
+## Less、Sass/Scss 是什麼？ (What)
+### Less
 是一種動態樣式語言。對 CSS 賦予了動態語言的特性，如變數、繼承、運算、函數。  
 Less 既可以在用戶端上運行 （支援 IE 6+, Webkit, Firefox)，也可在服務端運行。
 
-## Sass
+### Sass
 是一種動態樣式語言，Sass 語法屬於縮排語法，  
 比 CSS 比多出好些功能（如變數、嵌套、運算，混入 (Mixin)、繼承、顏色處理，函數等），更容易閱讀。
 
-## Sass 與 Scss 的關係
+### Sass 與 Scss 的關係
 Sass 的縮排語法，對於寫慣 CSS 的前端開發者來說很不直觀，也不能將 CSS 代碼加入到 Sass 裡面，因此 Sass 語法進行了改良，Sass 3 就變成了 Scss(Sassy CSS)。與原來的語法相容，只是用`{}`取代了原來的縮進。Sass 相當於 Scss 的嚴格模式。
 
-# Sass 和 Less 的比較
-## 相同點
+## Sass 和 Less 的比較
+### 相同點
 Less 和 Sass 在語法上有些共性，比如下面這些：
 1. 混入 (Mixins)——class 中的 class
 2. 參數混入——可以傳遞參數的 class，就像函數一樣
@@ -52,7 +52,7 @@ Less 和 Sass 在語法上有些共性，比如下面這些：
 7. 作用域——局部修改樣式
 8. JavaScript 賦值——在 CSS 中使用 JavaScript 運算式賦值
 
-## 不同點
+### 不同點
 1. 實現方式
   * Less 是基於 JavaScript，是在用戶端處理的
   * Sass 是基於 Ruby 的，是在伺服器端處理的
@@ -60,5 +60,5 @@ Less 和 Sass 在語法上有些共性，比如下面這些：
 3. less 中的變量運算可帶、可不帶單位，Sass 需要帶單位元
 4. 語法不同，請詳見 Less、Sass 官網
 
-# 選用 Less 還是 Sass ?
+## 選用 Less 還是 Sass ?
 無論是學習資料，討論情況，以及項目使用情況 Sass/Scss 都優於 Less，比如 Bootstrap 4 就使用的 Sass, 但是 Less 的使用更加簡單，使用門檻也較低，內網開發的情況，Less 則更加適合。

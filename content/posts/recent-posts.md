@@ -1,5 +1,5 @@
 ---
-title: 在搜索。文章底部。侧栏添加最近文章模块
+title: 在搜索、文章底部、侧栏添加最近文章模块
 date: 2019-01-16 17:50:52
 tags: ["hexo"]
 categories: ["Memo"]
@@ -18,7 +18,7 @@ recent_posts:
   layout: block
 ```
 
-### 侧栏
+## 侧栏
 在 `next/layout/_macro/sidebar.swig` 中的 `if theme.links` 对应的 `endif` 后面。
 ```
 {% if theme.recent_posts.enable and theme.recent_posts.sidebar %}
@@ -39,7 +39,7 @@ recent_posts:
 {% endif %}
 ```
 
-### 搜索结果处添加
+## 搜索结果处添加
 找到路径`H:\hexo\themes\hexo-theme-next\layout\_partials\search`下`localsearch.swig`文件  
 把`<div id="local-search-result"></div>`修改成以下内容（这里显示 15 篇）
 ```xml
@@ -63,7 +63,7 @@ recent_posts:
 </div>
 ```
 
-### 文章尾部添加
+## 文章尾部添加
 把代码加在`H:\hexo\themes\hexo-theme-next\layout\_macro\post.swig`里的相应位置（我加在 tags 后）  
 ```xml
 {% if not is_index and theme.recent_posts.enable and theme.recent_posts.post %}
@@ -82,5 +82,5 @@ recent_posts:
 {% endif %}
 ```
 
-# 其他
+## 其他
 可尝试将`-date`改为`-update`

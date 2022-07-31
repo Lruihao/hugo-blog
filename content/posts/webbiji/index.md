@@ -10,26 +10,26 @@ categories:
 > 下面一些 web 开发的一些总结，还有一些常用到的代码，脚本等！
 
 <!--more-->
-# front-end
-## html
+## front-end
+### html
 > - [HTML+CSS](https://lruihao.cn/posts/ms-html-css.html)
 
-### oblique 和 intalic 的区别
+#### oblique 和 intalic 的区别
 这两个都是`font-style`属性的值，这两个值都能实现倾斜的效果，但是有区别的。  
 - `intalic`: 这个是字体的倾斜，相当于**斜体**，字体必须有倾斜属性。
 - `oblique`: 这个准确地说是让文字倾斜。相当于**斜字**，字体不一定要有倾斜属性。
 
-### title 显示换行
+#### title 显示换行
 <a href="#" title="第一行&#10; 第二行&#10; 第三行">使用`&#10;`</a>或<a href="#" title="第一排&#13; 第二排&#13; 第三排">使用`&#13;`</a>
 ```
 <a href="#" title="第一行&#10; 第二行&#10; 第三行">使用`&#10;`</a>
 <a href="#" title="第一排&#13; 第二排&#13; 第三排">使用`&#13;`</a>
 ```
-### 图片类型选择
+#### 图片类型选择
 ![图片类型选择](images/imgType.jpg "图片类型选择")
 
-## css
-### flexbox
+### css
+#### flexbox
 Flex 布局将成为未来布局的首选方案，比如说常见的 bootstrap4 的版本就用 flex 替代了 float 来进行排版。  
 我在网上看到几个很好的教程，图文并茂，一目了然。  
 > - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
@@ -37,8 +37,8 @@ Flex 布局将成为未来布局的首选方案，比如说常见的 bootstrap4 
 
 实在懒癌发作，笔记本上手抄了笔记我就不写学习总结了，还有网友 [Demo](http://static.vgee.cn/static/index.html) 也写了。
 
-## javascript
-### keydown 和 keypress
+### javascript
+#### keydown 和 keypress
 - `keydown`：按下键盘键
 - `keypress`：紧接着`keydown`事件触发（只有按下字符键时触发）
 - 如果用户按下了一个**字符键**不放，就会重复触发`keydown`和`keypress`事件，直到用户松开该键为止。
@@ -46,7 +46,7 @@ Flex 布局将成为未来布局的首选方案，比如说常见的 bootstrap4 
 
 [详解键盘事件 (keydown，keypress，keyup)](https://www.jianshu.com/p/8f839f558319)
 
-### textContent、innerText 和 innerHTML 的区别
+#### textContent、innerText 和 innerHTML 的区别
 > 1. 设置标签中的文本内容，应该使用`textContent`或`innerText`（更老）属性，区别在于浏览器支援程度
 2. `innerHTML`能够获得元素内的所有标签内容，也可以设置标签使之生效。（**注意防止 XSS 注入**）
 
@@ -66,7 +66,7 @@ Flex 布局将成为未来布局的首选方案，比如说常见的 bootstrap4 
 </script>
 ```
 
-## 图床方案
+### 图床方案
 
 > - 自行搭建
 比如使用开源图床 ImgURL 搭建的`img.lruihao.cn`（**需要服务器**）  
@@ -74,7 +74,7 @@ Flex 布局将成为未来布局的首选方案，比如说常见的 bootstrap4 
 - 使用各大图床  
 诸如 sm.ms，腾讯云 COS，阿里云 OSS，七牛云，又拍云，Github，微博图床，ImgURL 图床等等
 
-## font-awesome
+### font-awesome
 现在使用 5 的版本，可以使用`webfont+css`或`svg+js`
 ```xml font-awesome
 <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
@@ -87,7 +87,7 @@ Flex 布局将成为未来布局的首选方案，比如说常见的 bootstrap4 
 </svg>
 ```
 
-## 响应式（自适应）
+### 响应式（自适应）
 
 ```xml bootstrap
 <link rel="stylesheet" href="https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -125,7 +125,7 @@ link 引入不同 css
 <link rel="stylesheet" type="text/css" href="style_PC.css" media="screen and (min-width: 960px)"/>
 ```
 
-## jquery
+### jquery
 ```xml jquery
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
@@ -137,7 +137,7 @@ link 引入不同 css
 //还有其他的源 ...
 ```
 
-## QQ 推广链接
+### QQ 推广链接
 > [QQ 推广](https://shang.qq.com/v3/widget.html) [QQ 群](https://qun.qq.com/join.html)
 
 ```
@@ -145,7 +145,7 @@ link 引入不同 css
 ```
 <a target="_blank" href="https://wpa.qq.com/msgrd?v=3&uin=1074627678&site=qq&menu=yes"><img border="0" src="https://wpa.qq.com/pa?p=2:1074627678:51" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
 
-## Google fonts
+### Google fonts
 ```diff
 https://fonts.google.com/
 一般选用国内源镜像替代（待补充 ...）
@@ -153,13 +153,13 @@ https://fonts.google.com/
 + //fonts.lug.ustc.edu.cn
 ```
 
-## fancybox
+### fancybox
 [github 介绍](https://github.com/fancyapps/fancybox)&emsp;[fancybox 源](https://www.bootcdn.cn/fancybox/)
 ```xml fancybox 源
 <link href="https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
 <script src="https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 ```
 
-# back-end
+## back-end
 > 更多学习内容见 [学习课件](https://github.com/Lruihao/web-dev-data)  
 练习作业 [源码](https://github.com/Lruihao/hw)+[Demo](http://hw.lruihao.cn/)

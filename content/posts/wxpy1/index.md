@@ -11,6 +11,9 @@ categories:
 - 瞎折腾
 - Python
 featuredImage: "/posts/wxpy1/images/1.png"
+expirationReminder:
+  enable: true
+  reminder: -1
 ---
 
 > ***文中涉及的图片涉及个人隐私，仅做举例，请勿传播***
@@ -20,11 +23,11 @@ featuredImage: "/posts/wxpy1/images/1.png"
 > - 群性别统计
 
 <!--more-->
-# 前期准备
+## 前期准备
 - [wxpy](https://github.com/youfou/wxpy)
 - [pyecharts](https://github.com/pyecharts/pyecharts)（百度 echarts）
 
-# 查看微信好友男女比例
+## 查看微信好友男女比例
 
 ```py 生成结果在源文件同目录在的 sex.html
 from wxpy import *
@@ -54,7 +57,7 @@ pie.render("sex.html")
 ```
 ![微信好友男女比例](images/1.png)
 
-# 查看好友地区分布
+## 查看好友地区分布
 
 ```py 生成结果在源文件同目录在的 city.html
 from wxpy import *
@@ -96,7 +99,7 @@ map.render("city.html")
 
 > **以上参考简书 [陈思煜](https://www.jianshu.com/p/c0baf3c6db15)**
 
-# 统计所有群男女数目
+## 统计所有群男女数目
 > 统计结果会自动发送到所有群聊
 > 男女人数和不一定等于总数（有些人不显示性别）
 
@@ -113,12 +116,12 @@ def stats_text(target_group, group_name):
     all_stats_text = []
     all_dict = {}
     
-    # 乱序先整理一份省份 + 地点的列表
+    ## 乱序先整理一份省份 + 地点的列表
     for user in target_group.members:
         trimed_data = user.province.replace(' ', '') + user.city.replace(' ', '')
         if trimed_data != '':
             all_stats_text.append(trimed_data)
-    # 计数
+    ## 计数
     for data in all_stats_text:
         if all_stats_text.count(data) != 0:
             all_dict[data] = all_stats_text.count(data)
@@ -151,7 +154,7 @@ bot = Bot()
 target_group = bot.groups(update=True, contact_only=False)
 
 for curr_group in target_group:
-    # 小于 10 人的群过滤掉
+    ## 小于 10 人的群过滤掉
     if len(curr_group) < 10:
         continue
     curr_group.update_group(members_details=True)

@@ -10,7 +10,7 @@ categories: ["Memo"]
 更多说明及 ACM/NOIP 题库下载见官网博客 [代码的那些事|程序员回忆录](http://www.hustoj.com/)
 
 <!--more-->
-# 快速安装 OJ
+## 快速安装 OJ
 下载
 ```bash
 wget https://raw.githubusercontent.com/zhblue/hustoj/master/trunk/install/install-ubuntu16+.sh
@@ -22,7 +22,7 @@ sudo bash install-ubuntu16+.sh
 等待中一路回车，当提示 done！ 则表示安装成功：
 ![](images/1.png)
 
-# 使用 HustOJ
+## 使用 HustOJ
 打开网页/IP 地址  
 注册 admin  
 用 admin 作为用户名注册一个用户，将会自动成为管理员。  
@@ -37,7 +37,7 @@ sudo bash install-ubuntu16+.sh
 ![](images/5.png)  
 然后再提交代码测试判题机。
 
-# 说明
+## 说明
 安装后几个重要配置文件的位置
 ```
 /home/judge/etc/judge.conf

@@ -10,24 +10,24 @@ categories:
 > 后面几天讲的有点杂，简单记录一下知识点。
 
 <!--more-->
-# 6.19
+## 6.19
 > 这些知识点在课上都只是简单的提到了一下。  
 比如一些库的使用与安装都不会再课上详细讲解，需要课后再去研究。
 
-## [切片操作](https://www.jianshu.com/p/15715d6f4dad)
+### [切片操作](https://www.jianshu.com/p/15715d6f4dad)
 列表切片操作
 
-## 字符串
-### python 原始字符串
+### 字符串
+#### python 原始字符串
 ```pythonthon
 print(r"D:\three\two")
 ```
-### 长字符串
+#### 长字符串
 用三个单引号或者双引号包裹，前后呼应，成双成对。
 
-### 用、换行字符表示字符未结束
+#### 用、换行字符表示字符未结束
 
-## 格式化输出 format
+### 格式化输出 format
 `"=={}=="`，`{}`表示占位符，其前后字符保持原样输出。 
 
 ```python TempConvert.py
@@ -42,7 +42,7 @@ elif TempStr[-1] in ['C','c']:
 else:
     print("输入格式错误")
 ```
-## 多变量赋值与交换（斐波那契数列）
+### 多变量赋值与交换（斐波那契数列）
 python 3.x 版本 `end=""` 可使输出不换行  
 ```python
 print(x, end="")
@@ -51,12 +51,12 @@ print(x, end="")
 ```python 斐波那契数列
 #斐波那契数列
 a, b = 1,1
-while a < 500: # 输出不大于 500 的序列
+while a < 500: ## 输出不大于 500 的序列
     print(a,end=",")
     a,b = b,a + b #交换变量
 ```
 
-## 笑傲江湖统计字符 (dict, 文件流）
+### 笑傲江湖统计字符 (dict, 文件流）
 > 统计《笑傲江湖》小说中出现的所有中文字符及标点符号的数量，每个字符及数目间用冒号`:`隔开，例如"笑：1024"，将所有字符及数量的对应采用逗号分隔，以 CSV 文件格式保存到`“笑傲江湖--字符统计。txt”`文件中。注意，统计字符不包括空格和回车。
 
 > csv 文件格式： ‘,’逗号连接元素
@@ -86,14 +86,14 @@ fo.close()
 ```
 ![文件读取及字符统计结果](images/tj.png)
 
-## numpy 模块
+### numpy 模块
 **...**
-## pandas 模块
+### pandas 模块
 **...**
 
-# 6.20
+## 6.20
 
-## matplotlib 绘图
+### matplotlib 绘图
 ```python 指数函数
 import matplotlib.pyplot as plt
 import numpy as np
@@ -108,7 +108,7 @@ plt.show()
 ```
 ![Y=2<sup>X</sup>+1](images/zhishu.png)
 
-## 爬虫
+### 爬虫
 举了一个金融界，炒股，获取数据的爬虫
 （今天没仔细听课，这数据爬过什么意思，咱不懂，咱也不敢问！）
 ```python stock15
@@ -168,16 +168,16 @@ max    3559.465088
 ```
 ![生成的图](images/stock15.png)
 
-# 6.21
+## 6.21
 
-## 类
+### 类
 比第一天稍微仔细一点讲了一下类，有点需要注意：
 - `self`相当于`this`表示当前对象  
 - python 类的所有函数的第一个参数都要写`self`参数，self 也可以是其他的比如`lrh`等字符替代，但是必须保持一致。
 - `__`表示私有的
 - class 的定义可以不加 (),() 内可写继承的父类
 
-## GUI 设计 [wxPython](https://blog.csdn.net/mist99/article/details/80742548)
+### GUI 设计 [wxPython](https://blog.csdn.net/mist99/article/details/80742548)
 ```bosh 安装 
 pip install wxPython
 ```
@@ -236,7 +236,7 @@ app.MainLoop()
 ```
 ![运行结果](images/wxpython.png)
 
-## talib 库的安装
+### talib 库的安装
 
 [下载 whl 文件](https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib)
 
@@ -244,7 +244,7 @@ app.MainLoop()
 pip install TA_Lib-0.4.17-cp37-cp37m-win_amd64.whl
 pip install TA-Lib
 ```
-## 选择排序递归版
+### 选择排序递归版
 ```python
 def SelectSort(L):
     L=L[:]
@@ -263,7 +263,7 @@ print(SelectSort(L))
 ```python 结果
 [0, 1, 2, 3, 5, 6, 8, 9, 10]
 ```
-## 机房上机系统（自我实践）
+### 机房上机系统（自我实践）
 
 ```python 简单机房上机系统源码
 import time
@@ -306,18 +306,18 @@ def get_time(): #获取当前时间
     return time.strftime("%H:%M:%S", time.localtime()) 
 
 def main():
-    # 全局变量
-    text = [] # 上机记录列表
+    ## 全局变量
+    text = [] ## 上机记录列表
     start_time = ""
     end_time = ""
-    sum = 0 # 本系统按小时计费，不足一小时按一小时算
+    sum = 0 ## 本系统按小时计费，不足一小时按一小时算
     people = student()
     online_flag = False
     down_flag = False
     input_flag = False
 
     while True:
-        select = menu() # 启用菜单
+        select = menu() ## 启用菜单
 
         if select == 1:
             if input_flag:
@@ -379,8 +379,8 @@ def main():
         else:
             if down_flag:
                 print("3s 后退出系统，感谢使用！")
-                time.sleep(3) # 延迟 3s，显示提示文字
-                break # 退出系统 写入文件
+                time.sleep(3) ## 延迟 3s，显示提示文字
+                break ## 退出系统 写入文件
             else:
                 print("请下机！")
                 continue
@@ -394,7 +394,7 @@ if __name__=="__main__":
     main()
 ```
 
-## 量化交易代码分析与调试
+### 量化交易代码分析与调试
 由于 python 的版本问题和一些库的导入问题所以还未调试成功，先挂上代码。以后改篇再论。
 ```python 主要代码
 #! /usr/bin/env python 
@@ -424,7 +424,7 @@ from IndicatStrateMod import Excave_Indic_Base, QuantPickTimeSys,FactorPickStock
 plt.rcParams['font.sans-serif']=['SimHei'] #用来正常显示中文标签
 plt.rcParams['axes.unicode_minus']=False #用来正常显示负号
 
-class UserDialog(wx.Dialog):# user-defined
+class UserDialog(wx.Dialog):## user-defined
 
     def __init__(self,parent,text):
         wx.Dialog.__init__(self,parent,-1,u"选股提示",size=(400,500),style=wx.CAPTION|wx.CLOSE_BOX|wx.MAXIMIZE_BOX|wx.MINIMIZE_BOX)
