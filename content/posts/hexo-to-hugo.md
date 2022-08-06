@@ -102,7 +102,7 @@ hugo --minify
 - [x] hugo 本地管理 shell 脚本工具编写
 - [X] 知乎卡片式链接 改成 hugo shortcodes, 取名 `cardlink`
 - <details>
-  <summary><i class="far fa-check-square fa-fw"></i>zxm/沐目体 归档 :( <a href="https://github.com/Lruihao/hugo-blog/issues/6" target="_blank" rel="noopener noreffer">#6</a></summary>
+  <summary><i class="far fa-check-square fa-fw"></i>zxm/沐目体 归档 :( <a href="https://github.com/Lruihao/hugo-blog/issues/6" target="_blank" rel="noopener noreferrer">#6</a></summary>
 
   - [x] 安装 沐目体
   - [x] 压缩 沐目体 fontspider

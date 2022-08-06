@@ -8,7 +8,7 @@ categories:
 - 瞎折腾
 - Python
 featuredImage: "/posts/daka/images/result.png"
-license: '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+license: '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
 expirationReminder:
   enable: true
