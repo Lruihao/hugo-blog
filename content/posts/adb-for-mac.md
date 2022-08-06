@@ -11,6 +11,8 @@ tags:
 作为非安卓专业开发，无需下载 Android SDK，  
 仅下载 Android SDK 中的 [platform-tools](https://developer.android.com/studio/releases/platform-tools?hl=zh-cn) 命令行工具即可，并配置好环境变量
 
+<!--more-->
+
 ```bash
 open .bash_profile
 ```
@@ -19,7 +21,7 @@ open .bash_profile
 
 ```
 # platform-tools of Android SDK
-export PATH=$PATH:/Users/liruihao/Applications/platform-tools # 修改成实际路径
+export PATH=$PATH:$HOME/Applications/platform-tools
 ```
 
 ```bash

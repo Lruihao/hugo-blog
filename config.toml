@@ -219,9 +219,9 @@ theme = "FixIt"
     # FixIt NEW | 0.2.12 Public network security only in China (HTML format is supported)
     gov = '<a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target="_blank">湘公网安备 43030402000254 号</a>'
     # ICP info only in China (HTML format is supported)
-    icp = '<a rel="external nofollow noopener noreffer" href="https://beian.miit.gov.cn" target="_blank">湘 ICP 备18020535 号</a>'
+    icp = '<a rel="external nofollow noopener noreferrer" href="https://beian.miit.gov.cn" target="_blank">湘 ICP 备18020535 号</a>'
     # license info (HTML format is supported)
-    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
   # FixIt NEW | 0.2.0 Section (all posts) page config
   [params.section]
@@ -308,7 +308,7 @@ theme = "FixIt"
     # FixIt NEW | 0.2.0 whether to enable the fontawesome extended syntax
     fontawesome = true
     # FixIt NEW | 0.2.0 Default lisence of content.
-    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
     # whether to show link to Raw Markdown content of the content
     linkToMarkdown = true
     # FixIt NEW | 0.2.4 whether to show the full text content in RSS

@@ -197,7 +197,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # maven
-export M2_HOME=/Users/liruihao/Applications/apache-maven-3.8.5
+export M2_HOME=$HOME/Applications/apache-maven-3.8.5
 export PATH=$PATH:$M2_HOME/bin
 
 # jenv
@@ -212,15 +212,15 @@ export PATH=$JAVA_HOME/bin:$PATH:.  # 冒号前代表 JDK 目录下的 bin 目�
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 
 # jmeter
-export JMETER_HOME=/Users/liruihao/jmeter/apache-jmeter-5.4.1
+export JMETER_HOME=$HOME/jmeter/apache-jmeter-5.4.1
 export PATH=$JAVA_HOME/bin:$PATH:.:$JMETER_HOME/bin:$PATH
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JMETER_HOME/lib/ext/ApacheJMeter_core.jar:$JMETER_HOME/lib/jorphan.jar:$JMETER_HOME/lib/logkit-2.0.jar
 
 # platform-tools of Android SDK
-export PATH=$PATH:/Users/liruihao/Applications/platform-tools
+export PATH=$PATH:$HOME/Applications/platform-tools
 
 # Electron-Mac app development
-export CSC_LINK=/Users/liruihao/workspace/mac_app_dev/Mac.p12
+export CSC_LINK=WORKSPACE/mac_app_dev/Mac.p12
 export CSC_KEY_PASSWORD=xxxxxxxxx
 
 # yarn
@@ -239,7 +239,7 @@ Path: `~/.vimrc`
 
 ```bash .vimrc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Custom config by Lruihao
+" => Custom config for Lruihao
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable mouse
 set mouse=a
