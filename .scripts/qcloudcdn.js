@@ -1,6 +1,6 @@
 /**
  * Refresh Qcloud CDN cache
- * @command `SECRET_ID=<secretId> SECRET_KEY=<secretKey> npm run qcloudcdn` 
+ * @command `node qcloudcdn.js $SECRET_ID $SECRET_KEY` 
  */
 const qcloudSDK = require('qcloud-cdn-node-sdk');
 
@@ -12,7 +12,7 @@ qcloudSDK.config({
 
 qcloudSDK.request('RefreshCdnDir', {
   // See https://cloud.tencent.com/document/api/228/3947
-	'dirs.0': 'https://lruihao.cn/'
+  'dirs.0': 'https://lruihao.cn/'
 }, (res) => {
   res.code && console.log(res)
 })
