@@ -11,14 +11,13 @@
 
 ```bash
 ▸ .github/       # GitHub configuration
+▸ .scripts/      # custom scripts
 ▸ .shell/        # shell commands for hugo project, entrance: hugo_main.sh
 ▸ archetypes/    # page archetypes (like scaffolds of archetypes)
 ▸ assets/        # css, js, third-party libraries etc.
 ▸ content/       # markdown files for hugo project
-  └─private/     # private submodule for encrypted content
+  ▸ private/     # private submodule for encrypted content
 ▸ data/          # blog data (allow: yaml, json, toml), e.g. friends.yml
-▸ i18n/          # i18n translation documents
-▸ layouts/       # page layouts source
 ▸ public/        # build directory
 ▸ static/        # static files, e.g. favicon.ico
 ▸ themes/        # theme submodules
