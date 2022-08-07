@@ -7,7 +7,8 @@
     "build": "hugo -v --gc --minify",
     "server": "hugo server --disableFastRender --navigateToChanged",
     "server:production": "hugo server --disableFastRender --navigateToChanged --environment production",
-    "update:theme": "git submodule update --remote --merge && git add themes/FixIt && git commit -m ':arrow_up: Chore: update FixIt theme version'"
+    "update:theme": "git submodule update --remote --merge && git add themes/FixIt && git commit -m ':arrow_up: Chore: update FixIt theme version'",
+    "qcloudcdn": "node .scripts/qcloudcdn.js $SECRET_ID $SECRET_KEY"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/Lruihao/hugo-blog#readme",
   "dependencies": {
-    "atomic-algolia": "^0.3.19"
+    "atomic-algolia": "^0.3.19",
+    "qcloud-cdn-node-sdk": "^1.0.0"
   }
 }

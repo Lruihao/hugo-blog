@@ -12,7 +12,7 @@ jobs:
         with:
           ssh-key: ${{ secrets.SYNC_CONTENT }}
           submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -48,3 +48,8 @@ jobs:
         run: coscmd config -a $COS_SECRET_ID -s $COS_SECRET_KEY -b $COS_BUCKET_NAME -r $COS_BUCKET_REGION
       - name: Deploy to COS Bucket
         run: coscmd upload -r -s --delete -f public/ /
+      - name: Refresh Qcloud CDN cache
+        env:
+          SECRET_ID: ${{ secrets.COS_SECRET_ID }}
+          SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}
+        run: SECRET_ID=$SECRET_ID SECRET_KEY=$SECRET_KEY npm run qcloudcdn
