@@ -2,6 +2,13 @@ name: Hugo build and deploy
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'assets/**'
+      - 'content/**'
+      - 'data/**'
+      - 'static/**'
+      - 'themes/**'
+      - 'config.toml'
   workflow_dispatch:
 jobs:
   Actions-Hugo-Deploy:
