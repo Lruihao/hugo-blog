@@ -6,8 +6,8 @@ const qcloudSDK = require('qcloud-cdn-node-sdk');
 
 // Get the config from https://console.qcloud.com/capi
 qcloudSDK.config({
-  secretId: process.argv[2],
-  secretKey: process.argv[3]
+  secretId: process?.argv[2],
+  secretKey: process?.argv[3]
 })
 
 qcloudSDK.request('RefreshCdnDir', {
