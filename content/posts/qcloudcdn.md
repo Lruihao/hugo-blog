@@ -79,7 +79,8 @@ export SECRET_KEY=<secretKey>
 ```bash
 source ~/.bash_profile
 ```
-然后，在本地可直接使用 `npm run qcloudcdn` 来刷新 CDN 缓存。
+然后，在本地可简化指令为 `npm run qcloudcdn` 或者 `yarn qcloudcdn`。  
+等同于 `SECRET_ID=$SECRET_ID SECRET_KEY=$SECRET_KEY npm run qcloudcdn`
 {{< /details >}}
 
 ## 配置 GitHub Actions
@@ -91,7 +92,7 @@ source ~/.bash_profile
   env:
     SECRET_ID: ${{ secrets.SECRET_ID }}
     SECRET_KEY: ${{ secrets.SECRET_KEY }}
-  run: SECRET_ID=$SECRET_ID SECRET_KEY=$SECRET_KEY npm run qcloudcdn
+  run: npm run qcloudcdn
 ```
 
 在仓库 Settings > Secrets > Actions 中增加两个 Secret: `SECRET_ID` 和 `SECRET_KEY`，原来有配置过的就不用了，比如，我原来的叫 `COS_SECRET_ID` 和 `COS_SECRET_ID`，那修改上面配置 env 中的变量名即可。
