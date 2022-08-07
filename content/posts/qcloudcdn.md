@@ -37,8 +37,8 @@ const qcloudSDK = require('qcloud-cdn-node-sdk');
 
 // Get the config from https://console.qcloud.com/capi
 qcloudSDK.config({
-  secretId: process.argv[2],
-  secretKey: process.argv[3]
+  secretId: process?.argv[2],
+  secretKey: process?.argv[3]
 })
 
 qcloudSDK.request('RefreshCdnDir', {
@@ -54,8 +54,10 @@ qcloudSDK.request('RefreshCdnDir', {
 打开 `package.json` 增加 `scripts`: 
 
 ```json
-"scripts": {
-  "qcloudcdn": "node .scripts/qcloudcdn.js $SECRET_ID $SECRET_KEY"
+{
+  "scripts": {
+    "qcloudcdn": "node .scripts/qcloudcdn.js $SECRET_ID $SECRET_KEY"
+  }
 }
 ```
 
@@ -64,6 +66,21 @@ qcloudSDK.request('RefreshCdnDir', {
 ```bash
 SECRET_ID=<secretId> SECRET_KEY=<secretKey> npm run qcloudcdn
 ```
+
+{{< details "Mac OS 环境变量配置（可选）" >}}
+```bash
+vim ~/.bash_profile
+```
+```bash
+# Qcloud secret key-value
+export SECRET_ID=<secretId>
+export SECRET_KEY=<secretKey>
+```
+```bash
+source ~/.bash_profile
+```
+然后，在本地可直接使用 `npm run qcloudcdn` 来刷新 CDN 缓存。
+{{< /details >}}
 
 ## 配置 GitHub Actions
 
