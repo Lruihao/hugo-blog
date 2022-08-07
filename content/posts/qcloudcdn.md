@@ -30,7 +30,7 @@ vim .scripts/qcloudcdn.js
 
 ```javascript
 /**
- * Refresh tencent cloud CDN cache
+ * Refresh Qcloud CDN cache
  * @command `SECRET_ID=<secretId> SECRET_KEY=<secretKey> npm run qcloudcdn` 
  */
 const qcloudSDK = require('qcloud-cdn-node-sdk');
@@ -77,7 +77,7 @@ SECRET_ID=<secretId> SECRET_KEY=<secretKey> npm run qcloudcdn
   run: SECRET_ID=$SECRET_ID SECRET_KEY=$SECRET_KEY npm run qcloudcdn
 ```
 
-在仓库 Settings > Secrets > Actions 中增加两个 `SECRET_ID` 和 `SECRET_KEY`，原来有配置过的就不用配置了，比如，我原来的叫 `COS_SECRET_ID` 和 `COS_SECRET_ID`，那修改上面配置 env 中的变量名即可。
+在仓库 Settings > Secrets > Actions 中增加两个 Secret: `SECRET_ID` 和 `SECRET_KEY`，原来有配置过的就不用了，比如，我原来的叫 `COS_SECRET_ID` 和 `COS_SECRET_ID`，那修改上面配置 env 中的变量名即可。
 
 最后上传代码，以后更新仓库时就会自动刷新 CDN 缓存了。
 
