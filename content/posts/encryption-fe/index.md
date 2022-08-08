@@ -8,7 +8,7 @@ categories:
 - JavaScript
 resources:
 - name: "featured-image"
-  src: "featured-image.png"
+  src: "images/featured-image.png"
 ---
 
 记录一下前端实现页面加密的思路。
@@ -41,7 +41,7 @@ resources:
 
 ## 页面内容加密
 
-![内容加密算法](https://wx3.sinaimg.cn/mw690/006vSs63gy1h2hd55atqij33402c0e83.jpg "内容加密算法")
+![内容加密算法](images/algorithm.jpg "内容加密算法")
 
 1. 通过比对密码和输入的 md5 值来判断密码是否输入正确
 2. 密码验证通过后，开始解密内容
