@@ -15,7 +15,7 @@ library:
 pageStyle: "wide"
 ---
 
-<iframe class="manuscript" src="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&a=fontshowPics&u=qbfRl8gPF2s-&z=Kqz%2FRroVGYc-" frameborder="0" allowfullscreen></iframe>
+<iframe class="manuscript" src="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&a=fontshowPics&u=qbfRl8gPF2s-&z=Kqz%2FRroVGYc-" style="width: 100%;height: 370px;margin-top: .25rem;" frameborder="0" allowfullscreen></iframe>
 
 <!--more-->
 
@@ -69,9 +69,9 @@ pageStyle: "wide"
 
 <div class="preview-images">
 
-![album](images/cell.jpg)
-![wechat](images/wechat.png)
+![preview](images/preview.png)
 ![mobile setting](images/setting.png)
+![wechat](images/wechat.png)
 
 </div>
 
