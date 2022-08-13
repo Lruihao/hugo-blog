@@ -1,6 +1,7 @@
 ---
 title: python 玩微信：初探 wxpy
 date: 2019-04-20 15:44:57
+lastmod: 2019-04-20 15:44:57
 tags: 
 - Python
 - wxpy
@@ -14,6 +15,7 @@ featuredImage: "/posts/wxpy1/images/1.png"
 expirationReminder:
   enable: true
   reminder: -1
+  warning: -1
 ---
 
 > ***文中涉及的图片涉及个人隐私，仅做举例，请勿传播***

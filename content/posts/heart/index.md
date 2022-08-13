@@ -1,6 +1,7 @@
 ---
 title: “高逼格” C 语言画心
 date: 2018-08-15 16:33:12
+lastmod: 2018-08-15 16:33:12
 tags:
 - C
 categories:
@@ -68,4 +69,4 @@ int main() {
 }
 ```
 
-[exe 文件下载 :(fas fa-download):](heart.zip)
+[exe 文件下载 :(fa-solid fa-download):](heart.zip)

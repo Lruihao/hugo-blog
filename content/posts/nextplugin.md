@@ -1,8 +1,13 @@
 ---
 title: hexo 插件及 next 内置样式集
 date: 2018-11-24 16:54:09
+lastmod: 2021-10-02 15:27:58
 tags: ["hexo"]
 categories: ["Memo"]
+expirationReminder:
+  enable: true
+  reminder: -1
+  warning: -1
 ---
 
 > 2021/10/2 更新  
@@ -319,6 +324,8 @@ Unique name   : Unique name of tabs block tag without comma.
                 Can be specified with or without space; e.g. 'Tab caption @icon' similar to 'Tab caption@icon'.
                 Optional parameter.
 ```
+
+```
 {% tabs tab,2 %}
 <!-- tab -->
 this is tab1
@@ -381,9 +388,13 @@ note:
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
 ```
+
 写法
+
 ```
 {% note default %}
+```
+
 #### default
 类型还有以下几种
 {% endnote %}
