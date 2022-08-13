@@ -247,6 +247,8 @@ windows 系统打包配置，当没有配置签名时，`sign` 字段应删除�
 }
 ```
 
+注：win11 打包在 win10 上可能运行不了，最好使用 win10 打包或者 mac 打包指定系统和位数。
+
 #### macOS 打包
 
 问题：mac 升级之后 electron 打包报错 `Exit code: ENOENT. spawn /usr/bin/python ENOENT`
