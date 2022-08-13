@@ -1,7 +1,7 @@
 title = "菠菜眾長"
 baseURL = "https://lruihao.cn"
-defaultContentLanguage = "zh-tw" # theme lang
-languageCode = "zh-TW"
+defaultContentLanguage = "zh-cn" # theme lang
+languageCode = "zh-CN"
 hasCJKLanguage = true #字数统计计入中文
 enableRobotsTXT = true
 enableEmoji = true
@@ -132,7 +132,7 @@ theme = "FixIt"
   # FixIt NEW | 0.2.12 enable PWA
   enablePWA = true
   # FixIt NEW | 0.2.14 whether to add external Icon for external links automatically
-  externalIcon = false
+  externalIcon = true
   # FixIt NEW | 0.2.14 FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
   # You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
   disableThemeInject = false
