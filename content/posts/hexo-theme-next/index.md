@@ -1,6 +1,7 @@
 ---
 title: hexo-theme-next @modified LRH
 date: 2019-03-21 16:43:19
+lastmod: 2019-09-13 16:43:19
 tags: ["hexo"]
 categories: ["Memo"]
 description: "基于 hexo-theme-next 6.0+的 Pisces 模板做的 DIY 扩展性设计"
@@ -8,6 +9,7 @@ featuredImage: "/posts/hexo-theme-next/images/next.png"
 expirationReminder:
   enable: true
   reminder: -1
+  warning: -1
 ---
 
 {{< admonition danger >}}

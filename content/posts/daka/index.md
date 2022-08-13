@@ -1,6 +1,7 @@
 ---
 title: 新冠疫情未返校未返工第 N 天之“自动打卡”
 date: 2020-03-25 08:22:42
+lastmod: 2020-03-25 08:22:42
 tags:
 - Python
 - HTTP
@@ -13,6 +14,7 @@ license: '<a rel="license external nofollow noopener noreferrer" href="https://c
 expirationReminder:
   enable: true
   reminder: -1
+  warning: -1
 ---
 
 {{< admonition info >}}
