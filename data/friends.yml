@@ -14,12 +14,12 @@
   avatar: https://postgres.fun/images/francs.png
   url: https://postgres.fun
   description: PostgreSQL中文网。数据库。francs.top
-- nickname: 赵俊
-  # avatar: https://zhaojun.vip/uploads/avatar.gif
-  url: https://zhaojun.vip
-  description: 一个Java学习者的博客，分享Java干货，VPS知识，软件推荐等。valine-admin👍
+# - nickname: 赵俊 (未发现友链)
+#   avatar: https://zhaojun.vip/uploads/avatar.gif
+#   url: https://zhaojun.vip
+#   description: 一个Java学习者的博客，分享Java干货，VPS知识，软件推荐等。valine-admin👍
 - nickname: hojun
-  avatar: https://cdn.jsdelivr.net/gh/honjun/ImageHosting/sina/006bYVyvgy1ftand2qurdj303c03cdfv.jpg
+  # avatar: https://cdn.jsdelivr.net/gh/honjun/ImageHosting/sina/006bYVyvgy1ftand2qurdj303c03cdfv.jpg
   url: https://www.hojun.cn
   description: 一个好奇的博客！前端开发。
 - nickname: AnFrank
@@ -38,16 +38,16 @@
   avatar: https://avatars2.githubusercontent.com/u/49894775?s=460&v=4
   url: https://me.obey.fun
   description: 分享，成为你我之间的快乐！
-- nickname: Wizzie
-  avatar: https://cdn.jsdelivr.net/gh/AloneAlive/alonealive.github.com_images@1.0.3/2020_images/website_img/head.png
-  url: https://wizzie.top
-  description: “Brave, Confident, Come on!”
+# - nickname: Wizzie (未发现友链)
+#   avatar: https://cdn.jsdelivr.net/gh/AloneAlive/alonealive.github.com_images@1.0.3/2020_images/website_img/head.png
+#   url: https://wizzie.top
+#   description: “Brave, Confident, Come on!”
 - nickname: 星空无限
   avatar: https://liyangzone.com/medias/avatar.jpg
   url: https://liyangzone.com
   description: 前端开发，骑行爱好者，分享技术、分享生活。Front-End Developer
 - nickname: 北宸
-  avatar: https://cdn.jsdelivr.net/gh/leafjame/cdn/img/logo/beichen.png
+  # avatar: https://cdn.jsdelivr.net/gh/leafjame/cdn/img/logo/beichen.png
   url: https://www.liaofuzhan.com
   description: “Java狮 北漂男 摄影 旅行 赚钱”
 - nickname: Lars Cheng
@@ -62,12 +62,12 @@
   avatar: https://removeif.github.io/images/avatar.jpg
   url: https://removeif.github.io
   description: 后端开发，技术分享
-- nickname: Best-yz
-  avatar: https://cdn.jsdelivr.net/gh/HPU-Yz/cdn-speed/medias/avatar.jpg
-  url: https://best-yz.cn
-  description: 生活还是很美好滴…
+# - nickname: Best-yz (无法访问)
+#   avatar: https://cdn.jsdelivr.net/gh/HPU-Yz/cdn-speed/medias/avatar.jpg
+#   url: https://best-yz.cn
+#   description: 生活还是很美好滴…
 - nickname: 木子雷
-  avatar: https://cdn.jsdelivr.net/gh/leishen6/ImgHosting/MuZiLei_blog_img/Heart.png
+  avatar: https://leishen6.github.io/img/logo.png
   url: https://leishen6.github.io
   description: web后端码仔，记录生活，分享技术！
 - nickname: HominSu
