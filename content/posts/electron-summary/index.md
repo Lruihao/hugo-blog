@@ -36,7 +36,7 @@ electron 由两种进程组成，包括`主进程`和 0 个或 n 个`渲染进�
 
 electron 整合了 Node 和浏览器的所有能力，可以随意发挥这些技术栈的特点。由于固定浏览器内核，可以无需考虑兼容性地使用 html/js/css 新特性。
 
-### 镜像仓库
+### 安装
 
 安装 electron 时，可能因为网络问题导致下载失败，需要使用镜像仓库来下载。
 
@@ -46,6 +46,8 @@ electron 整合了 Node 和浏览器的所有能力，可以随意发挥这些�
 # 13.1.7 版本 下载链接可能会拼错导致 404，要设置成 https://registry.npmmirror.com/-/binary/electron/v
 npm config set electron_mirror=https://npmmirror.com/mirrors/electron/
 ```
+
+M1 Mac 安装较低版本 electron 时可能会报错，`Failed to find Electron v xxx for darwin-arm64`，因为这些版本的 electron 不支持 darwin-arm64 架构。Apple 针对未适配的 X64 应用提供了 Rosetta2 转换器，安装 darwin-x64 版本的 electron 在 Intel 模式下运行即可，[参考](https://www.jianshu.com/p/b1b3577fd373)。
 
 ### remote
 
@@ -244,6 +246,8 @@ windows 系统打包配置，当没有配置签名时，`sign` 字段应删除�
   }
 }
 ```
+
+注：win11 打包在 win10 上可能运行不了，最好使用 win10 打包或者 mac 打包指定系统和位数。
 
 #### macOS 打包
 
