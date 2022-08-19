@@ -128,7 +128,7 @@ npm version patch # 升级补丁版本
 npm version minor # 升级小版号
 npm version major # 升级大版号
 # 下架 [-force]
-upm unpublish
+npm unpublish
 ```
 
 ## [FAQ](https://semver.org/lang/zh-CN/#faq)
