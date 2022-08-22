@@ -1,13 +1,15 @@
 ---
-title: "语义版本控制（Semver）"
+title: "语义版本控制（SemVer）"
 date: 2022-08-13T13:32:03+08:00
 tags:
-- Semver
+- SemVer
 categories:
 - Memo
 resources:
 - name: featured-image
   src: images/featured-image.png
+code:
+  maxShownLines: 10
 ---
 
 {{< admonition tip "摘要" >}}
@@ -42,7 +44,7 @@ resources:
 | 首次发布             | 新品发布     | 以 1.0.0 开始                                    | 1.0.0    |
 | bug 修复，向后兼容    | 补丁版本发布 | 变更第三位数字                                 | 1.0.1    |
 | 新功能，向后兼容     | 次版本发布   | 变更第二位数字，并且第三位数字重置为 0         | 1.1.0    |
-| 重大变更，不想后兼容 | 主版本发布   | 变更第一位数字，并且第二位，第三位数字重置为 0 | 2.0.0    |
+| 重大变更，不向后兼容 | 主版本发布   | 变更第一位数字，并且第二位，第三位数字重置为 0 | 2.0.0    |
 
 {{< admonition question "“v1.2.3” 是一个语义化版本号吗？" >}}
 “v1.2.3” 并不是的一个语义化的版本号。  
@@ -110,28 +112,80 @@ resources:
 
 最终发布版本（`RELEASE`）之前的所有版本，都称为先行版本（`pre-release`）。
 
-## npm 包发布
+## [FAQ](https://semver.org/lang/zh-CN/#faq)
 
-通常我们发布一个包到 npm 仓库时，我们的做法是先修改 package.json 为某个版本，然后执行 npm publish 命令。手动修改版本号的做法建立在你对 Semver 规范特别熟悉的基础之上，否则可能会造成版本混乱。npm 考虑到了这点，它提供了相关的命令来让我们更好的遵从 Semver 规范：
+## 其他相关
+
+### npm SemVer
+
+通常我们发布一个包到 npm 仓库时，我们的做法是先修改 `package.json` 为某个版本，然后执行 `npm publish` 命令。手动修改版本号的做法建立在你对 SemVer 规范特别熟悉的基础之上，否则可能会造成版本混乱。npm 和 yarn 两个包管理都提供了 SemVer 规范的版本控制命令：
+
+- [npm-version](https://docs.npmjs.com/cli/v8/commands/npm-version)
+- [yarn version](https://classic.yarnpkg.com/en/docs/cli/version)
+
+npm 发包基础命令：
 
 ```bash
-# npm 发包
+# 1. 创建一个新的包
 npm init
-# 1. 查看是否官方源
+# 2. 查看是否官方源
 npm config get registry 
-# 2. 登录
+# 3. 登录
 npm login
-# 3. 发布
+# 4. 发布
 npm publish
+
 # 版本变化 major.minor.patch
 npm version patch # 升级补丁版本 
 npm version minor # 升级小版号
 npm version major # 升级大版号
+
 # 下架 [-force]
 npm unpublish
+
+# 全局设置版本号前缀
+# https://docs.npmjs.com/cli/v8/using-npm/config#tag-version-prefix
+npm config set tag-version-prefix ""
+# 全局设置版本更新 commit 提交信息
+# https://docs.npmjs.com/cli/v8/using-npm/config#message
+npm config set message "Chore: release version %s"
 ```
 
-## [FAQ](https://semver.org/lang/zh-CN/#faq)
+package.json 版本控制规则使用了一些些符号：
+
+- `^`
+- `~`
+- `>`
+- `>=`
+- `<`
+- `<=`
+- `=`
+- `-`
+- `||`
+
+这些规则的详情如下：
+
+- `^`: 只会执行不更改最左边非零数字的更新。 如果写入的是 `^0.13.0`，则当运行 `npm update` 时，可以更新到 `0.13.1`、`0.13.2` 等，但不能更新到 `0.14.0` 或更高版本。 如果写入的是 `^1.13.0`，则当运行 `npm update` 时，可以更新到 `1.13.1`、`1.14.0` 等，但不能更新到 `2.0.0` 或更高版本。
+- `~`: 如果写入的是 `〜0.13.0`，则当运行 `npm update` 时，会更新到补丁版本：即 `0.13.1` 可以，但 `0.14.0` 不可以。
+- `>`: 接受高于指定版本的任何版本。
+- `>=`: 接受等于或高于指定版本的任何版本。
+- `<=`: 接受等于或低于指定版本的任何版本。
+- `<`: 接受低于指定版本的任何版本。
+- `=`: 接受确切的版本。
+- `-`: 接受一定范围的版本。例如：`2.1.0 - 2.6.2`。
+- `||`: 组合集合。例如 `< 2.1 || > 2.6`。
+
+可以合并其中的一些符号，例如 `1.0.0 || >=1.1.0 <1.2.0`，即使用 1.0.0 或从 1.1.0 开始但低于 1.2.0 的版本。
+
+还有其他的规则：
+
+- 无符号：仅接受指定的特定版本（例如 `1.2.1`）。
+- `latest`: 使用可用的最新版本。
+
+### 版本保留
+
+1. 对于大型软件，每个版本都有使用价值时，应保留所有历史版本
+2. 对于始终以最新版本为准的软件，则可保留至少最近的 10 个次版本
 
 ## 参考
 
