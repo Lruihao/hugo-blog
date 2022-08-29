@@ -142,13 +142,28 @@ npm version major # 升级大版号
 
 # 下架 [-force]
 npm unpublish
+```
 
-# 全局设置版本号前缀
+全局设置版本号前缀
+
+```bash
 # https://docs.npmjs.com/cli/v8/using-npm/config#tag-version-prefix
 npm config set tag-version-prefix ""
 # 全局设置版本更新 commit 提交信息
 # https://docs.npmjs.com/cli/v8/using-npm/config#message
-npm config set message "Chore: release version %s"
+npm config set message "Chore(release): %s"
+```
+
+或者设置项目的 `.npmrc` 或者 `.yarnrc`
+
+```bash
+# .npmrc
+tag-version-prefix=""
+message="Chore(release): %s"
+
+# .yarnrc
+version-tag-prefix ""
+version-git-message "Chore(release): %s"
 ```
 
 package.json 版本控制规则使用了一些些符号：
