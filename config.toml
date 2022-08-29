@@ -23,71 +23,86 @@ theme = "FixIt"
 [menu]
   [[menu.main]]
     identifier = "posts"
-    pre = "<i class='fa-solid fa-archive fa-fw fa-sm'></i>"
+    pre = ""
     post = ""
     name = "所有文章"
     url = "/posts/"
     title = ""
     weight = 1
+    [menu.main.params]
+      icon = "fa-solid fa-archive"
   [[menu.main]]
     identifier = "categories"
-    pre = "<i class='fa-solid fa-th fa-fw fa-sm'></i>"
+    pre = ""
     post = ""
     name = "分类"
     url = "/categories/"
     title = ""
     weight = 2
+    [menu.main.params]
+      icon = "fa-solid fa-th"
   [[menu.main]]
     identifier = "tags"
-    pre = "<i class='fa-solid fa-tags fa-fw fa-sm'></i>"
+    pre = ""
     post = ""
     name = "标签"
     url = "/tags/"
     title = ""
     weight = 3
+    [menu.main.params]
+      icon = "fa-solid fa-tags"
   [[menu.main]]
     identifier = "friends"
-    pre = "<i class='fa-solid fa-users fa-fw fa-sm'></i>"
+    pre = ""
     post = ""
     name = "友链"
     url = "/friends/"
     title = "友情链接"
     weight = 4
+    [menu.main.params]
+      icon = "fa-solid fa-users"
   [[menu.main]]
     identifier = "img"
     parent = "about"
-    pre = "<i class='fa-solid fa-photo-video fa-fw fa-sm'></i>"
+    pre = ""
     post = ""
     name = "相册"
     url = "https://img.lruihao.cn"
     title = "COS Album"
     weight = 5
+    [menu.main.params]
+      icon = "fa-solid fa-photo-video"
   [[menu.main]]
     identifier = "guestbook"
-    pre = "<i class='fa-solid fa-comments fa-fw fa-sm'></i>"
+    pre = ""
     post = ""
     name = "留言"
     url = "/guestbook/"
     title = ""
     weight = 6
+    [menu.main.params]
+      icon = "fa-solid fa-comments"
   [[menu.main]]
     identifier = "about"
-    pre = "<i class='fa-solid fa-user-tie fa-fw fa-sm'></i>"
+    pre = ""
     post = ""
     name = "關於"
     url = "/about/"
     title = ""
     weight = 7
+    [menu.main.params]
+      icon = "fa-solid fa-user-tie"
   [[menu.main]]
     identifier = "github"
-    pre = "<i class='fa-brands fa-github fa-fw'></i>"
+    pre = "<i class='fa-brands fa-github fa-fw' aria-hidden='true'></i>"
     post = ""
     name = ""
     url = "https://github.com/Lruihao/hugo-blog"
     title = "GitHub"
     weight = ""
     [menu.main.params]
-      class = "d-none-desktop text-center"
+      class = "text-center"
+      type = "mobile"
 
 # -------------------------------------------------------------------------------------
 # Theme Core Configuration Settings

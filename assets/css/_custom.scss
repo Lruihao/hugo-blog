@@ -30,7 +30,7 @@
   }
 }
 
-.home[posts] .summary .content {
+.home.posts .summary .content {
   display: block;
 }
 
@@ -55,7 +55,7 @@
 // ==============================
 // Dark style
 // ==============================
-[theme='dark'] {
+[data-theme='dark'] {
   .single {
     .single-subtitle {
       color: inherit;
