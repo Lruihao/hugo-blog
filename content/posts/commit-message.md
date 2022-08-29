@@ -5,6 +5,8 @@ tags:
 - Git
 categories:
 - Git
+
+twemoji: false
 ---
 
 A commit message is a short description of a change to a repository. We should follow certain standards to describe changes efficiently, such as:
