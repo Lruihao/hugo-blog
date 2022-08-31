@@ -6,10 +6,6 @@ comment: false
 ---
 
 <img src="https://ghchart.rshah.org/Lruihao.svg" title="Lruihao's Github chart" alt="Lruihao's Github chart" style="width:100%;"/>
-<div style="display:flex;justify-content:space-around;">
-<img src="https://github-readme-stats.vercel.app/api?username=Lruihao&show_icons=true&count_private=true" title="Lruihao's GitHub stats" alt="Lruihao's GitHub stats" style="width:54%;"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lruihao&layout=compact&hide=html" title="Top Langs for Lruihao" alt="Top Langs for Lruihao" style="width:45.06%;"/>
-</div>
 
 {{< admonition quote ":(fa-regular fa-clock): 2018-05-28 20:01:01" >}}
 {{< typeit group=expect >}}
