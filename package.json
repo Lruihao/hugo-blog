@@ -5,8 +5,8 @@
   "scripts": {
     "algolia": "atomic-algolia",
     "build": "hugo -v --gc --minify",
-    "server": "hugo server --disableFastRender --navigateToChanged",
-    "server:production": "hugo server -D --disableFastRender --navigateToChanged --environment production",
+    "server": "hugo server -D --disableFastRender --navigateToChanged",
+    "server:production": "npm run server -- --environment production",
     "update:theme": "git submodule update --remote --merge && git add themes/FixIt && git commit -m ':arrow_up: Chore: update FixIt theme version'",
     "qcloudcdn": "node .scripts/qcloudcdn.js $SECRET_ID $SECRET_KEY"
   },
