@@ -4,7 +4,7 @@
   "description": "Lruihao's Note",
   "scripts": {
     "algolia": "atomic-algolia",
-    "build": "hugo -v --gc --minify",
+    "build": "hugo -v --gc --minify -D",
     "server": "hugo server --disableFastRender --navigateToChanged",
     "server:production": "hugo server --disableFastRender --navigateToChanged --environment production",
     "update:theme": "git submodule update --remote --merge && git add themes/FixIt && git commit -m ':arrow_up: Chore: update FixIt theme version'",

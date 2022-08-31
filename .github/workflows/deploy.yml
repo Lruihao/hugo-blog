@@ -26,7 +26,7 @@ jobs:
           hugo-version: latest
           extended: true
       - name: Build Hugo static files
-        run: hugo -v --gc --minify
+        run: hugo -v --gc --minify -D
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
