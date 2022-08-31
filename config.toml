@@ -7,7 +7,7 @@ enableRobotsTXT = true
 enableEmoji = true
 enableGitInfo = true
 relativeURLs = false
-buildDrafts = true
+buildDrafts = false
 summaryLength = 150
 theme = "FixIt"
 

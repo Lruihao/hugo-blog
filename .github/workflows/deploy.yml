@@ -20,13 +20,15 @@ jobs:
           ssh-key: ${{ secrets.SYNC_CONTENT }}
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      - name: Install
+        run: npm install
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: latest
           extended: true
-      - name: Build Hugo static files
-        run: hugo -v --gc --minify -D
+      - name: Build
+        run: npm run build
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -35,8 +37,6 @@ jobs:
           publish_branch: main
           publish_dir: ./public
           commit_message: ":rocket: ${{ github.event.head_commit.message }}"
-      - name: NPM install
-        run: npm install
       - name: Update Algolia index
         env:
           ALGOLIA_APP_ID: MTJNHU0JVB
