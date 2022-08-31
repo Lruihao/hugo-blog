@@ -93,7 +93,7 @@ ncu -u vue
 
 electron 相关配置
 
-```bash 
+```bash
 # 设置 electron 镜像仓库
 # https://registry.npmmirror.com/-/binary/electron
 # 13.1.7 版本 下载链接可能会拼错导致 404，要设置成 https://registry.npmmirror.com/-/binary/electron/v
@@ -109,6 +109,7 @@ Custom actions
 
 {{< admonition tip >}}
 根据不同的 shell 程序选择不同的文件后缀名，并给文件增加可执行权限：
+
 - zsh: `.zsh`
 - bash: `.sh`
 {{< /admonition >}}
@@ -190,6 +191,7 @@ export WORKSPACE="$HOME/workspace"
 alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
 alias mysql=/usr/local/mysql/bin/mysql
 alias mysqladmin=/usr/local/mysql/bin/mysqladmin
+alias incr="source $WORKSPACE/.shell/incr*.zsh"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
@@ -220,7 +222,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JMETER_HOME/l
 export PATH=$PATH:$HOME/Applications/platform-tools
 
 # Electron-Mac app development
-export CSC_LINK=WORKSPACE/mac_app_dev/Mac.p12
+export CSC_LINK=$WORKSPACE/mac_app_dev/Mac.p12
 export CSC_KEY_PASSWORD=xxxxxxxxx
 
 # yarn
@@ -228,7 +230,20 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # zsh custom plugin
 # https://mimosa-pudica.net/zsh-incremental.html
-source $WORKSPACE/.shell/incr*.zsh
+# source $WORKSPACE/.shell/incr*.zsh
+
+# Qcloud secret key-value
+export SECRET_ID=""
+export SECRET_KEY=""
+
+# golang
+export GOROOT=/usr/local/go
+export GOBIN=$GOROOT/bin
+export PATH=$PATH:$GOBIN
+export GOPATH=$HOME/go
+export GOPROXY=https://goproxy.cn
+# Go work bin
+export PATH=$PATH:$GOPATH/bin
 ```
 
 ### .vimrc
