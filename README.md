@@ -1,11 +1,11 @@
-# Hugo Blog
+# Lruihao Blog (Hugo)
 
 [![Hugo](https://img.shields.io/badge/Hugo-%5E0.84.0-ff4088?style=flat&logo=hugo)](https://gohugo.io/)
 [![License](https://img.shields.io/github/license/Lruihao/hugo-blog?style=flat)](https://github.com/Lruihao/hugo-blog/blob/main/LICENSE)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Lruihao/hugo-blog/Hugo%20build%20and%20deploy?logo=githubactions)](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml)
 [![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/m/Lruihao/hugo-blog/main?style=flat)](https://github.com/Lruihao/hugo-blog/commits/main)
 
-> A markdown blog project base on [Hugo](https://github.com/gohugoio/hugo) and theme [FixIt](https://github.com/Lruihao/FixIt).
+> This is Lruihao's front-end technical blog, powered by [Hugo](https://github.com/gohugoio/hugo) and theme [FixIt](https://github.com/Lruihao/FixIt).
 
 ## Directory structure
 
@@ -27,7 +27,7 @@
 ## Installation
 
 1. Go to [Hugo Releases](https://github.com/gohugoio/hugo/releases) and download the lastest `hugo_extended` version, e.g.
-   
+
     - `hugo_extended_0.88.1_Windows-64bit.zip`
     - `hugo_extended_0.88.1_macOS-ARM64.tar.gz`
 
@@ -55,17 +55,16 @@ hugo server --disableFastRender --navigateToChanged --environment production
 Run `hugo_main.sh` to choice frequently-used Hugo commands:
 
 ```bash
-cd hugo-blog/.shell
-sh hugo_main.sh
+cd hugo-blog/.shell && sh hugo_main.sh
 ```
 
-```
+```text
 --------------Hugo Admin--------------
 Please enter the serial number to work
 --------------------------------------
-1. new
-2. start
-3. start-production
+1. post
+2. server
+3. server:production
 4. build
 5. submodule-sync
 6. push

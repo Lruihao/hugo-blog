@@ -3,9 +3,9 @@
 echo "--------------Hugo Admin--------------"
 echo "Please enter the serial number to work"
 echo "--------------------------------------"
-echo "1. new"
-echo "2. start"
-echo "3. start-production"
+echo "1. post"
+echo "2. server"
+echo "3. server:production"
 echo "4. build"
 echo "5. submodule-sync"
 echo "6. push"
@@ -18,13 +18,13 @@ case $num in
     sh post_generator.sh
     ;;
   2)
-    sh hugo_server.sh
+    hugo server --disableFastRender --navigateToChanged --source=../
     ;;
   3)
-    sh hugo_server_production.sh
+    hugo server --disableFastRender --navigateToChanged --environment production --source=../
     ;;
   4)
-    sh hugo_builder.sh
+    hugo -v --gc --minify --source=../
     ;;
   5)
     sh submodule_sync.sh
