@@ -1,8 +1,8 @@
 /**
+ * Custom javascript for Lruihao blog.
  * @author @Lruihao https://lruihao.cn
- * @description Custom javascript for hugo-blog.
  */
-const CustomJS = new (function () {
+const Blog = new (function () {
   /**
    * Current environment is local or not.
    * @type {Boolean}
@@ -12,7 +12,7 @@ const CustomJS = new (function () {
   /**
    * Baidu auto push.
    * @link https://ziyuan.baidu.com
-   * @returns {CustomJS}
+   * @returns {Blog}
    */
   this.baiduPush = () => {
     var bp = document.createElement('script');
@@ -29,7 +29,7 @@ const CustomJS = new (function () {
   /**
    * Baidu statistics.
    * @link https://tongji.baidu.com
-   * @returns {CustomJS}
+   * @returns {Blog}
    */
   this.baiduStatistics = () => {
     var _hmt = _hmt || [];
@@ -41,7 +41,7 @@ const CustomJS = new (function () {
   };
   /**
    * Console some infomation
-   * @returns {CustomJS}
+   * @returns {Blog}
    */
   this.consoleInfo = () => {
     console.log(
@@ -59,7 +59,7 @@ const CustomJS = new (function () {
   /**
    * Rest in Peace. R.I.P 🕯️
    * @2022-3-28 [3.21-mu5735] 沉痛哀悼 132 名遇难同胞：东航航班失事，遇难者含旅客 123 人，机组 9 人
-   * @returns {CustomJS}
+   * @returns {Blog}
    */
   this.RIP = () => {
     if (new Date() < new Date('2022-03-31')) {
@@ -70,15 +70,15 @@ const CustomJS = new (function () {
 
   /**
    * Initialize.
-   * @returns {CustomJS}
+   * @returns {Blog}
    */
   this.init = () => {
     if (!this.isLocal) {
       // SEO etc.
       this.baiduStatistics().baiduPush();
     }
-    // this.RIP();
     // Custom infos.
+    // this.RIP();
     this.consoleInfo();
     return this;
   };
@@ -88,7 +88,7 @@ const CustomJS = new (function () {
  * Immediate.
  */
 (() => {
-  CustomJS.init();
+  Blog.init();
   // It will be executed when the DOM tree is built.
   document.addEventListener('DOMContentLoaded', () => {});
 })();

@@ -333,15 +333,15 @@ theme = "FixIt"
       warning = 180
       # If the article expires, close the comment or not
       closeComment = true
-    # FixIt CHANGED | 0.2.0 KaTeX mathematical formulas
+    # FixIt 0.2.16 | CHANGED KaTeX mathematical formulas
     [params.page.math]
-      enable = false
-      # default block delimiter is $$ ... $$ and \\[ ... \\]
-      blockLeftDelimiter = ""
-      blockRightDelimiter = ""
-      # default inline delimiter is $ ... $ and \\( ... \\)
+      enable = true
+      # default inline delimiter is $ ... $ and \( ... \)
       inlineLeftDelimiter = ""
       inlineRightDelimiter = ""
+      # default block delimiter is $$ ... $$, \[ ... \], \begin{equation} ... \end{equation} and some other functions
+      blockLeftDelimiter = ""
+      blockRightDelimiter = ""
       # KaTeX extension copy_tex
       copyTex = true
       # KaTeX extension mhchem
@@ -536,12 +536,6 @@ theme = "FixIt"
     # whether to use object-fit-images to be compatible with older browsers
     objectFit = false
 
-  # FixIt NEW | 0.2.12 Custom JS at last
-  # "_custom.js" located in "themes/FixIt/assets/js/"
-  # you can store your custom JS file in the same path under your project:
-  # "assets/js/_custom.js"
-  [params.customJS]
-    enable = true
   # FixIt NEW | 0.2.14 GitHub banner in the top-right or top-left corner
   [params.githubCorner]
     enable = true
@@ -553,6 +547,22 @@ theme = "FixIt"
     # Gravatar host, default: "www.gravatar.com"
     host = "gravatar.loli.net" # "cn.gravatar.com", "gravatar.loli.net"
     style = "mp" # "", mp, identicon, monsterid, wavatar, retro, blank, robohash
+  # FixIt 0.2.16 | NEW Back to top
+  [params.backToTop]
+    enable = true
+    # Scroll percent label in b2t button
+    scrollpercent = true
+  # FixIt 0.2.16 | NEW Reading progress bar
+  [params.readingProgress]
+    enable = true
+    # Available values: ["left", "right"]
+    start = "left"
+    # Available values: ["top", "bottom"]
+    position = "top"
+    reversed = false
+    light = "var(--fi-success)"
+    dark = "var(--fi-success-dark)"
+    height = "2px"
   # FixIt 0.2.15 | NEW Developer options
   [params.dev]
     enable = false
