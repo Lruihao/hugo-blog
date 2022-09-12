@@ -13,7 +13,7 @@ resources:
   src: images/featured-image.png
 ---
 
-记录 GO 及 Beego 框架安装及基础配置
+记录 GO 及 Beego 框架安装及基础配置。
 
 <!--more-->
 
