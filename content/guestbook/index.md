@@ -9,7 +9,7 @@ library:
 
 {{< admonition tip "Welcome" >}}
 {{< typeit >}}
-  互联网的光大朋友们，欢迎光临我的小博客！欢迎留言！
+  互联网的广大朋友们，欢迎光临我的小博客！欢迎留言！
 {{< /typeit >}}
 
 <small>*关于 [FixIt 主题](https://github.com/hugo-fixit/FixIt) 的问题，请移步 [FixIt 官网](https://fixit.lruihao.cn) 相关文章哦～*</small>
@@ -69,7 +69,7 @@ function getRandomComment() {
   .then((comment) => {
     document.querySelector('.pic-backdrop').style.backgroundImage = `url(${comment.data.picurl.slice(5)})`;
     document.querySelector('.comment-avatar').alt = `${comment.data.nickname}'s avatar`;
-    document.querySelector('.comment-avatar').src = comment.data.avatarurl;
+    document.querySelector('.comment-avatar').src = comment.data.avatarurl.slice(5);
     document.querySelector('.comment-avatar').style = '';
     document.querySelector('.comment-nickname').innerHTML = comment.data.nickname;
     document.querySelector('.comment-content').innerHTML = comment.data.content.replace('\n','<br/>');
