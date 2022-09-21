@@ -69,7 +69,7 @@ function getRandomComment() {
   .then((comment) => {
     document.querySelector('.pic-backdrop').style.backgroundImage = `url(${comment.data.picurl.slice(5)})`;
     document.querySelector('.comment-avatar').alt = `${comment.data.nickname}'s avatar`;
-    document.querySelector('.comment-avatar').src = comment.data.avatarurl;
+    document.querySelector('.comment-avatar').src = comment.data.avatarurl.slice(5);
     document.querySelector('.comment-avatar').style = '';
     document.querySelector('.comment-nickname').innerHTML = comment.data.nickname;
     document.querySelector('.comment-content').innerHTML = comment.data.content.replace('\n','<br/>');
