@@ -58,7 +58,7 @@ library:
 
 ---
 
-{{< details "来自网易云歌单 (2280569152)" >}}
+{{< details "来自 [网易云歌单](https://music.163.com/#/playlist?id=2280569152)" >}}
 {{< music server="netease" type="playlist" id="2280569152" loop="all" list-folded="true" >}}
 {{< /details >}}
 
