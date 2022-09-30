@@ -37,7 +37,7 @@
     git clone --recursive git@github.com:Lruihao/hugo-blog.git
     ```
 
-## Start-up
+## Quick Start
 
 There are three ways to start this blog.
 
@@ -50,7 +50,7 @@ hugo server --disableFastRender --navigateToChanged
 hugo server --disableFastRender --navigateToChanged --environment production
 ```
 
-## Shell
+### Shell
 
 Run `hugo_main.sh` to choice frequently-used Hugo commands:
 
