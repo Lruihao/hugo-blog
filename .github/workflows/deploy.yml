@@ -9,6 +9,10 @@ on:
       - 'static/**'
       - 'themes/**'
       - 'config.toml'
+    workflow_run:
+    workflows: ['Update theme']
+    types:
+      - completed
   workflow_dispatch:
 jobs:
   Actions-Hugo-Deploy:
@@ -36,7 +40,10 @@ jobs:
           external_repository: Lruihao/lruihao.github.io
           publish_branch: main
           publish_dir: ./public
-          commit_message: ":rocket: ${{ github.event.head_commit.message }}"
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: ':rocket: ${{ github.event.head_commit.message }}'
+          force_orphan: true
       - name: Update Algolia index
         env:
           ALGOLIA_APP_ID: MTJNHU0JVB

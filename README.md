@@ -34,7 +34,7 @@
 2. Clone the blog source
 
     ```bash
-    git clone --recursive git@github.com:Lruihao/hugo-blog.git hugo-blog
+    git clone --recursive git@github.com:Lruihao/hugo-blog.git
     ```
 
 ## Start-up
@@ -55,7 +55,7 @@ hugo server --disableFastRender --navigateToChanged --environment production
 Run `hugo_main.sh` to choice frequently-used Hugo commands:
 
 ```bash
-cd hugo-blog/.shell && sh hugo_main.sh
+cd .shell && sh hugo_main.sh
 ```
 
 ```text
