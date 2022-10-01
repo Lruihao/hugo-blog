@@ -1,6 +1,7 @@
 [submodule "themes/FixIt"]
 	path = themes/FixIt
 	url = git@github.com:hugo-fixit/FixIt.git
+	branch = dev
 [submodule "private"]
 	path = content/private
 	url = git@github.com:Lruihao/blog-private.git
