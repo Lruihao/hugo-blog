@@ -7,7 +7,7 @@
     "build": "hugo -v --gc --minify",
     "server": "hugo server -D --disableFastRender --navigateToChanged",
     "server:production": "npm run server -- --environment production",
-    "update:theme": "git submodule update --remote --merge && git add themes/FixIt && git commit -m ':arrow_up: Chore(theme): update FixIt version'",
+    "update:theme": "git submodule update --remote --merge themes/FixIt && git add . && git commit -m ':arrow_up: Chore(theme): update FixIt version'",
     "qcloudcdn": "node .scripts/qcloudcdn.js $SECRET_ID $SECRET_KEY"
   },
   "repository": {

@@ -9,18 +9,29 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  Update-FixIt:
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
-      - name: 🛎️ Checkout code
+      - name: Check out repository code
         uses: actions/checkout@v3
         with:
+          ssh-key: ${{ secrets.SYNC_CONTENT }}
           submodules: true
           fetch-depth: 0
 
-      - name: ⬆️ Update theme
+      - name: Update theme
+        run: git submodule update --remote --merge themes/FixIt
+      
+      - name: Change remote origin
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          npm run update:theme
-          git push --force-with-lease
+          git remote remove origin
+          git remote add origin https://github.com/Lruihao/hugo-blog.git
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: main
+          commit_message: ':arrow_up: Chore(theme): update FixIt version'
+          commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
+          push_options: '--set-upstream'
