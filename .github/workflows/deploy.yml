@@ -9,7 +9,7 @@ on:
       - 'static/**'
       - 'themes/**'
       - 'config.toml'
-    workflow_run:
+  workflow_run:
     workflows: ['Update theme']
     types:
       - completed
