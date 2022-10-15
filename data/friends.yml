@@ -39,7 +39,7 @@
   url: https://me.obey.fun
   description: 分享，成为你我之间的快乐！
 - nickname: Wizzie
-  avatar: https://cdn.jsdelivr.net/gh/AloneAlive/alonealive.github.com_images@1.0.3/2020_images/website_img/head.png
+  avatar: https://wizzie.top/Blog/img/head.jpg
   url: https://wizzie.top/Blog/
   description: “Brave, Confident, Come on!”
 - nickname: 星空无限
@@ -71,9 +71,13 @@
   url: https://leishen6.github.io
   description: web后端码仔，记录生活，分享技术！
 - nickname: HominSu
-  avatar: https://www.hauhau.cn/uploads/logo.png
+  avatar: https://www.hauhau.cn/img/logo.png
   url: https://www.hauhau.cn
   description: 哈喽啊～各位
+- nickname: Andreo Y.
+  avatar: https://pigco-1313228125.cos.ap-shanghai.myqcloud.com/img/JQAeX6iE9f1RKTu.jpg
+  url: https://andreoy.cn
+  description: To sail beyond the sunset.
 # - nickname: 暂时不接受友链
 #   avatar:
 #   url: https://lruihao.cn
