@@ -31,11 +31,14 @@ lightgallery: false
 seo:
   images: []
 
+expirationReminder:
+  enable: false
 type: "posts"
+reward: false
 ---
 
 {{< admonition quote "quote" false >}}
-note abstract info tip success question warning failure danger bug example quote 
+note abstract info tip success question warning failure danger bug example quote
 {{< /admonition >}}
 
 <!--more-->
