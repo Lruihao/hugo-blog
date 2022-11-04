@@ -30,8 +30,14 @@
   }
 }
 
-.home.posts .summary .content {
-  display: block;
+.home {
+  .profile-ghchart {
+    width: MIN(663px, 100%);
+    aspect-ratio: 663/104;
+  }
+  &.posts .summary .content {
+    display: block;
+  }
 }
 
 // Custom font
