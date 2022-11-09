@@ -5,7 +5,7 @@ type: "friends"
 description: "Lruihao's friends"
 keywords: 
   - Hugo
-  - friends tempalate
+  - friends template
 ---
 
 <!--
