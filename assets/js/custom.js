@@ -59,10 +59,11 @@ const Blog = new (function () {
   /**
    * Rest in Peace. R.I.P 🕯️
    * @2022-3-28 [3.21-mu5735] 沉痛哀悼 132 名遇难同胞：东航航班失事，遇难者含旅客 123 人，机组 9 人
+   * @2022-12-03 江泽民同志逝世，享年96岁
    * @returns {Blog}
    */
   this.RIP = () => {
-    if (new Date() < new Date('2022-03-31')) {
+    if (new Date() < new Date('2022-12-03')) {
       document.querySelector('html').style.filter = 'grayscale(100%)';
     }
     return this;
@@ -78,7 +79,7 @@ const Blog = new (function () {
       this.baiduStatistics().baiduPush();
     }
     // Custom infos.
-    // this.RIP();
+    this.RIP();
     this.consoleInfo();
     return this;
   };
