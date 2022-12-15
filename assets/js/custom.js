@@ -79,7 +79,7 @@ const Blog = new (function () {
       this.baiduStatistics().baiduPush();
     }
     // Custom infos.
-    this.RIP();
+    // this.RIP();
     this.consoleInfo();
     return this;
   };
