@@ -662,7 +662,7 @@ theme = "FixIt"
 [Permalinks]
   # posts = ":year/:month/:filename"
   posts = "posts/:filename"
-  private = "/:filename"
+  private = ":sections[1:]/:filename"
 
 # Privacy config
 [privacy]
