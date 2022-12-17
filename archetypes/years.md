@@ -3,38 +3,20 @@ title: "{{ now.Year }} 年度总结"
 subtitle: ""
 date: {{ .Date }}
 draft: true
-description: ""
-keywords: ""
-license: ""
 comment: false
-
 tags:
-- draft
+- Summaries
 categories:
-- draft
-
+- Summaries
 hiddenFromHomePage: false
-hiddenFromSearch: false
-
-summary: ""
-resources:
-- name: featured-image
-  src: featured-image.jpg
-- name: featured-image-preview
-  src: featured-image-preview.jpg
-
-toc:
-  enable: true
-math:
-  enable: false
-lightgallery: false
-seo:
-  images: []
-
+hiddenFromSearch: true
 expirationReminder:
   enable: false
 type: "posts"
 reward: false
+password: ""
+message: ""
+type: "posts"
 ---
 
 {{< admonition quote "quote" false >}}
