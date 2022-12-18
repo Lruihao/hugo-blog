@@ -209,14 +209,18 @@ theme = "FixIt"
     author = true
     # Site creation year
     since = 2018
-    # FixIt NEW | 0.2.14 Site creation time
-    siteTime = '2018-05-28T20:01:01+08:00'
     # FixIt NEW | 0.2.12 Public network security only in China (HTML format is supported)
     gov = '<a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target="_blank">湘公网安备 43030402000254 号</a>'
     # ICP info only in China (HTML format is supported)
     icp = '<a rel="external nofollow noopener noreferrer" href="https://beian.miit.gov.cn" target="_blank">湘 ICP 备18020535 号</a>'
     # license info (HTML format is supported)
     license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    # FixIt 0.2.17 | CHANGED Site creation time
+    [params.footer.siteTime]
+      animate = true
+      icon = "fa-solid fa-heartbeat"
+      pre = "博客已运行"
+      value = "2018-05-28T20:01:01+08:00"
 
   # FixIt NEW | 0.2.0 Section (all posts) page config
   [params.section]
