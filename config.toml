@@ -480,6 +480,7 @@ theme = "FixIt"
   [params.pangu]
     # For Chinese writing
     enable = true
+    selector = "article" # FixIt 0.2.17 | NEW
 
   # FixIt NEW | 0.2.12 Watermark config
   # Detail config see https://github.com/Lruihao/watermark#readme
