@@ -29,11 +29,11 @@
 - nickname: Domon
   avatar: https://www.domon.cn/content/images/2019/06/avatar_shiba-1.jpg
   url: https://www.domon.cn
-  description: 主要涉及Android端技术，前沿其他技术和生活吐槽。
+  description: 主要涉及 Android 端技术，前沿其他技术和生活吐槽。
 - nickname: mythsman
   avatar: https://blog.mythsman.com/content/images/2019/07/----_20190713220203.jpg
   url: https://blog.mythsman.com
-  description: hexo-douban插件开发者，坐标上海拼多多博客看起来是个很有生活感与学习感的地方。
+  description: hexo-douban 插件开发者，坐标上海拼多多博客看起来是个很有生活感与学习感的地方。
 - nickname: 在线分享网
   avatar: https://avatars2.githubusercontent.com/u/49894775?s=460&v=4
   url: https://me.obey.fun
@@ -62,14 +62,14 @@
   avatar: https://removeif.github.io/images/avatar.jpg
   url: https://removeif.github.io
   description: 后端开发，技术分享
-# - nickname: Best-yz (无法访问)
-#   avatar: https://cdn.jsdelivr.net/gh/HPU-Yz/cdn-speed/medias/avatar.jpg
-#   url: https://best-yz.cn
-#   description: 生活还是很美好滴…
 - nickname: 木子雷
   avatar: https://leishen6.github.io/img/logo.png
   url: https://leishen6.github.io
   description: web后端码仔，记录生活，分享技术！
+- nickname: 十年之约
+  avatar: https://www.foreverblog.cn/favicon.ico
+  url: https://www.foreverblog.cn
+  description: 一个人的寂寞，一群人的狂欢。
 - nickname: HominSu
   avatar: https://www.hauhau.cn/img/logo.png
   url: https://www.hauhau.cn
@@ -82,6 +82,10 @@
   avatar: https://cravatar.cn/avatar/467dd59b914fd9980108b9f7d143d320
   url: https://ayou10031.cn
   description: Try again,do better.
+- nickname: 浅枫沐雪
+  avatar: https://gravatar.loli.net/avatar/79e7d8047e78c312d4e5951b84089cc9
+  url: https://allms.cn
+  description: 愿时光待你温暖如初
 # - nickname: 暂时不接受友链
 #   avatar:
 #   url: https://lruihao.cn
