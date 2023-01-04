@@ -606,14 +606,14 @@ theme = "FixIt"
     # Available values: ["top", "bottom"]
     position = "top"
     reversed = false
-    light = "var(--fi-success)"
-    dark = "var(--fi-success-dark)"
+    light = "#000"
+    dark = "#fff"
     height = "2px"
 
   # FixIt 0.2.17 | NEW Progress bar in the top during page loading.
   # For more information: https://github.com/CodeByZach/pace
   [params.pace]
-    enable = false
+    enable = true
     # All available colors:
     # ["black", "blue", "green", "orange", "pink", "purple", "red", "silver", "white", "yellow"]
     color = "blue"
