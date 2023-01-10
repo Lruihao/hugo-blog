@@ -1,0 +1,16 @@
+# -------------------------------------------------------------------------------------
+# Output Format Definitions
+# See: https://gohugo.io/templates/output-formats/#output-format-definitions
+# -------------------------------------------------------------------------------------
+
+# Options to make output .md files
+[MarkDown]
+  mediaType = "text/markdown"
+  isPlainText = true
+  isHTML = false
+# Options to make output baidu_urls.txt file
+[BaiduUrls]
+  baseName = "baidu_urls"
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false

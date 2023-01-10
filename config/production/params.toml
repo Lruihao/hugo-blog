@@ -1,0 +1,44 @@
+# -------------------------------------------------------------------------------------
+# Theme Core Configuration
+# See: https://fixit.lruihao.cn/theme-documentation-basics/#site-configuration
+# -------------------------------------------------------------------------------------
+
+# FixIt CHANGED | 0.2.14 Comment config
+[page.comment]
+  enable = true
+  [page.comment.valine]
+    enable = true
+    appId = "7HwTRT0Q0Tfrat6ugrT6P67c-gzGzoHsz"
+    appKey = "mhTY1kuUmviCtQwkwOASfsfD"
+    # placeholder = "ヾﾉ≧∀≦)o~ 有事請留言！\n評論功能以郵件作為通知方式！\n如有必要請填寫正確郵箱哦！"
+    placeholder = "ヾﾉ≧∀≦)o~ 有事请留言！\n评论功能以邮件作为通知方式！\n如有必要请填写正确邮箱哦！"
+    avatar = "wavatar"
+    meta= ['nick','mail','link']
+    pageSize = 10
+    lang = "zh-CN"
+    visitor = true
+    recordIP = true
+    highlight = true
+    enableQQ = true
+    serverURLs = ""
+    #  emoji data file name, default is "google.yml"
+    # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
+    # located in "themes/FixIt/assets/data/emoji/" directory
+    # you can store your own data files in the same path under your project:
+    # "assets/data/emoji/"
+    emoji = ""
+    commentCount = true # FixIt NEW | 0.2.13
+
+# FixIt 0.2.12 | NEW Busuanzi count
+[ibruce]
+  enable = true
+  # Enable in post meta
+  # 在文章中开启
+  enablePost = true
+
+# CDN config for third-party library files
+[cdn]
+  # CDN data file name, disabled by default ["jsdelivr.yml", "unpkg.yml", ...]
+  # located in "themes/FixIt/assets/data/cdn/" directory
+  # you can store your own data files in the same path under your project: "assets/data/cdn/"
+  # data = "unpkg.yml"

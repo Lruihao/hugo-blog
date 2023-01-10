@@ -1,0 +1,87 @@
+# -------------------------------------------------------------------------------------
+# Menu Configuration
+# See: https://fixit.lruihao.cn/theme-documentation-basics/#menu-advanced-configuration
+# -------------------------------------------------------------------------------------
+
+[[main]]
+  identifier = "posts"
+  pre = ""
+  post = ""
+  name = "所有文章"
+  url = "/posts/"
+  title = ""
+  weight = 1
+  [main.params]
+    icon = "fa-solid fa-archive"
+[[main]]
+  identifier = "categories"
+  pre = ""
+  post = ""
+  name = "分类"
+  url = "/categories/"
+  title = ""
+  weight = 2
+  [main.params]
+    icon = "fa-solid fa-th"
+[[main]]
+  identifier = "tags"
+  pre = ""
+  post = ""
+  name = "标签"
+  url = "/tags/"
+  title = ""
+  weight = 3
+  [main.params]
+    icon = "fa-solid fa-tags"
+[[main]]
+  identifier = "friends"
+  pre = ""
+  post = ""
+  name = "友链"
+  url = "/friends/"
+  title = "友情链接"
+  weight = 4
+  [main.params]
+    icon = "fa-solid fa-users"
+[[main]]
+  identifier = "img"
+  parent = "about"
+  pre = ""
+  post = ""
+  name = "相册"
+  url = "https://img.lruihao.cn"
+  title = "COS Album"
+  weight = 5
+  [main.params]
+    icon = "fa-solid fa-photo-video"
+[[main]]
+  identifier = "guestbook"
+  pre = ""
+  post = ""
+  name = "留言"
+  url = "/guestbook/"
+  title = ""
+  weight = 6
+  [main.params]
+    icon = "fa-solid fa-comments"
+[[main]]
+  identifier = "about"
+  pre = ""
+  post = ""
+  name = "關於"
+  url = "/about/"
+  title = ""
+  weight = 7
+  [main.params]
+    icon = "fa-solid fa-user-tie"
+[[main]]
+  identifier = "github"
+  pre = "<i class='fa-brands fa-github fa-fw' aria-hidden='true'></i>"
+  post = ""
+  name = ""
+  url = "https://github.com/Lruihao/hugo-blog"
+  title = "GitHub"
+  weight = ""
+  [main.params]
+    class = "text-center"
+    type = "mobile"

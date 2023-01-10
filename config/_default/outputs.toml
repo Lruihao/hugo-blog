@@ -1,0 +1,11 @@
+# -------------------------------------------------------------------------------------
+# Customizing Output Formats
+# See: https://gohugo.io/templates/output-formats/#customizing-output-formats
+# -------------------------------------------------------------------------------------
+
+# Options to make hugo output files
+home = ["HTML", "RSS", "JSON", "BaiduUrls"]
+page = ["HTML", "MarkDown"]
+section = ["HTML", "RSS"]
+taxonomy = ["HTML", "RSS"]
+taxonomyTerm = ["HTML"]
