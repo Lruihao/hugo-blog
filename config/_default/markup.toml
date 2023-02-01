@@ -25,6 +25,8 @@
     taskList = true
     typographer = true
   [goldmark.renderer]
+    # By default, Goldmark ignores newlines within a paragraph. Set to true to render newlines as <br> elements.
+    hardWraps = true
     # whether to use HTML tags directly in the document
     unsafe = true
 
