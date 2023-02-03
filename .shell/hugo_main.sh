@@ -18,10 +18,10 @@ case $num in
     sh post_generator.sh
     ;;
   2)
-    hugo server --disableFastRender --navigateToChanged --source=../
+    hugo server --disableFastRender --navigateToChanged --source=../ --bind 0.0.0.0
     ;;
   3)
-    hugo server --disableFastRender --navigateToChanged --environment production --source=../
+    hugo server --disableFastRender --navigateToChanged --environment production --source=../ --bind 0.0.0.0
     ;;
   4)
     hugo -v --gc --minify --source=../
