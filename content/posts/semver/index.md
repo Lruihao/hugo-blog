@@ -4,7 +4,7 @@ date: 2022-08-13T13:32:03+08:00
 tags:
 - SemVer
 categories:
-- Memo
+- Spec
 resources:
 - name: featured-image
   src: images/featured-image.png

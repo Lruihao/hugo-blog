@@ -1,15 +1,15 @@
 ---
-title: "Commit Message standard"
+title: "Commit Message Spec"
 date: 2022-08-12T15:37:44+08:00
 tags:
 - Git
 categories:
+- Spec
 - Git
-
 twemoji: false
 ---
 
-A commit message is a short description of a change to a repository. We should follow certain standards to describe changes efficiently, such as:
+Commit messages are short descriptions of changes to a repository. We should follow certain standards to effectively describe changes, such as the most used Angular Commit specification on GitHub, or each development team can simplify and formulate their own submission specifications, which is not only conducive to the automatic generation of Changelog in the later stage, but more importantly, when it appears When there is a bug, the entire warehouse can be quickly checked, the problem point can be accurately located, and the version can be returned.
 
 <!--more-->
 
