@@ -10,7 +10,7 @@
   codeFences = true
   lineNos = true
   lineNumbersInTable = true
-  noClasses = false 
+  noClasses = false
   ########## necessary configurations ##########
   guessSyntax = true
 
@@ -24,9 +24,16 @@
     table = true
     taskList = true
     typographer = true
+  [goldmark.parser]
+    autoHeadingID = true
+    autoHeadingIDType = "github"
+    wrapStandAloneImageWithinParagraph = true
+    [goldmark.parser.attribute]
+      block = true
+      title = true
   [goldmark.renderer]
     # By default, Goldmark ignores newlines within a paragraph. Set to true to render newlines as <br> elements.
-    hardWraps = true
+    hardWraps = false
     # whether to use HTML tags directly in the document
     unsafe = true
 
