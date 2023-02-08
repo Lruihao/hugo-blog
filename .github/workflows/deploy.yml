@@ -4,11 +4,11 @@ on:
     branches: [ main ]
     paths:
       - 'assets/**'
+      - 'config/**'
       - 'content/**'
       - 'data/**'
       - 'static/**'
       - 'themes/**'
-      - 'config.toml'
   workflow_run:
     workflows: ['Update theme']
     types:
