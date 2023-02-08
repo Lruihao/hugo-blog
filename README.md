@@ -24,35 +24,40 @@
 ▸ themes/        # theme submodules
 ```
 
-## Installation
-
-1. Go to [Hugo Releases](https://github.com/gohugoio/hugo/releases) and download the lastest `hugo_extended` version, e.g.
-
-   - `hugo_extended_0.89.0_Windows-64bit.zip`
-   - `hugo_extended_0.89.0_macOS-ARM64.tar.gz`
-
-2. Clone the blog source
-
-    ```bash
-    git clone --recursive git@github.com:Lruihao/hugo-blog.git
-    ```
-
 ## Quick Start
 
-There are three ways to start this blog.
+Just install latest version of [Hugo(>= 0.89.0)](https://gohugo.io/installation/) for your OS (Windows, Linux, macOS).
+
+```bash
+git clone --recursive git@github.com:Lruihao/hugo-blog.git
+```
+
+There are two ways to start this blog.
+
+### NPM
+
+```bash
+npm install
+# build the blog
+npm run build
+# run a local debugging server with watch
+npm run server
+# run a local debugging server in production environment
+npm run server:production
+# update theme submodules
+npm run update:theme
+```
 
 ### Hugo
 
 ```bash
 # Development environment
-hugo server --disableFastRender --navigateToChanged
+hugo server --disableFastRender --navigateToChanged --bind 0.0.0.0
 # Production environment
-hugo server --disableFastRender --navigateToChanged --environment production
+hugo server --disableFastRender --navigateToChanged --environment production --bind 0.0.0.0
 ```
 
-### Shell
-
-Run `hugo_main.sh` to choice frequently-used Hugo commands:
+In addition, you can run `hugo_main.sh` to choice frequently-used Hugo commands:
 
 ```bash
 cd .shell && sh hugo_main.sh
@@ -70,20 +75,6 @@ Please enter the serial number to work
 6. push
 --------------------------------------
 Press Ctrl+C to stop
-```
-
-### NPM
-
-```bash
-npm install
-# build the blog
-npm run build
-# run a local debugging server with watch
-npm run server
-# run a local debugging server in production environment
-npm run server:production
-# update theme submodules
-npm run update:theme
 ```
 
 ## Author
