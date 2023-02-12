@@ -240,6 +240,8 @@ disableThemeInject = false
   readingTime = true
   # FixIt 0.2.17 | NEW end of post flag
   endFlag = "（完）"
+  # FixIt 0.2.18 | NEW whether to enable instant.page
+  instantPage = true
 
   # FixIt NEW | 0.2.0 Table of the contents config
   [page.toc]
