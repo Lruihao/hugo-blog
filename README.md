@@ -5,7 +5,7 @@
 [![Hugo build and deploy](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml)
 [![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/m/Lruihao/hugo-blog/main?style=flat)](https://github.com/Lruihao/hugo-blog/commits/main)
 
-> This is Lruihao's front-end technical blog, powered by [Hugo](https://github.com/gohugoio/hugo) and theme [FixIt](https://github.com/Lruihao/FixIt).
+> 《菠菜眾長》，这是一个前端程序猿的技术博客, 基于 [Hugo](https://github.com/gohugoio/hugo) 和 [FixIt](https://github.com/Lruihao/FixIt) 主题搭建，主要记录和分享一些 Web 前端开发工作学习中遇到的问题和知识点。
 
 ## Directory structure
 
@@ -26,13 +26,13 @@
 
 ## Quick Start
 
-Just install latest version of [Hugo(>= 0.89.0)](https://gohugo.io/installation/) for your OS (Windows, Linux, macOS).
+只需根据操作系统（Windows、Linux、macOS）安装最新版本的 [Hugo(>= 0.89.0)](https://gohugo.io/installation/)。
 
 ```bash
 git clone --recursive git@github.com:Lruihao/hugo-blog.git
 ```
 
-There are two ways to start this blog.
+有两种方法可以启动这个博客。
 
 ### NPM
 
@@ -48,6 +48,23 @@ npm run server:production
 npm run update:theme
 ```
 
+---
+
+如果没有全局安装 Hugo，甚至可以通过 `npm install hugo-bin --save-dev` 来安装一个 Hugo 的包装器。
+
+`package.json` 需配置 `extended` 版本：
+
+```json
+{
+  ...
+  "hugo-bin": {
+    "buildTags": "extended"
+  }
+}
+```
+
+再通过 `npx hugo` 启动。
+
 ### Hugo
 
 ```bash
@@ -57,7 +74,7 @@ hugo server --disableFastRender --navigateToChanged --bind 0.0.0.0
 hugo server --disableFastRender --navigateToChanged --environment production --bind 0.0.0.0
 ```
 
-In addition, you can run `hugo_main.sh` to choice frequently-used Hugo commands:
+此外，还可以运行 `hugo_main.sh` 来选择常用的 Hugo 命令：
 
 ```bash
 cd .shell && sh hugo_main.sh
@@ -77,6 +94,6 @@ Please enter the serial number to work
 Press Ctrl+C to stop
 ```
 
-## Author
+## 作者
 
-[Lruihao](https://lruihao.cn)
+[Lruihao](https://github.com/Lruihao "在 GitHub 上关注我")
