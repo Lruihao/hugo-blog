@@ -1,0 +1,5 @@
+<ul class="sponsor-log">
+  {{- range $index, $log := .Site.Data.sponsor_log -}}
+    <li><strong>{{ $log.date }} {{ $log.sponsor | $.Page.RenderString }} {{ $log.origin }} {{ $log.amount }}</strong>{{ with $log.remark }}<br/>  {{ . | $.Page.RenderString }}{{ end }}</li>
+  {{- end -}}
+</ul>
