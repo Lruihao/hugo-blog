@@ -5,7 +5,7 @@
 
 # FixIt CHANGED | 0.2.14 Comment config
 [page.comment]
-  enable = true
+  enable = false
   [page.comment.valine]
     enable = true
     appId = "7HwTRT0Q0Tfrat6ugrT6P67c-gzGzoHsz"

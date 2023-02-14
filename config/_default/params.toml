@@ -107,9 +107,9 @@ disableThemeInject = false
   # Site creation year
   since = 2018
   # FixIt NEW | 0.2.12 Public network security only in China (HTML format is supported)
-  gov = '<a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target="_blank">湘公网安备 43030402000254 号</a>'
+  gov = ""
   # ICP info only in China (HTML format is supported)
-  icp = '<a rel="external nofollow noopener noreferrer" href="https://beian.miit.gov.cn" target="_blank">湘 ICP 备18020535 号</a>'
+  icp = ""
   # license info (HTML format is supported)
   license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
   # FixIt 0.2.17 | CHANGED Site creation time
@@ -123,7 +123,7 @@ disableThemeInject = false
   [footer.order]
     powered = 0
     copyright = 0
-    statistics = 0
+    statistics = "first"
     visitor = 0
     beian = 0
 
