@@ -229,8 +229,6 @@ disableThemeInject = false
   rssFullText = true
   # FixIt NEW | 0.2.13 Page style ("narrow", "normal", "wide", ...)
   pageStyle = "normal"
-  # FixIt NEW | 0.2.14 Gravatar is force-used as the author's avatar
-  gravatarForce = false
   # FixIt 0.2.17 | CHANGED Auto Bookmark Support
   # If true, save the reading progress when closing the page.
   autoBookmark = true
@@ -453,6 +451,7 @@ disableThemeInject = false
 
 # FixIt NEW | 0.2.14 Gravatar config
 [gravatar]
+  enable = true
   # Gravatar host, default: "www.gravatar.com"
   host = "gravatar.loli.net" # "cn.gravatar.com", "gravatar.loli.net"
   style = "mp" # "", mp, identicon, monsterid, wavatar, retro, blank, robohash
