@@ -4,8 +4,9 @@ date: 2019-02-01 20:44:40
 lastmod: 2019-02-01 20:44:40
 tags: ["随笔","他山之石"]
 categories: ["随笔"]
-author: 杨灿
-authorLink: "mailto:1845280636@qq.com"
+author:
+  name: 杨灿
+  link: "mailto:1845280636@qq.com"
 expirationReminder:
   enable: false
 ---
