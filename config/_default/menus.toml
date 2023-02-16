@@ -44,17 +44,6 @@
   [main.params]
     icon = "fa-solid fa-users"
 [[main]]
-  identifier = "img"
-  parent = "about"
-  pre = ""
-  post = ""
-  name = "相册"
-  url = "https://img.lruihao.cn"
-  title = "COS Album"
-  weight = 5
-  [main.params]
-    icon = "fa-solid fa-photo-video"
-[[main]]
   identifier = "guestbook"
   pre = ""
   post = ""
