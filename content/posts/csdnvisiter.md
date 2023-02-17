@@ -2,10 +2,10 @@
 title: 使用 Python 刷 csdn 访问量
 date: 2020-03-26 11:08:38
 tags:
-- Python
+  - Python
 categories:
-- 瞎折腾
-- Python
+  - 瞎折腾
+  - Python
 toc:
   enable: false
 ---
@@ -13,11 +13,12 @@ toc:
 > 使用 python 模拟浏览器行为刷 csdn 访问量，脚本仅做学习，请勿滥用~
 
 <!--more-->
+
 直接丢代码，把代码挂到服务器上可以策马奔腾~，也可以生成二进制文件放到 Windows 桌面上随时使用~  
 [打包 exe 参考](/posts/pyinstallererror/)
 
-```python 
-#!/usr/bin/python 
+```python
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 __author__ = 'lruihao.cn'
 import urllib.request
@@ -88,6 +89,7 @@ if __name__ == '__main__':
 ```
 
 主函数也可以这样写实现同时刷多人的访问量，人多可以适当减少休眠时间，当然有兴趣的可以尝试一下多线程~
+
 ```py
 if __name__ == '__main__':
     # 多用户

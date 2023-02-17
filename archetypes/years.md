@@ -1,18 +1,17 @@
 ---
-title: "{{ now.Year }} 年度总结"
+title: {{ now.Year }} 年度总结
 subtitle: ""
 date: {{ .Date }}
 draft: true
 comment: false
 tags:
-- Summaries
+  - Summaries
 categories:
-- Summaries
+  - Summaries
 hiddenFromHomePage: false
 hiddenFromSearch: true
 expirationReminder:
   enable: false
-type: "posts"
 reward: false
 password: ""
 message: ""

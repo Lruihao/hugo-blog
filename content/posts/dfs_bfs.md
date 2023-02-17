@@ -1,14 +1,24 @@
 ﻿---
 title: 深搜广搜
 date: 2018-07-22T11:25:14+08:00
-tags: ["ACM","BFS","DFS","搜索","C","C++"]
-categories: ["ACM"]
+tags:
+  - ACM
+  - BFS
+  - DFS
+  - 搜索
+  - C
+  - C++
+categories:
+  - ACM
 ---
 
 ### 广度优先搜索（BFS）
- 广度优先搜索在进一步遍历图中顶点之前，先访问当前顶点的所有邻接结点。访问了就入队。
+
+广度优先搜索在进一步遍历图中顶点之前，先访问当前顶点的所有邻接结点。访问了就入队。
+
 ### 深度优先搜索（DFS）
- 深度优先搜索在搜索过程中访问某个顶点后，需要递归地访问此顶点的所有未访问过的相邻顶点。
+
+深度优先搜索在搜索过程中访问某个顶点后，需要递归地访问此顶点的所有未访问过的相邻顶点。
 
 ```cpp
 #include <bits/stdc++.h>
@@ -72,4 +82,5 @@ int maze[N][N] = {//无权有向图邻接矩阵
      return 0;
  }
 ```
-[传送门](https://blog.csdn.net/wumingkeqi/article/details/70940978)	
+
+[传送门](https://blog.csdn.net/wumingkeqi/article/details/70940978)

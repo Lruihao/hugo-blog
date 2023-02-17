@@ -1,11 +1,11 @@
 ---
-title: "Mac 配置 ADB"
+title: Mac 配置 ADB
 date: 2022-07-05T15:39:34+08:00
 categories:
-- Memo
+  - Memo
 tags:
-- Android
-- ADB
+  - Android
+  - ADB
 ---
 
 作为非安卓专业开发，无需下载 Android SDK，  

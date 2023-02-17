@@ -1,14 +1,14 @@
 ---
-title: "安装 Homebrew 后导致系统中原有的 npm 和 npx 失效"
+title: 安装 Homebrew 后导致系统中原有的 npm 和 npx 失效
 date: 2022-12-15T15:33:30+08:00
-description: "安装 Homebrew 后导致系统中原有的 npm 和 npx 失效的解决办法"
+description: 安装 Homebrew 后导致系统中原有的 npm 和 npx 失效的解决办法
 tags:
-- Homebrew
-- npm
-- npx
-- Mac
+  - Homebrew
+  - npm
+  - npx
+  - Mac
 categories:
-- Debug
+  - Debug
 ---
 
 {{< admonition question >}}

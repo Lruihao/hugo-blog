@@ -2,10 +2,10 @@
 title: python 爬取网站图片（图片链接相似）
 date: 2019-04-22 12:46:34
 tags:
-- Python
+  - Python
 categories:
-- 瞎折腾
-- Python
+  - 瞎折腾
+  - Python
 ---
 
 > 以下程序对 [该网址](https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&a=fontshowPics&u=qbfRl8gPF2s-&z=Kqz%2FRroVGYc-&share=1&from=singlemessage) 内的手写体图片进行爬取！这个手写体是我在手机上通过《手迹造字》app 书写的，大概 6886 个字符，历时两年多，目前仍在修改中。[字体效果查看](/projects/font-mmt/)
@@ -13,7 +13,9 @@ categories:
 <!--more-->
 
 ## 思路设计
+
 > 通过观察目标网页中字符图片的链接，很容易发现每个字符图片的直链是由两部分组成。
+
 - 固定链接
 - 图片文件编号
 
@@ -22,7 +24,9 @@ categories:
 > **说了这么多，既然图片链接这么简单，所以我是想暴力遍历，搜索图片，判断链接状态码，然后下载图片。**
 
 ## 源码设计
+
 大致分为三个范围吧
+
 - 英文字符
 - 中文符号
 - 汉字范围
@@ -36,6 +40,7 @@ categories:
 - 65281 ~ 65509
 
 磨刀不误砍柴工，分析观察了这么久，终于可以运行程序了，F5 后就静静等待吧，可以去看看 java，或者打一把王者 hhhhh!
+
 ```python
 import os
 import requests
@@ -47,11 +52,11 @@ os.makedirs(path+"1\\", exist_ok=True)
 ## 下载图片
 def urllib_download(url,num):  ## （下载链接，图片编号）
     from urllib.request import urlretrieve
-    urlretrieve(url,path+num+".png")     
+    urlretrieve(url,path+num+".png")
 
 ## 判断状态码
-def get_status(url):  
-    r = requests.get(url, allow_redirects = False)  
+def get_status(url):
+    r = requests.get(url, allow_redirects = False)
     return r.status_code
 
 def main():
@@ -87,28 +92,30 @@ def main():
 			print("正在爬取第",total+1,"张图片！")
 		n+=1
 
-	print("\n 爬取完毕！共爬取",total,"张图片！")		
+	print("\n 爬取完毕！共爬取",total,"张图片！")
 	print("图片存放路径："+path)
 	print("作者博客：lruihao.cn")
 
-if __name__=="__main__":  
-    main(); 
+if __name__=="__main__":
+    main();
 ```
 
 ## 爬取过程及结果
+
 > 文件夹左下角数目变化
 
-![爬取过程](images/mmtpy.gif "爬取过程")
+![爬取过程](images/mmtpy.gif '爬取过程')
 
 {{< admonition danger >}}
 说实话看着控制台不停地输出提示信息有没有很爽，对于强迫症来说真的是很治愈了！但是爬取第 6042 张图片的时候，我打开了一下目标网页发现无法加载图片了，就想这应该也算是一次 Dos 攻击了吧！打开控制台果然停了，相当于访问了近两万次！唉，还是太暴力了！！还差 800 多张，只好又重新接着写上次的位置爬！不慎造成目标网站服务器压力，实在对不起！
 {{< /admonition >}}
 
-![错误提示](images/error.png "错误提示")
+![错误提示](images/error.png '错误提示')
 
 > 一个半小时左右后终于下载完了，一共是 6886 张；程序是同时下载了透明和白色背景的图片的！分别在 0,1 子文件夹！
 
-![爬取完毕](images/jieguo.png "爬取完毕")
+![爬取完毕](images/jieguo.png '爬取完毕')
 
 ## 其他思路
+
 模拟浏览器载入 html 文件，获取源码，查找到所有`<img>`标签内链接，必要时配合正则表达式，然后下载图片。

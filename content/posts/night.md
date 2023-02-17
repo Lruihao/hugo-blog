@@ -1,8 +1,10 @@
 ---
 title: 网页夜间效果
 date: 2018-09-27 13:13:31
-tags: ["JavaScript"]
-categories: ["JavaScript"]
+tags:
+  - JavaScript
+categories:
+  - JavaScript
 ---
 
 > 这几天看到别人的博客有开关灯效果，就想给自己的博客也加一个，其实以前就在想了。经过谷歌百度后这样实现了。`css+js`
@@ -12,6 +14,7 @@ categories: ["JavaScript"]
 如何给 Web 页面增加夜间模式功能？其实所谓的夜间模式就是在页面上增加一个透明的遮罩层，但是遮罩层会挡住页面元素， 解决方法是 添加 DIV，给 DIV 的 outline 属性一个很大的 outline-width 值，用 outline 的边框作为遮罩，这样既能正常点击页面元素，又能达到夜间模式的效果。
 
 ### css 部分
+
 ```css
 <style>
 .cover{
@@ -25,6 +28,7 @@ categories: ["JavaScript"]
 ```
 
 ### js 部分
+
 ```js
 <script>
 var brightness;
@@ -58,6 +62,7 @@ window.addEventListener('keydown', function(e) {
 ```
 
 ### html 部分
+
 ```
 <div class="cover"></div>
 ```

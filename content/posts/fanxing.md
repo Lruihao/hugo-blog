@@ -1,8 +1,11 @@
 ---
 title: java 泛型 test
 date: 2019-03-16 13:56:01
-tags: ["泛型","Java"]
-categories: ["Java"]
+tags:
+  - 泛型
+  - Java
+categories:
+  - Java
 ---
 
 > - 泛型方法，它在修饰符后，返回值类型前增加了类型参数 (<>)
@@ -11,6 +14,7 @@ categories: ["Java"]
 <!--more-->
 
 ## 代码
+
 ```java
 package code0507;
 
@@ -27,7 +31,7 @@ public class WildCardTest {
 		point.printpoint(520, 1314);
 		point.printpoint("me", "too");
 	}
-	
+
 	public static void getData(Box<?>data){//类型通配符
 		System.out.println("data:"+data.getData());
 	}
@@ -52,7 +56,9 @@ class Box<T>{
 	}
 }
 ```
+
 ## 运行结果
+
 ```java
 data:hello
 data:12

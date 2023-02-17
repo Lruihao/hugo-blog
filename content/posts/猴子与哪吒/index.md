@@ -2,9 +2,11 @@
 title: 猴子与哪吒
 date: 2018-05-31T10:09:15+08:00
 lastmod: 2018-05-31T10:09:15+08:00
-tags: ["随笔"]
-categories: ["随笔"]
-featuredImage: "/posts/猴子与哪吒/images/hznz.jpg"
+tags:
+  - 随笔
+categories:
+  - 随笔
+featuredImage: /posts/猴子与哪吒/images/hznz.jpg
 toc:
   enable: false
 expirationReminder:
@@ -15,7 +17,7 @@ expirationReminder:
 
 能称得上传奇的只有两个人物：
 
-一是猴子 
+一是猴子
 
 一是哪吒
 

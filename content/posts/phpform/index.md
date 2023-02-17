@@ -2,23 +2,25 @@
 title: 简单评论模块--php 表单练习
 date: 2019-07-19 11:38:59
 tags:
-- PHP
+  - PHP
 categories:
-- PHP
+  - PHP
 ---
 
 > 简单模仿了一个评论模板，当然肯定是没有博客的 valine 这么强大的 hhhh，  
 > **PHP 表单安全性的重要提示**  
 > `$_SERVER["PHP_SELF"]`变量能够被黑客利用！  
 > 如果页面中使用了`PHP_SELF`，用户能够输入下划线然后执行跨站点脚本（XSS）。  
-> 比如说注入 js 脚本等，valine 以前的版本也有过这样的漏洞。  
-> 
+> 比如说注入 js 脚本等，valine 以前的版本也有过这样的漏洞。
+>
 > `跨站点脚本（Cross-site scripting，XSS）`是一种计算机安全漏洞类型，常见于 Web 应用程序。XSS 能够使攻击者向其他用户浏览的网页中输入客户端脚本。
 
 <!--more-->
+
 可以像 valine 一样在用户输入完后保留输入，还有一些正则控制输入提示等简单功能。UI 就丑爆了算了。
+
 ```xml 完整表单
-<!DOCTYPE HTML> 
+<!DOCTYPE HTML>
 <html>
 <head>
 <style>
@@ -31,7 +33,7 @@ categories:
 }
 </style>
 </head>
-<body> 
+<body>
 
 <?php
 // 定义变量并设置为空值
@@ -45,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = test_input($_POST["name"]);
     // 检查名字是否包含字母和空格
     if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed"; 
+      $nameErr = "Only letters and white space allowed";
     }
   }
 
@@ -55,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = test_input($_POST["email"]);
     // 检查电邮地址语法是否有效
     if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$email)) {
-      $emailErr = "Invalid email format"; 
+      $emailErr = "Invalid email format";
     }
   }
 
@@ -66,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 检查 URL 地址语言是否有效（此正则表达式同样允许 URL 中的下划线）
     if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%
     =~_|]/i",$website)) {
-      $websiteErr = "Invalid URL"; 
+      $websiteErr = "Invalid URL";
     }
   }
 
@@ -93,7 +95,7 @@ function test_input($data) {
 ?>
 <div class="main">
    <h2>PHP 验证实例</h2>
-   <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"> 
+   <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
       姓名：<input type="text" name="name" value="<?php echo $name;?>">
       <span class="error">* <?php echo $nameErr;?></span>
       <br><br>
@@ -119,10 +121,11 @@ function test_input($data) {
          echo $website."<br/>";
          echo $comment."<br/>";
       ?>
-      <br/> 
+      <br/>
    </form>
 </div>
 </body>
 </html>
 ```
+
 ![实际效果](images/comment.png)

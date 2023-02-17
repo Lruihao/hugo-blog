@@ -1,12 +1,12 @@
 ---
-title: "Node.js + GitHub Actions 自动刷新 CDN"
+title: Node.js + GitHub Actions 自动刷新 CDN
 date: 2022-08-07T14:40:33+08:00
 tags:
-- CDN
-- GitHub Actions
-- Node
+  - CDN
+  - GitHub Actions
+  - Node
 categories:
-- JavaScript
+  - JavaScript
 ---
 
 {{< admonition question >}}
@@ -31,7 +31,7 @@ vim .scripts/qcloudcdn.js
 ```javascript
 /**
  * Refresh Qcloud CDN cache
- * @command `node qcloudcdn.js $SECRET_ID $SECRET_KEY` 
+ * @command `node qcloudcdn.js $SECRET_ID $SECRET_KEY`
  */
 const qcloudSDK = require('qcloud-cdn-node-sdk');
 
@@ -39,19 +39,23 @@ const qcloudSDK = require('qcloud-cdn-node-sdk');
 qcloudSDK.config({
   secretId: process?.argv[2],
   secretKey: process?.argv[3]
-})
+});
 
-qcloudSDK.request('RefreshCdnDir', {
-  // See https://cloud.tencent.com/document/api/228/3947
-  'dirs.0': 'https://lruihao.cn/'
-}, (res) => {
-  res.code && console.log(res)
-})
+qcloudSDK.request(
+  'RefreshCdnDir',
+  {
+    // See https://cloud.tencent.com/document/api/228/3947
+    'dirs.0': 'https://lruihao.cn/'
+  },
+  (res) => {
+    res.code && console.log(res);
+  }
+);
 ```
 
 ## 增加快捷指令
 
-打开 `package.json` 增加 `scripts`: 
+打开 `package.json` 增加 `scripts`:
 
 ```json
 {
@@ -68,17 +72,21 @@ SECRET_ID=<secretId> SECRET_KEY=<secretKey> npm run qcloudcdn
 ```
 
 {{< details "Mac OS 环境变量配置（可选）" >}}
+
 ```bash
 vim ~/.bash_profile
 ```
+
 ```bash
 # Qcloud secret key-value
 export SECRET_ID=<secretId>
 export SECRET_KEY=<secretKey>
 ```
+
 ```bash
 source ~/.bash_profile
 ```
+
 然后，在本地可简化指令为 `npm run qcloudcdn` 或者 `yarn qcloudcdn`。  
 等同于 `SECRET_ID=$SECRET_ID SECRET_KEY=$SECRET_KEY npm run qcloudcdn`
 {{< /details >}}

@@ -4,14 +4,15 @@ subtitle: Create watermark for webpage and automatic adjust when window resize.
 summary: Create watermark for webpage and automatic adjust when window resize.
 date: 2021-05-23 17:15:41
 tags:
-- watermark
-- JavaScript
+  - watermark
+  - JavaScript
 categories:
-- Projects
-- JavaScript
-type: "posts"
+  - Projects
+  - JavaScript
+type: posts
 aliases:
-- /posts/watermark-fixed/
+  - /posts/watermark-fixed/
+slug: cell-watermark
 ---
 
 # Usage

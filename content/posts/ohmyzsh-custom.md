@@ -1,14 +1,13 @@
 ---
-title: "自定义 ohmyzsh 主题"
+title: 自定义 ohmyzsh 主题
 date: 2022-07-31T13:54:14+08:00
 categories:
-- Grocery
+  - Grocery
 ---
 
 ohmyzsh 自带了很多主题，也有很多没有收录的扩展主题，我就想要个简约的主题，但是每个都差点意思，干脆改一个主题。
 
 <!--more-->
-
 
 ## 自定义主题
 
@@ -37,7 +36,6 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%})"
 ```
 
 ## 配置
-
 
 ```bash
 vim ~/.zshrc

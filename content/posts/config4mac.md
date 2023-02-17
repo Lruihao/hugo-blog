@@ -1,12 +1,12 @@
 ---
-title: "Mac 上的开发配置总结"
+title: Mac 上的开发配置总结
 date: 2022-07-29T20:22:44+08:00
 categories:
-- Memo
+  - Memo
 tags:
-- Mac
-- Node
-- Git
+  - Mac
+  - Node
+  - Git
 ---
 
 记录一下使用 Mac 作为生产工具开发的一些基本配置和经验。
@@ -112,6 +112,7 @@ Custom actions
 
 - zsh: `.zsh`
 - bash: `.sh`
+
 {{< /admonition >}}
 
 ```bash sync_tags.sh

@@ -1,8 +1,11 @@
 ---
 title: 条件注释判断浏览器版本<!--[if lt IE 9]>;
 date: 2019-05-10 13:08:27
-tags: ["HTML","他山之石"]
-categories: ["Grocery"]
+tags:
+  - HTML
+  - 他山之石
+categories:
+  - Grocery
 toc:
   enable: false
 repost:
@@ -25,6 +28,7 @@ repost:
 
 这样有效是有效，但是用 HTML VALIDATOR 里，报错，因为这个不符合 XHTML 1.1 的规范，
 如果把 ELSE 语句去掉，则正确。
+
 ```xml
 加载 CSS2
 <!--[if lt IE 9]>

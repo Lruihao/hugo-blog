@@ -1,16 +1,15 @@
 ---
-title: "electron 踩坑总结"
+title: electron 踩坑总结
 date: 2022-08-12T11:22:01+08:00
-description: ""
 keywords:
-- electron
+  - electron
 tags:
-- electron
+  - electron
 categories:
-- JavaScript
+  - JavaScript
 resources:
-- name: featured-image
-  src: images/featured-image.png
+  - name: featured-image
+    src: images/featured-image.png
 code:
   maxShownLines: 10
 ---
@@ -78,12 +77,12 @@ electron 的 `shell` 模块，可以使用 `shell.openExternal(url)` 在默认�
 ```js
 function debounce(fn) {
   let timer = null;
-  return function() {
+  return function () {
     clearTimeOut(timer);
     timer = setTimeOut(() => {
       fn.applay(this, arguments);
-    }, 300)
-  }
+    }, 300);
+  };
 }
 ```
 
@@ -92,13 +91,13 @@ function debounce(fn) {
 ```js
 function throttle(fn) {
   let timer = null;
-  return function() {
+  return function () {
     if (timer) return;
     timer = setTimeOut(() => {
       fn.applay(this, arguments);
       timer = null;
-    }, 300)
-  }
+    }, 300);
+  };
 }
 ```
 
@@ -116,7 +115,7 @@ function throttle(fn) {
 
 #### 启动前 loading
 
-额外创建一个 loading 窗口，该窗口可设置为透明只包含 loading 图标和文字，在 `mainWindow.show()` 后关闭。 
+额外创建一个 loading 窗口，该窗口可设置为透明只包含 loading 图标和文字，在 `mainWindow.show()` 后关闭。
 
 #### 启动后 loading
 
@@ -126,14 +125,47 @@ function throttle(fn) {
 <div id="app">
   <!-- Display the loading icon and text until Vue initialization is complete -->
   <style type="text/css">
-    html,body { height: 100%; margin: 0; }
-    body { display: flex; }
-    #app { margin: auto; display: flex; align-items: center; }
-    @media (prefers-color-scheme: dark) { body { color: #fff; background-color: #202124; }}
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: flex;
+    }
+    #app {
+      margin: auto;
+      display: flex;
+      align-items: center;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        color: #fff;
+        background-color: #202124;
+      }
+    }
   </style>
-  <svg xmlns="http://www.w3.org/2000/svg" style="margin:auto;background:0 0" width="60" height="60" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" display="block">
-    <circle cx="50" cy="50" r="20" stroke-width="4" stroke="#a5a5a5" stroke-dasharray="31.416 31.416" fill="none" stroke-linecap="round" transform="rotate(67.21 50 50)">
-      <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" keyTimes="0;1" values="0 50 50;360 50 50"/>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    style="margin:auto;background:0 0"
+    width="60"
+    height="60"
+    viewBox="0 0 100 100"
+    preserveAspectRatio="xMidYMid"
+    display="block"
+  >
+    <circle
+      cx="50"
+      cy="50"
+      r="20"
+      stroke-width="4"
+      stroke="#a5a5a5"
+      stroke-dasharray="31.416 31.416"
+      fill="none"
+      stroke-linecap="round"
+      transform="rotate(67.21 50 50)"
+    >
+      <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" keyTimes="0;1" values="0 50 50;360 50 50" />
     </circle>
   </svg>
   <span>加载中 ...</span>
@@ -175,7 +207,7 @@ const main = [
       { label: '全选', role: 'selectAll' }
     ]
   }
-]
+];
 const dev = [
   {
     label: '开发者',
@@ -186,22 +218,22 @@ const dev = [
       { label: '开发者工具', role: 'toggledevtools' }
     ]
   }
-]
+];
 
 if (process.env.NODE_ENV === 'development') {
-  main.push(...dev)
+  main.push(...dev);
 }
 
-export default main
+export default main;
 ```
 
 ```js
-import memuConfig from './menu'
-import { Menu } from 'electron'
+import memuConfig from './menu';
+import { Menu } from 'electron';
 
 if (process.platform === 'darwin') {
-  const menu = Menu.buildFromTemplate(memuConfig)
-  Menu.setApplicationMenu(menu)
+  const menu = Menu.buildFromTemplate(memuConfig);
+  Menu.setApplicationMenu(menu);
 }
 ```
 

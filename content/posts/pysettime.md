@@ -2,24 +2,23 @@
 title: python 设置程序每天 8 点定时执行任务
 date: 2019-05-09 23:26:54
 tags:
-- Python
-- Cron
+  - Python
+  - Cron
 categories:
-- Python
+  - Python
 keywords:
-- python
-- python 定时任务
-- python 定时器
-- python 定时执行
-- python 定时发送请求脚本
-- python 定时获取数据
-- python 定时任务每天执行一次
-
+  - python
+  - python 定时任务
+  - python 定时器
+  - python 定时执行
+  - python 定时发送请求脚本
+  - python 定时获取数据
+  - python 定时任务每天执行一次
 ---
 
 > 第一次运行根据程序执行时间，判断程序休眠的时间，尽最大可能休眠，节省系统资源。  
 > 第二次运行后直接休眠一天，到每天早上 8 点执行任务。  
-> （该程序需要一直挂着，保持网络不断）  
+> （该程序需要一直挂着，保持网络不断）
 
 <!--more-->
 

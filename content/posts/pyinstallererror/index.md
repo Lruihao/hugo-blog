@@ -2,19 +2,19 @@
 title: 安装 pyinstaller 出错的解决办法及 csdn 工具实例打包
 date: 2019-05-09 19:05:01
 tags:
-- Python
-- pyinstaller
+  - Python
+  - pyinstaller
 categories:
-- Python
+  - Python
 keywords:
-- python
-- pyinstaller
-- csdn 访问数
-featuredImage: "/posts/pyinstallererror/images/1.png"
+  - python
+  - pyinstaller
+  - csdn 访问数
+featuredImage: /posts/pyinstallererror/images/1.png
 ---
 
 > 用过命令`pip install pyinstaller`安装失败，此包依赖于 pywin32，安装前需要先`pip install pywin32`, 我安装了还是出错，稍微百度了一下也没有看到解决办法。
-这里通过手动下载安装解决的，记录一下。
+> 这里通过手动下载安装解决的，记录一下。
 
 <!--more-->
 
@@ -55,7 +55,7 @@ pyinstaller 将 Python 脚本打包成可执行程序，使在没有 Python 环�
 > `--specpath=DIR` 设置将 spec 文件放置的路径  
 > `--windowed` 使用 windows 子系统执行，不会打开命令行（只对 windows 有效）  
 > `--nowindowed` 使用控制台子系统执行（默认）（只对 windows 有效）  
-> `--icon=<FILE.ICO>` 将 file.ico 添加为可执行文件的资源（只对 windows 有效）  
+> `--icon=<FILE.ICO>` 将 file.ico 添加为可执行文件的资源（只对 windows 有效）
 
 如`pyinstaller --paths="D:\" test.py`
 

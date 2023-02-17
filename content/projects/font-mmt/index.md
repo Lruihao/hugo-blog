@@ -3,16 +3,16 @@ title: 沐目体
 subtitle: 一款手写给你的字体
 date: 2018-10-12 19:39:19
 tags:
-- 沐目体
+  - 沐目体
 categories:
-- Projects
-type: "posts"
+  - Projects
+type: 'posts'
 library:
   css:
     mmtCSS: mmt.css
   js:
     vueJS: https://cdn.jsdelivr.net/npm/vue@2
-pageStyle: "wide"
+pageStyle: 'wide'
 ---
 
 <iframe class="manuscript" src="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&a=fontshowPics&u=qbfRl8gPF2s-&z=Kqz%2FRroVGYc-" style="width: 100%;height: 370px;margin-top: .25rem;" frameborder="0" allowfullscreen></iframe>
@@ -39,16 +39,16 @@ pageStyle: "wide"
 
 <div class="preview-lyric">
 
-|《富士山下》|《爱情转移》|
-|:-:|:-:|
-|前尘硬化像石头|阳光在身上流转|
-|随缘地抛下便逃走|等所有业障被原谅|
-|我绝不罕有|爱情不停站|
-|往街里绕过一周|想开往地老天荒|
-|我便化乌有|需要多勇敢|
-|你还嫌不够|你不要失望|
-|我把这陈年风褛|荡气回肠是为了|
-|送赠你解咒|最美的平凡|
+|   《富士山下》   |   《爱情转移》   |
+| :--------------: | :--------------: |
+|  前尘硬化像石头  |  阳光在身上流转  |
+| 随缘地抛下便逃走 | 等所有业障被原谅 |
+|    我绝不罕有    |    爱情不停站    |
+|  往街里绕过一周  |  想开往地老天荒  |
+|    我便化乌有    |    需要多勇敢    |
+|    你还嫌不够    |    你不要失望    |
+|  我把这陈年风褛  |  荡气回肠是为了  |
+|    送赠你解咒    |    最美的平凡    |
 
 </div>
 
@@ -67,11 +67,11 @@ pageStyle: "wide"
 ## 下载
 
 {{< admonition warning "警告" >}}
-[沐目体](https://github.com/Lruihao/MMT/releases) *仅用于个人非商用！*
+[沐目体](https://github.com/Lruihao/MMT/releases) _仅用于个人非商用！_
 {{< /admonition >}}
 
 {{< script >}}
 document.addEventListener('DOMContentLoaded', () => {
-  new Vue({ el: '#app-mmt', data: { message: '' }});
+new Vue({ el: '#app-mmt', data: { message: '' }});
 });
 {{< /script >}}

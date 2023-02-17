@@ -1,16 +1,14 @@
 ---
-title: "Beego 安装及配置"
+title: Beego 安装及配置
 date: 2022-08-31T09:32:44+08:00
-
 tags:
-- Beego
-- Go
+  - Beego
+  - Go
 categories:
-- Go
-
+  - Go
 resources:
-- name: featured-image
-  src: images/featured-image.png
+  - name: featured-image
+    src: images/featured-image.png
 ---
 
 记录 GO 及 Beego 框架安装及基础配置。
@@ -23,16 +21,16 @@ resources:
 2. 通过二进制文件快速安装，默认安装目录：`/usr/local/go`
 3. 配置环境变量 `vim ~/.bash_profile`
 
-    ```bash
-    # golang
-    export GOROOT=/usr/local/go
-    export GOBIN=$GOROOT/bin
-    export PATH=$PATH:$GOBIN
-    export GOPATH=$HOME/go
-    export GOPROXY=https://goproxy.cn
-    # Go work bin
-    export PATH=$PATH:$GOPATH/bin
-    ```
+   ```bash
+   # golang
+   export GOROOT=/usr/local/go
+   export GOBIN=$GOROOT/bin
+   export PATH=$PATH:$GOBIN
+   export GOPATH=$HOME/go
+   export GOPROXY=https://goproxy.cn
+   # Go work bin
+   export PATH=$PATH:$GOPATH/bin
+   ```
 
 ## 安装 Beego
 
@@ -46,7 +44,7 @@ Beego 的安装需要在新建项目且 `go mod init <module_name>`之后，在�
 
 - [bee repository](https://github.com/beego/bee)
 
-> 注意：arm64 架构的 mac (M1～系列)，下载安装 bee 时最好，使用 Rosetta 打开终端，不然无法下载 `darwin_arm64` 的依赖，如果已经安装了，可以使用 Rosetta 打开终端后，运行 `bee update` 升级，升级完后将终端复原。
+> 注意：arm64 架构的 mac (M1 ～系列)，下载安装 bee 时最好，使用 Rosetta 打开终端，不然无法下载 `darwin_arm64` 的依赖，如果已经安装了，可以使用 Rosetta 打开终端后，运行 `bee update` 升级，升级完后将终端复原。
 
 bee 工具安装，`go install` 安裝指定版本的 bee 工具，例如：
 

@@ -1,13 +1,12 @@
 ---
-title: "linux 文件权限"
+title: linux 文件权限
 date: 2022-07-30T17:15:44+08:00
 categories:
-- OS
+  - OS
 tags:
-- linux
-- Mac
-- 他山之石
-
+  - linux
+  - Mac
+  - 他山之石
 repost:
   enable: true
   url: https://blog.csdn.net/icanlove/article/details/39667265/
@@ -54,7 +53,7 @@ linux 一共有 7 种文件类型，分别如下：
 - `c`: 字符设备文件
 - `s`: 套接口文件/数据接口文件
 
- *后四种是特殊文件*
+  _后四种是特殊文件_
 
 ## 文件权限对应关系
 

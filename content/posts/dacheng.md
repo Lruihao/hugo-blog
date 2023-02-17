@@ -1,13 +1,16 @@
 ---
 title: 大数乘法
 date: 2019-03-28 22:50:43
-tags: ["数学","大数运算","ACM","C"]
-categories: ["ACM"]
-toc:
-  enable: false
+tags:
+  - 数学
+  - 大数运算
+  - ACM
+  - C
+categories:
+  - ACM
 ---
 
-> 大数乘法c版(基础写法)
+> 大数乘法 c 版(基础写法)
 
 <!--more-->
 
@@ -80,6 +83,7 @@ void change(int *a, int *b, int n) {
 ```
 
 程序运行结果
+
 ```
 1234567890123456789
 98765432109876543210

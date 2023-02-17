@@ -1,7 +1,7 @@
 ---
-type: "offline"
-description: "離線 - 菠菜眾長"
-keywords: 
+type: offline
+description: 離線 - 菠菜眾長
+keywords:
   - PWA
   - offline
   - 离线
