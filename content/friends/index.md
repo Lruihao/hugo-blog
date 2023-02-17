@@ -4,8 +4,8 @@ date: 2021-09-19T12:33:48+08:00
 type: friends
 description: Lruihao's friends
 keywords:
-  - Hugo
-  - friends template
+  - 'Hugo FixIt'
+  - 'friends template'
 ---
 
 <!--

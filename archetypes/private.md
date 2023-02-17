@@ -1,6 +1,6 @@
 ---
-title: {{ now.Year }} 年度总结
-subtitle: ""
+title: '{{ now.Year }} 年度总结'
+subtitle:
 date: {{ .Date }}
 draft: true
 comment: false
@@ -13,9 +13,9 @@ hiddenFromSearch: true
 expirationReminder:
   enable: false
 reward: false
-password: ""
-message: ""
-type: "posts"
+password:
+message:
+type: posts
 ---
 
 {{< admonition quote "quote" false >}}
