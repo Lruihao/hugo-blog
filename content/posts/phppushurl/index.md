@@ -45,4 +45,4 @@ categories:
 
 ## 提交结果
 
-![提交结果](../phppushurl/images/result.png)
+![提交结果](images/result.png)

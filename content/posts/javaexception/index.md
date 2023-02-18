@@ -137,4 +137,4 @@ public class Book {
 
 ## 大致运行效果
 
-![](../javaexception/images/2.png)
+![](images/2.png)
