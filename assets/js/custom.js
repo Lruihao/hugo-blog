@@ -70,48 +70,6 @@ const Blog = new (function () {
   };
 
   /**
-   * 获取随机网易云评论
-   * 配合 random-comment shortcode
-   * @name Blog#getRandomComment
-   */
-  this.getRandomComment = () => {
-    fetch('https://api.uomg.com/api/comments.163?mid=2280569152')
-    .then(response => response.json())
-    .then((comment) => {
-      document.querySelector('.pic-backdrop').style.backgroundImage = `url(${comment.data.picurl.slice(5)})`;
-      const $avatar = document.querySelector('.comment-avatar');
-      $avatar.alt = `${comment.data.nickname}'s avatar`;
-      $avatar.src = comment.data.avatarurl.slice(5);
-      $avatar.classList.remove('d-none');
-      document.querySelector('.comment-nickname').innerHTML = comment.data.nickname;
-      document.querySelector('.comment-content').innerHTML = comment.data.content.replace('\n','<br/>');
-      document.querySelector('.music-name').innerHTML = comment.data.name;
-      document.querySelector('.artists-name').innerHTML = comment.data.artistsname;
-      const $player = document.createElement('meting-js');
-      $player.setAttribute('auto', comment.data.url);
-      const $music = document.querySelector('.netease-music');
-      $music.innerHTML = '';
-      $music.appendChild($player);
-    })
-  };
-
-  /**
-   * 初始化 random-comment shortcode
-   * @name Blog#initRandomComment
-   * @returns {Blog}
-   */
-  this.initRandomComment = () => {
-    if (!document.querySelector('.netease-music') || !document.querySelector('.comment-163')) {
-      return;
-    }
-    this.getRandomComment();
-    document.querySelector('.comment-163').addEventListener('click', () => {
-      this.getRandomComment();
-    });
-    return this;
-  };
-
-  /**
    * Initialize.
    * @returns {Blog}
    */
@@ -135,6 +93,6 @@ const Blog = new (function () {
   Blog.init();
   // It will be executed when the DOM tree is built.
   document.addEventListener('DOMContentLoaded', () => {
-    Blog.initRandomComment();
+
   });
 })();

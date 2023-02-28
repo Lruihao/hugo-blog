@@ -28,7 +28,7 @@ pageStyle: 'wide'
 
 ---
 
-{{< random-comment >}}
+{{< mmt-netease "2280569152" >}}
 
 ---
 

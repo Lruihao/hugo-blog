@@ -2,9 +2,6 @@
 title: 留言
 date: 2021-09-13T20:31:52+08:00
 pageStyle: wide
-library:
-  css:
-    mmtCSS: /projects/font-mmt/mmt.css
 ---
 
 {{< admonition tip "Welcome" >}}
@@ -22,10 +19,4 @@ library:
 
 ---
 
-{{< random-comment >}}
-
----
-
-{{< details "来自 [网易云歌单](https://music.163.com/#/playlist?id=2280569152)" >}}
-{{< music server="netease" type="playlist" id="2280569152" loop="all" list-folded="true" >}}
-{{< /details >}}
+{{< mmt-netease "2280569152" >}}
