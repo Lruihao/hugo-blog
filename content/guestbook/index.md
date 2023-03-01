@@ -19,4 +19,4 @@ pageStyle: wide
 
 ---
 
-{{< mmt-netease "2280569152" >}}
+{{< mmt-netease "2280569152" true >}}
