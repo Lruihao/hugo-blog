@@ -5,6 +5,8 @@
 [![Hugo build and deploy](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml)
 [![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/m/Lruihao/hugo-blog/main?style=flat)](https://github.com/Lruihao/hugo-blog/commits/main)
 
+![blog-flow](/assets/images/blog-flow.png)
+
 > 《菠菜眾長》，这是一个前端程序猿的技术博客, 基于 [Hugo](https://github.com/gohugoio/hugo) 和 [FixIt](https://github.com/Lruihao/FixIt) 主题搭建，主要记录和分享一些 Web 前端开发工作学习中遇到的问题和知识点。
 
 ## Directory structure
