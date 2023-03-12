@@ -5,7 +5,7 @@
 
 # FixIt NEW | 0.1.1 which hash function used for SRI, when empty, no SRI is used
 # ("sha256", "sha384", "sha512", "md5")
-fingerprint = "sha256"
+# fingerprint = "sha256"
 
 # FixIt CHANGED | 0.2.14 Comment config
 [page.comment]
