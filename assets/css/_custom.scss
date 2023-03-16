@@ -14,6 +14,7 @@
     vertical-align: revert;
   }
 }
+
 #header-mobile {
   .header-wrapper {
     max-height: 3.5rem;
@@ -28,6 +29,16 @@
   .single-subtitle {
     color: #57606a;
   }
+
+  .content {
+    background-image: linear-gradient(90deg, rgba(60, 10, 30, .04) 3%, transparent 0), linear-gradient(1turn, rgba(60, 10, 30, .04) 3%, transparent 0);
+    background-size: 20px 20px;
+    background-position: center;
+  
+    [data-theme='dark'] & {
+      background-image: linear-gradient(90deg, rgba(195, 245, 215, .04) 3%, transparent 0), linear-gradient(1turn, rgba(195, 245, 215, .04) 3%, transparent 0);
+    }
+  }
 }
 
 .home {
@@ -35,6 +46,7 @@
     width: MIN(663px, 100%);
     aspect-ratio: 663/104;
   }
+
   &.posts .summary .content {
     display: block;
   }
@@ -46,6 +58,7 @@
   src: url('/fonts/mmt_header.ttf');
   font-display: swap;
 }
+
 @font-face {
   font-family: MMT_LRH;
   src: url('/fonts/mmt_sign.ttf');
@@ -55,8 +68,7 @@
 // ==============================
 // Mobile style
 // ==============================
-@media only screen and (max-width: 680px) {
-}
+@media only screen and (max-width: 680px) {}
 
 // ==============================
 // Dark style
