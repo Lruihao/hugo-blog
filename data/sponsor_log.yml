@@ -6,7 +6,7 @@
 - date: 2018-09-28
   sponsor: "[francs](https://postgres.fun)"
   amount: ¥50.00
-  origin: AliPay
+  origin: 支付宝
   remark: "大学生时期，第一次收到别人的支持，内心表示受宠若惊又非常开心。非常感谢老哥的支持！"
 - date: 2018-10-26
   sponsor: "[francs](https://postgres.fun)"
@@ -21,17 +21,17 @@
 - date: 2018-12-04
   sponsor: ✘昌升
   amount: ¥10.00
-  origin: AliPay
+  origin: 支付宝
   remark: "上课的时候听到了支付宝清脆的支付宝到账 10 元的声音！"
 - date: 2018-12-04
   sponsor: ✘昌升
   amount: ¥18.00
-  origin: AliPay
+  origin: 支付宝
   remark: "晚上加了一个 qq 好友，聊天之中又收到支付宝的提示，才知道是谁打赏的，感谢每笔打赏！"
 - date: 2019-03-19
   sponsor: ✘昌升
   amount: ¥2.00
-  origin: WechatPay
+  origin: 微信
   remark: "来自 `231****047#qq.com`"
 - date: 2020-01-17
   sponsor: ✘喜洲
@@ -41,10 +41,19 @@
 - date: 2022-12-02 13:01:48
   sponsor: ✘✘松
   amount: ¥2.00
-  origin: AliPay
+  origin: 支付宝
   remark:
 - date: 2023-02-13 10:01:58
   sponsor: ✘✘波
   amount: ¥20.00
-  origin: AliPay
+  origin: 支付宝
   remark: "留言：“感谢帮忙解决 FixIt 的问题”"
+- date: 2023-03-17 14:05:49
+  sponsor: K*n
+  amount: ¥50.00
+  origin: 微信
+- date: 2023-03-17 14:57:41
+  sponsor: D*n
+  amount: ¥11.11
+  origin: 微信
+  remark: "留言：“加油”"

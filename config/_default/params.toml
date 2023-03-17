@@ -311,8 +311,8 @@ disableThemeInject = false
     position = "before"
     comment = "Buy me a coffee~"
     [page.reward.ways]
-      wechatpay = "/images/wechatpay.gif"
-      alipay = "/images/alipay.gif"
+      wechatpay = "/images/wechatpay.jpg"
+      alipay = "/images/alipay.jpg"
       # paypal = "/images/paypal.png"
       # bitcoin = "/images/bitcoin.png"
   # FixIt CHANGED | 0.2.0 social share links in post page
