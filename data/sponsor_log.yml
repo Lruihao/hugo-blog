@@ -1,8 +1,10 @@
-# - date: "sponsor date"
-#   sponsor: "sponsor name"
-#   amount: "sponsor amount"
-#   origin: "sponsor origin"
-#   remark: "sponsor remark"
+# The sponsor log data format is as follows
+
+# - date: "2006-01-02 15:04:05"
+#   sponsor: Cell
+#   amount: ¥50
+#   origin: alipay # [alipay, bitcoin, paypal, wechatpay, ...]
+#   remark: "Come on!"
 - date: 2018-09-28
   sponsor: "[francs](https://postgres.fun)"
   amount: ¥50.00
@@ -27,7 +29,6 @@
   sponsor: ✘昌升
   amount: ¥18.00
   origin: 支付宝
-  remark: "晚上加了一个 qq 好友，聊天之中又收到支付宝的提示，才知道是谁打赏的，感谢每笔打赏！"
 - date: 2019-03-19
   sponsor: ✘昌升
   amount: ¥2.00

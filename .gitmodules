@@ -7,4 +7,7 @@
 	url = git@github.com:Lruihao/blog-private.git
 [submodule "themes/shortcode-mmt-netease"]
 	path = themes/shortcode-mmt-netease
-	url = https://github.com/Lruihao/hugo-shortcode-mmt-netease.git
+	url =git@github.com:Lruihao/hugo-shortcode-mmt-netease.git
+[submodule "themes/shortcode-sponsor-log"]
+	path = themes/shortcode-sponsor-log
+	url =git@github.com:Lruihao/hugo-shortcode-sponsor-log.git
