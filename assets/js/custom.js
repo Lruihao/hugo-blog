@@ -70,6 +70,30 @@ const Blog = new (function () {
   };
 
   /**
+   * 修改 Valine 样式及功能
+   * @deprecated 之后弃用 Valine 评论
+   */
+  this.hackValine = () => {
+    const $valine = document.querySelector('#valine');
+    this.timerHackValine = void 0;
+    if (!$valine) {
+      return;
+    }
+    this.timerHackValine = setInterval(() => {
+      const $vcount = $valine.querySelector('.vcount');
+      if ($vcount) {
+        const $vcards = $valine.querySelector('.vcards');
+        const $vpage = $valine.querySelector('.vpage');
+        $vcount.addEventListener('click', () => {
+          $vcards.classList.toggle('d-none');
+          $vpage.classList.toggle('d-none');
+        });
+        clearInterval(this.timerHackValine);
+      }
+    }, 500);
+  };
+
+  /**
    * Initialize.
    * @returns {Blog}
    */
@@ -93,6 +117,6 @@ const Blog = new (function () {
   Blog.init();
   // It will be executed when the DOM tree is built.
   document.addEventListener('DOMContentLoaded', () => {
-
+    Blog.hackValine();
   });
 })();

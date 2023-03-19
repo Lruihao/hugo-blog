@@ -52,6 +52,39 @@
   }
 }
 
+// hack valine comment
+#valine {
+  max-height: 200px;
+  overflow-y: overlay;
+
+  .vcount {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    cursor: pointer;
+    background-color: $global-background-color;
+
+    [data-theme='dark'] & {
+      background-color: $global-background-color-dark;
+    }
+
+    &::after {
+      content: '来自 Valine';
+      margin-left: 0.5rem;
+      font-size: 50%;
+      @extend .text-secondary;
+    }
+  }
+  
+
+  .vpanel,
+  .vempty,
+  .vat,
+  .vpower {
+    display: none !important;
+  }
+}
+
 // Custom font
 @font-face {
   font-family: MMT_H;
