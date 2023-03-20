@@ -99,7 +99,7 @@ const Blog = new (function () {
    * 切换主题时切换 giscus 主题
    */
   this.patchGiscus = () => {
-    if (fixit.config.comment.giscus) {
+    if (fixit.config.comment?.giscus) {
       const giscusConfig = fixit.config.comment.giscus;
       this._giscusOnSwitchTheme = this._giscusOnSwitchTheme || (() => {
         const message = { setConfig: { theme: fixit.isDark ? giscusConfig.darkTheme : giscusConfig.lightTheme }};
