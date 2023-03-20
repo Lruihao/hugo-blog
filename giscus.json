@@ -1,0 +1,14 @@
+{
+  "origins": [
+    "https://lruihao.cn",
+    "https://lruihao.github.io",
+    "https://lruihao-github-io.vercel.app",
+    "https://lruihao-github-io-lruihao.vercel.app"
+  ],
+  "originsRegex": [
+    "https://lruihao-github-io-git-([A-z0-9]|-)*lruihao\\.vercel\\.app",
+    "https://lruihao-github-io-[A-z0-9]{9}-lruihao\\.vercel\\.app",
+    "http://localhost:[0-9]+"
+  ],
+  "defaultCommentOrder": "oldest"
+}

@@ -54,14 +54,16 @@
 
 // hack valine comment
 #valine {
-  max-height: 200px;
-  overflow-y: overlay;
+  max-height: 500px;
+  overflow-y: scroll;
 
   .vcount {
     position: sticky;
     top: 0;
     z-index: 1;
     cursor: pointer;
+    text-align: right;
+    font-size: 1rem;
     background-color: $global-background-color;
 
     [data-theme='dark'] & {

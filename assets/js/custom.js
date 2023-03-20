@@ -84,6 +84,8 @@ const Blog = new (function () {
       if ($vcount) {
         const $vcards = $valine.querySelector('.vcards');
         const $vpage = $valine.querySelector('.vpage');
+        $vcards.classList.add('d-none');
+        $vpage.classList.add('d-none');
         $vcount.addEventListener('click', () => {
           $vcards.classList.toggle('d-none');
           $vpage.classList.toggle('d-none');
@@ -91,6 +93,27 @@ const Blog = new (function () {
         clearInterval(this.timerHackValine);
       }
     }, 500);
+  };
+
+  /**
+   * 切换主题时切换 giscus 主题
+   */
+  this.patchGiscus = () => {
+    if (fixit.config.comment.giscus) {
+      const giscusConfig = fixit.config.comment.giscus;
+      this._giscusOnSwitchTheme = this._giscusOnSwitchTheme || (() => {
+        const message = { setConfig: { theme: fixit.isDark ? giscusConfig.darkTheme : giscusConfig.lightTheme }};
+        document.querySelector('.giscus-frame')?.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      });
+      fixit.switchThemeEventSet.add(this._giscusOnSwitchTheme);
+      window.addEventListener('message', (event) => {
+        const $script = document.querySelector('#giscus>script');
+        if ($script){
+          this._giscusOnSwitchTheme();
+          $script.parentElement.removeChild($script);
+        }
+      }, { once: true });
+    }
   };
 
   /**
@@ -118,5 +141,6 @@ const Blog = new (function () {
   // It will be executed when the DOM tree is built.
   document.addEventListener('DOMContentLoaded', () => {
     Blog.hackValine();
+    Blog.patchGiscus();
   });
 })();
