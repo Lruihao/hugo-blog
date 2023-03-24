@@ -89,6 +89,12 @@ disableThemeInject = false
     # whether to use typeit animation for subtitle name
     typeit = false
 
+# FixIt 0.2.18 | NEW Breadcrumb config
+[breadcrumb]
+  enable = false
+  sticky = false
+  showHome = false
+
 # Footer config
 [footer]
   enable = true
@@ -310,6 +316,8 @@ disableThemeInject = false
     # position relative to post footer, optional value: ["before", "after"]
     position = "before"
     comment = "Buy me a coffee~"
+    # FixIt 0.2.18 | NEW display mode of QR code images, optional values: ["static", "fixed"], default: `static`
+    mode = "fixed"
     [page.reward.ways]
       wechatpay = "/images/wechatpay.jpg"
       alipay = "/images/alipay.jpg"

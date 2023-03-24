@@ -1,6 +1,6 @@
 # Lruihao Blog (Hugo)
 
-[![Hugo](https://img.shields.io/badge/Hugo-%5E0.89.0-ff4088?style=flat&logo=hugo)](https://gohugo.io/)
+[![Hugo](https://img.shields.io/badge/Hugo-%5E0.109.0-ff4088?style=flat&logo=hugo)](https://gohugo.io/)
 [![License](https://img.shields.io/github/license/Lruihao/hugo-blog?style=flat)](https://github.com/Lruihao/hugo-blog/blob/main/LICENSE)
 [![Hugo build and deploy](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml)
 [![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/m/Lruihao/hugo-blog/main?style=flat)](https://github.com/Lruihao/hugo-blog/commits/main)
@@ -28,7 +28,7 @@
 
 ## Quick Start
 
-只需根据操作系统（Windows、Linux、macOS）安装最新版本的 [Hugo(>= 0.89.0)](https://gohugo.io/installation/)。
+只需根据操作系统（Windows、Linux、macOS）安装最新版本的 [Hugo(>= 0.109.0)](https://gohugo.io/installation/)。
 
 ```bash
 git clone --recursive git@github.com:Lruihao/hugo-blog.git
