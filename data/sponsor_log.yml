@@ -6,17 +6,17 @@
 #   origin: alipay # [alipay, bitcoin, paypal, wechatpay, ...]
 #   remark: "Come on!"
 - date: 2018-09-28
-  sponsor: "[francs](https://postgres.fun)"
+  sponsor: "francs"
   amount: ¥50.00
   origin: 支付宝
   remark: "大学生时期，第一次收到别人的支持，内心表示受宠若惊又非常开心。非常感谢老哥的支持！"
 - date: 2018-10-26
-  sponsor: "[francs](https://postgres.fun)"
+  sponsor: "francs"
   amount: ¥8.80
   origin: QQ
   remark: "今天学校运动会没课，睡到 9 点多起来看到 QQ 收到一个红包，感谢支持！"
 - date: 2018-11
-  sponsor: "[francs](https://postgres.fun)"
+  sponsor: "francs"
   amount: ¥8.80
   origin: QQ
   remark:
@@ -63,3 +63,8 @@
   amount: ¥5.00
   origin: wechatpay
   remark: "留言：“很好用的主题，谢谢作者💪”"
+- date: 2023-04-17 10:35:26
+  sponsor: 建议去世
+  amount: ¥20.00
+  origin: wechatpay
+  remark: "留言：“主题不错”"
