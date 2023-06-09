@@ -63,9 +63,7 @@ npm install tailwindcss@npm:@tailwindcss/postcss7-compat @tailwindcss/postcss7-c
 npx tailwindcss init -p
 ```
 
-`postcss.config.js` 如下：
-
-```js
+```js {title="postcss.config.js"}
 module.exports = {
     plugins: {
       tailwindcss: {},
@@ -74,9 +72,7 @@ module.exports = {
 }
 ```
 
-`tailwind.config.js` 如下：
-
-```js
+```js {title="tailwind.config.js"}
 module.exports = {
   purge: [
     "./src/App.vue",
@@ -109,7 +105,7 @@ import "tailwindcss/tailwind.css"
 npm run serve
 ```
 
-```vue
+```vue {title="src/App.vue"}
 <template>
   <div id="app">
     <div class="bg-gray-100">
