@@ -1,5 +1,5 @@
 ---
-title: 使用 Node 自动创建 Vue 的路由
+title: 使用 Node.js 自动创建 Vue 的路由
 date: 2023-06-14T00:11:17+08:00
 tags:
   - Node.js

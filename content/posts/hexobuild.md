@@ -3,8 +3,8 @@ title: hexo+github 搭建个人博客及美化
 date: 2018-06-01 14:34:23
 lastmod: 2021-10-03 15:27:58
 tags:
+  - Node.js
   - hexo
-  - Node
 categories:
   - Memo
 expirationReminder:

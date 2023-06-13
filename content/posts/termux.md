@@ -2,9 +2,9 @@
 title: 在 Android 上搭建 hexo 博客
 date: 2018-08-11 16:59:05
 tags:
-  - termux
+  - Node.js
   - hexo
-  - Node
+  - termux
 categories:
   - Memo
 ---

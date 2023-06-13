@@ -4,8 +4,9 @@ date: 2022-08-07T14:40:33+08:00
 tags:
   - CDN
   - GitHub Actions
-  - Node
+  - Node.js
 categories:
+  - Node.js
   - JavaScript
 ---
 

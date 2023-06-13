@@ -4,9 +4,9 @@ date: 2022-07-29T20:22:44+08:00
 categories:
   - Memo
 tags:
-  - Mac
-  - Node
   - Git
+  - Mac
+  - Node.js
 ---
 
 记录一下使用 Mac 作为生产工具开发的一些基本配置和经验。

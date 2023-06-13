@@ -2,9 +2,9 @@
 title: termux 基本使用教程
 date: 2018-10-23 22:16:02
 tags:
-  - termux
+  - Node.js
   - linux
-  - Node
+  - termux
 categories:
   - Memo
 ---
