@@ -3,10 +3,10 @@ title: Vue2 + tailwindcss 初始化
 date: 2023-06-03T17:38:44+08:00
 tags:
   - tailwindcss
-  - Vue
-categories:
+  - Vue2
   - CSS
-  - JavaScript
+categories:
+  - Vue
 ---
 
 ## 新建 Vue2 项目

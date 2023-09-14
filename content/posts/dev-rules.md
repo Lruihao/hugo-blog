@@ -2,16 +2,15 @@
 title: Web 开发规则，代码规范
 date: 2019-08-15 18:30:31
 tags:
-  - Git
-  - REST
-  - HTML
   - CSS
-  - Scss
-  - JavaScript
-  - Vue
+  - Git
+  - HTML
   - Java
+  - JavaScript
   - PHP
   - Python
+  - REST
+  - Scss
 categories:
   - Spec
 ---

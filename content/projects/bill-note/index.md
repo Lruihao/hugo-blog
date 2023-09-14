@@ -4,10 +4,9 @@ date: 2021-03-02 21:46:40
 lastmod: 2021-03-02 21:46:40
 tags:
   - JavaScript
+  - Vue2
   - leancloud
-  - Vue
 categories:
-  - Projects
   - 瞎折腾
 type: posts
 ---
