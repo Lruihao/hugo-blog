@@ -7,8 +7,8 @@ tags:
   - 腾讯云 cos 桶
   - JavaScript
 categories:
-  - Projects
   - JavaScript
+  - 轮子
 featuredImage: /projects/cos-album/images/view.png
 aliases:
   - /posts/cos-album.html

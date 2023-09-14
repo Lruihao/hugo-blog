@@ -1,8 +1,8 @@
 ---
-title: 项目
+title: 轮子
 menu:
   main:
-    name: 我的项目
+    name: 我的轮子
     parent: about
     weight: 8
     params:
