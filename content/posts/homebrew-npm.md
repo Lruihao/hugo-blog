@@ -7,6 +7,7 @@ tags:
   - npm
   - npx
   - Mac
+  - nvm
 categories:
   - Debug
 ---

@@ -7,6 +7,7 @@ tags:
   - Git
   - Mac
   - Node.js
+  - nvm
 ---
 
 记录一下使用 Mac 作为生产工具开发的一些基本配置和经验。
@@ -142,8 +143,8 @@ ssh-add ~/.ssh/Lruihao-Github  # 私钥路径
 开机启动时系统会去自动读取 `id_rsa` 的私钥来启动 SSH 链接，若不是默认命令就会失败需要手动执行上诉命令启动，可添加到[开机自启动](#startup)。
 {{< /admonition >}}
 
-
 {{< admonition tip "SourceTree 相关文章" >}}
+
 - [解决 SourceTree 提交时候 husky 命令失败问题](/posts/sourcetree-husky/)
 {{< /admonition >}}
 
