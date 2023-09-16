@@ -10,14 +10,10 @@
   avatar: https://a.biugle.cn/images/avatar.jpg
   url: https://a.biugle.cn/
   description: 又一个被我带入坑的小伙子！
-- nickname: francs
-  avatar: https://postgres.fun/images/francs.png
-  url: https://postgres.fun
-  description: PostgreSQL中文网。数据库。francs.top
-# - nickname: 赵俊 (未发现友链)
-#   avatar: https://zhaojun.vip/uploads/avatar.gif
-#   url: https://zhaojun.vip
-#   description: 一个Java学习者的博客，分享Java干货，VPS知识，软件推荐等。valine-admin👍
+# - nickname: francs # 该站点已下线
+#   avatar: https://postgres.fun/images/francs.png
+#   url: https://postgres.fun
+#   description: PostgreSQL中文网。数据库。francs.top
 - nickname: hojun
   avatar: https://cdn.jsdelivr.net/gh/honjun/ImageHosting/sina/006bYVyvgy1ftand2qurdj303c03cdfv.jpg
   url: https://www.hojun.cn
@@ -30,7 +26,7 @@
   avatar: https://www.domon.cn/content/images/2019/06/avatar_shiba-1.jpg
   url: https://www.domon.cn
   description: 主要涉及 Android 端技术，前沿其他技术和生活吐槽。
-- nickname: mythsman
+- nickname: mythsman # 该站点已加密
   avatar: https://blog.mythsman.com/content/images/2019/07/----_20190713220203.jpg
   url: https://blog.mythsman.com
   description: hexo-douban 插件开发者，坐标上海拼多多博客看起来是个很有生活感与学习感的地方。
@@ -70,10 +66,6 @@
   avatar: https://www.foreverblog.cn/favicon.ico
   url: https://www.foreverblog.cn
   description: 一个人的寂寞，一群人的狂欢。
-- nickname: HominSu
-  avatar: https://www.hauhau.cn/img/logo.png
-  url: https://www.hauhau.cn
-  description: 哈喽啊～各位
 - nickname: Andreo Y.
   avatar: https://pigco-1313228125.cos.ap-shanghai.myqcloud.com/img/JQAeX6iE9f1RKTu.jpg
   url: https://andreoy.cn
@@ -82,10 +74,6 @@
   avatar: https://cravatar.cn/avatar/467dd59b914fd9980108b9f7d143d320
   url: https://ayou10031.com
   description: Try again,do better.
-- nickname: 浅枫沐雪
-  avatar: https://gravatar.loli.net/avatar/79e7d8047e78c312d4e5951b84089cc9
-  url: https://allms.cn
-  description: 愿时光待你温暖如初
 - nickname: SoulChild 随笔记
   avatar: https://www.soulchild.cn/images/avatar.png
   url: https://soulchild.cn
