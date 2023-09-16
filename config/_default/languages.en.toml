@@ -1,0 +1,10 @@
+# -------------------------------------------------------------------------------------
+# Multilingual and i18n | 多语言 i18n
+# See: https://gohugo.io/content-management/multilingual/#configure-languages
+# -------------------------------------------------------------------------------------
+
+weight = 3
+languageCode = "en"
+languageName = "English"
+hasCJKLanguage = false
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."

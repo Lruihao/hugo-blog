@@ -1,0 +1,10 @@
+# -------------------------------------------------------------------------------------
+# Multilingual and i18n | 多语言 i18n
+# See: https://gohugo.io/content-management/multilingual/#configure-languages
+# -------------------------------------------------------------------------------------
+
+weight = 1
+languageCode = "zh-CN"
+languageName = "简体中文"
+hasCJKLanguage = true
+copyright = "本站内容采用知识共享署名-非商业性使用 4.0（CC BY-NC 4.0）国际许可协议。"
