@@ -4,7 +4,7 @@ date: 2018-12-10 21:14:51
 tags:
   - English
 categories:
-  - Study
+  - Memo
 ---
 
 > 完全倒装： 把整个谓语动词放到主语前。

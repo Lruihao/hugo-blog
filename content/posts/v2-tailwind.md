@@ -5,6 +5,7 @@ tags:
   - tailwindcss
   - Vue2
   - CSS
+  - eslint
 categories:
   - Vue
 ---

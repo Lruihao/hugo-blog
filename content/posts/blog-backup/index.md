@@ -3,12 +3,11 @@ title: hexo 博客源码备份
 date: 2018-11-03 12:49:28
 lastmod: 2018-11-03 12:49:28
 tags:
+  - hexo
   - Git
   - Node.js
-  - hexo
 categories:
   - Memo
-  - Git
 featuredImage: /posts/blog-backup/images/1.png
 ---
 
