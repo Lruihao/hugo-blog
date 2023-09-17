@@ -4,6 +4,8 @@ date: 2023-09-15T11:07:56+08:00
 categories:
   - Spec
   - 翻译
+tags:
+  - 他山之石
 repost:
   enable: true
   url: https://github.com/mdn/translated-content/blob/main/docs/zh-cn/translation-guide.md

@@ -4,6 +4,8 @@ date: 2019-03-21 16:43:19
 lastmod: 2019-09-13 16:43:19
 tags:
   - hexo
+  - 他山之石
+  - Node.js
 categories:
   - Memo
 description: 基于 hexo-theme-next 6.0+的 Pisces 模板做的 DIY 扩展性设计
@@ -13,6 +15,8 @@ expirationReminder:
   reminder: -1
   warning: -1
 ---
+
+<!-- markdownlint-disable-file -->
 
 {{< admonition danger >}}
 <span style="color: #d9534f;font-size: 1.2em;">**如无必要，不再更新！（2019.09.13）**</span>  
@@ -63,7 +67,7 @@ git clone https://github.com/Lruihao/hexo-theme-next themes/next
 
 主题配置文件`_config.yml`, 选择主题
 
-```
+```text
 theme: next
 ```
 
