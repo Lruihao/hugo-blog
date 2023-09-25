@@ -8,7 +8,7 @@ tags:
   - JavaScript
 categories:
   - JavaScript
-  - 轮子
+  - project
 featuredImage: /projects/cos-album/images/view.png
 aliases:
   - /posts/cos-album.html
