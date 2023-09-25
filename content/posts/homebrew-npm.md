@@ -8,8 +8,9 @@ tags:
   - npx
   - Mac
   - nvm
+  - debug
 categories:
-  - Debug
+  - Grocery
 ---
 
 {{< admonition question >}}

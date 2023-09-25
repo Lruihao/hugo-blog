@@ -2,7 +2,7 @@
 title: 封装 Vue FullScreenToggler 组件
 date: 2023-09-17T19:44:07+08:00
 categories:
-  - Vue
+  - Vue.js
 tags:
   - Vue2
   - JavaScript

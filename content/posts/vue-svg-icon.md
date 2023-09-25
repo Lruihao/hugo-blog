@@ -1,8 +1,8 @@
 ---
-title: 在 Vue 项目中更优雅的使用 icon
+title: 在 Vue 项目中更优雅地使用 icon
 date: 2023-09-14T11:24:48+08:00
 categories:
-  - Vue
+  - Vue.js
 tags:
   - svg
   - Vue2
