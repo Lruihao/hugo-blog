@@ -1,5 +1,5 @@
 ---
-title: 如何 Element UI 表头、表尾、横向滚动条吸顶吸底固定？
+title: 如何让 Element UI 表头、表尾、横向滚动条吸顶吸底固定？
 date: 2023-09-25T17:49:58+08:00
 categories:
   - Vue.js
@@ -118,6 +118,8 @@ Non sunt multiplicanda entia sine necessitate
 不到迫不得已，不要轻易造轮子，要善于发现和利用已有的轮子、最理想的状态就是永远站在巨人的肩膀上。
 
 但是通过造轮子，可以更好的学习和理解技术，也能体会到很多写业务代码不能感受到的快乐。
+
+学而不思则罔，思而不学则殆。
 
 <!-- footnote reference definition -->
 [^1]: *如有必要，以后版本需要替换 gemini-scrollbar 实现自定义滚动条的功能。*
