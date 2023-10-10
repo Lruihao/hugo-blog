@@ -53,7 +53,7 @@ int main(){
         }
         cout<<sum<<endl;
     }
-	return 0;
+    return 0;
 }
 
 ```

@@ -36,11 +36,11 @@ int main()
         switch(se)
         {
         case 'y':
-        shuru();
-    	  panduan(a,b,c);
-        break;
+          shuru();
+          panduan(a,b,c);
+          break;
         case 'n':
-        return 0;
+          return 0;
         }
     }
 }
@@ -50,7 +50,7 @@ void shuru()
     while(!scanf("%d,%d,%d,%d",&a,&b,&c,&d)){//判断非数字字符
         fflush(stdin);//清理缓存
         a=N;b=N;c=N;d=N;
-    	 printf("输入错误、n");
+        printf("输入错误、n");
     }
     fflush(stdin);
     while((a<1||a>100)||(b<1||b>100)||(c<1||c>100)||d!=N)

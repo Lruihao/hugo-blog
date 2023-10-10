@@ -24,7 +24,7 @@ example:
 
 ## Emoji
 
-- https://gitmoji.dev
+- <https://gitmoji.dev>
 - [vscode plugin](https://github.com/maixiaojie/git-emoji-zh.git)
 - utools plugin `GitEmoji`
 
