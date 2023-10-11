@@ -43,9 +43,8 @@ int main(){
             cout<<i<<endl;
             break;
         }
-	return 0;
+    return 0;
 }
-
 ```
 
 ### [B. The Bits](https://codeforces.com/contest/1017/problem/B)
@@ -85,7 +84,6 @@ int main(){
     }
     long long sum=n*x+m*(y+n);
     cout<<sum<<endl;
-	return 0;
+    return 0;
 }
-
 ```

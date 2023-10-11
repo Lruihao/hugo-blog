@@ -29,6 +29,6 @@ int main(){
         if(!flag) {cout<<a[i];flag=1;}
         else cout<<" "<<a[i];
     }
-	return 0;
+    return 0;
 }
 ```

@@ -15,8 +15,12 @@ aliases:
 slug: cell-watermark
 ---
 
+<!-- markdownlint-disable -->
+
 # Usage
+
 ## Browser
+
 1. Clone source
 
     ```
@@ -32,6 +36,7 @@ slug: cell-watermark
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cell-watermark@1.0.3/src/watermark.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cell-watermark@1.0.3/src/watermark.min.js"></script>
     ```
+
 3. Initialization
 
     ```javascript
@@ -41,7 +46,9 @@ slug: cell-watermark
       })
     });
     ```
+
 ## NPM
+
 1. Install
 
     ```bash
@@ -49,24 +56,26 @@ slug: cell-watermark
     ```
 
 2. Import
-   
+
     ```javascript
     import Watermark from 'cell-watermark'
     /* Or */
     var Watermark = require("cell-watermark")
     ```
+
 # Class: Watermark
+
 ## Watermark(options)
 
 #### new Watermark(options)
 
-##### Parameters:
+##### Parameters
 
 | Name    | Type   | Description                       |
 | ------- | ------ | --------------------------------- |
 | options | Object | The options of watermark（[Properties](#properties)） |
 
-###### Properties:
+###### Properties
 
 | Name       | Type   | Attributes | Default  | Description                          |
 | ---------- | ------ | ---------- | :------- | ------------------------------------ |
@@ -89,15 +98,17 @@ slug: cell-watermark
 
 Upload watermark's text content
 
-##### Parameters:
+##### Parameters
+
 |  Name   |  Type  |   Description    |
 | :-----: | :----: | :--------------: |
 | content | String | watermark's text |
 
 #### render(options)
+
 Rerender watermark
 
-##### Parameters:
+##### Parameters
 
 | Name    | Type   | Description                         |
 | ------- | ------ | ----------------------------------- |

@@ -37,6 +37,6 @@ int main(){
     if((s1-s2)>=0)
         printf("Yes\n");
     else printf("No\n");
-	return 0;
+    return 0;
 }
 ```

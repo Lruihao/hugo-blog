@@ -8,7 +8,10 @@
     "server": "hugo server -D --disableFastRender --navigateToChanged --bind 0.0.0.0",
     "server:production": "npm run server -- --environment production",
     "update:theme": "git submodule update --remote --merge themes/FixIt && git add . && git commit -m ':arrow_up: Chore(theme): update FixIt version'",
-    "qcloudcdn": "node .scripts/qcloudcdn.js $SECRET_ID $SECRET_KEY"
+    "qcloudcdn": "node .scripts/qcloudcdn.js $SECRET_ID $SECRET_KEY",
+    "lint:md": "markdownlint-cli2 \"./content/**/*.md\"",
+    "fix:md": "npm run lint:md -- --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -20,8 +23,17 @@
     "url": "https://github.com/Lruihao/hugo-blog/issues"
   },
   "homepage": "https://github.com/Lruihao/hugo-blog#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "atomic-algolia": "^0.3.19",
     "qcloud-cdn-node-sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "markdownlint-cli2": "^0.10.0",
+    "markdownlint-rule-search-replace": "^1.2.0"
   }
 }
