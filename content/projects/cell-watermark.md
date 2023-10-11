@@ -15,6 +15,8 @@ aliases:
 slug: cell-watermark
 ---
 
+<!-- markdownlint-disable -->
+
 # Usage
 
 ## Browser

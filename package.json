@@ -33,6 +33,7 @@
   "devDependencies": {
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
-    "markdownlint-cli2": "^0.10.0"
+    "markdownlint-cli2": "^0.10.0",
+    "markdownlint-rule-search-replace": "^1.2.0"
   }
 }
