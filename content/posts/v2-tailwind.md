@@ -7,7 +7,7 @@ tags:
   - CSS
   - eslint
 categories:
-  - Vue
+  - Vue.js
 ---
 
 ## 新建 Vue2 项目

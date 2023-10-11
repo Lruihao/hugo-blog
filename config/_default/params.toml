@@ -364,8 +364,8 @@ disableThemeInject = false
 
 # FixIt 0.2.15 | NEW Mermaid config
 [mermaid]
-  # For values, see https://mermaid-js.github.io/mermaid/#/Setup?id=theme
-  themes = ['forest', 'dark']
+  # For values, see https://mermaid.js.org/config/theming.html#available-themes
+  themes = ['default', 'dark']
 
 # FixIt NEW | 0.2.12 PanguJS config
 [pangu]

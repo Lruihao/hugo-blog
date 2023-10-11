@@ -8,7 +8,7 @@ tags:
   - JavaScript
 categories:
   - JavaScript
-  - 轮子
+  - project
 type: posts
 aliases:
   - /posts/watermark-fixed/

@@ -22,7 +22,7 @@
   title = ""
   weight = 2
   [main.params]
-    icon = "fa-solid fa-th"
+    icon = "fa-solid fa-folder-tree"
 [[main]]
   identifier = "tags"
   pre = ""
