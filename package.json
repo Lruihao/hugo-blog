@@ -10,7 +10,8 @@
     "update:theme": "git submodule update --remote --merge themes/FixIt && git add . && git commit -m ':arrow_up: Chore(theme): update FixIt version'",
     "qcloudcdn": "node .scripts/qcloudcdn.js $SECRET_ID $SECRET_KEY",
     "lint:md": "markdownlint-cli2 \"./content/**/*.md\"",
-    "fix:md": "npm run lint:md -- --fix"
+    "fix:md": "npm run lint:md -- --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,11 @@
   },
   "dependencies": {
     "atomic-algolia": "^0.3.19",
-    "markdownlint-cli2": "^0.10.0",
     "qcloud-cdn-node-sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "markdownlint-cli2": "^0.10.0"
   }
 }
