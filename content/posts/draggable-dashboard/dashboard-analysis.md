@@ -1,14 +1,13 @@
 ---
-title: 拖拽式仪表盘功能需求分析
+title: 拖拽式仪表盘 - 功能需求分析
 date: 2023-10-12T15:37:30+08:00
 collection:
   - 拖拽式仪表盘系列
 categories: 
   - Vue.js
 tags: 
-  - 仪表盘
+  - 拖拽式仪表盘
   - dashboard
-  - 拖拽式
   - Vue2
   - 需求分析
 summary: 本文将对拖拽式仪表盘的功能需求进行分析，了解需要考虑的关键要素，以便于后续的设计和开发。
@@ -22,7 +21,7 @@ summary: 本文将对拖拽式仪表盘的功能需求进行分析，了解需�
 
 ## 功能需求
 
-由于本系列文章写作设计和开发之后，所以先一睹为快，看看最终的效果：[在线 Demo](https://lruihao.github.io/vue-el-demo/#/dashboard/index)
+由于本系列文章写作在设计和开发之后，所以先一睹为快，看看最终的效果：[在线 Demo](https://lruihao.github.io/vue-el-demo/#/dashboard/index)
 
 技术背景是基于 Vue2 实现，功能需求大致如下：
 
