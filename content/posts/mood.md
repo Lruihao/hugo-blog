@@ -5,7 +5,7 @@ lastmod: 2018-09-21 21:11:25
 tags:
   - 随笔
 categories:
-  - 随笔
+  - thoughts
 expirationReminder:
   enable: false
 ---

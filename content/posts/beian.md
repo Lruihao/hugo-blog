@@ -5,7 +5,7 @@ tags:
   - 随笔
   - 网站备案
 categories:
-  - 随笔
+  - thoughts
 ---
 
 {{< admonition success "备案" >}}

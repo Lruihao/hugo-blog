@@ -4,7 +4,7 @@ date: 2019-04-24 21:23:22
 tags:
   - 面试
 categories:
-  - 随笔
+  - thoughts
 expirationReminder:
   enable: false
 ---

@@ -88,13 +88,13 @@
         "replace": " — ",
         "searchScope": "text"
       },
-      {
-        "name": "trailing-spaces",
-        "message": "Avoid trailing spaces",
-        "searchPattern": "/  +$/gm",
-        "replace": "",
-        "searchScope": "all"
-      },
+      // {
+      //   "name": "trailing-spaces",
+      //   "message": "Avoid trailing spaces",
+      //   "searchPattern": "/  +$/gm",
+      //   "replace": "",
+      //   "searchScope": "all"
+      // },
       {
         "name": "double-spaces",
         "message": "Avoid double spaces",

@@ -6,7 +6,7 @@ tags:
   - 随笔
   - 他山之石
 categories:
-  - 随笔
+  - thoughts
 author:
   name: 杨灿
   link: mailto:1845280636@qq.com

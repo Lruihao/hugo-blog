@@ -5,7 +5,7 @@ lastmod: 2018-05-31T10:09:15+08:00
 tags:
   - 随笔
 categories:
-  - 随笔
+  - thoughts
 featuredImage: /posts/猴子与哪吒/images/hznz.jpg
 toc:
   enable: false

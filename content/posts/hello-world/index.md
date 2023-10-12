@@ -5,7 +5,7 @@ date: 2018-05-28T20:01:01+08:00
 tags:
   - 随笔
 categories:
-  - 随笔
+  - thoughts
 toc:
   enable: false
 featuredImagePreview: /posts/hello-world/images/lunyu.jpg
