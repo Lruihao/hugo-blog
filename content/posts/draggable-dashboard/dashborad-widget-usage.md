@@ -11,6 +11,7 @@ tags:
   - dashboard
   - widget
   - Vue2
+lightgallery: force
 ---
 
 本文将通过一个简单的例子，介绍如何开发一个仪表盘组件。

@@ -219,7 +219,7 @@ disableThemeInject = false
   # FixIt NEW | 0.2.0 whether to enable twemoji
   twemoji = true
   # whether to enable lightgallery
-  lightgallery = true
+  lightgallery = "force"
   # FixIt NEW | 0.2.0 whether to enable the ruby extended syntax
   ruby = true
   # FixIt NEW | 0.2.0 whether to enable the fraction extended syntax
