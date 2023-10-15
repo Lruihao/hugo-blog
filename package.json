@@ -9,8 +9,8 @@
     "server:production": "npm run server -- --environment production",
     "update:theme": "git submodule update --remote --merge themes/FixIt && git add . && git commit -m ':arrow_up: Chore(theme): update FixIt version'",
     "qcloudcdn": "node .scripts/qcloudcdn.js $SECRET_ID $SECRET_KEY",
-    "lint:md": "markdownlint-cli2 \"./content/**/*.md\"",
-    "fix:md": "npm run lint:md -- --fix",
+    "lint:md": "markdownlint-cli2 \"content/**/*.md\" && autocorrect \"content/**/*.md\" --lint",
+    "fix:md": "markdownlint-cli2 \"content/**/*.md\" --fix && autocorrect \"content/**/*.md\" --fix",
     "prepare": "husky install"
   },
   "repository": {
@@ -31,6 +31,7 @@
     "qcloud-cdn-node-sdk": "^1.0.0"
   },
   "devDependencies": {
+    "autocorrect-node": "^2.8.4",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "markdownlint-cli2": "^0.10.0",
