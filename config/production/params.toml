@@ -28,9 +28,9 @@
     serverURLs = ""
     #  emoji data file name, default is "google.yml"
     # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
-    # located in "themes/FixIt/assets/data/emoji/" directory
+    # located in "themes/FixIt/assets/lib/valine/emoji/" directory
     # you can store your own data files in the same path under your project:
-    # "assets/data/emoji/"
+    # "assets/lib/valine/emoji/"
     emoji = ""
     commentCount = true # FixIt NEW | 0.2.13
   # FixIt 0.2.14 | NEW Giscus comments config (https://giscus.app/)

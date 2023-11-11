@@ -103,7 +103,7 @@ Press Ctrl+C to stop
 
 - [RSS](http://lruihao.cn/index.xml)
 - Watch on GitHub
-- [云+社区](https://cloud.tencent.com/developer/column/94521)
+- [云 + 社区](https://cloud.tencent.com/developer/column/94521)
 
 ## Powered
 
@@ -112,10 +112,12 @@ Press Ctrl+C to stop
 
 ## License
 
+[![Content License](https://img.shields.io/badge/license-CC_BY--NC_4.0-blue?style=flat)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![License](https://img.shields.io/github/license/Lruihao/hugo-blog?style=flat)](https://github.com/Lruihao/hugo-blog/blob/main/LICENSE)
-[![Content License](https://img.shields.io/badge/content_license-CC_BY--NC_4.0-blue?style=flat)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-本站内容采用 [知识共享署名-非商业性使用 4.0（CC BY-NC 4.0）](https://creativecommons.org/licenses/by-nc/4.0/) 国际许可协议。（_`content/private` 除外_）
+- 此存储库中的文本、图像和视频等内容采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可
+- 此存储库中的代码采用 [MIT](https://github.com/Lruihao/hugo-blog/blob/main/LICENSE) 许可
+- _`content/private` 目录不在任何许可范围内_
 
 ## Author
 
