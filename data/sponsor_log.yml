@@ -72,4 +72,9 @@
   sponsor: 🐟
   amount: ¥1.00
   origin: wechatpay
-  remark: "留言：“感谢fixit作者”"
+  remark: "留言：“感谢 FixIt 作者”"
+- date: 2023-11-03 22:35:07
+  sponsor: 丰果 # 来自 `141****866`
+  amount: ¥15.00
+  origin: FixIt 主题交流群 QQ 红包
+  remark: "留言：“请喝杯咖啡”"
