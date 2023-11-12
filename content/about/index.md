@@ -4,6 +4,7 @@ subtitle: Lruihao
 date: 2021-09-07T21:00:48+08:00
 comment: false
 twemoji: false
+lightgallery: false
 ---
 
 <!-- markdownlint-disable-file -->
@@ -50,7 +51,7 @@ const site = new Blog('菠菜眾長', 'Lruihao', 'https://lruihao.cn');
 
 - [RSS](http://lruihao.cn/index.xml)
 - [GitHub](https://github.com/Lruihao/hugo-blog)
-- [云+社区](https://cloud.tencent.com/developer/column/94521)
+- [云 + 社区](https://cloud.tencent.com/developer/column/94521)
 
 ## 致謝
 

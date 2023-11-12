@@ -7,5 +7,5 @@
 home = ["HTML", "RSS", "JSON", "BaiduUrls"]
 page = ["HTML", "MarkDown"]
 section = ["HTML", "RSS"]
-taxonomy = ["HTML", "RSS"]
-taxonomyTerm = ["HTML"]
+taxonomy = ["HTML"]
+term = ["HTML", "RSS"]
