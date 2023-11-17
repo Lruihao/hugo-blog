@@ -5,6 +5,7 @@ categories:
   - Vue.js
 tags:
   - Vue2
+  - 他山之石
 repost:
   enable: true
   url: https://zhuanlan.zhihu.com/p/23134551
