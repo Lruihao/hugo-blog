@@ -5,8 +5,7 @@ tags:
   - Git
   - linux
 categories:
-  - Git
-  - OS
+  - Grocery
 ---
 
 ### 下载 git
@@ -31,7 +30,7 @@ unzip v2.14.1.zip
 unzip 命令用不了，具体步骤如下：
 
 ```
-#yum list | grep zip/unzip 
+#yum list | grep zip/unzip 
 #yum install zip
 #yum install unzip
 ```

@@ -7,7 +7,7 @@ tags:
   - Mac
   - nvm
 categories:
-  - Git
+  - Node.js
 ---
 
 ## 问题描述
