@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/_/",
+      "destination": "/404.html",
+      "permanent": true
+    },
+    {
+      "source": "/_/page/(.*)",
+      "destination": "/404.html",
+      "permanent": true
+    }
+  ]
+}
