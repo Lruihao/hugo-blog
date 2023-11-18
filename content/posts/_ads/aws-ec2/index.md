@@ -1,6 +1,8 @@
 ---
 title: 将 Hugo 博客部署到亚马逊云服务器
 date: 2023-08-26T17:22:57+08:00
+hiddenFromHomePage: true
+hiddenFromSearch: true
 comment: false
 tags:
   - hugo
