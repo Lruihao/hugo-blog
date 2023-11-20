@@ -62,4 +62,4 @@
   # CDN data file name, disabled by default ["jsdelivr.yml", "unpkg.yml", ...]
   # located in "themes/FixIt/assets/data/cdn/" directory
   # you can store your own data files in the same path under your project: "assets/data/cdn/"
-  # data = "unpkg.yml"
+  data = "unpkg.yml"
