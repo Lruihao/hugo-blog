@@ -51,15 +51,20 @@ npm run server:production
 npm run update:theme
 ```
 
----
+<details>
+<summary>如果没有全局安装 Hugo，甚至可以通过 hugo-bin 在 Node.js 环境下使用 Hugo。</summary>
 
-如果没有全局安装 Hugo，甚至可以通过 `npm install hugo-bin --save-dev` 来安装一个 Hugo 的包装器。
+参考：[hugo-bin](https://github.com/fenneclab/hugo-bin)
+
+```bash
+npm install hugo-bin --save-dev
+```
 
 `package.json` 需配置 `extended` 版本：
 
 ```json
 {
-  // ...
+  ...
   "hugo-bin": {
     "buildTags": "extended"
   }
@@ -67,6 +72,7 @@ npm run update:theme
 ```
 
 再通过 `npx hugo` 启动。
+</details>
 
 ### Hugo
 
@@ -77,7 +83,8 @@ hugo server --disableFastRender --navigateToChanged --bind 0.0.0.0
 hugo server --disableFastRender --navigateToChanged --environment production --bind 0.0.0.0
 ```
 
-此外，还可以运行 `hugo_main.sh` 来选择常用的 Hugo 命令：
+<details>
+<summary>此外，还可以运行 shell 脚本来选择常用的 Hugo 命令。</summary>
 
 ```bash
 cd .shell && sh hugo_main.sh
@@ -97,12 +104,14 @@ Please enter the serial number to work
 Press Ctrl+C to stop
 ```
 
+</details>
+
 ## [Roadmap](https://github.com/users/Lruihao/projects/1)
 
 ## Subscribe
 
 - [RSS](http://lruihao.cn/index.xml)
-- Watch on GitHub
+- [GitHub](https://github.com/Lruihao/hugo-blog "Watch on GitHub")
 - [云 + 社区](https://cloud.tencent.com/developer/column/94521)
 
 ## Powered
@@ -112,7 +121,7 @@ Press Ctrl+C to stop
 
 ## License
 
-[![Content License](https://img.shields.io/badge/license-CC_BY--NC_4.0-blue?style=flat)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Content License](https://img.shields.io/badge/license-CC_BY--NC--SA_4.0-blue?style=flat)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![License](https://img.shields.io/github/license/Lruihao/hugo-blog?style=flat)](https://github.com/Lruihao/hugo-blog/blob/main/LICENSE)
 
 - 此存储库中的文本、图像和视频等内容采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可
