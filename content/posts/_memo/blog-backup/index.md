@@ -3,8 +3,8 @@ title: hexo 博客源码备份
 date: 2018-11-03 12:49:28
 lastmod: 2018-11-03 12:49:28
 tags:
-  - hexo
   - Git
+  - Hexo
   - Node.js
 categories:
   - Memo

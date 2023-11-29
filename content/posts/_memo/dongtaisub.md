@@ -2,7 +2,7 @@
 title: hexo 个性化 - next 主题动态显示 subtitle
 date: 2018-08-20 16:16:40
 tags:
-  - hexo
+  - Hexo
   - JavaScript
 categories:
   - Memo

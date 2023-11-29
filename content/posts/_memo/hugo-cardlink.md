@@ -2,8 +2,8 @@
 title: Hugo 添加知乎卡片式链接 Shortcodes
 date: 2021-10-05T19:33:13+08:00
 tags:
+  - Hugo
   - Shortcodes
-  - hugo
 categories:
   - Memo
 ---

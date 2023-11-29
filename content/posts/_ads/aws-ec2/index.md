@@ -6,10 +6,10 @@ hiddenFromSearch: true
 hiddenFromRss: true
 comment: false
 tags:
-  - hugo
+  - AWS
+  - Hugo
   - linux
   - nginx
-  - AWS
 categories:
   - Memo
 resources:

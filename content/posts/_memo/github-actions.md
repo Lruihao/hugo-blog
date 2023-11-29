@@ -4,9 +4,9 @@ date: 2021-10-04T23:46:49+08:00
 subtitle: ""
 description: ""
 tags:
-  - hugo
-  - GitHub Actions
   - Git
+  - GitHub Actions
+  - Hugo
   - 腾讯云 cos 桶
 categories:
   - Memo

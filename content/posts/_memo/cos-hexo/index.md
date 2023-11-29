@@ -2,10 +2,10 @@
 title: 利用腾讯云对象存储 COS 桶托管 hexo 博客
 date: 2019-01-22 14:57:08
 tags:
-  - hexo
-  - hugo
-  - 腾讯云 cos 桶
+  - Hexo
+  - Hugo
   - 对象存储
+  - 腾讯云 cos 桶
 categories:
   - Memo
 ---

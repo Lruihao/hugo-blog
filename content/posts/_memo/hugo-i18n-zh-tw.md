@@ -3,9 +3,9 @@ title: Hugo I18n 添加中文繁體翻譯
 date: 2021-10-05T19:14:45+08:00
 lastmod: 2021-12-19T20:01:45+08:00
 tags:
-  - hugo
-  - i18n
   - FixIt
+  - Hugo
+  - I18n
 categories:
   - Memo
 ---

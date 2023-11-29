@@ -2,8 +2,8 @@
 title: 模仿知乎卡片式链接
 date: 2019-03-15 15:21:39
 tags:
+  - Hexo
   - JavaScript
-  - hexo
 categories:
   - JavaScript
 ---

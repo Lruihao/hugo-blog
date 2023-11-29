@@ -2,7 +2,7 @@
 title: Hugo 友情連結模板
 date: 2021-10-05T14:14:10+08:00
 tags:
-  - hugo
+  - Hugo
 categories:
   - Memo
 ---

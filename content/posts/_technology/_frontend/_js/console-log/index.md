@@ -1,8 +1,11 @@
 ---
 title: hexo 博客自定义 console log
 date: 2018-08-04 16:19:06
-tags: ['hexo', 'JavaScript']
-categories: ['JavaScript']
+tags:
+  - Hexo
+  - JavaScript
+categories:
+  - JavaScript
 ---
 
 看到知乎，百度的页面 F12 检查后都会有一些有趣的招聘信息。于是乎我也想给我的博客加一个。  

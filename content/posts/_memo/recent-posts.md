@@ -2,7 +2,7 @@
 title: 在搜索、文章底部、侧栏添加最近文章模块
 date: 2019-01-16 17:50:52
 tags:
-  - hexo
+  - Hexo
 categories:
   - Memo
 expirationReminder:

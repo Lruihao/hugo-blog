@@ -3,7 +3,7 @@ title: hexo 插件及 next 内置样式集
 date: 2018-11-24 16:54:09
 lastmod: 2021-10-02 15:27:58
 tags:
-  - hexo
+  - Hexo
 categories:
   - Memo
 expirationReminder:

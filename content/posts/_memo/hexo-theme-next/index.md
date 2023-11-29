@@ -3,9 +3,9 @@ title: hexo-theme-next @modified LRH
 date: 2019-03-21 16:43:19
 lastmod: 2019-09-13 16:43:19
 tags:
-  - hexo
-  - 他山之石
+  - Hexo
   - Node.js
+  - 他山之石
 categories:
   - Memo
 description: 基于 hexo-theme-next 6.0+的 Pisces 模板做的 DIY 扩展性设计

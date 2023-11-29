@@ -2,9 +2,9 @@
 title: 个人博客从 Hexo 迁移至 Hugo
 date: 2021-10-03T15:27:58+08:00
 tags:
-  - hugo
-  - hexo
   - FixIt
+  - Hexo
+  - Hugo
 categories:
   - Memo
 ---

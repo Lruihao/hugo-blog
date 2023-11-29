@@ -2,7 +2,7 @@
 title: hexo 添加图片，音乐，链接，视频
 date: 2018-05-31 23:19:22
 tags:
-  - hexo
+  - Hexo
 categories:
   - Memo
 ---

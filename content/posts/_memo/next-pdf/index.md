@@ -2,7 +2,7 @@
 title: next添加支持pdf
 date: 2018-11-09 12:51:48
 tags:
-  - hexo
+  - Hexo
 categories:
   - Memo
 ---

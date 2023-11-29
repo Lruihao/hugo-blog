@@ -2,8 +2,8 @@
 title: 网页离开时改变标题“崩溃欺骗”
 date: 2018-09-26 16:36:08
 tags:
+  - Hexo
   - JavaScript
-  - hexo
 categories:
   - JavaScript
 ---
