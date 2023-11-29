@@ -4,6 +4,7 @@ date: 2021-10-03T15:27:58+08:00
 tags:
   - hugo
   - hexo
+  - FixIt
 categories:
   - Memo
 ---
@@ -49,7 +50,7 @@ hugo new site /path/to/site
 
 ### 创建文章
 
-注： 路径要写以 `content/` 为根目录的相对路径
+注：路径要写以 `content/` 为根目录的相对路径
 
 ```bash
 hugo new path/fileName

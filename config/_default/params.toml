@@ -217,7 +217,7 @@ disableThemeInject = false
   # FixIt NEW | 0.2.0 whether to hide a page from search results
   hiddenFromSearch = false
   # FixIt NEW | 0.2.0 whether to enable twemoji
-  twemoji = true
+  twemoji = false
   # whether to enable lightgallery
   lightgallery = "force"
   # FixIt NEW | 0.2.0 whether to enable the ruby extended syntax

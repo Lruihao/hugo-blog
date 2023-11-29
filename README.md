@@ -29,7 +29,7 @@
 
 ## Quick Start
 
-首先点上 Star 😜，然后根据操作系统（Windows、Linux、macOS）安装最新版本的 [Hugo(>= 0.109.0)](https://gohugo.io/installation/)。
+首先点上 Star 😜，然后根据操作系统（Windows、Linux、macOS）安装最新扩展版本的 [Hugo(>= 0.110.0)](https://gohugo.io/installation/)。
 
 ```bash
 git clone --recursive git@github.com:Lruihao/hugo-blog.git
