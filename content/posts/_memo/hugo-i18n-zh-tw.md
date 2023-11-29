@@ -1,9 +1,11 @@
 ---
-title: Hugo i18n 添加中文繁體翻譯
+title: Hugo I18n 添加中文繁體翻譯
 date: 2021-10-05T19:14:45+08:00
+lastmod: 2021-12-19T20:01:45+08:00
 tags:
   - hugo
   - i18n
+  - FixIt
 categories:
   - Memo
 ---
@@ -11,6 +13,8 @@ categories:
 > 工作上一直常用繁體，最近臨帖也都寫的繁體，所以博客的語言也想換成繁體，但是 LoveIt 主題沒有支持中文繁體。就只好自己添加了。
 
 <!--more-->
+
+> 更新说明：[FixIt](https://github.com/hugo-fixit/FixIt) 主题已支持中文繁體。
 
 ## 翻譯
 
@@ -20,7 +24,7 @@ categories:
 
 ```toml
 # Translations for Traditional Chinese
-# 簡體中文的翻譯
+# 繁體中文的翻譯
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
 # === baseof ==
