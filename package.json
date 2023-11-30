@@ -2,29 +2,26 @@
   "name": "lruihao-blog-hugo",
   "version": "1.0.0",
   "description": "Lruihao's Note - A front-end technical blog.",
-  "scripts": {
-    "algolia": "atomic-algolia",
-    "build": "hugo -v --gc --minify",
-    "server": "hugo server -D --disableFastRender --navigateToChanged --bind 0.0.0.0",
-    "server:production": "npm run server -- --environment production",
-    "update:theme": "git submodule update --remote --merge themes/FixIt && git add . && git commit -m ':arrow_up: Chore(theme): update FixIt version'",
-    "qcloudcdn": "node .scripts/qcloudcdn.js $SECRET_ID $SECRET_KEY",
-    "lint:md": "markdownlint-cli2 \"content/**/*.md\" && autocorrect \"content/**/*.md\" --lint",
-    "fix:md": "markdownlint-cli2 \"content/**/*.md\" --fix && autocorrect \"content/**/*.md\" --fix",
-    "prepare": "husky install"
+  "homepage": "https://github.com/Lruihao/hugo-blog#readme",
+  "bugs": {
+    "url": "https://github.com/Lruihao/hugo-blog/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Lruihao/hugo-blog.git"
   },
-  "author": "Lruihao (https://github.com/Lruihao)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Lruihao/hugo-blog/issues"
-  },
-  "homepage": "https://github.com/Lruihao/hugo-blog#readme",
-  "engines": {
-    "node": ">=18.0.0"
+  "author": "Lruihao (https://github.com/Lruihao)",
+  "scripts": {
+    "algolia": "atomic-algolia",
+    "build": "hugo -v --gc --minify",
+    "fix:md": "autocorrect content --fix && markdownlint-cli2 \"content/**/*.md\" --fix",
+    "lint:md": "autocorrect content --lint && markdownlint-cli2 \"content/**/*.md\"",
+    "prepare": "husky install",
+    "qcloudcdn": "node .scripts/qcloudcdn.js $SECRET_ID $SECRET_KEY",
+    "server": "hugo server -D --disableFastRender --navigateToChanged --bind 0.0.0.0",
+    "server:production": "npm run server -- --environment production",
+    "update:theme": "git submodule update --remote --merge themes/FixIt && git add . && git commit -m ':arrow_up: Chore(theme): update FixIt version'"
   },
   "dependencies": {
     "atomic-algolia": "^0.3.19",
@@ -36,5 +33,8 @@
     "lint-staged": "^14.0.1",
     "markdownlint-cli2": "^0.10.0",
     "markdownlint-rule-search-replace": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

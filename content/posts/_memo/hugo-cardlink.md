@@ -49,6 +49,6 @@ categories:
 ---
 
 {{< admonition info "信息" >}}
-我的博客即将同步至腾讯云+社区，邀请大家一同入驻：  
+我的博客即将同步至腾讯云 + 社区，邀请大家一同入驻：  
  <https://cloud.tencent.com/developer/support-plan?invite_code=3o5dmfzf0xkwk>
 {{< /admonition >}}

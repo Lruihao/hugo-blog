@@ -13,7 +13,7 @@ categories:
 
 > **Python 二维码生成器**是 github 上@sylnsfar 开源的一个 python 生成二维码工具。有 python, 网页及 exe 版本，详见 [sylnsfar/qrcode](https://github.com/sylnsfar/qrcode/)，本文主要介绍记录一下 python 版本使用。exe 可以去 [项目开源地址](https://github.com/sylnsfar/qrcode_win) 下载，公众号文章后台回复关键词“qrcode”获取链接。
 
-可生成*普通二维码*、*带图片的艺术二维码（黑白与彩色）*、*动态二维码（黑白与彩色）*。
+可生成_普通二维码_、_带图片的艺术二维码（黑白与彩色）_、_动态二维码（黑白与彩色）_。
 
 <!--more-->
 
@@ -98,7 +98,7 @@ myqr   Words
 myqr https://github.com
 ```
 
-- 在命令后输入链接或者句子作为参数，然后在程序的当前目录中产生相应的二维码图片文件，默认命名为 “qrcode.png”。
+- 在命令后输入链接或者句子作为参数，然后在程序的当前目录中产生相应的二维码图片文件，默认命名为“qrcode.png”。
 
 ```markdown
 #2 -v, -l
@@ -120,7 +120,7 @@ myqr https://github.com -v 10 -l Q
 myqr https://github.com -n github_qr.jpg -d .../paths/
 ```
 
-- **默认输出文件名**是“ qrcode.png "，而**默认存储位置**是当前目录。
+- **默认输出文件名**是“qrcode.png "，而**默认存储位置**是当前目录。
 
 - 自定义：可以自己定义输出名称和位置。**注意**同名文件会覆盖旧的。
 
