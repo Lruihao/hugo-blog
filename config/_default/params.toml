@@ -25,6 +25,13 @@ externalIcon = true
 # You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
 disableThemeInject = false
 
+# Author Configuration
+[author]
+  name = "Lruihao"
+  email = "1024@lruihao.cn"
+  link = "https://github.com/Lruihao"
+  avatar = "/images/avatar.png"
+
 # FixIt NEW | 0.2.0 App icon config
 [app]
   # optional site title override for the app when added to an iOS home screen or Android launcher
