@@ -1,7 +1,7 @@
 ---
 title: 拖拽式仪表盘 - 模板使用
 date: 2023-10-12T20:07:20+08:00
-collection:
+collections:
   - 拖拽式仪表盘系列
 categories: 
   - Vue.js

@@ -1,7 +1,7 @@
 ---
 title: 友情鏈接
 date: 2021-09-19T12:33:48+08:00
-type: friends
+layout: friends
 description: Lruihao's friends
 keywords:
   - 'Hugo FixIt'

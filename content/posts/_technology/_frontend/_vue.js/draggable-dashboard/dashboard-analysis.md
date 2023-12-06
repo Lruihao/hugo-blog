@@ -1,7 +1,7 @@
 ---
 title: 拖拽式仪表盘 - 功能需求分析
 date: 2023-10-12T15:37:30+08:00
-collection:
+collections:
   - 拖拽式仪表盘系列
 categories: 
   - Vue.js

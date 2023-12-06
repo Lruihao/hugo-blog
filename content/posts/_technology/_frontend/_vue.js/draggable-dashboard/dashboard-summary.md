@@ -1,9 +1,9 @@
 ---
 title: 拖拽式仪表盘系列总结
 date: 2023-10-12T21:25:18+08:00
-collection:
+collections:
   - 拖拽式仪表盘系列
-categories: 
+categories:
   - Vue.js
 tags: 
   - 拖拽式仪表盘

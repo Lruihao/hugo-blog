@@ -1,5 +1,5 @@
 ---
-type: offline
+layout: offline
 description: 離線 - 菠菜眾長
 keywords:
   - PWA

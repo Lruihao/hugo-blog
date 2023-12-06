@@ -2,7 +2,7 @@
 title: 拖拽式仪表盘 - 组件配置文档
 subtitle: Dashboard Widgets
 date: 2023-10-12T19:41:23+08:00
-collection:
+collections:
   - 拖拽式仪表盘系列
 categories: 
   - Vue.js

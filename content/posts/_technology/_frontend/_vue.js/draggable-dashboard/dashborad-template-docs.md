@@ -2,7 +2,7 @@
 title: 拖拽式仪表盘 - 布局模板文档
 subtitle: Dashboard Template
 date: 2023-10-12T19:27:49+08:00
-collection:
+collections:
   - 拖拽式仪表盘系列
 categories: 
   - Vue.js

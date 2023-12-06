@@ -1,7 +1,7 @@
 ---
 title: 拖拽式仪表盘 - 组件开发
 date: 2023-10-12T20:07:56+08:00
-collection:
+collections:
   - 拖拽式仪表盘系列
 categories: 
   - Vue.js
