@@ -2,8 +2,9 @@
 title: 探索 AWS 云上一站式解决方案免费使用
 date: 2023-11-18T12:52:37+08:00
 hiddenFromHomePage: false
-hiddenFromSearch: false
+hiddenFromSearch: true
 hiddenFromRss: true
+hiddenFromRelated: true
 comment: false
 categories:
   - Memo

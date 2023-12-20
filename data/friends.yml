@@ -5,15 +5,15 @@
 - nickname: 愛如潮水
   avatar: https://recell.github.io/images/123.jpg
   url: https://recell.github.io
-  description: 蒙镛、老铁,一句两句说不清！
+  description: 蒙镛、老铁，一句两句说不清！
 - nickname: DoubleAm
   avatar: https://a.biugle.cn/images/avatar.jpg
   url: https://a.biugle.cn/
-  description: 又一个被我带入坑的小伙子！
+  description: 前端好伙伴！ #又一个被我带入坑的小伙子！
 # - nickname: francs # 该站点已下线
 #   avatar: https://postgres.fun/images/francs.png
 #   url: https://postgres.fun
-#   description: PostgreSQL中文网。数据库。francs.top
+#   description: PostgreSQL 中文网。数据库。francs.top
 - nickname: hojun
   avatar: https://cdn.jsdelivr.net/gh/honjun/ImageHosting/sina/006bYVyvgy1ftand2qurdj303c03cdfv.jpg
   url: https://www.hojun.cn
@@ -45,11 +45,11 @@
 - nickname: 北宸
   avatar: https://cdn.jsdelivr.net/gh/leafjame/cdn/img/logo/beichen.png
   url: https://www.liaofuzhan.com
-  description: “Java狮 北漂男 摄影 旅行 赚钱”
+  description: “Java 狮 北漂男 摄影 旅行 赚钱”
 - nickname: Lars Cheng
   avatar: https://www.larscheng.com/img/001.png
   url: https://www.larscheng.com
-  description: 分享Java技术, 记录点滴生活。
+  description: 分享 Java 技术，记录点滴生活。
 - nickname: CrazyWong
   avatar: https://crazywong.com/img/avatar.png
   url: https://crazywong.com
@@ -61,7 +61,7 @@
 - nickname: 木子雷
   avatar: https://leishen6.github.io/img/logo.png
   url: https://leishen6.github.io
-  description: web后端码仔，记录生活，分享技术！
+  description: web 后端码仔，记录生活，分享技术！
 - nickname: 十年之约
   avatar: https://www.foreverblog.cn/favicon.ico
   url: https://www.foreverblog.cn

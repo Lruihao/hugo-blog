@@ -10,6 +10,8 @@ categories:
   - Summaries
 hiddenFromHomePage: false
 hiddenFromSearch: true
+hiddenFromRss: true
+hiddenFromRelated: true
 expirationReminder:
   enable: false
 reward: false

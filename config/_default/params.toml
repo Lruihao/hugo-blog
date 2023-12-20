@@ -223,6 +223,10 @@ disableThemeInject = false
   hiddenFromHomePage = false
   # FixIt NEW | 0.2.0 whether to hide a page from search results
   hiddenFromSearch = false
+  # FixIt 0.2.18-lts.5 | NEW whether to hide a page from RSS feed
+  hiddenFromRss = false
+  # FixIt 0.3.0 | NEW whether to hide a page from related posts
+  hiddenFromRelated = false
   # FixIt NEW | 0.2.0 whether to enable twemoji
   twemoji = false
   # whether to enable lightgallery
@@ -249,7 +253,7 @@ disableThemeInject = false
   # FixIt 0.2.17 | NEW whether to enable readingTime
   readingTime = true
   # FixIt 0.2.17 | NEW end of post flag
-  endFlag = "（完）"
+  endFlag = "（本文完）"
   # FixIt 0.2.18 | NEW whether to enable instant.page
   instantPage = true
   # FixIt 0.3.0 | NEW whether to enable collection list at the sidebar
@@ -361,6 +365,11 @@ disableThemeInject = false
     [page.seo.publisher]
       name = "Lruihao"
       logoUrl = "/images/avatar.jpg"
+  
+  # FixIt 0.3.0 | NEW Related content config
+  [page.related]
+    enable = true
+    count = 5
 
 # FixIt NEW | 0.2.5 TypeIt config
 [typeit]

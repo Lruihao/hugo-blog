@@ -1,0 +1,38 @@
+# -------------------------------------------------------------------------------------
+# Related content Configuration
+# See: https://gohugo.io/content-management/related/
+# -------------------------------------------------------------------------------------
+
+includeNewer = false
+threshold = 80
+toLower = false
+
+[[indices]]
+  applyFilter = false
+  cardinalityThreshold = 0
+  name = 'keywords'
+  pattern = ''
+  toLower = false
+  type = 'basic'
+  weight = 100
+[[indices]]
+  applyFilter = false
+  cardinalityThreshold = 0
+  name = 'date'
+  pattern = ''
+  toLower = false
+  type = 'basic'
+  weight = 10
+[[indices]]
+  applyFilter = false
+  cardinalityThreshold = 0
+  name = 'tags'
+  pattern = ''
+  toLower = false
+  type = 'basic'
+  weight = 80
+[[indices]]
+  applyFilter = false
+  name = 'fragmentrefs'
+  type = 'fragments'
+  weight = 80

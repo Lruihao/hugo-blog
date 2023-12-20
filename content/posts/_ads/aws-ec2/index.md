@@ -4,6 +4,7 @@ date: 2023-08-26T17:22:57+08:00
 hiddenFromHomePage: true
 hiddenFromSearch: true
 hiddenFromRss: true
+hiddenFromRelated: true
 comment: false
 tags:
   - AWS
