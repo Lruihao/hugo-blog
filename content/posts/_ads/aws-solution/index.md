@@ -1,15 +1,22 @@
 ---
 title: 探索 AWS 云上一站式解决方案免费使用
 date: 2023-11-18T12:52:37+08:00
-hiddenFromHomePage: false
-hiddenFromSearch: true
-hiddenFromRss: true
-hiddenFromRelated: true
-comment: false
+lastmod: 2023-11-18T12:52:37+08:00
 categories:
   - Memo
 tags:
   - AWS
+related: 
+  enable: false
+reward: false
+hiddenFromHomePage: true
+hiddenFromSearch: true
+hiddenFromRss: true
+hiddenFromRelated: true
+linkToSource: false
+linkToEdit: false
+linkToReport: false
+comment: false
 ---
 
 在如今云计算蓬勃发展的时代，创新成长型企业正积极寻求一站式的云上解决方案，以提高效率、降低成本并实现快速发展。AWS（亚马逊云科技）作为全球领先的云服务提供商，为创新成长型企业提供一站式云上解决方案，助力创新成长型企业在不同发展阶段实现低成本上云，实现快速发展。本文将探索一下 AWS 云上一站式解决方案的免费使用。

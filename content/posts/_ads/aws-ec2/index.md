@@ -1,11 +1,7 @@
 ---
 title: 将 Hugo 博客部署到亚马逊云服务器
 date: 2023-08-26T17:22:57+08:00
-hiddenFromHomePage: true
-hiddenFromSearch: true
-hiddenFromRss: true
-hiddenFromRelated: true
-comment: false
+lastmod: 2023-08-26T17:22:57+08:00
 tags:
   - AWS
   - Hugo
@@ -16,6 +12,17 @@ categories:
 resources:
   - name: featured-image
     src: images/featured-image.png
+related: 
+  enable: false
+reward: false
+hiddenFromHomePage: true
+hiddenFromSearch: true
+hiddenFromRss: true
+hiddenFromRelated: true
+linkToSource: false
+linkToEdit: false
+linkToReport: false
+comment: false
 ---
 
 本文将介绍如何将 Hugo 博客打包并部署到亚马逊云服务器上，并附上亚马逊云服务器的配置过程。
