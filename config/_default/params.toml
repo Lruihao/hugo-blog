@@ -11,8 +11,6 @@ description = "Lruihao's Note 李瑞豪的博客：探索、分享、记录自�
 keywords = ["李瑞豪", "李瑞豪的博客", "菠菜眾長", "博採眾長", "Lruihao", "Cell", "Hugo Blog"]
 # site default theme ("light", "dark", "auto")
 defaultTheme = "auto"
-# public git repo url only then enableGitInfo is true
-gitRepo = "https://github.com/Lruihao/hugo-blog"
 # FixIt NEW | 0.2.0 date format
 dateFormat = "2006-01-02"
 # website images for Open Graph and Twitter Cards
@@ -31,6 +29,17 @@ disableThemeInject = false
   email = "1024@lruihao.cn"
   link = "https://github.com/Lruihao"
   avatar = "/images/avatar.png"
+
+# FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
+[gitInfo]
+  # e.g. "https://github.com/hugo-fixit/docs"
+  repo = "https://github.com/Lruihao/hugo-blog"
+  branch = "docs"
+  # the content directory path relative to the root of the repository
+  dir = "content"
+  # the issue template for reporting issue of the posts
+  # available template params: {title} {URL} {sourceURL}
+  issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0A|URL|{URL}|%0A|Filename|{sourceURL}|"
 
 # FixIt NEW | 0.2.0 App icon config
 [app]
@@ -239,8 +248,14 @@ disableThemeInject = false
   fontawesome = true
   # FixIt NEW | 0.2.0 Default lisence of content.
   license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
-  # whether to show link to Raw Markdown content of the content
+  # whether to show link to Raw Markdown content of the post
   linkToMarkdown = true
+  # FixIt 0.3.0 | NEW whether to show link to view source code of the post
+  linkToSource = true
+  # FixIt 0.3.0 | NEW whether to show link to edit the post
+  linkToEdit = true
+  # FixIt 0.3.0 | NEW whether to show link to report issue for the post
+  linkToReport = true
   # FixIt NEW | 0.2.4 whether to show the full text content in RSS
   rssFullText = true
   # FixIt NEW | 0.2.13 Page style ("narrow", "normal", "wide", ...)
@@ -301,13 +316,6 @@ disableThemeInject = false
     edit = true
     # the maximum number of lines of displayed code by default
     maxShownLines = 50
-  # FixIt NEW | 0.2.14 Post edit
-  [page.edit]
-    enable = true
-    # FixIt 0.2.15 | CHANGED Link for fork & edit
-    # url = "/edit/branch-name/subdirectory-name" # base on `params.gitRepo`
-    # url = "https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name" # full url
-    url = "/edit/docs/content"
   # FixIt NEW | 0.2.0 Mapbox GL JS config
   [page.mapbox]
     # access token of Mapbox GL JS
