@@ -1,21 +1,23 @@
 ---
 title: 探索 AWS 云上一站式解决方案免费使用
+linkTitle: AWS 云上一站式解决方案
 date: 2023-11-18T12:52:37+08:00
 lastmod: 2023-11-18T12:52:37+08:00
-categories:
-  - Memo
+collections:
+  - AWS
 tags:
   - AWS
 related: 
   enable: false
 reward: false
-hiddenFromHomePage: true
+hiddenFromHomePage: false
 hiddenFromSearch: true
 hiddenFromRss: true
 hiddenFromRelated: true
 linkToSource: false
 linkToEdit: false
 linkToReport: false
+math: false
 comment: false
 ---
 
