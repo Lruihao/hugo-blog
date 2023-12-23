@@ -24,7 +24,19 @@
   [main.params]
     icon = "fa-solid fa-folder-tree"
 [[main]]
+  identifier = "collections"
+  parent = "categories"
+  pre = ""
+  post = ""
+  name = "合集"
+  url = "/collections/"
+  title = ""
+  weight = 3
+  [main.params]
+    icon = "fa-solid fa-layer-group"
+[[main]]
   identifier = "tags"
+  parent = "categories"
   pre = ""
   post = ""
   name = "标签"
