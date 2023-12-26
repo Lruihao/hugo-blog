@@ -39,5 +39,6 @@
 
 # Table Of Contents settings
 [tableOfContents]
+  ordered = true
   startLevel = 2
   endLevel = 6
