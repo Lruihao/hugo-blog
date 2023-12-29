@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------------------
 
 # Options to make hugo output files
-home = ["HTML", "RSS", "JSON", "BaiduUrls"]
+home = ["HTML", "RSS", "JSON", "BaiduUrls", "archives"]
 page = ["HTML", "MarkDown"]
 section = ["HTML", "RSS"]
 taxonomy = ["HTML"]

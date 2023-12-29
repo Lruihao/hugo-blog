@@ -8,9 +8,19 @@
   mediaType = "text/markdown"
   isPlainText = true
   isHTML = false
+
 # Options to make output baidu_urls.txt file
 [BaiduUrls]
   baseName = "baidu_urls"
   mediaType = "text/plain"
   isPlainText = true
   isHTML = false
+
+# FixIt 0.3.0 | NEW Options to make output /archives/index.html file
+[archives]
+  path = "archives"
+  baseName = "index"
+  mediaType = "text/html"
+  isPlainText = false
+  isHTML = true
+  permalinkable = true

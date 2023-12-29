@@ -4,17 +4,18 @@
 # -------------------------------------------------------------------------------------
 
 [[main]]
-  identifier = "posts"
+  identifier = "archives"
   pre = ""
   post = ""
-  name = "所有文章"
-  url = "/posts/"
+  name = "归档"
+  url = "/archives/"
   title = ""
   weight = 1
   [main.params]
     icon = "fa-solid fa-archive"
 [[main]]
   identifier = "categories"
+  parent = "archives"
   pre = ""
   post = ""
   name = "分类"
@@ -25,7 +26,7 @@
     icon = "fa-solid fa-folder-tree"
 [[main]]
   identifier = "collections"
-  parent = "categories"
+  parent = "archives"
   pre = ""
   post = ""
   name = "合集"
@@ -36,7 +37,7 @@
     icon = "fa-solid fa-layer-group"
 [[main]]
   identifier = "tags"
-  parent = "categories"
+  parent = "archives"
   pre = ""
   post = ""
   name = "标签"
