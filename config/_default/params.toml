@@ -3,7 +3,7 @@
 # See: https://fixit.lruihao.cn/theme-documentation-basics/#site-configuration
 # -------------------------------------------------------------------------------------
 
-# FixIt CHANGED | 0.2.0 FixIt theme version
+# FixIt theme version
 version = "0.2.X"
 # site description
 description = "Lruihao's Note 李瑞豪的博客：探索、分享、记录自己在工作生活学习到一些东西。人知道得越多，就就会发现无知的越多。有更广袤世界可以探索，真是莫大的快乐啊！"
@@ -11,17 +11,17 @@ description = "Lruihao's Note 李瑞豪的博客：探索、分享、记录自�
 keywords = ["李瑞豪", "李瑞豪的博客", "菠菜眾長", "博採眾長", "Lruihao", "Cell", "Hugo Blog"]
 # site default theme ("light", "dark", "auto")
 defaultTheme = "auto"
-# FixIt NEW | 0.2.0 date format
+# date format
 dateFormat = "2006-01-02"
 # website images for Open Graph and Twitter Cards
 images = ["/logo.png"]
-# FixIt NEW | 0.2.12 enable PWA
+# FixIt 0.2.12 | NEW enable PWA
 enablePWA = true
-# FixIt NEW | 0.2.14 whether to add external Icon for external links automatically
+# FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
 externalIcon = true
 # FixIt 0.3.0 | NEW whether to reverse the order of the navigation menu
 navigationReverse = true
-# FixIt NEW | 0.2.14 FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
+# FixIt 0.2.14 | NEW FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
 # You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
 disableThemeInject = false
 
@@ -43,7 +43,7 @@ disableThemeInject = false
   # available template params: {title} {URL} {sourceURL}
   issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0A|URL|{URL}|%0A|Filename|{sourceURL}|"
 
-# FixIt NEW | 0.2.0 App icon config
+# App icon config
 [app]
   # optional site title override for the app when added to an iOS home screen or Android launcher
   title = "菠菜眾長"
@@ -55,12 +55,12 @@ disableThemeInject = false
   iconColor = "#5bbad5"
   # Windows v8-10 tile color
   tileColor = "#da532c"
-  # FixIt CHANGED | 0.2.12 Android browser theme color
+  # FixIt 0.2.12 | CHANGED Android browser theme color
   [app.themeColor]
     light = "#ffffff"
     dark = "#252627"
 
-# FixIt NEW | 0.2.0 Search config
+# Search config
 [search]
   enable = true
   # type of search engine ("lunr", "algolia")
@@ -69,13 +69,13 @@ disableThemeInject = false
   contentLength = 4000
   # placeholder of the search bar
   placeholder = ""
-  # FixIt NEW | 0.2.1 max number of results length
+  # max number of results length
   maxResultLength = 10
-  # FixIt NEW | 0.2.3 snippet length of the result
+  # snippet length of the result
   snippetLength = 50
-  # FixIt NEW | 0.2.1 HTML tag name of the highlight part in results
+  # HTML tag name of the highlight part in results
   highlightTag = "em"
-  # FixIt NEW | 0.2.4 whether to use the absolute URL based on the baseURL in search index
+  # whether to use the absolute URL based on the baseURL in search index
   absoluteURL = false
   [search.algolia]
     index = "index"
@@ -84,11 +84,11 @@ disableThemeInject = false
 
 # Header config
 [header]
-  # FixIt CHANGED | 0.2.13 desktop header mode ("sticky", "normal", "auto")
+  # FixIt 0.2.13 | CHANGED desktop header mode ("sticky", "normal", "auto")
   desktopMode = "sticky"
-  # FixIt CHANGED | 0.2.13 mobile header mode ("sticky", "normal", "auto")
+  # FixIt 0.2.13 | CHANGED mobile header mode ("sticky", "normal", "auto")
   mobileMode = "auto"
-  # FixIt NEW | 0.2.0 Header title config
+  # Header title config
   [header.title]
     # URL of the LOGO
     logo = "/logo.png"
@@ -98,9 +98,9 @@ disableThemeInject = false
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
-    # FixIt NEW | 0.2.5 whether to use typeit animation for title name
+    # whether to use typeit animation for title name
     typeit = false
-  # FixIt NEW | 0.2.12 Header subtitle config
+  # FixIt 0.2.12 | NEW Header subtitle config
   [header.subtitle]
     # subtitle name
     name = "李瑞豪的博客"
@@ -119,20 +119,23 @@ disableThemeInject = false
   # FixIt 0.2.17 | CHANGED Custom content (HTML format is supported)
   # For advanced use, see parameter `params.customFilePath.footer`
   custom = ""
-  # FixIt NEW | 0.2.0 whether to show Hugo and theme info
-  hugo = true
-  # FixIt NEW | 0.2.0 whether to show copyright info
+  # whether to show copyright info
   copyright = true
-  # FixIt NEW | 0.2.0 whether to show the author
+  # whether to show the author
   author = true
   # Site creation year
   since = 2018
-  # FixIt NEW | 0.2.12 Public network security only in China (HTML format is supported)
+  # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
   gov = ""
   # ICP info only in China (HTML format is supported)
   icp = ""
   # license info (HTML format is supported)
   license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
+  # FixIt 0.3.0 | NEW whether to show Hugo and theme info
+  [footer.powered]
+    enable = true
+    hugoLogo = true
+    themeLogo = true
   # FixIt 0.2.17 | CHANGED Site creation time
   [footer.siteTime]
     enable = true
@@ -148,7 +151,7 @@ disableThemeInject = false
     visitor = 0
     beian = 0
 
-# FixIt NEW | 0.2.0 Section (all posts) page config
+# Section (all posts) page config
 [section]
   # special amount of posts in each section page
   paginate = 20
@@ -156,14 +159,14 @@ disableThemeInject = false
   dateFormat = "01-02"
   # amount of RSS pages
   rss = 20
-  # FixIt NEW | 0.2.13 recently updated posts settings
+  # FixIt 0.2.13 | NEW recently updated posts settings
   [section.recentlyUpdated]
     enable = true
     rss = true
     days = 30
     maxCount = 10
 
-# FixIt NEW | 0.2.0 List (category or tag) page config
+# List (category or tag) page config
 [list]
   # special amount of posts in each list page
   paginate = 20
@@ -182,7 +185,7 @@ disableThemeInject = false
 
 # Home page config
 [home]
-  # FixIt NEW | 0.2.0 amount of RSS pages
+  # amount of RSS pages
   rss = 20
   # Home page profile
   [home.profile]
@@ -193,7 +196,7 @@ disableThemeInject = false
     avatarURL = "/images/avatar.jpg"
     # FixIt 0.2.17 | NEW identifier of avatar menu link
     avatarMenu = "about"
-    # FixIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
+    # title shown in home page (HTML format is supported)
     title = "Lruihao's Note"
     # subtitle shown in home page
     subtitle = "不怕萬人阻擋，只怕自己投降"
@@ -201,7 +204,7 @@ disableThemeInject = false
     typeit = true
     # whether to show social links
     social = true
-    # FixIt NEW | 0.2.0 disclaimer (HTML format is supported)
+    # disclaimer (HTML format is supported)
     disclaimer = ""
   # Home page posts
   [home.posts]
@@ -226,29 +229,29 @@ disableThemeInject = false
   QQGroup = ""
   CSDN = ""
 
-# FixIt CHANGED | 0.2.0 Page config
+# Page config
 [page]
   # FixIt 0.2.18 | NEW whether to enable the author's avatar of the post
   authorAvatar = true
-  # FixIt NEW | 0.2.0 whether to hide a page from home page
+  # whether to hide a page from home page
   hiddenFromHomePage = false
-  # FixIt NEW | 0.2.0 whether to hide a page from search results
+  # whether to hide a page from search results
   hiddenFromSearch = false
-  # FixIt 0.2.18-lts.5 | NEW whether to hide a page from RSS feed
+  # FixIt 0.3.0 | NEW whether to hide a page from RSS feed
   hiddenFromRss = false
   # FixIt 0.3.0 | NEW whether to hide a page from related posts
   hiddenFromRelated = false
-  # FixIt NEW | 0.2.0 whether to enable twemoji
+  # whether to enable twemoji
   twemoji = false
   # whether to enable lightgallery
   lightgallery = "force"
-  # FixIt NEW | 0.2.0 whether to enable the ruby extended syntax
+  # whether to enable the ruby extended syntax
   ruby = true
-  # FixIt NEW | 0.2.0 whether to enable the fraction extended syntax
+  # whether to enable the fraction extended syntax
   fraction = true
-  # FixIt NEW | 0.2.0 whether to enable the fontawesome extended syntax
+  # whether to enable the fontawesome extended syntax
   fontawesome = true
-  # FixIt NEW | 0.2.0 Default lisence of content.
+  # Default lisence of content.
   license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
   # whether to show link to Raw Markdown content of the post
   linkToMarkdown = true
@@ -258,9 +261,9 @@ disableThemeInject = false
   linkToEdit = true
   # FixIt 0.3.0 | NEW whether to show link to report issue for the post
   linkToReport = true
-  # FixIt NEW | 0.2.4 whether to show the full text content in RSS
+  # whether to show the full text content in RSS
   rssFullText = true
-  # FixIt NEW | 0.2.13 Page style ("narrow", "normal", "wide", ...)
+  # FixIt 0.2.13 | NEW Page style ("narrow", "normal", "wide", ...)
   pageStyle = "normal"
   # FixIt 0.2.17 | CHANGED Auto Bookmark Support
   # If true, save the reading progress when closing the page.
@@ -278,7 +281,7 @@ disableThemeInject = false
   # FixIt 0.3.0 | NEW whether to enable collection navigation at the end of the post
   collectionNavigation = true
 
-  # FixIt NEW | 0.2.0 Table of the contents config
+  # Table of the contents config
   [page.toc]
     # whether to enable the table of the contents
     enable = true
@@ -286,9 +289,9 @@ disableThemeInject = false
     keepStatic = false
     # whether to make the table of the contents in the sidebar automatically collapsed
     auto = true
-    # FixIt NEW | 0.2.13 position of TOC ("left", "right")
+    # FixIt 0.2.13 | NEW position of TOC ("left", "right")
     position = "right"
-  # FixIt NEW | 0.2.13 Display a message at the beginning of an article to warn the reader that its content might be expired
+  # FixIt 0.2.13 | NEW Display a message at the beginning of an article to warn the reader that its content might be expired
   [page.expirationReminder]
     enable = true
     # Display the reminder if the last modified time is more than 90 days ago
@@ -323,15 +326,15 @@ disableThemeInject = false
     copyTex = true
     # KaTeX extension mhchem
     mhchem = true
-  # FixIt NEW | 0.2.0 Code config
+  # Code config
   [page.code]
     # whether to show the copy button of the code block
     copy = true
-    # FixIt NEW | 0.2.13 whether to show the edit button of the code block
+    # FixIt 0.2.13 | NEW whether to show the edit button of the code block
     edit = true
     # the maximum number of lines of displayed code by default
     maxShownLines = 50
-  # FixIt NEW | 0.2.0 Mapbox GL JS config
+  # Mapbox GL JS config
   [page.mapbox]
     # access token of Mapbox GL JS
     accessToken = ""
@@ -389,7 +392,7 @@ disableThemeInject = false
       # someJavascript = "some.js"
       # Or
       # someJavascript = "https://cdn.example.com/some.js"
-  # FixIt CHANGED | 0.2.10 Page SEO config
+  # Page SEO config
   [page.seo]
     # image URL
     images = []
@@ -398,7 +401,7 @@ disableThemeInject = false
       name = "Lruihao"
       logoUrl = "/images/avatar.jpg"
 
-# FixIt NEW | 0.2.5 TypeIt config
+# TypeIt config
 [typeit]
   # typing speed between each step (measured in milliseconds)
   speed = 100
@@ -414,13 +417,13 @@ disableThemeInject = false
   # For values, see https://mermaid.js.org/config/theming.html#available-themes
   themes = ['default', 'dark']
 
-# FixIt NEW | 0.2.12 PanguJS config
+# FixIt 0.2.12 | NEW PanguJS config
 [pangu]
   # For Chinese writing
   enable = true
   selector = "article" # FixIt 0.2.17 | NEW
 
-# FixIt NEW | 0.2.12 Watermark config
+# FixIt 0.2.12 | NEW Watermark config
 # Detail config see https://github.com/Lruihao/watermark#readme
 [watermark]
   enable = true
@@ -440,10 +443,10 @@ disableThemeInject = false
   rotate = 15
   # watermark's fontSize. unit: rem
   fontSize = 1.1
-  # FixIt NEW | 0.2.13 watermark's fontFamily
+  # FixIt 0.2.13 | NEW watermark's fontFamily
   fontFamily = 'MMT_LRH,沐目体'
 
-# FixIt NEW | 0.2.12 Busuanzi count
+# FixIt 0.2.12 | NEW Busuanzi count
 [ibruce]
   enable = false
   # Enable in post meta
@@ -457,14 +460,14 @@ disableThemeInject = false
   pinterest = ""
   baidu = ""
 
-# FixIt NEW | 0.2.10 Site SEO config
+# FixIt 0.2.10 | NEW Site SEO config
 [seo]
   # image URL
   image = "/site-meta.jpg"
   # thumbnail URL
   thumbnailUrl = "/logo.png"
 
-# FixIt NEW | 0.2.10 Analytics config
+# FixIt 0.2.10 | NEW Analytics config
 [analytics]
   enable = false
   # Google Analytics
@@ -478,7 +481,7 @@ disableThemeInject = false
     # server url for your tracker if you're self hosting
     server = ""
 
-# FixIt NEW | 0.2.7 Cookie consent config
+# Cookie consent config
 [cookieconsent]
   enable = true
   # text strings used for Cookie consent banner
@@ -487,21 +490,21 @@ disableThemeInject = false
     dismiss = ""
     link = ""
 
-# FixIt NEW | 0.2.8 Compatibility config
+# Compatibility config
 [compatibility]
   # whether to use Polyfill.io to be compatible with older browsers
   polyfill = false
   # whether to use object-fit-images to be compatible with older browsers
   objectFit = false
 
-# FixIt NEW | 0.2.14 GitHub banner in the top-right or top-left corner
+# FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
 [githubCorner]
   enable = true
   permalink = "https://github.com/Lruihao/hugo-blog"
   title = "在 GitHub 上查看程式碼，訂閱請點 Watch"
   position = "right" # ["left", "right"]
 
-# FixIt NEW | 0.2.14 Gravatar config
+# FixIt 0.2.14 | NEW Gravatar config
 [gravatar]
   enable = true
   # Gravatar host, default: "www.gravatar.com"
