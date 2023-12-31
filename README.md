@@ -1,6 +1,6 @@
-# Lruihao Blog
+# 菠菜眾長
 
-[![Hugo](https://img.shields.io/badge/Hugo-%5E0.111.0-ff4088?style=flat&logo=hugo)](https://gohugo.io/)
+[![Hugo](https://img.shields.io/badge/Hugo-%5E0.112.0-ff4088?style=flat&logo=hugo)](https://gohugo.io/)
 [![Hugo build and deploy](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml)
 [![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/m/Lruihao/hugo-blog/main?style=flat)](https://github.com/Lruihao/hugo-blog/commits/main)
 
@@ -9,6 +9,10 @@
 站名“菠菜眾長”，取“兼收並蓄，博採眾長”之意。[建站](https://lruihao.cn/posts/hello-world/)的初衷不是为了炫耀所知，而是记录无知。
 
 博客内容主要以 Web 前端开发方向为主，分享一些有趣程序、技巧、开发教程、心情和学习记录等。
+
+## Content
+
+TODO
 
 ## Directory structure
 
@@ -27,9 +31,14 @@
 ▸ themes/        # theme submodules
 ```
 
+## Distributable
+
+- [github-pages](https://github.com/Lruihao/lruihao.github.io)
+- [Vercel](https://blog-lruihao.vercel.app/)
+
 ## Quick Start
 
-首先点上 Star 😜，然后根据操作系统（Windows、Linux、macOS）安装最新扩展版本的 [Hugo(>= 0.111.0)](https://gohugo.io/installation/)。
+首先点上 Star 😜，然后根据操作系统（Windows、Linux、macOS）安装最新扩展版本的 [Hugo(>= 0.112.0)](https://gohugo.io/installation/)。
 
 ```bash
 git clone --recursive git@github.com:Lruihao/hugo-blog.git
