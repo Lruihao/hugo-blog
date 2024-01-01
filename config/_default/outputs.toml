@@ -3,8 +3,13 @@
 # See: https://gohugo.io/templates/output-formats/#customizing-output-formats
 # -------------------------------------------------------------------------------------
 
-# Options to make hugo output files
-home = ["HTML", "RSS", "JSON", "BaiduUrls", "archives", "offline"]
+# Options to make hugo output files, the optional values are below:
+# home: ["HTML", "RSS", "JSON", "archives", "offline", "README", "baidu_urls"]
+# page: ["HTML", "MarkDown"]
+# section: ["HTML", "RSS"]
+# taxonomy: ["HTML", "RSS"]
+# term: ["HTML", "RSS"]
+home = ["HTML", "RSS", "JSON", "archives", "offline", "README", "baidu_urls"]
 page = ["HTML", "MarkDown"]
 section = ["HTML", "RSS"]
 taxonomy = ["HTML"]

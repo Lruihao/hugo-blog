@@ -12,9 +12,25 @@
 
 ## Content
 
-TODO
+- [归档](https://lruihao.cn/archives/)
+- [分类](https://lruihao.cn/categories/)
+- [合集](https://lruihao.cn/collections/)
+- [标签](https://lruihao.cn/tags/)
 
-## Directory structure
+## Distributable
+
+- [github-pages](https://github.com/Lruihao/lruihao.github.io)
+- [Vercel](https://blog-lruihao.vercel.app/)
+
+## Subscribe
+
+- [RSS](http://lruihao.cn/index.xml)
+- [GitHub](https://github.com/Lruihao/hugo-blog "Watch on GitHub")
+- [云 + 社区](https://cloud.tencent.com/developer/column/94521)
+
+## [Roadmap](https://github.com/users/Lruihao/projects/1)
+
+## Project setup
 
 ```bash
 ▸ .github/       # GitHub configuration
@@ -31,20 +47,13 @@ TODO
 ▸ themes/        # theme submodules
 ```
 
-## Distributable
-
-- [github-pages](https://github.com/Lruihao/lruihao.github.io)
-- [Vercel](https://blog-lruihao.vercel.app/)
-
-## Quick Start
-
 首先点上 Star 😜，然后根据操作系统（Windows、Linux、macOS）安装最新扩展版本的 [Hugo(>= 0.112.0)](https://gohugo.io/installation/)。
 
 ```bash
 git clone --recursive git@github.com:Lruihao/hugo-blog.git
 ```
 
-有两种方法可以启动这个博客。
+下载源码后，有两种方法可以启动这个博客。
 
 ### NPM
 
@@ -114,14 +123,6 @@ Press Ctrl+C to stop
 ```
 
 </details>
-
-## [Roadmap](https://github.com/users/Lruihao/projects/1)
-
-## Subscribe
-
-- [RSS](http://lruihao.cn/index.xml)
-- [GitHub](https://github.com/Lruihao/hugo-blog "Watch on GitHub")
-- [云 + 社区](https://cloud.tencent.com/developer/column/94521)
 
 ## Powered
 
