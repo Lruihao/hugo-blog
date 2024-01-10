@@ -4,8 +4,8 @@ date: 2023-07-20T11:08:18+08:00
 tags:
   - Vue2
 categories:
-  - JavaScript
   - Vue.js
+  - JavaScript
 ---
 
 这篇文章主要是记录一下继承 [ElBacktop](https://element.eleme.cn/#/zh-CN/component/backtop) 组件并修复了一些 bug 的过程。
