@@ -323,7 +323,7 @@ disableThemeInject = false
         h6 = "{h2}.{h3}.{h4}.{h5}.{h6} {title}"
   # FixIt 0.2.16 | CHANGED KaTeX mathematical formulas
   [page.math]
-    enable = true
+    enable = false
     # default inline delimiter is $ ... $ and \( ... \)
     inlineLeftDelimiter = ""
     inlineRightDelimiter = ""

@@ -10,7 +10,7 @@ tags:
 related: 
   enable: false
 reward: false
-hiddenFromHomePage: false
+hiddenFromHomePage: true
 hiddenFromSearch: true
 hiddenFromRss: true
 hiddenFromRelated: true
