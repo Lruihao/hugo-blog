@@ -55,7 +55,7 @@
   title = "友情链接"
   weight = 4
   [main.params]
-    icon = "fa-solid fa-users"
+    icon = "fa-solid fa-users-viewfinder"
 [[main]]
   identifier = "guestbook"
   pre = ""
@@ -65,7 +65,7 @@
   title = ""
   weight = 6
   [main.params]
-    icon = "fa-solid fa-comments"
+    icon = "fa-regular fa-comments"
 [[main]]
   identifier = "about"
   pre = ""
@@ -75,7 +75,7 @@
   title = ""
   weight = 7
   [main.params]
-    icon = "fa-solid fa-user-tie"
+    icon = "fa-regular fa-id-card"
 [[main]]
   identifier = "github"
   pre = "<i class='fa-brands fa-github fa-fw' aria-hidden='true'></i>"
