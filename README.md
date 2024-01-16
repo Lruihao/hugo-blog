@@ -47,10 +47,18 @@
 ▸ themes/        # theme submodules
 ```
 
-首先点上 Star 😜，然后根据操作系统（Windows、Linux、macOS）安装最新扩展版本的 [Hugo(>= 0.112.0)](https://gohugo.io/installation/)。
+### System requirements
+
+- [Node.js](https://nodejs.org/): >= 18.0.0
+- [Go](https://go.dev/dl/)
+- [Hugo](https://gohugo.io/installation/): >= 0.112.0 (extended version)
+
+### Clone
+
+首先点上 Star 😜，然后下载源码：
 
 ```bash
-git clone --recursive git@github.com:Lruihao/hugo-blog.git
+git clone --recursive git@github.com:Lruihao/hugo-blog.git && cd hugo-blog
 ```
 
 下载源码后，有两种方法可以启动这个博客。

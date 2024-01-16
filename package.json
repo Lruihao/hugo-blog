@@ -21,7 +21,8 @@
     "qcloudcdn": "node .scripts/qcloudcdn.js $SECRET_ID $SECRET_KEY",
     "server": "hugo server -D --disableFastRender --navigateToChanged --bind 0.0.0.0",
     "server:production": "npm run server -- --environment production",
-    "update:theme": "git submodule update --remote --merge themes/FixIt && git add . && git commit -m ':arrow_up: Chore(theme): update FixIt version'"
+    "server:development": "cross-env HUGO_MODULE_WORKSPACE=hugo.work npm run server -- --ignoreVendorPaths \"**\"",
+    "update:theme": "hugo mod get -u github.com/hugo-fixit/FixIt@dev && hugo mod tidy && git add . && git commit -m ':arrow_up: Chore(theme): update FixIt version'"
   },
   "dependencies": {
     "atomic-algolia": "^0.3.19",
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "autocorrect-node": "^2.8.4",
+    "cross-env": "^7.0.3",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "markdownlint-cli2": "^0.10.0",

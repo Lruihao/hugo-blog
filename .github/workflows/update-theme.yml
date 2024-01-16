@@ -20,8 +20,17 @@ jobs:
           submodules: true
           fetch-depth: 0
 
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: latest
+          extended: true
+
       - name: Update theme
-        run: git submodule update --remote --merge themes/FixIt
+        run: hugo mod get -u github.com/hugo-fixit/FixIt@latest
+
+      - name: Tidy go.mod, go.sum
+        run: hugo mod tidy
       
       - name: Change remote origin
         run: |

@@ -1,0 +1,17 @@
+# -------------------------------------------------------------------------------------
+# Modules Configure
+# See: https://gohugo.io/hugo-modules/configuration/#module-config-imports
+# -------------------------------------------------------------------------------------
+
+[[imports]]
+  path = "github.com/hugo-fixit/FixIt"
+
+[[imports]]
+  path = "github.com/Lruihao/hugo-shortcode-sponsor-log"
+
+[[imports]]
+  path = "github.com/Lruihao/hugo-shortcode-mmt-netease"
+
+[hugoVersion]
+  extended = true
+  min = "0.112.0"

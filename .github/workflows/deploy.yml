@@ -9,6 +9,8 @@ on:
       - 'data/**'
       - 'static/**'
       - 'themes/**'
+      - 'go.mod'
+      - 'go.sum'
   workflow_run:
     workflows: ['Update theme']
     types:
@@ -24,16 +26,43 @@ jobs:
           ssh-key: ${{ secrets.SYNC_CONTENT }}
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
       - name: Install
         run: npm install
+
+      - name: Cache Hugo resources
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-hugo-resources
+        with:
+          path: resources
+          key: ${{ env.cache-name }}
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "^1.19.0"
+      - run: go version
+
+      - name: Cache Go Modules
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache/go-build
+            ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: latest
           extended: true
+
       - name: Build
         run: npm run build
-      - name: Deploy to Github Pages
+
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.GP_DEPLOY_KEY }}
@@ -44,6 +73,7 @@ jobs:
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: ':rocket: ${{ github.event.head_commit.message }}'
           force_orphan: false  # once a year
+
       - name: Update Algolia index
         env:
           ALGOLIA_APP_ID: MTJNHU0JVB
@@ -51,8 +81,10 @@ jobs:
           ALGOLIA_INDEX_NAME: 'index'
           ALGOLIA_INDEX_FILE: './public/index.json'
         run: npm run algolia
+
       # - name: Install coscmd
       #   run: sudo pip install coscmd
+
       # - name: Configure coscmd
       #   env:
       #     COS_SECRET_ID: ${{ secrets.COS_SECRET_ID }}
@@ -60,8 +92,10 @@ jobs:
       #     COS_BUCKET_NAME: blog-1256932288
       #     COS_BUCKET_REGION: ap-chengdu
       #   run: coscmd config -a $COS_SECRET_ID -s $COS_SECRET_KEY -b $COS_BUCKET_NAME -r $COS_BUCKET_REGION
+
       # - name: Deploy to COS Bucket
       #   run: coscmd upload -r -s --delete -f public/ /
+
       # - name: Refresh Qcloud CDN cache
       #   env:
       #     SECRET_ID: ${{ secrets.COS_SECRET_ID }}
