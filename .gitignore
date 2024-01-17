@@ -5,3 +5,7 @@ resources/
 
 .hugo_build.lock
 jsconfig.json
+
+# backup for frontmatter in vscode
+!frontmatter.json
+!.frontmatter

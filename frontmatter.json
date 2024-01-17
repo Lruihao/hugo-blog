@@ -1,0 +1,106 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.panel.actions.disabled": [
+    "optimizeSlug"
+  ],
+  "frontMatter.dashboard.content.pagination": 50,
+  "frontMatter.content.autoUpdateDate": false,
+  "frontMatter.taxonomy.dateFormat": "YYYY-MM-DD'T'HH:mm:ss+08:00",
+  "frontMatter.taxonomy.customTaxonomy": [
+    {
+      "id": "collections",
+      "options": [
+        "AWS",
+        "拖拽式仪表盘系列"
+      ]
+    }
+  ],
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      // https://frontmatter.codes/docs/content-creation/fields
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Last Modified",
+          "name": "lastmod",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isModifiedDate": true
+        },
+        {
+          "title": "Slug",
+          "name": "slug",
+          "type": "string"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Collections",
+          "name": "collections",
+          "type": "taxonomy",
+          "taxonomyId": "collections"
+        },
+        {
+          "title": "Comment",
+          "name": "comment",
+          "type": "boolean"
+        },
+        {
+          "title": "Lightgallery",
+          "name": "lightgallery",
+          "type": "boolean"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.preview.host": "http://localhost:1313",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "projects",
+      "path": "[[workspace]]/content/projects"
+    },
+    {
+      "path": "[[workspace]]/content/posts/",
+      "title": "posts"
+    },
+    {
+      "title": "years",
+      "path": "[[workspace]]/content/private/years"
+    }
+  ],
+  "frontMatter.framework.startCommand": "hugo server -D --disableFastRender --navigateToChanged --bind 0.0.0.0"
+}

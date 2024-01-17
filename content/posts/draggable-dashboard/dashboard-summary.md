@@ -5,7 +5,7 @@ collections:
   - 拖拽式仪表盘系列
 categories:
   - Vue.js
-tags: 
+tags:
   - 拖拽式仪表盘
   - dashboard
   - widget
