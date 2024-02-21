@@ -90,6 +90,14 @@
   avatar: https://www.fordece.cn/images/avatar.jpg
   url: https://www.fordece.cn/
   description: 某人的小栈
+- nickname: XIDCN
+  avatar: https://xidcn.com/images/avatar.webp
+  url: https://xidcn.com
+  description: XIDCN's blog
+- nickname: 芈渡
+  avatar: https://www.lllomh.com/static/images/photos.jpg
+  url: https://www.lllomh.com
+  description: 前端开发、代码资源分享
 # - nickname: 暂时不接受友链
 #   avatar:
 #   url: https://lruihao.cn
