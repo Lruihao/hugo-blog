@@ -2,5 +2,5 @@ github.com/Lruihao/hugo-shortcode-mmt-netease v1.0.5 h1:S+wBzsFQoerlcYY6Jx/D062f
 github.com/Lruihao/hugo-shortcode-mmt-netease v1.0.5/go.mod h1:6vXHaAZv1p9meW2mZ5KmlWlu5W9YiIpUTkHGWwkp3Pk=
 github.com/Lruihao/hugo-shortcode-sponsor-log v1.0.0 h1:HN1tKv3xYVZRSz+xt2Wr3hLbqxi5yK6OZRecYj22yyU=
 github.com/Lruihao/hugo-shortcode-sponsor-log v1.0.0/go.mod h1:B0v1x6BWWp5g6w82hBfZkJNPTyTw8Cvt6ccZ7BllA20=
-github.com/hugo-fixit/FixIt v0.3.3-0.20240223092749-a9fd15e47df3 h1:/wdznzHYCG6I59sHlzkMOFDLgTBsP1evCBSCzSLHpCg=
-github.com/hugo-fixit/FixIt v0.3.3-0.20240223092749-a9fd15e47df3/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
+github.com/hugo-fixit/FixIt v0.3.3-0.20240223125052-2ea592b4a357 h1:yu02GYkAoIHqqCM9yntX0BE915/4K2F+4yMhTgFh8TQ=
+github.com/hugo-fixit/FixIt v0.3.3-0.20240223125052-2ea592b4a357/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
