@@ -38,7 +38,7 @@ disableThemeInject = false
   name = "Lruihao"
   email = "1024@lruihao.cn"
   link = "https://github.com/Lruihao"
-  avatar = "/images/avatar.png"
+  avatar = "/images/avatar.jpg"
 
 # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
 [gitInfo]
