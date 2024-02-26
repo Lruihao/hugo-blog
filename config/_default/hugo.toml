@@ -17,5 +17,7 @@ enableGitInfo = true
 relativeURLs = false
 buildDrafts = false
 summaryLength = 150
+titleCaseStyle = "ap"
+capitalizeListTitles = false
 # ignore some build errors
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
