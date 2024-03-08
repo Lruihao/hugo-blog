@@ -20,7 +20,6 @@
       "name": "default",
       "pageBundle": false,
       "previewPath": null,
-      // https://frontmatter.codes/docs/content-creation/fields
       "fields": [
         {
           "title": "Title",
