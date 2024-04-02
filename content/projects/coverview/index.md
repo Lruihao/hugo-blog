@@ -41,8 +41,6 @@ type: posts
 
 ## 项目介绍
 
-项目是基于原来的 CoverView。
-
 该项目基于原项目 CoverView 修改而成，感谢原作者 Rutik Wankhade 的优秀作品，我又连夜花了五天时间，做了如下改动和优化：
 
 - 修复了带有图案背景的图片无法下载的问题
@@ -65,7 +63,7 @@ type: posts
 - 尝试实现拖拽文本或者图标 [#9](https://github.com/Lruihao/CoverView/issues/9)
 - 设置自定义平台封面图片的宽高比、适配常用尺寸宽高比 [#10](https://github.com/Lruihao/CoverView/issues/10)
 
-现在 demo 版本已经上线，Unsplash API 的 `production` 版本还在审核中，最后传承开源精神开源出来出来，并保留了原作者 commit 记录聊表敬意。
+现在 demo 版本已经上线，Unsplash API 的 `production` 版本还在审核中，最后传承开源精神开源出来，并保留了原作者 commit 记录聊表敬意。
 
 {{< link href="https://github.com/Lruihao/CoverView" content="🛠 Create awesome cover images for your blog posts quickly." card=true >}}
 
