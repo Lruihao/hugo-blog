@@ -14,7 +14,7 @@ defaultTheme = "auto"
 # date format
 dateFormat = "2006-01-02"
 # website images for Open Graph and Twitter Cards
-images = ["/logo.png"]
+images = ["/images/apple-devices-preview.webp"]
 # FixIt 0.2.12 | NEW enable PWA
 enablePWA = true
 # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
@@ -99,7 +99,7 @@ disableThemeInject = false
   # Header title config
   [header.title]
     # URL of the LOGO
-    logo = "/logo.png"
+    logo = "/logo.webp"
     # title name
     name = "菠菜众长"
     # you can add extra information before the name (HTML format is supported), such as icons
@@ -436,7 +436,7 @@ disableThemeInject = false
 [watermark]
   enable = true
   # watermark's text (HTML format is supported)
-  content = '<img style="height: 0.85rem;" src="/logo.png" alt="logo" /> 李瑞豪'
+  content = '<img style="height: 0.85rem;" src="/logo.webp" alt="logo" /> 李瑞豪'
   # watermark's transparency
   opacity = 0.0125
   # watermark's width. unit: px
@@ -471,9 +471,9 @@ disableThemeInject = false
 # FixIt 0.2.10 | NEW Site SEO config
 [seo]
   # image URL
-  image = "/site-meta.jpg"
+  image = "/images/apple-devices-preview.webp"
   # thumbnail URL
-  thumbnailUrl = "/logo.png"
+  thumbnailUrl = "/images/tn.webp"
 
 # FixIt 0.2.10 | NEW Analytics config
 [analytics]
