@@ -3,8 +3,6 @@
  * @author @Lruihao https://lruihao.cn
  */
 class Blog {
-  #timerHackValine;
-
   constructor() {
     /**
      * current environment is local or not
@@ -101,54 +99,6 @@ class Blog {
   }
 
   /**
-   * 修改 Valine 样式及功能
-   * @deprecated 之后弃用 Valine 评论
-   */
-  hackValine() {
-    const $valine = document.querySelector('#valine');
-    this.#timerHackValine = void 0;
-    if (!$valine) {
-      return;
-    }
-    this.#timerHackValine = setInterval(() => {
-      const $vcount = $valine.querySelector('.vcount');
-      if ($vcount) {
-        const $vcards = $valine.querySelector('.vcards');
-        const $vpage = $valine.querySelector('.vpage');
-        $vcards.classList.add('d-none');
-        $vpage.classList.add('d-none');
-        $vcount.addEventListener('click', () => {
-          $vcards.classList.toggle('d-none');
-          $vpage.classList.toggle('d-none');
-        });
-        clearInterval(this.#timerHackValine);
-      }
-    }, 500);
-  };
-
-  /**
-   * 切换主题时切换 giscus 主题
-   * @deprecated 之后弃用 Valine 评论无需此功能
-   */
-  patchGiscus() {
-    if (fixit.config.comment?.giscus) {
-      const giscusConfig = fixit.config.comment.giscus;
-      this._giscusOnSwitchTheme = this._giscusOnSwitchTheme || (() => {
-        const message = { setConfig: { theme: fixit.isDark ? giscusConfig.darkTheme : giscusConfig.lightTheme }};
-        document.querySelector('.giscus-frame')?.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      });
-      fixit.switchThemeEventSet.add(this._giscusOnSwitchTheme);
-      window.addEventListener('message', (event) => {
-        const $script = document.querySelector('#giscus>script');
-        if ($script) {
-          this._giscusOnSwitchTheme();
-          $script.parentElement.removeChild($script);
-        }
-      }, { once: true });
-    }
-  };
-
-  /**
    * initialize
    * @returns {Blog}
    */
@@ -173,7 +123,6 @@ class Blog {
   blog.init();
   // it will be executed when the DOM tree is built
   document.addEventListener('DOMContentLoaded', () => {
-    blog.hackValine();
-    blog.patchGiscus();
+    //
   });
 })();
