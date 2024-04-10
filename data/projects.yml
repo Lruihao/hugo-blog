@@ -3,7 +3,22 @@
   repos:
     - hugo-fixit/FixIt
     - Lruihao/hugo-blog
+    - Lruihao/el-table-sticky
+    - Lruihao/vue-minder-editor-extended
+    - Lruihao/kityminder-core
     - Lruihao/CoverView
+    - Lruihao/vue-el-demo
+    - Lruihao/watermark
+    - Lruihao/cell-tooltip
+    - Lruihao/bill-note
+    - Lruihao/cos-album
+    - Lruihao/cos-album-demo
+    - Lruihao/HW
+    - Lruihao/MMT
+    - Lruihao/lruihao.github.io
+    - Lruihao/Grocery
+    - Lruihao/cell-blog
+    - Lruihao/hexo-theme-next
 - title: 我贡献的
   description: 下面这些是我贡献过的一些开源作品。
   repos:
