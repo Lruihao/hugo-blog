@@ -20,4 +20,8 @@ summaryLength = 150
 titleCaseStyle = "ap"
 capitalizeListTitles = false
 # ignore some build errors
-ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+ignoreLogs = [
+  "error-get-remote-json",
+  "error-remote-getjson",
+  "error-missing-instagram-accesstoken"
+]

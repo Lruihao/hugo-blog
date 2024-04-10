@@ -3,6 +3,7 @@ title: 我的作品集
 subtitle: <https://github.com/Lruihao>
 sectionSlot: 以下文章是对上述某些作品的开发过程或使用的介绍。
 layout: projects
+pageStyle: wide
 menu:
   main:
     name: 我的作品
