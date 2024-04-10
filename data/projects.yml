@@ -1,0 +1,11 @@
+- title: 我开发的
+  description: 下面这些是我开发过的一些开源作品。
+  repos:
+    - hugo-fixit/FixIt
+    - Lruihao/hugo-blog
+    - Lruihao/CoverView
+- title: 我贡献的
+  description: 下面这些是我贡献过的一些开源作品。
+  repos:
+    - gohugoio/hugo
+    - mdn/translated-content

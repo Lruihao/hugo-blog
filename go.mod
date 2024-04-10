@@ -1,9 +1,10 @@
 module github.com/Lruihao/hugo-blog
 
-go 1.19
+go 1.21.6
 
 require (
 	github.com/Lruihao/hugo-shortcode-mmt-netease v1.0.5 // indirect
 	github.com/Lruihao/hugo-shortcode-sponsor-log v1.0.0 // indirect
-	github.com/hugo-fixit/FixIt v0.3.3-0.20240408094757-773a8a7eb958 // indirect
+	github.com/hugo-fixit/FixIt v0.3.3-0.20240410030444-d3799112204b // indirect
+	github.com/hugo-fixit/component-projects v0.0.0-20240410033012-1273ad47c61d // indirect
 )
