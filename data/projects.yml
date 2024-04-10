@@ -2,8 +2,8 @@
   description: 下面这些是我开发过的一些开源作品。
   repos:
     - hugo-fixit/FixIt
-    - hugo-fixit/docs
     - Lruihao/hugo-blog
+    - hugo-fixit/docs
     - Lruihao/el-table-sticky
     - Lruihao/vue-el-demo
     - Lruihao/CoverView
@@ -16,25 +16,19 @@
     - hugo-fixit/fixit-cli
     - Lruihao/hugo-shortcode-mmt-netease
     - Lruihao/hugo-shortcode-sponsor-log
-    # - hugo-fixit/shortcode-mmt-netease
-    # - hugo-fixit/shortcode-sponsor-log
     - hugo-fixit/component-projects
     - hugo-fixit/hugo-shell
     - Lruihao/bill-note
     - Lruihao/cos-album
-    - Lruihao/cos-album-demo
-    - Lruihao/HW
     - Lruihao/MMT
-    - Lruihao/lruihao.github.io
-    - Lruihao/Grocery
     - Lruihao/cell-blog
     - Lruihao/hexo-theme-next
 - title: 我贡献的
   description: 下面这些是我贡献过的一些开源作品。
   repos:
+    - SchemaStore/schemastore
     - Shimada666/v-code-diff
     - mdn/translated-content
-    - SchemaStore/schemastore
     - gohugoio/hugo
     - theme-next/hexo-theme-next
     - walinejs/waline
