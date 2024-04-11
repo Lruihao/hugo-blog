@@ -10,3 +10,7 @@ github.com/hugo-fixit/component-projects v0.0.0-20240410093904-796e605011b9 h1:3
 github.com/hugo-fixit/component-projects v0.0.0-20240410093904-796e605011b9/go.mod h1:G8+ll+DNUG2K66W+pnhwME0NFIJ++r2J7csVylOdc6M=
 github.com/hugo-fixit/component-projects v0.0.0-20240410100852-af7475a90022 h1:d1TAyXeaJd1WQbc/lPBBG/OXAjZm+sgrjZMoZ/IRmQk=
 github.com/hugo-fixit/component-projects v0.0.0-20240410100852-af7475a90022/go.mod h1:G8+ll+DNUG2K66W+pnhwME0NFIJ++r2J7csVylOdc6M=
+github.com/hugo-fixit/component-projects v0.0.0-20240411014416-802ea86b5f1a h1:bhlmjTNWFHU4u1OBTwlejPufhJRZcV63oFarB1iJgHY=
+github.com/hugo-fixit/component-projects v0.0.0-20240411014416-802ea86b5f1a/go.mod h1:G8+ll+DNUG2K66W+pnhwME0NFIJ++r2J7csVylOdc6M=
+github.com/hugo-fixit/component-projects v0.0.0-20240411022841-c5a17cfae157 h1:oxCAnSAejKru4ZTIc99pRgvM+55FyXG9RnL8NEQdukc=
+github.com/hugo-fixit/component-projects v0.0.0-20240411022841-c5a17cfae157/go.mod h1:G8+ll+DNUG2K66W+pnhwME0NFIJ++r2J7csVylOdc6M=
