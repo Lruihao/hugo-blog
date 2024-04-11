@@ -4,13 +4,5 @@ github.com/Lruihao/hugo-shortcode-sponsor-log v1.0.0 h1:HN1tKv3xYVZRSz+xt2Wr3hLb
 github.com/Lruihao/hugo-shortcode-sponsor-log v1.0.0/go.mod h1:B0v1x6BWWp5g6w82hBfZkJNPTyTw8Cvt6ccZ7BllA20=
 github.com/hugo-fixit/FixIt v0.3.3-0.20240410073954-84e9eea4833f h1:UdG/YD4zGOBtSJzjXB0HPc9oeUNDY4036PC9R8auFAQ=
 github.com/hugo-fixit/FixIt v0.3.3-0.20240410073954-84e9eea4833f/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
-github.com/hugo-fixit/component-projects v0.0.0-20240410080507-12e5b5cd1f4c h1:mwQAb0dmZEixvYJJeQOma5x3TnZUwin0j/a2dfPbt2M=
-github.com/hugo-fixit/component-projects v0.0.0-20240410080507-12e5b5cd1f4c/go.mod h1:G8+ll+DNUG2K66W+pnhwME0NFIJ++r2J7csVylOdc6M=
-github.com/hugo-fixit/component-projects v0.0.0-20240410093904-796e605011b9 h1:3t7o2VZVwRFx5soBsbABa4pMZLNIG9Kvz3XmWluhE8Q=
-github.com/hugo-fixit/component-projects v0.0.0-20240410093904-796e605011b9/go.mod h1:G8+ll+DNUG2K66W+pnhwME0NFIJ++r2J7csVylOdc6M=
-github.com/hugo-fixit/component-projects v0.0.0-20240410100852-af7475a90022 h1:d1TAyXeaJd1WQbc/lPBBG/OXAjZm+sgrjZMoZ/IRmQk=
-github.com/hugo-fixit/component-projects v0.0.0-20240410100852-af7475a90022/go.mod h1:G8+ll+DNUG2K66W+pnhwME0NFIJ++r2J7csVylOdc6M=
-github.com/hugo-fixit/component-projects v0.0.0-20240411014416-802ea86b5f1a h1:bhlmjTNWFHU4u1OBTwlejPufhJRZcV63oFarB1iJgHY=
-github.com/hugo-fixit/component-projects v0.0.0-20240411014416-802ea86b5f1a/go.mod h1:G8+ll+DNUG2K66W+pnhwME0NFIJ++r2J7csVylOdc6M=
-github.com/hugo-fixit/component-projects v0.0.0-20240411022841-c5a17cfae157 h1:oxCAnSAejKru4ZTIc99pRgvM+55FyXG9RnL8NEQdukc=
-github.com/hugo-fixit/component-projects v0.0.0-20240411022841-c5a17cfae157/go.mod h1:G8+ll+DNUG2K66W+pnhwME0NFIJ++r2J7csVylOdc6M=
+github.com/hugo-fixit/component-projects v0.0.0-20240411054818-4e22862782a6 h1:+v9Wj1f8K08XHvcu1T10MOilmQbe5FCHEl10aZ2CNKI=
+github.com/hugo-fixit/component-projects v0.0.0-20240411054818-4e22862782a6/go.mod h1:nXW0R37REwpfwUD1I4RtB5QW71vw66nRyB9uEpYxr+c=

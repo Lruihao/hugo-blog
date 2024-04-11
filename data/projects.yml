@@ -14,9 +14,9 @@
     - hugo-fixit/hugo-fixit-starter
     - hugo-fixit/hugo-fixit-starter1
     - hugo-fixit/fixit-cli
-    - Lruihao/hugo-shortcode-mmt-netease
-    - Lruihao/hugo-shortcode-sponsor-log
     - hugo-fixit/component-projects
+    - hugo-fixit/shortcode-mmt-netease
+    - hugo-fixit/shortcode-sponsor-log
     - hugo-fixit/hugo-shell
     - Lruihao/bill-note
     - Lruihao/cos-album
