@@ -1,5 +1,6 @@
 - title: 我开发的
   description: 下面这些是我开发过的一些开源作品。
+  totalStars: true
   repos:
     - hugo-fixit/FixIt
     - Lruihao/hugo-blog
