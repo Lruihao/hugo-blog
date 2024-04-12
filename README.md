@@ -4,7 +4,7 @@
 [![Hugo build and deploy](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml)
 [![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/m/Lruihao/hugo-blog/main?style=flat)](https://github.com/Lruihao/hugo-blog/commits/main)
 
-![blog-flow](/assets/images/blog-flow.png)
+![blog-preview](/assets/images/apple-devices-preview.webp)
 
 站名“菠菜眾長”，取“兼收並蓄，博採眾長”之意。[建站](https://lruihao.cn/posts/hello-world/)的初衷不是为了炫耀所知，而是记录无知。
 
@@ -21,6 +21,8 @@
 
 - [github-pages](https://github.com/Lruihao/lruihao.github.io)
 - [Vercel](https://blog-lruihao.vercel.app/)
+
+![blog-flow](/assets/images/blog-flow.png)
 
 ## Subscribe
 
