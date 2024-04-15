@@ -4,11 +4,11 @@
 [![Hugo build and deploy](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml)
 [![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/m/Lruihao/hugo-blog/main?style=flat)](https://github.com/Lruihao/hugo-blog/commits/main)
 
-![blog-preview](/assets/images/apple-devices-preview.webp)
-
-站名“菠菜眾長”，取“兼收並蓄，博採眾長”之意。[建站](https://lruihao.cn/posts/hello-world/)的初衷不是为了炫耀所知，而是记录无知。
+> 站名“菠菜眾長”，取“兼收並蓄，博採眾長”之意。[建站](https://lruihao.cn/posts/hello-world/) 的初衷不是为了炫耀所知，而是记录无知。
 
 博客内容主要以 Web 前端开发方向为主，分享一些有趣程序、技巧、开发教程、心情和学习记录等。
+
+![blog-preview](/assets/images/apple-devices-preview.webp)
 
 ## Content
 
@@ -22,8 +22,6 @@
 - [github-pages](https://github.com/Lruihao/lruihao.github.io)
 - [Vercel](https://blog-lruihao.vercel.app/)
 
-![blog-flow](/assets/images/blog-flow.png)
-
 ## Subscribe
 
 - [RSS](http://lruihao.cn/index.xml)
@@ -33,6 +31,8 @@
 ## [Roadmap](https://github.com/users/Lruihao/projects/1)
 
 ## Project setup
+
+![blog-flow](/assets/images/blog-flow.png)
 
 ```bash
 ▸ .github/       # GitHub configuration
