@@ -45,6 +45,9 @@ const site = new Blog('菠菜眾長', 'Lruihao', 'https://lruihao.cn');
 
 ## 近期計畫
 
+一些临时捕获或蓄谋已久的想法 💡
+{.text-center}
+
 {{< link href="https://github.com/users/Lruihao/projects/1" content="@Lruihao's Recent Activities" card=true >}}
 
 ## 訂閱

@@ -17,6 +17,8 @@
 - [合集](https://lruihao.cn/collections/)
 - [标签](https://lruihao.cn/tags/)
 
+还有一些临时捕获或蓄谋已久的 [想法 💡](https://github.com/users/Lruihao/projects/1)。
+
 ## Distributable
 
 - [github-pages](https://github.com/Lruihao/lruihao.github.io)
