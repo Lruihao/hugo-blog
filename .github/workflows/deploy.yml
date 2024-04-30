@@ -60,6 +60,8 @@ jobs:
           extended: true
 
       - name: Build
+        env:
+          HUGO_PARAMS_GHTOKEN: ${{ secrets.HUGO_PARAMS_GHTOKEN }}
         run: npm run build
 
       - name: Deploy to GitHub Pages

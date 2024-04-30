@@ -1,0 +1,17 @@
+# -------------------------------------------------------------------------------------
+# Theme Core Configuration
+# See: https://fixit.lruihao.cn/theme-documentation-basics/#site-configuration
+# -------------------------------------------------------------------------------------
+
+# FixIt 0.2.15 | NEW Developer options
+# Select the scope named `public_repo` to generate personal access token,
+# Configure with environment variable `HUGO_PARAMS_GHTOKEN=xxx`, see https://gohugo.io/functions/os/getenv/#examples
+[dev]
+  enable = false
+  # Check for updates
+  c4u = false
+  # Mobile Devtools confi
+  [dev.mDevtools]
+    enable = false
+    # "vConsole", "eruda" supported
+    type = "vConsole"
