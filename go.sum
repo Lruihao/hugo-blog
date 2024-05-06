@@ -6,3 +6,5 @@ github.com/hugo-fixit/FixIt v0.3.6-0.20240506084403-df47c49726c6 h1:GesUUaUz16IV
 github.com/hugo-fixit/FixIt v0.3.6-0.20240506084403-df47c49726c6/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
 github.com/hugo-fixit/component-projects v1.0.0 h1:7DIf78w9AbIjagahgov3Yr3/A7LzgY+eQoCh4rXdyN0=
 github.com/hugo-fixit/component-projects v1.0.0/go.mod h1:nXW0R37REwpfwUD1I4RtB5QW71vw66nRyB9uEpYxr+c=
+github.com/hugo-fixit/component-projects v1.0.1 h1:y+2WXuqqMfJ4nfJ9FjGDcUuMX5nG0CIuQrcsljk/KeI=
+github.com/hugo-fixit/component-projects v1.0.1/go.mod h1:nXW0R37REwpfwUD1I4RtB5QW71vw66nRyB9uEpYxr+c=

@@ -6,5 +6,5 @@ require (
 	github.com/Lruihao/hugo-shortcode-mmt-netease v1.0.5 // indirect
 	github.com/Lruihao/hugo-shortcode-sponsor-log v1.0.0 // indirect
 	github.com/hugo-fixit/FixIt v0.3.6-0.20240506084403-df47c49726c6 // indirect
-	github.com/hugo-fixit/component-projects v1.0.0 // indirect
+	github.com/hugo-fixit/component-projects v1.0.1 // indirect
 )
