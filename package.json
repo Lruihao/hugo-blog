@@ -14,7 +14,7 @@
   "author": "Lruihao (https://github.com/Lruihao)",
   "scripts": {
     "algolia": "atomic-algolia",
-    "build": "hugo -v --gc --minify",
+    "build": "hugo --gc --minify --logLevel info",
     "fix:md": "autocorrect content --fix && markdownlint-cli2 \"content/**/*.md\" --fix",
     "lint:md": "autocorrect content --lint && markdownlint-cli2 \"content/**/*.md\"",
     "prepare": "husky install",
