@@ -21,6 +21,7 @@ titleCaseStyle = "ap"
 capitalizeListTitles = false
 # ignore some build errors
 ignoreLogs = [
+  "error-get-remote-image",
   "error-get-remote-json",
   "error-remote-getjson",
   "error-missing-instagram-accesstoken"
