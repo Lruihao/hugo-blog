@@ -3,6 +3,27 @@
 // ==============================
 @import '_custom/shaky.scss';
 
+.container:has(.home) {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: MAX(100vh, 400px);
+    background-image: linear-gradient(90deg, rgba(60, 10, 30, .04) 1px, transparent 0), linear-gradient(1turn, rgba(60, 10, 30, .04) 1px, transparent 0);
+    background-size: 40px 40px;
+    background-position: center;
+    border-bottom: 1px solid rgba(60, 10, 30, .04);
+
+    [data-theme='dark'] & {
+      background-image: linear-gradient(90deg, rgba(195, 245, 215, .04) 1px, transparent 0), linear-gradient(1turn, rgba(195, 245, 215, .04) 1px, transparent 0);
+      border-bottom-color: rgba(195, 245, 215, .04);
+    }
+  }
+}
+
 .header-title {
   font-family: MMT_H, '沐目体';
   font-size: 2rem !important;
@@ -43,12 +64,26 @@
 
 .home {
   .profile-ghchart {
+    padding: 0.5rem;
     width: MIN(663px, 100%);
     aspect-ratio: 663/104;
   }
 
-  &.posts .summary .content {
-    display: block;
+  &.posts {
+    .home-profile {
+      box-sizing: border-box;
+      height: MAX(calc(100vh - 3.5rem), 400px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .home-avatar img {
+      width: 8rem;
+    }
+    .summary .content {
+      display: block;
+    }
   }
 }
 
@@ -68,7 +103,15 @@
 // ==============================
 // Mobile style
 // ==============================
-@media only screen and (max-width: 680px) {}
+@media only screen and (max-width: 680px) {
+  .home {  
+    &.posts {
+      .home-avatar img {
+        width: 6rem;
+      }
+    }
+  }
+}
 
 // ==============================
 // Dark style
