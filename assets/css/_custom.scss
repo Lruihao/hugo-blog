@@ -3,6 +3,33 @@
 // ==============================
 @import '_custom/shaky.scss';
 
+$blog-base-color: #e6e5f8 !default;
+
+#header-desktop {
+  body:not([data-theme='dark']) & {
+    background-image: linear-gradient(180deg, lighten($blog-base-color, 5%), $blog-base-color);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+    width: MAX(360px, 10%);
+    height: 110px;
+    background-image: url(/images/drop.min.svg);
+    // 背景图水平翻转
+    transform: scaleX(-1);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    [data-theme='dark'] & {
+      background-image: url(/images/drop-dark.min.svg);
+    }
+  }
+}
+
 .container:has(.home) {
   &::before {
     content: '';
