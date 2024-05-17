@@ -30,6 +30,12 @@ $blog-base-color: #e6e5f8 !default;
   }
 }
 
+.github-corner svg {
+  body:not([data-theme='dark']) & {
+    fill: darken($blog-base-color, 25%);
+  }
+}
+
 .container:has(.home) {
   &::before {
     content: '';

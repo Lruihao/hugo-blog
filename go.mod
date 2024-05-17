@@ -5,6 +5,6 @@ go 1.20
 require (
 	github.com/Lruihao/hugo-shortcode-mmt-netease v1.0.5 // indirect
 	github.com/Lruihao/hugo-shortcode-sponsor-log v1.0.0 // indirect
-	github.com/hugo-fixit/FixIt v0.3.7-0.20240509090100-f13e95950a92 // indirect
+	github.com/hugo-fixit/FixIt v0.3.7-0.20240517093759-aa6851454665 // indirect
 	github.com/hugo-fixit/component-projects v1.1.0 // indirect
 )

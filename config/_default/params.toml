@@ -533,7 +533,7 @@ disableThemeInject = false
   # Available values: ["top", "bottom"]
   position = "top"
   reversed = false
-  light = "#000"
+  light = "#8581dd"
   dark = "#fff"
   height = "2px"
 
