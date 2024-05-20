@@ -151,11 +151,11 @@ disableThemeInject = false
     value = "2018-05-28T20:01:01+08:00"
   # FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
   [footer.order]
-    powered = 0
-    copyright = 0
-    statistics = "first"
-    visitor = 0
-    beian = 0
+    powered = 1
+    copyright = 2
+    statistics = 0
+    visitor = "first"
+    beian = 3
 
 # Section (all posts) page config
 [section]
