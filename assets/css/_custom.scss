@@ -17,6 +17,7 @@ $blog-base-color: #e6e5f8 !default;
     left: 0;
     width: MAX(360px, 10%);
     height: 110px;
+    pointer-events: none;
     background-image: url(/images/drop.min.svg);
     // 背景图水平翻转
     transform: scaleX(-1);
