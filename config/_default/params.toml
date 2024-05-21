@@ -400,6 +400,7 @@ disableThemeInject = false
       # someJavascript = "some.js"
       # Or
       # someJavascript = "https://cdn.example.com/some.js"
+      flyfish = "/js/flyfish.js"
   # Page SEO config
   [page.seo]
     # image URL
