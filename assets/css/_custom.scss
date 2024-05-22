@@ -164,21 +164,6 @@ body {
   }
 }
 
-.footer {
-  position: relative;
-
-  #flyfish {
-    position: absolute;
-    width: 100%;
-    height: 230px;
-    overflow: hidden;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    pointer-events: none;
-  }
-}
-
 // Custom font
 @font-face {
   font-family: MMT_H;
