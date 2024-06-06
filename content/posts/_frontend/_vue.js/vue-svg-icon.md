@@ -4,7 +4,7 @@ date: 2023-09-14T11:24:48+08:00
 categories:
   - Vue.js
 tags:
-  - svg
+  - SVG
   - Vue2
 ---
 
