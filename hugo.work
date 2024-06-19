@@ -3,3 +3,4 @@ go 1.20
 use .
 use ../hugo-fixit/FixIt
 use ../hugo-fixit/component-projects
+use ../hugo-fixit/shortcode-mmt-netease
