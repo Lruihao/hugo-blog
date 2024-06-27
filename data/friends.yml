@@ -26,7 +26,7 @@
   avatar: https://www.domon.cn/content/images/2019/06/avatar_shiba-1.jpg
   url: https://www.domon.cn
   description: 主要涉及 Android 端技术，前沿其他技术和生活吐槽。
-- nickname: mythsman # 该站点已加密
+- nickname: mythsman
   avatar: https://blog.mythsman.com/content/images/2019/07/----_20190713220203.jpg
   url: https://blog.mythsman.com
   description: hexo-douban 插件开发者，坐标上海拼多多博客看起来是个很有生活感与学习感的地方。
@@ -38,10 +38,11 @@
   avatar: https://wizzie.top/Blog/img/head.jpg
   url: https://wizzie.top/Blog/
   description: “Brave, Confident, Come on!”
-- nickname: 星空无限
-  avatar: https://liyangzone.com/medias/avatar.jpg
-  url: https://liyangzone.com
-  description: 前端开发，骑行爱好者，分享技术、分享生活。Front-End Developer
+# 失效
+# - nickname: 星空无限
+#   avatar: https://liyangzone.com/medias/avatar.jpg
+#   url: https://liyangzone.com
+#   description: 前端开发，骑行爱好者，分享技术、分享生活。Front-End Developer
 - nickname: 北宸
   avatar: https://cdn.jsdelivr.net/gh/leafjame/cdn/img/logo/beichen.png
   url: https://www.liaofuzhan.com
@@ -70,10 +71,11 @@
   avatar: https://pigco-1313228125.cos.ap-shanghai.myqcloud.com/img/JQAeX6iE9f1RKTu.jpg
   url: https://andreoy.cn
   description: To sail beyond the sunset.
-- nickname: Ayou
-  avatar: https://cravatar.cn/avatar/467dd59b914fd9980108b9f7d143d320
-  url: https://ayou10031.com
-  description: Try again,do better.
+# 失效
+# - nickname: Ayou
+#   avatar: https://cravatar.cn/avatar/467dd59b914fd9980108b9f7d143d320
+#   url: https://ayou10031.com
+#   description: Try again,do better.
 - nickname: SoulChild 随笔记
   avatar: https://www.soulchild.cn/images/avatar.png
   url: https://soulchild.cn
@@ -106,6 +108,10 @@
   avatar: https://wlanxww.com/images/avatar.jpeg
   url: https://wlanxww.com
   description: Wlanxww 的博客
+- nickname: Raventhatfly
+  avatar: https://avatars.githubusercontent.com/u/91964380
+  url: https://raventhatfly.github.io/
+  description: I come from the past to save my future
 # - nickname: 暂时不接受友链
 #   avatar:
 #   url: https://lruihao.cn

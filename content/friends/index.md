@@ -16,6 +16,13 @@ keywords:
 <!-- markdownlint-disable-next-line no-bare-urls -->
 {{< link href="https://lruihao.cn/friends/opml.xml" content=":(far fa-star fa-fw): Subscribe ours" download="opml.xml" card=true >}}
 
+## 失效鏈接
+
+公示一個月後刪除，如更換域名請及時聯繫！
+
+- `liyangzone.com`: 無妨訪問。
+- `ayou10031.com`: 無妨訪問。
+
 ## 基本資訊
 
 ```yaml
