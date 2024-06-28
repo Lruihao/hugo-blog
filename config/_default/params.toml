@@ -234,6 +234,14 @@ disableThemeInject = false
   QQ = ""
   QQGroup = ""
   CSDN = ""
+  # custom social links like the following
+  [social.FixIt]
+    id = "fixit"
+    weight = 900
+    Template = "https://%v.lruihao.cn/"
+    Title = "Hugo FixIt"
+    [social.FixIt.icon]
+      Src = "images/fixit.svg"
 
 # Page config
 [page]
