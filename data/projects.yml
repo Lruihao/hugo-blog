@@ -16,6 +16,7 @@
     - hugo-fixit/hugo-fixit-starter1
     - hugo-fixit/fixit-cli
     - hugo-fixit/component-projects
+    - hugo-fixit/shortcode-caniuse
     - hugo-fixit/shortcode-mmt-netease
     - hugo-fixit/shortcode-sponsor-log
     - hugo-fixit/hugo-shell
