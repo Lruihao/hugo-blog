@@ -287,7 +287,8 @@ disableThemeInject = false
   # FixIt 0.2.17 | NEW whether to enable readingTime
   readingTime = true
   # FixIt 0.2.17 | NEW end of post flag
-  endFlag = "（本文完）"
+  # endFlag = "（本文完）"
+  endFlag = "「本文完，更多内容汇总在我的 GitHub，持续更新，求关注、求 star、求订阅！」"
   # FixIt 0.2.18 | NEW whether to enable instant.page
   instantPage = true
   # FixIt 0.3.0 | NEW whether to enable collection list at the sidebar

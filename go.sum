@@ -2,9 +2,9 @@ github.com/Lruihao/hugo-shortcode-mmt-netease v1.0.7 h1:G0A3HBcU7zu/FZPEVlzexO4G
 github.com/Lruihao/hugo-shortcode-mmt-netease v1.0.7/go.mod h1:6vXHaAZv1p9meW2mZ5KmlWlu5W9YiIpUTkHGWwkp3Pk=
 github.com/Lruihao/hugo-shortcode-sponsor-log v1.0.0 h1:HN1tKv3xYVZRSz+xt2Wr3hLbqxi5yK6OZRecYj22yyU=
 github.com/Lruihao/hugo-shortcode-sponsor-log v1.0.0/go.mod h1:B0v1x6BWWp5g6w82hBfZkJNPTyTw8Cvt6ccZ7BllA20=
-github.com/hugo-fixit/FixIt v0.3.9-0.20240629104425-91b583817a2b h1:zCP5h8ws6/Um2R5tDGPqBtCR6QRniZqGIKWVg0PE7rc=
-github.com/hugo-fixit/FixIt v0.3.9-0.20240629104425-91b583817a2b/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
-github.com/hugo-fixit/component-projects v1.1.1 h1:iFwd/pWCSQ5LQoyb82Fsi21YP8Xrv4A5YDOYPXbpP/U=
-github.com/hugo-fixit/component-projects v1.1.1/go.mod h1:nXW0R37REwpfwUD1I4RtB5QW71vw66nRyB9uEpYxr+c=
-github.com/hugo-fixit/shortcode-caniuse v1.1.0 h1:rQbS5LteROmgOCD8rF75VfQQJ4wM7Nsn+ocuVMlFkMM=
-github.com/hugo-fixit/shortcode-caniuse v1.1.0/go.mod h1:RoPLFt+7uLui5rjvkC/qFGeo4nly5AzzwIID9SoDKNc=
+github.com/hugo-fixit/FixIt v0.3.9-0.20240630053321-052d128922d8 h1:7S0VG2UcykCVSGRu4XdrBpmS3zHDiGM1XxHZgQlZmwY=
+github.com/hugo-fixit/FixIt v0.3.9-0.20240630053321-052d128922d8/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
+github.com/hugo-fixit/component-projects v1.1.2 h1:hKJ+1CM6Y0wEdA8Pnn8MSZel+ukYtUvzC3VQk+AFSl4=
+github.com/hugo-fixit/component-projects v1.1.2/go.mod h1:nXW0R37REwpfwUD1I4RtB5QW71vw66nRyB9uEpYxr+c=
+github.com/hugo-fixit/shortcode-caniuse v1.1.2 h1:YWBg6oPZucmPnQyBiPLFJHlueG+gy7hyNlxCGTka59s=
+github.com/hugo-fixit/shortcode-caniuse v1.1.2/go.mod h1:RoPLFt+7uLui5rjvkC/qFGeo4nly5AzzwIID9SoDKNc=
