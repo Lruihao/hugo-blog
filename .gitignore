@@ -7,5 +7,6 @@ resources/
 jsconfig.json
 
 # backup for frontmatter in vscode
+!.vscode/
 !frontmatter.json
-!.frontmatter
+!.frontmatter/

@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "eliostruyf.vscode-front-matter",
+    "budparr.language-hugo-vscode",
+    "kaellarkin.hugo-shortcode-syntax",
+    "eliostruyf.vscode-hugo-themer",
+    "yzhang.markdown-all-in-one",
+    "bierner.markdown-emoji",
+    "shd101wyy.markdown-preview-enhanced",
+    "davidanson.vscode-markdownlint",
+    "mushan.vscode-paste-image",
+    "redhat.vscode-yaml",
+    "tamasfe.even-better-toml",
+    "huacnlee.autocorrect"
+  ]
+}
