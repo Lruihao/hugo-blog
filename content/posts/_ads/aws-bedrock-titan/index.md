@@ -4,6 +4,7 @@ linkTitle: Amazon Titan 文本模型
 date: 2023-12-22T19:58:47+08:00
 lastmod: 2023-12-22T19:58:47+08:00
 slug: d8ae205
+collectionList: false
 collections:
   - AWS
 tags:

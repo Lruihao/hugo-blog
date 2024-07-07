@@ -3,6 +3,7 @@ title: 将 Hugo 博客部署到亚马逊云服务器
 linkTitle: 将 Hugo 博客部署到 AWS 服务器
 date: 2023-08-26T17:22:57+08:00
 lastmod: 2023-08-26T17:22:57+08:00
+collectionList: false
 collections:
   - AWS
 tags:
