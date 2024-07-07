@@ -22,6 +22,7 @@ linkToEdit: false
 linkToReport: false
 math: false
 comment: false
+endFlag: "（本篇完）"
 ---
 <!-- markdownlint-disable-file no-duplicate-heading-->
 

@@ -26,6 +26,7 @@ linkToEdit: false
 linkToReport: false
 math: false
 comment: false
+endFlag: "（本篇完）"
 ---
 
 本文将介绍如何将 Hugo 博客打包并部署到亚马逊云服务器上，并附上亚马逊云服务器的配置过程。
