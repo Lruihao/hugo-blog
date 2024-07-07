@@ -25,14 +25,23 @@ keywords:
 
 ## 基本資訊
 
-```yaml
-- nickname: 菠菜眾長
-  avatar: https://lruihao.cn/images/avatar.jpg
-  url: https://lruihao.cn
-  description: 不怕萬人阻擋，只怕自己投降
-```
+- **網絡 ID**：Lruihao
+- **頭像**：https://lruihao.cn/images/avatar.jpg
+- **URL**：https://lruihao.cn
+- 描述：菠菜眾長 - 「不怕萬人阻擋，只怕自己投降」
 
 ## 友情提醒
+
+評論留言必要內容如下：
+
+````markdown
+```yaml
+- nickname: <your nickname>
+   avatar: <your avatar>
+   url: <your site link>
+   description: <description of your site>
+```
+````
 
 {{< admonition info "Notice" true >}}
 
