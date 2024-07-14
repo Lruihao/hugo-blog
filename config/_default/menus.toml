@@ -65,17 +65,17 @@
   title = ""
   weight = 6
   [main.params]
-    icon = "fa-regular fa-comments"
+    icon = "fa-solid fa-comments"
 [[main]]
   identifier = "about"
   pre = ""
   post = ""
-  name = "關於"
+  name = "关于"
   url = "/about/"
   title = ""
   weight = 7
   [main.params]
-    icon = "fa-regular fa-id-card"
+    icon = "fa-solid fa-signature"
 [[main]]
   identifier = "github"
   pre = "<i class='fa-brands fa-github fa-fw' aria-hidden='true'></i>"

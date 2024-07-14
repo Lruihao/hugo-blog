@@ -5,3 +5,4 @@ use ../hugo-fixit/FixIt
 use ../hugo-fixit/component-projects
 use ../hugo-fixit/shortcode-caniuse
 use ../hugo-fixit/shortcode-mmt-netease
+use ../hugo-fixit/shortcode-docs-bookmark

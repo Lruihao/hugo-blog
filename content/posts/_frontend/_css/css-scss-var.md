@@ -2,7 +2,6 @@
 title: 关于 CSS 和 Scss 变量运算那些事
 date: 2022-04-30T22:04:29+08:00
 description: 关于 CSS 和 Scss 变量运算那些事
-
 tags:
   - CSS
   - Scss
@@ -20,7 +19,7 @@ categories:
 
 <!--more-->
 
-## 奇思淫技
+## 奇技淫巧
 
 1. 由于 **Scss 区分大小写而 CSS 不区分**，所以为了不让 Scss 中的函数覆盖 CSS 的函数，我们可以使用除了 `max` 以外的 2<sup>3</sup> - 1 种写法，这样就能使用原生 CSS 的 `max` 函数来比较了，就不会报错了。
 

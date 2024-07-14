@@ -13,6 +13,9 @@
   path = "github.com/hugo-fixit/shortcode-caniuse"
 
 [[imports]]
+  path = "github.com/hugo-fixit/shortcode-docs-bookmark"
+
+[[imports]]
   path = "github.com/Lruihao/hugo-shortcode-sponsor-log"
 
 [[imports]]
@@ -20,4 +23,4 @@
 
 [hugoVersion]
   extended = true
-  min = "0.123.0"
+  min = "0.127.0"
