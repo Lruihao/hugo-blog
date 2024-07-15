@@ -7,6 +7,9 @@ $blog-base-color: #e6e5f8 !default;
 $blog-bg-color: #fafaf8 !default;
 
 #header-desktop {
+  @include transition(filter 0.3s ease);
+  @include box-shadow(none !important);
+
   body:not([data-theme='dark']) & {
     background-image: linear-gradient(180deg, lighten($blog-base-color, 5%), $blog-base-color);
   }
@@ -28,6 +31,14 @@ $blog-bg-color: #fafaf8 !default;
 
     [data-theme='dark'] & {
       background-image: url(/images/drop-dark.min.svg);
+    }
+  }
+
+  &:hover {
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.1));
+
+    [data-theme='dark'] & {
+      filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.1));
     }
   }
 }
