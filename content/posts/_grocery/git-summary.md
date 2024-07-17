@@ -1,7 +1,6 @@
 ---
 title: Git 统计代码量
 date: 2024-07-17T16:06:08+08:00
-draft: true
 categories:
   - Git
 tags: 
