@@ -1,9 +1,12 @@
 ---
-title: CSS 实现网格背景效果
+title: 【现代 CSS】CSS 实现网格背景效果
+linkTitle: CSS 实现网格背景效果
 date: 2023-09-02T10:05:44+08:00
-tags:
-  - CSS
 categories:
+  - CSS
+collections:
+  - Modern CSS
+tags:
   - CSS
 pageStyle: wide
 ---

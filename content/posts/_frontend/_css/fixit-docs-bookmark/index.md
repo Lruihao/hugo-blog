@@ -1,9 +1,12 @@
 ---
 title: 【CSS 奇技淫巧】CSS 实现时间轴、背景图 loading 和渐变边框
+linkTitle: CSS 实现时间轴、背景图 loading 和渐变边框
 date: 2024-07-14T13:03:31+08:00
-description: 本文将通过一个实际应用场景，展示如何使用 CSS 实现时间轴、背景图 loading 效果、渐变边框等效果。
+description: 本文将通过一个实际应用场景，展示如何使用现代 CSS 实现时间轴、背景图 loading 效果、渐变边框等效果。
 categories:
   - CSS
+collections:
+  - Modern CSS
 tags:
   - CSS
   - Scss
@@ -12,7 +15,7 @@ resources:
     src: images/featured-image.webp
 ---
 
-本文将通过一个实际应用场景，展示如何使用 CSS 实现时间轴、背景图 loading 效果、渐变边框等效果。
+本文将通过一个实际应用场景，展示如何使用现代 CSS 实现时间轴、背景图 loading 效果、渐变边框等效果。
 
 <!--more-->
 
@@ -41,10 +44,10 @@ resources:
 
 ```html
 <ul class="docs-outline">
-  <li><a href="{{ $page1.Permalink }}" title="{{ $page1.Description }}">{{ $page1.LinkTitle }}</a></li>
-  <li><a href="{{ $page2.Permalink }}" title="{{ $page2.Description }}">{{ $page2.LinkTitle }}</a></li>
-  <li><a href="{{ $page3.Permalink }}" title="{{ $page3.Description }}">{{ $page3.LinkTitle }}</a></li>
-  <li><a href="{{ $page4.Permalink }}" title="{{ $page4.Description }}">{{ $page4.LinkTitle }}</a></li>
+  <li><a href="{{ $page1.Permalink }}">{{ $page1.LinkTitle }}</a></li>
+  <li><a href="{{ $page2.Permalink }}">{{ $page2.LinkTitle }}</a></li>
+  <li><a href="{{ $page3.Permalink }}">{{ $page3.LinkTitle }}</a></li>
+  <li><a href="{{ $page4.Permalink }}">{{ $page4.LinkTitle }}</a></li>
 </ul>
 ```
 
@@ -141,13 +144,42 @@ li::before {
 }
 ```
 
-## 渐变边框
+## 全尺寸带圆角渐变边框
 
-最后一个效果是渐变边框，这个效果其实很简单，利用线性渐变 `linear-gradient` 分别设置 `padding-box` 和 `border-box` 的背景即可实现。
+最后实现一个全尺寸带圆角渐变边框效果，一句话概括为利用线性渐变 `linear-gradient` 分别设置 `padding-box` 和 `border-box` 的背景，然后 `border` 颜色设置为透明即可实现。
 
 ```scss
 .docs-navigation {
-  background: linear-gradient($global-background-color, $global-background-color) padding-box, linear-gradient(45deg, #42d392, #FF7359) border-box;
+  border-radius: 2.5px;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, #42d392, #FF7359) border-box;
+  border: 0.25rem solid transparent;
+}
+```
+
+值得一提的是，这里面利用到的一个核心概念是 `background-clip` 属性，详见 [background-clip - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip)：
+
+- `padding-box` 表示背景延伸到内边距边界
+- `border-box` 表示背景延伸到边框边界。
+
+另外，如果想实现渐变边框的动画效果，用 SCSS 可以这样做（虽然我不认为这是一个好的做法）：
+
+```scss {data-open=false}
+.docs-navigation {
+  border-radius: 2.5px;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(var(--gradient-angle), #42d392, #FF7359) border-box;
+  border: 0.25rem solid transparent;
+  transition: background-color 0.5s, border-color 0.5s;
+  --gradient-angle: 45deg;
+  animation: gradient-angle-change 10s infinite linear;
+
+  // 分的越细，动画效果越平滑
+  @keyframes gradient-angle-change {
+    @for $i from 0 through 100 {
+      #{$i * 1%} {
+        --gradient-angle: #{45 + $i * 4}deg;
+      }
+    }
+  }
 }
 ```
 

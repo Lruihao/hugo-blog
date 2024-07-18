@@ -1,8 +1,11 @@
 ---
 title: 【现代 CSS】标准滚动条控制规范
+linkTitle: 标准滚动条控制规范
 date: 2024-06-28T22:29:03+08:00
 categories:
   - CSS
+collections:
+  - Modern CSS
 tags:
   - CSS
   - scrollbar-styling
