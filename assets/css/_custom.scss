@@ -92,6 +92,10 @@ $blog-bg-color: #fafaf8 !default;
   }
 }
 
+.aside-collection {
+  @include z-index(2);
+}
+
 .single {
   .single-subtitle {
     color: #57606a;
