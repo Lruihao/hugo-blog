@@ -5,6 +5,7 @@
     - hugo-fixit/FixIt
     - Lruihao/hugo-blog
     - hugo-fixit/docs
+    - Lruihao/lruihao.github.io
     - Lruihao/el-table-sticky
     - Lruihao/vue-el-demo
     - Lruihao/CoverView
@@ -18,7 +19,7 @@
     - hugo-fixit/component-projects
     - hugo-fixit/shortcode-caniuse
     - hugo-fixit/shortcode-mmt-netease
-    - hugo-fixit/shortcode-sponsor-log
+    - hugo-fixit/shortcode-rewards
     - hugo-fixit/hugo-shell
     - Lruihao/bill-note
     - Lruihao/cos-album
@@ -35,4 +36,5 @@
     - theme-next/hexo-theme-next
     - walinejs/waline
     - twikoojs/twikoo
+    - xCss/Valine-docs
     - pengzhanbo/caniuse-embed

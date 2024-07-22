@@ -8,5 +8,5 @@ github.com/hugo-fixit/shortcode-caniuse v1.1.3 h1:U1YBJz5SI/d1BBQhHcD0eVgJdCcpzK
 github.com/hugo-fixit/shortcode-caniuse v1.1.3/go.mod h1:RoPLFt+7uLui5rjvkC/qFGeo4nly5AzzwIID9SoDKNc=
 github.com/hugo-fixit/shortcode-docs-bookmark v1.0.2 h1:VIcMt3SWSZYFyz0d+SfKb7ad3ZrQ2i87KJTYRfVTEfk=
 github.com/hugo-fixit/shortcode-docs-bookmark v1.0.2/go.mod h1:suLPTLy/z2dvpHMEn9TFE+AxwyuTzmmD87vEiW078wI=
-github.com/hugo-fixit/shortcode-rewards v1.0.3 h1:6MG0VlkHbBBIXperDyzWbOn5jjD6UNWJ1x3ZUXsfJe8=
-github.com/hugo-fixit/shortcode-rewards v1.0.3/go.mod h1:+PA7wjtBgkQsI8s8bPOMJ6bNNfExUIWz4AxTearzZgw=
+github.com/hugo-fixit/shortcode-rewards v1.0.4 h1:62qCmcGvAJf+qa+8ofRX6jwMUXo6Q4+PQvlOtu0ZGBA=
+github.com/hugo-fixit/shortcode-rewards v1.0.4/go.mod h1:+PA7wjtBgkQsI8s8bPOMJ6bNNfExUIWz4AxTearzZgw=
