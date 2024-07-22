@@ -1,0 +1,103 @@
+# The sponsor log data format is as follows
+
+# message: "感謝大家的支持 🙏"
+currency: CNY
+symbol: ¥
+logs:
+  - date: 2018-09-28
+    sponsor: "francs"
+    money: 50
+    origin: 支付宝
+    remark: "大学生时期，第一次收到别人的支持，内心表示受宠若惊又非常开心。非常感谢老哥的支持！"
+  - date: 2018-10-26
+    sponsor: "francs"
+    money: 8.80
+    origin: QQ
+    remark: "今天学校运动会没课，睡到 9 点多起来看到 QQ 收到一个红包，感谢支持！"
+  - date: 2018-11
+    sponsor: "francs"
+    money: 8.80
+    origin: QQ
+    remark:
+  - date: 2018-12-04
+    sponsor: ✘昌升
+    money: 10
+    origin: 支付宝
+    remark: "上课的时候听到了支付宝清脆的支付宝到账 10 元的声音！"
+  - date: 2018-12-04
+    sponsor: ✘昌升
+    money: 18
+    origin: 支付宝
+  - date: 2019-03-19
+    sponsor: ✘昌升
+    money: 2
+    origin: 微信
+    remark: "来自 `231****047#qq.com`"
+  - date: 2020-01-17
+    sponsor: ✘喜洲
+    money: 20.20
+    origin: QQ
+    remark: "来自 `101****073`"
+  - date: 2022-12-02 13:01:48
+    sponsor: ✘✘松
+    money: 2
+    origin: 支付宝
+    remark:
+  - date: 2023-02-13 10:01:58
+    sponsor: ✘✘波
+    money: 20
+    origin: 支付宝
+    remark: "感谢帮忙解决 FixIt 的问题"
+  - date: 2023-03-17 14:05:49
+    sponsor: K*n
+    money: 50
+    origin: 微信
+  - date: 2023-03-17 14:57:41
+    sponsor: D*n
+    money: 11.11
+    origin: 微信
+    remark: "加油"
+  - date: 2023-04-03 17:49:12
+    sponsor: 乐语
+    money: 5
+    origin: wechatpay
+    remark: "很好用的主题，谢谢作者💪"
+  - date: 2023-04-17 10:35:26
+    sponsor: 建议去世
+    money: 20
+    origin: wechatpay
+    remark: "主题不错"
+  - date: 2023-05-24 15:49:46
+    sponsor: 🐟
+    money: 1
+    origin: wechatpay
+    remark: "感谢 FixIt 作者"
+  - date: 2023-11-03 22:35:07
+    sponsor: 丰果 # 来自 `141****866`
+    money: 15
+    origin: FixIt 主题交流群 QQ 红包
+    remark: "请喝杯咖啡"
+  - date: 2024-01-13 21:39:37
+    sponsor: ""
+    money: 15
+    origin: 赞赏码
+  - date: 2024-02-05 15:42:42
+    sponsor: 淮屿
+    money: 10
+    origin: 赞赏码
+    remark: "非常棒的主题👍"
+  - date: 2024-04-03 17:02:03
+    sponsor: 杨潇
+    money: 5.20
+    origin: wechatpay
+    remark: "辛苦了，宝贝"
+  - date: 2024-04-03 17:10:15
+    sponsor: 贺雄彪
+    money: 5.21
+    origin: wechatpay
+    remark: "感谢李瑞豪同学🧑‍🎓"
+  - date: 2024-07-16 00:09:47
+    sponsor: WindSun
+    money: 20
+    origin: wechatpay
+    remark: "歪瑞古德"
