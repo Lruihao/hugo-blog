@@ -1,16 +1,18 @@
 ---
 title: 临时决定再写一个小工具 - 网站预览图生成器
 date: 2024-04-04T13:23:37+08:00
-slug: d651bdd
 categories:
   - Vue.js
   - JavaScript
+collections:
+  - project
 tags:
   - Vue2
 resources:
   - name: featured-image
     src: images/cover.webp
 math: false
+type: posts
 ---
 
 开发完 [CoverView](https://github.com/Lruihao/CoverView)之后，在调整博客文章封面图的时候，我发现首页的多端缩略图还是只能自己 P 图诶，于是我又决定再写一个小工具，用来生成网站预览图。。

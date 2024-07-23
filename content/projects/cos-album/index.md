@@ -8,6 +8,7 @@ tags:
   - JavaScript
 categories:
   - JavaScript
+collections:
   - project
 featuredImage: /projects/cos-album/images/view.png
 aliases:

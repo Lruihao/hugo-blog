@@ -6,6 +6,8 @@ tags:
   - Laravel
   - Markdown
 categories:
+  - PHP
+collections:
   - project
 featuredImage: https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png
 type: posts

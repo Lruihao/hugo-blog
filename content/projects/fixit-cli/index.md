@@ -3,12 +3,15 @@ title: 用 Node.js 开发一个轻量脚手架
 date: 2023-11-28T10:48:07+08:00
 categories:
   - Node.js
+collections:
+  - project
 tags:
   - 脚手架
   - FixIt
 resources:
   - name: featured-image
     src: images/featured-image.png
+type: posts
 ---
 
 本文将介绍如何用 Node.js 开发一个轻量脚手架，以 [fixit-cli](https://github.com/hugo-fixit/fixit-cli) 为例。
@@ -19,8 +22,8 @@ resources:
 
 在维护 [FixIt](https://github.com/hugo-fixit/FixIt) 这个项目时，很多新人可能第一次接触 Hugo，第一次使用 FixIt 主题，可能觉得无从下手。在之前的工作中，为了避免这个问题，我新增了两个模板项目：
 
-- [hugo-fixit-blog-git](https://github.com/hugo-fixit/hugo-fixit-blog-git)
 - [hugo-fixit-blog-go](https://github.com/hugo-fixit/hugo-fixit-blog-go)
+- [hugo-fixit-blog-git](https://github.com/hugo-fixit/hugo-fixit-blog-git)
 
 然并卵哈哈哈🤣，大家似乎都有种惰性，不愿意认真地读一遍 README，即使只需简单几步就能通过 GitHub template 创建一个拥有完整主题配置、自动化部署完善的博客。
 
@@ -184,4 +187,6 @@ fixit create my-blog
 
 命令动作的具体实现详见 FixIt CLI 源码。
 
-{{< link href="https://github.com/hugo-fixit/fixit-cli" content="FixIt CLI" card=true >}}
+{{< gh-repo-card-container >}}
+  {{< gh-repo-card repo="hugo-fixit/fixit-cli" >}}
+{{< /gh-repo-card-container >}}

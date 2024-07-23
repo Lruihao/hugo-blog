@@ -4,7 +4,7 @@ subtitle: 一款手写给你的字体
 date: 2018-10-12 19:39:19
 tags:
   - 沐目体
-categories:
+collections:
   - project
 type: posts
 library:

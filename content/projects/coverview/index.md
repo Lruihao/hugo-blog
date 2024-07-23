@@ -6,6 +6,7 @@ tags:
   - React
 categories:
   - React
+collections:
   - project
 description: 🛠 Create awesome cover images for your blog posts quickly.
 keywords:

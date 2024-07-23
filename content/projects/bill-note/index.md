@@ -8,6 +8,7 @@ tags:
   - leancloud
 categories:
   - 瞎折腾
+collections:
   - project
 type: posts
 ---

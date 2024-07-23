@@ -8,6 +8,7 @@ tags:
   - JavaScript
 categories:
   - JavaScript
+collections:
   - project
 type: posts
 aliases:

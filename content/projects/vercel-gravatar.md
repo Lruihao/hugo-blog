@@ -1,13 +1,14 @@
 ---
 title: 利用 Vercel 反代 Gravatar 实现镜像加速
 date: 2024-04-17T12:51:35+08:00
-slug: 3fd72ec
-weight: 0
 categories:
   - 瞎折腾
+collections:
+  - project
 tags:
   - Vercel
   - Gravatar
+type: posts
 ---
 
 在开发和部署网站时，经常会遇到加载外部资源较慢的问题。其中之一就是加载 Gravatar 头像图片时可能会受到网络延迟的影响。为了解决这个问题，我们可以利用 Vercel 平台的反向代理功能来实现镜像加速。
@@ -143,6 +144,10 @@ export default function (req) {
 }
 ```
 
-完整代码可以在 [GitHub](https://github.com/Lruihao/vercel-gravatar) 上查看。
-
 最后部署到 Vercel 平台即可。
+
+## 源码
+
+{{< gh-repo-card-container >}}
+  {{< gh-repo-card repo="Lruihao/vercel-gravatar" >}}
+{{< /gh-repo-card-container >}}

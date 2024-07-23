@@ -13,6 +13,7 @@
     - Lruihao/vue-minder-editor-extended
     - Lruihao/kityminder-core
     - Lruihao/cell-tooltip
+    - Lruihao/vercel-gravatar
     - hugo-fixit/hugo-fixit-starter
     - hugo-fixit/hugo-fixit-starter1
     - hugo-fixit/fixit-cli
@@ -22,17 +23,19 @@
     - hugo-fixit/shortcode-rewards
     - hugo-fixit/hugo-shell
     - Lruihao/bill-note
-    - Lruihao/cos-album
-    - Lruihao/MMT
     - Lruihao/cell-blog
+- title: 归档项目
+  repos:
+    - Lruihao/MMT
+    - Lruihao/cos-album
     - Lruihao/hexo-theme-next
 - title: 我贡献的
   description: 下面这些是我贡献过的一些开源作品。
   repos:
+    - gohugoio/hugo
+    - mdn/translated-content
     - SchemaStore/schemastore
     - Shimada666/v-code-diff
-    - mdn/translated-content
-    - gohugoio/hugo
     - theme-next/hexo-theme-next
     - walinejs/waline
     - twikoojs/twikoo

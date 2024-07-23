@@ -3,6 +3,7 @@ title: 如何让 Element UI 表头、表尾、横向滚动条吸顶吸底固定�
 date: 2023-09-25T17:49:58+08:00
 categories:
   - Vue.js
+collections:
   - project
 tags:
   - Vue2
@@ -38,7 +39,7 @@ Element UI 的表格组件在使用时，如果表格内容过多，表格会出
 <!-- markdownlint-disable-next-line no-bare-urls -->
 {{< link href="https://github.com/Lruihao/el-table-sticky" content="el-table-stick" card=true >}}
 
-> *如果你觉得这个插件还不错，赏个 star 吧 😛，如果你有更好的实现方案，欢迎提 issue 或者 PR。*
+> _如果你觉得这个插件还不错，赏个 star 吧 😛，如果你有更好的实现方案，欢迎提 issue 或者 PR。_
 
 ## 解决思路
 
@@ -122,4 +123,4 @@ Non sunt multiplicanda entia sine necessitate
 学而不思则罔，思而不学则殆。
 
 <!-- footnote reference definition -->
-[^1]: *如有必要，以后版本需要替换 gemini-scrollbar 实现自定义滚动条的功能。*
+[^1]: _如有必要，以后版本需要替换 gemini-scrollbar 实现自定义滚动条的功能。_
