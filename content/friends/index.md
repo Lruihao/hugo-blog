@@ -37,9 +37,9 @@ keywords:
 ````markdown
 ```yaml
 - nickname: <your nickname>
-   avatar: <your avatar>
-   url: <your site link>
-   description: <description of your site>
+  avatar: <your avatar>
+  url: <your site link>
+  description: <description of your site>
 ```
 ````
 
