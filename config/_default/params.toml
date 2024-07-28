@@ -467,7 +467,7 @@ disableThemeInject = false
 # FixIt 0.3.10 | NEW Busuanzi count
 [busuanzi]
   # whether to enable busuanzi count
-  enable = true
+  enable = false
   # busuanzi count core ["vercount", "busuanzi"], default: "vercount"
   core = "vercount"
   # whether to show the site views
