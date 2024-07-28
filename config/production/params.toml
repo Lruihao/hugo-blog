@@ -50,12 +50,16 @@
     darkTheme = "dark_dimmed"
     lazyLoad = true
 
-# FixIt 0.2.12 | NEW Busuanzi count
-[ibruce]
+# FixIt 0.3.10 | NEW Busuanzi count
+[busuanzi]
+  # whether to enable busuanzi count
   enable = true
-  # Enable in post meta
-  # 在文章中开启
-  enablePost = true
+  # busuanzi count core ["vercount", "busuanzi"], default: "vercount"
+  core = "vercount"
+  # whether to show the site views
+  siteViews = true
+  # whether to show the page views
+  pageViews = true
 
 # CDN config for third-party library files
 [cdn]
