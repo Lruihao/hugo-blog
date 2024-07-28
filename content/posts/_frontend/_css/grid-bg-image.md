@@ -1,6 +1,5 @@
 ---
-title: 【现代 CSS】CSS 实现网格背景效果
-linkTitle: CSS 实现网格背景效果
+title: CSS 如何实现网格背景效果？
 date: 2023-09-02T10:05:44+08:00
 categories:
   - CSS
@@ -8,7 +7,6 @@ collections:
   - Modern CSS
 tags:
   - CSS
-pageStyle: wide
 ---
 
 本文将介绍如何使用 `linear-gradient` 、`background-size` 等属性来实现网格背景效果。

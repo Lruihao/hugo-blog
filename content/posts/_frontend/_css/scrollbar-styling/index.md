@@ -1,6 +1,5 @@
 ---
-title: 【现代 CSS】标准滚动条控制规范
-linkTitle: 标准滚动条控制规范
+title: 标准滚动条控制规范
 date: 2024-06-28T22:29:03+08:00
 categories:
   - CSS
@@ -9,6 +8,11 @@ collections:
 tags:
   - CSS
   - scrollbar-styling
+keywords:
+  - CSS
+  - scrollbar-styling
+  - scrollbar-color
+  - scrollbar-width
 ---
 
 使用 `scrollbar-width` 和 `scrollbar-color` 属性设置滚动条的样式。

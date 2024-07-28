@@ -1,11 +1,11 @@
 ---
-title: 【CSS 奇技淫巧】CSS 实现时间轴、背景图 loading 和渐变边框
-linkTitle: CSS 实现时间轴、背景图 loading 和渐变边框
+title: CSS 实现时间轴、背景图 loading 和渐变边框
 date: 2024-07-14T13:03:31+08:00
 description: 本文将通过一个实际应用场景，展示如何使用现代 CSS 实现时间轴、背景图 loading 效果、渐变边框等效果。
 categories:
   - CSS
 collections:
+  - CSS 奇技淫巧
   - Modern CSS
 tags:
   - CSS
