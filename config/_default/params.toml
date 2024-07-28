@@ -4,9 +4,9 @@
 # -------------------------------------------------------------------------------------
 
 # FixIt theme version
-version = "0.2.X"
+version = "0.3.X"
 # site description
-description = "Lruihao's Note 李瑞豪的博客：探索、分享、记录自己在工作生活学习到一些东西。人知道得越多，就就会发现无知的越多。有更广袤世界可以探索，真是莫大的快乐啊！"
+description = "「Hugo FixIt 」创建人、喜欢造东西、写东西，分享一些前端开发中的所见、所闻、所思。"
 # site keywords
 keywords = ["李瑞豪", "李瑞豪的博客", "菠菜眾長", "博採眾長", "Lruihao", "Cell", "Hugo Blog"]
 # site default theme ("light", "dark", "auto")
@@ -235,6 +235,13 @@ disableThemeInject = false
   QQGroup = ""
   CSDN = ""
   # custom social links like the following
+  [social.weixin]
+    id = "qr-wx-mp_s.webp"
+    weight = 20
+    Template = "https://lruihao.cn/images/%v"
+    Title = "加我微信：关注公众号回复“Cell”"
+    [social.weixin.icon]
+      Class = "fa-brands fa-weixin fa-fw"
   [social.FixIt]
     id = "fixit"
     weight = 900

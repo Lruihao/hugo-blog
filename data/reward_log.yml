@@ -1,6 +1,6 @@
 # The sponsor log data format is as follows
 
-# message: "感謝大家的支持 🙏"
+message: "感谢大家的支持 🙏"
 currency: CNY
 symbol: ¥
 logs:

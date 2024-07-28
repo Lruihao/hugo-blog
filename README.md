@@ -4,7 +4,9 @@
 [![Hugo build and deploy](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Lruihao/hugo-blog/actions/workflows/deploy.yml)
 [![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/m/Lruihao/hugo-blog/main?style=flat)](https://github.com/Lruihao/hugo-blog/commits/main)
 
-> 站名“菠菜眾長”，取“兼收並蓄，博採眾長”之意。[建站](https://lruihao.cn/posts/hello-world/) 的初衷不是为了炫耀所知，而是记录无知。
+> 站名“菠菜眾長”，取“兼收並蓄，博採眾長”之意。
+
+博客基于 [Hugo](https://github.com/gohugoio/hugo) 和 [FixIt](https://github.com/Lruihao/FixIt) 搭建，建站的初衷不是为了炫耀所知，而是记录无知。
 
 博客内容主要以 Web 前端开发方向为主，分享一些有趣程序、技巧、开发教程、心情和学习记录等。
 
@@ -17,8 +19,6 @@
 - [合集](https://lruihao.cn/collections/)
 - [标签](https://lruihao.cn/tags/)
 
-还有一些临时捕获或蓄谋已久的 [想法 💡](https://github.com/users/Lruihao/projects/1)。
-
 ## Distributable
 
 - [github-pages](https://github.com/Lruihao/lruihao.github.io)
@@ -26,8 +26,8 @@
 
 ## Subscribe
 
-- [RSS](http://lruihao.cn/index.xml)
 - [GitHub](https://github.com/Lruihao/hugo-blog "Watch on GitHub")
+- [RSS](http://lruihao.cn/index.xml)
 - [云 + 社区](https://cloud.tencent.com/developer/column/94521)
 
 ## [Roadmap](https://github.com/users/Lruihao/projects/1)
@@ -135,11 +135,6 @@ Press Ctrl+C to stop
 ```
 
 </details>
-
-## Powered
-
-- [Hugo](https://github.com/gohugoio/hugo)
-- [FixIt](https://github.com/Lruihao/FixIt)
 
 ## License
 

@@ -29,3 +29,5 @@ expirationReminder:
 直到 21 年下半年，升級 Windows 11, 系統出了 BUG, 整理磁盤不小心把代碼刪掉了，就乾脆換成 hugo 了。
 
 ![現在並沒有刀槍入庫，馬放南山，衹是在奔赴另一片山海](images/lunyu.jpg '逝者如斯乎，不舍昼夜')
+
+{{< music url="https://cdn-1256932288.cos.ap-chengdu.myqcloud.com/files/nanjing.mp3" name="李志" artist="你离开了南京，从此没人和我说话" cover="https://p2.music.126.net/UuSe-Vc6rS7JtRJSQgDU2g==/2323268069553116.jpg?param=300x300" fixed=true >}}
