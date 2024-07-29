@@ -11,7 +11,10 @@
       "id": "collections",
       "options": [
         "AWS",
-        "拖拽式仪表盘系列"
+        "拖拽式仪表盘系列",
+        "project",
+        "CSS 奇技淫巧",
+        "Modern CSS"
       ]
     }
   ],
