@@ -19,11 +19,6 @@
 - [合集](https://lruihao.cn/collections/)
 - [标签](https://lruihao.cn/tags/)
 
-## Distributable
-
-- [github-pages](https://github.com/Lruihao/lruihao.github.io)
-- [Vercel](https://blog-lruihao.vercel.app/)
-
 ## Subscribe
 
 - [GitHub](https://github.com/Lruihao/hugo-blog "Watch on GitHub")
@@ -33,6 +28,8 @@
 ## [Roadmap](https://github.com/users/Lruihao/projects/1)
 
 ## Project setup
+
+本博客已部署到 [Vercel](https://blog-lruihao.vercel.app/) 和 [GitHub Pages](https://github.com/Lruihao/lruihao.github.io)，工作流如下图所示：
 
 ![blog-flow](/assets/images/blog-flow.png)
 
