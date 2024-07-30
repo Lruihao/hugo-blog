@@ -16,6 +16,4 @@ menu:
       icon: fa-solid fa-laptop-code
 ---
 
-![cover](/images/projects-cover.webp)
-
-{{< busuanzi_embed >}}
+![cover](/images/projects-cover.webp) {{< busuanzi_embed >}}
