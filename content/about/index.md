@@ -61,3 +61,5 @@ const site = new Blog('菠菜眾長', 'Lruihao', 'https://lruihao.cn');
 {{< reward-log animation=true >}}
 
 <!-- markdownlint-disable-file -->
+
+{{< busuanzi_embed >}}

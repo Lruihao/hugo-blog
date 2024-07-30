@@ -17,3 +17,5 @@ menu:
 ---
 
 ![cover](/images/projects-cover.webp)
+
+{{< busuanzi_embed >}}

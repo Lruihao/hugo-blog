@@ -27,3 +27,4 @@ library:
 ---
 
 {{< reward wechatpay="/images/wechatpay.jpg" alipay="/images/alipay.jpg" comment="给博主买杯卡布奇诺～" >}}
+{{< busuanzi_embed >}}
