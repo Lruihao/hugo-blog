@@ -3,11 +3,11 @@
 # See: https://fixit.lruihao.cn/theme-documentation-basics/#site-configuration
 # -------------------------------------------------------------------------------------
 
-# FixIt NEW | 0.1.1 which hash function used for SRI, when empty, no SRI is used
+# which hash function used for SRI, when empty, no SRI is used
 # ("sha256", "sha384", "sha512", "md5")
 # fingerprint = "sha256"
 
-# FixIt CHANGED | 0.2.14 Comment config
+# Comment config
 [page.comment]
   enable = true
   [page.comment.valine]
