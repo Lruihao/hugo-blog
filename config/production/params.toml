@@ -45,7 +45,7 @@
     term = ""
     reactionsEnabled = "1"
     emitMetadata = "0"
-    inputPosition = "bottom" # ["top", "bottom"]
+    inputPosition = "top" # ["top", "bottom"]
     lightTheme = "light"
     darkTheme = "dark_dimmed"
     lazyLoad = true
