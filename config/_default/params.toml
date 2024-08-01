@@ -6,9 +6,9 @@
 # FixIt theme version
 version = "0.3.X"
 # site description
-description = "「Hugo FixIt 」创建人、喜欢造东西、写东西，分享一些前端开发中的所见、所闻、所思。"
+description = "Hugo FixIt 作者，喜欢瞎折腾、造轮子、写东西，分享一些前端开发中的所见、所闻、所思。"
 # site keywords
-keywords = ["李瑞豪", "李瑞豪的博客", "菠菜眾長", "博採眾長", "Lruihao", "Cell", "Hugo Blog"]
+keywords = ["李瑞豪", "李瑞豪的博客", "菠菜眾長", "博採眾長", "Lruihao", "Cell", "Hugo FixIt"]
 # site default theme ("light", "dark", "auto")
 defaultTheme = "auto"
 # date format
