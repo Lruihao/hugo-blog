@@ -101,3 +101,8 @@ logs:
     money: 20
     origin: wechatpay
     remark: "歪瑞古德"
+  - date: 2024-08-03 19:25:50
+    sponsor: SuLis
+    money: 10
+    origin: wechatpay
+    remark: "感谢作者对 FixIt 的付出！"
