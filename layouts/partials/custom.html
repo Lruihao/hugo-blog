@@ -5,10 +5,7 @@
 {{- end -}}
 
 {{- define "custom-profile" -}}
-  {{- dict "Src" "https://ghchart.rshah.org/Lruihao" "Class" "profile-ghchart" "Alt" "Lruihao's GitHub chart" "Title" "Lruihao's GitHub chart" "Width" "633" "Height" "104" | partial "plugin/image.html" -}}
-  {{- $template := resources.Get "images/drop.template.svg" -}}
-  {{- $resource := ($template | resources.ExecuteAsTemplate "images/drop.svg" (dict "isDark" false) | minify).RelPermalink -}}
-  {{- $resourceDark := ($template | resources.ExecuteAsTemplate "images/drop-dark.svg" (dict "isDark" true) | minify).RelPermalink -}}
+  {{- partial "custom/profile.html" . -}}
 {{- end -}}
 
 {{- define "custom-aside" -}}
@@ -18,8 +15,10 @@
 {{- end -}}
 
 {{- define "custom-widgets" -}}
+  {{- partial "custom/wechat-box.html" . -}}
 {{- end -}}
 
 {{- define "custom-assets" -}}
+  {{- partial "custom/use-assets.html" . -}}
   {{- partial "inject/shortcode-caniuse.html" . -}}
 {{- end -}}

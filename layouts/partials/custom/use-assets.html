@@ -1,0 +1,4 @@
+{{- /* drop.template.svg */ -}}
+{{- $template := resources.Get "images/drop.template.svg" -}}
+{{- $resource := ($template | resources.ExecuteAsTemplate "images/drop.svg" (dict "isDark" false) | minify).RelPermalink -}}
+{{- $resourceDark := ($template | resources.ExecuteAsTemplate "images/drop-dark.svg" (dict "isDark" true) | minify).RelPermalink -}}
