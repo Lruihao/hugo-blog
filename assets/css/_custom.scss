@@ -164,6 +164,12 @@ $blog-bg-color: #fafaf8 !default;
   }
 }
 
+.aside-custom {
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
 // Custom font
 @font-face {
   font-family: MMT_H;

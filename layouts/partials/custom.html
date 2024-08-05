@@ -9,6 +9,7 @@
 {{- end -}}
 
 {{- define "custom-aside" -}}
+  {{- partial "custom/aside.html" . -}}
 {{- end -}}
 
 {{- define "custom-footer" -}}
@@ -21,4 +22,11 @@
 {{- define "custom-assets" -}}
   {{- partial "custom/use-assets.html" . -}}
   {{- partial "inject/shortcode-caniuse.html" . -}}
+{{- end -}}
+
+{{- define "custom-post__footer:before" -}}
+{{- end -}}
+
+{{- define "custom-post__footer:after" -}}
+  {{- partial "custom/post-footer-after.html" . -}}
 {{- end -}}
