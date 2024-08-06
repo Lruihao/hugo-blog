@@ -17,7 +17,7 @@
     "build": "hugo --gc --minify --logLevel info",
     "fix:md": "autocorrect content --fix && markdownlint-cli2 \"content/**/*.md\" --fix",
     "lint:md": "autocorrect content --lint && markdownlint-cli2 \"content/**/*.md\"",
-    "prepare": "husky install",
+    "prepare": "husky",
     "qcloudcdn": "node .scripts/qcloudcdn.js $SECRET_ID $SECRET_KEY",
     "server": "hugo server -D --disableFastRender --navigateToChanged --bind 0.0.0.0",
     "server:production": "npm run server -- --environment production",
@@ -31,8 +31,8 @@
   "devDependencies": {
     "autocorrect-node": "^2.8.4",
     "cross-env": "^7.0.3",
-    "husky": "^8.0.3",
-    "lint-staged": "^14.0.1",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.8",
     "markdownlint-cli2": "^0.10.0",
     "markdownlint-rule-search-replace": "^1.2.0"
   },

@@ -27,7 +27,7 @@ categories:
 配置 `.huskyrc` 文件，内容如下：
 
 ```bash {title="~/.huskyrc"}
-echo "export PATH=\"$(dirname $(which node)):\$PATH\"" > ~/.huskyrc
+export PATH=\"$(dirname $(which node)):\$PATH\"
 ```
 
 如果你使用了 `zsh` 和 `nvm`, 建议在 `$ZSH_CUSTOM` 目录下添加一个自定义 zsh 脚本。
@@ -64,7 +64,8 @@ load-nvmrc() {
 
   # fix husky hook
   # ref: https://github.com/typicode/husky/issues/390#issuecomment-762213421
-  echo "export PATH=\"$(dirname $(which node)):\$PATH\"" > ~/.huskyrc
+  # for husky 8 ~/.huskyrc, for husky 9 ~/.config/husky/init.sh
+  echo "export PATH=\"$(dirname $(which node)):\$PATH\"" > ~/.config/husky/init.sh
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
@@ -72,6 +73,8 @@ load-nvmrc
 # https://github.com/nvm-sh/nvm#use-a-mirror-of-node-binaries
 export NVM_NODEJS_ORG_MIRROR=https://mirrors.ustc.edu.cn/node/
 ```
+
+> 如果你使用的是 husky 9 之后的版本，需要将 `~/.huskyrc` 替换为 `~/.config/husky/init.sh`。
 
 ## 参考
 
