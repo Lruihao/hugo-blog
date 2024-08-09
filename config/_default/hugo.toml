@@ -26,5 +26,6 @@ ignoreLogs = [
   "error-get-remote-image",
   "error-get-remote-json",
   "error-remote-getjson",
-  "error-missing-instagram-accesstoken"
+  "error-missing-instagram-accesstoken",
+  "warning-dev-version"
 ]
