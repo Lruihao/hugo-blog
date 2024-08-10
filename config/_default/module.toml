@@ -8,6 +8,8 @@
 [[imports]]
   path = "github.com/hugo-fixit/component-projects"
 [[imports]]
+  path = "github.com/hugo-fixit/cmpt-mdevtools"
+[[imports]]
   path = "github.com/hugo-fixit/shortcode-caniuse"
 [[imports]]
   path = "github.com/hugo-fixit/shortcode-docs-bookmark"

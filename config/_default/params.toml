@@ -573,6 +573,12 @@ disableThemeInject = false
   # "corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]
   theme = "minimal"
 
+# Mobile Devtools confi
+[mDevtools]
+  enable = false
+  # "eruda", "vConsole" supported
+  type = "eruda"
+
 # FixIt 0.2.15 | NEW Developer options
 [dev]
   enable = false
@@ -580,8 +586,3 @@ disableThemeInject = false
   c4u = false
   # Please do not expose to public!
   githubToken = ""
-  # Mobile Devtools confi
-  [dev.mDevtools]
-    enable = false
-    # "vConsole", "eruda" supported
-    type = "vConsole"
