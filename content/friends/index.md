@@ -20,9 +20,6 @@ keywords:
 
 公示一個月後刪除，如更換域名請及時聯繫！
 
-- `liyangzone.com`: 無妨訪問。
-- `ayou10031.com`: 無妨訪問。
-
 ## 基本資訊
 
 - **網絡 ID**：Lruihao

@@ -19,8 +19,6 @@ images = ["/images/apple-devices-preview.webp"]
 enablePWA = true
 # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
 externalIcon = true
-# FixIt 0.3.0 | NEW whether to reverse the order of the navigation menu
-navigationReverse = true
 # FixIt 0.3.0 | NEW whether to add site title to the title of every page
 # remember to set up your site title in `hugo.toml` (e.g. title = "title")
 withSiteTitle = true
@@ -120,6 +118,13 @@ disableThemeInject = false
   enable = true
   sticky = true
   showHome = false
+
+# FixIt 0.3.10 | NEW Post navigation config
+[navigation]
+  # whether to show the post navigation in section pages scope
+  inSection = false
+  # whether to reverse the next/previous post navigation order
+  reverse = false
 
 # Footer config
 [footer]
