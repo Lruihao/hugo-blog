@@ -25,6 +25,7 @@ newContentEditor = "code"
 ignoreLogs = [
   "error-get-remote-image",
   "error-get-remote-json",
+  "error-get-gh-repo",
   "error-remote-getjson",
   "error-missing-instagram-accesstoken",
   "warning-dev-version"
