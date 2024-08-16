@@ -11,6 +11,9 @@ library:
     valineHacker: /js/valine-hacker.js
 ---
 
+{{< busuanzi_embed false >}}
+{.text-secondary style="text-align: right; font-size: 80%;margin-top: -0.5rem;"}
+
 {{< admonition tip "Welcome" >}}
 {{< typeit >}}
 互联网的广大朋友们，欢迎光临我的小博客！欢迎留言！
@@ -26,5 +29,5 @@ library:
 
 ---
 
-{{< reward wechatpay="/images/wechatpay.jpg" alipay="/images/alipay.jpg" comment="给博主买杯卡布奇诺～" >}}
+{{< reward wechatpay="/images/wechatpay.jpg" alipay="/images/alipay.jpg" comment="给博主买杯卡布奇诺～" mode="fixed" >}}
 {{< busuanzi_embed >}}

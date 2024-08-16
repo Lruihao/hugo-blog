@@ -81,11 +81,6 @@ events:
 
 已授权平台：[云 + 社区](https://cloud.tencent.com/developer/column/94521)
 
-## Sponsor
-
-{{< reward wechatpay="/images/wechatpay.jpg" alipay="/images/alipay.jpg" mode="fixed" >}}
-{{< reward-log animation=true height="435px" >}}
+{{< busuanzi_embed >}}
 
 <!-- markdownlint-disable-file -->
-
-{{< busuanzi_embed >}}

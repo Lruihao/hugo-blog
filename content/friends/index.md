@@ -1,35 +1,33 @@
 ---
-title: 友情鏈接
+title: 友情链接
 date: 2021-09-19T12:33:48+08:00
 layout: friends
-description: Lruihao's friends
+description: 「菠菜眾長」的友情链接
 keywords:
   - 'Hugo FixIt'
   - 'friends template'
+  - 友情链接
 ---
 
-<!--
-> 暫時不接受友鏈！
-> Warn: 超過兩年為更新或長期挂掉的站點將被取消！
--->
+{{< busuanzi_embed false "本页共 " >}}
+{.text-center}
 
-<!-- markdownlint-disable-next-line no-bare-urls -->
-{{< link href="https://lruihao.cn/friends/opml.xml" content=":(far fa-star fa-fw): Subscribe ours" download="opml.xml" card=true >}}
+## 基本信息
 
-## 失效鏈接
-
-公示一個月後刪除，如更換域名請及時聯繫！
-
-## 基本資訊
-
-- **網絡 ID**：Lruihao
-- **頭像**：https://lruihao.cn/images/avatar.jpg
+- **网络 ID**：Lruihao
+- **头像**：https://lruihao.cn/images/avatar.jpg
 - **URL**：https://lruihao.cn
-- **描述**：菠菜眾長 - 「不怕萬人阻擋，只怕自己投降」
+- **描述**：菠菜眾長 - 「不怕萬人阻擋，只怕自己投降」（或者你对我的看法😉）
 
-## 友情提醒
+## 友链要求
 
-評論留言必要內容如下：
+> 友情提醒：那些不尊重他人劳动成果，转载不加出处的，或恶意行为的网站，还请你不要来进行交换了。
+
+1. 原创博客文章至少 10 篇以上，内容健康，无违法违规内容。
+2. 网站创建时间至少 3 个月以上，且长期保持更新。（频率至少一年 1 篇）
+3. 目前仅限个人非商业博客/网站。（商务合作邮件联系）
+
+满足上诉基本要求，互换友链请按以下格式在评论区留言：
 
 ````markdown
 ```yaml
@@ -40,12 +38,8 @@ keywords:
 ```
 ````
 
-{{< admonition info "Notice" true >}}
+## 失效链接
 
-1. 互換友鏈請按以上格式在評論留言。（僅限個人非商業部落格/網站）
-2. :(fa-solid fa-exclamation-triangle): 網站失效、停止維護、內容不當都可能被取消連結！
-3. 那些不尊重他人勞動成果，轉載不加出處的，或惡意行為的網站，還請你不要來進行交換了。
+公示一个月后删除，如更换域名请及时联系！
 
-{{< /admonition >}}
-
-{{< busuanzi_embed >}}
+<!-- markdownlint-disable-next-line no-bare-urls -->

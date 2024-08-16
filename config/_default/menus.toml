@@ -1,18 +1,19 @@
 # -------------------------------------------------------------------------------------
 # Menu Configuration
-# See: https://fixit.lruihao.cn/theme-documentation-basics/#menu-advanced-configuration
+# See: https://fixit.lruihao.cn/documentation/basics/#menu-configuration
 # -------------------------------------------------------------------------------------
 
 [[main]]
   identifier = "archives"
   pre = ""
   post = ""
-  name = "归档"
+  name = "文章"
   url = "/archives/"
   title = ""
   weight = 1
   [main.params]
-    icon = "fa-solid fa-archive"
+    # icon = "fa-solid fa-archive"
+    icon = "fa-solid fa-feather"
 [[main]]
   identifier = "categories"
   parent = "archives"
@@ -47,6 +48,18 @@
   [main.params]
     icon = "fa-solid fa-tags"
 [[main]]
+  identifier = "fixit"
+  parent = "archives"
+  pre = ""
+  post = '<i class="fa-solid fa-external-link-alt fa-fw fa-xs text-secondary"></i>'
+  name = "FixIt"
+  url = "https://fixit.lruihao.cn/"
+  title = "FixIt 官网"
+  weight = 4
+  [main.params]
+    icon = "fa-brands fa-readme"
+    divided = true
+[[main]]
   identifier = "friends"
   pre = ""
   post = ""
@@ -55,7 +68,17 @@
   title = "友情链接"
   weight = 4
   [main.params]
-    icon = "fa-solid fa-users-viewfinder"
+    icon = "fa-solid fa-users"
+[[main]]
+  identifier = "reward"
+  pre = ""
+  post = ""
+  name = "赞赏"
+  url = "/reward/"
+  title = ""
+  weight = 6
+  [main.params]
+    icon = "fa-solid fa-hand-holding-dollar"
 [[main]]
   identifier = "guestbook"
   pre = ""
@@ -63,9 +86,20 @@
   name = "留言"
   url = "/guestbook/"
   title = ""
-  weight = 6
+  weight = 7
   [main.params]
-    icon = "fa-solid fa-comments"
+    icon = "fa-solid fa-comment-dots"
+[[main]]
+  identifier = "rss"
+  pre = ""
+  post = ""
+  name = "RSS"
+  url = "/index.xml"
+  title = "通过 RSS 订阅"
+  weight = 8
+  [main.params]
+    icon = "fa-solid fa-rss"
+    type = "desktop"
 [[main]]
   identifier = "about"
   pre = ""
@@ -73,17 +107,18 @@
   name = "关于"
   url = "/about/"
   title = ""
-  weight = 7
+  weight = 100
   [main.params]
-    icon = "fa-solid fa-signature"
+    icon = "fa-solid fa-quote-left"
 [[main]]
   identifier = "github"
-  pre = "<i class='fa-brands fa-github fa-fw' aria-hidden='true'></i>"
+  pre = ""
   post = ""
-  name = ""
-  url = "https://github.com/Lruihao/hugo-blog"
-  title = "GitHub"
+  name = "关注 Follow"
+  url = "https://github.com/Lruihao/"
+  title = ""
   weight = ""
   [main.params]
     class = "text-center"
+    icon = "fa-brands fa-github fa-lg"
     type = "mobile"

@@ -1,7 +1,8 @@
 {{- $hidden := .Get 0 | default true -}}
+{{- $prefix := .Get 1 | default "" -}}
 {{- $visitorIcon := dict "Class" "fa-regular fa-eye fa-fw me-1" | partial "plugin/icon.html" -}}
 {{- if site.Params.busuanzi.enable | and site.Params.busuanzi.pageViews | and hugo.IsProduction -}}
   <span id="busuanzi_container_page_pv" class="busuanzi_visitors{{ with $hidden }} d-none{{ end }}">
-    {{- $visitorIcon }}<span id="busuanzi_value_page_pv">-</span>&nbsp;{{ T "single.views" -}}
+    {{- $visitorIcon }}{{ $prefix }}<span id="busuanzi_value_page_pv">-</span>&nbsp;{{ T "single.views" -}}
   </span>
 {{- end -}}

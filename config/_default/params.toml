@@ -247,13 +247,13 @@ disableThemeInject = false
     Title = "加我微信：关注公众号回复“Cell”"
     [social.weixin.icon]
       Class = "fa-brands fa-weixin fa-fw"
-  [social.FixIt]
-    id = "fixit"
-    weight = 900
-    Template = "https://%v.lruihao.cn/"
-    Title = "Hugo FixIt"
-    [social.FixIt.icon]
-      Src = "images/fixit.svg"
+  # [social.FixIt]
+  #   id = "fixit"
+  #   weight = 900
+  #   Template = "https://%v.lruihao.cn/"
+  #   Title = "Hugo FixIt"
+  #   [social.FixIt.icon]
+  #     Src = "images/fixit.svg"
 
 # Page config
 [page]
@@ -538,7 +538,7 @@ disableThemeInject = false
 [githubCorner]
   enable = true
   permalink = "https://github.com/Lruihao/hugo-blog"
-  title = "在 GitHub 上查看程式碼，訂閱請點 Watch"
+  title = "在 GitHub 上查看源码，订阅请点 Watch~"
   position = "right" # ["left", "right"]
 
 # FixIt 0.2.14 | NEW Gravatar config

@@ -13,7 +13,8 @@ menu:
     parent: about
     weight: 8
     params:
-      icon: fa-solid fa-laptop-code
+      # icon: fa-solid fa-laptop-code
+      icon: fa-solid fa-lightbulb fa-shake
 ---
 
 ![cover](/images/projects-cover.webp)
