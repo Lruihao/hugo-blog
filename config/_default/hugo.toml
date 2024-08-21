@@ -14,7 +14,6 @@ hasCJKLanguage = true
 enableRobotsTXT = true
 enableEmoji = true
 enableGitInfo = true
-relativeURLs = false
 buildDrafts = false
 summaryLength = 150
 titleCaseStyle = "ap"

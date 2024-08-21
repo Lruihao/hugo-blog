@@ -5,7 +5,6 @@
     - hugo-fixit/FixIt
     - Lruihao/hugo-blog
     - hugo-fixit/docs
-    - Lruihao/lruihao.github.io
     - Lruihao/el-table-sticky
     - Lruihao/vue-el-demo
     - Lruihao/CoverView
@@ -22,13 +21,19 @@
     - hugo-fixit/shortcode-mmt-netease
     - hugo-fixit/shortcode-rewards
     - hugo-fixit/hugo-shell
-    - Lruihao/bill-note
-    - Lruihao/cell-blog
-- title: 归档项目
+- title: 私有项目
   repos:
+    - Lruihao/blog-private
+- title: 归档项目
+  description: 下面这些开源仓库已停止更新或者用于自动化部署。
+  totalStars: true
+  repos:
+    - Lruihao/lruihao.github.io
     - Lruihao/MMT
     - Lruihao/cos-album
     - Lruihao/hexo-theme-next
+    - Lruihao/cell-blog
+    - Lruihao/bill-note
 - title: 我贡献的
   description: 下面这些是我贡献过的一些开源作品。
   repos:
