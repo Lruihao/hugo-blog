@@ -168,8 +168,12 @@ disableThemeInject = false
   paginate = 20
   # date format (month and day)
   dateFormat = "01-02"
-  # amount of RSS pages
-  rss = 20
+  # FixIt 0.3.10 | NEW Section feed config for RSS, Atom and JSON feed.
+  [section.feed]
+    # The number of posts to include in the feed. Default is -1, which means all posts.
+    limit = -1
+    # whether to show the full text content in feed.
+    fullText = false
   # FixIt 0.2.13 | NEW recently updated posts settings
   [section.recentlyUpdated]
     enable = true
@@ -183,8 +187,12 @@ disableThemeInject = false
   paginate = 20
   # date format (month and day)
   dateFormat = "01-02"
-  # amount of RSS pages
-  rss = 20
+  # FixIt 0.3.10 | NEW Term list feed config for RSS, Atom and JSON feed.
+  [list.feed]
+    # The number of posts to include in the feed. Default is -1, which means all posts.
+    limit = -1
+    # whether to show the full text content in feed.
+    fullText = false
 
 # FixIt 0.2.17 | NEW TagCloud config for tags page
 [tagcloud]
@@ -264,7 +272,7 @@ disableThemeInject = false
   # whether to hide a page from search results
   hiddenFromSearch = false
   # FixIt 0.3.0 | NEW whether to hide a page from RSS feed
-  hiddenFromRss = false
+  hiddenFromFeed = false
   # FixIt 0.3.0 | NEW whether to hide a page from related posts
   hiddenFromRelated = false
   # whether to enable twemoji
@@ -287,8 +295,6 @@ disableThemeInject = false
   linkToEdit = true
   # FixIt 0.3.0 | NEW whether to show link to report issue for the post
   linkToReport = true
-  # whether to show the full text content in RSS
-  rssFullText = true
   # FixIt 0.2.13 | NEW Page style ("narrow", "normal", "wide", ...)
   pageStyle = "normal"
   # FixIt 0.2.17 | CHANGED Auto Bookmark Support
@@ -577,6 +583,13 @@ disableThemeInject = false
   # ["barber-shop", "big-counter", "bounce", "center-atom", "center-circle", "center-radar", "center-simple",
   # "corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]
   theme = "minimal"
+
+# FixIt 0.3.10 | NEW Global Feed config for RSS, Atom and JSON feed.
+[feed]
+  # The number of posts to include in the feed. Default is -1, which means all posts.
+  limit = 10
+  # whether to show the full text content in feed.
+  fullText = true
 
 # Mobile Devtools confi
 [mDevtools]

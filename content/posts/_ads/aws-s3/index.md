@@ -14,7 +14,7 @@ related:
 reward: false
 hiddenFromHomePage: false
 hiddenFromSearch: true
-hiddenFromRss: true
+hiddenFromFeed: true
 hiddenFromRelated: true
 linkToSource: false
 linkToEdit: false

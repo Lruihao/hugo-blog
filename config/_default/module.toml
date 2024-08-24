@@ -10,6 +10,8 @@
 [[imports]]
   path = "github.com/hugo-fixit/cmpt-mdevtools"
 [[imports]]
+  path = "github.com/hugo-fixit/hugo-json-feed"
+[[imports]]
   path = "github.com/hugo-fixit/shortcode-caniuse"
 [[imports]]
   path = "github.com/hugo-fixit/shortcode-docs-bookmark"

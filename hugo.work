@@ -4,6 +4,7 @@ use .
 use ../hugo-fixit/FixIt
 use ../hugo-fixit/component-projects
 use ../hugo-fixit/cmpt-mdevtools
+use ../hugo-fixit/hugo-json-feed
 use ../hugo-fixit/shortcode-caniuse
 use ../hugo-fixit/shortcode-mmt-netease
 use ../hugo-fixit/shortcode-docs-bookmark

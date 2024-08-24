@@ -19,7 +19,7 @@ tags:
   - draft
 hiddenFromHomePage: false
 hiddenFromSearch: false
-hiddenFromRss: false
+hiddenFromFeed: false
 hiddenFromRelated: false
 summary:
 resources:
