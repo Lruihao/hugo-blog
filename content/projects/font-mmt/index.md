@@ -11,8 +11,11 @@ library:
   css:
     mmtCSS: mmt.css
   js:
-    vueJS: https://cdn.jsdelivr.net/npm/vue@2
+    vueJS: https://npm.elemecdn.com/vue@2.6.14/dist/vue.min.js
 pageStyle: wide
+heading:
+  number:
+    enable: false
 ---
 
 <!-- markdownlint-disable MD033 -->
@@ -74,6 +77,6 @@ pageStyle: wide
 
 {{< script >}}
 document.addEventListener('DOMContentLoaded', () => {
-new Vue({ el: '#app-mmt', data: { message: '' }});
+  new Vue({ el: '#app-mmt', data: { message: '' }});
 });
 {{< /script >}}

@@ -7,10 +7,12 @@ categories:
   - thoughts
 tags:
   - 随想
-summary:
 resources:
   - name: featured-image
     src: featured-image.webp
+password: 20240830
+endFlag: ""
+reward: false
 ---
 
 坐高铁去柳州吃螺狮粉，是一种怎样的体验呢？
@@ -23,3 +25,12 @@ resources:
 <!--more-->
 
 {{< douyin 7370344193077644584 >}}
+
+---
+
+> 2024.08.30
+>
+> 还是分手了，还是会一蹶不振，又要享受孤独了。\
+> 异地确实让彼此都会很委屈很累，分开是避免不了的未来。
+>
+> 祝你早日康复，好好生活！
