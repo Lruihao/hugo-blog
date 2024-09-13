@@ -8,6 +8,7 @@
     - Lruihao/el-table-sticky
     - Lruihao/vue-el-demo
     - Lruihao/CoverView
+    - Lruihao/html-demo
     - Lruihao/watermark
     - Lruihao/vue-minder-editor-extended
     - Lruihao/kityminder-core
@@ -16,10 +17,15 @@
     - hugo-fixit/hugo-fixit-starter
     - hugo-fixit/hugo-fixit-starter1
     - hugo-fixit/fixit-cli
+    - hugo-fixit/fixit-releaser
     - hugo-fixit/component-projects
     - hugo-fixit/shortcode-caniuse
     - hugo-fixit/shortcode-mmt-netease
     - hugo-fixit/shortcode-rewards
+    - hugo-fixit/hugo-json-feed
+    - hugo-fixit/hugo-atom-feed
+    - hugo-fixit/shortcode-docs-bookmark
+    - hugo-fixit/cmpt-mdevtools
     - hugo-fixit/hugo-shell
 - title: 私有项目
   repos:
