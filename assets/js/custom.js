@@ -87,7 +87,7 @@ class Blog {
       return (
         (eventYear === '*' || parseInt(eventYear) === today.year) &&
         (eventMonth === '*' || parseInt(eventMonth) === today.month) &&
-        (eventDate === '*' || parseInt(eventDate) === today.date || eventEndDate <= now)
+        (eventDate === '*' || parseInt(eventDate) === today.date || (today.date >= parseInt(eventDate) && now <= eventEndDate))
       )
     });
 
