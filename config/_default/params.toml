@@ -597,7 +597,8 @@ disableThemeInject = false
   # "eruda", "vConsole" supported
   type = "eruda"
 
-# Define custom partials to be included in the /layouts/partials/ directory
+# FixIt 0.3.12 | NEW Custom partials config
+# Custom partials must be stored in the /layouts/partials/ directory.
 # Depends on open custom blocks https://fixit.lruihao.cn/references/blocks/
 [customPartials]
   head = [
