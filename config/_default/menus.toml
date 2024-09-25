@@ -60,13 +60,24 @@
     icon = "fa-brands fa-readme"
     divided = true
 [[main]]
+  identifier = "projects"
+  pre = ""
+  post = ""
+  name = "开源"
+  url = "/projects/"
+  title = "开源项目"
+  weight = 4
+  [main.params]
+    # icon = "fa-solid fa-code-branch"
+    icon = "fa-solid fa-lightbulb fa-shake"
+[[main]]
   identifier = "friends"
   pre = ""
   post = ""
   name = "友链"
   url = "/friends/"
   title = "友情链接"
-  weight = 4
+  weight = 5
   [main.params]
     icon = "fa-solid fa-users"
 [[main]]
