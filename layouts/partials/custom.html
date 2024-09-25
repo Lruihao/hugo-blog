@@ -1,33 +1,62 @@
 {{- define "custom-head" -}}
-  {{- partial "inject/component-projects.html" . -}}
-  {{- partial "inject/fixit-docs-bookmark.html" . -}}
-  {{- partial "inject/shortcode-rewards.html" . -}}
+  {{- $ctx := . -}}
+  {{- range .Site.Params.customPartials.head -}}
+    {{- partial . $ctx -}}
+  {{- end -}}
 {{- end -}}
 
 {{- define "custom-profile" -}}
-  {{- partial "custom/profile.html" . -}}
+  {{- $ctx := . -}}
+  {{- range .Site.Params.customPartials.profile -}}
+    {{- partial . $ctx -}}
+  {{- end -}}
 {{- end -}}
 
 {{- define "custom-aside" -}}
-  {{- partial "custom/aside.html" . -}}
+  {{- $ctx := . -}}
+  {{- range .Site.Params.customPartials.aside -}}
+    {{- partial . $ctx -}}
+  {{- end -}}
+{{- end -}}
+
+{{- define "custom-comment" -}}
+  {{- $ctx := . -}}
+  {{- range .Site.Params.customPartials.comment -}}
+    {{- partial . $ctx -}}
+  {{- end -}}
 {{- end -}}
 
 {{- define "custom-footer" -}}
+  {{- $ctx := . -}}
+  {{- range .Site.Params.customPartials.footer -}}
+    {{- partial . $ctx -}}
+  {{- end -}}
 {{- end -}}
 
 {{- define "custom-widgets" -}}
-  {{- partial "custom/wechat-box.html" . -}}
+  {{- $ctx := . -}}
+  {{- range .Site.Params.customPartials.widgets -}}
+    {{- partial . $ctx -}}
+  {{- end -}}
 {{- end -}}
 
 {{- define "custom-assets" -}}
-  {{- partial "custom/use-assets.html" . -}}
-  {{- partial "inject/shortcode-caniuse.html" . -}}
-  {{- partial "inject/cmpt-mdevtools.html" . -}}
+  {{- $ctx := . -}}
+  {{- range .Site.Params.customPartials.assets -}}
+    {{- partial . $ctx -}}
+  {{- end -}}
 {{- end -}}
 
 {{- define "custom-post__footer:before" -}}
+  {{- $ctx := . -}}
+  {{- range .Site.Params.customPartials.postFooterBefore -}}
+    {{- partial . $ctx -}}
+  {{- end -}}
 {{- end -}}
 
 {{- define "custom-post__footer:after" -}}
-  {{- partial "custom/post-footer-after.html" . -}}
+  {{- $ctx := . -}}
+  {{- range .Site.Params.customPartials.postFooterAfter -}}
+    {{- partial . $ctx -}}
+  {{- end -}}
 {{- end -}}

@@ -3,7 +3,7 @@
 # See: https://gohugo.io/hugo-modules/configuration/#module-config-imports
 # -------------------------------------------------------------------------------------
 
-[[imports]]
+[[imports]] # must be the first one
   path = "github.com/hugo-fixit/FixIt"
 [[imports]]
   path = "github.com/hugo-fixit/component-projects"
