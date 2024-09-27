@@ -36,9 +36,3 @@
     hardWraps = false
     # whether to use HTML tags directly in the document
     unsafe = true
-
-# Table Of Contents settings
-[tableOfContents]
-  ordered = true
-  startLevel = 2
-  endLevel = 6

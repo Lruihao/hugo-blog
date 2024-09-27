@@ -13,9 +13,8 @@ library:
   js:
     vueJS: https://npm.elemecdn.com/vue@2.6.14/dist/vue.min.js
 pageStyle: wide
-heading:
-  number:
-    enable: false
+toc:
+  ordered: false
 ---
 
 <!-- markdownlint-disable MD033 -->

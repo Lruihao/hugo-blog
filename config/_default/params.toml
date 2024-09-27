@@ -324,6 +324,10 @@ disableThemeInject = false
     auto = true
     # FixIt 0.2.13 | NEW position of TOC ("left", "right")
     position = "right"
+    # FixIt 0.3.12 | NEW supersede `markup.tableOfContents` settings
+    ordered = true
+    startLevel = 2
+    endLevel = 6
   # FixIt 0.2.13 | NEW Display a message at the beginning of an article to warn the reader that its content might be expired
   [page.expirationReminder]
     enable = true
@@ -335,7 +339,7 @@ disableThemeInject = false
     closeComment = true
   # FixIt 0.3.0 | NEW page heading config
   [page.heading]
-    # used with `markup.tableOfContents.ordered` parameter
+    # FixIt 0.3.12 | CHANGED must set `params.page.toc.ordered` to true
     [page.heading.number]
       # whether to enable auto heading numbering
       enable = true
