@@ -11,7 +11,7 @@ $blog-bg-color: #fafaf8 !default;
   @include transition(filter 0.3s ease);
   @include box-shadow(none !important);
 
-  body:not([data-theme='dark']) & {
+  :root:not([data-theme='dark']) & {
     background-image: linear-gradient(180deg, lighten($blog-base-color, 5%), $blog-base-color);
   }
 
@@ -45,7 +45,7 @@ $blog-bg-color: #fafaf8 !default;
 }
 
 .github-corner svg {
-  body:not([data-theme='dark']) & {
+  :root:not([data-theme='dark']) & {
     fill: darken($blog-base-color, 25%);
   }
 }
@@ -179,12 +179,12 @@ $blog-bg-color: #fafaf8 !default;
 // ==============================
 @media only screen and (min-width: 681px) {
   body {
-    &:not([data-theme='dark']) {
+    :not([data-theme='dark']) & {
       background-color: $blog-bg-color;
     }
   }
   .breadcrumb-container {
-    body:not([data-theme='dark']) & {
+    :root:not([data-theme='dark']) & {
       background-color: $blog-bg-color;
   
       .breadcrumb {
