@@ -32,7 +32,7 @@
 
     {{- /* Get the default README if the multi-language README is not available */ -}}
     {{- if not $readme -}}
-      {{- $readmeAPI = printf "https://api.github.com/repos/%v/contents/README.md" $repo -}}
+      {{- $readmeAPI = printf "https://api.github.com/repos/%v/readme" $repo -}}
       {{- $readme = partial "function/get-remote-json" (dict "URL" $readmeAPI "OPTIONS" $headers ) -}}
     {{- end -}}
 
