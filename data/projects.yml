@@ -42,11 +42,13 @@
     - Lruihao/bill-note
 - title: 我贡献的
   description: 下面这些是我贡献过的一些开源作品。
+  contentAdapters: false
   repos:
     - gohugoio/hugo
     - mdn/translated-content
     - SchemaStore/schemastore
     - Shimada666/v-code-diff
+    - star-history/star-history
     - theme-next/hexo-theme-next
     - walinejs/waline
     - twikoojs/twikoo

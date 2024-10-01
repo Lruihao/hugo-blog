@@ -1,0 +1,93 @@
+{{- /*
+  * This template is used to create a post for each repo in the data file.
+  * You must copy it to your project to make it work.
+  * https://github.com/hugo-fixit/component-projects
+  * @author Lruihao (https://lruihao.cn)
+*/ -}}
+
+{{- $auth := dict "Authorization" "" -}}
+{{- with (getenv "HUGO_PARAMS_GHTOKEN") -}}
+  {{- $auth = dict "Authorization" (printf "token %v" .)  -}}
+{{- end -}}
+{{- $headers := dict "headers" $auth -}}
+{{- $projectsAdapters := .Site.Params.projectsAdapters -}}
+{{- $data := index .Site.Data (printf "projects.%v" .Site.Language.Lang) | default .Site.Data.projects -}}
+
+{{- /* Loop through the data and create a post for each repo */ -}}
+{{- range $group := $data -}}
+  {{- $allowed := $projectsAdapters.enable | and (ne $group.contentAdapters false) -}}
+  {{- if not $allowed -}}
+    {{- break -}}
+  {{- end -}}
+  {{- range $repo := $group.repos -}}
+    {{- /* Ignore repos in the ignore list */ -}}
+    {{- if in $projectsAdapters.ignoreList $repo -}}
+      {{- continue -}}
+    {{- end -}}
+    {{- $projectsAdapters.ignoreList  -}}
+    {{- $repoAPI := printf "https://api.github.com/repos/%v" $repo -}}
+    {{- $repoInfo := partial "function/get-remote-json" (dict "URL" $repoAPI "OPTIONS" $headers ) -}}
+    {{- $readmeAPI := printf "https://api.github.com/repos/%v/contents/README.%v.md" $repo $.Site.Language.Lang -}}
+    {{- $readme := partial "function/get-remote-json" (dict "URL" $readmeAPI "OPTIONS" $headers ) -}}
+
+    {{- /* Get the default README if the multi-language README is not available */ -}}
+    {{- if not $readme -}}
+      {{- $readmeAPI = printf "https://api.github.com/repos/%v/contents/README.md" $repo -}}
+      {{- $readme = partial "function/get-remote-json" (dict "URL" $readmeAPI "OPTIONS" $headers ) -}}
+    {{- end -}}
+
+    {{- /* Skip if the repo info or README is not available */ -}}
+    {{- if
+      (not $repoInfo) | or
+      (not $readme) | or
+      (and $projectsAdapters.onlyPublic (eq $repoInfo.visibility "private"))
+    -}}
+      {{- warnidf "warning-projects-adapter" "Repo %v is not available or is private." $repo -}}
+      {{- continue -}}
+    {{- end -}}
+
+    {{- /* Post dates from repo info */ -}}
+    {{- $dates := dict
+      "date" (time.AsTime $repoInfo.created_at)
+      "lastmod" (time.AsTime $repoInfo.updated_at)
+    -}}
+    {{- /* Post params from repo info (equivalent to the front matter of posts) */ -}}
+    {{- $params := dict
+      "fromAdapters" "projects"
+      "categories" $projectsAdapters.categories
+      "collections" $projectsAdapters.collections
+      "tags" $repoInfo.topics
+      "lightgallery" true
+      "breadcrumb" (dict "capitalize" false)
+      "toc" (dict "ordered" false)
+      "subtitle" ($repoInfo.homepage | default $repoInfo.html_url)
+      "sourceURL" (add $readme.html_url "?plain=1")
+      "editURL" (replace $readme.html_url "/blob/" "/edit/" )
+      "LinkToReport" false
+    -}}
+    {{- /* Post content from repo README */ -}}
+    {{- $markdown := $readme.content | base64Decode -}}
+    {{- /* Convert Hugo shortcodes to markdown plain text */ -}}
+    {{- $markdown = replace $markdown "{{<" "{{?{}<" -}}
+    {{- /* Convert relative links to absolute links in the README content */ -}}
+    {{- $replacement := printf "$1[$2](%v$4)" (printf "https://raw.githubusercontent.com/%v/refs/heads/%v/$3" $repoInfo.full_name $repoInfo.default_branch) -}}
+    {{- /* Oops! Lookahead regular lookup is not supported in Golang, e.g `(?!http)` */ -}}
+    {{- $markdown = replaceRE `([!]?)\[(.*?)\]\((/.*).*?(\s+".*?")?\)` $replacement $markdown -}}
+    {{- $content := dict
+      "mediaType" "text/markdown"
+      "value" $markdown
+    -}}
+    {{- /* Create a post page */ -}}
+    {{- $page := dict
+      "title" $repoInfo.description
+      "linkTitle" $repoInfo.full_name
+      "path" $repoInfo.full_name
+      "dates" $dates
+      "description" (printf "%s: %s" (replace $repoInfo.full_name "-" " ") $repoInfo.description)
+      "content" $content
+      "params" $params
+      "type" "posts"
+    -}}
+    {{- $.AddPage $page -}}
+  {{- end -}}
+{{- end -}}

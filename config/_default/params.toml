@@ -118,6 +118,8 @@ disableThemeInject = false
   enable = true
   sticky = true
   showHome = false
+  separator = "/"
+  capitalize = true
 
 # FixIt 0.3.10 | NEW Post navigation config
 [navigation]
@@ -595,12 +597,6 @@ disableThemeInject = false
   # whether to show the full text content in feed.
   fullText = true
 
-# Mobile Devtools confi
-[mDevtools]
-  enable = false
-  # "eruda", "vConsole" supported
-  type = "eruda"
-
 # FixIt 0.3.12 | NEW Custom partials config
 # Custom partials must be stored in the /layouts/partials/ directory.
 # Depends on open custom blocks https://fixit.lruihao.cn/references/blocks/
@@ -638,3 +634,28 @@ disableThemeInject = false
   enable = false
   # Check for updates
   c4u = false
+
+# -------------------------------------------------------------------------------------
+# Theme Components Configuration | 主题组件配置
+# -------------------------------------------------------------------------------------
+
+# Mobile Devtools config
+[mDevtools]
+  enable = false
+  # "eruda", "vConsole" supported
+  type = "eruda"
+
+# Content adapters config for component projects
+# https://github.com/hugo-fixit/component-projects
+[projectsAdapters]
+  enable = true
+  # Whether to show only public repos
+  onlyPublic = true
+  # Default categories and collections
+  categories = ["GitHub"]
+  collections = ["project"]
+  # Ignore repos in the ignore list
+  ignoreList = [
+    "Lruihao/MMT",
+    "Lruihao/bill-note",
+  ]
