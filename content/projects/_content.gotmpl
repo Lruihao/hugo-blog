@@ -26,14 +26,14 @@
     {{- end -}}
     {{- $projectsAdapters.ignoreList  -}}
     {{- $repoAPI := printf "https://api.github.com/repos/%v" $repo -}}
-    {{- $repoInfo := partial "function/get-remote-json" (dict "URL" $repoAPI "OPTIONS" $headers ) -}}
+    {{- $repoInfo := partial "function/get-remote-json" (dict "URL" $repoAPI "OPTIONS" $headers) -}}
     {{- $readmeAPI := printf "https://api.github.com/repos/%v/contents/README.%v.md" $repo $.Site.Language.Lang -}}
-    {{- $readme := partial "function/get-remote-json" (dict "URL" $readmeAPI "OPTIONS" $headers ) -}}
+    {{- $readme := partial "function/get-remote-json" (dict "URL" $readmeAPI "OPTIONS" $headers) -}}
 
     {{- /* Get the default README if the multi-language README is not available */ -}}
     {{- if not $readme -}}
       {{- $readmeAPI = printf "https://api.github.com/repos/%v/readme" $repo -}}
-      {{- $readme = partial "function/get-remote-json" (dict "URL" $readmeAPI "OPTIONS" $headers ) -}}
+      {{- $readme = partial "function/get-remote-json" (dict "URL" $readmeAPI "OPTIONS" $headers) -}}
     {{- end -}}
 
     {{- /* Skip if the repo info or README is not available */ -}}
@@ -52,13 +52,19 @@
       "lastmod" (time.AsTime $repoInfo.updated_at)
     -}}
     {{- /* Post params from repo info (equivalent to the front matter of posts) */ -}}
+    {{- $author := dict
+      "name" $repoInfo.owner.login
+      "link" $repoInfo.owner.html_url
+      "avatar" $repoInfo.owner.avatar_url
+    -}}
     {{- $params := dict
       "fromAdapters" "projects"
+      "author" $author
       "categories" $projectsAdapters.categories
       "collections" $projectsAdapters.collections
       "tags" $repoInfo.topics
       "lightgallery" true
-      "breadcrumb" (dict "capitalize" false)
+      "capitalizeTitles" false
       "toc" (dict "ordered" false)
       "subtitle" ($repoInfo.homepage | default $repoInfo.html_url)
       "sourceURL" (add $readme.html_url "?plain=1")

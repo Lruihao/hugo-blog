@@ -19,6 +19,8 @@ images = ["/images/apple-devices-preview.webp"]
 enablePWA = true
 # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
 externalIcon = true
+# FixIt 0.3.13 | NEW whether to capitalize titles
+capitalizeTitles = true
 # FixIt 0.3.0 | NEW whether to add site title to the title of every page
 # remember to set up your site title in `hugo.toml` (e.g. title = "title")
 withSiteTitle = true
@@ -557,7 +559,7 @@ disableThemeInject = false
 [gravatar]
   enable = true
   # Gravatar host, default: "www.gravatar.com"
-  host = "gravatar.lruihao.cn" # "cravatar.cn", "gravatar.loli.net"
+  host = "gravatar.loli.net" # "cravatar.cn", "gravatar.loli.net"
   style = "mp" # "", mp, identicon, monsterid, wavatar, retro, blank, robohash
 
 # FixIt 0.2.16 | NEW Back to top
