@@ -658,4 +658,5 @@ disableThemeInject = false
   ignoreList = [
     "Lruihao/MMT",
     "Lruihao/bill-note",
+    "hugo-fixit/hugo-atom-feed",
   ]
