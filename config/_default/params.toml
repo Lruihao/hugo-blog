@@ -598,8 +598,8 @@ disableThemeInject = false
   fullText = true
   # Site Challenge for Follow: https://follow.is/
   [feed.follow]
-    feedId = "z"
-    userId = "z"
+    feedId = ""
+    userId = ""
 
 # FixIt 0.3.12 | NEW Custom partials config
 # Custom partials must be stored in the /layouts/partials/ directory.
