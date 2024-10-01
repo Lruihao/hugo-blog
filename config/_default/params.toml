@@ -596,6 +596,10 @@ disableThemeInject = false
   limit = 10
   # whether to show the full text content in feed.
   fullText = true
+  # Site Challenge for Follow: https://follow.is/
+  [feed.follow]
+    feedId = "z"
+    userId = "z"
 
 # FixIt 0.3.12 | NEW Custom partials config
 # Custom partials must be stored in the /layouts/partials/ directory.
@@ -636,7 +640,7 @@ disableThemeInject = false
   c4u = false
 
 # -------------------------------------------------------------------------------------
-# Theme Components Configuration | 主题组件配置
+# Theme Components Configuration
 # -------------------------------------------------------------------------------------
 
 # Mobile Devtools config

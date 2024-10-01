@@ -3,12 +3,6 @@
 # See: https://fixit.lruihao.cn/theme-documentation-basics/#site-configuration
 # -------------------------------------------------------------------------------------
 
-# Mobile Devtools confi
-[mDevtools]
-  enable = true
-  # "eruda", "vConsole" supported
-  type = "eruda"
-
 # FixIt 0.2.15 | NEW Developer options
 # Select the scope named `public_repo` to generate personal access token,
 # Configure with environment variable `HUGO_PARAMS_GHTOKEN=xxx`, see https://gohugo.io/functions/os/getenv/#examples
@@ -17,3 +11,17 @@
   # Check for updates
   c4u = false
 
+# -------------------------------------------------------------------------------------
+# Theme Components Configuration
+# -------------------------------------------------------------------------------------
+
+# Mobile Devtools confi
+[mDevtools]
+  enable = true
+  # "eruda", "vConsole" supported
+  type = "eruda"
+
+# Content adapters config for component projects
+# https://github.com/hugo-fixit/component-projects
+[projectsAdapters]
+  enable = false
