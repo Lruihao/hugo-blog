@@ -1,7 +1,7 @@
 github.com/Lruihao/hugo-shortcode-mmt-netease v1.0.7 h1:G0A3HBcU7zu/FZPEVlzexO4GBNs1CAUVNwoRkekUbdU=
 github.com/Lruihao/hugo-shortcode-mmt-netease v1.0.7/go.mod h1:6vXHaAZv1p9meW2mZ5KmlWlu5W9YiIpUTkHGWwkp3Pk=
-github.com/hugo-fixit/FixIt v0.3.13-0.20241001115042-e9edbba217d9 h1:0TXHvCynxnJRIaAnJ5oIcj0AHxKLQ3+WlSjNSsJkejc=
-github.com/hugo-fixit/FixIt v0.3.13-0.20241001115042-e9edbba217d9/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
+github.com/hugo-fixit/FixIt v0.3.13-0.20241001131907-53f221b77a06 h1:ZvCxVEBrz1gVmPYUFDM/iYT9gekwnNv42Nb+SdVAnNE=
+github.com/hugo-fixit/FixIt v0.3.13-0.20241001131907-53f221b77a06/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
 github.com/hugo-fixit/cmpt-mdevtools v1.0.1 h1:IdUhqO1ktKsJF5D0ReU37PU2CQCpgjY4EFFQ0S69sKQ=
 github.com/hugo-fixit/cmpt-mdevtools v1.0.1/go.mod h1:+1tfeT4ugFNa1kx/3yQF0NUup2Fejiq7EwvrpcY2xWw=
 github.com/hugo-fixit/component-projects v1.2.0 h1:CxAjX/tUsgbn9NivUnDqE4ocbawKGh8Bmb4PnTHMEjw=

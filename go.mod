@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/Lruihao/hugo-shortcode-mmt-netease v1.0.7 // indirect
-	github.com/hugo-fixit/FixIt v0.3.13-0.20241001115042-e9edbba217d9 // indirect
+	github.com/hugo-fixit/FixIt v0.3.13-0.20241001131907-53f221b77a06 // indirect
 	github.com/hugo-fixit/cmpt-mdevtools v1.0.1 // indirect
 	github.com/hugo-fixit/component-projects v1.2.0 // indirect
 	github.com/hugo-fixit/hugo-json-feed v1.0.2 // indirect
