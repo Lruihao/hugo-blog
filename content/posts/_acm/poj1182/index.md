@@ -9,7 +9,6 @@ tags:
   - C
 categories:
   - ACM
-toc: false
 ---
 
 [题目链接](http://poj.org/problem?id=1182)  

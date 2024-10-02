@@ -57,11 +57,13 @@
       "link" $repoInfo.owner.html_url
       "avatar" $repoInfo.owner.avatar_url
     -}}
+    {{- $categories := $group.categories | default $projectsAdapters.categories -}}
+    {{- $collections := $group.collections | default $projectsAdapters.collections -}}
     {{- $params := dict
       "fromAdapters" "projects"
       "author" $author
-      "categories" $projectsAdapters.categories
-      "collections" $projectsAdapters.collections
+      "categories" $categories
+      "collections" $collections
       "tags" $repoInfo.topics
       "lightgallery" true
       "capitalizeTitles" false
@@ -78,7 +80,7 @@
     {{- /* Convert relative links to absolute links in the README content */ -}}
     {{- $replacement := printf "$1[$2](%v$4)" (printf "https://raw.githubusercontent.com/%v/refs/heads/%v/$3" $repoInfo.full_name $repoInfo.default_branch) -}}
     {{- /* Oops! Lookahead regular lookup is not supported in Golang, e.g `(?!http)` */ -}}
-    {{- $markdown = replaceRE `([!]?)\[(.*?)\]\((/.*).*?(\s+".*?")?\)` $replacement $markdown -}}
+    {{- $markdown = replaceRE `([!]?)\[(.*?)\]\(([/|\./].*).*?(\s+".*?")?\)` $replacement $markdown -}}
     {{- $content := dict
       "mediaType" "text/markdown"
       "value" $markdown

@@ -7,7 +7,6 @@ tags:
   - 杨辉三角
 categories:
   - ACM
-toc: false
 ---
 
 [百度知道](https://zhidao.baidu.com/question/367384574464313844.html)
