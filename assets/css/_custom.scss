@@ -111,6 +111,13 @@ $blog-bg-color: #fafaf8 !default;
       background-image: linear-gradient(90deg, rgba(195, 245, 215, .04) 3%, transparent 0), linear-gradient(1turn, rgba(195, 245, 215, .04) 3%, transparent 0);
     }
   }
+
+  // Content adapter generated posts style
+  &[data-adapters='projects'] {
+    .single-subtitle {
+      font-size: 1rem;
+    }
+  }
 }
 
 .home {

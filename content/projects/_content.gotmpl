@@ -59,6 +59,11 @@
     -}}
     {{- $categories := $group.categories | default $projectsAdapters.categories -}}
     {{- $collections := $group.collections | default $projectsAdapters.collections -}}
+    {{- $subtitle := T "projects.source" (dict
+      "Name" $repoInfo.full_name
+      "Link" $repoInfo.html_url
+      "Website" $repoInfo.homepage
+    ) -}}
     {{- $params := dict
       "fromAdapters" "projects"
       "author" $author
@@ -68,7 +73,7 @@
       "lightgallery" true
       "capitalizeTitles" false
       "toc" (dict "ordered" false)
-      "subtitle" ($repoInfo.homepage | default $repoInfo.html_url)
+      "subtitle" $subtitle
       "sourceURL" (add $readme.html_url "?plain=1")
       "editURL" (replace $readme.html_url "/blob/" "/edit/" )
       "LinkToReport" false

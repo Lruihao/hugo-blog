@@ -24,4 +24,4 @@
 # Content adapters config for component projects
 # https://github.com/hugo-fixit/component-projects
 [projectsAdapters]
-  enable = false
+  # enable = false
