@@ -5,6 +5,7 @@
   * @author Lruihao (https://lruihao.cn)
 */ -}}
 
+{{- warnf "component-projects\n%v" (T "projects.warningAdapter") -}}
 {{- $auth := dict "Authorization" "" -}}
 {{- with (getenv "HUGO_PARAMS_GHTOKEN") -}}
   {{- $auth = dict "Authorization" (printf "token %v" .)  -}}
@@ -12,6 +13,7 @@
 {{- $headers := dict "headers" $auth -}}
 {{- $projectsAdapters := .Site.Params.projectsAdapters -}}
 {{- $data := index .Site.Data (printf "projects.%v" .Site.Language.Lang) | default .Site.Data.projects -}}
+{{- $renderedRepos := slice -}}
 
 {{- /* Loop through the data and create a post for each repo */ -}}
 {{- range $group := $data -}}
@@ -20,8 +22,8 @@
     {{- break -}}
   {{- end -}}
   {{- range $repo := $group.repos -}}
-    {{- /* Ignore repos in the ignore list */ -}}
-    {{- if in $projectsAdapters.ignoreList $repo -}}
+    {{- /* Skip if the repo is in the ignore list or has been rendered */ -}}
+    {{- if (in $projectsAdapters.ignoreList $repo) | or (in $renderedRepos $repo) -}}
       {{- continue -}}
     {{- end -}}
     {{- $projectsAdapters.ignoreList  -}}
@@ -42,9 +44,11 @@
       (not $readme) | or
       (and $projectsAdapters.onlyPublic (eq $repoInfo.visibility "private"))
     -}}
-      {{- warnidf "warning-projects-adapter" "Repo %v is not available or is private." $repo -}}
       {{- continue -}}
     {{- end -}}
+
+    {{- /* Add the repo to the rendered list */ -}}
+    {{- $renderedRepos = $renderedRepos | append $repo -}}
 
     {{- /* Post dates from repo info */ -}}
     {{- $dates := dict

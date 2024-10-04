@@ -4,8 +4,8 @@ github.com/hugo-fixit/FixIt v0.3.13-0.20241003174054-95436c11ac09 h1:0IUNqDwVI8T
 github.com/hugo-fixit/FixIt v0.3.13-0.20241003174054-95436c11ac09/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
 github.com/hugo-fixit/cmpt-mdevtools v1.0.1 h1:IdUhqO1ktKsJF5D0ReU37PU2CQCpgjY4EFFQ0S69sKQ=
 github.com/hugo-fixit/cmpt-mdevtools v1.0.1/go.mod h1:+1tfeT4ugFNa1kx/3yQF0NUup2Fejiq7EwvrpcY2xWw=
-github.com/hugo-fixit/component-projects v1.2.4 h1:3LLTOYGHqhgAosPwbnNZbePFW/YCbXhMS4QN/F8ukXs=
-github.com/hugo-fixit/component-projects v1.2.4/go.mod h1:nXW0R37REwpfwUD1I4RtB5QW71vw66nRyB9uEpYxr+c=
+github.com/hugo-fixit/component-projects v1.2.5 h1:L1kCUtPcXg3ucLPqGrBTRJLIkCiiq7vWNUeMt0MPtb8=
+github.com/hugo-fixit/component-projects v1.2.5/go.mod h1:nXW0R37REwpfwUD1I4RtB5QW71vw66nRyB9uEpYxr+c=
 github.com/hugo-fixit/hugo-json-feed v1.0.2 h1:xZABGHuoX/u0hnoF5AoP7ane7l9T7UNmlOAiFdWvBvA=
 github.com/hugo-fixit/hugo-json-feed v1.0.2/go.mod h1:ystvqmSnWdkU0aBybKKNztj8P1ViY6AhMaK/bsBL9uw=
 github.com/hugo-fixit/shortcode-caniuse v1.1.3 h1:U1YBJz5SI/d1BBQhHcD0eVgJdCcpzK2usSizPiu+a4w=
