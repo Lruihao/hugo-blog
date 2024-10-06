@@ -4,7 +4,7 @@ date: 2021-10-03T15:27:58+08:00
 tags:
   - FixIt
   - Hexo
-  - Hugo
+  - hugo
 categories:
   - Memo
 ---

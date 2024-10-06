@@ -3,7 +3,7 @@ title: Hugo 本地管理 Shell 腳本
 date: 2021-10-04T23:49:00+08:00
 description: 使用 Shell 腳本管理 Hugo 本地博客
 tags:
-  - Hugo
+  - hugo
   - shell
 categories:
   - Memo

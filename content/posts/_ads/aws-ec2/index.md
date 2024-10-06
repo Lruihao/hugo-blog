@@ -8,7 +8,7 @@ collections:
   - AWS
 tags:
   - AWS
-  - Hugo
+  - hugo
   - linux
   - nginx
 resources:

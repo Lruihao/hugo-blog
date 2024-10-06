@@ -4,7 +4,7 @@ date: 2021-10-05T19:14:45+08:00
 lastmod: 2021-12-19T20:01:45+08:00
 tags:
   - FixIt
-  - Hugo
+  - hugo
   - I18n
 categories:
   - Memo
