@@ -2,6 +2,7 @@
 title: '{{ now.Year }} 年度总结'
 subtitle:
 date: {{ .Date }}
+lastmod: {{ .Date }}
 draft: true
 comment: false
 tags:
