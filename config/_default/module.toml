@@ -3,23 +3,9 @@
 # See: https://gohugo.io/hugo-modules/configuration/#module-config-imports
 # -------------------------------------------------------------------------------------
 
-[[imports]] # must be the first one
-  path = "github.com/hugo-fixit/FixIt"
 [[imports]]
-  path = "github.com/hugo-fixit/component-projects"
-[[imports]]
-  path = "github.com/hugo-fixit/cmpt-mdevtools"
-[[imports]]
-  path = "github.com/hugo-fixit/hugo-json-feed"
-[[imports]]
-  path = "github.com/hugo-fixit/shortcode-caniuse"
-[[imports]]
-  path = "github.com/hugo-fixit/shortcode-docs-bookmark"
-[[imports]]
-  path = "github.com/hugo-fixit/shortcode-rewards"
-[[imports]]
-  path = "github.com/Lruihao/hugo-shortcode-mmt-netease"
+  path = "github.com/hugo-fixit/fixit-bundle"
 
 [hugoVersion]
   extended = true
-  min = "0.132.0"
+  min = "0.134.1"
