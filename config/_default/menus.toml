@@ -50,14 +50,13 @@
 [[main]]
   identifier = "fixit"
   parent = "archives"
-  pre = ""
+  pre = '<img class="fixit-icon" src="https://fixit.lruihao.cn/images/hugo-fixit.webp" alt="FixIt logo">'
   post = '<i class="fa-solid fa-external-link-alt fa-fw fa-xs text-secondary"></i>'
   name = "FixIt"
   url = "https://fixit.lruihao.cn/"
   title = "FixIt 官网"
   weight = 4
   [main.params]
-    icon = "fa-brands fa-readme"
     divided = true
 [[main]]
   identifier = "projects"
