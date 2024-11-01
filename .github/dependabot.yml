@@ -5,6 +5,15 @@
 
 version: 2
 updates:
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 1000
+    assignees:
+      - "Lruihao"
+    labels:
+      - "dependencies"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
@@ -14,8 +23,8 @@ updates:
       - "Lruihao"
     labels:
       - "dependencies"
-  - package-ecosystem: "gitsubmodule" # See documentation for possible values
-    directory: "/content" # Location of package manifests
+  - package-ecosystem: "gitsubmodule"
+    directory: "/content"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 1000
