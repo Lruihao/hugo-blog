@@ -1,5 +1,5 @@
-github.com/hugo-fixit/FixIt v0.3.14-0.20241024072739-c08671dedf3f h1:XjGltqull2yj87WbYMvvj+ntIx+OxYZWfF4BC3bvRhc=
-github.com/hugo-fixit/FixIt v0.3.14-0.20241024072739-c08671dedf3f/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
+github.com/hugo-fixit/FixIt v0.3.14 h1:xO6XVBIjYUB6q/Q5lXH2Dlmzpid80pmwzIICN5MIYUw=
+github.com/hugo-fixit/FixIt v0.3.14/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
 github.com/hugo-fixit/cmpt-mdevtools v1.0.1 h1:IdUhqO1ktKsJF5D0ReU37PU2CQCpgjY4EFFQ0S69sKQ=
 github.com/hugo-fixit/cmpt-mdevtools v1.0.1/go.mod h1:+1tfeT4ugFNa1kx/3yQF0NUup2Fejiq7EwvrpcY2xWw=
 github.com/hugo-fixit/component-projects v1.3.5 h1:/PuId1syU0zMe23wbp1///2W2J4REInSKk/AP+HsXuU=
