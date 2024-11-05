@@ -440,7 +440,6 @@ disableThemeInject = false
       # someJavascript = "some.js"
       # Or
       # someJavascript = "https://cdn.example.com/some.js"
-      flyfish = "/js/flyfish.js"
   # Page SEO config
   [page.seo]
     # image URL
@@ -632,6 +631,7 @@ disableThemeInject = false
     "custom/use-assets.html",
     "inject/shortcode-caniuse.html",
     "inject/cmpt-mdevtools.html",
+    "inject/cmpt-flyfish.html",
   ]
   postFooterBefore = []
   postFooterAfter = [
@@ -649,6 +649,12 @@ disableThemeInject = false
 # -------------------------------------------------------------------------------------
 # Theme Components Configuration
 # -------------------------------------------------------------------------------------
+
+[flyfish]
+  enable = true
+  # light = "rgb(0 119 190 / 10%)"
+  light = "#e6e5f8"
+  dark = "rgb(255 255 255 / 10%)"
 
 # Mobile Devtools config
 [mDevtools]
