@@ -26,6 +26,7 @@
     - hugo-fixit/hugo-atom-feed
     - hugo-fixit/shortcode-docs-bookmark
     - hugo-fixit/cmpt-mdevtools
+    - hugo-fixit/cmpt-flyfish
     - hugo-fixit/hugo-shell
 - title: 私有项目
   repos:
