@@ -111,26 +111,26 @@ hugo --minify
 
 - [x] 迁移 hexo 所有文章内容
 - <details>
-  <summary><i class="far fa-check-square fa-fw"></i>迁移 hexo 所有页面内容</summary>
+  <summary>迁移 hexo 所有页面内容</summary>
 
   - [x] 留言页面
   - [x] 网友打赏支持页面，整合到留言页面
   - [x] 重写关于页面，一切从简
   - [x] 友情链接页面
-  - [ ] ~~重写 404 页面~~
+  - [-] 重写 404 页面
   - [x] 站点时间和不蒜子计数改到 hello-world 页面
 
 </details>
 
-- [ ] ~~[cos-album](https://img.lruihao.cn) 和 [🍚 饭醉团伙 🍷](https://sz.journey.lruihao.cn) 整合到博客 cos-album/ [#7 (wontfix)](https://github.com/Lruihao/hugo-blog/issues/7)~~
-- [ ] ~~新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等~~ （保持原本博客的纯粹性）
+- [-] [cos-album](https://img.lruihao.cn) 和 [🍚 饭醉团伙 🍷](https://sz.journey.lruihao.cn) 整合到博客 cos-album/ [#7 (wontfix)](https://github.com/Lruihao/hugo-blog/issues/7)
+- [-] 新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等（保持原本博客的纯粹性）
 - [x] 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化（但似乎没必要）
 - [x] 博客 SEO 优化迁移 <sup>[baidu_urls.txt](#seo-ref)</sup><a id="seo"></a>
 - [x] `Github actions` 自动部署到 **Github pages** 和 **COS** 脚本编写
 - [x] hugo 本地管理 shell 脚本工具编写
 - [x] 知乎卡片式链接 改成 hugo shortcodes, 取名 `cardlink`
 - <details>
-  <summary><i class="far fa-check-square fa-fw"></i>zxm/沐目体 归档 :( <a href="https://github.com/Lruihao/hugo-blog/issues/6" target="_blank" rel="noopener noreferrer">#6</a></summary>
+  <summary>zxm/沐目体 归档 :( <a href="https://github.com/Lruihao/hugo-blog/issues/6" target="_blank" rel="noopener noreferrer">#6</a></summary>
 
   - [x] 安装 沐目体
   - [x] 压缩 沐目体 fontspider
@@ -142,8 +142,8 @@ hugo --minify
 
 </details>
 
-- [ ] hugo 内容加密研究 [#3](https://github.com/Lruihao/hugo-blog/issues/3)
-- [x] `Lruihao/hugo-blog/README.md` 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version
+- [x] hugo 内容加密研究 [#3](https://github.com/Lruihao/hugo-blog/issues/3)
+- [x] `Lruihao/hugo-blog` README 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version
 - [x] 更换 gravatar 头像 [#4](https://github.com/Lruihao/hugo-blog/issues/4)
 - [x] 博客在线编辑器研究 github1s 等 [#5](https://github.com/Lruihao/hugo-blog/issues/5)
 
