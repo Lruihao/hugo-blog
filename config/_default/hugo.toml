@@ -18,6 +18,7 @@ buildDrafts = false
 summaryLength = 150
 titleCaseStyle = "ap"
 capitalizeListTitles = false
+timeZone = "Asia/Shanghai"
 # the editor to use when creating new content
 newContentEditor = "code"
 # ignore some build errors
