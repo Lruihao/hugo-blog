@@ -10,7 +10,6 @@ categories:
 collections:
   - project
 featuredImage: https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png
-type: posts
 ---
 
 > 基于 Laravel7 开发，Markdown 语法的个人独立博客。[Cell Blog](https://github.com/Lruihao/cell-blog), 也是我的毕业设计作品，目前已開源。

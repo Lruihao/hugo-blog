@@ -17,7 +17,6 @@ expirationReminder:
   enable: true
   reminder: -1
   warning: -1
-type: posts
 ---
 
 <!-- markdownlint-disable MD033 -->

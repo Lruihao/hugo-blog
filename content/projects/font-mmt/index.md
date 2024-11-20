@@ -6,7 +6,6 @@ tags:
   - 沐目体
 collections:
   - project
-type: posts
 library:
   css:
     mmtCSS: mmt.css

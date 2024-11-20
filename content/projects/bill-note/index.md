@@ -10,7 +10,6 @@ categories:
   - 瞎折腾
 collections:
   - project
-type: posts
 ---
 
 ## 起因

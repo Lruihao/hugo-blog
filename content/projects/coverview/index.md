@@ -18,7 +18,6 @@ keywords:
 resources:
 - name: featured-image
   src: images/cover.webp
-type: posts
 ---
 
 {{< admonition success "Cool! " >}}

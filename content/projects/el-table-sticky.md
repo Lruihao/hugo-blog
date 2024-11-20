@@ -19,7 +19,6 @@ keywords:
   - v-sticky-footer
   - v-sticky-h-scroll
   - horizontal-scroll
-type: posts
 ---
 
 本文将介绍如何通过自定义指令的方式实现 Element UI 表格的表头吸顶、表尾吸底、滚动条吸底以及高度自适应功能。

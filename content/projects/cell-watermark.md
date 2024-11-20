@@ -10,7 +10,6 @@ categories:
   - JavaScript
 collections:
   - project
-type: posts
 aliases:
   - /posts/watermark-fixed/
 slug: cell-watermark

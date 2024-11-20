@@ -11,7 +11,6 @@ tags:
 resources:
   - name: featured-image
     src: images/featured-image.png
-type: posts
 ---
 
 本文将介绍如何用 Node.js 开发一个轻量脚手架，以 [fixit-cli](https://github.com/hugo-fixit/fixit-cli) 为例。

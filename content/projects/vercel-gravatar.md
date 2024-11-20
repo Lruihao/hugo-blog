@@ -8,7 +8,6 @@ collections:
 tags:
   - Vercel
   - Gravatar
-type: posts
 ---
 
 在开发和部署网站时，经常会遇到加载外部资源较慢的问题。其中之一就是加载 Gravatar 头像图片时可能会受到网络延迟的影响。为了解决这个问题，我们可以利用 Vercel 平台的反向代理功能来实现镜像加速。
