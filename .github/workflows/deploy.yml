@@ -74,8 +74,8 @@ jobs:
           external_repository: Lruihao/lruihao.github.io
           publish_branch: main
           publish_dir: ./public
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+          user_name: 'Cell[bot]'
+          user_email: 'lrhx@users.noreply.github.com'
           commit_message: ':rocket: ${{ github.event.head_commit.message }}'
           force_orphan: false  # once a year
 
