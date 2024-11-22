@@ -67,3 +67,13 @@
   # located in "themes/FixIt/assets/data/cdn/" directory
   # you can store your own data files in the same path under your project: "assets/data/cdn/"
   data = "unpkg.yml"
+
+# FixIt 0.2.10 | NEW Analytics config
+[analytics]
+  enable = true
+  # My share URL: https://cloud.umami.is/share/FSPwm1IsrQFY7ZvP/lruihao.cn
+  [analytics.umami]
+    data_website_id = "4049c0b0-87c9-4573-8ae5-d84449e40e05"
+    src = "https://cloud.umami.is/script.js"
+    data_host_url = ""
+    data_domains = ""

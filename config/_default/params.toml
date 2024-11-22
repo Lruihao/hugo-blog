@@ -535,6 +535,31 @@ disableThemeInject = false
     id = ""
     # server url for your tracker if you're self hosting
     server = ""
+  # FixIt 0.3.16 | NEW Baidu Analytics
+  [analytics.baidu]
+    id = ""
+  # FixIt 0.3.16 | NEW Umami Analytics
+  [analytics.umami]
+    data_website_id = ""
+    src = ""
+    data_host_url = ""
+    data_domains = ""
+  # FixIt 0.3.16 | NEW Plausible Analytics
+  [analytics.plausible]
+    data_domain = ""
+    src = ""
+  # FixIt 0.3.16 | NEW Cloudflare Analytics
+  [analytics.cloudflare]
+    token = ""
+  # FixIt 0.3.16 | NEW Splitbee Analytics
+  [analytics.splitbee]
+    enable = false
+    # no cookie mode
+    no_cookie = true
+    # respect the do not track setting of the browser
+    do_not_track = true
+    # token(optional), more info on https://splitbee.io/docs/embed-the-script
+    data_token = ""
 
 # Cookie consent config
 [cookieconsent]
