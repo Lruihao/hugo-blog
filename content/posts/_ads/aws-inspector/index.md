@@ -3,7 +3,6 @@ title: Amazon 如何让服务器享受着持续集群安全？
 linkTitle: Amazon Inspector
 subtitle:
 date: 2024-11-22T14:01:18+08:00
-draft: true
 collectionList: false
 collections:
   - AWS
@@ -50,16 +49,13 @@ Amazon Inspector 可以自动发现工作负载，例如 Amazon EC2 实例、容
 - 利用超过 50 个漏洞情报来源，自动发现漏洞、加快漏洞路由并缩短 MTTR。
 - 使用当前的常见漏洞和暴露（CVE）信息和网络可访问性来创建情境风险评分，以确定易受攻击资源的优先级并加以解决。
 
-    ![image-20241121192852886](images/image-20241121192852886.png)
+    ![image-20241121192852886](images/image-20241121192852886.webp)
 
 - 在开发人员工具中嵌入漏洞扫描，并导出合并 SBOM 以获取监测资源。
-- **AWS Lambda 代码扫描**：持续评测每个已部署的 Lambda 函数是否存在代码漏洞，例如你编写的应用程序代码中是否存在注入缺陷和嵌入密钥。
 - **AWS Lambda 标准扫描**：持续评测每个已部署的 Lambda 函数是否存在软件包漏洞。每月总成本基于每月扫描的 Lambda 函数的平均数量。价格根据一个月内 Lambda 函数的 Amazon Inspector 覆盖小时总数（从函数被 Amazon Inspector 发现到函数被删除或从扫描中排除的小时数）按比例分配。
 - 扫描后报告中有严重性评判标准（在你的 Amazon EC2 实例中存在已识别的新 CVE，该 CVE 只能远程使用。如果 Amazon Inspector 持续网络可达性扫描还发现无法通过网络访问该实例，Amazon Inspector 就会发现漏洞的利用性太低。因此，Amazon Inspector 将扫描结果与 CVE 相关联，以向下调整风险评分，更准确地反映 CVE 对该特定实例的影响。）：
 
-    ![image-20241120203747459](images/image-20241120203747459.png)
-
-    ![image-20241120204502920](images/image-20241120204502920.png)
+    ![image-20241120203747459](images/image-20241120203747459.webp)
 
 ## 开始使用 Amazon Inspector
 
@@ -93,35 +89,45 @@ Amazon Inspector 可以自动发现工作负载，例如 Amazon EC2 实例、容
 
 ### 激活 Amazon Inspector
 
-![image-20241121192006383](images/image-20241121192006383.png)
+我们注册之后，在激活页面对产品进行激活使用。
+
+![image-20241121192006383](images/image-20241121192006383.webp)
 
 ### 设定哪些 ESC 需要扫描
 
-![image-20241120204830625](images/image-20241120204830625.png)
+在 Scanning configuration 界面中，第一个选项为扫描类型（基础、增强）并且可以添加以标签为索引的服务器 ESC。
+
+![image-20241120204830625](images/image-20241120204830625.webp)
 
 ### 补丁筛选
 
-![image-20241120204935440](images/image-20241120204935440.png)
+在 Findings 界面中，我们可以看到 CVE 漏洞编号以及每个漏洞对应的时间和安全性质，在图中对活动状态进行筛选。
+
+![image-20241120204935440](images/image-20241120204935440.webp)
 
 ### 扫描结果分析统计
 
-![image-20241120205120012](images/image-20241120205120012.png)
+在结果页面中，可以按不同类型参数进行筛选，并且还可以额外添加筛选条件，点击实例即可查看该实例对漏洞信息。
+
+![image-20241120205120012](images/image-20241120205120012.webp)
 
 ### 定时使用 Lambda 函数生成安全报告
 
-![image-20241120205233244](images/image-20241120205233244.png)
+在 Lambda 界面中，可以添加新规则或修改现有规则，添加计划安全任务并生成报告。
 
-![image-20241120205304160](images/image-20241120205304160.png)
+![image-20241120205233244](images/image-20241120205233244.webp)
+
+![image-20241120205304160](images/image-20241120205304160.webp)
 
 ### 创建新的 CIS 扫描
 
-![image-20241121192650957](images/image-20241121192650957.png)
+![image-20241121192650957](images/image-20241121192650957.webp)
 
 ## 费用相关
 
 首先，它支持 15 天**免费**试用，你只需按实际使用量付费，没有最低费用，也没有预先承诺。
 
-![image-20241121192436605](images/image-20241121192436605.png)
+![image-20241121192436605](images/image-20241121192436605.webp)
 
 > **注意**：每个帐户可一次性免费使用 **25** 次映像评测。
 
