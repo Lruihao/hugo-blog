@@ -1,7 +1,7 @@
 ---
 title: Amazon 如何让服务器享受着持续集群安全？
 linkTitle: Amazon Inspector
-subtitle:
+slug: 91db0fa
 date: 2024-11-22T14:01:18+08:00
 collectionList: false
 collections:
