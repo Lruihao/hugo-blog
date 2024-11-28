@@ -1,24 +1,23 @@
-name: Update theme
+name: Update theme components
 
 # Controls when the workflow will run
 on:
   schedule:
-    # Update theme automatically everyday at 00:00 UTC
-    - cron: "0 0 * * *"
+    # Update theme automatically every month
+    - cron: '0 0 1 * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: read
+  id-token: write
+
 jobs:
-  Update-FixIt:
+  update-theme-components:
     runs-on: ubuntu-latest
-    permissions: write-all
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v4
-        with:
-          ssh-key: ${{ secrets.SYNC_CONTENT }}
-          submodules: true
-          fetch-depth: 0
+      - uses: actions/checkout@v4
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -26,21 +25,16 @@ jobs:
           hugo-version: latest
           extended: true
 
-      - name: Update theme
-        run: hugo mod get -u github.com/hugo-fixit/FixIt@latest
-
-      - name: Tidy go.mod, go.sum
-        run: hugo mod tidy
-      
-      - name: Change remote origin
+      - name: Update theme components
         run: |
-          git remote remove origin
-          git remote add origin https://github.com/Lruihao/hugo-blog.git
-
+          hugo mod get -u
+          hugo mod tidy
+  
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           branch: main
-          commit_message: ':arrow_up: Chore(theme): update FixIt version'
-          commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
-          push_options: '--set-upstream'
+          commit_user_name: Cell[bot]
+          commit_user_email: lrhx@users.noreply.github.com
+          commit_author: Cell[bot] <lrhx@users.noreply.github.com>
+          commit_message: ':arrow_up: Chore(theme): update components version'

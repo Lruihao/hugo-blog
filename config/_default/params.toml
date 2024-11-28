@@ -73,7 +73,7 @@ disableThemeInject = false
 # Search config
 [search]
   enable = true
-  # type of search engine ("lunr", "algolia")
+  # type of search engine ["algolia", "fuse", "cse"]
   type = "algolia"
   # max index length of the chunked content
   contentLength = 4000
@@ -91,6 +91,19 @@ disableThemeInject = false
     index = "index"
     appID = "MTJNHU0JVB"
     searchKey = "5486225134d99f43826da401ee9bad57"
+
+# FixIt 0.3.16 | NEW Custom Search Engine (CSE)
+[cse]
+  # Search Engine: ["google", "bing"]
+  engine = "google"
+  # Search results page URL (layout: search)
+  resultsPage = "/search/"
+  # Google: https://programmablesearchengine.google.com/
+  # Google Custom Search Engine Context
+  [cse.google]
+    cx = "2428986c19079433c"
+  # Bing (Unsupported): https://www.customsearch.ai/
+  [cse.bing]
 
 # Header config
 [header]
