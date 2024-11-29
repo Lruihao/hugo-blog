@@ -37,4 +37,4 @@ jobs:
           commit_user_name: Cell[bot]
           commit_user_email: lrhx@users.noreply.github.com
           commit_author: Cell[bot] <lrhx@users.noreply.github.com>
-          commit_message: ':arrow_up: Chore(theme): update components version'
+          commit_message: ':arrow_up: Chore(deps): update components version'
