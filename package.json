@@ -33,7 +33,7 @@
     "cross-env": "^7.0.3",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
-    "markdownlint-cli2": "^0.14.0",
+    "markdownlint-cli2": "^0.15.0",
     "markdownlint-rule-search-replace": "^1.2.0"
   },
   "engines": {
