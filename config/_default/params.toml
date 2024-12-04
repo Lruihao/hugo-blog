@@ -733,6 +733,7 @@ disableThemeInject = false
   # List of language ID to translate to, e.g. ["english", "chinese_simplified", "chinese_traditional", ...]
   # See the full language list: https://api.translate.zvo.cn/language.json
   languages = [
+    'chinese_simplified',
     'chinese_traditional',
   ]
   # Element IDs that needs to be ignored for translation
@@ -742,5 +743,4 @@ disableThemeInject = false
   # Tag names that need to be ignored for translation
   ignoreTag = ['title']
   # Whether to detect the local language
-  # If your site itself is multilingual in Hugo, it is not recommended to enable this feature!
   detectLocalLanguage = false
