@@ -13,6 +13,9 @@ collections:
 aliases:
   - /posts/watermark-fixed/
 slug: cell-watermark
+toc:
+  ordered: false
+local: english
 ---
 
 <!-- markdownlint-disable -->
