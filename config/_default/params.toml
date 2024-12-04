@@ -733,7 +733,6 @@ disableThemeInject = false
   # List of language ID to translate to, e.g. ["english", "chinese_simplified", "chinese_traditional", ...]
   # See the full language list: https://api.translate.zvo.cn/language.json
   languages = [
-    'chinese_simplified',
     'chinese_traditional',
   ]
   # Element IDs that needs to be ignored for translation
