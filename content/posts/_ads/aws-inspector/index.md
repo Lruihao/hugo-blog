@@ -3,24 +3,10 @@ title: Amazon 如何让服务器享受着持续集群安全？
 linkTitle: Amazon Inspector
 slug: 91db0fa
 date: 2024-11-22T14:01:18+08:00
-collectionList: false
 collections:
   - AWS
 tags:
   - AWS
-related: 
-  enable: false
-reward: false
-hiddenFromHomePage: false
-hiddenFromSearch: true
-hiddenFromFeed: true
-hiddenFromRelated: true
-linkToSource: false
-linkToEdit: false
-linkToReport: false
-math: false
-comment: false
-endFlag: "（本篇完）"
 ---
 
 > [!question]+ 在这个网络信息化时代，你真的注重安全性吗？

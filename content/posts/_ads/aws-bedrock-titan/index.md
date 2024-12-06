@@ -4,25 +4,11 @@ linkTitle: Amazon Titan 文本模型
 date: 2023-12-22T19:58:47+08:00
 lastmod: 2023-12-22T19:58:47+08:00
 slug: d8ae205
-collectionList: false
 collections:
   - AWS
 tags:
   - AWS
   - Python
-related:
-  enable: false
-reward: false
-hiddenFromHomePage: true
-hiddenFromSearch: true
-hiddenFromFeed: true
-hiddenFromRelated: true
-linkToSource: false
-linkToEdit: false
-linkToReport: false
-math: false
-comment: false
-endFlag: "（本篇完）"
 ---
 <!-- markdownlint-disable-file no-duplicate-heading-->
 

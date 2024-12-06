@@ -4,24 +4,10 @@ linkTitle: Amazon S3
 date: 2024-07-07T13:54:14+08:00
 lastmod: 2024-07-07T13:54:14+08:00
 slug: d1fc0c7
-collectionList: false
 collections:
   - AWS
 tags:
   - AWS
-related: 
-  enable: false
-reward: false
-hiddenFromHomePage: true
-hiddenFromSearch: true
-hiddenFromFeed: true
-hiddenFromRelated: true
-linkToSource: false
-linkToEdit: false
-linkToReport: false
-math: false
-comment: false
-endFlag: "（本篇完）"
 ---
 
 在数字化时代，数据是企业最宝贵的资产之一。如何安全、高效地存储和访问这些数据，成为了许多企业面临的挑战。亚马逊云服务作为全球领先的云服务提供商，提供了一系列的解决方案来满足不同客户的需求。今天，我们将重点介绍亚马逊云科技的 Amazon S3（Simple Storage Service），一种简单、可扩展且持久的对象存储服务。
