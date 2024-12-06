@@ -12,8 +12,8 @@ github.com/hugo-fixit/fixit-bundle v1.3.1 h1:gXjWVAoWoL1jWn58yHQ+fkzIgL2vKHzpJgH
 github.com/hugo-fixit/fixit-bundle v1.3.1/go.mod h1:dq/Qpstv2oRDoqinp7ZrPZSU24an4MNa7lMKh1uGy1w=
 github.com/hugo-fixit/hugo-json-feed v1.0.2 h1:xZABGHuoX/u0hnoF5AoP7ane7l9T7UNmlOAiFdWvBvA=
 github.com/hugo-fixit/hugo-json-feed v1.0.2/go.mod h1:ystvqmSnWdkU0aBybKKNztj8P1ViY6AhMaK/bsBL9uw=
-github.com/hugo-fixit/shortcode-caniuse v1.1.3 h1:U1YBJz5SI/d1BBQhHcD0eVgJdCcpzK2usSizPiu+a4w=
-github.com/hugo-fixit/shortcode-caniuse v1.1.3/go.mod h1:RoPLFt+7uLui5rjvkC/qFGeo4nly5AzzwIID9SoDKNc=
+github.com/hugo-fixit/shortcode-caniuse v1.2.0 h1:IfLB5b+ht88SndX0GbAQGMmrMTWq/5MXkOzJ/H4DiSo=
+github.com/hugo-fixit/shortcode-caniuse v1.2.0/go.mod h1:RoPLFt+7uLui5rjvkC/qFGeo4nly5AzzwIID9SoDKNc=
 github.com/hugo-fixit/shortcode-docs-bookmark v1.0.3 h1:OMkbLv4yIifZ/dNUNoIvFhCxOFQNUAAbRkgqe+9aycQ=
 github.com/hugo-fixit/shortcode-docs-bookmark v1.0.3/go.mod h1:suLPTLy/z2dvpHMEn9TFE+AxwyuTzmmD87vEiW078wI=
 github.com/hugo-fixit/shortcode-mmt-netease v1.1.1 h1:ipXnqQ2mV57kEQ5CnslcVRQE3kOCZIsNVH+Uu2gMVaU=
