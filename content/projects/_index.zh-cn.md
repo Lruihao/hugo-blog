@@ -7,6 +7,7 @@ sectionSlot: 以下文章是对上述某些作品的开发过程或使用的介�
 layout: projects
 pageStyle: wide
 lightgallery: false
+type: projects
 cascade:
   params:
     type: posts

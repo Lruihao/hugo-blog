@@ -1,5 +1,7 @@
 ---
-title: .
+linkTitle: $
+title: 广子
+description: 个人博客接的一些广子。
 date: 2024-12-07T00:56:44+08:00
 draft: true
 cascade:
