@@ -736,11 +736,17 @@ disableThemeInject = false
     'chinese_simplified',
     'chinese_traditional',
   ]
-  # Element IDs that needs to be ignored for translation
+  # Element IDs that needs to be ignored for translation, e.g. ["comment", ...]
   ignoreID = []
-  # Class names that need to be ignored for translation
+  # Class names that need to be ignored for translation, e.g. ["post-category", ...]
   ignoreClass = []
-  # Tag names that need to be ignored for translation
-  ignoreTag = ['title']
+  # Tag names that need to be ignored for translation, e.g. ["title", ...]
+  ignoreTag = []
+  # Texts that need to be ignored for translation, e.g. ["FixIt", "Lruihao", ...]
+  ignoreText = [
+    'Lruihao',
+  ]
   # Whether to detect the local language
-  detectLocalLanguage = false
+  detectLocalLanguage = true
+  # translate.js CDN
+  cdn = ""
