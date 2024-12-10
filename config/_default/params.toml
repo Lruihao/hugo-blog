@@ -729,7 +729,7 @@ disableThemeInject = false
   enable = true
   # The translation service provider, ['client.edge', 'translate.service']
   # See: https://translate.zvo.cn/43086.html
-  service = 'client.edge'
+  service = 'translate.service'
   # List of language ID to translate to, e.g. ["english", "chinese_simplified", "chinese_traditional", ...]
   # See the full language list: https://api.translate.zvo.cn/language.json
   languages = [
@@ -750,3 +750,6 @@ disableThemeInject = false
   detectLocalLanguage = true
   # translate.js CDN
   cdn = ""
+  # Whether to enable Enterprise-level translation channel
+  # If set to true, automatically switch to the best translation service
+  enterprise = true
