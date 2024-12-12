@@ -15,7 +15,8 @@ aliases:
 slug: cell-watermark
 toc:
   ordered: false
-local: english
+autoTranslate:
+  local: english
 ---
 
 <!-- markdownlint-disable -->

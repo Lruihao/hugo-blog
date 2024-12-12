@@ -731,6 +731,7 @@ disableThemeInject = false
   # See: https://translate.zvo.cn/43086.html
   service = 'translate.service'
   # List of language ID to translate to, e.g. ["english", "chinese_simplified", "chinese_traditional", ...]
+  # If not set, it will be translated to all languages
   # See the full language list: https://api.translate.zvo.cn/language.json
   languages = [
     'chinese_simplified',
@@ -742,9 +743,11 @@ disableThemeInject = false
   ignoreClass = []
   # Tag names that need to be ignored for translation, e.g. ["title", ...]
   ignoreTag = []
+  # Selectors that need to be ignored for translation, e.g. ["[data-adapters='projects'] .single-subtitle", ...]
+  ignoreSelector = []
   # Texts that need to be ignored for translation, e.g. ["FixIt", "Lruihao", ...]
   ignoreText = [
-    'Lruihao',
+    'https://fixit.lruihao.cn',
   ]
   # Whether to detect the local language
   detectLocalLanguage = true

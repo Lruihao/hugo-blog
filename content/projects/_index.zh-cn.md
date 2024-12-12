@@ -8,6 +8,8 @@ layout: projects
 pageStyle: wide
 lightgallery: false
 type: projects
+autoTranslate:
+  onlyLocalLang: true
 cascade:
   params:
     type: posts
