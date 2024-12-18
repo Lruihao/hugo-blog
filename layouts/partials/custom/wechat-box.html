@@ -1,3 +1,4 @@
+{{- if eq .Type "page" -}}
 <div class="wechat-box">
   <div class="wechat-menu">
     <div class="wechat-hover">
@@ -7,3 +8,4 @@
 </div>
 {{- /* wechat.svg for wechat box */ -}}
 {{- $_ := (resources.Get "images/icons/wechat.svg").RelPermalink -}}
+{{- end -}}
