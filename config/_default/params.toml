@@ -664,8 +664,13 @@ disableThemeInject = false
   frameHeight = ""    # e.g. "600px"
   # only for magic mode
   userIcon = ""
-  defaultChatQuestions = []
-  defaultSearchQuestions = []
+  defaultChatQuestions = [
+    "你是谁?",
+    "Lruihao 是谁?",
+  ]
+  defaultSearchQuestions = [
+    "程序猿的自我修养",
+  ]
 
 # FixIt 0.3.17 | NEW Summary AI config
 # See https://postchat.zhheo.com/summary.html
