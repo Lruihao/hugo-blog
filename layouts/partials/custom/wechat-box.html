@@ -1,11 +1,18 @@
-{{- if eq .Type "page" -}}
-<div class="wechat-box">
-  <div class="wechat-menu">
-    <div class="wechat-hover">
-      <div class="wechat-description">微信扫一扫，订阅本博客</div>
+{{- if (eq .Type "page") | and (ne .RelPermalink "/") -}}
+  {{- /* wechat.svg for wechat box */ -}}
+  {{- $_ := (resources.Get "images/icons/wechat.svg").RelPermalink -}}
+  {{- $fingerprint := .Scratch.Get "fingerprint" -}}
+  {{- /* wechat-box.min.css */ -}}
+  {{- $options := dict "Source" "css/_custom/wechat-box.scss" "Fingerprint" $fingerprint -}}
+  {{- $toCSS := dict "targetPath" "css/wechat-box.min.css" "enableSourceMap" true -}}
+  {{- $options = dict "Context" . "ToCSS" $toCSS | merge $options -}}
+  {{- partial "plugin/style.html" $options -}}
+
+  <div class="wechat-box">
+    <div class="wechat-menu">
+      <div class="wechat-hover">
+        <div class="wechat-description">微信扫一扫，订阅本博客</div>
+      </div>
     </div>
   </div>
-</div>
-{{- /* wechat.svg for wechat box */ -}}
-{{- $_ := (resources.Get "images/icons/wechat.svg").RelPermalink -}}
 {{- end -}}
