@@ -680,7 +680,7 @@ disableThemeInject = false
   key = ""
   title = ""
   # themes options: ["", "simple", "yanzhi"]
-  theme = "yanzhi"
+  theme = ""
   postURL = ""
   blacklist = ""
   wordLimit = 1000
