@@ -73,8 +73,8 @@ disableThemeInject = false
 # Search config
 [search]
   enable = true
-  # type of search engine ["algolia", "fuse", "cse"]
-  type = "algolia"
+  # type of search engine ["algolia", "fuse", "cse", "post-chat"]
+  type = "post-chat"
   # max index length of the chunked content
   contentLength = 4000
   # placeholder of the search bar
@@ -636,12 +636,11 @@ disableThemeInject = false
   theme = "minimal"
 
 # FixIt 0.3.17 | NEW PostChat AI config
-# Summary AI, knowledge base search and knowledge base dialogue support
-# Docs: https://postchat.zhheo.com/
+# Based on your posts to build a knowledge base, support AI summary, AI search, and AI Chatbot.
+# 使用我的邀请链接获取 PostChat Key，感谢您的支持！
+# https://ai.tianli0.top/?InviteID=IRE1S88Z
 [postChat]
   enable = true
-  # Get PostChat Key from my invitation link, thanks for your support!
-  # https://ai.tianli0.top/?InviteID=IRE1S88Z
   key = "ed872bf9336506bea545183089f5034f81fea6af"
   # How users initiate chats: ["iframe", "magic"]
   userMode = "magic"
@@ -656,7 +655,7 @@ disableThemeInject = false
   upLoadWeb = true
   showInviteLink = true
   userTitle = "Cell+"
-  userDesc = ""
+  userDesc = "如果你对网站的内容有任何疑问，可以来问我哦～"
   # dom container to be blacked out, e.g. [".aplayer"]
   blackDom = []
   # Only for iframe mode
