@@ -774,6 +774,11 @@ disableThemeInject = false
     "Lruihao/bill-note",
     "hugo-fixit/hugo-atom-feed",
   ]
+  [projectsAdapters.params]
+    [projectsAdapters.params.postChat]
+        upLoadWeb = true
+      [projectsAdapters.params.postSummary]
+        enable = true
 
 # Auto translation configuration
 # See: https://github.com/xnx3/translate/
