@@ -1,5 +1,7 @@
 - title: 我开发的
   description: 下面这些是我开发过的一些开源作品。
+  order: desc
+  orderby: star
   totalStars: true
   repos:
     - hugo-fixit/FixIt
@@ -19,6 +21,7 @@
     - hugo-fixit/fixit-cli
     - hugo-fixit/fixit-releaser
     - hugo-fixit/component-projects
+    - hugo-fixit/cmpt-translate
     - hugo-fixit/shortcode-caniuse
     - hugo-fixit/shortcode-mmt-netease
     - hugo-fixit/shortcode-rewards
