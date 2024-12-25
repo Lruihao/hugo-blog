@@ -682,7 +682,7 @@ disableThemeInject = false
   theme = ""
   postURL = ""
   blacklist = ""
-  wordLimit = 1000
+  wordLimit = 5000
   typingAnimate = true
   beginningText = ""
 
