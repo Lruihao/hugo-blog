@@ -666,9 +666,19 @@ disableThemeInject = false
   defaultChatQuestions = [
     "你是谁?",
     "Lruihao 是谁?",
+    "作者的开源项目有哪些？",
   ]
   defaultSearchQuestions = [
+    "给你的 Markdown 挑挑刺",
+    "中文技术文档的写作规范",
+    "语义版本控制（SemVer）",
+    "Vue.js 相关的文章",
+    "FixIt 相关的文档",
+    "现代 CSS 解决方案",
+    "拖拽式仪表盘系列 ",
     "程序猿的自我修养",
+    "CSS 奇技淫巧",
+    "作者的随笔"
   ]
 
 # FixIt 0.3.17 | NEW Summary AI config
