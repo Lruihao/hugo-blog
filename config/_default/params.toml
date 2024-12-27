@@ -815,6 +815,7 @@ disableThemeInject = false
   # Texts that need to be ignored for translation, e.g. ["FixIt", "Lruihao", ...]
   ignoreText = [
     'https://fixit.lruihao.cn',
+    'Cell+',
   ]
   # Whether to detect the local language
   detectLocalLanguage = true
