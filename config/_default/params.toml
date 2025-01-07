@@ -74,7 +74,7 @@ disableThemeInject = false
 [search]
   enable = true
   # type of search engine ["algolia", "fuse", "cse", "post-chat"]
-  type = "post-chat"
+  type = "algolia"
   # max index length of the chunked content
   contentLength = 4000
   # placeholder of the search bar

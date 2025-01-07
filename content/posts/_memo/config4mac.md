@@ -28,6 +28,19 @@ Mac 上有很多配置文件都可以用来保存环境变量等配置，根据�
 
 编辑最多的应该是 `~/.bash_profile` 和 `~/.zshrc`, 基本上建议所有的个人配置都放在 `~/.bash_profile` 中，然后在 `~/.zshrc` 最后执行 `source ~/.bash_profile`, 这样也方便将自己的个人环境变量配置备份。
 
+> [!note]
+> `pnpm setup` 会自动在 `~/.zshrc` 中添加一些配置，如下：
+
+```bash
+# pnpm
+export PNPM_HOME="/Users/liruihao/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+```
+
 ## 常用命令
 
 ```bash
