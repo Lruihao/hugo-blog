@@ -414,7 +414,7 @@ disableThemeInject = false
   # FixIt 0.3.0 | NEW [Experimental] cache remote images locally, see: https://github.com/hugo-fixit/FixIt/pull/362
   [page.cacheRemoteImages]
     enable = false
-    # replace remote image url with local image url (place in public/images/remote/)
+    # replace remote image URL with local image url (place in public/images/remote/)
     replace = false
   # FixIt 0.3.0 | NEW Related content config
   [page.related]

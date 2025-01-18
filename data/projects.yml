@@ -20,8 +20,10 @@
     - hugo-fixit/hugo-fixit-starter1
     - hugo-fixit/fixit-cli
     - hugo-fixit/fixit-releaser
+    - hugo-fixit/action-component-list
     - hugo-fixit/component-projects
     - hugo-fixit/cmpt-translate
+    - hugo-fixit/shortcode-asciinema
     - hugo-fixit/shortcode-caniuse
     - hugo-fixit/shortcode-mmt-netease
     - hugo-fixit/shortcode-rewards
