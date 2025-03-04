@@ -5,7 +5,6 @@
 
 title = "菠菜眾長"
 baseURL = "http://localhost:1313"
-# theme = ["FixIt", "shortcode-mmt-netease", "shortcode-sponsor-log"]
 defaultContentLanguage = "zh-cn"
 disableLanguages = ["en", "zh-tw"]
 hasCJKLanguage = true

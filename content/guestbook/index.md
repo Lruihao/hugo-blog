@@ -20,14 +20,7 @@ library:
 {{< /typeit >}}
 {{< /admonition >}}
 
----
-
-温馨提示，音乐自动播放，请带好耳机～
-{.text-center style="font-size: 80%;"}
-
-{{< mmt-netease "2280569152" true >}}
-
----
+{{< music "https://music.163.com/#/playlist?id=2280569152" >}}
 
 {{< reward wechatpay="/images/wechatpay.jpg" alipay="/images/alipay.jpg" comment="给博主买杯卡布奇诺～" mode="fixed" >}}
 {{< busuanzi_embed >}}

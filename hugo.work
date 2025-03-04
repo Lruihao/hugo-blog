@@ -8,6 +8,5 @@ use ../hugo-fixit/cmpt-mdevtools
 use ../hugo-fixit/cmpt-translate
 use ../hugo-fixit/hugo-json-feed
 use ../hugo-fixit/shortcode-caniuse
-use ../hugo-fixit/shortcode-mmt-netease
 use ../hugo-fixit/shortcode-docs-bookmark
 use ../hugo-fixit/shortcode-rewards
