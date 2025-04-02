@@ -7,6 +7,7 @@ use ../hugo-fixit/cmpt-flyfish
 use ../hugo-fixit/cmpt-mdevtools
 use ../hugo-fixit/cmpt-translate
 use ../hugo-fixit/hugo-json-feed
+use ../hugo-fixit/shortcode-asciinema
 use ../hugo-fixit/shortcode-caniuse
 use ../hugo-fixit/shortcode-docs-bookmark
 use ../hugo-fixit/shortcode-rewards
