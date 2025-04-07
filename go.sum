@@ -4,10 +4,10 @@ github.com/hugo-fixit/cmpt-flyfish v1.0.1 h1:DekYPsolCOgie7DyTH7htrZ4krAOlmjdnfF
 github.com/hugo-fixit/cmpt-flyfish v1.0.1/go.mod h1:59rRcovSQTuEwS7NzJNdHc3eRGXqxpELxHj2gCoXXSo=
 github.com/hugo-fixit/cmpt-mdevtools v1.0.1 h1:IdUhqO1ktKsJF5D0ReU37PU2CQCpgjY4EFFQ0S69sKQ=
 github.com/hugo-fixit/cmpt-mdevtools v1.0.1/go.mod h1:+1tfeT4ugFNa1kx/3yQF0NUup2Fejiq7EwvrpcY2xWw=
-github.com/hugo-fixit/cmpt-translate v1.5.6 h1:O6pt59ga16F9cznwKXc5+fqecK3c/hrYpb3TJXVgPcY=
-github.com/hugo-fixit/cmpt-translate v1.5.6/go.mod h1:JZ0STubquTlRgyyGhGPlt2s0KJ1gCa99+P8ltTwQRM4=
-github.com/hugo-fixit/component-projects v1.5.3 h1:phKG//aW4sF9CSUn6kJry2ovBGSlJzxF5H7+ZSlemQw=
-github.com/hugo-fixit/component-projects v1.5.3/go.mod h1:nXW0R37REwpfwUD1I4RtB5QW71vw66nRyB9uEpYxr+c=
+github.com/hugo-fixit/cmpt-translate v1.5.7 h1:RaWCl4TuVkbjKUoEihhB20onEaBG87ps5uHIAVhKV0s=
+github.com/hugo-fixit/cmpt-translate v1.5.7/go.mod h1:JZ0STubquTlRgyyGhGPlt2s0KJ1gCa99+P8ltTwQRM4=
+github.com/hugo-fixit/component-projects v1.6.0 h1:7/DPPipRHUWzfxtXyhYs1Th4yQbDcsOl63ru/HNN//U=
+github.com/hugo-fixit/component-projects v1.6.0/go.mod h1:nXW0R37REwpfwUD1I4RtB5QW71vw66nRyB9uEpYxr+c=
 github.com/hugo-fixit/fixit-bundle v1.4.6 h1:GNJjU8tAn612oj6IENKkc3L+w2r6MLLPfvX5ppiDHvc=
 github.com/hugo-fixit/fixit-bundle v1.4.6/go.mod h1:OpHPTyXBIusN1EoM7GSp/lG7j7iAg1b4tQrGQ7mMn5w=
 github.com/hugo-fixit/hugo-json-feed v1.1.0 h1:1YEakWFxi3wWGhaVTL1d4gU6QughetRuju4rOTABP6o=

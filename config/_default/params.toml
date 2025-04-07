@@ -779,11 +779,7 @@ disableThemeInject = false
   categories = ["GitHub"]
   collections = ["project"]
   # Ignore repos in the ignore list
-  ignoreList = [
-    "Lruihao/MMT",
-    "Lruihao/bill-note",
-    "hugo-fixit/hugo-atom-feed",
-  ]
+  ignoreList = []
   [projectsAdapters.params]
     [projectsAdapters.params.postChat]
         upLoadWeb = true

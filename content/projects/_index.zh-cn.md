@@ -4,6 +4,7 @@ titleIcon: fa-brands fa-github
 subtitle: "[@Lruihao](https://github.com/Lruihao) / [@hugo-fixit](https://github.com/hugo-fixit)"
 description: 作为一个实践者，爱折腾的人，曾在开源世界做过一些小的贡献。
 sectionSlot: 以下文章是对上述某些作品的开发过程或使用的介绍。
+hiddenAdapters: true
 layout: projects
 pageStyle: wide
 lightgallery: false
