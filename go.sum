@@ -8,6 +8,8 @@ github.com/hugo-fixit/cmpt-translate v1.5.7 h1:RaWCl4TuVkbjKUoEihhB20onEaBG87ps5
 github.com/hugo-fixit/cmpt-translate v1.5.7/go.mod h1:JZ0STubquTlRgyyGhGPlt2s0KJ1gCa99+P8ltTwQRM4=
 github.com/hugo-fixit/component-projects v1.6.0 h1:7/DPPipRHUWzfxtXyhYs1Th4yQbDcsOl63ru/HNN//U=
 github.com/hugo-fixit/component-projects v1.6.0/go.mod h1:nXW0R37REwpfwUD1I4RtB5QW71vw66nRyB9uEpYxr+c=
+github.com/hugo-fixit/component-projects v1.6.1 h1:bh/+X+f2IE2kNasZRW0k3jn0wYUSin2lO/bXd3/kqHU=
+github.com/hugo-fixit/component-projects v1.6.1/go.mod h1:nXW0R37REwpfwUD1I4RtB5QW71vw66nRyB9uEpYxr+c=
 github.com/hugo-fixit/fixit-bundle v1.4.6 h1:GNJjU8tAn612oj6IENKkc3L+w2r6MLLPfvX5ppiDHvc=
 github.com/hugo-fixit/fixit-bundle v1.4.6/go.mod h1:OpHPTyXBIusN1EoM7GSp/lG7j7iAg1b4tQrGQ7mMn5w=
 github.com/hugo-fixit/hugo-json-feed v1.1.0 h1:1YEakWFxi3wWGhaVTL1d4gU6QughetRuju4rOTABP6o=
@@ -18,5 +20,7 @@ github.com/hugo-fixit/shortcode-caniuse v1.2.2 h1:cuJVdJ1A0IgJnMQjifCDeRSRxIY0pl
 github.com/hugo-fixit/shortcode-caniuse v1.2.2/go.mod h1:RoPLFt+7uLui5rjvkC/qFGeo4nly5AzzwIID9SoDKNc=
 github.com/hugo-fixit/shortcode-docs-bookmark v1.0.3 h1:OMkbLv4yIifZ/dNUNoIvFhCxOFQNUAAbRkgqe+9aycQ=
 github.com/hugo-fixit/shortcode-docs-bookmark v1.0.3/go.mod h1:suLPTLy/z2dvpHMEn9TFE+AxwyuTzmmD87vEiW078wI=
+github.com/hugo-fixit/shortcode-mmt-netease v1.1.1 h1:ipXnqQ2mV57kEQ5CnslcVRQE3kOCZIsNVH+Uu2gMVaU=
+github.com/hugo-fixit/shortcode-mmt-netease v1.1.1/go.mod h1:uCRIQhOWONAycwsepEcQ+9ePRAeCQuxoCSWfctH1DI8=
 github.com/hugo-fixit/shortcode-rewards v1.0.5 h1:Fudm/FoKt/K5rhTvOpHyvniAQFOAoQ1V/Z33TpReGkA=
 github.com/hugo-fixit/shortcode-rewards v1.0.5/go.mod h1:+PA7wjtBgkQsI8s8bPOMJ6bNNfExUIWz4AxTearzZgw=
