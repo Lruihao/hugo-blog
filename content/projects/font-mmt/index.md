@@ -1,7 +1,8 @@
 ---
 title: 沐目体
-subtitle: 一款手写给你的字体
+subtitle: 一款手写给她的字体
 date: 2018-10-12 19:39:19
+lastmod: 2018-10-12 19:39:19
 tags:
   - 沐目体
 collections:
@@ -21,6 +22,9 @@ toc:
 <iframe class="manuscript" src="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&a=fontshowPics&u=qbfRl8gPF2s-&z=Kqz%2FRroVGYc-" style="width: 100%;height: 370px;margin-top: .25rem;" frameborder="0" allowfullscreen></iframe>
 
 <!--more-->
+
+> [!TIP]
+> [在线预览](https://lruihao.github.io/mmt-webfont/)
 
 ## 预览
 
