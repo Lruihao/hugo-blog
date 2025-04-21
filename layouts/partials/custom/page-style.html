@@ -1,0 +1,6 @@
+{{- $params := .Params | merge $.Site.Params.page -}}
+{{- if eq $params.pageStyle "MMT" -}}
+  <link rel="stylesheet" href="https://unpkg.com/mmt-webfont/dist/result.css">
+{{- else if eq $params.pageStyle "LXGW WenKai" -}}
+  <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Bold/result.css' />
+{{- end -}}

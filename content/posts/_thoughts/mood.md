@@ -8,6 +8,9 @@ categories:
   - thoughts
 expirationReminder:
   enable: false
+postSummary:
+  enable: false
+pageStyle: MMT
 ---
 
 > 手机便签里保存的一段话，也记不得在哪看到的了。

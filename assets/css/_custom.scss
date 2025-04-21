@@ -1,10 +1,15 @@
 // ==============================
 // Custom style
 // ==============================
+@import '_custom/page-style.scss';
 @import '_custom/shaky.scss';
 
 $blog-base-color: #e6e5f8 !default;
 $blog-bg-color: #fafaf8 !default;
+
+:root {
+  --grid-line-color: rgba(60, 10, 30, .04);
+}
 
 #header-desktop {
   @include transition(filter 0.3s ease);
@@ -58,10 +63,10 @@ $blog-bg-color: #fafaf8 !default;
     z-index: -1;
     width: 100%;
     height: MAX(100vh, 400px);
-    background-image: linear-gradient(90deg, rgba(60, 10, 30, .04) 1px, transparent 0), linear-gradient(1turn, rgba(60, 10, 30, .04) 1px, transparent 0);
+    background-image: linear-gradient(90deg, var(--grid-line-color) 1px, transparent 0), linear-gradient(1turn, var(--grid-line-color) 1px, transparent 0);
     background-size: 40px 40px;
     background-position: center;
-    border-bottom: 1px solid rgba(60, 10, 30, .04);
+    border-bottom: 1px solid var(--grid-line-color);
 
     [data-theme='dark'] & {
       background-image: linear-gradient(90deg, rgba(195, 245, 215, .04) 1px, transparent 0), linear-gradient(1turn, rgba(195, 245, 215, .04) 1px, transparent 0);
@@ -98,7 +103,7 @@ $blog-bg-color: #fafaf8 !default;
   }
 
   .content {
-    background-image: linear-gradient(90deg, rgba(60, 10, 30, .04) 3%, transparent 0), linear-gradient(1turn, rgba(60, 10, 30, .04) 3%, transparent 0);
+    background-image: linear-gradient(90deg, var(--grid-line-color) 3%, transparent 0), linear-gradient(1turn, var(--grid-line-color) 3%, transparent 0);
     background-size: 20px 20px;
     background-position: center;
   

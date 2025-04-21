@@ -1,0 +1,33 @@
+// ==============================
+// Custom page style
+// ==============================
+.wrapper {
+  .container {
+    font-family: var(--article-font-family);
+    .content {
+      font-size: var(--article-font-size);
+      line-height: var(--article-line-height);
+      letter-spacing: var(--article-letter-spacing);
+      text-indent: var(--article-text-indent);
+    }
+  }
+  &[data-page-style='MMT'] {
+    --article-font-family: 'MMT', '沐目体', sans-serif;
+    --article-font-size: 1.2em;
+    --article-line-height: 1.5;
+    --grid-line-color: rgba(60, 10, 30, 0.1);
+
+    .post-meta {
+      font-size: 1em;
+    }
+    .post-footer {
+      font-size: 1.2em;
+      .post-info-md {
+        font-size: 0.8em !important;
+      }
+    }
+  }
+  &[data-page-style='LXGW WenKai'] {
+    --article-font-family: 'LXGW WenKai', sans-serif;
+  }
+}

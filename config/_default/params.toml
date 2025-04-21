@@ -715,6 +715,7 @@ disableThemeInject = false
     "inject/component-projects.html",
     "inject/fixit-docs-bookmark.html",
     "inject/shortcode-rewards.html",
+    "custom/page-style.html",
   ]
   menuDesktop = [
     "inject/translate-menu-desktop.html",
