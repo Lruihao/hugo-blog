@@ -1,7 +1,7 @@
 # - nickname: 标题
 #   avatar: 头像
 #   url: 站点
-#   description: 描述
+#   description: 描述 &#10 表示换行
 - nickname: 愛如潮水
   avatar: https://recell.github.io/images/123.jpg
   url: https://recell.github.io
