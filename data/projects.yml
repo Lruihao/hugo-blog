@@ -15,7 +15,8 @@
     - Lruihao/vue-minder-editor-extended
     - Lruihao/kityminder-core
     - Lruihao/cell-tooltip
-    - Lruihao/vercel-gravatar
+    - Lruihao/vercel-proxy
+    - Lruihao/mmt-webfont
     - hugo-fixit/hugo-fixit-starter
     - hugo-fixit/hugo-fixit-starter1
     - hugo-fixit/fixit-cli
@@ -33,22 +34,11 @@
     - hugo-fixit/cmpt-mdevtools
     - hugo-fixit/cmpt-flyfish
     - hugo-fixit/hugo-shell
-- title: 私有项目
-  repos:
-    - Lruihao/blog-private
-- title: 归档项目
-  description: 下面这些开源仓库已停止更新或者用于自动化部署。
-  totalStars: true
-  repos:
-    - Lruihao/lruihao.github.io
-    - Lruihao/MMT
-    - Lruihao/cos-album
-    - Lruihao/hexo-theme-next
-    - Lruihao/cell-blog
-    - Lruihao/bill-note
 - title: 我贡献的
   description: 下面这些是我贡献过的一些开源作品。
   contentAdapters: false
+  order: desc
+  orderby: star
   repos:
     - gohugoio/hugo
     - mdn/translated-content
@@ -61,3 +51,15 @@
     - walinejs/waline
     - twikoojs/twikoo
     - xCss/Valine-docs
+- title: 归档/私有
+  description: 下面这些开源仓库已停止更新或者用于自动化部署。
+  totalStars: true
+  repos:
+    - Lruihao/lruihao.github.io
+    - Lruihao/blog-private
+    - Lruihao/MMT
+    - Lruihao/cos-album
+    - Lruihao/hexo-theme-next
+    - Lruihao/cell-blog
+    - Lruihao/bill-note
+    - Lruihao/vercel-gravatar

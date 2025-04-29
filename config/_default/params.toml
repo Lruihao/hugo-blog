@@ -420,6 +420,8 @@ disableThemeInject = false
   [page.related]
     enable = true
     count = 5
+    # FixIt 0.3.20 | NEW position of related content, optional values: ["aside", "footer"]
+    position = ["aside", "footer"]
   # FixIt 0.2.17 | NEW Donate (Sponsor) settings
   [page.reward]
     enable = true
