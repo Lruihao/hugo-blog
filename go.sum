@@ -20,7 +20,7 @@ github.com/hugo-fixit/shortcode-caniuse v1.2.2 h1:cuJVdJ1A0IgJnMQjifCDeRSRxIY0pl
 github.com/hugo-fixit/shortcode-caniuse v1.2.2/go.mod h1:RoPLFt+7uLui5rjvkC/qFGeo4nly5AzzwIID9SoDKNc=
 github.com/hugo-fixit/shortcode-docs-bookmark v1.0.3 h1:OMkbLv4yIifZ/dNUNoIvFhCxOFQNUAAbRkgqe+9aycQ=
 github.com/hugo-fixit/shortcode-docs-bookmark v1.0.3/go.mod h1:suLPTLy/z2dvpHMEn9TFE+AxwyuTzmmD87vEiW078wI=
-github.com/hugo-fixit/shortcode-mmt-netease v1.1.2 h1:WR0WpwhTGisg9FVrPv7Nzp5DWsZ939NcOXXw8x1Sgfk=
-github.com/hugo-fixit/shortcode-mmt-netease v1.1.2/go.mod h1:uCRIQhOWONAycwsepEcQ+9ePRAeCQuxoCSWfctH1DI8=
+github.com/hugo-fixit/shortcode-mmt-netease v1.2.0 h1:BOtFBPl3zW3SBarrb0SqWVaCjhrHs+LTsalbKhKAI5k=
+github.com/hugo-fixit/shortcode-mmt-netease v1.2.0/go.mod h1:uCRIQhOWONAycwsepEcQ+9ePRAeCQuxoCSWfctH1DI8=
 github.com/hugo-fixit/shortcode-rewards v1.0.5 h1:Fudm/FoKt/K5rhTvOpHyvniAQFOAoQ1V/Z33TpReGkA=
 github.com/hugo-fixit/shortcode-rewards v1.0.5/go.mod h1:+PA7wjtBgkQsI8s8bPOMJ6bNNfExUIWz4AxTearzZgw=
