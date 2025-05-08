@@ -20,6 +20,10 @@ resources:
 
 ## Live Demo
 
+<details>
+
+<summary>点击查看</summary>
+
 ### Hugo
 
 - [Hugo FixIt](https://fixit.lruihao.cn/)
@@ -37,5 +41,7 @@ resources:
 - [Vue2 demo](https://lruihao.github.io/vue-el-demo)
 - [cos-album](https://img-1256932288.cos-website.ap-chengdu.myqcloud.com/)
 - [实习期作业](https://lruihao.github.io/HW/)
+
+</details>
 
 {{< busuanzi_embed >}}

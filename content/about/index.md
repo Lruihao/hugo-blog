@@ -83,9 +83,19 @@ _（其他类型开发也可以咨询）_
 
 📮 邮箱：`1024@lruihao.cn`（备注来意）
 
----
 
 已授权平台：[云 + 社区](https://cloud.tencent.com/developer/column/94521)
+
+---
+
+{{% fixit-encryptor "lruihao" "Blog Analytics" %}}
+
+## 数据分析
+
+- [Umami](https://us.umami.is/share/FSPwm1IsrQFY7ZvP/lruihao.cn)
+- [Vercount](https://vercount.one/dashboard/analytics?domain=lruihao.cn)
+
+{{% /fixit-encryptor %}}
 
 {{< busuanzi_embed >}}
 
