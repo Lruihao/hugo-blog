@@ -18,14 +18,23 @@ resources:
     src: images/projects-cover.webp
 ---
 
-## Demos
+## Live Demo
 
-- [Hugo FixIt 主题](https://fixit.lruihao.github.io/)
-- [HTML-CSS-JavaScript 相关](https://lruihao.github.io/html-demo)
-- [Vue2 相关](https://lruihao.github.io/vue-el-demo)
-- [el-table-sticky](https://lruihao.github.io/el-table-sticky/)
+### Hugo
+
+- [Hugo FixIt](https://fixit.lruihao.cn/)
+
+### Tools
+
 - [CoverView](https://coverview.lruihao.cn/)
-- [vercel-gravatar](https://gravatar.lruihao.cn/avatar/)
+- [Vercel API Proxy](https://api.lruihao.cn/)
+- [MMT webfont package](https://lruihao.github.io/mmt-webfont/)
+- [el-table-sticky](https://lruihao.github.io/el-table-sticky/)
+
+### Others
+
+- [HTML/CSS/JS demo](https://lruihao.github.io/html-demo)
+- [Vue2 demo](https://lruihao.github.io/vue-el-demo)
 - [cos-album](https://img-1256932288.cos-website.ap-chengdu.myqcloud.com/)
 - [实习期作业](https://lruihao.github.io/HW/)
 
