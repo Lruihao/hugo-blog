@@ -113,11 +113,9 @@ $blog-bg-color: #fafaf8 !default;
   }
 
   // Content adapter generated posts style
-  &[data-adapters='projects'] {
-    .single-subtitle {
-      font-size: 1rem;
-    }
-  }
+  // &[data-adapters='projects'] {
+  //   // write here
+  // }
 }
 
 .home {
