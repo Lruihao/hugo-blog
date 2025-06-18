@@ -1,0 +1,14 @@
+{{- $prefix := "https://lruihao.github.io/html-demo/" -}}
+{{- if hugo.IsServer -}}
+  {{- $prefix = "http://localhost:3000/" -}}
+{{- end -}}
+{{- $src := .Get 0 | default "" -}}
+{{- if not $src }}
+  {{- errorf "html-demo shortcode requires a source URL as the first parameter." -}}
+{{- end }}
+{{- $src = printf "%s%s" $prefix $src -}}
+{{- $height := .Get 1 | default "auto" -}}
+{{- $width := .Get 2 | default "100%" -}}
+
+<iframe src="{{ $src }}" height="{{ $height }}" width="{{ $width }}"></iframe>
+{{- /* EOF */ -}}
