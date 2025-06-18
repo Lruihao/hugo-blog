@@ -35,7 +35,7 @@
     commentCount = true # FixIt NEW | 0.2.13
   # FixIt 0.2.14 | NEW Giscus comments config (https://giscus.app/)
   [page.comment.giscus]
-    enable = false
+    enable = true
     repo = "Lruihao/hugo-blog"
     repoId = "MDEwOlJlcG9zaXRvcnk0MDQzNDY3MDk="
     category = "General"

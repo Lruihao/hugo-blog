@@ -8,8 +8,8 @@ github.com/hugo-fixit/cmpt-translate v1.5.10 h1:4TGTJnr7CaWZYBu/6VYoUSWoCi2Hbe0x
 github.com/hugo-fixit/cmpt-translate v1.5.10/go.mod h1:JZ0STubquTlRgyyGhGPlt2s0KJ1gCa99+P8ltTwQRM4=
 github.com/hugo-fixit/component-projects v1.7.2 h1:gX/sDNIoEvBD/GNXb6CmY0Cfdbr8kWzjHAiYGdkbX9o=
 github.com/hugo-fixit/component-projects v1.7.2/go.mod h1:nXW0R37REwpfwUD1I4RtB5QW71vw66nRyB9uEpYxr+c=
-github.com/hugo-fixit/fixit-bundle v1.4.13 h1:tAhH41YDzIfb4EO9/hOLXDZ872IFhXx7f8KMytL1Oq4=
-github.com/hugo-fixit/fixit-bundle v1.4.13/go.mod h1:ReavJV92C6mZLuOFq9f3t6jooyyPlxVf7F7ZYsJ4wiw=
+github.com/hugo-fixit/fixit-bundle v1.4.14 h1:dyILmPE8f8ol3xZbBXvvL7lhANRJdm2mr6cmPSVuwh8=
+github.com/hugo-fixit/fixit-bundle v1.4.14/go.mod h1:wNiVMG1J08oqrI413YVHsbD7LwpFXO3M/lSdznfch0g=
 github.com/hugo-fixit/hugo-atom-feed v1.1.3 h1:7Wupv3RIFMzGVIc3sbOGi2U0MEtQrzxpVmLrIkHMQJo=
 github.com/hugo-fixit/hugo-atom-feed v1.1.3/go.mod h1:VL3kInxTH5EL+XjEhpo0ZW44fDhq6TI0qlKTFihg5hk=
 github.com/hugo-fixit/hugo-json-feed v1.1.3 h1:FM6jbZEIKYYci6vuN4lnHPvQIlNL+6zB31XAXPWPla8=
@@ -20,7 +20,7 @@ github.com/hugo-fixit/shortcode-caniuse v1.2.2 h1:cuJVdJ1A0IgJnMQjifCDeRSRxIY0pl
 github.com/hugo-fixit/shortcode-caniuse v1.2.2/go.mod h1:RoPLFt+7uLui5rjvkC/qFGeo4nly5AzzwIID9SoDKNc=
 github.com/hugo-fixit/shortcode-docs-bookmark v1.0.3 h1:OMkbLv4yIifZ/dNUNoIvFhCxOFQNUAAbRkgqe+9aycQ=
 github.com/hugo-fixit/shortcode-docs-bookmark v1.0.3/go.mod h1:suLPTLy/z2dvpHMEn9TFE+AxwyuTzmmD87vEiW078wI=
-github.com/hugo-fixit/shortcode-mmt-netease v1.2.0 h1:BOtFBPl3zW3SBarrb0SqWVaCjhrHs+LTsalbKhKAI5k=
-github.com/hugo-fixit/shortcode-mmt-netease v1.2.0/go.mod h1:uCRIQhOWONAycwsepEcQ+9ePRAeCQuxoCSWfctH1DI8=
+github.com/hugo-fixit/shortcode-mmt-netease v1.3.1 h1:mSFGTXAOAmZvLSwQ37cRcpw+Dzd+HSFYTf/rabcG/hw=
+github.com/hugo-fixit/shortcode-mmt-netease v1.3.1/go.mod h1:uCRIQhOWONAycwsepEcQ+9ePRAeCQuxoCSWfctH1DI8=
 github.com/hugo-fixit/shortcode-rewards v1.0.5 h1:Fudm/FoKt/K5rhTvOpHyvniAQFOAoQ1V/Z33TpReGkA=
 github.com/hugo-fixit/shortcode-rewards v1.0.5/go.mod h1:+PA7wjtBgkQsI8s8bPOMJ6bNNfExUIWz4AxTearzZgw=
