@@ -8,8 +8,8 @@ github.com/hugo-fixit/cmpt-translate v1.7.0 h1:UU6M2kGzj6wIOFXACZCbCqGfSFsG+AD+5
 github.com/hugo-fixit/cmpt-translate v1.7.0/go.mod h1:JZ0STubquTlRgyyGhGPlt2s0KJ1gCa99+P8ltTwQRM4=
 github.com/hugo-fixit/component-projects v1.8.0 h1:1zowdsCTheg+6r44EmThLSJX+RqYoVKt6dH3RI92gpc=
 github.com/hugo-fixit/component-projects v1.8.0/go.mod h1:nXW0R37REwpfwUD1I4RtB5QW71vw66nRyB9uEpYxr+c=
-github.com/hugo-fixit/fixit-bundle v1.4.15 h1:944PUgdizpevS2lBMPCf+HInGMWzPyIpPepYezSBeos=
-github.com/hugo-fixit/fixit-bundle v1.4.15/go.mod h1:HFJqp+Ew2Oo6oMzu0SNfzkpB2GLb2L3zyD7F760Nd3c=
+github.com/hugo-fixit/fixit-bundle v1.5.1 h1:1+vckJjXolWky8Ox8EWm5f0rNMoe0tkC4Wq9jthp0fM=
+github.com/hugo-fixit/fixit-bundle v1.5.1/go.mod h1:wP1b04miuxk5xIkCgF59QTBGY2OjTKd7yO/XYXl/Y+k=
 github.com/hugo-fixit/hugo-atom-feed v1.2.0 h1:NX3dJzmaN2JLauOzBBQF6vf1vyu23bxEI73QsBbnRcY=
 github.com/hugo-fixit/hugo-atom-feed v1.2.0/go.mod h1:VL3kInxTH5EL+XjEhpo0ZW44fDhq6TI0qlKTFihg5hk=
 github.com/hugo-fixit/hugo-json-feed v1.2.0 h1:lsK2WvT/YrkSDuQxZHHC9TIN7TW7sZNVCJiy37N0bKs=
@@ -22,5 +22,5 @@ github.com/hugo-fixit/shortcode-docs-bookmark v1.1.0 h1:T7bZlx+aT75QQWogA76hxnvu
 github.com/hugo-fixit/shortcode-docs-bookmark v1.1.0/go.mod h1:suLPTLy/z2dvpHMEn9TFE+AxwyuTzmmD87vEiW078wI=
 github.com/hugo-fixit/shortcode-mmt-netease v1.4.0 h1:tw63JG0e1/jcPrY0QqoxoZzpyKoApTA0bJDwq7JOC+U=
 github.com/hugo-fixit/shortcode-mmt-netease v1.4.0/go.mod h1:uCRIQhOWONAycwsepEcQ+9ePRAeCQuxoCSWfctH1DI8=
-github.com/hugo-fixit/shortcode-rewards v1.1.0 h1:3R/yLrb2nVEB7GP1YFVr/laMnu0ZSNkNw6opSYLQceg=
-github.com/hugo-fixit/shortcode-rewards v1.1.0/go.mod h1:+PA7wjtBgkQsI8s8bPOMJ6bNNfExUIWz4AxTearzZgw=
+github.com/hugo-fixit/shortcode-rewards v1.1.1 h1:IfKQ6oYEptzaAaqC4UBJ97HOMjubBV6jHNlr1wzENzE=
+github.com/hugo-fixit/shortcode-rewards v1.1.1/go.mod h1:+PA7wjtBgkQsI8s8bPOMJ6bNNfExUIWz4AxTearzZgw=

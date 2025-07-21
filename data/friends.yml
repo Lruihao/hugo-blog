@@ -114,14 +114,14 @@
   avatar: https://baozongwi.xyz/images/acvtar.jpg
   url: https://baozongwi.xyz/
   description: Hacking the future
-# - nickname: Scan’s Blog
-#   avatar: https://fastly.jsdelivr.net/gh/hack-scan/Blog-pic/posts/logo.png
-#   url: https://www.scan.work/
-#   description: Tracing the Freedom of Childhood.
 - nickname: 针草堂
   avatar: https://acuherb.xyz/images/avatar.jpg
   url: https://acuherb.xyz
   description: 针通经络，草养气血。
+- nickname: Vespeng
+  avatar: https://vespeng.tech/avatar.jpg
+  url: https://vespeng.tech
+  description: 不定期记录开发路上的片段，与君共勉
 # - nickname: 暂时不接受友链
 #   avatar:
 #   url: https://lruihao.cn
