@@ -33,6 +33,7 @@ resources:
 - [CoverView](https://coverview.lruihao.cn/)
 - [Vercel API Proxy](https://api.lruihao.cn/)
 - [MMT webfont package](https://lruihao.github.io/mmt-webfont/)
+- [&lt;caniuse-embed&gt; Element](https://lruihao.github.io/caniuse-embed-element/)
 - [el-table-sticky](https://lruihao.github.io/el-table-sticky/)
 
 ### Others

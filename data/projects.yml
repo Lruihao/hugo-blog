@@ -5,18 +5,19 @@
   totalStars: true
   repos:
     - hugo-fixit/FixIt
-    - Lruihao/hugo-blog
-    - hugo-fixit/docs
-    - Lruihao/el-table-sticky
-    - Lruihao/vue-el-demo
     - Lruihao/CoverView
+    - Lruihao/el-table-sticky
+    - Lruihao/mmt-webfont
+    - Lruihao/vercel-proxy
+    - Lruihao/vue-el-demo
     - Lruihao/html-demo
+    - Lruihao/caniuse-embed-element
     - Lruihao/watermark
     - Lruihao/vue-minder-editor-extended
     - Lruihao/kityminder-core
     - Lruihao/cell-tooltip
-    - Lruihao/vercel-proxy
-    - Lruihao/mmt-webfont
+    - Lruihao/hugo-blog
+    - hugo-fixit/docs
     - hugo-fixit/hugo-fixit-starter
     - hugo-fixit/hugo-fixit-starter1
     - hugo-fixit/fixit-cli
@@ -43,6 +44,7 @@
     - gohugoio/hugo
     - mdn/translated-content
     - SchemaStore/schemastore
+    - soybeanjs/soybean-admin
     - Shimada666/v-code-diff
     - xnx3/translate
     - pengzhanbo/caniuse-embed
