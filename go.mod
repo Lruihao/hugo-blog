@@ -12,7 +12,7 @@ require (
 	github.com/hugo-fixit/hugo-atom-feed v1.2.0 // indirect
 	github.com/hugo-fixit/hugo-json-feed v1.2.0 // indirect
 	github.com/hugo-fixit/shortcode-asciinema v1.1.0 // indirect
-	github.com/hugo-fixit/shortcode-caniuse v1.3.1 // indirect
+	github.com/hugo-fixit/shortcode-caniuse v1.4.0 // indirect
 	github.com/hugo-fixit/shortcode-docs-bookmark v1.1.0 // indirect
 	github.com/hugo-fixit/shortcode-missing-translation v1.0.0 // indirect
 	github.com/hugo-fixit/shortcode-mmt-netease v1.4.0 // indirect

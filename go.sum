@@ -16,8 +16,8 @@ github.com/hugo-fixit/hugo-json-feed v1.2.0 h1:lsK2WvT/YrkSDuQxZHHC9TIN7TW7sZNVC
 github.com/hugo-fixit/hugo-json-feed v1.2.0/go.mod h1:ystvqmSnWdkU0aBybKKNztj8P1ViY6AhMaK/bsBL9uw=
 github.com/hugo-fixit/shortcode-asciinema v1.1.0 h1:nli2H/BeufC/LgT+Md35NFLfSYoNGs0z0yhCkH5cbvU=
 github.com/hugo-fixit/shortcode-asciinema v1.1.0/go.mod h1:xSMC2YHX8KCM8EPPmn7PA6Cwg6X9UGsV8gA7+1WBPTw=
-github.com/hugo-fixit/shortcode-caniuse v1.3.1 h1:Z66s3syCinpmZ/A646pVlHT2J0TfXpxY1EU/2+Wlc3E=
-github.com/hugo-fixit/shortcode-caniuse v1.3.1/go.mod h1:RoPLFt+7uLui5rjvkC/qFGeo4nly5AzzwIID9SoDKNc=
+github.com/hugo-fixit/shortcode-caniuse v1.4.0 h1:XBMTnBTx2zUdqSHi9oYCZy/CkjZs0O4e8YlrKUF0f9I=
+github.com/hugo-fixit/shortcode-caniuse v1.4.0/go.mod h1:RoPLFt+7uLui5rjvkC/qFGeo4nly5AzzwIID9SoDKNc=
 github.com/hugo-fixit/shortcode-docs-bookmark v1.1.0 h1:T7bZlx+aT75QQWogA76hxnvuNLsnl4x0RESuqN4wdhI=
 github.com/hugo-fixit/shortcode-docs-bookmark v1.1.0/go.mod h1:suLPTLy/z2dvpHMEn9TFE+AxwyuTzmmD87vEiW078wI=
 github.com/hugo-fixit/shortcode-missing-translation v1.0.0 h1:GqGtQysYOLXrXAb1tjGh2x+zf4X1tazxmxE7gqo8NYg=
