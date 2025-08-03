@@ -642,7 +642,7 @@ disableThemeInject = false
 # 使用我的邀请链接获取 PostChat Key，感谢您的支持！
 # https://ai.zhheo.com/console/login?InviteID=85041330
 [postChat]
-  enable = true
+  enable = false
   key = "ed872bf9336506bea545183089f5034f81fea6af"
   # How users initiate chats: ["iframe", "magic"]
   userMode = "magic"
@@ -688,7 +688,7 @@ disableThemeInject = false
 # FixIt 0.3.17 | NEW Summary AI config
 # See https://ai.zhheo.com/docs/summary.html
 [postSummary]
-  enable = true
+  enable = false
   # If you set `params.postChat.key`, you don't need to set `params.postSummary.key`
   key = ""
   title = ""
