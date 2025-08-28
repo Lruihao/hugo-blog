@@ -54,7 +54,7 @@ $blog-bg-color: #fafaf8 !default;
   }
 }
 
-.container:has(.home) {
+.fi-container:has(.home) {
   &::before {
     content: '';
     position: absolute;
