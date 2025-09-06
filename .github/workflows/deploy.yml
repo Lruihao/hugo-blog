@@ -24,14 +24,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ssh-key: ${{ secrets.SYNC_CONTENT }}
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
-      - name: Install
-        run: npm install
+          submodules: true # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+      
+      - uses: pnpm/action-setup@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Cache Hugo resources
         uses: actions/cache@v4
@@ -65,7 +71,7 @@ jobs:
       - name: Build
         env:
           HUGO_PARAMS_GHTOKEN: ${{ secrets.HUGO_PARAMS_GHTOKEN }}
-        run: npm run build
+        run: pnpm build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
@@ -85,7 +91,7 @@ jobs:
           ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
           ALGOLIA_INDEX_NAME: 'index'
           ALGOLIA_INDEX_FILE: './public/search.json'
-        run: npm run algolia
+        run: pnpm algolia
 
       # - name: Install coscmd
       #   run: sudo pip install coscmd
@@ -105,4 +111,4 @@ jobs:
       #   env:
       #     SECRET_ID: ${{ secrets.COS_SECRET_ID }}
       #     SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}
-      #   run: npm run qcloudcdn
+      #   run: pnpm qcloudcdn

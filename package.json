@@ -1,6 +1,8 @@
 {
-  "name": "lruihao-blog-hugo",
+  "name": "@lruihao/hugo-blog",
   "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.15.1",
   "description": "Lruihao's Note - A front-end technical blog.",
   "homepage": "https://github.com/Lruihao/hugo-blog#readme",
   "bugs": {
@@ -17,7 +19,7 @@
     "build": "hugo --gc --minify --logLevel info",
     "fix:md": "autocorrect content --fix && markdownlint-cli2 \"content/**/*.md\" --fix",
     "lint:md": "autocorrect content --lint && markdownlint-cli2 \"content/**/*.md\"",
-    "prepare": "husky",
+    "prepare": "simple-git-hooks",
     "qcloudcdn": "node .scripts/qcloudcdn.js $SECRET_ID $SECRET_KEY",
     "server": "hugo server -D --disableFastRender --navigateToChanged --renderToMemory --bind 0.0.0.0",
     "server:production": "npm run server -- --environment production",
@@ -31,12 +33,15 @@
   "devDependencies": {
     "autocorrect-node": "^2.14.0",
     "cross-env": "^7.0.3",
-    "husky": "^9.1.7",
     "lint-staged": "^16.1.0",
     "markdownlint-cli2": "^0.18.1",
-    "markdownlint-rule-search-replace": "^1.2.0"
+    "markdownlint-rule-search-replace": "^1.2.0",
+    "simple-git-hooks": "^2.13.1"
   },
   "engines": {
     "node": ">=20.17"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
   }
 }
