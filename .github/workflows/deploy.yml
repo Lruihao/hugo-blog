@@ -47,7 +47,7 @@ jobs:
           path: resources
           key: ${{ env.cache-name }}
 
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "^1.20.0"
       - run: go version
