@@ -7,10 +7,12 @@
     - hugo-fixit/FixIt
     - Lruihao/CoverView
     - Lruihao/el-table-sticky
+    - Lruihao/auto-changelog-plus
     - Lruihao/mmt-webfont
     - Lruihao/vercel-proxy
     - Lruihao/vue-el-demo
     - Lruihao/html-demo
+    - Lruihao/json-viewer-element
     - Lruihao/caniuse-embed-element
     - Lruihao/watermark
     - Lruihao/vue-minder-editor-extended
