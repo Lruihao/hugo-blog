@@ -3,10 +3,10 @@ module github.com/Lruihao/hugo-blog
 go 1.20
 
 require (
-	github.com/hugo-fixit/FixIt v0.4.0-alpha.2.0.20251120045334-9c0510918112 // indirect
+	github.com/hugo-fixit/FixIt v0.4.0-alpha.2.0.20251121124315-6f99565f0d0f // indirect
 	github.com/hugo-fixit/cmpt-flyfish v1.1.0 // indirect
 	github.com/hugo-fixit/cmpt-mdevtools v1.1.0 // indirect
-	github.com/hugo-fixit/cmpt-translate v1.10.2 // indirect
+	github.com/hugo-fixit/cmpt-translate v1.10.3 // indirect
 	github.com/hugo-fixit/component-projects v1.8.0 // indirect
 	github.com/hugo-fixit/fixit-bundle v1.5.9 // indirect
 	github.com/hugo-fixit/hugo-atom-feed v1.2.3 // indirect

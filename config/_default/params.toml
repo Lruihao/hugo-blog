@@ -820,6 +820,7 @@ disableThemeInject = false
   enable = true
   # The translation service provider, ['client.edge', 'translate.service']
   # See: https://translate.zvo.cn/43086.html
+  # service = 'client.edge'
   service = 'translate.service'
   # List of language ID to translate to, e.g. ["english", "chinese_simplified", "chinese_traditional", ...]
   # If not set, it will be translated to all languages
