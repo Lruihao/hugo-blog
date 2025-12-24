@@ -434,11 +434,6 @@ disableThemeInject = false
     scale = true
     # whether to add FullscreenControl
     fullscreen = true
-  # FixIt 0.3.0 | NEW [Experimental] cache remote images locally, see: https://github.com/hugo-fixit/FixIt/pull/362
-  [page.cacheRemoteImages]
-    enable = false
-    # replace remote image URL with local image url (place in public/images/remote/)
-    replace = false
   # FixIt 0.3.0 | NEW Related content config
   [page.related]
     enable = true
@@ -766,6 +761,7 @@ disableThemeInject = false
     "inject/shortcode-caniuse.html",
     "inject/cmpt-flyfish.html",
     "inject/cmpt-mdevtools.html",
+    "inject/santa-hat.fixit.html",
     "inject/cmpt-translate.html",
   ]
   postFooterBefore = []

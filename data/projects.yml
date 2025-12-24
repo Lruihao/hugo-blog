@@ -27,6 +27,7 @@
     - hugo-fixit/action-component-list
     - hugo-fixit/component-projects
     - hugo-fixit/cmpt-translate
+    - hugo-fixit/cmpt-santa-hat
     - hugo-fixit/shortcode-asciinema
     - hugo-fixit/shortcode-caniuse
     - hugo-fixit/shortcode-mmt-netease
