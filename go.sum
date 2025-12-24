@@ -4,8 +4,8 @@ github.com/hugo-fixit/cmpt-flyfish v1.1.0 h1:HhI8B/63TdzPJtgWBy0gSE+5Y2VL83VaOU3
 github.com/hugo-fixit/cmpt-flyfish v1.1.0/go.mod h1:59rRcovSQTuEwS7NzJNdHc3eRGXqxpELxHj2gCoXXSo=
 github.com/hugo-fixit/cmpt-mdevtools v1.1.0 h1:7/p3ogY6doOv2HvPn4/QM6bpBXq7YmPcKpD5rTyzeYk=
 github.com/hugo-fixit/cmpt-mdevtools v1.1.0/go.mod h1:+1tfeT4ugFNa1kx/3yQF0NUup2Fejiq7EwvrpcY2xWw=
-github.com/hugo-fixit/cmpt-santa-hat v1.0.1 h1:ogNUep/9f2WJSmgnf3xQm8tDSBEEfKDKGlACzWbKSoc=
-github.com/hugo-fixit/cmpt-santa-hat v1.0.1/go.mod h1:h25a6xmOj1CFIIpSaKeJIWcTtoQyVR39Uu47NDiZLb0=
+github.com/hugo-fixit/cmpt-santa-hat v1.0.2 h1:ISzH+jxgh1nSoLazcjXclIFMOaFj3mv2x7jvnd5/Mys=
+github.com/hugo-fixit/cmpt-santa-hat v1.0.2/go.mod h1:h25a6xmOj1CFIIpSaKeJIWcTtoQyVR39Uu47NDiZLb0=
 github.com/hugo-fixit/cmpt-translate v1.10.3 h1:eLyoNodcpUNgsV+K01NNuHs1yvHTsYAVbXkwaZZsWuY=
 github.com/hugo-fixit/cmpt-translate v1.10.3/go.mod h1:JZ0STubquTlRgyyGhGPlt2s0KJ1gCa99+P8ltTwQRM4=
 github.com/hugo-fixit/component-projects v1.9.1 h1:0TO/nt6JbpsMPIvdQ6CU+GUkYxN1MCRdcJduA8Gu8B4=
