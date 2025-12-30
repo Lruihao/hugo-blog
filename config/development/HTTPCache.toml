@@ -1,11 +1,14 @@
 
 [cache]
-  [cache.for]
-    includes = ['https://api.github.com/repos/**']
-    # excludes = ['**']
+
+[cache.for]
+includes = ['https://api.github.com/repos/**']
+# excludes = ['**']
+
 [[polls]]
-  disable = true
-  high = '0s'
-  low = '0s'
-  [polls.for]
-    includes = ['**']
+disable = true
+high = '0s'
+low = '0s'
+
+[polls.for]
+includes = ['**']

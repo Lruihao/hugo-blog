@@ -6,3 +6,8 @@
 # posts = ":year/:month/:filename"
 posts = "posts/:slugorcontentbasename"
 private = ":sections[1:]/:slugorcontentbasename"
+
+# [page]
+# [section]
+# [taxonomy]
+# [term]

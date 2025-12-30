@@ -1,17 +1,31 @@
 # -------------------------------------------------------------------------------------
 # Hugo Configuration
-# See: https://gohugo.io/getting-started/configuration/
+# See: https://gohugo.io/configuration/all/
 # -------------------------------------------------------------------------------------
 
+# website title
 title = "菠菜眾長"
+# Hostname (and path) to the root
 baseURL = "http://localhost:1313"
-# theme = ["FixIt", "shortcode-mmt-netease", "shortcode-sponsor-log"]
+# theme list
+# theme = ["FixIt"] # enable in your site config file
+# determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "zh-cn"
 disableLanguages = ["en", "zh-tw"]
+# whether to include Chinese/Japanese/Korean
 hasCJKLanguage = true
+# copyright description used only for seo schema
+copyright = ""
+# whether to use robots.txt
 enableRobotsTXT = true
-enableEmoji = true
+# whether to use git commit log
 enableGitInfo = true
+# whether to use emoji code
+enableEmoji = true
+# the main sections of a site
+# if set, the MainSections method on the Site object returns the given sections,
+# otherwise it returns the section with the most pages.
+# mainSections = ["posts"]
 buildDrafts = false
 summaryLength = 150
 titleCaseStyle = "ap"
@@ -26,5 +40,6 @@ ignoreLogs = [
   "error-get-gh-repo",
   "error-remote-getjson",
   "error-missing-instagram-accesstoken",
-  "warning-dev-version"
+  "warning-dev-version",
+  "warning-remote-image",
 ]

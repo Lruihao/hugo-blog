@@ -4,131 +4,154 @@
 # -------------------------------------------------------------------------------------
 
 [[main]]
-  identifier = "archives"
-  pre = ""
-  post = ""
-  name = "文章"
-  url = "/archives/"
-  title = ""
-  weight = 1
-  [main.params]
-    # icon = "fa-solid fa-archive"
-    icon = "fa-solid fa-feather"
+identifier = "archives"
+pre = ""
+post = ""
+name = "文章"
+url = "/archives/"
+title = ""
+weight = 1
+
+[main.params]
+# icon = "fa-solid fa-archive"
+icon = "fa-solid fa-feather"
+
 [[main]]
-  identifier = "categories"
-  parent = "archives"
-  pre = ""
-  post = ""
-  name = "分类"
-  url = "/categories/"
-  title = ""
-  weight = 2
-  [main.params]
-    icon = "fa-solid fa-folder-tree"
+identifier = "categories"
+parent = "archives"
+pre = ""
+post = ""
+name = "分类"
+url = "/categories/"
+title = ""
+weight = 2
+
+[main.params]
+icon = "fa-solid fa-folder-tree"
+
 [[main]]
-  identifier = "collections"
-  parent = "archives"
-  pre = ""
-  post = ""
-  name = "合集"
-  url = "/collections/"
-  title = ""
-  weight = 3
-  [main.params]
-    icon = "fa-solid fa-layer-group"
+identifier = "collections"
+parent = "archives"
+pre = ""
+post = ""
+name = "合集"
+url = "/collections/"
+title = ""
+weight = 3
+
+[main.params]
+icon = "fa-solid fa-layer-group"
+
 [[main]]
-  identifier = "tags"
-  parent = "archives"
-  pre = ""
-  post = ""
-  name = "标签"
-  url = "/tags/"
-  title = ""
-  weight = 3
-  [main.params]
-    icon = "fa-solid fa-tags"
+identifier = "tags"
+parent = "archives"
+pre = ""
+post = ""
+name = "标签"
+url = "/tags/"
+title = ""
+weight = 3
+
+[main.params]
+icon = "fa-solid fa-tags"
+
 [[main]]
-  identifier = "fixit"
-  parent = "archives"
-  pre = '<img class="fixit-icon" src="https://fixit.lruihao.cn/images/hugo-fixit.webp" alt="FixIt logo">'
-  post = '<i class="fa-solid fa-external-link-alt fa-fw fa-xs text-secondary"></i>'
-  name = "FixIt"
-  url = "https://fixit.lruihao.cn/"
-  title = "FixIt 官网"
-  weight = 4
-  [main.params]
-    divided = true
+identifier = "fixit"
+parent = "archives"
+pre = '<img class="fixit-icon" src="https://fixit.lruihao.cn/images/hugo-fixit.webp" alt="FixIt logo">'
+post = '<i class="fa-solid fa-external-link-alt fa-fw fa-xs text-secondary"></i>'
+name = "FixIt"
+url = "https://fixit.lruihao.cn/"
+title = "FixIt 官网"
+weight = 4
+
+[main.params]
+divided = true
+
 [[main]]
-  identifier = "projects"
-  pre = ""
-  post = ""
-  name = "开源"
-  url = "/projects/"
-  title = "开源项目"
-  weight = 4
-  [main.params]
-    # icon = "fa-solid fa-code-branch"
-    icon = "fa-solid fa-lightbulb fa-shake"
+identifier = "projects"
+pre = ""
+post = ""
+name = "开源"
+url = "/projects/"
+title = "开源项目"
+weight = 4
+
+[main.params]
+# icon = "fa-solid fa-code-branch"
+icon = "fa-solid fa-lightbulb fa-shake"
+
 [[main]]
-  identifier = "friends"
-  pre = ""
-  post = ""
-  name = "友链"
-  url = "/friends/"
-  title = "友情链接"
-  weight = 5
-  [main.params]
-    icon = "fa-solid fa-users"
+identifier = "friends"
+pre = ""
+post = ""
+name = "友链"
+url = "/friends/"
+title = "友情链接"
+weight = 5
+
+[main.params]
+icon = "fa-solid fa-users"
+
 [[main]]
-  identifier = "reward"
-  pre = ""
-  post = ""
-  name = "赞赏"
-  url = "/reward/"
-  title = ""
-  weight = 6
-  [main.params]
-    icon = "fa-solid fa-hand-holding-dollar"
+identifier = "reward"
+pre = ""
+post = ""
+name = "赞赏"
+url = "/reward/"
+title = ""
+weight = 6
+
+[main.params]
+icon = "fa-solid fa-hand-holding-dollar"
+
 [[main]]
-  identifier = "guestbook"
-  pre = ""
-  post = ""
-  name = "留言"
-  url = "/guestbook/"
-  title = ""
-  weight = 7
-  [main.params]
-    icon = "fa-solid fa-comment-dots"
+identifier = "guestbook"
+pre = ""
+post = ""
+name = "留言"
+url = "/guestbook/"
+title = ""
+weight = 7
+
+[main.params]
+icon = "fa-solid fa-comment-dots"
+
 [[main]]
-  identifier = "rss"
-  pre = ""
-  post = ""
-  name = "RSS"
-  url = "/index.xml"
-  title = "通过 RSS 订阅"
-  weight = 8
-  [main.params]
-    icon = "fa-solid fa-rss"
-    type = "desktop"
+identifier = "rss"
+pre = ""
+post = ""
+name = "RSS"
+url = "/index.xml"
+title = "通过 RSS 订阅"
+weight = 8
+
+[main.params]
+icon = "fa-solid fa-rss"
+type = "desktop"
+
 [[main]]
-  identifier = "about"
-  pre = ""
-  post = ""
-  name = "关于"
-  url = "/about/"
-  title = ""
-  weight = 100
-  [main.params]
-    icon = "fa-solid fa-quote-left"
+identifier = "about"
+pre = ""
+post = ""
+name = "关于"
+url = "/about/"
+title = ""
+weight = 100
+
+[main.params]
+icon = "fa-solid fa-quote-left"
+
 [[main]]
-  identifier = "github"
-  pre = ""
-  post = ""
-  name = "关注 Follow"
-  url = "https://github.com/Lruihao/"
-  title = ""
-  weight = ""
-  [main.params]
-    class = "text-center"
-    icon = "fa-brands fa-github fa-lg"
-    type = "mobile"
+identifier = "github"
+pre = ""
+post = ""
+name = "关注 Follow"
+url = "https://github.com/Lruihao/"
+title = ""
+weight = ""
+
+[main.params]
+class = "text-center"
+icon = "fa-brands fa-github fa-lg"
+type = "mobile"

@@ -1,6 +1,7 @@
 # -------------------------------------------------------------------------------------
-# Front Matter Configuration
-# See: https://gohugo.io/configuration/front-matter/
+# Imaging Configuration
+# See: https://gohugo.io/configuration/imaging/
 # -------------------------------------------------------------------------------------
 
-lastmod = ["lastmod", ":fileModTime", ":git", ":defalut"]
+_merge = "shallow"
+quality = 75

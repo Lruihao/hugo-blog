@@ -4,19 +4,19 @@
 # -------------------------------------------------------------------------------------
 
 [postChat]
-  enable = false
-  hotWords = false
+enable = false
+hotWords = false
 
 [postSummary]
-  enable = false
+enable = false
 
 # FixIt 0.2.15 | NEW Developer options
 # Select the scope named `public_repo` to generate personal access token,
 # Configure with environment variable `HUGO_PARAMS_GHTOKEN=xxx`, see https://gohugo.io/functions/os/getenv/#examples
 [dev]
-  enable = false
-  # Check for updates
-  c4u = false
+enable = false
+# Check for updates
+c4u = false
 
 # -------------------------------------------------------------------------------------
 # Theme Components Configuration
@@ -24,11 +24,11 @@
 
 # Mobile Devtools confi
 [mDevtools]
-  enable = true
-  # "eruda", "vConsole" supported
-  type = "eruda"
+enable = true
+# "eruda", "vConsole" supported
+type = "eruda"
 
 # Content adapters config for component projects
 # https://github.com/hugo-fixit/component-projects
 [projectsAdapters]
-  enable = false
+enable = false
