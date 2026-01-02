@@ -112,31 +112,31 @@ jobs:
             # Get Post Count from filesystem
             FS_POST_COUNT=$(find content/posts -name "*.md" ! -name "_index.md" | wc -l | xargs)
             
-            echo "> Run $SITE_DAYS days | $FS_POST_COUNT Posts" > "$NOTES_FILE"
-            echo ">" >> "$NOTES_FILE"
-            echo "> Powered by Hugo $HUGO_VERSION & FixIt $FIXIT_VERSION" >> "$NOTES_FILE"
             echo "" >> "$NOTES_FILE"
+            echo "> Run $SITE_DAYS days | $FS_POST_COUNT Posts\\" > "$NOTES_FILE"
+            echo "> Powered by Hugo $HUGO_VERSION & FixIt $FIXIT_VERSION" >> "$NOTES_FILE"
 
             if [ -f "public/readme.md" ] && grep -q "^## $TARGET_YEAR" public/readme.md; then
-               # Extract content for the target year from readme.md, excluding the header
-               awk -v target="## $TARGET_YEAR" '
-                 $0 ~ target { flag=1; next }
-                 /^## / && flag { flag=0; exit }
-                 flag { print }
-               ' public/readme.md >> "$NOTES_FILE"
+              # Extract content for the target year from readme.md, excluding the header
+              awk -v target="## $TARGET_YEAR" '
+                $0 ~ target { flag=1; next }
+                /^## / && flag { flag=0; exit }
+                flag { print }
+              ' public/readme.md >> "$NOTES_FILE"
             else
-               echo "public/readme.md not found or year not found. Using default notes."
-               echo "Annual release for $TARGET_YEAR." >> "$NOTES_FILE"
+              echo "" >> "$NOTES_FILE"
+              echo "public/readme.md not found or year not found. Using default notes."
+              echo "Annual release for $TARGET_YEAR." >> "$NOTES_FILE"
+              echo "" >> "$NOTES_FILE"
             fi
 
             PREVIOUS_YEAR=$(($TARGET_YEAR - 1))
             REPO_URL="${{ github.server_url }}/${{ github.repository }}"
-            echo "" >> "$NOTES_FILE"
             
             if gh release view "$PREVIOUS_YEAR" >/dev/null 2>&1; then
-              echo "Full Changelog: $REPO_URL/compare/$PREVIOUS_YEAR...$TARGET_YEAR" >> "$NOTES_FILE"
+              echo "**Full Changelog**: $REPO_URL/compare/$PREVIOUS_YEAR...$TARGET_YEAR" >> "$NOTES_FILE"
             else
-              echo "Full Changelog: $REPO_URL/commits/$TARGET_YEAR" >> "$NOTES_FILE"
+              echo "**Full Changelog**: $REPO_URL/commits/$TARGET_YEAR" >> "$NOTES_FILE"
             fi
 
             gh release create "$TARGET_YEAR" \
