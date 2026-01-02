@@ -40,7 +40,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Cache Hugo resources
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         env:
           cache-name: cache-hugo-resources
         with:
@@ -53,7 +53,7 @@ jobs:
       - run: go version
 
       - name: Cache Go Modules
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: |
             ~/.cache/go-build
