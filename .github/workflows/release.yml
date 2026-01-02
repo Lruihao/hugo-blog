@@ -1,0 +1,146 @@
+name: Annual Release
+
+on:
+  schedule:
+    - cron: '0 0 31 12 *' # Runs at 00:00 UTC on December 31st
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Create Annual Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          ssh-key: ${{ secrets.SYNC_CONTENT }}
+          submodules: true
+          fetch-depth: 0
+
+      - name: Configure Git Author
+        run: |
+          git config --global user.name "Lruihao"
+          git config --global user.email "1024@lruihao.cn"
+
+      - uses: pnpm/action-setup@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Cache Hugo resources
+        uses: actions/cache@v5
+        env:
+          cache-name: cache-hugo-resources
+        with:
+          path: resources
+          key: ${{ env.cache-name }}
+
+      - uses: actions/setup-go@v6
+        with:
+          go-version: "^1.20.0"
+      - run: go version
+
+      - name: Cache Go Modules
+        uses: actions/cache@v5
+        with:
+          path: |
+            ~/.cache/go-build
+            ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ vars.HUGO_VERSION || 'latest' }}
+          extended: true
+
+      - name: Build
+        env:
+          HUGO_PARAMS_GHTOKEN: ${{ secrets.HUGO_PARAMS_GHTOKEN }}
+        run: pnpm build
+
+      - name: Create Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.HUGO_PARAMS_GHTOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          CURRENT_YEAR=$(date +'%Y')
+          LAST_YEAR=$(($CURRENT_YEAR - 1))
+          TARGET_YEAR="$CURRENT_YEAR"
+
+          # Logic for manual trigger
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Manual trigger detected. Checking if release for $LAST_YEAR exists..."
+            if ! gh release view "$LAST_YEAR" >/dev/null 2>&1; then
+              echo "Release for $LAST_YEAR does not exist. Will create release for $LAST_YEAR."
+              TARGET_YEAR="$LAST_YEAR"
+            else
+              echo "Release for $LAST_YEAR already exists. Will create release for $CURRENT_YEAR."
+            fi
+          fi
+
+          echo "Target Release Year: $TARGET_YEAR"
+          
+          if gh release view "$TARGET_YEAR" >/dev/null 2>&1; then
+            echo "Release $TARGET_YEAR already exists. Skipping."
+          else
+            echo "Creating release for $TARGET_YEAR..."
+            
+            # Extract release notes from public/readme.md
+            NOTES_FILE="release_notes.md"
+            
+            # Get Versions
+            HUGO_VERSION=$(hugo version | awk '{print $2}' | cut -d- -f1)
+            FIXIT_VERSION=$(go list -m -f '{{.Version}}' github.com/hugo-fixit/FixIt)
+            
+            # Get Site Stats
+            SITE_START_DATE=$(grep 'value = "' config/_default/params.toml | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}')
+            if [ -n "$SITE_START_DATE" ]; then
+              SITE_DAYS=$(( ($(date +%s) - $(date -d "$SITE_START_DATE" +%s)) / 86400 ))
+            else
+              SITE_DAYS="Unknown"
+            fi
+
+            # Get Post Count from filesystem
+            FS_POST_COUNT=$(find content/posts -name "*.md" ! -name "_index.md" | wc -l | xargs)
+            
+            echo "> Run $SITE_DAYS days | $FS_POST_COUNT Posts" > "$NOTES_FILE"
+            echo ">" >> "$NOTES_FILE"
+            echo "> Powered by Hugo $HUGO_VERSION & FixIt $FIXIT_VERSION" >> "$NOTES_FILE"
+            echo "" >> "$NOTES_FILE"
+
+            if [ -f "public/readme.md" ] && grep -q "^## $TARGET_YEAR" public/readme.md; then
+               # Extract content for the target year from readme.md, excluding the header
+               awk -v target="## $TARGET_YEAR" '
+                 $0 ~ target { flag=1; next }
+                 /^## / && flag { flag=0; exit }
+                 flag { print }
+               ' public/readme.md >> "$NOTES_FILE"
+            else
+               echo "public/readme.md not found or year not found. Using default notes."
+               echo "Annual release for $TARGET_YEAR." >> "$NOTES_FILE"
+            fi
+
+            PREVIOUS_YEAR=$(($TARGET_YEAR - 1))
+            REPO_URL="${{ github.server_url }}/${{ github.repository }}"
+            echo "" >> "$NOTES_FILE"
+            
+            if gh release view "$PREVIOUS_YEAR" >/dev/null 2>&1; then
+              echo "Full Changelog: $REPO_URL/compare/$PREVIOUS_YEAR...$TARGET_YEAR" >> "$NOTES_FILE"
+            else
+              echo "Full Changelog: $REPO_URL/commits/$TARGET_YEAR" >> "$NOTES_FILE"
+            fi
+
+            gh release create "$TARGET_YEAR" \
+              --title "$TARGET_YEAR" \
+              --draft \
+              --notes-file "$NOTES_FILE"
+          fi
