@@ -646,7 +646,7 @@ theme = "minimal"
 # https://ai.zhheo.com/console/login?InviteID=85041330
 [postChat]
 enable = true
-key = "ed872bf9336506bea545183089f5034f81fea6af"
+key = "P-HJ9FXI41JLU1WBK1"
 # How users initiate chats: ["iframe", "magic"]
 userMode = "magic"
 addButton = true
@@ -695,7 +695,7 @@ enable = true
 # If you set `params.postChat.key`, you don't need to set `params.postSummary.key`
 key = ""
 title = ""
-# themes options: ["", "simple", "yanzhi"]
+# themes options: ["", "simple", "yanzhi", "menghuan"]
 theme = ""
 postURL = ""
 blacklist = ""
@@ -703,6 +703,11 @@ wordLimit = 5000
 typingAnimate = true
 beginningText = ""
 loadingText = true
+
+# FixIt 0.4.0 | NEW Podcast AI config
+# See https://ai.zhheo.com/docs/podcast.html
+[podcast]
+enable = true
 
 # FixIt 0.3.10 | NEW Global Feed config for RSS, Atom and JSON feed.
 [feed]
