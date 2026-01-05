@@ -3,7 +3,6 @@
     "eliostruyf.vscode-front-matter",
     "budparr.language-hugo-vscode",
     "kaellarkin.hugo-shortcode-syntax",
-    "eliostruyf.vscode-hugo-themer",
     "yzhang.markdown-all-in-one",
     "bierner.markdown-emoji",
     "shd101wyy.markdown-preview-enhanced",
@@ -11,6 +10,7 @@
     "mushan.vscode-paste-image",
     "redhat.vscode-yaml",
     "tamasfe.even-better-toml",
-    "huacnlee.autocorrect"
+    "huacnlee.autocorrect",
+    "lruihao.hugo-partials-refs"
   ]
 }
