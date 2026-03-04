@@ -775,6 +775,7 @@ head = [
   "inject/component-projects.html",
   "inject/fixit-docs-bookmark.html",
   "inject/shortcode-rewards.html",
+  "inject/cmpt-post-preview.html",
   "custom/page-style.html",
 ]
 menuDesktop = [
@@ -1324,3 +1325,23 @@ cdn = ""
 # Whether to enable Enterprise-level translation channel
 # If set to true, automatically switch to the best translation service
 enterprise = true
+
+[postPreview]
+enable = true
+# Log to console
+debug = false
+# Disable on mobile/touch devices (also checks hover/pointer media queries)
+mobileBp = 900
+# Disable on "/" and "/<lang>/" home pages
+disableOnHome = true
+# Disable inside this container (e.g. homepage post list)
+excludeSelector = "body > div.wrapper > main > div.home"
+# Hover timings
+showDelay = 120
+hideDelay = 220
+# Crop top part of the preview by shifting iframe content up
+cropTopPx = 60
+# If true: load tippy/popper from unpkg CDN
+# If false: use local assets/*
+tippyFromCdn = true
+

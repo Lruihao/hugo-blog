@@ -12,8 +12,8 @@ $blog-bg-color: #fafaf8 !default;
 }
 
 #header-desktop {
-  @include transition(filter 0.3s ease);
-  @include box-shadow(none !important);
+  transition: filter 0.3s ease;
+  box-shadow: none !important;
 
   :root:not([data-theme='dark']) & {
     background-image: linear-gradient(180deg, lighten($blog-base-color, 5%), $blog-base-color);

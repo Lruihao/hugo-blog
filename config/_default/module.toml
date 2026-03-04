@@ -6,6 +6,10 @@
 [[imports]]
 path = "github.com/hugo-fixit/fixit-bundle"
 
+[[imports]]
+path = "github.com/Artexxx/cmpt-post-preview"
+version = "latest"
+
 [hugoVersion]
 extended = true
-min = "0.147.7"
+min = "0.156.0"

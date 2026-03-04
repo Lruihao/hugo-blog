@@ -65,7 +65,7 @@ jobs:
 
       - name: Build
         env:
-          HUGO_PARAMS_GHTOKEN: ${{ secrets.HUGO_PARAMS_GHTOKEN }}
+          HUGO_PARAMS_GHTOKEN: ${{ secrets.HUGO_PARAMS_GHTOKEN || secrets.GITHUB_TOKEN }}
         run: pnpm build
 
       - name: Create Release
