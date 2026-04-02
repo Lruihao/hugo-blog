@@ -10,6 +10,9 @@ path = "github.com/hugo-fixit/fixit-bundle"
 path = "github.com/Artexxx/cmpt-post-preview"
 version = "latest"
 
+[[imports]]
+path = "github.com/hugo-fixit/cmpt-markmap"
+
 [hugoVersion]
 extended = true
 min = "0.156.0"

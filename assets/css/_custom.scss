@@ -8,14 +8,14 @@ $blog-base-color: #e6e5f8 !default;
 $blog-bg-color: #fafaf8 !default;
 
 :root {
-  --grid-line-color: rgba(60, 10, 30, .04);
+  --grid-line-color: light-dark(rgba(60, 10, 30, .04), rgba(195, 245, 215, .04));
 }
 
 #header-desktop {
   transition: filter 0.3s ease;
   box-shadow: none !important;
 
-  :root:not([data-theme='dark']) & {
+  @include light-mode {
     background-image: linear-gradient(180deg, lighten($blog-base-color, 5%), $blog-base-color);
   }
 
@@ -34,22 +34,23 @@ $blog-bg-color: #fafaf8 !default;
     background-position: top;
     background-repeat: no-repeat;
 
-    [data-theme='dark'] & {
+    @include dark-mode {
       background-image: url(/images/drop-dark.min.svg);
     }
   }
 
   &:hover {
-    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0 0 0.75rem light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1)));
+  }
 
-    [data-theme='dark'] & {
-      filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.1));
-    }
+  @include scroll-state-query('scroller scroll-state(scrollable: top)') {
+    box-shadow: $header-box-shadow;
+    filter: drop-shadow(0 0 0.75rem light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1)));
   }
 }
 
 .github-corner svg {
-  :root:not([data-theme='dark']) & {
+  @include light-mode {
     fill: darken($blog-base-color, 25%);
   }
 }
@@ -67,11 +68,6 @@ $blog-bg-color: #fafaf8 !default;
     background-size: 40px 40px;
     background-position: center;
     border-bottom: 1px solid var(--grid-line-color);
-
-    [data-theme='dark'] & {
-      background-image: linear-gradient(90deg, rgba(195, 245, 215, .04) 1px, transparent 0), linear-gradient(1turn, rgba(195, 245, 215, .04) 1px, transparent 0);
-      border-bottom-color: rgba(195, 245, 215, .04);
-    }
   }
 }
 
@@ -98,17 +94,13 @@ $blog-bg-color: #fafaf8 !default;
 
 .single {
   .single-subtitle {
-    color: #57606a;
+    color: light-dark(#57606a, inherit);
   }
 
   .content {
     background-image: linear-gradient(90deg, var(--grid-line-color) 3%, transparent 0), linear-gradient(1turn, var(--grid-line-color) 3%, transparent 0);
     background-size: 20px 20px;
     background-position: center;
-  
-    [data-theme='dark'] & {
-      background-image: linear-gradient(90deg, rgba(195, 245, 215, .04) 3%, transparent 0), linear-gradient(1turn, rgba(195, 245, 215, .04) 3%, transparent 0);
-    }
   }
 
   // Content adapter generated posts style
@@ -127,18 +119,10 @@ $blog-bg-color: #fafaf8 !default;
   .featured-image-preview {
     mask-image: linear-gradient(
       180deg,
-      #fff 0%,
-      rgba(255, 255, 255, 0.8) 65%,
-      rgba(255, 255, 255, 0.4) 100%
+      light-dark(#fff, #000) 0%,
+      light-dark(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.8)) 65%,
+      light-dark(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4)) 100%
     );
-    [data-theme='dark'] & {
-      mask-image: linear-gradient(
-        180deg,
-        #000 0%,
-        rgba(0, 0, 0, 0.8) 65%,
-        rgba(0, 0, 0, 0.4) 100%
-      );
-    }
   }
 
   &.posts {
@@ -178,14 +162,14 @@ $blog-bg-color: #fafaf8 !default;
 // ==============================
 // Not mobile style
 // ==============================
-@media only screen and (min-width: 681px) {
+@include media('sm', 'up') {
   body {
-    :not([data-theme='dark']) & {
+    @include light-mode {
       background-color: $blog-bg-color;
     }
   }
   .breadcrumb-container {
-    :root:not([data-theme='dark']) & {
+    @include light-mode {
       background-color: $blog-bg-color;
   
       .breadcrumb {
@@ -198,23 +182,12 @@ $blog-bg-color: #fafaf8 !default;
 // ==============================
 // Mobile style
 // ==============================
-@media only screen and (max-width: 680px) {
+@include media('xs') {
   .home {  
     &.posts {
       .home-avatar img {
         width: 6rem;
       }
-    }
-  }
-}
-
-// ==============================
-// Dark style
-// ==============================
-[data-theme='dark'] {
-  .single {
-    .single-subtitle {
-      color: inherit;
     }
   }
 }

@@ -4,6 +4,7 @@ use .
 use ../hugo-fixit/FixIt
 use ../hugo-fixit/component-projects
 use ../hugo-fixit/cmpt-flyfish
+use ../hugo-fixit/cmpt-markmap
 use ../hugo-fixit/cmpt-mdevtools
 use ../hugo-fixit/cmpt-santa-hat
 use ../hugo-fixit/cmpt-translate
