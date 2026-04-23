@@ -27,15 +27,16 @@ $blog-bg-color: #fafaf8 !default;
     width: MAX(360px, 10%);
     height: 110px;
     pointer-events: none;
-    background-image: url(/images/drop.min.svg);
+    background-image: url(/images/drop.responsive.svg);
     // 背景图水平翻转
     transform: scaleX(-1);
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
-
+    
+    // https://lruihao.cn/posts/svg-dark-light/
     @include dark-mode {
-      background-image: url(/images/drop-dark.min.svg);
+      background-image: url(/images/drop.responsive.svg#drop-dark-only);
     }
   }
 
