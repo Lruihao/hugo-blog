@@ -8,9 +8,9 @@ require (
 	github.com/hugo-fixit/cmpt-flyfish v1.1.0 // indirect
 	github.com/hugo-fixit/cmpt-mdevtools v1.1.0 // indirect
 	github.com/hugo-fixit/cmpt-santa-hat v1.0.3 // indirect
-	github.com/hugo-fixit/cmpt-translate v1.12.2 // indirect
+	github.com/hugo-fixit/cmpt-translate v1.12.3 // indirect
 	github.com/hugo-fixit/component-projects v1.10.0 // indirect
-	github.com/hugo-fixit/fixit-bundle v1.6.7 // indirect
+	github.com/hugo-fixit/fixit-bundle v1.6.8 // indirect
 	github.com/hugo-fixit/hugo-atom-feed v1.3.1 // indirect
 	github.com/hugo-fixit/hugo-json-feed v1.3.1 // indirect
 	github.com/hugo-fixit/shortcode-asciinema v1.1.0 // indirect
