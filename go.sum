@@ -6,8 +6,8 @@ github.com/hugo-fixit/cmpt-flyfish v1.1.0 h1:HhI8B/63TdzPJtgWBy0gSE+5Y2VL83VaOU3
 github.com/hugo-fixit/cmpt-flyfish v1.1.0/go.mod h1:59rRcovSQTuEwS7NzJNdHc3eRGXqxpELxHj2gCoXXSo=
 github.com/hugo-fixit/cmpt-mdevtools v1.1.0 h1:7/p3ogY6doOv2HvPn4/QM6bpBXq7YmPcKpD5rTyzeYk=
 github.com/hugo-fixit/cmpt-mdevtools v1.1.0/go.mod h1:+1tfeT4ugFNa1kx/3yQF0NUup2Fejiq7EwvrpcY2xWw=
-github.com/hugo-fixit/cmpt-santa-hat v1.0.3 h1:2N++EKF/GtbYJ9Pa8aI/Hp67xNiqVb+sz04PJw8fTv0=
-github.com/hugo-fixit/cmpt-santa-hat v1.0.3/go.mod h1:h25a6xmOj1CFIIpSaKeJIWcTtoQyVR39Uu47NDiZLb0=
+github.com/hugo-fixit/cmpt-santa-hat v1.1.0 h1:QNTwFFLLl5yu2vx04j+kjA0d8E14kjojwWbsNM+y0HA=
+github.com/hugo-fixit/cmpt-santa-hat v1.1.0/go.mod h1:h25a6xmOj1CFIIpSaKeJIWcTtoQyVR39Uu47NDiZLb0=
 github.com/hugo-fixit/cmpt-translate v1.12.3 h1:FqtKzi3deEPjTE7ziaYgEtTgciwxvBnBLjtQrbnMKCw=
 github.com/hugo-fixit/cmpt-translate v1.12.3/go.mod h1:JZ0STubquTlRgyyGhGPlt2s0KJ1gCa99+P8ltTwQRM4=
 github.com/hugo-fixit/component-projects v1.10.0 h1:PCGSLvOXr+bef/3jnElZ9VUMdk54v3H8mFniihEoNos=
@@ -20,12 +20,12 @@ github.com/hugo-fixit/hugo-json-feed v1.3.1 h1:WUeynNiYZm4i8t7V2LS3fLv03T0u6sOdJ
 github.com/hugo-fixit/hugo-json-feed v1.3.1/go.mod h1:ystvqmSnWdkU0aBybKKNztj8P1ViY6AhMaK/bsBL9uw=
 github.com/hugo-fixit/shortcode-asciinema v1.1.0 h1:nli2H/BeufC/LgT+Md35NFLfSYoNGs0z0yhCkH5cbvU=
 github.com/hugo-fixit/shortcode-asciinema v1.1.0/go.mod h1:xSMC2YHX8KCM8EPPmn7PA6Cwg6X9UGsV8gA7+1WBPTw=
-github.com/hugo-fixit/shortcode-caniuse v1.5.0 h1:BO0Gg58adqiE/LmsCMRzcS7tbT5TSx7MhNMVNOOvUFE=
-github.com/hugo-fixit/shortcode-caniuse v1.5.0/go.mod h1:RoPLFt+7uLui5rjvkC/qFGeo4nly5AzzwIID9SoDKNc=
+github.com/hugo-fixit/shortcode-caniuse v1.6.0 h1:h29uXKgFuMpnJnDwc7wn6jNkXUZWawi21fKs22LYJ2w=
+github.com/hugo-fixit/shortcode-caniuse v1.6.0/go.mod h1:RoPLFt+7uLui5rjvkC/qFGeo4nly5AzzwIID9SoDKNc=
 github.com/hugo-fixit/shortcode-docs-bookmark v1.1.2 h1:2vOxNdSn2KBI6wJ9sNxm3VQolSYEwKxm2ZfW9xT5M0s=
 github.com/hugo-fixit/shortcode-docs-bookmark v1.1.2/go.mod h1:suLPTLy/z2dvpHMEn9TFE+AxwyuTzmmD87vEiW078wI=
-github.com/hugo-fixit/shortcode-missing-translation v1.1.1 h1:+g5tzx3fx829Aep4Wj4CqkcLDv02/K0apL1OlGnoomw=
-github.com/hugo-fixit/shortcode-missing-translation v1.1.1/go.mod h1:yjDPW+mrZcaxM75vdbO2Z8jjZO93CW0IH1f8mlZgV08=
+github.com/hugo-fixit/shortcode-missing-translation v1.2.0 h1:t9cOk5sy8SCDb+shB8f11S8ZS2x/5X0y+wH+GHNo+w4=
+github.com/hugo-fixit/shortcode-missing-translation v1.2.0/go.mod h1:yjDPW+mrZcaxM75vdbO2Z8jjZO93CW0IH1f8mlZgV08=
 github.com/hugo-fixit/shortcode-mmt-netease v1.4.0 h1:tw63JG0e1/jcPrY0QqoxoZzpyKoApTA0bJDwq7JOC+U=
 github.com/hugo-fixit/shortcode-mmt-netease v1.4.0/go.mod h1:uCRIQhOWONAycwsepEcQ+9ePRAeCQuxoCSWfctH1DI8=
 github.com/hugo-fixit/shortcode-rewards v1.1.1 h1:IfKQ6oYEptzaAaqC4UBJ97HOMjubBV6jHNlr1wzENzE=
