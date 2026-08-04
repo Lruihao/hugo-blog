@@ -799,6 +799,7 @@ assets = [
   "custom/use-assets.html",
   "inject/shortcode-caniuse.html",
   "inject/cmpt-flyfish.html",
+  "inject/cmpt-markmap.fixit.html",
   "inject/cmpt-mdevtools.html",
   "inject/santa-hat.fixit.html",
   "inject/cmpt-translate.html",
