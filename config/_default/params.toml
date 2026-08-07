@@ -1554,7 +1554,7 @@ dark = "rgb(255 255 255 / 10%)"
 
 # Mobile Devtools config
 [m_devtools]
-enable = false
+enable = true
 # "eruda", "vConsole" supported
 type = "eruda"
 
