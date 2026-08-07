@@ -68,6 +68,9 @@ jobs:
       - name: Setup fixit-encrypt
         uses: hugo-fixit/action-fixit-encrypt@v1
 
+      - name: Setup Dart Sass
+        uses: dw-labs-org/dart-sass-gha@v1
+
       - name: Build
         env:
           HUGO_PARAMS_GHTOKEN: ${{ secrets.HUGO_PARAMS_GHTOKEN || secrets.GITHUB_TOKEN }}
