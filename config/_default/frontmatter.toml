@@ -3,4 +3,10 @@
 # See: https://gohugo.io/configuration/front-matter/
 # -------------------------------------------------------------------------------------
 
-lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
+_merge = "shallow"
+lastmod = [
+  "lastmod",
+  ":git",
+  ":fileModTime",
+  ":default",
+]

@@ -1,9 +1,6 @@
 # -------------------------------------------------------------------------------------
-# Sitemap Configuration
-# See: https://gohugo.io/configuration/sitemap/
+# Build Configuration
+# See: https://gohugo.io/configuration/build/
 # -------------------------------------------------------------------------------------
 
-changefreq = "weekly"
-disable = false
-filename = "sitemap.xml"
-priority = 0.5
+noJSConfigInAssets = true

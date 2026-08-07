@@ -6,13 +6,14 @@
 [[imports]]
 path = "github.com/hugo-fixit/fixit-bundle"
 
-[[imports]]
-path = "github.com/Artexxx/cmpt-post-preview"
-version = "latest"
+# TODO: cmpt-post-preview v1.0.1 is not yet compatible with FixIt v1 (SCSS _variables path changed)
+# [[imports]]
+# path = "github.com/Artexxx/cmpt-post-preview"
+# version = "latest"
 
 [[imports]]
 path = "github.com/hugo-fixit/cmpt-markmap"
 
 [hugoVersion]
 extended = true
-min = "0.156.0"
+min = "0.161.0"

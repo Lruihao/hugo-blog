@@ -3,7 +3,7 @@
   {{- $_ := (resources.Get "images/icons/wechat.svg").RelPermalink -}}
   {{- $fingerprint := .Scratch.Get "fingerprint" -}}
   {{- /* wechat-box.min.css */ -}}
-  {{- $options := dict "Source" "css/_custom/wechat-box.scss" "Fingerprint" $fingerprint -}}
+  {{- $options := dict "Source" "scss/_custom/wechat-box.scss" "Fingerprint" $fingerprint -}}
   {{- $toCSS := dict "targetPath" "css/wechat-box.min.css" "enableSourceMap" true -}}
   {{- $options = dict "Context" . "ToCSS" $toCSS | merge $options -}}
   {{- partial "plugin/style.html" $options -}}

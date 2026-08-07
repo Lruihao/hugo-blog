@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------------------
 
 weight = 3
-languageCode = "en"
-languageName = "English"
+locale = "en"
+label = "English"
 hasCJKLanguage = false
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."

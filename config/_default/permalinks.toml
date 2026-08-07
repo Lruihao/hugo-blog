@@ -1,6 +1,6 @@
 # -------------------------------------------------------------------------------------
 # Permalinks Configuration
-# See: https://gohugo.io/content-management/urls/#permalinks
+# See: https://gohugo.io/configuration/permalinks/
 # -------------------------------------------------------------------------------------
 
 # posts = ":year/:month/:filename"

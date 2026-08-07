@@ -3,12 +3,13 @@
 # See: https://gohugo.io/configuration/outputs/
 # -------------------------------------------------------------------------------------
 
-# Options to make hugo output files, the optional values are below:
-# home = ["html", "rss", "atom", "jsonfeed", "archives", "offline", "readme", "baidu_urls", "search"]
+# options to make hugo output files, the available values are below:
+# home = ["html", "rss", "atom", "jsonfeed", "archives", "search", "offline", "manifest", "link", "readme", "baidu_urls"]
 # page = ["html", "markdown"]
 # section = ["html", "rss", "jsonfeed"]
 # taxonomy = ["html"]
 # term = ["html", "rss", "jsonfeed"]
+
 _merge = "shallow"
 home = [
   "html",
@@ -16,9 +17,12 @@ home = [
   "jsonfeed",
   "archives",
   "offline",
+  "search",
+  "manifest",
   "readme",
-  "baidu_urls",
-  "search"
+  "link",
+  "readme",
+  "baidu_urls"
 ]
 page = [
   "html",

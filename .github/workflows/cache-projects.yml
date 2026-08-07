@@ -1,0 +1,168 @@
+name: Cache Projects Data
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cache:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Extract repos from data files
+        id: repos
+        run: |
+          if ! command -v yq &> /dev/null; then
+            sudo wget -qO /usr/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+            sudo chmod +x /usr/bin/yq
+          fi
+          yq --version
+          echo "Data files found:"
+          ls -la data/projects* 2>/dev/null || echo "  No data/projects* files"
+          repos=""
+          langs=""
+          for f in data/projects*.yml data/projects*.yaml; do
+            [ -f "$f" ] || continue
+            echo "Processing: $f"
+            extracted=$(yq '[.[].repos[]] | unique | .[]' "$f" 2>&1) || true
+            echo "  Extracted: $extracted"
+            repos="$repos"$'\n'"$extracted"
+            # Extract language code from filename: projects.{lang}.yml -> {lang}
+            basename="${f##*/}"
+            name="${basename%.*}"
+            lang="${name#projects}"
+            if [ -n "$lang" ] && [ "$lang" != "$name" ]; then
+              lang="${lang#.}"
+              echo "  Language: $lang"
+              langs="$langs"$'\n'"$lang"
+            fi
+          done
+          repos=$(echo "$repos" | sort -u | grep -v '^$' | grep -v '^Lruihao/hugo-blog$' || true)
+          langs=$(echo "$langs" | sort -u | grep -v '^$' || true)
+          echo "$repos" > /tmp/repos.txt
+          echo "$langs" > /tmp/langs.txt
+          echo "Found repos:"
+          cat /tmp/repos.txt
+          echo "Found languages:"
+          cat /tmp/langs.txt
+          if [ -z "$repos" ]; then
+            echo "No repos found, skipping cache update"
+          fi
+
+      - name: Fetch repo data from GitHub
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cache_file="data/caches/projects.json"
+          mkdir -p data/caches
+
+          echo "{}" > /tmp/result.json
+          cached_count=0
+          while IFS= read -r repo; do
+            [ -z "$repo" ] && continue
+            echo "Fetching: $repo"
+
+            # Get repo info
+            gh api "repos/$repo" > /tmp/repo.json 2>/dev/null || {
+              echo "  Failed to fetch repo info, skipping"
+              continue
+            }
+
+            # Get default README content
+            readme_content=""
+            readme_html_url=""
+            readme_json=$(gh api "repos/$repo/readme" 2>/dev/null) || true
+            if [ -n "$readme_json" ]; then
+              readme_content=$(echo "$readme_json" | jq -r '.content // empty' | base64 -d 2>/dev/null) || true
+              readme_html_url=$(echo "$readme_json" | jq -r '.html_url // empty') || true
+            fi
+
+            if [ -z "$readme_content" ]; then
+              echo "  No README found, skipping"
+              continue
+            fi
+
+            echo "  Default README length: ${#readme_content} chars"
+
+            # Write default readme to temp file
+            echo "$readme_content" > /tmp/readme_content.txt
+            printf '%s' "$readme_html_url" > /tmp/readme_html_url.txt
+
+            # Build readme object
+            jq -n \
+              --rawfile content /tmp/readme_content.txt \
+              --rawfile html_url /tmp/readme_html_url.txt \
+              '{ content: $content, html_url: ($html_url | gsub("\n"; "")) }' > /tmp/readme.json || true
+
+            # Fetch localized READMEs
+            while IFS= read -r lang; do
+              [ -z "$lang" ] && continue
+              lang_readme_json=$(gh api "repos/$repo/contents/README.$lang.md" 2>/dev/null) || true
+              if [ -n "$lang_readme_json" ]; then
+                lang_content=$(echo "$lang_readme_json" | jq -r '.content // empty' | base64 -d 2>/dev/null) || true
+                lang_html_url=$(echo "$lang_readme_json" | jq -r '.html_url // empty') || true
+                if [ -n "$lang_content" ]; then
+                  echo "$lang_content" > /tmp/lang_content.txt
+                  printf '%s' "$lang_html_url" > /tmp/lang_html_url.txt
+                  jq -n \
+                    --rawfile content /tmp/lang_content.txt \
+                    --rawfile html_url /tmp/lang_html_url.txt \
+                    '{ content: $content, html_url: ($html_url | gsub("\n"; "")) }' > /tmp/lang_readme.json || true
+                  jq -c --slurpfile lang_data /tmp/lang_readme.json --arg lang "$lang" \
+                    '. + {($lang): $lang_data[0]}' /tmp/readme.json > /tmp/readme_tmp.json && mv /tmp/readme_tmp.json /tmp/readme.json || true
+                  echo "  README.$lang.md found"
+                fi
+              fi
+            done < /tmp/langs.txt
+
+            # Extract only the fields used by templates, merge with readme
+            entry=$(jq -c \
+              --slurpfile readme /tmp/readme.json \
+              '{
+                created_at, updated_at, full_name, name, html_url, homepage,
+                description, default_branch, visibility, is_template, archived,
+                language, topics, stargazers_count, forks_count,
+                owner: { login: .owner.login, html_url: .owner.html_url, avatar_url: .owner.avatar_url },
+                readme: $readme[0]
+              } + (if .parent then { parent: { html_url: .parent.html_url, full_name: .parent.full_name } } else {} end)
+              ' /tmp/repo.json) 2>&1 || entry=""
+
+            if [ -z "$entry" ] || [ "$entry" = "null" ]; then
+              echo "  Failed to build entry: $entry"
+              continue
+            fi
+
+            # Add to result, keyed by full_name
+            full_name=$(echo "$entry" | jq -r '.full_name')
+            echo "$entry" > /tmp/entry.json
+            jq -c --arg key "$full_name" --slurpfile val /tmp/entry.json \
+              '. + {($key): $val[0]}' /tmp/result.json > /tmp/result_tmp.json && mv /tmp/result_tmp.json /tmp/result.json || true
+            cached_count=$((cached_count + 1))
+            echo "  Cached: $full_name"
+          done < /tmp/repos.txt
+
+          echo "Total repos cached: $cached_count"
+          final_keys=$(jq -r 'keys | length' /tmp/result.json 2>/dev/null || echo 0)
+          echo "Result keys: $final_keys"
+
+          if [ "$final_keys" -gt 0 ] 2>/dev/null; then
+            jq '.' /tmp/result.json > "$cache_file"
+            echo "Cache updated: $cache_file ($final_keys repos)"
+          else
+            echo "No repos cached, skipping write"
+          fi
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          branch: main
+          commit_user_name: Cell[bot]
+          commit_user_email: lrhx@users.noreply.github.com
+          commit_author: Cell[bot] <lrhx@users.noreply.github.com>
+          commit_message: 'chore(data): update projects cache'

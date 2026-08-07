@@ -3,11 +3,11 @@
 # See: https://fixit.lruihao.cn/theme-documentation-basics/#site-configuration
 # -------------------------------------------------------------------------------------
 
-[postChat]
+[post_chat]
 enable = false
-hotWords = false
+hot_words = false
 
-[postSummary]
+[post_summary]
 enable = false
 
 # FixIt 0.2.15 | NEW Developer options
@@ -22,13 +22,13 @@ c4u = false
 # Theme Components Configuration
 # -------------------------------------------------------------------------------------
 
-# Mobile Devtools confi
-[mDevtools]
+# Mobile Devtools config
+[m_devtools]
 enable = true
 # "eruda", "vConsole" supported
 type = "eruda"
 
 # Content adapters config for component projects
 # https://github.com/hugo-fixit/component-projects
-[projectsAdapters]
+[projects_adapters]
 enable = false

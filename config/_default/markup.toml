@@ -5,7 +5,8 @@
 
 _merge = "shallow"
 
-# Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+# Syntax highlighting.
+# See: [Syntax Highlighting](https://gohugo.io/content-management/syntax-highlighting)
 [highlight]
 # ~~~~~~~~~~ necessary configurations ~~~~~~~~~~
 # https://github.com/hugo-fixit/FixIt/issues/43
@@ -17,8 +18,8 @@ guessSyntax = true
 lineNos = true
 lineNumbersInTable = true
 
-# Goldmark is from Hugo 0.60 the default library used for Markdown
-# See: https://gohugo.io/configuration/markup/#goldmark
+# Goldmark is from Hugo 0.60 the default library used for Markdown.
+# See: [Goldmark](https://gohugo.io/configuration/markup/#goldmark)
 [goldmark]
 duplicateResourceFiles = false
 
@@ -50,7 +51,7 @@ enable = true
 [goldmark.extensions.extras.superscript]
 enable = true
 
-# https://gohugo.io/content-management/mathematics/
+# See: [Mathematics](https://gohugo.io/content-management/mathematics/)
 [goldmark.extensions.passthrough]
 enable = true
 
@@ -84,6 +85,6 @@ title = true
 
 [goldmark.renderer]
 hardWraps = false
-# whether to use HTML tags directly in the document
+# Whether to use HTML tags directly in the document.
 unsafe = true
 xhtml = false

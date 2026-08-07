@@ -8,49 +8,49 @@
 # fingerprint = "sha256"
 
 # Comment config
-[page.comment]
+[comment]
 enable = true
 
-[page.comment.valine]
+[comment.valine]
 enable = false
-appId = "7HwTRT0Q0Tfrat6ugrT6P67c-gzGzoHsz"
-appKey = "mhTY1kuUmviCtQwkwOASfsfD"
+app_id = "7HwTRT0Q0Tfrat6ugrT6P67c-gzGzoHsz"
+app_key = "mhTY1kuUmviCtQwkwOASfsfD"
 # placeholder = "ヾﾉ≧∀≦)o~ 有事請留言！\n評論功能以郵件作為通知方式！\n如有必要請填寫正確郵箱哦！"
 placeholder = "ヾﾉ≧∀≦)o~ 有事请留言！\n评论功能以邮件作为通知方式！\n如有必要请填写正确邮箱哦！"
 avatar = "wavatar"
 meta = ['nick','mail','link']
-requiredFields = ['nick','mail','link']
-pageSize = 10
+required_fields = ['nick','mail','link']
+page_size = 10
 lang = "zh-CN"
 visitor = true
-recordIP = true
+record_ip = true
 highlight = true
-enableQQ = true
-serverURLs = ""
+enable_qq = true
+server_urls = ""
 #  emoji data file name, default is "google.yml"
 # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
 # located in "themes/FixIt/assets/lib/valine/emoji/" directory
 # you can store your own data files in the same path under your project:
 # "assets/lib/valine/emoji/"
 emoji = ""
-commentCount = true # FixIt NEW | 0.2.13
+comment_count = true
 
-# FixIt 0.2.14 | NEW Giscus comments config (https://giscus.app/)
-[page.comment.giscus]
+# Giscus comments config (https://giscus.app/)
+[comment.giscus]
 enable = true
 repo = "Lruihao/hugo-blog"
-repoId = "MDEwOlJlcG9zaXRvcnk0MDQzNDY3MDk="
+repo_id = "MDEwOlJlcG9zaXRvcnk0MDQzNDY3MDk="
 category = "General"
-categoryId = "DIC_kwDOGBnXVc4CApHL"
+category_id = "DIC_kwDOGBnXVc4CApHL"
 mapping = "title"
-strict = "0" # FixIt NEW | 0.2.18
+strict = "0"
 term = ""
-reactionsEnabled = "1"
-emitMetadata = "0"
-inputPosition = "top" # ["top", "bottom"]
-lightTheme = "light"
-darkTheme = "dark_dimmed"
-lazyLoad = true
+reactions_enabled = "1"
+emit_metadata = "0"
+input_position = "top" # ["top", "bottom"]
+light_theme = "light"
+dark_theme = "dark_dimmed"
+lazy_load = true
 
 # FixIt 0.3.10 | NEW Busuanzi count
 [busuanzi]
@@ -59,9 +59,9 @@ enable = true
 # busuanzi count core script source. Default is https://vercount.one/js
 source = "https://vercount.one/js"
 # whether to show the site views
-siteViews = true
+site_views = true
 # whether to show the page views
-pageViews = true
+page_views = true
 
 # CDN config for third-party library files
 [cdn]

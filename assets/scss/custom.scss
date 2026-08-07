@@ -1,11 +1,15 @@
 // ==============================
 // Custom style
 // ==============================
-@import '_custom/page-style.scss';
-@import '_custom/shaky.scss';
+@use "sass:color";
+@use "core/mixins" as *;
+@use '_custom/page-style';
+@use '_custom/shaky';
 
 $blog-base-color: #e6e5f8 !default;
 $blog-bg-color: #fafaf8 !default;
+$header-box-shadow: 0 0 1.5rem 0 light-dark(rgba(0, 0, 0, 0.125), rgba(255, 255, 255, 0.125));
+$global-border-color: #d7dee4 !default;
 
 :root {
   --grid-line-color: light-dark(rgba(60, 10, 30, .04), rgba(195, 245, 215, .04));
@@ -16,7 +20,7 @@ $blog-bg-color: #fafaf8 !default;
   box-shadow: none !important;
 
   @include light-mode {
-    background-image: linear-gradient(180deg, lighten($blog-base-color, 5%), $blog-base-color);
+    background-image: linear-gradient(180deg, color.adjust($blog-base-color, $lightness: 5%), $blog-base-color);
   }
 
   &::after {
@@ -33,7 +37,7 @@ $blog-bg-color: #fafaf8 !default;
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
-    
+
     // https://lruihao.cn/posts/svg-dark-light/
     @include dark-mode {
       background-image: url(/images/drop.responsive.svg#drop-dark-only);
@@ -44,7 +48,7 @@ $blog-bg-color: #fafaf8 !default;
     filter: drop-shadow(0 0 0.75rem light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1)));
   }
 
-  @include scroll-state-query('scroller scroll-state(scrollable: top)') {
+  @include scroll-state-query('scroller', 'scroll-state(scrollable: top)') {
     box-shadow: $header-box-shadow;
     filter: drop-shadow(0 0 0.75rem light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1)));
   }
@@ -52,7 +56,7 @@ $blog-bg-color: #fafaf8 !default;
 
 .github-corner svg {
   @include light-mode {
-    fill: darken($blog-base-color, 25%);
+    fill: color.adjust($blog-base-color, $lightness: -25%);
   }
 }
 
@@ -172,9 +176,9 @@ $blog-bg-color: #fafaf8 !default;
   .breadcrumb-container {
     @include light-mode {
       background-color: $blog-bg-color;
-  
+
       .breadcrumb {
-        border-color: darken($global-border-color, 6%);
+        border-color: color.adjust($global-border-color, $lightness: -6%);
       }
     }
   }
@@ -184,7 +188,7 @@ $blog-bg-color: #fafaf8 !default;
 // Mobile style
 // ==============================
 @include media('xs') {
-  .home {  
+  .home {
     &.posts {
       .home-avatar img {
         width: 6rem;

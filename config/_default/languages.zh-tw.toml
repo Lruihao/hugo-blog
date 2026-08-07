@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------------------
 
 weight = 2
-languageCode = "zh-TW"
-languageName = "繁體中文"
+locale = "zh-TW"
+label = "繁體中文"
 hasCJKLanguage = true
 copyright = "本站內容採用 CC BY-NC-SA 4.0 國際授權條款。"

@@ -3,37 +3,43 @@
 # See: https://gohugo.io/configuration/all/
 # -------------------------------------------------------------------------------------
 
-# website title
+# Website title.
 title = "菠菜眾長"
-# Hostname (and path) to the root
+# Hostname (and path) to the root.
 baseURL = "http://localhost:1313"
-# theme list
-# theme = ["FixIt"] # enable in your site config file
-# determines default content language ["en", "zh-cn", "fr", "pl", ...]
+# Theme list.
+# Enable in your site config file.
+# theme = ["FixIt"]
+# Determines default content language.
+# available values: ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "zh-cn"
 disableLanguages = ["en", "zh-tw"]
-# whether to include Chinese/Japanese/Korean
+# Whether to include Chinese/Japanese/Korean.
 hasCJKLanguage = true
-# copyright description used only for seo schema
+# Timezone local.
+timeZone = "Asia/Shanghai"
+# Copyright description used only for SEO schema.
 copyright = ""
-# whether to use robots.txt
+# Whether to use robots.txt.
 enableRobotsTXT = true
-# whether to use git commit log
+# Whether to use git commit log.
 enableGitInfo = true
-# whether to use emoji code
+# Whether to use emoji code.
 enableEmoji = true
-# the main sections of a site
-# if set, the MainSections method on the Site object returns the given sections,
-# otherwise it returns the section with the most pages.
-# mainSections = ["posts"]
 buildDrafts = false
 summaryLength = 150
+# The capitalization rules to follow.
+# available values: ["ap", "chicago", "go", "firstupper", "none"]
 titleCaseStyle = "ap"
+# Whether to capitalize automatic list titles.
 capitalizeListTitles = false
-timeZone = "Asia/Shanghai"
-# the editor to use when creating new content
-newContentEditor = "code"
-# ignore some build errors
+# The main sections of a site.
+# If set, the MainSections method on the Site object returns the given sections,
+# otherwise it returns the section with the most pages.
+# mainSections = ["posts"]
+# The editor to use when creating new content.
+# newContentEditor = "code"
+# Ignore some build warnings and errors.
 ignoreLogs = [
   "error-get-remote-image",
   "error-get-remote-json",

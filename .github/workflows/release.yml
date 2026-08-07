@@ -63,10 +63,16 @@ jobs:
           hugo-version: ${{ vars.HUGO_VERSION || 'latest' }}
           extended: true
 
+      - name: Setup fixit-encrypt
+        uses: hugo-fixit/action-fixit-encrypt@v1
+
       - name: Build
         env:
           HUGO_PARAMS_GHTOKEN: ${{ secrets.HUGO_PARAMS_GHTOKEN || secrets.GITHUB_TOKEN }}
         run: pnpm build
+
+      - name: Encrypt content
+        run: fixit-encrypt --input public
 
       - name: Create Release
         env:
