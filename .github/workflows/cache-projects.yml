@@ -43,7 +43,7 @@ jobs:
               langs="$langs"$'\n'"$lang"
             fi
           done
-          repos=$(echo "$repos" | sort -u | grep -v '^$' | grep -v '^Lruihao/hugo-blog$' || true)
+          repos=$(echo "$repos" | sort -u | grep -v '^$' | grep -Ev '^(Lruihao/hugo-blog|hugo-fixit/docs)$' || true)
           langs=$(echo "$langs" | sort -u | grep -v '^$' || true)
           echo "$repos" > /tmp/repos.txt
           echo "$langs" > /tmp/langs.txt
