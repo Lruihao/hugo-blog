@@ -611,7 +611,7 @@
     "language": "JavaScript",
     "topics": [],
     "stargazers_count": 3820,
-    "forks_count": 2283,
+    "forks_count": 2282,
     "owner": {
       "login": "SchemaStore",
       "html_url": "https://github.com/SchemaStore",
@@ -655,7 +655,7 @@
   },
   "gohugoio/hugo": {
     "created_at": "2013-07-04T15:26:26Z",
-    "updated_at": "2026-08-14T23:59:37Z",
+    "updated_at": "2026-08-15T22:30:29Z",
     "full_name": "gohugoio/hugo",
     "name": "hugo",
     "html_url": "https://github.com/gohugoio/hugo",
@@ -675,7 +675,7 @@
       "hugo",
       "static-site-generator"
     ],
-    "stargazers_count": 89423,
+    "stargazers_count": 89435,
     "forks_count": 8336,
     "owner": {
       "login": "gohugoio",
@@ -689,7 +689,7 @@
   },
   "hugo-fixit/FixIt": {
     "created_at": "2021-12-16T03:35:27Z",
-    "updated_at": "2026-08-14T07:05:18Z",
+    "updated_at": "2026-08-15T05:56:06Z",
     "full_name": "hugo-fixit/FixIt",
     "name": "FixIt",
     "html_url": "https://github.com/hugo-fixit/FixIt",
@@ -712,7 +712,7 @@
       "pwa",
       "pwa-app"
     ],
-    "stargazers_count": 1119,
+    "stargazers_count": 1118,
     "forks_count": 137,
     "owner": {
       "login": "hugo-fixit",
@@ -1288,7 +1288,7 @@
   },
   "mdn/translated-content": {
     "created_at": "2020-12-08T19:38:24Z",
-    "updated_at": "2026-08-14T22:29:23Z",
+    "updated_at": "2026-08-16T01:17:05Z",
     "full_name": "mdn/translated-content",
     "name": "translated-content",
     "html_url": "https://github.com/mdn/translated-content",
@@ -1307,7 +1307,7 @@
       "web-development",
       "web-platform"
     ],
-    "stargazers_count": 2023,
+    "stargazers_count": 2025,
     "forks_count": 8310,
     "owner": {
       "login": "mdn",
@@ -1353,7 +1353,7 @@
   },
   "soybeanjs/soybean-admin": {
     "created_at": "2021-09-08T16:13:36Z",
-    "updated_at": "2026-08-14T23:21:49Z",
+    "updated_at": "2026-08-15T15:20:25Z",
     "full_name": "soybeanjs/soybean-admin",
     "name": "soybean-admin",
     "html_url": "https://github.com/soybeanjs/soybean-admin",
@@ -1378,8 +1378,8 @@
       "vue-admin",
       "vue3"
     ],
-    "stargazers_count": 14822,
-    "forks_count": 2497,
+    "stargazers_count": 14826,
+    "forks_count": 2499,
     "owner": {
       "login": "soybeanjs",
       "html_url": "https://github.com/soybeanjs",
@@ -1392,7 +1392,7 @@
   },
   "star-history/star-history": {
     "created_at": "2015-09-23T03:30:28Z",
-    "updated_at": "2026-08-14T21:49:02Z",
+    "updated_at": "2026-08-15T15:10:31Z",
     "full_name": "star-history/star-history",
     "name": "star-history",
     "html_url": "https://github.com/star-history/star-history",
@@ -1413,7 +1413,7 @@
       "star",
       "star-history"
     ],
-    "stargazers_count": 9387,
+    "stargazers_count": 9389,
     "forks_count": 364,
     "owner": {
       "login": "star-history",
@@ -1421,13 +1421,13 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/124480067?v=4"
     },
     "readme": {
-      "content": "<div align=\"center\">\n\n🧩 [**Also available as a Chrome extension**](https://chrome.google.com/webstore/detail/star-history/iijibbcdddbhokfepbblglfgdglnccfn)\n\n<a href=\"https://www.star-history.com/star-history/star-history\">\n <picture>\n   <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://api.star-history.com/badge?repo=star-history/star-history&theme=dark\" />\n   <source media=\"(prefers-color-scheme: light)\" srcset=\"https://api.star-history.com/badge?repo=star-history/star-history\" />\n   <img alt=\"Star History Rank\" src=\"https://api.star-history.com/badge?repo=star-history/star-history\" />\n </picture>\n</a>\n\n# :sparkles: Star History :sparkles:\n \n[**star-history.com**](https://star-history.com), **the de facto GitHub star history graph.**\n\n<img src=\"https://raw.githubusercontent.com/star-history/star-history/main/assets/nvidia-gtc-2026.webp\" />\n\n</div>\n\n---\n\n👇 **THIS** is a **`live`** chart. Follow [instruction](https://www.star-history.com/blog/how-to-use-github-star-history#how-to-embed-the-chart-in-your-readme) to embed yours.\n\n<a href=\"https://www.star-history.com/?repos=star-history%2Fstar-history&type=date&legend=top-left\">\n <picture>\n   <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://api.star-history.com/chart?repos=star-history/star-history&type=date&theme=dark&legend=top-left&sealed_token=DYeTWCAopiiE2umbQNPumg8YbPnyodS4lGzIhhCvVVvIuGqF2y_EHByyowTpVnmds-frpmYYKc_awzVeAxZ7O3gT7Mu6l8V7DlZ8BaIkBoGcWPhLwZrdWA\" />\n   <source media=\"(prefers-color-scheme: light)\" srcset=\"https://api.star-history.com/chart?repos=star-history/star-history&type=date&legend=top-left&sealed_token=DYeTWCAopiiE2umbQNPumg8YbPnyodS4lGzIhhCvVVvIuGqF2y_EHByyowTpVnmds-frpmYYKc_awzVeAxZ7O3gT7Mu6l8V7DlZ8BaIkBoGcWPhLwZrdWA\" />\n   <img alt=\"Star History Chart\" src=\"https://api.star-history.com/chart?repos=star-history/star-history&type=date&legend=top-left&sealed_token=DYeTWCAopiiE2umbQNPumg8YbPnyodS4lGzIhhCvVVvIuGqF2y_EHByyowTpVnmds-frpmYYKc_awzVeAxZ7O3gT7Mu6l8V7DlZ8BaIkBoGcWPhLwZrdWA\" />\n </picture>\n</a>\n\n<div align=\"left\">\n  \n👇 **THIS** is also a **`live`** badge with global rank. Follow [instruction](https://www.star-history.com/star-history/star-history#badges) to embed yours.\n\n<p align=\"left\">\n <a href=\"https://www.star-history.com/star-history/star-history\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://api.star-history.com/badge?repo=star-history/star-history&theme=dark\" />\n    <source media=\"(prefers-color-scheme: light)\" srcset=\"https://api.star-history.com/badge?repo=star-history/star-history\" />\n    <img alt=\"Star History Rank\" src=\"https://api.star-history.com/badge?repo=star-history/star-history\" />\n  </picture>\n </a>\n</p>\n\n</div>\n\n## 🎁 Sponsors\n\n### Bytebase\n\n[Bytebase](https://bytebase.com?source=star-history) is an open source, web-based database schema change and version control tool for teams. Supporting MySQL, PostgreSQL, Oracle, MongoDB, Redis, Snowflake, ClickHouse, TiDB, Google Spanner.\n\n<a href=\"https://bytebase.com?source=star-history\"><img src=\"https://raw.githubusercontent.com/star-history/star-history/main/frontend/public/assets/ft/bytebase/landing.webp\" /></a>\n\n### Dify\n\n[Dify](https://dify.ai/?utm_source=star-history) is an open source LLMOps platform that helps developers build AI applications more simply and quickly. Its core idea is to define various aspects of AI applications, including Prompts, Contexts, and Plugins, through declarative YAML files.\n\n<a href=\"https://dify.ai/?utm_source=star-history\"><img src=\"https://raw.githubusercontent.com/star-history/star-history/main/frontend/public/assets/ft/dify/landing.webp\" /></a>\n\n### SerpApi\n\n[SerpApi](https://serpapi.com/?utm_source=starhistory) scrapes search engine results easily using a simple API, including Google, Google Maps, Amazon, and more\n\n<a href=\"https://serpapi.com/?utm_source=starhistory\"><img src=\"https://raw.githubusercontent.com/star-history/star-history/main/frontend/public/assets/ft/serpapi/landing.webp\" /></a>\n\n### pgplex\n\n[pgplex](https://www.pgplex.com/?utm_source=starhistory) is the Postgres toolchain for humans and agents\n\n<a href=\"https://www.pgplex.com/?utm_source=starhistory\"><img src=\"https://raw.githubusercontent.com/star-history/star-history/main/frontend/public/assets/ft/pgplex/landing.webp\" /></a>\n\n## ✨ Features\n\n- **Unique** **`sketch xkcd`** feeling **chart**;\n- **One-click** generation of **high-quality** image for chart;\n- Support **multiple chart view** mode **`based on date or timeline`**;\n- **Embed** the **real-time chart** into **`GitHub readme or other websites`** **(like the one we embed here on the top)**\n- And **various** useful **functions**:\n  - toggle **repo visibility**;\n  - **shortcut** to input repo;\n  - **share** on **`Twitter`** **quickly**;\n  - **support** input **multiple repos**;\n  - ...waiting **for you** to **find out!**\n\n## 🌠 Screenshots\n\n<a href=\"https://star-history.com\"><img width=\"800px\" src=\"https://user-images.githubusercontent.com/24653555/154391264-312b448b-f851-41bf-bb8d-4c21ec6795b6.gif\" />\n</a>\n\n### 🧩 [Free chrome extension](https://chrome.google.com/webstore/detail/star-history/iijibbcdddbhokfepbblglfgdglnccfn)\n\n<a href=\"https://chrome.google.com/webstore/detail/star-history/iijibbcdddbhokfepbblglfgdglnccfn\"><img width=\"800px\" src=\"https://user-images.githubusercontent.com/24653555/154391326-61b65d8f-3f9f-4432-b773-5988be75b0ea.png\" /></a>\n\n## 🏗 Development\n\n> We do not accept external contribution.\n\n**`Star-history`** is built using a **modern tech stack**: **`Next.js`** + **`TailwindCSS`**.\n\n### Prerequisites\n\n- [Node.js](https://nodejs.org/en/download/)\n- [pnpm](https://pnpm.io/)\n\n### Homepage\n\n**Homepage** of star-history with most of useful features and blogs about open source.\n\n```shell\ncd frontend && pnpm i && pnpm dev\n```\n\nThe website will be served at http://localhost:3000.\n\n### Chrome Extension\n\n**Chrome extension** supports the **basic chart viewer** as a **free** additional product.\n\n```shell\ncd frontend && pnpm build:ext\n```\n\nLoad the built `./dist` folder as **unpacked project** to chrome extensions page.\n\n### API Server\n\n**API server** is an **`experimental feature`**. It's mainly used to **generate chart `SVG`** image file that can be embeded into **`GitHub readme`**.\n\n```shell\ncd backend && pnpm i && pnpm dev\n```\n\nThe API server will be running on http://localhost:8080.\n",
+      "content": "<div align=\"center\">\n\n🧩 [**Also available as a Chrome extension**](https://chrome.google.com/webstore/detail/star-history/iijibbcdddbhokfepbblglfgdglnccfn)\n\n<a href=\"https://www.star-history.com/star-history/star-history\">\n <picture>\n   <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://api.star-history.com/badge?repo=star-history/star-history&type=rank&theme=dark\" />\n   <source media=\"(prefers-color-scheme: light)\" srcset=\"https://api.star-history.com/badge?repo=star-history/star-history&type=rank\" />\n   <img alt=\"Star History Rank\" src=\"https://api.star-history.com/badge?repo=star-history/star-history\" />\n </picture>\n</a>\n\n# :sparkles: Star History :sparkles:\n \n[**star-history.com**](https://star-history.com), **the de facto GitHub star history graph.**\n\n<img src=\"https://raw.githubusercontent.com/star-history/star-history/main/assets/nvidia-gtc-2026.webp\" />\n\n</div>\n\n---\n\n👇 **THIS** is a **`live`** chart. Follow [instruction](https://www.star-history.com/blog/how-to-use-github-star-history#how-to-embed-the-chart-in-your-readme) to embed yours.\n\n<a href=\"https://www.star-history.com/?repos=star-history%2Fstar-history&type=date&legend=top-left\">\n <picture>\n   <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://api.star-history.com/chart?repos=star-history/star-history&type=date&theme=dark&legend=top-left&sealed_token=DYeTWCAopiiE2umbQNPumg8YbPnyodS4lGzIhhCvVVvIuGqF2y_EHByyowTpVnmds-frpmYYKc_awzVeAxZ7O3gT7Mu6l8V7DlZ8BaIkBoGcWPhLwZrdWA\" />\n   <source media=\"(prefers-color-scheme: light)\" srcset=\"https://api.star-history.com/chart?repos=star-history/star-history&type=date&legend=top-left&sealed_token=DYeTWCAopiiE2umbQNPumg8YbPnyodS4lGzIhhCvVVvIuGqF2y_EHByyowTpVnmds-frpmYYKc_awzVeAxZ7O3gT7Mu6l8V7DlZ8BaIkBoGcWPhLwZrdWA\" />\n   <img alt=\"Star History Chart\" src=\"https://api.star-history.com/chart?repos=star-history/star-history&type=date&legend=top-left&sealed_token=DYeTWCAopiiE2umbQNPumg8YbPnyodS4lGzIhhCvVVvIuGqF2y_EHByyowTpVnmds-frpmYYKc_awzVeAxZ7O3gT7Mu6l8V7DlZ8BaIkBoGcWPhLwZrdWA\" />\n </picture>\n</a>\n\n<div align=\"left\">\n  \n👇 **THIS** is also a **`live`** badge with global rank. Follow [instruction](https://www.star-history.com/star-history/star-history#badges) to embed yours.\n\n<p align=\"left\">\n <a href=\"https://www.star-history.com/star-history/star-history\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://api.star-history.com/badge?repo=star-history/star-history&type=rank&theme=dark\" />\n    <source media=\"(prefers-color-scheme: light)\" srcset=\"https://api.star-history.com/badge?repo=star-history/star-history&type=rank\" />\n    <img alt=\"Star History Rank\" src=\"https://api.star-history.com/badge?repo=star-history/star-history\" />\n  </picture>\n </a>\n</p>\n\n</div>\n\n## 🎁 Sponsors\n\n### Bytebase\n\n[Bytebase](https://bytebase.com?source=star-history) is an open source, web-based database schema change and version control tool for teams. Supporting MySQL, PostgreSQL, Oracle, MongoDB, Redis, Snowflake, ClickHouse, TiDB, Google Spanner.\n\n<a href=\"https://bytebase.com?source=star-history\"><img src=\"https://raw.githubusercontent.com/star-history/star-history/main/frontend/public/assets/ft/bytebase/landing.webp\" /></a>\n\n### Dify\n\n[Dify](https://dify.ai/?utm_source=star-history) is an open source LLMOps platform that helps developers build AI applications more simply and quickly. Its core idea is to define various aspects of AI applications, including Prompts, Contexts, and Plugins, through declarative YAML files.\n\n<a href=\"https://dify.ai/?utm_source=star-history\"><img src=\"https://raw.githubusercontent.com/star-history/star-history/main/frontend/public/assets/ft/dify/landing.webp\" /></a>\n\n### SerpApi\n\n[SerpApi](https://serpapi.com/?utm_source=starhistory) scrapes search engine results easily using a simple API, including Google, Google Maps, Amazon, and more\n\n<a href=\"https://serpapi.com/?utm_source=starhistory\"><img src=\"https://raw.githubusercontent.com/star-history/star-history/main/frontend/public/assets/ft/serpapi/landing.webp\" /></a>\n\n### pgplex\n\n[pgplex](https://www.pgplex.com/?utm_source=starhistory) is the Postgres toolchain for humans and agents\n\n<a href=\"https://www.pgplex.com/?utm_source=starhistory\"><img src=\"https://raw.githubusercontent.com/star-history/star-history/main/frontend/public/assets/ft/pgplex/landing.webp\" /></a>\n\n## ✨ Features\n\n- **Unique** **`sketch xkcd`** feeling **chart**;\n- **One-click** generation of **high-quality** image for chart;\n- Support **multiple chart view** mode **`based on date or timeline`**;\n- **Embed** the **real-time chart** into **`GitHub readme or other websites`** **(like the one we embed here on the top)**\n- And **various** useful **functions**:\n  - toggle **repo visibility**;\n  - **shortcut** to input repo;\n  - **share** on **`Twitter`** **quickly**;\n  - **support** input **multiple repos**;\n  - ...waiting **for you** to **find out!**\n\n## 🌠 Screenshots\n\n<a href=\"https://star-history.com\"><img width=\"800px\" src=\"https://user-images.githubusercontent.com/24653555/154391264-312b448b-f851-41bf-bb8d-4c21ec6795b6.gif\" />\n</a>\n\n### 🧩 [Free chrome extension](https://chrome.google.com/webstore/detail/star-history/iijibbcdddbhokfepbblglfgdglnccfn)\n\n<a href=\"https://chrome.google.com/webstore/detail/star-history/iijibbcdddbhokfepbblglfgdglnccfn\"><img width=\"800px\" src=\"https://user-images.githubusercontent.com/24653555/154391326-61b65d8f-3f9f-4432-b773-5988be75b0ea.png\" /></a>\n\n## 🏗 Development\n\n> We do not accept external contribution.\n\n**`Star-history`** is built using a **modern tech stack**: **`Next.js`** + **`TailwindCSS`**.\n\n### Prerequisites\n\n- [Node.js](https://nodejs.org/en/download/)\n- [pnpm](https://pnpm.io/)\n\n### Homepage\n\n**Homepage** of star-history with most of useful features and blogs about open source.\n\n```shell\ncd frontend && pnpm i && pnpm dev\n```\n\nThe website will be served at http://localhost:3000.\n\n### Chrome Extension\n\n**Chrome extension** supports the **basic chart viewer** as a **free** additional product.\n\n```shell\ncd frontend && pnpm build:ext\n```\n\nLoad the built `./dist` folder as **unpacked project** to chrome extensions page.\n\n### API Server\n\n**API server** is an **`experimental feature`**. It's mainly used to **generate chart `SVG`** image file that can be embeded into **`GitHub readme`**.\n\n```shell\ncd backend && pnpm i && pnpm dev\n```\n\nThe API server will be running on http://localhost:8080.\n",
       "html_url": "https://github.com/star-history/star-history/blob/main/README.md"
     }
   },
   "theme-next/hexo-theme-next": {
     "created_at": "2017-12-31T17:04:21Z",
-    "updated_at": "2026-08-14T13:12:42Z",
+    "updated_at": "2026-08-15T11:15:07Z",
     "full_name": "theme-next/hexo-theme-next",
     "name": "hexo-theme-next",
     "html_url": "https://github.com/theme-next/hexo-theme-next",
@@ -1443,7 +1443,7 @@
       "hexo-theme",
       "theme-next"
     ],
-    "stargazers_count": 8250,
+    "stargazers_count": 8248,
     "forks_count": 1992,
     "owner": {
       "login": "theme-next",
@@ -1522,7 +1522,7 @@
       "zeabur"
     ],
     "stargazers_count": 3089,
-    "forks_count": 621,
+    "forks_count": 622,
     "owner": {
       "login": "walinejs",
       "html_url": "https://github.com/walinejs",
@@ -1548,7 +1548,7 @@
     "language": "Less",
     "topics": [],
     "stargazers_count": 251,
-    "forks_count": 104,
+    "forks_count": 103,
     "owner": {
       "login": "xCss",
       "html_url": "https://github.com/xCss",
@@ -1561,7 +1561,7 @@
   },
   "xnx3/translate": {
     "created_at": "2023-01-17T03:18:01Z",
-    "updated_at": "2026-08-14T09:58:52Z",
+    "updated_at": "2026-08-16T01:16:36Z",
     "full_name": "xnx3/translate",
     "name": "translate",
     "html_url": "https://github.com/xnx3/translate",
@@ -1573,7 +1573,7 @@
     "archived": false,
     "language": "JavaScript",
     "topics": [],
-    "stargazers_count": 3048,
+    "stargazers_count": 3049,
     "forks_count": 477,
     "owner": {
       "login": "xnx3",
