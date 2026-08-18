@@ -598,7 +598,7 @@
   },
   "SchemaStore/schemastore": {
     "created_at": "2014-11-18T01:02:10Z",
-    "updated_at": "2026-08-16T20:25:32Z",
+    "updated_at": "2026-08-17T17:30:40Z",
     "full_name": "SchemaStore/schemastore",
     "name": "schemastore",
     "html_url": "https://github.com/SchemaStore/schemastore",
@@ -655,7 +655,7 @@
   },
   "gohugoio/hugo": {
     "created_at": "2013-07-04T15:26:26Z",
-    "updated_at": "2026-08-16T23:07:37Z",
+    "updated_at": "2026-08-18T01:09:37Z",
     "full_name": "gohugoio/hugo",
     "name": "hugo",
     "html_url": "https://github.com/gohugoio/hugo",
@@ -675,8 +675,8 @@
       "hugo",
       "static-site-generator"
     ],
-    "stargazers_count": 89434,
-    "forks_count": 8336,
+    "stargazers_count": 89442,
+    "forks_count": 8338,
     "owner": {
       "login": "gohugoio",
       "html_url": "https://github.com/gohugoio",
@@ -689,7 +689,7 @@
   },
   "hugo-fixit/FixIt": {
     "created_at": "2021-12-16T03:35:27Z",
-    "updated_at": "2026-08-15T05:56:06Z",
+    "updated_at": "2026-08-17T15:52:03Z",
     "full_name": "hugo-fixit/FixIt",
     "name": "FixIt",
     "html_url": "https://github.com/hugo-fixit/FixIt",
@@ -712,7 +712,7 @@
       "pwa",
       "pwa-app"
     ],
-    "stargazers_count": 1118,
+    "stargazers_count": 1119,
     "forks_count": 137,
     "owner": {
       "login": "hugo-fixit",
@@ -1288,7 +1288,7 @@
   },
   "mdn/translated-content": {
     "created_at": "2020-12-08T19:38:24Z",
-    "updated_at": "2026-08-17T01:15:22Z",
+    "updated_at": "2026-08-18T00:46:13Z",
     "full_name": "mdn/translated-content",
     "name": "translated-content",
     "html_url": "https://github.com/mdn/translated-content",
@@ -1307,7 +1307,7 @@
       "web-development",
       "web-platform"
     ],
-    "stargazers_count": 2026,
+    "stargazers_count": 2025,
     "forks_count": 8309,
     "owner": {
       "login": "mdn",
@@ -1353,7 +1353,7 @@
   },
   "soybeanjs/soybean-admin": {
     "created_at": "2021-09-08T16:13:36Z",
-    "updated_at": "2026-08-16T12:19:36Z",
+    "updated_at": "2026-08-17T12:59:43Z",
     "full_name": "soybeanjs/soybean-admin",
     "name": "soybean-admin",
     "html_url": "https://github.com/soybeanjs/soybean-admin",
@@ -1378,8 +1378,8 @@
       "vue-admin",
       "vue3"
     ],
-    "stargazers_count": 14826,
-    "forks_count": 2499,
+    "stargazers_count": 14827,
+    "forks_count": 2501,
     "owner": {
       "login": "soybeanjs",
       "html_url": "https://github.com/soybeanjs",
@@ -1392,7 +1392,7 @@
   },
   "star-history/star-history": {
     "created_at": "2015-09-23T03:30:28Z",
-    "updated_at": "2026-08-16T19:54:53Z",
+    "updated_at": "2026-08-18T00:43:26Z",
     "full_name": "star-history/star-history",
     "name": "star-history",
     "html_url": "https://github.com/star-history/star-history",
@@ -1413,7 +1413,7 @@
       "star",
       "star-history"
     ],
-    "stargazers_count": 9389,
+    "stargazers_count": 9391,
     "forks_count": 365,
     "owner": {
       "login": "star-history",
@@ -1457,7 +1457,7 @@
   },
   "twikoojs/twikoo": {
     "created_at": "2020-05-24T15:13:26Z",
-    "updated_at": "2026-08-14T13:36:27Z",
+    "updated_at": "2026-08-17T07:41:40Z",
     "full_name": "twikoojs/twikoo",
     "name": "twikoo",
     "html_url": "https://github.com/twikoojs/twikoo",
@@ -1477,8 +1477,8 @@
       "vercel",
       "vue"
     ],
-    "stargazers_count": 2261,
-    "forks_count": 518,
+    "stargazers_count": 2264,
+    "forks_count": 519,
     "owner": {
       "login": "twikoojs",
       "html_url": "https://github.com/twikoojs",
@@ -1491,7 +1491,7 @@
   },
   "walinejs/waline": {
     "created_at": "2020-10-31T07:37:33Z",
-    "updated_at": "2026-08-17T00:10:18Z",
+    "updated_at": "2026-08-17T14:05:00Z",
     "full_name": "walinejs/waline",
     "name": "waline",
     "html_url": "https://github.com/walinejs/waline",
@@ -1521,8 +1521,8 @@
       "vercel",
       "zeabur"
     ],
-    "stargazers_count": 3090,
-    "forks_count": 624,
+    "stargazers_count": 3092,
+    "forks_count": 623,
     "owner": {
       "login": "walinejs",
       "html_url": "https://github.com/walinejs",
