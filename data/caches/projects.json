@@ -598,7 +598,7 @@
   },
   "SchemaStore/schemastore": {
     "created_at": "2014-11-18T01:02:10Z",
-    "updated_at": "2026-08-18T20:45:12Z",
+    "updated_at": "2026-08-20T19:19:15Z",
     "full_name": "SchemaStore/schemastore",
     "name": "schemastore",
     "html_url": "https://github.com/SchemaStore/schemastore",
@@ -610,8 +610,8 @@
     "archived": false,
     "language": "JavaScript",
     "topics": [],
-    "stargazers_count": 3822,
-    "forks_count": 2286,
+    "stargazers_count": 3823,
+    "forks_count": 2288,
     "owner": {
       "login": "SchemaStore",
       "html_url": "https://github.com/SchemaStore",
@@ -655,7 +655,7 @@
   },
   "gohugoio/hugo": {
     "created_at": "2013-07-04T15:26:26Z",
-    "updated_at": "2026-08-19T23:24:21Z",
+    "updated_at": "2026-08-21T00:52:23Z",
     "full_name": "gohugoio/hugo",
     "name": "hugo",
     "html_url": "https://github.com/gohugoio/hugo",
@@ -675,7 +675,7 @@
       "hugo",
       "static-site-generator"
     ],
-    "stargazers_count": 89453,
+    "stargazers_count": 89470,
     "forks_count": 8338,
     "owner": {
       "login": "gohugoio",
@@ -1288,7 +1288,7 @@
   },
   "mdn/translated-content": {
     "created_at": "2020-12-08T19:38:24Z",
-    "updated_at": "2026-08-20T01:17:53Z",
+    "updated_at": "2026-08-20T23:09:16Z",
     "full_name": "mdn/translated-content",
     "name": "translated-content",
     "html_url": "https://github.com/mdn/translated-content",
@@ -1308,7 +1308,7 @@
       "web-platform"
     ],
     "stargazers_count": 2025,
-    "forks_count": 8308,
+    "forks_count": 8307,
     "owner": {
       "login": "mdn",
       "html_url": "https://github.com/mdn",
@@ -1353,7 +1353,7 @@
   },
   "soybeanjs/soybean-admin": {
     "created_at": "2021-09-08T16:13:36Z",
-    "updated_at": "2026-08-20T00:17:15Z",
+    "updated_at": "2026-08-21T01:12:42Z",
     "full_name": "soybeanjs/soybean-admin",
     "name": "soybean-admin",
     "html_url": "https://github.com/soybeanjs/soybean-admin",
@@ -1378,8 +1378,8 @@
       "vue-admin",
       "vue3"
     ],
-    "stargazers_count": 14840,
-    "forks_count": 2505,
+    "stargazers_count": 14856,
+    "forks_count": 2507,
     "owner": {
       "login": "soybeanjs",
       "html_url": "https://github.com/soybeanjs",
@@ -1392,7 +1392,7 @@
   },
   "star-history/star-history": {
     "created_at": "2015-09-23T03:30:28Z",
-    "updated_at": "2026-08-19T22:00:41Z",
+    "updated_at": "2026-08-20T18:46:43Z",
     "full_name": "star-history/star-history",
     "name": "star-history",
     "html_url": "https://github.com/star-history/star-history",
@@ -1413,7 +1413,7 @@
       "star",
       "star-history"
     ],
-    "stargazers_count": 9402,
+    "stargazers_count": 9409,
     "forks_count": 366,
     "owner": {
       "login": "star-history",
@@ -1427,7 +1427,7 @@
   },
   "theme-next/hexo-theme-next": {
     "created_at": "2017-12-31T17:04:21Z",
-    "updated_at": "2026-08-19T11:00:59Z",
+    "updated_at": "2026-08-20T17:47:43Z",
     "full_name": "theme-next/hexo-theme-next",
     "name": "hexo-theme-next",
     "html_url": "https://github.com/theme-next/hexo-theme-next",
@@ -1443,8 +1443,8 @@
       "hexo-theme",
       "theme-next"
     ],
-    "stargazers_count": 8241,
-    "forks_count": 1992,
+    "stargazers_count": 8239,
+    "forks_count": 1991,
     "owner": {
       "login": "theme-next",
       "html_url": "https://github.com/theme-next",
@@ -1478,7 +1478,7 @@
       "vue"
     ],
     "stargazers_count": 2266,
-    "forks_count": 519,
+    "forks_count": 520,
     "owner": {
       "login": "twikoojs",
       "html_url": "https://github.com/twikoojs",
@@ -1491,7 +1491,7 @@
   },
   "walinejs/waline": {
     "created_at": "2020-10-31T07:37:33Z",
-    "updated_at": "2026-08-19T03:09:37Z",
+    "updated_at": "2026-08-20T18:33:14Z",
     "full_name": "walinejs/waline",
     "name": "waline",
     "html_url": "https://github.com/walinejs/waline",
@@ -1521,7 +1521,7 @@
       "vercel",
       "zeabur"
     ],
-    "stargazers_count": 3097,
+    "stargazers_count": 3098,
     "forks_count": 627,
     "owner": {
       "login": "walinejs",
