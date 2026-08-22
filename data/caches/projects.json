@@ -326,7 +326,7 @@
   },
   "Lruihao/json-viewer-element": {
     "created_at": "2025-07-19T07:05:07Z",
-    "updated_at": "2026-04-08T08:42:59Z",
+    "updated_at": "2026-08-21T16:40:39Z",
     "full_name": "Lruihao/json-viewer-element",
     "name": "json-viewer-element",
     "html_url": "https://github.com/Lruihao/json-viewer-element",
@@ -346,7 +346,7 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/33419593?v=4"
     },
     "readme": {
-      "content": "# &lt;json-viewer&gt; Element\n\n简体中文 | [English](./README.en.md)\n\n> 🌈 一个轻量、现代的 JSON 可视化与交互 Web 组件\n\n## 功能特性\n\n- 🌟 **Web 组件**：原生，无框架依赖\n- 🎨 **主题**：支持明暗模式\n- 📦 **盒装**：可选边框与内边距\n- 📋 **可复制**：一键复制 JSON\n- 🔑 **排序**：支持键排序\n- 🔍 **展开深度**：可控初始展开层级\n- 🧩 **自定义复制按钮**：slot 插槽支持\n- 🧬 **类型高亮**：多种类型高亮\n- 🛠️ **自定义事件**：支持 copy/toggle 事件监听\n\n## 使用方法\n\n### 安装\n\n```bash\nnpm install json-viewer-element\n```\n\n### 引入\n\n#### 作为模块\n\n```js\nimport 'json-viewer-element'\n```\n\n#### UMD (CDN)\n\n```html\n<script src=\"https://unpkg.com/json-viewer-element/dist/json-viewer-element.umd.js\"></script>\n```\n\n### 基本用法\n\n手动绑定 value：\n\n```html\n<json-viewer id=\"viewer\" boxed copyable sort expand-depth=\"2\" theme=\"dark\"></json-viewer>\n<script>\n  document.getElementById('viewer').value = { hello: \"world\", arr: [1,2,3] };\n</script>\n```\n\n直接在标签上绑定 value：\n\n```html\n<json-viewer value='{\"hello\":\"world\",\"arr\":[1,2,3]}' boxed copyable sort expand-depth=\"2\" theme=\"dark\"></json-viewer>\n```\n\n在 Vue 框架中使用：\n\nVue 2/3 选项式 API：\n\n```vue\n<template>\n  <json-viewer :value=\"JSON.stringify(json)\" boxed copyable sort expand-depth=\"2\" theme=\"dark\"></json-viewer>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      json: { hello: \"world\", arr: [1,2,3] },\n    }\n  },\n}\n</script>\n```\n\nVue 3 组合式 API：\n\n```vue\n<script lang=\"ts\" setup>\nimport { ref } from 'vue'\nconst json = ref({ hello: \"world\", arr: [1,2,3] })\n</script>\n\n<template>\n  <json-viewer :value=\"JSON.stringify(json)\" boxed copyable sort expand-depth=\"2\" theme=\"dark\"></json-viewer>\n</template>\n```\n\n> [!TIP]\n>\n> [跳过组件解析](https://cn.vuejs.org/guide/extras/web-components.html#skipping-component-resolution)\n>\n> 为了让 Vue 知道某些元素应被视为自定义元素并跳过组件解析，我们可以指定 [`compilerOptions.isCustomElement` 选项](https://cn.vuejs.org/api/application.html#app-config-compileroptions)。\n\n```js\n// vite.config.js\nimport vue from '@vitejs/plugin-vue'\nimport vueJsx from '@vitejs/plugin-vue-jsx'\n\nexport default {\n  plugins: [\n    vue({\n      template: {\n        compilerOptions: {\n          // 将所有带短横线的标签名都视为自定义元素\n          isCustomElement: tag => tag.includes('-')\n        }\n      }\n    }),\n    vueJsx({\n      // 将所有带短横线的标签名都视为自定义元素\n      isCustomElement: tag => tag.includes('-')\n    }),\n  ]\n}\n```\n\n如果你在 Vue 中使用 ESLint，可能需要配置忽略自定义元素：\n\n```js\n// eslint.config.js\nexport default {\n  rules: {\n    'vue/component-name-in-template-casing': [\n      'warn',\n      'PascalCase',\n      {\n        registeredComponentsOnly: false,\n        ignores: ['/^icon-/', 'json-viewer'],\n      },\n    ],\n  },\n}\n```\n\n## 属性\n\n> [!TIP]\n> 在 Vue 等框架中使用时，value 和 copyable 属性的值需要转成字符串传入。\n\n| 属性         | 类型                                       | 默认值  | 说明                                       |\n| :----------- | :----------------------------------------- | :------ | :----------------------------------------- |\n| value        | object / array / string / number / boolean | null    | JSON 数据                                  |\n| expand-depth | number                                     | 1       | 初始展开层级                               |\n| copyable     | boolean / CopyableOptions                  | false   | 启用复制按钮或自定义复制按钮配置（见下表） |\n| sort         | boolean                                    | false   | 是否对对象键排序                           |\n| boxed        | boolean                                    | false   | 是否显示边框和内边距                       |\n| theme        | 'light' / 'dark'                           | 'light' | 主题                                       |\n| parse        | boolean                                    | true    | 字符串值是否自动解析为 JSON                |\n\n### CopyableOptions\n\n| 属性        | 类型              | 默认值    | 说明                       |\n| :---------- | :---------------- | :-------- | :------------------------- |\n| copyText    | string            | Copy      | 复制按钮显示的文本         |\n| copiedText  | string            | Copied    | 复制成功后显示的文本       |\n| timeout     | number            | 2000      | 显示 copiedText 的时长 (ms) |\n| align       | 'left' / 'right'  | right     | 复制按钮对齐方式           |\n\n## 事件\n\n| 事件         | 说明                |\n| :----------- | :------------------ |\n| copy-success | 复制成功后触发      |\n| copy-error   | 复制失败后触发      |\n| toggle       | 节点折叠/展开时触发 |\n\n## 插槽\n\n自定义复制按钮：\n\n```html\n<json-viewer copyable>\n  <button slot=\"copy-button\">复制 JSON</button>\n</json-viewer>\n```\n\n## License\n\n[MIT](https://opensource.org/licenses/MIT)\n\nCopyright (c) 2025-present [Lruihao](https://github.com/Lruihao)\n",
+      "content": "# &lt;json-viewer&gt; Element\n\n简体中文 | [English](./README.en.md)\n\n> 🌈 一个轻量、现代的 JSON 可视化与交互 Web 组件\n\n## 功能特性\n\n- 🌟 **Web 组件**：原生，无框架依赖\n- 🎨 **主题**：支持明暗模式\n- 📦 **盒装**：可选边框与内边距\n- 📋 **可复制**：一键复制 JSON\n- 🔑 **排序**：支持键排序\n- 🔍 **展开深度**：可控初始展开层级\n- 🧩 **自定义复制按钮**：slot 插槽支持\n- 🧬 **类型高亮**：多种类型高亮\n- 🛠️ **自定义事件**：支持 copy/toggle 事件监听\n\n## 使用方法\n\n### 安装\n\n```bash\nnpm install json-viewer-element\n```\n\n### 引入\n\n#### 作为模块\n\n```js\nimport 'json-viewer-element'\n```\n\n#### UMD (CDN)\n\n```html\n<script src=\"https://unpkg.com/json-viewer-element/dist/json-viewer-element.umd.js\"></script>\n```\n\n### 基本用法\n\n手动绑定 value：\n\n```html\n<json-viewer id=\"viewer\" boxed copyable sort expand-depth=\"2\" theme=\"dark\"></json-viewer>\n<script>\n  document.getElementById('viewer').value = { hello: \"world\", arr: [1,2,3] };\n</script>\n```\n\n直接在标签上绑定 value：\n\n```html\n<json-viewer value='{\"hello\":\"world\",\"arr\":[1,2,3]}' boxed copyable sort expand-depth=\"2\" theme=\"dark\"></json-viewer>\n```\n\n在 Vue 框架中使用：\n\nVue 2/3 选项式 API：\n\n```vue\n<template>\n  <json-viewer :value=\"JSON.stringify(json)\" boxed copyable sort expand-depth=\"2\" theme=\"dark\"></json-viewer>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      json: { hello: \"world\", arr: [1,2,3] },\n    }\n  },\n}\n</script>\n```\n\nVue 3 组合式 API：\n\n```vue\n<script lang=\"ts\" setup>\nimport { ref } from 'vue'\nconst json = ref({ hello: \"world\", arr: [1,2,3] })\n</script>\n\n<template>\n  <json-viewer :value=\"JSON.stringify(json)\" boxed copyable sort expand-depth=\"2\" theme=\"dark\"></json-viewer>\n</template>\n```\n\n> [!TIP]\n>\n> [跳过组件解析](https://cn.vuejs.org/guide/extras/web-components.html#skipping-component-resolution)\n>\n> 为了让 Vue 知道某些元素应被视为自定义元素并跳过组件解析，我们可以指定 [`compilerOptions.isCustomElement` 选项](https://cn.vuejs.org/api/application.html#app-config-compileroptions)。\n\n```js\n// vite.config.js\nimport vue from '@vitejs/plugin-vue'\nimport vueJsx from '@vitejs/plugin-vue-jsx'\n\nexport default {\n  plugins: [\n    vue({\n      template: {\n        compilerOptions: {\n          // 将所有带短横线的标签名都视为自定义元素\n          isCustomElement: tag => tag.includes('-')\n        }\n      }\n    }),\n    vueJsx({\n      // 将所有带短横线的标签名都视为自定义元素\n      isCustomElement: tag => tag.includes('-')\n    }),\n  ]\n}\n```\n\n如果你在 Vue 中使用 ESLint，可能需要配置忽略自定义元素：\n\n```js\n// eslint.config.js\nexport default {\n  rules: {\n    'vue/component-name-in-template-casing': [\n      'warn',\n      'PascalCase',\n      {\n        registeredComponentsOnly: false,\n        ignores: ['/^icon-/', 'json-viewer'],\n      },\n    ],\n  },\n}\n```\n\n## 属性\n\n> [!TIP]\n> 在 Vue 等框架中使用时，value 和 copyable 属性的值需要转成字符串传入。\n\n| 属性         | 类型                                       | 默认值  | 说明                                       |\n| :----------- | :----------------------------------------- | :------ | :----------------------------------------- |\n| value        | object / array / string / number / boolean | null    | JSON 数据                                  |\n| expand-depth | number                                     | 1       | 初始展开层级                               |\n| copyable     | boolean / CopyableOptions                  | false   | 启用复制按钮或自定义复制按钮配置（见下表） |\n| sort         | boolean                                    | false   | 是否对对象键排序                           |\n| boxed        | boolean                                    | false   | 是否显示边框和内边距                       |\n| theme        | 'light' / 'dark'                           | 'light' | 主题                                       |\n| parse        | boolean                                    | true    | 字符串值是否自动解析为 JSON                |\n\n### CopyableOptions\n\n| 属性       | 类型             | 默认值 | 说明                        |\n| :--------- | :--------------- | :----- | :-------------------------- |\n| copyText   | string           | Copy   | 复制按钮显示的文本          |\n| copiedText | string           | Copied | 复制成功后显示的文本        |\n| timeout    | number           | 2000   | 显示 copiedText 的时长 (ms) |\n| align      | 'left' / 'right' | right  | 复制按钮对齐方式            |\n\n## 事件\n\n| 事件         | 说明                |\n| :----------- | :------------------ |\n| copy-success | 复制成功后触发      |\n| copy-error   | 复制失败后触发      |\n| toggle       | 节点折叠/展开时触发 |\n\n## 插槽\n\n自定义复制按钮：\n\n```html\n<json-viewer copyable>\n  <button slot=\"copy-button\">复制 JSON</button>\n</json-viewer>\n```\n\n## License\n\n[MIT](https://opensource.org/licenses/MIT)\n\nCopyright (c) 2025-present [Lruihao](https://github.com/Lruihao)\n",
       "html_url": "https://github.com/Lruihao/json-viewer-element/blob/main/README.md"
     }
   },
@@ -598,7 +598,7 @@
   },
   "SchemaStore/schemastore": {
     "created_at": "2014-11-18T01:02:10Z",
-    "updated_at": "2026-08-20T19:19:15Z",
+    "updated_at": "2026-08-21T16:44:38Z",
     "full_name": "SchemaStore/schemastore",
     "name": "schemastore",
     "html_url": "https://github.com/SchemaStore/schemastore",
@@ -611,7 +611,7 @@
     "language": "JavaScript",
     "topics": [],
     "stargazers_count": 3823,
-    "forks_count": 2288,
+    "forks_count": 2289,
     "owner": {
       "login": "SchemaStore",
       "html_url": "https://github.com/SchemaStore",
@@ -655,7 +655,7 @@
   },
   "gohugoio/hugo": {
     "created_at": "2013-07-04T15:26:26Z",
-    "updated_at": "2026-08-21T00:52:23Z",
+    "updated_at": "2026-08-21T21:28:40Z",
     "full_name": "gohugoio/hugo",
     "name": "hugo",
     "html_url": "https://github.com/gohugoio/hugo",
@@ -675,8 +675,8 @@
       "hugo",
       "static-site-generator"
     ],
-    "stargazers_count": 89470,
-    "forks_count": 8338,
+    "stargazers_count": 89485,
+    "forks_count": 8337,
     "owner": {
       "login": "gohugoio",
       "html_url": "https://github.com/gohugoio",
@@ -1288,7 +1288,7 @@
   },
   "mdn/translated-content": {
     "created_at": "2020-12-08T19:38:24Z",
-    "updated_at": "2026-08-20T23:09:16Z",
+    "updated_at": "2026-08-21T22:19:17Z",
     "full_name": "mdn/translated-content",
     "name": "translated-content",
     "html_url": "https://github.com/mdn/translated-content",
@@ -1308,7 +1308,7 @@
       "web-platform"
     ],
     "stargazers_count": 2025,
-    "forks_count": 8307,
+    "forks_count": 8305,
     "owner": {
       "login": "mdn",
       "html_url": "https://github.com/mdn",
@@ -1353,7 +1353,7 @@
   },
   "soybeanjs/soybean-admin": {
     "created_at": "2021-09-08T16:13:36Z",
-    "updated_at": "2026-08-21T01:12:42Z",
+    "updated_at": "2026-08-21T15:23:49Z",
     "full_name": "soybeanjs/soybean-admin",
     "name": "soybean-admin",
     "html_url": "https://github.com/soybeanjs/soybean-admin",
@@ -1378,8 +1378,8 @@
       "vue-admin",
       "vue3"
     ],
-    "stargazers_count": 14856,
-    "forks_count": 2507,
+    "stargazers_count": 14864,
+    "forks_count": 2506,
     "owner": {
       "login": "soybeanjs",
       "html_url": "https://github.com/soybeanjs",
@@ -1392,7 +1392,7 @@
   },
   "star-history/star-history": {
     "created_at": "2015-09-23T03:30:28Z",
-    "updated_at": "2026-08-20T18:46:43Z",
+    "updated_at": "2026-08-21T17:24:52Z",
     "full_name": "star-history/star-history",
     "name": "star-history",
     "html_url": "https://github.com/star-history/star-history",
@@ -1413,8 +1413,8 @@
       "star",
       "star-history"
     ],
-    "stargazers_count": 9409,
-    "forks_count": 366,
+    "stargazers_count": 9415,
+    "forks_count": 367,
     "owner": {
       "login": "star-history",
       "html_url": "https://github.com/star-history",
@@ -1427,7 +1427,7 @@
   },
   "theme-next/hexo-theme-next": {
     "created_at": "2017-12-31T17:04:21Z",
-    "updated_at": "2026-08-20T17:47:43Z",
+    "updated_at": "2026-08-21T10:18:19Z",
     "full_name": "theme-next/hexo-theme-next",
     "name": "hexo-theme-next",
     "html_url": "https://github.com/theme-next/hexo-theme-next",
@@ -1443,7 +1443,7 @@
       "hexo-theme",
       "theme-next"
     ],
-    "stargazers_count": 8239,
+    "stargazers_count": 8240,
     "forks_count": 1991,
     "owner": {
       "login": "theme-next",
@@ -1457,7 +1457,7 @@
   },
   "twikoojs/twikoo": {
     "created_at": "2020-05-24T15:13:26Z",
-    "updated_at": "2026-08-19T01:01:51Z",
+    "updated_at": "2026-08-21T15:51:13Z",
     "full_name": "twikoojs/twikoo",
     "name": "twikoo",
     "html_url": "https://github.com/twikoojs/twikoo",
@@ -1478,7 +1478,7 @@
       "vue"
     ],
     "stargazers_count": 2266,
-    "forks_count": 520,
+    "forks_count": 521,
     "owner": {
       "login": "twikoojs",
       "html_url": "https://github.com/twikoojs",
@@ -1491,7 +1491,7 @@
   },
   "walinejs/waline": {
     "created_at": "2020-10-31T07:37:33Z",
-    "updated_at": "2026-08-20T18:33:14Z",
+    "updated_at": "2026-08-21T23:25:15Z",
     "full_name": "walinejs/waline",
     "name": "waline",
     "html_url": "https://github.com/walinejs/waline",
@@ -1521,8 +1521,8 @@
       "vercel",
       "zeabur"
     ],
-    "stargazers_count": 3098,
-    "forks_count": 627,
+    "stargazers_count": 3099,
+    "forks_count": 628,
     "owner": {
       "login": "walinejs",
       "html_url": "https://github.com/walinejs",
@@ -1561,7 +1561,7 @@
   },
   "xnx3/translate": {
     "created_at": "2023-01-17T03:18:01Z",
-    "updated_at": "2026-08-19T18:10:11Z",
+    "updated_at": "2026-08-21T08:27:15Z",
     "full_name": "xnx3/translate",
     "name": "translate",
     "html_url": "https://github.com/xnx3/translate",
@@ -1573,7 +1573,7 @@
     "archived": false,
     "language": "JavaScript",
     "topics": [],
-    "stargazers_count": 3051,
+    "stargazers_count": 3052,
     "forks_count": 478,
     "owner": {
       "login": "xnx3",
