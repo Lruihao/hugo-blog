@@ -231,7 +231,7 @@
   },
   "Lruihao/el-table-sticky": {
     "created_at": "2023-06-14T14:03:49Z",
-    "updated_at": "2026-09-03T02:04:19Z",
+    "updated_at": "2026-09-20T11:02:08Z",
     "full_name": "Lruihao/el-table-sticky",
     "name": "el-table-sticky",
     "html_url": "https://github.com/Lruihao/el-table-sticky",
@@ -254,7 +254,7 @@
       "vue-directive",
       "vue2"
     ],
-    "stargazers_count": 108,
+    "stargazers_count": 109,
     "forks_count": 12,
     "owner": {
       "login": "Lruihao",
@@ -598,7 +598,7 @@
   },
   "SchemaStore/schemastore": {
     "created_at": "2014-11-18T01:02:10Z",
-    "updated_at": "2026-09-20T02:02:08Z",
+    "updated_at": "2026-09-20T15:04:55Z",
     "full_name": "SchemaStore/schemastore",
     "name": "schemastore",
     "html_url": "https://github.com/SchemaStore/schemastore",
@@ -610,8 +610,8 @@
     "archived": false,
     "language": "JavaScript",
     "topics": [],
-    "stargazers_count": 3842,
-    "forks_count": 2322,
+    "stargazers_count": 3841,
+    "forks_count": 2323,
     "owner": {
       "login": "SchemaStore",
       "html_url": "https://github.com/SchemaStore",
@@ -655,7 +655,7 @@
   },
   "gohugoio/hugo": {
     "created_at": "2013-07-04T15:26:26Z",
-    "updated_at": "2026-09-20T03:47:32Z",
+    "updated_at": "2026-09-21T02:20:58Z",
     "full_name": "gohugoio/hugo",
     "name": "hugo",
     "html_url": "https://github.com/gohugoio/hugo",
@@ -675,8 +675,8 @@
       "hugo",
       "static-site-generator"
     ],
-    "stargazers_count": 89862,
-    "forks_count": 8380,
+    "stargazers_count": 89875,
+    "forks_count": 8379,
     "owner": {
       "login": "gohugoio",
       "html_url": "https://github.com/gohugoio",
@@ -1040,7 +1040,7 @@
   },
   "hugo-fixit/hugo-fixit-starter1": {
     "created_at": "2022-09-27T15:23:38Z",
-    "updated_at": "2026-09-13T04:20:37Z",
+    "updated_at": "2026-09-20T04:29:31Z",
     "full_name": "hugo-fixit/hugo-fixit-starter1",
     "name": "hugo-fixit-starter1",
     "html_url": "https://github.com/hugo-fixit/hugo-fixit-starter1",
@@ -1288,7 +1288,7 @@
   },
   "mdn/translated-content": {
     "created_at": "2020-12-08T19:38:24Z",
-    "updated_at": "2026-09-19T16:13:14Z",
+    "updated_at": "2026-09-21T03:49:10Z",
     "full_name": "mdn/translated-content",
     "name": "translated-content",
     "html_url": "https://github.com/mdn/translated-content",
@@ -1308,7 +1308,7 @@
       "web-platform"
     ],
     "stargazers_count": 2030,
-    "forks_count": 8302,
+    "forks_count": 8301,
     "owner": {
       "login": "mdn",
       "html_url": "https://github.com/mdn",
@@ -1353,7 +1353,7 @@
   },
   "soybeanjs/soybean-admin": {
     "created_at": "2021-09-08T16:13:36Z",
-    "updated_at": "2026-09-20T02:12:14Z",
+    "updated_at": "2026-09-21T03:08:49Z",
     "full_name": "soybeanjs/soybean-admin",
     "name": "soybean-admin",
     "html_url": "https://github.com/soybeanjs/soybean-admin",
@@ -1378,8 +1378,8 @@
       "vue-admin",
       "vue3"
     ],
-    "stargazers_count": 15018,
-    "forks_count": 2516,
+    "stargazers_count": 15024,
+    "forks_count": 2515,
     "owner": {
       "login": "soybeanjs",
       "html_url": "https://github.com/soybeanjs",
@@ -1392,7 +1392,7 @@
   },
   "star-history/star-history": {
     "created_at": "2015-09-23T03:30:28Z",
-    "updated_at": "2026-09-20T02:41:54Z",
+    "updated_at": "2026-09-21T03:23:52Z",
     "full_name": "star-history/star-history",
     "name": "star-history",
     "html_url": "https://github.com/star-history/star-history",
@@ -1413,7 +1413,7 @@
       "star",
       "star-history"
     ],
-    "stargazers_count": 9514,
+    "stargazers_count": 9518,
     "forks_count": 371,
     "owner": {
       "login": "star-history",
@@ -1457,7 +1457,7 @@
   },
   "twikoojs/twikoo": {
     "created_at": "2020-05-24T15:13:26Z",
-    "updated_at": "2026-09-18T16:15:30Z",
+    "updated_at": "2026-09-21T03:50:32Z",
     "full_name": "twikoojs/twikoo",
     "name": "twikoo",
     "html_url": "https://github.com/twikoojs/twikoo",
@@ -1467,7 +1467,7 @@
     "visibility": "public",
     "is_template": false,
     "archived": false,
-    "language": "JavaScript",
+    "language": "TypeScript",
     "topics": [
       "cloudbase",
       "comment",
@@ -1477,7 +1477,7 @@
       "vercel",
       "vue"
     ],
-    "stargazers_count": 2282,
+    "stargazers_count": 2283,
     "forks_count": 528,
     "owner": {
       "login": "twikoojs",
@@ -1485,13 +1485,13 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/92834001?v=4"
     },
     "readme": {
-      "content": "<a href=\"https://twikoo.js.org/\"><img src=\"./docs/static/logo.png\" width=\"300\" alt=\"Twikoo\"></a>\n\n----\n\n[![](https://img.shields.io/npm/v/twikoo)](https://www.npmjs.com/package/twikoo)\n[![](https://img.shields.io/bundlephobia/minzip/twikoo)](https://bundlephobia.com/result?p=twikoo)\n[![](https://img.shields.io/npm/dt/twikoo)](https://www.npmjs.com/package/twikoo)\n[![](https://data.jsdelivr.com/v1/package/npm/twikoo/badge)](https://www.jsdelivr.com/package/npm/twikoo)\n[![](https://app.cloudback.it/badge/twikoojs/twikoo)](https://cloudback.it)\n[![](https://img.shields.io/npm/l/twikoo)](./LICENSE)\n\n一个**简洁**、**安全**、**免费**的静态网站评论系统。<br>\nA **simple**, **safe**, **free** comment system.  \n**简体中文** | [English](./README.en.md)\n\n## 特色 | Features\n\n<details>\n<summary>点击展开</summary>\n\n### 简单\n\n* 免费搭建（使用云开发 / Vercel / 私有部署评论后台）\n* 简单部署（支持云开发 / Vercel 一键部署）\n\n### 易用\n\n* 支持回复、点赞\n* 无需额外适配，支持搭配浅色主题与深色主题使用\n* 支持 API 调用，批量获取文章评论数、最新评论\n* 访客在昵称栏输入 QQ 号，会自动补全 QQ 昵称和 QQ 邮箱\n* 访客填写数字 QQ 邮箱，会使用 QQ 头像作为评论头像\n* 支持评论框粘贴图片（可禁用）\n* 支持插入图片（可禁用）\n* 支持去不图床、云开发图床\n* 支持插入表情（可禁用）\n* 支持 Ctrl + Enter 快捷回复\n* 评论框内容实时保存草稿，刷新不会丢失\n* [支持 Katex 公式](https://twikoo.js.org/faq.html#%E5%A6%82%E4%BD%95%E5%90%AF%E7%94%A8-katex-%E6%94%AF%E6%8C%81)\n* 支持按语言的代码高亮\n\n### 安全\n\n* 隐私信息安全（通过云函数控制敏感字段（邮箱、IP、环境配置等）不会泄露）\n* 支持 Akismet 垃圾评论检测（需自行注册 [akismet.com](https://akismet.com/)）\n* 支持腾讯云内容安全垃圾评论检测（需自行注册 [腾讯云内容安全](https://console.cloud.tencent.com/cms/text/overview)）\n* 支持人工审核模式\n* 防 XSS 注入\n* 支持限制每个 IP 每 10 分钟最多发表多少条评论\n\n### 即时\n\n* 支持邮件提醒（访客和博主）\n* 支持微信提醒（仅针对博主，基于 [Server酱](https://sc.ftqq.com/3.version)，需自行注册）\n* 支持 QQ 提醒（仅针对博主，基于 [Qmsg酱](https://qmsg.zendee.cn/)，需自行注册）\n\n### 个性\n\n* 支持自定义评论框背景图片\n* 支持自定义“博主”标识文字\n* 支持自定义通知邮件模板\n* 支持自定义评论框提示信息（placeholder）\n* 支持自定义表情列表（兼容 [OwO 的数据格式](https://cdn.jsdelivr.net/npm/owo@1.0.2/demo/OwO.json)）\n* 支持自定义【昵称】【邮箱】【网址】必填 / 选填\n* 支持自定义代码高亮主题\n\n### 便捷管理\n\n* 内嵌式管理面板，通过密码登录，可方便地查看评论、隐藏评论、删除评论、修改配置\n* 支持隐藏管理入口，通过输入暗号显示\n* 支持从 Valine、Artalk、Disqus 导入评论\n\n### 缺点\n\n* 不支持 IE\n\n</details>\n\n## 预览 | Preview\n\n<details>\n<summary>点击展开</summary>\n\n### 评论\n\n![评论](./docs/static/readme-1.png)\n\n### 评论管理\n\n![评论管理](./docs/static/readme-2.png)\n\n### 推送通知\n\n![推送通知](./docs/static/readme-3.jpg)\n\n</details>\n\n## 快速上手 | Quick Start\n\n有关详细教程，请查看[快速上手](https://twikoo.js.org/quick-start.html)\n\n<details>\n<summary>如果你想获取更新动态、建言献策、参与测试，欢迎加入讨论群：1080829142</summary>\n<img height=\"300\" alt=\"1080829142\" src=\"https://www.imaegoo.com/gallery/2020/hello-twikoo.png\" />\n</details>\n\n<!-- ## 贡献者 | Contributors -->\n\n## 特别感谢 | Special Thanks\n\n图标设计：[Maemo Lee](https://www.maemo.cc)\n\n<!-- ## 捐赠 | Donate -->\n\n## 开发 | Development\n\n如果您想在本地二次开发，可以参考以下命令：\n\n``` sh\nyarn dev # 开发 (http://localhost:9820/demo.html)\nyarn lint # 代码检查\nyarn build # 编译 (dist/twikoo.all.min.js)\n```\n\n如果您的改动能够帮助到更多人，欢迎提交 Pull Request！\n\n## 国际化 | I18N\n\n支持简体中文、繁体中文、English。欢迎[提交翻译 PR](https://github.com/twikoojs/twikoo/edit/main/src/client/utils/i18n/i18n.js)。\n\n## 许可 | License\n\n<details>\n<summary>MIT License</summary>\n\n[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fimaegoo%2Ftwikoo.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fimaegoo%2Ftwikoo?ref=badge_large)\n\n</details>\n",
+      "content": "<a href=\"https://twikoo.js.org/\"><img src=\"./docs/static/logo.png\" width=\"300\" alt=\"Twikoo\"></a>\n\n---\n\n[![](https://img.shields.io/npm/v/twikoo)](https://www.npmjs.com/package/twikoo)\n[![](https://img.shields.io/bundlephobia/minzip/twikoo)](https://bundlephobia.com/result?p=twikoo)\n[![](https://img.shields.io/npm/dt/twikoo)](https://www.npmjs.com/package/twikoo)\n[![](https://data.jsdelivr.com/v1/package/npm/twikoo/badge)](https://www.jsdelivr.com/package/npm/twikoo)\n[![](https://app.cloudback.it/badge/twikoojs/twikoo)](https://cloudback.it)\n[![](https://img.shields.io/npm/l/twikoo)](./LICENSE)\n\n一个**简洁**、**安全**、**免费**的静态网站评论系统。<br>\nA **simple**, **safe**, **free** comment system.  \n[English](./README.en.md) | **简体中文**\n\n## 特色 | Features\n\n### 简单\n\n- 免费搭建（支持腾讯云 CloudBase、Vercel、Netlify、Hugging Face、Railway、Zeabur、Cloudflare Workers、AWS Lambda、EdgeOne Makers 等平台，也可使用私有服务器作为评论后台）\n- 简单部署（支持 Vercel 一键部署，各平台均有图文部署教程，另有 Docker 私有部署）\n\n### 易用\n\n- 支持回复、点赞、点踩\n- 无需额外适配，支持搭配浅色主题与深色主题使用\n- 支持 API 调用，批量获取文章评论数、最新评论\n- 访客在昵称栏输入 QQ 号，会自动补全 QQ 昵称和 QQ 邮箱\n- 访客填写数字 QQ 邮箱，会使用 QQ 头像作为评论头像\n- 支持评论框粘贴图片（可禁用）\n- 支持插入图片（可禁用）\n- 支持云开发图床、去不图床、S.EE、兰空图床、PicList、EasyImage、Chevereto，以及 S3 兼容存储（Cloudflare R2 / MinIO 等）\n- 支持插入表情（可禁用）\n- 支持 Ctrl + Enter 快捷回复\n- 评论框内容实时保存草稿，刷新不会丢失\n- [支持 Katex 公式](https://twikoo.js.org/faq.html#%E5%A6%82%E4%BD%95%E5%90%AF%E7%94%A8-katex-%E6%94%AF%E6%8C%81)\n- 支持按语言的代码高亮\n\n### 安全\n\n- 隐私信息安全（通过云函数控制敏感字段（邮箱、IP、环境配置等）不会泄露）\n- 支持 Akismet 垃圾评论检测（需自行注册 [akismet.com](https://akismet.com/)）\n- 支持腾讯云内容安全垃圾评论检测（需自行注册 [腾讯云内容安全](https://console.cloud.tencent.com/cms/text/overview)）\n- 支持人工审核模式\n- 防 XSS 注入\n- 支持限制每个 IP 每 10 分钟最多发表多少条评论\n\n### 即时\n\n- 支持邮件提醒（访客和博主）\n- 支持微信提醒（仅针对博主，基于 [Server 酱](https://sct.ftqq.com/r/13235)，需自行注册）\n- 支持 QQ 提醒（仅针对博主，基于 [Qmsg 酱](https://qmsg.zendee.cn/)，需自行注册）\n- 支持 QQ 提醒（仅针对博主，基于 [go-cqhttp](https://docs.go-cqhttp.org/)，需自行搭建并配置机器人及 QQ 账号）\n- 支持钉钉、企业微信、飞书、Telegram、Discord、Bark、PushDeer、WxPusher 等渠道（仅针对博主，基于 [pushoo](https://twikoo.js.org/pushoo.html)，需自行注册）\n\n### 个性\n\n- 支持自定义评论框背景图片\n- 支持自定义“博主”标识文字\n- 支持自定义通知邮件模板\n- 支持自定义评论框提示信息（placeholder）\n- 支持自定义表情列表（兼容 [OwO 的数据格式](https://cdn.jsdelivr.net/npm/owo@1.0.2/demo/OwO.json)）\n- 支持自定义【昵称】【邮箱】【网址】必填 / 选填\n- 支持自定义代码高亮主题\n\n### 便捷管理\n\n- 内嵌式管理面板，通过密码登录，可方便地查看评论、隐藏评论、删除评论、修改配置\n- 支持隐藏管理入口，通过输入暗号显示\n- 支持从 Valine、Artalk、Disqus 导入评论\n\n## 预览 | Preview\n\n<details>\n<summary>点击展开</summary>\n\n### 评论\n\n![评论](./docs/static/readme-1.png)\n\n### 评论管理\n\n![评论管理](./docs/static/readme-2.png)\n\n### 推送通知\n\n![推送通知](./docs/static/readme-3.jpg)\n\n</details>\n\n## 快速上手 | Quick Start\n\n有关详细教程，请查看[快速上手](https://twikoo.js.org/quick-start.html)\n\n<details>\n<summary>如果你想获取更新动态、建言献策、参与测试，欢迎加入讨论群：1080829142</summary>\n<img height=\"300\" alt=\"1080829142\" src=\"https://www.imaegoo.com/gallery/2020/hello-twikoo.png\" />\n</details>\n\n<!-- ## 贡献者 | Contributors -->\n\n## 特别感谢 | Special Thanks\n\n图标设计：[Maemo Lee](https://www.maemo.cc)\n\n<!-- ## 捐赠 | Donate -->\n\n## 开发 | Development\n\n本仓库是 pnpm monorepo（Node 26）。本地二次开发命令：\n\n```sh\npnpm install # 安装依赖\npnpm demo # 一键启动本地演示：客户端 watch + tkserver + demo 页 (http://localhost:9820/demo.html)\npnpm lint # 代码检查\npnpm typecheck # 类型检查\npnpm test # 单元测试\npnpm build # 编译 (packages/client/dist/twikoo.all.min.js)\n```\n\n如果您的改动能够帮助到更多人，欢迎提交 Pull Request！\n\n## 国际化 | I18N\n\n支持 9 种语言（简体中文、繁体中文、English、日本語、한국어、Tiếng Việt、Bahasa Indonesia、Oʻzbekcha、Узбекча）。欢迎[提交翻译 PR](https://github.com/twikoojs/twikoo/tree/main/packages/client/src/i18n/locales)。\n\n## 许可 | License\n\n<details>\n<summary>MIT License</summary>\n\n[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fimaegoo%2Ftwikoo.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fimaegoo%2Ftwikoo?ref=badge_large)\n\n</details>\n",
       "html_url": "https://github.com/twikoojs/twikoo/blob/main/README.md"
     }
   },
   "walinejs/waline": {
     "created_at": "2020-10-31T07:37:33Z",
-    "updated_at": "2026-09-20T03:10:31Z",
+    "updated_at": "2026-09-20T22:34:48Z",
     "full_name": "walinejs/waline",
     "name": "waline",
     "html_url": "https://github.com/walinejs/waline",
