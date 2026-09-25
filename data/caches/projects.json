@@ -14,7 +14,7 @@
     "language": "TypeScript",
     "topics": [],
     "stargazers_count": 143,
-    "forks_count": 25,
+    "forks_count": 26,
     "owner": {
       "login": "Lruihao",
       "html_url": "https://github.com/Lruihao",
@@ -598,7 +598,7 @@
   },
   "SchemaStore/schemastore": {
     "created_at": "2014-11-18T01:02:10Z",
-    "updated_at": "2026-09-23T23:03:35Z",
+    "updated_at": "2026-09-24T22:54:12Z",
     "full_name": "SchemaStore/schemastore",
     "name": "schemastore",
     "html_url": "https://github.com/SchemaStore/schemastore",
@@ -610,8 +610,8 @@
     "archived": false,
     "language": "JavaScript",
     "topics": [],
-    "stargazers_count": 3845,
-    "forks_count": 2327,
+    "stargazers_count": 3847,
+    "forks_count": 2326,
     "owner": {
       "login": "SchemaStore",
       "html_url": "https://github.com/SchemaStore",
@@ -655,7 +655,7 @@
   },
   "gohugoio/hugo": {
     "created_at": "2013-07-04T15:26:26Z",
-    "updated_at": "2026-09-24T03:32:38Z",
+    "updated_at": "2026-09-25T03:11:36Z",
     "full_name": "gohugoio/hugo",
     "name": "hugo",
     "html_url": "https://github.com/gohugoio/hugo",
@@ -675,8 +675,8 @@
       "hugo",
       "static-site-generator"
     ],
-    "stargazers_count": 89914,
-    "forks_count": 8385,
+    "stargazers_count": 89935,
+    "forks_count": 8387,
     "owner": {
       "login": "gohugoio",
       "html_url": "https://github.com/gohugoio",
@@ -1288,7 +1288,7 @@
   },
   "mdn/translated-content": {
     "created_at": "2020-12-08T19:38:24Z",
-    "updated_at": "2026-09-24T00:31:49Z",
+    "updated_at": "2026-09-24T22:47:48Z",
     "full_name": "mdn/translated-content",
     "name": "translated-content",
     "html_url": "https://github.com/mdn/translated-content",
@@ -1307,8 +1307,8 @@
       "web-development",
       "web-platform"
     ],
-    "stargazers_count": 2031,
-    "forks_count": 8302,
+    "stargazers_count": 2032,
+    "forks_count": 8304,
     "owner": {
       "login": "mdn",
       "html_url": "https://github.com/mdn",
@@ -1353,7 +1353,7 @@
   },
   "soybeanjs/soybean-admin": {
     "created_at": "2021-09-08T16:13:36Z",
-    "updated_at": "2026-09-23T19:58:31Z",
+    "updated_at": "2026-09-24T07:28:39Z",
     "full_name": "soybeanjs/soybean-admin",
     "name": "soybean-admin",
     "html_url": "https://github.com/soybeanjs/soybean-admin",
@@ -1378,8 +1378,8 @@
       "vue-admin",
       "vue3"
     ],
-    "stargazers_count": 15036,
-    "forks_count": 2515,
+    "stargazers_count": 15037,
+    "forks_count": 2516,
     "owner": {
       "login": "soybeanjs",
       "html_url": "https://github.com/soybeanjs",
@@ -1392,7 +1392,7 @@
   },
   "star-history/star-history": {
     "created_at": "2015-09-23T03:30:28Z",
-    "updated_at": "2026-09-24T03:35:56Z",
+    "updated_at": "2026-09-25T01:32:46Z",
     "full_name": "star-history/star-history",
     "name": "star-history",
     "html_url": "https://github.com/star-history/star-history",
@@ -1413,7 +1413,7 @@
       "star",
       "star-history"
     ],
-    "stargazers_count": 9526,
+    "stargazers_count": 9531,
     "forks_count": 372,
     "owner": {
       "login": "star-history",
@@ -1444,7 +1444,7 @@
       "theme-next"
     ],
     "stargazers_count": 8224,
-    "forks_count": 1987,
+    "forks_count": 1988,
     "owner": {
       "login": "theme-next",
       "html_url": "https://github.com/theme-next",
@@ -1457,7 +1457,7 @@
   },
   "twikoojs/twikoo": {
     "created_at": "2020-05-24T15:13:26Z",
-    "updated_at": "2026-09-23T11:54:32Z",
+    "updated_at": "2026-09-25T01:42:52Z",
     "full_name": "twikoojs/twikoo",
     "name": "twikoo",
     "html_url": "https://github.com/twikoojs/twikoo",
@@ -1477,8 +1477,8 @@
       "vercel",
       "vue"
     ],
-    "stargazers_count": 2285,
-    "forks_count": 528,
+    "stargazers_count": 2286,
+    "forks_count": 529,
     "owner": {
       "login": "twikoojs",
       "html_url": "https://github.com/twikoojs",
@@ -1491,7 +1491,7 @@
   },
   "walinejs/waline": {
     "created_at": "2020-10-31T07:37:33Z",
-    "updated_at": "2026-09-23T08:17:40Z",
+    "updated_at": "2026-09-24T08:43:17Z",
     "full_name": "walinejs/waline",
     "name": "waline",
     "html_url": "https://github.com/walinejs/waline",
@@ -1521,8 +1521,8 @@
       "vercel",
       "zeabur"
     ],
-    "stargazers_count": 3122,
-    "forks_count": 640,
+    "stargazers_count": 3123,
+    "forks_count": 641,
     "owner": {
       "login": "walinejs",
       "html_url": "https://github.com/walinejs",
@@ -1561,7 +1561,7 @@
   },
   "xnx3/translate": {
     "created_at": "2023-01-17T03:18:01Z",
-    "updated_at": "2026-09-23T07:10:15Z",
+    "updated_at": "2026-09-24T06:27:07Z",
     "full_name": "xnx3/translate",
     "name": "translate",
     "html_url": "https://github.com/xnx3/translate",
@@ -1574,7 +1574,7 @@
     "language": "JavaScript",
     "topics": [],
     "stargazers_count": 3085,
-    "forks_count": 482,
+    "forks_count": 481,
     "owner": {
       "login": "xnx3",
       "html_url": "https://github.com/xnx3",
