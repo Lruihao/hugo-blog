@@ -1547,9 +1547,8 @@ c4u = false
 # -------------------------------------------------------------------------------------
 
 [flyfish]
-enable = true
-# light = "rgb(0 119 190 / 10%)"
-light = "#e6e5f8"
+enable = false
+light = "rgb(0 119 190 / 10%)"
 dark = "rgb(255 255 255 / 10%)"
 
 # Mobile Devtools config

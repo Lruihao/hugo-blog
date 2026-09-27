@@ -9,7 +9,6 @@
 $blog-base-color: #e6e5f8 !default;
 $blog-bg-color: #fafaf8 !default;
 $header-box-shadow: 0 0 1.5rem 0 light-dark(rgba(0, 0, 0, 0.125), rgba(255, 255, 255, 0.125));
-$global-border-color: #d7dee4 !default;
 
 :root {
   --grid-line-color: light-dark(rgba(60, 10, 30, .04), rgba(195, 245, 215, .04));
@@ -18,10 +17,6 @@ $global-border-color: #d7dee4 !default;
 #header-desktop {
   transition: filter 0.3s ease;
   box-shadow: none !important;
-
-  @include light-mode {
-    background-image: linear-gradient(180deg, color.adjust($blog-base-color, $lightness: 5%), $blog-base-color);
-  }
 
   &::after {
     content: '';
@@ -54,11 +49,11 @@ $global-border-color: #d7dee4 !default;
   }
 }
 
-.github-corner svg {
-  @include light-mode {
-    fill: color.adjust($blog-base-color, $lightness: -25%);
-  }
-}
+// .github-corner svg {
+//   @include light-mode {
+//     fill: color.adjust($blog-base-color, $lightness: -25%);
+//   }
+// }
 
 .fi-container:has(.home) {
   &::before {
@@ -168,20 +163,7 @@ $global-border-color: #d7dee4 !default;
 // Not mobile style
 // ==============================
 @include media('sm', 'up') {
-  body {
-    @include light-mode {
-      background-color: $blog-bg-color;
-    }
-  }
-  .breadcrumb-container {
-    @include light-mode {
-      background-color: $blog-bg-color;
-
-      .breadcrumb {
-        border-color: color.adjust($global-border-color, $lightness: -6%);
-      }
-    }
-  }
+  // ...
 }
 
 // ==============================
