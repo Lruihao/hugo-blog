@@ -16,4 +16,4 @@ path = "github.com/hugo-fixit/cmpt-markmap"
 
 [hugoVersion]
 extended = true
-min = "0.161.0"
+min = "0.166.0"
