@@ -896,8 +896,6 @@ capitalize = true
 
 # Post navigation configuration.
 [navigation]
-# Whether to show the post navigation in section pages scope.
-in_section = false
 # Whether to reverse the next/previous post navigation order.
 reverse = false
 
@@ -1323,7 +1321,7 @@ position = "end"
 enable = true
 # Gravatar host, default: "www.gravatar.com".
 # available values: ["cravatar.cn", "gravatar.loli.net", ...]
-host = "gravatar.loli.net"
+host = "api.lruihao.cn/gravatar"
 # available values: ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]
 style = "mp"
 
@@ -1424,7 +1422,7 @@ assets = [
   "custom/use-assets.html",
   "inject/shortcode-caniuse.html",
   "inject/cmpt-flyfish.html",
-  # "inject/cmpt-markmap.fixit.html",
+  "inject/cmpt-markmap.fixit.html",
   "inject/cmpt-mdevtools.html",
   "inject/santa-hat.fixit.html",
   "inject/cmpt-translate.html",

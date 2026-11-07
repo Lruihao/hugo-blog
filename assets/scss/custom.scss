@@ -76,19 +76,15 @@ $header-box-shadow: 0 0 1.5rem 0 light-dark(rgba(0, 0, 0, 0.125), rgba(255, 255,
   font-size: 2rem !important;
   font-weight: normal;
 
-  .logo {
-    min-height: 0.8em;
+  .header-title-link .logo {
     height: 0.8em;
+    border-radius: 0;
   }
 }
 
 #header-mobile {
-  .header-wrapper {
-    max-height: 3.5rem;
-  }
-
   .header-subtitle {
-    font-size: 0.55em;
+    font-size: 0.875rem;
   }
 }
 
@@ -114,15 +110,6 @@ $header-box-shadow: 0 0 1.5rem 0 light-dark(rgba(0, 0, 0, 0.125), rgba(255, 255,
     padding: 0.5rem;
     width: MIN(663px, 100%);
     aspect-ratio: 663/104;
-  }
-
-  .featured-image-preview {
-    mask-image: linear-gradient(
-      180deg,
-      light-dark(#fff, #000) 0%,
-      light-dark(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.8)) 65%,
-      light-dark(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4)) 100%
-    );
   }
 
   &.posts {
