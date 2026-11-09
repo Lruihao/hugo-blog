@@ -1,3 +1,5 @@
+github.com/hugo-fixit/FixIt v1.0.0-rc.2 h1:EQ4YzDO7013ZE1rW6hig5JpfPF+3gJ+y88oflKT1VA4=
+github.com/hugo-fixit/FixIt v1.0.0-rc.2/go.mod h1:D2RkJMpHc5FMFhlqDLljt5jopjiFOapRWG6PaKbjHuE=
 github.com/hugo-fixit/cmpt-flyfish v1.1.0 h1:HhI8B/63TdzPJtgWBy0gSE+5Y2VL83VaOU3rqVGGs9g=
 github.com/hugo-fixit/cmpt-flyfish v1.1.0/go.mod h1:59rRcovSQTuEwS7NzJNdHc3eRGXqxpELxHj2gCoXXSo=
 github.com/hugo-fixit/cmpt-markmap v1.2.0 h1:3p3JZKeROjCWt7n43Fn+OcQgAB8Nul0CZ5590UL4b/E=
@@ -10,8 +12,8 @@ github.com/hugo-fixit/cmpt-translate/v2 v2.0.1 h1:+NMPb7Pitr/Hcpqe5eDz6Iz/vK3ayv
 github.com/hugo-fixit/cmpt-translate/v2 v2.0.1/go.mod h1:VOwEMO8XblbrwVF0qfGXMMRwRip3kuorPTzCImUik48=
 github.com/hugo-fixit/component-projects/v2 v2.4.0 h1:DlryxCyDAnCd2uozDBZDvr1smmQUGVG0ahsjjdrRcAc=
 github.com/hugo-fixit/component-projects/v2 v2.4.0/go.mod h1:tqZ7Omn228h3r+wFF5Ko6fFUWuimhY1XRy+PBZQbT0w=
-github.com/hugo-fixit/fixit-bundle v1.8.12 h1:T8u4+CjMbIlFm80NSSaBLB/7hubEg2d1S7eQG20Axw4=
-github.com/hugo-fixit/fixit-bundle v1.8.12/go.mod h1:q8Rvt0o4QYYIuRQW/xksNIh9D0Pq0J73NMKqzj4wO+s=
+github.com/hugo-fixit/fixit-bundle v1.8.14 h1:RmQe+xc9E8zy4D4cKLIm1610vEnLCbY+WXGHG1iocCk=
+github.com/hugo-fixit/fixit-bundle v1.8.14/go.mod h1:p39cMFpin89hoJHFBLq0/MWOeQtCPTE011OWNogKMgA=
 github.com/hugo-fixit/hugo-atom-feed v1.3.1 h1:zR27plOr4DJEwK8amHdzVthoQLTb6truUYWLDRVDRXY=
 github.com/hugo-fixit/hugo-atom-feed v1.3.1/go.mod h1:VL3kInxTH5EL+XjEhpo0ZW44fDhq6TI0qlKTFihg5hk=
 github.com/hugo-fixit/hugo-json-feed v1.4.0 h1:9H1RxMnjIlCRun6QFZ/4lPaTeuGc3LAkJEnMOpOeOsk=
