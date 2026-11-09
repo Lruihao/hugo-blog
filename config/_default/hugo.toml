@@ -47,6 +47,7 @@ ignoreLogs = [
   "error-remote-getjson",
   "error-missing-instagram-accesstoken",
   "warning-dev-version",
-  "warning-remote-image",
+  "warning-dev-env",
   "warning-encryption",
+  "warning-remote-image",
 ]

@@ -39,6 +39,10 @@ index_with_subtitle = true
 enable_translation_merge = false
 # Whether to enable tooltip replacement for elements with title attribute, such as footnote references.
 tooltip = true
+# Whether to generate author archive pages at `/authors/<name>/`.
+# IMPORTANT: Requires `author = "authors"` in [taxonomies] — keep both enabled or disabled together,
+# otherwise the build will fail.
+author_archive = true
 # FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
 # You can turn it off, but we would really appreciate if you don't, as this is a good way to watch FixIt's popularity on the rise.
 disable_theme_inject = false
@@ -108,6 +112,9 @@ instant_page = true
 collection_list = true
 # Whether to enable collection navigation at the end of the post.
 collection_navigation = true
+# Follow me widget in the post TOC sidebar and mobile drawer.
+# Set to a `params.social` platform key to enable (e.g. "github"); empty disables it.
+follow = ""
 # End of post flag.
 end_flag = "「本文完，更多内容汇总在我的 GitHub，持续更新，求关注、求 star、求订阅！」"
 
@@ -144,6 +151,37 @@ optimise = false
 # A list of image file names or patterns to exclude from optimisation.
 # Example: `["no-optimize.jpg", "*.tiff", "images/exclude-*.webp"]`
 black_list = []
+
+# Image watermark configuration.
+# Applied to content images and featured images. Enabling the watermark
+# triggers image processing even when `optimise = false`.
+[image.watermark]
+# Whether to add a watermark to images.
+enable = false
+# Watermark image path relative to `assets`, takes precedence over `text`
+# unless the image shortcode passes `watermark="text"`.
+# A transparent PNG is recommended.
+image = ""
+# Text watermark. Used when `image` is empty, or when an image is rendered with
+# `watermark="text"` in the `image` shortcode.
+text = ""
+# Font path relative to `assets`, required for non-ASCII text such as Chinese.
+# The font must be a TTF or OTF file; font family names are not supported.
+font = ""
+# Position: top-left, top, top-right, left, center, right, bottom-left, bottom, bottom-right.
+position = "bottom-right"
+# Horizontal offset from the image edge in pixels.
+offset_x = 16
+# Vertical offset from the image edge in pixels.
+offset_y = 16
+# Text size in pixels. 0 or negative = auto, about 3% of the image width.
+size = 0
+# Text color in 3- or 6-digit hexadecimal notation.
+color = "#ffffff"
+# Opacity of the image watermark, between 0.0 and 1.0.
+opacity = 0.8
+# Width of the image watermark as a fraction of the image width. 0 = original size.
+scale = 0.15
 
 # Code block wrapper configuration.
 # You can override the global config via Markdown attributes, for example:
@@ -259,6 +297,16 @@ end_level = 6
 # Whether to decrease the H1 heading level in content.
 decrease_h1 = true
 
+# Post disclaimer/declaration.
+[disclaimer]
+# Whether to enable the disclaimer.
+enable = false
+# Disclaimer type.
+# available values: ["ai", "repost", "original", "custom"]
+type = "ai"
+# Custom disclaimer content (optional, uses I18n default if empty).
+content = ""
+
 # Display a message at the beginning of an article to warn the reader that its content might be expired.
 [expiration_reminder]
 enable = true
@@ -281,13 +329,12 @@ enable = true
 # Only enable in main section pages (default is posts).
 only_main_section = true
 
-[heading.number.format]
-h1 = "{title}"
-h2 = "{h2} {title}"
-h3 = "{h2}.{h3} {title}"
-h4 = "{h2}.{h3}.{h4} {title}"
-h5 = "{h2}.{h3}.{h4}.{h5} {title}"
-h6 = "{h2}.{h3}.{h4}.{h5}.{h6} {title}"
+# Table configuration.
+[table]
+# Whether to enable auto table numbering.
+number = false
+# Whether to enable table sorting.
+sort = true
 
 # Mathematical formulas configuration.
 # See: [Formula](https://fixit.lruihao.cn/docs/content-management/markdown-syntax/extended/#formula)
@@ -661,11 +708,6 @@ colorful = true
 dislikes = false
 outlined = false
 
-# Commento comment configuration.
-# See: [Commento](https://commento.io)
-[comment.commento]
-enable = false
-
 # Utterances comment configuration.
 # See: [Utterances](https://utteranc.es)
 [comment.utterances]
@@ -712,6 +754,21 @@ lang = ""
 light_theme = "light"
 dark_theme = "dark"
 lazy_load = true
+
+# robots.txt configuration (requires enableRobotsTXT = true).
+# Custom rules appended to robots.txt (optional).
+#
+# ```toml
+# [[params.robots.rules]]
+# user_agent = "SomeBot"
+# disallow = "/"
+# [[params.robots.rules]]
+# user_agent = "GoodBot"
+# allow = "/"
+# ```
+[robots]
+# Allow AI crawlers (unblock GPTBot/ClaudeBot etc.) + Content-Signal comment + AI hidden hint.
+allow_crawlers = false
 
 # Third-party library configuration for some custom CSS and JS files.
 # Files can be loaded from local assets (relative to /assets/) or remote CDN URLs.
@@ -902,6 +959,10 @@ reverse = false
 # Footer configuration.
 [footer]
 enable = true
+# Whether to show the site brand (logo/avatar and title).
+brand = false
+# Whether to show social links in the footer.
+social = false
 # Whether to show copyright info.
 copyright = true
 # Whether to show the author.
@@ -918,26 +979,17 @@ license = '<a rel="license external nofollow noopener noreferrer" href="https://
 # Whether to show Hugo and theme info.
 [footer.powered]
 enable = true
-hugo_logo = true
-theme_logo = true
+hugo_logo = false
+theme_logo = false
 
 # Site creation time.
 [footer.site_time]
 enable = true
 animate = true
 icon = "fa-solid fa-heartbeat"
-pre = "博客已运行"
+pre = "已运行"
 # Example: "2021-12-18T16:15:22+08:00"
 value = "2018-05-28T20:01:01+08:00"
-
-# Footer lines order.
-# available values: ["first", 0-5, "last"]
-[footer.order]
-powered = 1
-copyright = 2
-statistics = 3
-visitor = 4
-beian = 5
 
 # Archives page configuration (all pages of posts type).
 [archives]
@@ -982,6 +1034,24 @@ list = true
 days = 30
 max_count = 10
 
+# Contribution heatmap configuration for the home page and author archive pages.
+[contribution]
+# Whether to show the contribution heatmap.
+enable = true
+# First day of the week.
+# available values: ["monday", "sunday"]
+first_day_of_week = "sunday"
+# Whether to show contribution statistics (longest/current streak).
+stats = true
+# Metric used to calculate contribution intensity.
+# available values: ["count", "words", "score"]
+# - count: number of posts per day, using fixed thresholds 1 / 2 / 3-4 / 5+.
+# - words: total words per day, bucketed by the p50/p75/p90 of days with posts.
+# - score: posts + words / 1500, bucketed by the p50/p75/p90 of days with posts.
+metric = "count"
+# Maximum number of years to display, newest first. 0 means all years with posts.
+max_years = 0
+
 # TagCloud configuration for tags page.
 [tag_cloud]
 enable = false
@@ -1019,6 +1089,8 @@ typeit = true
 social = true
 # Disclaimer (HTML format is supported).
 disclaimer = ""
+# Whether to show the contribution heatmap inside the home profile.
+contribution = true
 
 # Home page posts.
 [home.posts]
@@ -1027,6 +1099,10 @@ enable = true
 paginate = 10
 # Whether to show featured image preview in home page post list.
 image_preview = true
+# Number of columns for the home post list.
+# available values: [1, 2]
+# 2 enables the horizontal two-column card layout on extra-large screens (>= 1440px).
+columns = 2
 
 # Social configuration about the author.
 [social]
@@ -1271,16 +1347,6 @@ src = ""
 [analytics.cloudflare]
 token = ""
 
-# Splitbee Analytics.
-[analytics.splitbee]
-enable = false
-# No cookie mode.
-no_cookie = true
-# Respect the do not track setting of the browser.
-do_not_track = true
-# Token (optional), more info on https://splitbee.io/docs/embed-the-script.
-data_token = ""
-
 # Cookie consent configuration.
 [cookieconsent]
 enable = true
@@ -1408,7 +1474,7 @@ menu_mobile = [
   "inject/translate-menu-mobile.html",
 ]
 profile = [
-  "custom/profile.html",
+  # "custom/profile.html",
 ]
 aside = [
   "custom/aside.html",
@@ -1470,6 +1536,7 @@ header_background_color = ""
 header_background_color_dark = ""
 header_title_font_size = ""
 header_title_font_family = ""
+menu_font_size = ""
 menu_active_color = ""
 menu_active_color_dark = ""
 menu_border_color = ""
@@ -1492,6 +1559,9 @@ single_link_color = ""
 single_link_color_dark = ""
 single_link_hover_color = ""
 single_link_hover_color_dark = ""
+# Contribution Heatmap #
+contribution_color = ""
+contribution_color_dark = ""
 # Table #
 table_background_color = ""
 table_background_color_dark = ""
