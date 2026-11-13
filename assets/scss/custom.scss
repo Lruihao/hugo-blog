@@ -128,15 +128,7 @@ $header-box-shadow: 0 0 1.5rem 0 light-dark(rgba(0, 0, 0, 0.125), rgba(255, 255,
   // }
 
   &.posts {
-    // TODO 考虑移到主题内置：profile 占满首屏，头像尺寸统一 8rem
     .home-profile {
-      box-sizing: border-box;
-      height: MAX(calc(100dvh - 3.5rem), 600px);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-bottom: 2rem;
-
       // Keep the home contribution heatmap legible against the aurora background.
       // A lavender scale that coordinates with the aurora, with a clear jump from empty to level 1.
       // Scoped to the home profile so the author archive keeps the theme's default colors.
