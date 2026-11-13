@@ -3,7 +3,7 @@ module github.com/Lruihao/hugo-blog
 go 1.20
 
 require (
-	github.com/hugo-fixit/FixIt v1.0.0-rc.2 // indirect
+	github.com/hugo-fixit/FixIt v1.0.0-rc.3 // indirect
 	github.com/hugo-fixit/cmpt-flyfish v1.1.0 // indirect
 	github.com/hugo-fixit/cmpt-markmap v1.2.0 // indirect
 	github.com/hugo-fixit/cmpt-mdevtools/v2 v2.0.1 // indirect
