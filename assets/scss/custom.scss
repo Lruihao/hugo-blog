@@ -157,10 +157,6 @@ $header-box-shadow: 0 0 1.5rem 0 light-dark(rgba(0, 0, 0, 0.125), rgba(255, 255,
       }
     }
 
-    .home-avatar img {
-      width: 8rem;
-    }
-
     .summary {
       border-radius: 1rem;
     }
@@ -191,17 +187,4 @@ $header-box-shadow: 0 0 1.5rem 0 light-dark(rgba(0, 0, 0, 0.125), rgba(255, 255,
 // ==============================
 @include media('sm', 'up') {
   // ...
-}
-
-// ==============================
-// Mobile style
-// ==============================
-@include media('xs') {
-  .home {
-    &.posts {
-      .home-avatar img {
-        width: 6rem;
-      }
-    }
-  }
 }
